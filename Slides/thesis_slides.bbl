@@ -1,0 +1,342 @@
+\begin{thebibliography}{47}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Boyer et~al.(1992)Boyer, Ochran, Nyerick, Waldron, and
+  Huntzinger]{boyer1992clinical}
+Arthur~L Boyer, Timothy~G Ochran, Carl~E Nyerick, Timothy~J Waldron, and
+  Calvin~J Huntzinger.
+\newblock Clinical dosimetry for implementation of a multileaf collimator.
+\newblock \emph{Medical physics}, 19\penalty0 (5):\penalty0 1255--1261, 1992.
+
+\bibitem[Webb(2001)]{WebbIMRT}
+Steve Webb.
+\newblock \emph{{Intensity-Modulated Radiation Therapy}}.
+\newblock Institute of Physics Publishing Ltd, Bristol and Philadelphia, 2001.
+
+\bibitem[Schweikard et~al.(1995)Schweikard, Tombropoulos, and
+  Adler]{Schweikard95}
+Achim Schweikard, Rhea Tombropoulos, and John~R Adler.
+\newblock {Robotic Radiosurgery with Beams of Adaptable Shapes}.
+\newblock In Nicholas Ayache, editor, \emph{Computer Vision, Virtual Reality
+  and Robotics in Medicine}, pages 138--149, Berlin, Heidelberg, 1995. Springer
+  Berlin Heidelberg.
+\newblock ISBN 978-3-540-49197-2.
+
+\bibitem[Webb(1999)]{Webb99Robotic}
+Steve Webb.
+\newblock Conformal intensity-modulated radiotherapy (imrt) delivered by
+  robotic linac-testing imrt to the limit?
+\newblock \emph{Physics in Medicine \& Biology}, 44\penalty0 (7):\penalty0
+  1639, 1999.
+
+\bibitem[Wiersma et~al.(2009)Wiersma, Wen, Sadinski, Farrey, and
+  Yenice]{Wiersma09Dev}
+Rodney~D Wiersma, Zhifei Wen, Meredith Sadinski, Karl Farrey, and Kamil~M
+  Yenice.
+\newblock Development of a frameless stereotactic radiosurgery system based on
+  real-time 6d position monitoring and adaptive head motion compensation.
+\newblock \emph{Physics in Medicine \& Biology}, 55\penalty0 (2):\penalty0 389,
+  2009.
+
+\bibitem[Herrmann et~al.(2011)Herrmann, Ma, and Schilling]{HerrmannHexaPODMPC}
+Christian Herrmann, Lei Ma, and Klaus Schilling.
+\newblock {Model Predictive Control For Tumor Motion Compensation In Robot
+  Assisted Radiotherapy}.
+\newblock \emph{IFAC Proceedings Volumes}, 44\penalty0 (1):\penalty0
+  5968--5973, 2011.
+
+\bibitem[Ogunmolu et~al.(2017)Ogunmolu, Kulkarni, Tadesse, Gu, Jiang, and
+  Gans]{Ogunmolu17IROS}
+Olalekan Ogunmolu, Adwait Kulkarni, Yonas Tadesse, Xuejun Gu, Steve Jiang, and
+  Nicholas Gans.
+\newblock Soft-neuroadapt: A 3-dof neuro-adaptive patient pose correction
+  system for frameless and maskless cancer radiotherapy.
+\newblock In \emph{IEEE/RSJ International Conference on Intelligent Robots and
+  Systems (IROS), Vancouver, BC, CA}, pages 3661--3668. IEEE, 2017.
+
+\bibitem[Nesme et~al.(2005)Nesme, Marchal, Promayon, Chabanas, Payan, and
+  Faure]{Nesme2005}
+Matthieu Nesme, Maud Marchal, Emmanuel Promayon, Matthieu Chabanas, Yohan
+  Payan, and Fran{\c c}ois Faure.
+\newblock {Physically Realistic Interactive Simulation For Biological Soft
+  Tissues}.
+\newblock \emph{{Recent Research Developments in Biomechanics}}, 2:\penalty0
+  1--22, 2005.
+
+\bibitem[Nesme et~al.(2006)Nesme, Faure, and Payan]{Nesme2006}
+Matthieu Nesme, Fran{\c c}ois Faure, and Yohan Payan.
+\newblock {Hierarchical Multi-Resolution Finite Element Model for Soft Body
+  Simulation}.
+\newblock \emph{{Lecture Notes in Computer Science}}, 4072:\penalty0 40--47,
+  2006.
+
+\bibitem[Bern et~al.(2017)Bern, Kumagai, and Coros]{JamesBern}
+James~M Bern, Grace Kumagai, and Stelian Coros.
+\newblock Fabrication, modeling, and control of plush robots.
+\newblock In \emph{Intelligent Robots and Systems (IROS), 2017 IEEE/RSJ
+  International Conference on}, pages 3739--3746. IEEE, 2017.
+
+\bibitem[Gent(2012)]{GentBook}
+Alan Gent.
+\newblock \emph{{Engineering with Rubber. How to Design Rubber Components}}.
+\newblock Carl Hanser Verlag Publicationbs, Munich, 2012.
+
+\bibitem[Hannan and Walker(2003)]{Hannan2003}
+Michael~W Hannan and Ian~D Walker.
+\newblock {Kinematics and the Implementation of an Elephant's Trunk Manipulator
+  and Other Continuum Style Robots}.
+\newblock \emph{Journal of Robotic Systems}, 20\penalty0 (2):\penalty0 45--63,
+  2003.
+
+\bibitem[Hannan and Walker(2000)]{Hannan2000}
+Michael~W Hannan and Ian~D. Walker.
+\newblock {Novel Kinematics for Continuum Robots}.
+\newblock pages 227--238. {Advances in Robot Kinematics}, 2000.
+
+\bibitem[Jones and Walker(2006)]{Jones2006}
+Bryan~A Jones and Ian~D Walker.
+\newblock {Kinematics for Multisection Continuum Robots.pdf}.
+\newblock 22\penalty0 (1):\penalty0 43--55, 2006.
+
+\bibitem[Renda et~al.(2014)Renda, Giorelli, Calisti, Cianchetti, and
+  Laschi]{Renda2014Cosserat}
+Federico Renda, Michele Giorelli, Marcello Calisti, Matteo Cianchetti, and
+  Cecilia Laschi.
+\newblock Dynamic model of a multibending soft robot arm driven by cables.
+\newblock \emph{IEEE Transactions on Robotics}, 30\penalty0 (5):\penalty0
+  1109--1122, 2014.
+
+\bibitem[Trivedi et~al.(2008)Trivedi, Lotfi, and Rahn]{TrivediCosserat}
+Deepak Trivedi, Amir Lotfi, and Christopher~D Rahn.
+\newblock {Geometrically Exact Models For Soft Robotic Manipulators}.
+\newblock \emph{IEEE Transactions on Robotics}, 24\penalty0 (4):\penalty0
+  773--780, 2008.
+
+\bibitem[Mochiyama(2005)]{HyperMochi}
+Hiromi Mochiyama.
+\newblock Hyper-flexible robotic manipulators.
+\newblock In \emph{IEEE International Symposium on Micro-NanoMechatronics and
+  Human Science, 2005}, pages 41--46. IEEE, 2005.
+
+\bibitem[Chirikjian and Burdick(1995)]{Chirikjian1995}
+Gregory~S Chirikjian and Joel~W Burdick.
+\newblock The kinematics of hyper-redundant robot locomotion.
+\newblock \emph{IEEE transactions on robotics and automation}, 11\penalty0
+  (6):\penalty0 781--793, 1995.
+
+\bibitem[Chirikjian(1994)]{Chirikjian1994}
+Gregory~S Chirikjian.
+\newblock Hyper-redundant manipulator dynamics: A continuum approximation.
+\newblock \emph{Advanced Robotics}, 9\penalty0 (3):\penalty0 217--243, 1994.
+
+\bibitem[Yekutieli et~al.(2005)Yekutieli, Sagiv-Zohar, Aharonov, Engel,
+  Hochner, and Flash]{yekutieli2005dynamic}
+Yoram Yekutieli, Roni Sagiv-Zohar, Ranit Aharonov, Yaakov Engel, Binyamin
+  Hochner, and Tamar Flash.
+\newblock A dynamic model of the octopus arm. i. biomechanics of the octopus
+  reaching movement.
+\newblock \emph{Journal of neurophysiology}, 2005.
+
+\bibitem[Zheng et~al.(2012)Zheng, Branson, Kang, Cianchetti, Guglielmino,
+  Follador, Medrano-Cerda, Godage, and Caldwell]{zheng2012dynamic}
+Tianjiang Zheng, David~T Branson, Rongjie Kang, Matteo Cianchetti, Emanuele
+  Guglielmino, Maurizio Follador, Gustavo~A Medrano-Cerda, Isuru~S Godage, and
+  Darwin~G Caldwell.
+\newblock Dynamic continuum arm model for use with underwater robotic
+  manipulators inspired by octopus vulgaris.
+\newblock In \emph{2012 IEEE International Conference on Robotics and
+  Automation}, pages 5289--5294. IEEE, 2012.
+
+\bibitem[Boyer et~al.(2006)Boyer, Porez, and Khalil]{boyer2006macro}
+Fr{\'e}d{\'e}ric Boyer, Mathieu Porez, and Wisama Khalil.
+\newblock Macro-continuous computed torque algorithm for a three-dimensional
+  eel-like robot.
+\newblock \emph{IEEE Transactions on Robotics}, 22\penalty0 (4):\penalty0
+  763--775, 2006.
+
+\bibitem[Ogden(1997)]{OgdenBook}
+R.W. Ogden.
+\newblock \emph{{Non-linear Elastic Deformations}}.
+\newblock Dover Publicationbs, Inc., Mineola, New York, 1997.
+
+\bibitem[Sedal et~al.(2018)Sedal, Bruder, Bishop-Moser, Vasudevan, and
+  Kota]{SedalFREE2018}
+Audrey Sedal, Daniel Bruder, Joshua Bishop-Moser, Ram Vasudevan, and Sridhar
+  Kota.
+\newblock A continuum model for fiber-reinforced soft robot actuators.
+\newblock \emph{Journal of Mechanisms and Robotics}, 10\penalty0 (2):\penalty0
+  024501, 2018.
+
+\bibitem[Holzapfel et~al.(2000)Holzapfel, Gasser, and Ogden]{Holzapfel2000}
+Gerhard~A Holzapfel, Thomas~C Gasser, and Ray~W Ogden.
+\newblock A new constitutive framework for arterial wall mechanics and a
+  comparative study of material models.
+\newblock \emph{Journal of elasticity and the physical science of solids},
+  61\penalty0 (1-3):\penalty0 1--48, 2000.
+
+\bibitem[Rucker et~al.(2010)Rucker, Jones, and
+  Webster~III]{rucker2010geometrically}
+D~Caleb Rucker, Bryan~A Jones, and Robert~J Webster~III.
+\newblock A geometrically exact model for externally loaded concentric-tube
+  continuum robots.
+\newblock \emph{IEEE transactions on robotics: a publication of the IEEE
+  Robotics and Automation Society}, 26\penalty0 (5):\penalty0 769, 2010.
+
+\bibitem[Demirkoparan and Pence(2007)]{Demirkoparan}
+Hasan Demirkoparan and Thomas~J Pence.
+\newblock {Swelling of an Internally Pressurized Nonlinearly Elastic Tube with
+  Fiber Reinforcing}.
+\newblock \emph{International journal of solids and structures}, 44\penalty0
+  (11-12):\penalty0 4009--4029, 2007.
+
+\bibitem[Nguyen(1988)]{Nguyen1988}
+Van-Duc Nguyen.
+\newblock Constructing force-closure grasps.
+\newblock \emph{The International Journal of Robotics Research}, 7\penalty0
+  (3):\penalty0 3--16, 1988.
+
+\bibitem[Ogunmolu(2019)]{OgunmoluThesis}
+Olalekan~Patrick Ogunmolu.
+\newblock \emph{{A Multi-DOF Soft Robot Mechanism for Patient Motion Correction
+  and Beam Orientation Selection in Cancer Radiation Therapy.}}
+\newblock PhD thesis, The University of Texas at Dallas, 2019.
+
+\bibitem[Bortfeld and Schlegel(1993)]{Bortfeld1993}
+Thomas Bortfeld and Wolfgang Schlegel.
+\newblock Optimization of beam orientations in radiation therapy: Some
+  theoretical considerations.
+\newblock \emph{Physics in Medicine \& Biology}, 38\penalty0 (2):\penalty0 291,
+  1993.
+
+\bibitem[S{\"o}dertr{\"o}m and Brahme(1993)]{Sodertrom1993}
+Svante S{\"o}dertr{\"o}m and Anders Brahme.
+\newblock {Optimization of the Dose Delivery In A Few Field Techniques Using
+  Radiobiological Objective Functions}.
+\newblock \emph{Medical physics}, 20\penalty0 (4):\penalty0 1201--1210, 1993.
+
+\bibitem[Pugachev et~al.(2000)Pugachev, Boyer, and Xing]{Pugachev2000}
+AB~Pugachev, AL~Boyer, and L~Xing.
+\newblock Beam orientation optimization in intensity-modulated radiation
+  treatment planning.
+\newblock \emph{Medical Physics}, 27\penalty0 (6):\penalty0 1238--1245, 2000.
+
+\bibitem[Pugachev and Xing(2002)]{Pugachev02}
+Andrei Pugachev and Lei Xing.
+\newblock Incorporating prior knowledge into beam orientaton optimization in
+  imrt.
+\newblock \emph{International Journal of Radiation Oncology* Biology* Physics},
+  54\penalty0 (5):\penalty0 1565--1574, 2002.
+
+\bibitem[Aleman et~al.(2008)Aleman, Kumar, Ahuja, Romeijn, and
+  Dempsey]{Aleman08}
+Dionne~M Aleman, Arvind Kumar, Ravindra~K Ahuja, H~Edwin Romeijn, and James~F
+  Dempsey.
+\newblock {Neighborhood Search Approaches to Beam Orientation Optimization i
+  Intensity Modulated Radiation Therapy Treatment Planning}.
+\newblock \emph{{Journal of Global Optimization}}, 42\penalty0 (4):\penalty0
+  587--607, 2008.
+
+\bibitem[Bertsimas et~al.(2013)Bertsimas, Cacchiani, Craft, and
+  Nohadani]{Bertsimas2013}
+Dimitris Bertsimas, Valentina Cacchiani, David Craft, and Omid Nohadani.
+\newblock {A Hybrid Approach To Beam Angle Optimization In Intensity-modulated
+  Radiation Therapy}.
+\newblock \emph{Computers \& Operations Research}, 40\penalty0 (9):\penalty0
+  2187--2197, 2013.
+
+\bibitem[Stein et~al.(1997)Stein, Mohan, Wang, Bortfeld, Wu, Preiser, Ling, and
+  Schlegel]{Stein97}
+J{\"o}rg Stein, Radhe Mohan, Xiao-Hong Wang, Thomas Bortfeld, Qiuwen Wu, Konrad
+  Preiser, C~Clifton Ling, and Wolfgang Schlegel.
+\newblock Number and orientations of beams in intensity-modulated radiation
+  treatments.
+\newblock \emph{Medical Physics}, 24\penalty0 (2):\penalty0 149--160, 1997.
+
+\bibitem[Craft(2007)]{Craft2007}
+David Craft.
+\newblock Local beam angle optimization with linear programming and gradient
+  search.
+\newblock \emph{Physics in Medicine \& Biology}, 52\penalty0 (7):\penalty0
+  N127, 2007.
+
+\bibitem[Lu et~al.(2006)Lu, Radke, Hong, Chui, Xiong, Yorke, and
+  Jackson]{lu2006learning}
+Renzhi Lu, Richard~J Radke, Linda Hong, Chen-Shou Chui, Jianping Xiong, Ellen
+  Yorke, and Andrew Jackson.
+\newblock {Learning The Relationship Between Patient Geometry And Beam
+  Intensity In Breast Intensity-modulated Radiotherapy}.
+\newblock \emph{IEEE transactions on biomedical engineering}, 53\penalty0
+  (5):\penalty0 908--920, 2006.
+
+\bibitem[Li and Lei(2010)]{li2010feasible}
+Yongjie Li and Jie Lei.
+\newblock {A Feasible Solution To The Beam-angle-optimization Problem In
+  Radiotherapy Planning With A Dna-based Genetic Algorithm}.
+\newblock \emph{IEEE Transactions on biomedical engineering}, 57\penalty0
+  (3):\penalty0 499--508, 2010.
+
+\bibitem[Wang et~al.(2003)Wang, Dai, and Hu]{wang2003optimization}
+Chuang Wang, Jianrong Dai, and Yimin Hu.
+\newblock {Optimization Of Beam Orientations And Beam Weights For Conformal
+  Radiotherapy Using Mixed Integer Programming}.
+\newblock \emph{Physics in Medicine \& Biology}, 48\penalty0 (24):\penalty0
+  4065, 2003.
+
+\bibitem[D~D'Souza et~al.(2004)D~D'Souza, Meyer, and Shi]{dsouza}
+Warren D~D'Souza, Robert~R Meyer, and Leyuan Shi.
+\newblock {Selection Of Beam Orientations In Intensity-modulated Radiation
+  Therapy Using Single-beam Indices And Integer Programming}.
+\newblock \emph{Physics in Medicine \& Biology}, 49\penalty0 (15):\penalty0
+  3465, 2004.
+
+\bibitem[Lim et~al.(2007)Lim, Ferris, Wright, Shepard, and
+  Earl]{lim2007optimization}
+Gino~J Lim, Michael~C Ferris, Stephen~J Wright, David~M Shepard, and Matthew~A
+  Earl.
+\newblock An optimization framework for conformal radiation treatment planning.
+\newblock \emph{INFORMS Journal on Computing}, 19\penalty0 (3):\penalty0
+  366--380, 2007.
+
+\bibitem[Jia et~al.(2011)Jia, Men, Lou, and Jiang]{Jia2011}
+Xun Jia, Chunhua Men, Yifei Lou, and Steve~B. Jiang.
+\newblock {Beam Orientation Optimization For Intensity Modulated Radiation
+  Therapy Using Adaptive L2,1-minimization}.
+\newblock \emph{Physics in Medicine and Biology}, 56\penalty0 (19):\penalty0
+  6205--6222, 2011.
+
+\bibitem[Heinrich et~al.(2015)Heinrich, Lanctot, and Silver]{Heinrich}
+Johannes Heinrich, Marc Lanctot, and David Silver.
+\newblock Fictitious self-play in extensive-form games.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  805--813, 2015.
+
+\bibitem[Zhuwen et~al.(2018)Zhuwen, Chen, and Koltun]{graphConvTreeSearch}
+Li~Zhuwen, Qifeng Chen, and Vladlen Koltun.
+\newblock Combinatorial optimization with graph convolutional networks and
+  guided tree search.
+\newblock In \emph{Advances in Neural Information Processing Systems}. NeurIPS,
+  2018.
+
+\bibitem[Sadeghnejad~Barkousaraie
+  et~al.(2019{\natexlab{a}})Sadeghnejad~Barkousaraie, Ogunmolu, Nguyen, and
+  Jiang]{Azar19MICCAI}
+Azar Sadeghnejad~Barkousaraie, Olalekan Ogunmolu, Dan Nguyen, and Steve Jiang.
+\newblock {Using Supervised Learning and Guided Monte Carlo Tree Search for
+  Beam Orientation Optimization in Radiation Therapy}.
+\newblock In \emph{{Under Review at International Conference on Medical Image
+  Computing and Computer Assisted Intervention, XXII}}, 2019{\natexlab{a}}.
+
+\bibitem[Sadeghnejad~Barkousaraie
+  et~al.(2019{\natexlab{b}})Sadeghnejad~Barkousaraie, Ogunmolu, Jiang, and
+  Nguyen]{AzarPMB19}
+Azar Sadeghnejad~Barkousaraie, Olalekan Ogunmolu, Steve Jiang, and Dan Nguyen.
+\newblock {A Fast Deep Learning Approach for Beam Orientation Selection Using
+  Supervised Learning with Column Generation on IMRT Prostate Cancer Patients}.
+\newblock \emph{Medical Physics, American Association of Physicists in
+  Medicine}, 2019{\natexlab{b}}.
+
+\end{thebibliography}

@@ -1,0 +1,666 @@
+\section{Multi-DOF Kinematics}
+\begin{frame}
+	\frametitle{Multi-DOF IAB Kinematics \& Dynamics}
+%	\centering This page is left blank intentionally.
+	\begin{itemize}
+		\item \textbf{Outline}
+		%
+		\begin{itemize}
+			\item Solve boundary-value problem for IAB kinematics with head contact
+			%
+			\vspace{0.1in}
+			%
+			\item Relate Deformation Kinematics to Contact Dynamics
+			%
+			\vspace{0.1in}
+			%
+			\item Derive head velocity and orientation in terms of contact velocities
+			%
+			\vspace{0.1in}
+			%
+			\item Derive Newton-Euler's Dynamics of the Head-IAB system for control 
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Contact Kinematics}
+	\begin{columns}[c]
+		\begin{column}{.45\textwidth}
+			\centering
+			\begin{itemize}
+				\tiny
+				%
+				\vspace{0.1in}
+				%
+				\item All friction cones lie within a soft contact type model:~\cite{Nguyen1988}
+				%
+				\begin{align}
+					FC &= \{\contactforcecomp_{c} \in \reline^n: \|f^t_{c_{ij}}\| \le \mu_{ij}\|f_{c_i}^n\|, \nonumber \\
+					 i&=1, \ldots,k, \quad j=1,\ldots, m_i  \}
+				\end{align}
+				%
+				\item $f_{c_{ij}}^t = $  tangent component of $j^{th}$ element of contact force
+				%
+				\vspace{0.1in}
+				%
+				\item $f_{c_i}^n = $ $i^{th}$ contact's normal force, and $\mu_{ij}$ is $f_{c_{ij}}$'s coefficient of friction
+				%
+				\vspace{0.1in}
+				%
+				\item Contact force within friction cone:
+				\begin{align}
+				\contactforce_{c_i} = \begin{bmatrix}
+				\identity & {0}\\
+				{0} & \gaussianmap_{c_i}
+				\end{bmatrix}
+				%
+				\begin{bmatrix}
+				\contactforcecomp_{c_i} \\ \contacttorquecomp_{c_i}
+				\end{bmatrix},
+				\label{eq:soft_contact}
+				\end{align}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.65\textwidth}
+			\includegraphics[width=.8\linewidth, height=.75\columnwidth]{../../../PhDThesis/figures/Cone_Forces.png}\\
+			\tiny \centering IAB-Head Soft Contact
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Contact Map}
+	\begin{itemize}
+		\item Soft contact type is the map
+		%
+		\begin{align}
+		\manipmap_i(r_{c_i}, \twist_h) = \begin{bmatrix}
+		\identity & \bm{0} \\
+		{\hat{\omega}}(r_{c_i}) & \identity
+		\end{bmatrix} \selmap_i(\twist_h, \twist_r)
+		\label{eq:force_constraint}
+		\end{align}
+		%
+		\item Head never rolls out of convex sum of conic forces of individual IABs
+		%
+		\vspace{0.1in}
+		%
+		\item For multiple IABs acting on the head, resultant head force is a superposition of individual IAB forces 	
+		%
+		\begin{align}
+		\contactforce_h = \begin{bmatrix}
+		\manipmap_1, \ldots, \manipmap_8
+		\end{bmatrix}
+		%
+		\left(\begin{array}{c}
+		\contactforce_{c_1} \\ \contactforce_{c_8}
+		\end{array}\right) = \manipmap \contactforce_{c},
+		\label{eq:head-contact-force}
+		\end{align}
+		%
+		\item where $F_h \in \reline^6$ and $F_c \in \reline^{m_1} \times \reline^{m_2} \times \ldots \times \reline^{m_8}$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{BVP for IAB-Head Dynamics}
+	\begin{itemize}
+		\item 
+		Velocity constraint dual
+		\begin{align}
+		\left(
+		\begin{array}{c}
+		\tilde{v}_{c_i} \\ \tilde{\omega}_{c_i}
+		\end{array}
+		\right) 
+		%
+		= \begin{bmatrix}
+		\identity & \hat{\omega}(r_{c_i}) \\
+		0 & \identity
+		\end{bmatrix}
+		%
+		\left(
+		\begin{array}{c}
+		{v}_{c_h} \\ {\omega}_{c_h}
+		\end{array}
+		\right).
+		\end{align}
+		%
+		\item If $v_c$ is the conjugate velocity to $f_c$, then forces exerted by the fingers are
+		%
+		\begin{align}
+			\left(
+			\begin{array}{c}
+				v_c \\ \omega_c
+			\end{array}\right) = \manipmap^T \left(\begin{array}{c} v_h \\ \omega_h \end{array}\right)
+		\end{align}
+		%
+		\item Equations of motion for IAB continuum
+		\begin{subequations}
+			\begin{align}
+			\dot{\rho} + \rho \text{div} \textbf{v} &= 0 \label{eq:continuum-1}, \\
+			\cauchystress^T &= \cauchystress,  \label{eq:continuum-2}\\
+			\text{div} \cauchystress^T + \rho \bm{b} &= \rho \dot{\textbf{v}} \label{eq:continuum-3}
+			\end{align} 
+		\end{subequations}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{IAB Forces under Entropy}
+	\tiny
+	Head forces (see derivation in \cite[Appendix C.]{OgunmoluThesis}) are in part the  internal pressurization, $P_i$, and the stress tensor components $\{\stresscomp_{\phi \phi}(\epsilon), \stresscomp_{\theta \theta}(\zeta)\}$, 
+	%
+	\begin{subequations}
+		\tiny
+		\begin{align}
+		P  &= \int_{r_i}^{r_\circ} \left[\frac{1}{r}\left(
+		-2p + 2 C_1 \frac{r^2}{R^2} - 2 C_2 \frac{R^8}{r^8}
+		\right) - \rho b_r +  \rho \cos \theta \left(2\dot{r}\dot{\phi}\cos\theta + r \cos\theta \ddot{\phi}-2r\dot{\theta}\dot{\phi}\sin\theta\right) \nonumber \right. \\
+		& \left. \quad - \rho \sin\phi\left(\cos\theta (-\ddot{r}+r\dot{\theta}^2 + r\dot{\phi}^2)+\sin\theta(2 \dot{r}\dot{\theta}+r\ddot{\theta})\right) \vphantom{}  \right] dr \label{eq:radial-stress-integ} \\
+		%	
+		\stresscomp_{\phi \phi}(\epsilon) &= 
+		- \int_{\epsilon}^{\pi} \left[ r \rho\left[\cos \phi\left(2 r \dot{\theta} \dot{\phi} \cos \theta +(2 \dot{r} \dot{\phi}+r \ddot{\phi}) \sin \theta\right)+\right.  \right. \nonumber \\ 
+		%
+		& \quad \left. \left. \sin \theta
+		\left(2 \dot{r} \dot{\theta} \cos \theta +r \ddot{\theta} \cos \theta +(\ddot{r}- r\dot{\theta}^{2}-r\dot{\phi}^{2}) \right) \sin \phi  \vphantom{} \right] - \rho r b _\theta \vphantom{} \right]d\phi, \, 0 \le \epsilon \le \pi
+		\label{eq:azim-stress-integ} \\
+		%
+		\stresscomp_{\theta \theta}(\zeta) &= %2 \pi 
+		- \int_{\zeta}^{2\pi}	\left[-r \rho b_{\theta}\sin\phi + r  \rho \sin\phi \cos \phi\left(\ddot{r} - r \dot{\phi}^2 \right)  - r  \rho \sin^2\phi \left(2 \dot{r}\dot{\phi} + r \ddot{\phi}\right) \right]d\theta, \,  0 \le \zeta \le 2 \pi %\nonumber \\
+		%	& \qquad \qquad 0 \le \zeta \le 2 \pi.
+		\label{eq:polar-stress-integ}
+		\end{align}
+		\label{eq:stress-integ}
+	\end{subequations}
+	%
+	 where $0 \le \epsilon \le \pi, 0 \le \zeta \le 2 \pi$ and  gravity forces. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{ Piola-Kirchoff Stress Tensor \& Contact Forces}
+	%
+	\begin{itemize}
+		%
+		\item For an infinitesimal vector element $\textbf{dA}$ in $\currconfbody_0$,
+		we have $\textbf{dA} = \textbf{N} \text{dA}$ for a surface dA with outward normal map \textbf{N}
+		%
+		\item Similarly, in configuration $\currconfbody$,  $\textbf{da} = \textbf{n}\, \text{da}$ for an outward normal map \textbf{n}
+		%
+		\item Therefore on the IAB boundary, volume preservation implies that
+		%
+		\begin{align}
+		\int_{\partial \currconfbody} \cauchystress \, \textbf{n} \, \text{da} = \int_{\partial \currconfbody_\circ} J \, \cauchystress \, \deformationgradcur  \, \textbf{N } \text{dA}.
+		\end{align}
+		%
+		\item Define the Piola-Kirchoff stress tensor field 
+		%
+		\begin{align}
+		\textbf{S} = J \, \deformationgradcur^T \, \cauchystress
+		\quad \text{ where } \quad \textbf{H} = \deformationgrad^{-T}
+		\label{eq:piola-kirchoff}
+		\end{align} 
+		%
+		\item It follows that 
+		\[
+		\cauchystress \textbf{da} = \textbf{S}^T \textbf{dA}.
+		\]
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Contact force and stress fields}
+\begin{tcolorbox}[title=Contact Wrench]
+\begin{align}
+\contactforcecomp_{c_i} &= \textbf{S}_i^T \textbf{dA}_i = J_i \cauchystress_i \textbf{H}_i \textbf{dA}_i  = J_i  \cauchystress_i \deformationgrad^{-1}_i \textbf{dA}_i \\
+%
+\torque_{c_i} &= \contactforcecomp_{c_i} \times r_{c_i}
+\label{eq:contact_def_force} 
+\end{align}
+\end{tcolorbox}
+whereupon,
+%
+\begin{align}
+f_{c_i} = \left(\frac{R_i^2}{r_i^2} P_i  + \frac{R_i}{r_i} \stresscomp_{{\phi \phi}_i}(\epsilon) + \frac{R_i}{r_i} \stresscomp_{{\theta \theta}_i}(\zeta)\right) n_{c_i} {dA}_i
+\label{eq:contact-force-stress-isochoric}
+\end{align}
+%
+and the contact force map is
+%
+\begin{align}
+\contactforce_{c_i} = \begin{bmatrix}
+\identity & {0}\\
+{0} & \gaussianmap_{c_i}
+\end{bmatrix}
+%
+\begin{bmatrix}
+\contactforcecomp_{c_i} \\ \contactforcecomp_{c_i} \times r_{c_i}
+\end{bmatrix}.
+\label{eq:contact-force-stress}
+\end{align}
+\end{frame}
+
+\begin{frame}
+\frametitle{Contact coordinates and head motion}
+	\begin{columns}[c]
+		\begin{column}{0.95\textwidth}
+			\centering
+			\includegraphics[width=.65\textwidth, height=0.6\textwidth]{../../../PhDThesis/figures/sliding_contact_coordinates.png} \\
+			%\footnotesize{Sliding and rolling contact illustration of a single IAB and the Head}
+		\end{column}		
+	\end{columns}
+	\[
+		\alpha_1 = \left(u_1, v_1\right) \in U_1, \text{ and } \alpha_h = \left(u_h, v_h\right) \in U_h
+	\]
+	\[
+	f_i(u_i, v_i): \{U \rightarrow S_i \subset \reline^3 | i = 1, h\}.
+	\]
+\end{frame}
+%
+\begin{frame}
+	\frametitle{Differential Geometry of Contact Coordinates}
+	\begin{itemize}
+		\tiny 
+		\item Define contact coordinates $\eta = \left(\alpha_1, \alpha_h, \psi\right)$			
+		%
+		\vspace{0.1in}
+		%
+		\item  Let  $g \in \Omega \subset \liegroup$ and let $R \in SO(3)$ be $g$'s rotatory component 	
+		%
+		\vspace{0.1in}
+		%
+		\item $\Omega = \{\{S_{1_i}\}_{i = 1}^{n_1}$, $\{S_{h_i}\}_{i = 1}^{n_h}\}$ for which the IAB and head remain in contact	
+		%
+		\vspace{0.1in}
+		%
+		\item At a point of contact, $\eta$ must satisfy
+		%
+		\begin{subequations}
+			\begin{align}
+			g \circ f_1(\alpha_1) &= f_h(\alpha_h)  \label{eq:contact_equal} \\
+			R \, \gaussianmap_1(\alpha_1) &= - \gaussianmap_h(\alpha_h) \label{eq:gauss_equal}
+			\end{align}
+		\end{subequations}
+		%	
+		\item Additionally, the orientation of the tangent planes of $\alpha_1$ and $\alpha_h$ imply that
+		%
+		\begin{align}
+		R \dfrac{\partial f_1}{\partial \alpha_1} M_1^{-1} R_\psi = \dfrac{\partial f_h}{\partial \alpha_h} M_h^{-1}
+		\label{eq:tangent_equal}
+		\end{align}
+		%
+		\item Hence, we have the contact equations (see derivation in ~\cite{OgunmoluThesis})
+		%
+		%\begin{tcolorbox}[title=Equations of Contact]
+			\begin{subequations}
+				\begin{align}
+				\dot{\alpha}_h &= M_h^{-1}(\kau_h + \tilde{\kau}_1)^{-1} \left(\omega_t - \tilde{\kau}_1v_t\right) \\
+				\dot{\alpha}_1 &= M_1^{-1}R_\psi(\kau_h + \tilde{\kau}_1)^{-1} \left(\omega_t - {\kau}_h v_t\right) \\
+				\dot{\psi} &=\omega_n + T_h M_h \dot{\alpha}_h +  T_1 M_1 \dot{\alpha}_1
+				\end{align}
+				\label{eq:contact_eqs}
+			\end{subequations}
+		%\end{tcolorbox}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Contact Equations}
+	\tiny where
+	%
+	\begin{subequations}
+		\tiny
+		\begin{align}
+		M_i &= \begin{bmatrix}
+		\|\frac{\partial f_i}{\partial u_i}\| & 0 \\
+		0 & \|\frac{\partial f_h}{\partial v_i}\|
+		\end{bmatrix}, \,
+		%
+		&R_\psi = \begin{bmatrix}
+		\cos \psi & -\sin \psi \\ -\sin \psi & -\cos \psi
+		\end{bmatrix} \\
+		%
+		T_h &=y_h^T \frac{\partial x_h}{\partial \alpha_h}M_h^{-1}, \,
+		%
+		&T_1 =y_1^T \frac{\partial x_1}{\partial \alpha_1}M_1^{-1},  \,
+		%
+		\omega_n = z_h^T \omega \\
+		%
+		\kau_h &= \begin{bmatrix}
+		x_h^T, & y_h^T
+		\end{bmatrix}^T \frac{\partial n_h^T}{\partial \alpha_h}M_h^{-1}, \,
+		%
+		&\kau_1 = R_\psi \begin{bmatrix}
+		x_1^T, & y_1^T
+		\end{bmatrix}^T \frac{\partial n_1^T}{\partial \alpha_1}M_1^{-1} R_\psi \\
+		%
+		\omega_t &= \begin{bmatrix}
+		x_h^T, & y_h^T
+		\end{bmatrix}^T \,
+		%
+		\begin{bmatrix}
+		n_h \times \omega
+		\end{bmatrix}^T, \,
+		%
+		&v_t =  \begin{bmatrix}
+		x_h^T, & y_h^T
+		\end{bmatrix}^T
+		%
+		\begin{bmatrix}
+		(-f_h \times \omega + v)
+		\end{bmatrix}^T.
+		\end{align}
+		\label{eq:contact_eqs_compos}
+	\end{subequations}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Multi-IAB Kinematics}
+	\begin{itemize}
+		\item IAB configuration space \wrt the spatial frame at a certain time can then be described by $g_{st}(\position): \position \rightarrow g_{st}(\position) \in SE(3)$ 
+		%
+		\vspace{.1in}
+		%
+		\item Strain state of the IAB is characterized by the strain field
+		%
+		\begin{align}
+		\hat{\twist}_i(\position) &= \pose_i^{-1} \frac{\partial \pose_i}{\partial \position} \in \liealgebra = \pose_i^{-1}  \pose_i^\prime
+		\end{align}
+		%
+		\item $g_i^\prime$:   tangent vector at $g_i$ such that $g_i' \in T_{g_i(\position)}\liegroup$
+		%
+		\vspace{.1in}
+		%
+		\item IAB's strain field as an exponential map of $SE(3)$ 
+		%
+		\begin{align}
+		g_i(\position) &= \text{exp}^{\|\position\| \hat{\twist}_i} = \identity + \hat{\twist}_i \, \|\position\|  + \frac{\hat{\omega}}{\|\omega\|^2}\left(1 - \cos(\|\position\| \|\omega\|)\right) \hat{\twist}_i^2   \nonumber \\
+		& \qquad + \frac{\hat{\omega}^3}{\|\omega\|^3}\left(\|\position\| \|\omega\| - \sin(\|\position\| \|\omega\|)\right)\hat{\twist}_i^3.
+		\label{eq:matrix-exp}
+		\end{align}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Forward Kinematics}
+	\begin{itemize}
+	\item FK  Jacobian:\begin{align}
+	\left(\begin{array}{c}
+	v_{{iab}_i} \\ \omega_{{iab}_i}
+	\end{array}\right) = \frac{\partial K_{{iab}_i}}{\partial \position_{i}} \frac{d \position}{d t} K_{{iab}_i}^{-1} = \jacob_{i}(\position_{i})\dot{\position}_{i}
+	\end{align}
+%
+	\vspace{.1in}
+	%
+	\item Contact forces/velocities mapped by the contact Jacobian:
+	%
+	\begin{align}
+	\jacob_{c_i}(\twist_h, \twist_{{iab}_i}) = \begin{bmatrix}
+	\identity & \hat{\bm{\omega}}(r_{c_i}) \\
+	\bm{0} & \identity 
+	\end{bmatrix} J_{r_i},
+	\end{align}
+	%
+	\vspace{.1in}
+	%
+	\item where  $\jacob_{c_i}: \dot{\twist}_{r_i} \rightarrow \begin{bmatrix}
+	v_{c_i}^T, & \omega_{c_i}^T
+	\end{bmatrix}^T$
+	%
+	\vspace{.1in}
+	%
+	\item $\twist_r = \left(\twist_{r_1}, \twist_{r_2}, \cdots, \twist_{r_8}\right)$: positions and orientations for each of the $8$ IABs
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Manipulation Map}
+	\begin{itemize}
+		\item For a \textit{selection matrix} $\selmap_i^T(\twist_h, \twist_{{iab}_i}) \in \reline^m_i$ for a particular manipulation task
+		%
+		\begin{align}
+		\manipmap_i^T(\twist_h, \twist_{{iab}_i}) \twist_h = {B}_i^T(\twist_h, \twist_{{iab}_i}) \jacob_{c_i}(\twist_h, \twist_{r_i}) \dot{\twist}_{{iab}_i}
+		\label{eq:head-vel-map}
+		\end{align}
+	%
+	\item Manipulation constraint:
+	\begin{align}
+	\begin{bmatrix}
+	\manipmap_1^T \\ 	\manipmap_2^T \\ \vdots \\ 	\manipmap_8^T
+	\end{bmatrix} 
+	%
+	\left(\begin{array}{c}
+	v_h \\ \omega_h
+	\end{array}\right)
+	%
+	&= \begin{bmatrix}
+	\selmap_1^T \jacob_{c_1} & 0 & \cdots & 0 \\
+	0 & \selmap_2^T \jacob_{c_2} & \cdots & 0 \\
+	\vdots & \vdots & \ddots & \vdots \\
+	0 & 0 & \cdots & \selmap_8^T \jacob_{c_8}
+	\end{bmatrix} 	\left(\begin{array}{c}
+	\dot{\curveparam}_{{iab}_1} \\ \dot{\curveparam}_{{iab}_2} \\ \vdots \\ \dot{\curveparam}_{{iab}_8}
+	\end{array}\right) 
+	%\end{align}
+	%
+	%\text{ or }
+	%%\begin{align}
+	%\manipmap_i^T(x_h, \curveparam) 	\left(\begin{array}{c}
+	%v_h \\ w_h
+	%\end{array}\right) &= \jacob(x_h, X_{{iab}_i}) \dot{\curveparam}.
+	\label{eq:manip_map},
+	\end{align}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Planar Manipulation Example}
+	\begin{columns}[c]
+		\begin{column}{.5\textwidth}
+			\begin{align}
+			\manipmap_2 = 
+			\small
+			\begin{bmatrix}
+			\identity & 0 \\
+			\hat{\omega}\left(\begin{array}{c}
+			-r_{c_2} \sin \phi_2 \\ 
+			r_{c_2} \cos \phi_2  \\ 
+			0 
+			\end{array}\right) & \identity	
+			\end{bmatrix}\,					
+			\small
+			\left(
+			\begin{array}{cc}
+			1 & 0 \\
+			0 & 1 \\
+			0 & 0 \\
+			0 & 0 \\
+			0 & 0 \\
+			0 & 0
+			\end{array}\right) \nonumber
+			\end{align} 
+			 \\
+			\begin{align}
+				\tiny
+				\manipmap_1 = \begin{bmatrix}
+				\identity & 0 \\
+				\hat{\omega}
+				\left(\begin{array}{c}
+				-r_{c_1} \sin \phi_1 \\ 
+				-r_{c_1} \cos \phi_1  \\ 
+				0 \end{array}\right) & \identity	
+				\end{bmatrix}\,
+				\left(
+				\begin{array}{cc}
+				1 & 0 \\
+				0 & 1 \\
+				0 & 0 \\
+				0 & 0 \\
+				0 & 0 \\
+				0 & 0
+				\end{array}\right) \nonumber
+			\end{align}
+		\end{column}
+		%
+		\tiny
+		\begin{column}{.5\textwidth}
+			\includegraphics[width=\linewidth]{../../../PhDThesis/figures/plane_manip.png}%\\
+			%
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Head Planar Manipulation Map}
+	\begin{columns}[c]
+		%
+		\begin{column}{0.5\textwidth}
+			\small
+			\begin{align}
+			\manipmap_3 = \begin{bmatrix}
+			\identity & 0 \\
+			\hat{\omega}
+			\small \left(\begin{array}{c}
+			r_{c_3} \sin \phi_3 \\ 
+			r_{c_3} \cos \phi_3  \\ 
+			0 \end{array}\right) & \identity	
+			\end{bmatrix}\,
+			\left(
+			\begin{array}{cc}
+			1 & 0 \\
+			0 & 1 \\
+			0 & 0 \\
+			0 & 0 \\
+			0 & 0 \\
+			0 & 0
+			\end{array}\right)\nonumber
+			\end{align}			
+		\end{column}
+	%
+		\begin{column}{.5\textwidth}
+			\tiny
+			\begin{align}
+			\manipmap(x, y, \phi) = \begin{bmatrix}
+			1 & 0 & r_{c_1} \cos\phi_1 \\ 
+			0 & 1 & -r_{c_1} \sin\phi_1 \\ 
+			1 & 0 & -r_{c_2} \cos\phi_2 \\ 
+			0 & 1 & -r_{c_2} \sin\phi_2 \\
+			1 & 0 & -r_{c_3} \cos\phi_3 \\ 
+			0 & 1 & r_{c_3} \sin\phi_3 \\	
+			1 & 0 & r_{c_4} \cos\phi_4 \\ 
+			0 & 1 & r_{c_4} \sin\phi_4
+			\end{bmatrix}^T \nonumber
+			%\label{eq:grasp_planar}
+			\end{align}
+		\end{column}
+	\end{columns}
+	%
+	where $\manipmap(\cdot)$ is the manipulation map for all forces \wrt  $xy$ coordinates.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Multi-IAB Lagrangian Dynamics}
+	\begin{align}
+	L(\position, \dot{\position}) = T(\position, \dot{\position}) - V(\position).
+	\label{eq:lagrange}
+	\end{align}
+	%
+	\begin{itemize}
+		\item Pneumatic system equation
+		%
+		\begin{align}
+		\dfrac{d}{dt}\dfrac{\partial L}{\partial \dot{\position}_i} - \dfrac{\partial L}{\partial \position_i} = \torque_i, \quad i = 1, \ldots, m
+		\label{eq:lagrange_compo}
+		\end{align}
+		%
+		\item Define the Eulerian strain rate tensor 
+		%
+		\begin{align}
+		\bm{\Gamma} = \text{grad } \eulerianvel.
+		\end{align}
+		%
+		\item Dropping explicit time-dependence, we have from Cauchy's first law
+		%
+		\begin{align}
+		\text{div } (\cauchystress^T \textbf{v}) - \trace{\cauchystress\,\bm{\Gamma}} + \rho \textbf{b} \,\cdot \textbf{v} = \rho \textbf{v} \cdot \, \dot{\textbf{v}}.
+		\end{align}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Balance of mechanical energy}
+	\begin{align}
+	\int_{\currconfbody} \rho \textbf{b}\cdot \textbf{v} \, dv + \int_{\partial \currconfbody} \contactforcecomp_\rho \cdot \textbf{v} \, da = \frac{d}{dt} \int_{\currconfbody} \frac{1}{2} \rho \textbf{v} \cdot \textbf{v} \, dv + \int_{\currconfbody}   \trace{\cauchystress\,\bm{\Gamma}} \, dv
+	\end{align} 
+	%
+	\begin{itemize}
+		\item Taking cognizance that $\bm{\Sigma} = \frac{1}{2} (\bm{\Gamma} + \bm{\Gamma}^T)$, we have %the kinetic energy density and stress power
+		%
+		\begin{align}
+		T(\position, \dot{\position}) = \frac{1}{2} \rho \textbf{v} \cdot \textbf{v}, \quad V(\position) = %\int_{\currconfbody}  
+		\trace{\cauchystress\,\bm{\Sigma}}.
+		\end{align}
+		%
+		\item whereupon, we find that
+		\begin{align}
+		\tiny
+		\torque =
+		\begin{bmatrix}
+		\rho & 0 & 0   \\
+		0 & \rho\, r^2 & 0   \\
+		0 & 0 & \rho \, r^2 \sin^2\phi  
+		\end{bmatrix}
+		%
+		\begin{bmatrix}
+		\ddot{r} \\ \ddot{\phi} \\ \ddot{\theta}
+		\end{bmatrix} +
+		%
+		\textbf{diag}\begin{bmatrix}
+		2\, \rho \, r \,  \left(\dot{\theta}\,  \sin^2 \phi  + \dot{\phi}\right) \\
+		%
+		\rho r \left( r\dot{\theta} \sin 2\phi -\dot{\phi} \right) \\ 
+		%
+		- \rho r \dot{\theta} \sin \phi \left(r \cos\phi+\sin\phi \right)
+		\end{bmatrix}
+		%
+		\begin{bmatrix}
+		\dot{r} \\ \dot{\phi} \\ \dot{\theta}
+		\end{bmatrix}  
+		\label{eq:lagrange-dynamics}
+		\end{align}
+		%
+		\item Compactly, we write the IAB actuator dynamics as
+		\begin{align}
+		M_{{iab}_j}(r_j, \phi_j) \ddot{\position}_j + C_{{iab}_j}(r_j, \phi_j, \dot{\theta}_j, \dot{\phi}_j) \dot{\position}_j  = \torque_j
+		\label{eq:iab-dynamics-compos}
+		\end{align} 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Newton-Euler Equations for IAB-Head System}
+	\begin{itemize}
+		\item No actuator torques:
+		%
+		\begin{align}
+		\bm{M}_h(\headparam) \ddot{\headparam}  + \bm{C}_h(\headparam, \dot{\headparam}) \dot{\headparam} + \bm{N}_h(\headparam, \dot{\headparam}) = 0
+		\end{align}
+		%
+		\item Manipulation constraint:
+		%
+		\begin{align}
+		\manipmap^T(\headparam, \position) \dot{\headparam}  = \jacob(\headparam, \position) \dot{\position}.
+		\label{eq:contraint-connection}
+		\end{align}
+		%
+		\item Wherefore, we find that
+		\begin{align}
+		\left(\frac{d}{dt}\frac{\partial L}{\partial \dot{\headparam}} - \frac{\partial L}{\partial \headparam}  \right)\delta \headparam + \manipmap J^{-T}  \left(\frac{d}{dt}\frac{\partial L}{\partial \dot{\position}} - \frac{\partial L}{\partial \position}  \right) = \manipmap J^{-T}  \torque
+		\label{eq:complete-lagrangian}
+		\end{align}
+		%
+		\item  Equations \eqref{eq:complete-lagrangian} and \eqref{eq:contraint-connection} completely describe the system.
+	\end{itemize}
+\end{frame}

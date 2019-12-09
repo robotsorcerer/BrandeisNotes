@@ -1,0 +1,106 @@
+\documentclass[utf8x,hyperref={pagebackref=true,citecolor=green,bookmarks=true,pdfpagelabels=false}]{beamer} %remove draft when done with tex prep
+
+\usepackage{etex}
+\usepackage{beamerthemesplit}
+\usetheme{Berkeley} %Hannover, Belin, Warsaw, PaloAlto, Frankfurt, Berkeley  etc
+\usepackage{pgfpages}
+\mode<handout>{\setbeamercolor{background canvas sidebar}{bg=yellow!95}}
+
+\usepackage{bm}
+\usepackage{subfloat}
+\usepackage{amssymb, amsmath}
+\usepackage[round]{natbib}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\bibliographystyle{unsrtnat}
+\usepackage[export]{adjustbox}
+\usepackage{array,booktabs,tabularx}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows, circuits, patterns, snakes, decorations.pathreplacing}
+\usepackage{schemabloc, verbatim}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+
+%\graphicspath{../}  % path to base directory of all papers
+\DeclareGraphicsExtensions{.eps}
+
+\usepackage{media9} % for video embeddings
+\usepackage{multimedia} % for video embeddings
+\usepackage{tcolorbox}
+
+%\usepackage[pagebackref=true,breaklinks=true,colorlinks=true, citecolor=green,linkcolor=cyan,urlcolor=blue,bookmarks=true]{hyperref}
+%
+%\usepackage[%pagebackref=true,breaklinks=true,colorlinks=true,
+% citecolor=green,linkcolor=cyan,urlcolor=blue,bookmarks=true]{hyperref}
+%
+\newcommand{\tcb}[2]
+{
+ \begin{tcolorbox}[title=\text{#2}]
+ #1
+ \end{tcolorbox}
+}
+
+%\renewcommand\thefootnote{}\footnote{#1}
+\include{def}
+\tikzstyle{block} = [draw, fill=white!20, rectangle,minimum height=3em, minimum width=4em]
+\tikzstyle{sum} = [draw, fill=white!20, circle, node distance=1cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+\newcolumntype{Z}{>{\centering\arraybackslash}X} % centered tabularx columns
+\newcommand{\pphantom}{\textcolor{ta3aluminium}} % phantom
+%\setbeamerfont{title}{shape=\itshape,family=\rmfamily}
+\setbeamercolor{title}{fg=blue!70!black,bg=gray!40!white}
+%
+\title{\small A Multi-DOF Soft Robot Mechanism for Patient Motion Correction and 
+		Beam Orientation Selection	in Cancer Radiation Therapy.
+}
+\author{Lekan Ogunmolu}
+\institute{
+	%
+	\vspace{0.5em}
+	%
+	Department of Electrical Engineering \\
+	The University of Texas at Dallas, Richardson, TX 
+}
+
+\date{May 16, 2019} 
+
+\makeatletter
+\setbeamertemplate{sidebar \beamer@sidebarside}%{sidebar theme}
+{
+	\beamer@tempdim=\beamer@sidebarwidth%
+	\advance\beamer@tempdim by -6pt%
+	\insertverticalnavigation{\beamer@sidebarwidth}%
+	\vfill
+	\ifx\beamer@sidebarside\beamer@lefttext%
+	\else%
+	\usebeamercolor{normal text}%
+	\llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+	\vskip2pt%
+	\fi%
+}%
+\makeatother
+%PHONON=true
+\begin{document}
+
+\frame{\titlepage
+}
+
+\include{sections/intro}
+\include{sections/background}
+\include{sections/immobilization}
+\include{sections/deformation}
+\include{sections/multidof}
+\include{sections/blank}
+\include{sections/boo}
+%\include{sections/boo_II}
+
+% ---- Bibliography ----
+\bibliographystyle{../../Proposal/styles/bibtex/spmpsci_unsrt}
+{
+\tiny
+\bibliography{../../../PhDThesis/chapters/biblio}
+}
+\end{document}

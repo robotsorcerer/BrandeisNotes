@@ -1,0 +1,97 @@
+
+\section{Results}
+
+\begin{frame}
+	\frametitle{Results}
+	\begin{itemize}
+		%\item We present results on 3D prostate cases
+		%
+		\item Start by randomly adding five beam blocks to the state queue
+		%
+		\item Input planes are passed through the tower residual network, from which probability distributions and a value are predicted
+		%
+		\item Add a random walk sequence to the generated pure strategy 
+		%
+		\item Construct tree with this mixed strategy %(at subsequent iterations, a previous iteration of the neural network is used to generate the mixed strategy used to run the tree search)
+		%
+		\item As new beam angle combinations are found according to the MCTS Algorithm, the FIFO queue is updated
+	\end{itemize}
+\end{frame}
+
+
+\newcommand{\putdose}[2]{\includegraphics[width=#2\columnwidth, height=.28\columnwidth]{../../BOO/figures/dvh_dose/#1}}
+\newcommand{\dosewidth}{.35}
+
+\begin{table}[tb!]
+	\footnotesize{\textbf{Dose washes for select patients during training of the self-play network}}
+	\centering
+	\begin{tabular}{@{}c@{}c@{}c@{}}
+		\toprule
+		\midrule
+		& \textbf{Training Regime} & \\
+		%
+		\putdose{case_007/dose.png}{\dosewidth} & \putdose{case_011/dose.png}{\dosewidth} & \putdose{case_017/dose.png}{\dosewidth} 
+		%
+		\\
+		\putdose{case_022/dose.png}{\dosewidth} & \putdose{case_025/dose.png}{\dosewidth}  & \putdose{case_065/dose.png}{\dosewidth}  \\
+		\midrule
+		\bottomrule
+	\end{tabular}
+	\label{tbl:dose}
+	%
+\end{table}
+
+
+\begin{table}[tb!]
+	\footnotesize{\textbf{Dose washes for select patients during testing of self-play network}}
+	\begin{tabular}{@{}c@{}c@{}c@{}}
+		\toprule
+		\midrule
+		& \textbf{Inference Regime} & \\
+		\putdose{case_062/dose.png}{\dosewidth}  & \putdose{case_066/dose.png}{\dosewidth} & \putdose{case_073/dose.png}{\dosewidth} 
+		%
+		\\
+		\putdose{case_075/dose.png}{\dosewidth}  & \putdose{case_077/dose.png}{\dosewidth} & \putdose{case_078/dose.png}{\dosewidth}	\\	
+		\midrule
+		\bottomrule
+	\end{tabular}
+	\label{tbl:dose_test}
+\end{table}
+
+\begin{frame}
+	\frametitle{Results}
+	\begin{itemize}
+		\item The policy selects fairly equidistant beams
+		%
+		\item Yields wash plots that provide good dosimetric concentration on the tumor
+		%
+		\item Gives sharp gradients at transition between tumors and OARs
+		%
+		\item Largely avoids strong dose to OARs
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Results}
+\begin{itemize}
+	\item Finding the good beam angle candidates is orders of magnitude faster than the current approaches
+	%
+	\vspace{0.3cm}
+	\begin{itemize}
+		\item Mostly due to neural network oracle
+		%	%
+		\vspace{0.3cm}
+		\item At inference, we pick the last checkpoint  during training and use it to find feasible beam angles
+		%	%
+		\vspace{0.3cm}
+		\item Beam angles prediction now takes between 2-3 minutes before we settle on a good candidate beam angle set. 
+	\end{itemize}
+	%
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Transition Slide}
+\centering This page is left blank intentionally.
+\end{frame}

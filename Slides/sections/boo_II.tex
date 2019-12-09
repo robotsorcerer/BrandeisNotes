@@ -1,0 +1,251 @@
+\section{BOO II}
+
+\begin{frame}
+	\frametitle{Generative MDP Prior}
+	\begin{itemize}
+		\item Generative model to find near-optimal beams in large state-space MDP: ~\cite{Azar19MICCAI, AzarPMB19}
+		%
+%		\vspace{0.1in}
+%		%
+%		\item Given dose data, structure weights and currently chosen beams, a column-generation (CG) scheme maps from patients' anatomy to beam angles.
+%		%
+%		\vspace{0.1in}
+%		%
+%		\item \cite{Azar19ICCR}: A greedy beams-selection prior iteratively predicts beamlets given a current state 
+%		%
+%		\vspace{0.1in}
+		%
+	\end{itemize}
+	\frametitle{Generative MDP Prior/State Representation}
+\centering
+\framebox{{
+		\includegraphics[width=.85\columnwidth, height=0.4\columnwidth]{../../../BOO/figures/state.png}
+}}
+\end{frame}
+
+%\begin{frame}
+%	\frametitle{State Representation}
+%		\centering
+%		\framebox{{
+%			\includegraphics[width=.85\columnwidth, height=0.4\columnwidth]{../../../BOO/figures/state.png}
+%	}}
+%\end{frame}
+
+\begin{frame}
+\frametitle{Generative MDP Prior}
+\begin{itemize}
+	\item For a subset  $\blim$ of discretized beams set, $B$, find  optimal beams set $\blim^\star$ via greedy linear programming strategy
+	%
+	\vspace{0.1in}
+	%
+	\item \textbf{How?}
+	%
+	\begin{itemize}
+		\item Iteratively add beams to $\blim$ until $|\blim|$, reaches a threshold, $\bar{B}_{\text{lim}}$
+		%
+		\vspace{0.1in}
+		%
+		\item Or when the master problem's optimality condition is met
+	\end{itemize}
+	%
+	\vspace{0.1in}
+	%
+	\item Add beams only if it reduces the current objective function's value from a previous iteration
+	%
+%	\vspace{0.1in}
+%	%
+%	\item Details in ~\cite{AzarPMB19}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Column Generation Procedure}
+	\begin{itemize}
+		\item A deep policy (\textit{base policy}) parameterizes the column generation functional mapping 
+		%
+		\vspace{0.1in}
+		%
+		\item Beam orientation input is a zero-initialized vector whose particular indices are complemented over the course of backpropagation
+		%
+		\vspace{0.1in}
+		%		
+		\item Base policy minimizes MSE between CG prediction, $\state_{k+1}^{cg}$, and KKT targets $\state_{k+1}^{kkt}$
+		%
+		\vspace{0.1in}
+		%		
+		\item Policy outputs a probability distribution which informs the beam index to which a new beamlet $\state_{k+1}$ is inserted at next iteration
+	\end{itemize}
+\end{frame}
+
+%\begin{frame}
+%	\frametitle{Sparse Lookahead Search}
+%	\begin{itemize}
+%		\item Denote base policy as $\{\mu_0, \ldots, \mu_{N-1}\}$ , over an horizon $N$
+%		%
+%		\vspace{0.1in}
+%		%		
+%		\item Simulated beam plans are a consequence of
+%		%
+%		\begin{align}
+%		\state_{i+1} = f_i(\state_i, \mu_i(\state_i), w_i), \quad i =k+1, \ldots, N-1
+%		\label{eq:state_eq}
+%		\end{align}
+%		%
+%		where $\{\mu_{k+1}, \ldots, \mu_{N-1}\}$ represents the tail part of the base policy 
+%		%
+%		\vspace{0.1in}
+%		%		
+%		\item First generated state form 
+%		\begin{align}
+%		\state_{k+1} = f_k(\state_k, u_k, w_k)
+%		\label{eq:trajectory}
+%		\end{align}
+%		%
+%		with independent random samples $\{w_k, \ldots, w_{N-1}\}$. %~\cite{Bertsekas17DynProI}.
+%	\end{itemize}
+%\end{frame}
+
+\begin{frame}
+	\frametitle{Policy Recovery}
+	\begin{itemize}
+		\item Search task is to recover a policy $p(u_k | \state_k; \mu)$ or $\policy_\mu(\action_k|\state_k)$
+		%
+		\vspace{0.1in}
+		%		
+%		\item Simulate \textit{cost-to-go} approximation for the unknown transition probabilities and system equations~\eqref{eq:state_eq} using in part  Monte-Carlo simulations
+%		%
+%		\vspace{0.1in}
+		%		
+		\item Simulate state-action \textit{cost-to-go} approximation of running beam trajectories by drawing samples from
+		%
+		\begin{align}
+		Q_k(\state_k, u_k) = \mathbb{E}\left[g_k(\state_k, u_k, w_k) + J_{k+1}(\state_k+1)\right]
+		\label{eq:q_est}
+		\end{align}
+		%		
+		\item Average $Q_k(\state_k, u_k)$ costs of each control $u_k \in U_k(\state_k)$ to obtain an estimate $\bar{Q}_k(\state_k, u_k)$
+		%
+		\vspace{0.1in}
+		%
+		\item Find approximate rollout control $\bar{\mu}_k(\state_k)$ from the minimization 
+		\begin{align}
+		\bar{\mu}_k(\state_k) = \arg \min_{u_k \in U_k(\state_k)} \bar{Q}_k(\state_k, u_k).
+		\end{align}
+		
+	\end{itemize}
+	\footnotetext{\tiny Policy distributed over controls, $u_k$,  conditioned on the states, $\state_k$, and parameterized by a rollout (tree) policy, $\mu$. $J_{k+1}(\state_k+1)$ denotes the cost of  running the base policy starting from $\state_{k+1}$, and $g_k(\state_k, u_k, w_k)$ is the cost of running the current tree policy. }
+\end{frame}
+
+\begin{frame}
+	\frametitle{Monte-Carlo Tree Search Stages}
+	\begin{itemize}
+%		\item Repeat $t \rightsquigarrow \infty$
+%		\begin{itemize}
+%			\item Select $\rhd$ Expand $\rhd$ Simulate $\rhd$ Backup
+%		\end{itemize}
+		\item Simulate single agent games from $\state_0$ up to a fixed depth with child selection policy 
+		%
+%		\vspace{0.1in}
+%		%
+%		\item Find allocation rule for determining the state transitions 
+		%
+		\vspace{0.1in}
+		%
+		\item As search progresses towards convergence given simulation length, bound worst possible bias by a quantity that converges to zero
+		%
+		\vspace{0.1in}
+		%
+		\item Rewrite \eqref{eq:q_est} as
+		\begin{align}
+		\bar{\mu}_k^\star(\state_k) = \bar{\mu}_k(\state_k)n \pm \mu_j \sum_{j=1}^{K}\bb{E}[T_j(n)]
+		\label{eq:regret}
+		\end{align}
+		%
+		\item UCT single player: %following ~\cite{SPMCTS}'s recommendation
+		\begin{align}
+		\bar{Q}(\state_k, \action_k) = {Q}_j(\state_k, \action_k) + c_p \cdot \pi(\state_k) \sqrt{\dfrac{ln \, N_p}{1+N_c}} + \kappa% \sqrt{\dfrac{\sum x^2 - N_p {\bar{\mu}_k}^2+\kappa}{N_c}}
+		%\bar{\mu}_k^\star(\state_k) = \bar{\mu}_k + c_p \sqrt{\dfrac{ln \, N_p}{N_c}} + \sqrt{\dfrac{\sum x^2 - N_p {\bar{\mu}_k}^2+\kappa}{N_c}}
+		\label{eq:spmcts}
+		\end{align}
+	\end{itemize}
+	\footnotetext{\tiny Child selection policy drawn from $\{\mu_0, \ldots, \mu_{N-1}\}$.}
+\end{frame}
+
+\newcommand{\putdosejbme}[2]{\includegraphics[width=.45\columnwidth,height=.35\columnwidth]{../../../BOO/figures_mcts/#1}}
+\newcommand{\dosejbmewidth}{.45}
+\begin{frame}
+	\frametitle{Results: Dose distribution on select prostate cases}
+	\centering
+	%
+	\begin{tabular}{c@{}c@{}}
+		\putdosejbme{Case008/dose.png}{\dosejbmewidth} &
+		\putdosejbme{Case023/dose.png}{\dosejbmewidth} 
+	\end{tabular}
+	%
+	\begin{tabular}{c@{}c@{}}
+		\putdosejbme{Case035/dose.png}{\dosejbmewidth} & 
+		\putdosejbme{Case040/dose.png}{\dosejbmewidth}
+	\end{tabular}
+\end{frame}
+
+\newcommand{\putdvhii}[2]{\includegraphics[width=\linewidth, height=.7\columnwidth]{../../../BOO/figures_mcts/#1}}
+\begin{frame}
+\frametitle{DVH curves comparison}
+	\centering
+	%
+	\begin{columns}[c]
+		\begin{column}{.5\textwidth}
+			\putdvhii{Case008/dvh_7.png}{\dosewidth} 
+		\end{column}
+		%
+		\begin{column}{.5\textwidth}
+			\putdvhii{Case023/dvh_8.png}{\dosewidth} 
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{DVH curves comparison}
+\centering
+\begin{columns}[c]
+	\begin{column}{.5\textwidth}
+		\putdvhii{Case030/dvh_2.png}{\dosewidth} 
+	\end{column}
+	%
+	\begin{column}{.5\textwidth}
+		\putdvhii{Case035/dvh_5.png}{\dosewidth} 
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{DVH curves comparison}
+	\centering
+	%
+	\begin{columns}[c]
+		\begin{column}{.5\textwidth}
+			\putdvhii{Case040/dvh_2.png}{\dosewidth} 
+		\end{column}
+		%
+		\begin{column}{.5\textwidth}
+			\putdvhii{Case057/dvh_9.png}{\dosewidth} 
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{DVH curves comparison}
+\centering
+%
+\begin{columns}[c]
+	\begin{column}{.5\textwidth}
+		\putdvhii{Case087/dvh_9.png}{\dosewidth}
+	\end{column}
+	%
+	\begin{column}{.5\textwidth}
+		\putdvhii{Case091/dvh_1.png}{\dosewidth} 
+	\end{column}
+\end{columns}
+\end{frame}
+
+\section{Future Work}

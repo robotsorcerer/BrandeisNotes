@@ -1,0 +1,511 @@
+\section{Deformation}
+\begin{frame}
+\frametitle{Model of a 6-DOF SoRo Mechanism}
+\centering
+Page left blank intentionally.
+\end{frame}
+
+\begin{frame}
+\frametitle{Existing Modeling Approaches}
+\begin{itemize}
+	\tiny
+	\item Finite element modeling:~\cite{Nesme2005, Nesme2006, JamesBern, GentBook}
+	%
+	\vspace{0.1in}
+	%
+	\item Constant curvature approaches:~\cite{Hannan2003, Hannan2000, Jones2006} 
+	%
+	\vspace{0.1in}
+	%
+	\item Piecewise constant curvature model:~\cite{Jones2006}
+	%
+	\vspace{0.1in}
+	%
+	\item Cosserat brothers' beam theory:~\cite{Renda2014Cosserat, TrivediCosserat}
+	%
+	\item Non-constant curvature approaches
+	%
+	\vspace{0.1in}
+	%
+	\begin{itemize}
+		\tiny
+		\item Continuum approximation of hyper-redundant sytems \eg~\cite{HyperMochi, Chirikjian1995, Chirikjian1994}, 
+		%
+		\vspace{0.1in}
+		%
+		\item Spring-mass models for semi-rigid robots:~\cite{yekutieli2005dynamic, zheng2012dynamic}, 
+		%
+		\vspace{0.1in}
+		%
+		\item Geometric continuum models:~\cite{boyer2006macro, GentBook, OgdenBook, SedalFREE2018, Holzapfel2000, rucker2010geometrically, Demirkoparan}
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{A Continuum Mechanics Model for IAB Deformation}
+\begin{itemize}
+	\item \textbf{Context}: Model-based approaches generally give better material responses
+	%
+	\vspace{0.1in}
+	%
+	\item \textbf{Contributions}
+	
+	\begin{itemize}
+		\item Finite elastic (geometric continuum)  model for IAB deformation
+		%
+		\vspace{0.1in}
+		%
+		\item Component stresses, internal pressurization, and particle positions/velocities
+		%
+		\vspace{0.1in}
+		%
+		\item Synthesis of IAB contact velocities and head motion: manipulation dynamics, selection maps, and contact forces
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{IAB Kinematics}
+\centering 
+	\begin{columns}[c]
+	\begin{column}{.5\textwidth}
+		\includegraphics[width=0.9\linewidth]{../../../PhDThesis/figures/head_on_4iab.png}
+	\end{column}
+	%	
+	\begin{column}{.5\textwidth}
+		\-
+		\hspace{0.25em}
+		\includegraphics[width=0.9\linewidth]{../../../PhDThesis/figures/IAB_Head.png}
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Fibers and deformation}
+	\begin{itemize}
+		\item  The rate of deformation from a  configuration $\mc{B}_0$ to a current configuration $\mc{B}$ in component form
+		%
+		\begin{align}
+		\text{dx}_i &= \dfrac{\partial x_i}{\partial X_\alpha} \text{dX}_\alpha,
+		\text{  with invariant form }
+		\textbf{dx} = \textbf{FdX} \nonumber \\ %\text{ or } \deformationgrad = \bm{\nabla} \otimes \currconf(\textbf{X})
+		&\text{
+			for an observer \textbf{O} in \eg basis }\{E_\alpha\} \nonumber
+		\end{align}
+		%
+		\item A \textit{material line element} (a fiber) $\textbf{dX}$ at a point \textbf{X}  are  particles lying along $\fiber$ at a point $\textbf{X}$ of a soft body
+		%
+		\vspace{0.1in}
+		%
+		\item $\fiber \neq 0 \implies \deformationgrad \fiber \neq 0$ for all  $\fiber \neq 0$. Therefore, $\deformationgrad$ 		must be a non-singular 	tensor, imposing the restriction, $\text{ det }\deformationgrad \neq 0$
+	\end{itemize}
+\end{frame}
+
+%\begin{frame}
+%	\frametitle{Isochoricity and Incompressibility}
+%	\begin{itemize}
+%		\item If the volume does not change locally during deformation at \textbf{X}, then
+%		\begin{align}
+%		J \equiv \text{det } \deformationgrad = 1
+%		\label{eq:isochoric}
+%		\end{align} 
+%		%			
+%		\item Permanent isochoricity and incompressibility constraints
+%		%
+%		\begin{align}
+%			C(\deformationgrad) \equiv \text{det } \deformationgrad - 1 = 0 
+%		\end{align}
+%	\end{itemize}
+%\end{frame}
+
+\begin{frame}
+	\frametitle{Deformation Analysis of a Soft Continuum Robot}
+	\begin{figure}[!tb]
+		\centering
+		\begin{minipage}[b]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{../../../PhDThesis/figures/spherical_coords_ref.png}
+			%\small $R_i \le R \le R_o, \quad 0 \le \Theta \le 2\pi, \quad 0 \le \Phi \le \pi$
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.50\textwidth}
+			\includegraphics[scale=0.4, width=\textwidth]{../../../PhDThesis/figures/spherical_coords.png}
+		\end{minipage}
+		%{Deformation in spherical polar coordinates.}
+		\label{fig:spherical_coords}
+	\end{figure}
+	%
+	with
+	%
+	\begin{align}
+	R_i \le R \le R_o, \, 0 \le \Theta \le 2\pi, \, 0 \le \Phi \le \pi  \nonumber \\
+ 	r_i \le r \le r_o, \, 0 \le \theta \le 2\pi,  \, 0 \le \phi \le \pi
+	\label{eq:polar_coordinates_ref}
+	\end{align}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Deformation Analysis}
+%
+\begin{figure}[!tb]
+	\centering
+	\begin{minipage}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{../../../PhDThesis/figures/deformation_ref.png}
+		%\caption{Spherical Polar Coordinates in Reference Configuration.}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{../../../PhDThesis/figures/deformation_curr.png}
+	\end{minipage}
+	%{Radii change under deformation with preservation of radial symmetry}
+	\label{fig:radii_change}
+\end{figure}
+%
+\begin{itemize}
+	\item  An isochoric homogeneous deformation implies
+\end{itemize}
+%
+\begin{align}
+\dfrac{4}{3}\pi\left(R^3 - R_i^3\right) &= \dfrac{4}{3}\pi\left(r^3 - r_i^3\right),\,\theta = \Theta \,\, \phi = \Phi \nonumber \\
+	 r^3 &= R^3 + r_i^3 - R_i^3, \,\, \theta = \Theta, \,\, \phi = \Phi
+\label{eq:spherical_transformation}
+\end{align}
+\end{frame}
+
+\begin{frame}
+\frametitle{Stored Energy Invariants and Principal Ratios}
+\begin{itemize}
+	\item Spherically symmetric deformation implies coincidence of the \textit{Lagrangean} and \textit{Eulerian} axes 
+	%
+	\vspace{0.1in}
+	%
+	\item Thus, principal ratios  along azimuthal and zenith axes is $\lambda_\theta = \lambda_\phi = r/R$
+	%
+	\vspace{0.1in}
+	%
+	\item We have $\lambda_r\lambda_\phi\lambda_\theta=1$ from the incompressibility of the IAB material. Thus, $\lambda_r = \frac{R^2}{r^2}$ so that 
+	%\begin{tcolorbox}[title=Stored Energy Invariants (Mooney Form)]
+	\begin{align}
+	I_1 = \lambda_r^2 + \lambda_\phi^2 + \lambda_\theta^2, \, \text{ and } \, I_2 =  \lambda_r^{-2} + \lambda_\phi^{-2} + \lambda_\theta^{-2}.
+	\label{eq:invariants}
+	\end{align}
+	%\end{tcolorbox}
+	%
+\end{itemize} 
+%
+\end{frame}
+
+\begin{frame}
+	\frametitle{Strain Tensor and Deformation Gradient}
+	%
+	\begin{itemize}
+		\item Mooney-Rivlin strain energy form for small deformations:
+		\begin{align}
+		\strain = \frac{1}{2}C_1(I_1-3) + \frac{1}{2}C_2(I_2-3).
+		\label{eq:Mooney}
+		\end{align}
+%		\begin{itemize}
+%			\item \small \eqref{eq:Mooney} is valid even for large elastic deformations of incompressible and isotropic materials~\cite{Rivlin1950}
+%		\end{itemize}
+%
+\vspace{0.1in}
+%
+		\item  Deformation gradient in spherical polar coordinates
+	\end{itemize}
+\begin{align}
+\deformationgrad &= \lambda_r \basis_r \otimes \basis_R + \lambda_\phi \basis_\phi \otimes \basis_\Phi + \lambda_\theta \basis_\theta \otimes \basis_\Theta \nonumber \\
+%
+\deformationgrad &= \frac{R^2}{r^2}  \basis_r \otimes \basis_R + \frac{r}{R} \basis_\phi \otimes \basis_\Phi + \frac{r}{R} \basis_\theta \otimes \basis_\Theta.		
+\label{eq:deformation_grad}
+\end{align}
+%
+	\begin{align}
+	\leftcauchy   &= \deformationgrad \, \deformationgrad^T &:= \text{Left Cauchy-Green deformation tensor} \nonumber \\ 
+	\rightcauchy &= \deformationgrad^T\deformationgrad &:= \text{Right Cauchy-Green deformation tensor}  \nonumber
+	\end{align}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Stress Laws and Constitutive Equations}
+	\centering
+	\includegraphics[width=.45\columnwidth]{../../../PhDThesis/figures/Fibre.png}
+	\includegraphics[width=.5\columnwidth]{../../../PhDThesis/figures/Fibre3d.png}
+	\tiny{Stress distribution on the internal continuum's differential surface, $dS$.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Invariants of Deformation}
+		%
+	%\begin{tcolorbox}[title=IAB Invariants]
+		\begin{align}
+		I_1 &= \trace{\rightcauchy} =  \dfrac{R^4}{r^4} + \dfrac{2 \, r^2}{R^2};  \,
+		%
+		I_2 = \textbf{tr}\left(\rightcauchy^{-1}\right) = \dfrac{r^4}{R^4} + \dfrac{2 \, R^2}{r^2}.
+		\end{align}
+		\label{eq:invariants_polar}
+	%\end{tcolorbox}
+	%
+	For a constrained elastic material, we have the following constitutive relation 
+	%
+\begin{align}
+\cauchystress &= \materialresponse(\deformationgrad) + q \deformationgrad \dfrac{\partial \bm{\Lambda}}{\partial \deformationgrad}(\deformationgrad) \nonumber \\
+&= \materialresponse(\deformationgrad) - p \deformationgrad \deformationgrad^{-T}  \text{det}(\deformationgrad) \nonumber \\
+&= \materialresponse(\deformationgrad) - p \identity %\text{det}(\deformationgrad)
+\label{eq:cauchy_stress2}
+\end{align}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Cauchy stress and hydrostatic pressure}
+	%
+	In terms of the stored strain energy, we have the stress tensor field as
+	\begin{align}
+	\cauchystress &= \begin{bmatrix}
+	\stresscomp_{rr} &  \stresscomp_{r\phi} &  \stresscomp_{r\theta}  \\
+	\stresscomp_{\phi r} &   \stresscomp_{\phi \phi}  &   \stresscomp_{\phi \theta}  \\
+	\stresscomp_{\theta r} &     \stresscomp_{\theta \phi} &     \stresscomp_{\theta \theta}
+	\end{bmatrix} = \dfrac{\partial W}{\partial \deformationgrad} \deformationgrad^T - p\identity, 
+	%&= C_1 \leftcauchy - C_2 \rightcauchy^{-2}  - p\identity (\text{ see derivation in thesis.})\nonumber 
+	\label{eq:cauchy_stress}
+	\end{align}
+	%
+	or
+%	\begin{tcolorbox}[title=Stress-Strain Constitutive Law]
+		\begin{align}
+		\cauchystress &= C_1 \leftcauchy - C_2 \rightcauchy^{-2} - p \identity
+		\label{eq:stress_constitutive}
+		\end{align}
+	where $C_1, C_2$ are appropriate choices of the IAB material moduli; %so that the normal stress components are 
+	%
+	\begin{subequations}
+		\begin{align}
+		\stresscomp_{rr} &= -p + C_1 \dfrac{R^4}{r^4} - C_2 \dfrac{r^8}{R^8} \\
+		\stresscomp_{\theta \theta} = \stresscomp_{\phi \phi} &= -p + C_1 \dfrac{r^2}{R^2} - C_2 \dfrac{R^8}{r^8} 
+		\end{align}
+		\label{eq:stress_compos}
+	\end{subequations}
+%	\end{tcolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Contact-Free BVP for IAB Deformation}
+	\begin{itemize}
+		\item \small Consider an IAB with boundary conditions,
+		%
+		\begin{align}
+		\stresscomp_{rr}|_{R=R_o} = -P_\text{atm}, \quad \stresscomp_{rr}|_{R=R_i} = -P_\text{atm} - P
+		\label{eq:boundary_conds}
+		\end{align}
+		%
+		\item \small{If the stress components, $\stresscomp_{ij}$, satisfy hydrostatic equilibrium,  equilibrium equations for the body force $\bm{b}'s$ physical component vectors, $b_r, b_\theta, b_\phi$ are}
+		%
+		\begin{subequations}
+			\tiny{
+			\begin{align}
+			-b_r &= \frac{1}{r^2}\frac{\partial}{\partial r}(r^2 \stresscomp_{rr}) + \frac{1}{r \sin\phi}\frac{\partial}{\partial \phi}(\sin \phi \stresscomp_{r \phi}) + \frac{1}{r \sin\phi}\frac{\partial}{\partial \theta}(\stresscomp_{r \theta}) -  \frac{1}{r}(\stresscomp_{\theta\theta}+ \stresscomp_{\phi \phi})
+			\label{eq:polar_coord_a}
+			\\
+			-b_\phi &= \frac{1}{r^3}\frac{\partial}{\partial r}(r^3 \stresscomp_{r\phi}) + \frac{1}{r \sin\phi}\frac{\partial}{\partial \phi}(\sin \phi \stresscomp_{\phi \phi}) + \frac{1}{r \sin\phi}\frac{\partial}{\partial \theta}(\stresscomp_{\theta \phi}) -  \frac{\cot \phi}{r}(\stresscomp_{\theta\theta})
+			\label{eq:polar_coord_b}
+			\\
+			-b_\theta &= \frac{1}{r^3}\frac{\partial}{\partial r}(r^3 \stresscomp_{\theta r}) + \frac{1}{r \sin^2\phi}\frac{\partial}{\partial \phi}(\sin^2 \phi \stresscomp_{\theta \phi}) + \frac{1}{r \sin\phi}\frac{\partial}{\partial \theta}(\stresscomp_{\theta \theta})
+			\label{eq:polar_coords_c}
+			\end{align}
+		}
+			\label{eq:polar_coords}
+		\end{subequations}
+	%
+	\item \small Cauchy's 1st law of motion
+	\begin{align}
+	\text{div } \cauchystress^T  + \rho \textbf{b} = \rho \dot{\textbf{v}}
+	\label{eq:cauchy_law1}
+	\end{align}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Stress at Hydrostatic Equilibrium}
+	\begin{itemize}
+		\item Equilibrium therefore implies that %$\textbf{div } \cauchystress = 0$
+		%
+		\[
+		\textbf{div } \cauchystress = 0
+		\]
+		%
+		\[
+		\small
+		\frac{1}{r}\frac{\partial}{\partial r}(r^2 \stresscomp_{rr}) = (\stresscomp_{\theta\theta}+ \stresscomp_{\phi \phi})
+		\]
+		\item Whereupon,
+		%
+		\begin{align}
+		\small
+		P  &=  2 C_1\int_{R_i}^{R_\circ} 			\left(\frac{1}{r}-\frac{R^6}{r^{7}}\right)dR+2C_2\int_{R_i}^{R_\circ} \left(\frac{r^{5}}{R^6} - \frac{R^{10}}{r^{11}}\right)  dR \nonumber \\
+			&\equiv \int_{r_i}^{r_\circ} \left[2 C_1\left(\frac{r}{R^2}-\frac{R^4}{r^{5}}\right)+2 C_2\left(\frac{r^{7}}{R^8} - \frac{R^{8}}{r^{9}}\right)\right]  dr. %, \quad r_i \le r \le r_\circ
+		\label{eq:internal_pressure}
+		\end{align}
+		%
+		\item \eqref{eq:internal_pressure} completely determines the deformation kinematics of the IAB material at rest. 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Example I: IAB Deformation (Extension)}
+	\centering
+		\begin{tabular}{@{}c@{}c@{}c@{}}
+		\toprule
+		& Deformation Parameters & \\
+		\midrule
+		$C_1=11,000$ &  $C_2 = 22,000$ & $R_i = 10cm, \, r_i = 13cm$ \\
+		%
+		$R_\circ = 15cm$ & $r_\circ = 16.60cm$ &  $P = 14.52 psi$  
+		%
+		\\
+		\midrule
+		\bottomrule
+	\end{tabular}
+	%
+	\centering
+	\includegraphics[width=\columnwidth]{../../../PhDThesis/figures/deformation/mesh_1.png}
+\centering 
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Example I: Deformation (Extension) Results}
+	\centering
+	\begin{tabular}{@{}c|@{}|c@{}}
+		\toprule
+		%& Deformation Results & \\
+		\midrule 
+		Mesh Time: $0.8838$s  & Total Time: $4.7782$s \\
+		%
+		$\nu=0.45$ & $\rho = 9.8446\times 10^{-4} kG/m^3$ 
+		%
+		\\
+		\midrule
+		\bottomrule
+	\end{tabular}
+\includegraphics[width=\columnwidth]{../../../PhDThesis/figures/deformation/xyz_1.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example II: IAB Deformation (Extension)}
+\centering
+\begin{tabular}{@{}c@{}c@{}c@{}}
+	\toprule
+	& Deformation Parameters & \\
+	\midrule
+	$C_1=500,000$ &  $C_2 = 1,000,000$ & $R_i = 7.5cm, \, r_i = 12cm$ \\
+	%
+	$R_\circ = 10 cm$ & $r_\circ = 13.21cm$ & $P = 14.5193 psi$  
+	%
+	\\
+	\midrule
+	\bottomrule
+\end{tabular}
+%
+\centering
+\includegraphics[width=\columnwidth]{../../../PhDThesis/figures/deformation/mesh_1.png}
+\centering 
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Example II: Deformation Results (Extension)}
+\centering
+\begin{tabular}{@{}c|@{}|c@{}}
+\toprule
+%& Deformation Results & \\
+\midrule 
+Mesh Time: $.9143$s  & Total Time: $4.1445$s \\
+%
+$\nu=0.4995$ & $\rho = 10^{-4}\,kg/m^3$ 
+%
+\\
+\midrule
+\bottomrule
+\end{tabular}
+\includegraphics[width=\columnwidth]{../../../PhDThesis/figures/deformation/xyz_2.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example III: IAB Deformation (Compression)}
+\centering
+\begin{tabular}{@{}c@{}c@{}c@{}}
+	\toprule
+	& Deformation Parameters & \\
+	\midrule
+	$C_1=500,000$ &  $C_2 = 1,200,000$ & $R_i = 12cm, \, r_i = 10cm$ \\
+	%
+	$R_\circ = 15 cm$ & $r_\circ = 13.83cm$ & $P = -27.3631 \, \text{psi}$ 
+	%
+	\\
+	\midrule
+	\bottomrule
+\end{tabular}
+%
+\centering
+\includegraphics[width=\columnwidth]{../../../PhDThesis/figures/deformation/mesh_3.png}
+\centering 
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Example III: Deformation Results (Compression)}
+\centering
+\begin{tabular}{@{}c|@{}|c@{}}
+\toprule
+%& Deformation Results & \\
+\midrule 
+Mesh Time: $.8625$s  & Total Time: $4.5338$s \\
+%
+$\nu=0.45$  &  $\rho = 12\times10^{-4}\,kg/m^3$ 
+%
+\\
+\midrule
+\bottomrule
+\end{tabular}
+\includegraphics[width=\columnwidth]{../../../PhDThesis/figures/deformation/xyz_3.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example IV: IAB Deformation (Compression)}
+\centering
+\begin{tabular}{@{}c@{}c@{}c@{}}
+	\toprule
+	& Deformation Parameters & \\
+	\midrule
+	$C_1=1.1e12$ &  $C_2 = 2.2e10$ & $R_i = 10cm, \, r_i = 8cm$ \\
+	%
+	$R_\circ = 19 cm$ & $r_\circ = 18.54 cm$ & $P = -27.3631 \text{psi}$ 
+	%
+	\\
+	\midrule
+	\bottomrule
+\end{tabular}
+%
+\centering
+\includegraphics[width=\columnwidth]{../../../PhDThesis/figures/deformation/mesh_4.png}
+\centering 
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Example IV: Deformation Results (Compression)}
+\centering
+\begin{tabular}{@{}c|@{}|c@{}}
+\toprule
+%& Deformation Results & \\
+\midrule 
+Mesh Time: $0.823576$s  & Total Time: $4.5098$s \\
+%
+$\nu=0.495$  &  $\rho = 2.0\times 10^{-5} \,kg/m^3$ 
+%
+\\
+\midrule
+\bottomrule
+\end{tabular}
+\includegraphics[width=\columnwidth]{../../../PhDThesis/figures/deformation/xyz_4.png}
+\end{frame}

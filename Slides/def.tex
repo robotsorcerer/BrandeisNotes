@@ -1,0 +1,509 @@
+\definecolor{light-blue}{rgb}{0.30,0.35,1}
+\definecolor{light-green}{rgb}{0.20,0.49,.85}
+\definecolor{purple}{rgb}{0.70,0.69,.2}
+
+\newcommand{\lb}[1]{\textcolor{light-blue}{#1}}
+\newcommand{\bl}[1]{\textcolor{blue}{#1}}
+
+\newcommand{\maybe}[1]{\textcolor{gray}{\textbf{MAYBE: }{#1}}}
+\newcommand{\inspect}[1]{\textcolor{cyan}{\textbf{CHECK THIS: }{#1}}}
+\newcommand{\more}[1]{\textcolor{red}{\textbf{MORE: }{#1}}}
+%\renewcommand{\figureautorefname}{Figure}
+%\renewcommand{\sectionautorefname}{$\S$}
+%\renewcommand{\equationautorefname}{equation}
+%\renewcommand{\subsectionautorefname}{$\S$}
+%\renewcommand{\chapterautorefname}{Chapter}
+
+% FYA
+\newcommand{\cmt}[1]{{\footnotesize\textcolor{red}{#1}}}%{#2}
+%\newcommand{\note}[1]{\cmt{Note: #1}}
+\newcommand{\todo}[1]{\textcolor{cyan}{TO-DO: #1}}
+\newcommand{\lekan}[1]{\cmt{\textbf{LO}: #1}}
+\newcommand{\nick}[1]{\cmt{\textbf{NG}: #1}}
+\newcommand{\mike}[1]{\cmt{\textbf{Mike}: #1}}
+\newcommand{\steve}[1]{\cmt{\textbf{SJ}: #1}}
+\newcommand{\review}[1]{\noindent\textcolor{red}{$\rightarrow$ #1}}
+\newcommand{\response}[1]{\noindent{#1}}
+\newcommand{\stopped}[1]{\color{red}STOPPED HERE #1\hrulefill}
+
+%Text commands
+\newcounter{mnote}
+\newcommand{\marginote}[1]{\addtocounter{mnote}{1}\marginpar{\themnote. \scriptsize #1}}
+\setcounter{mnote}{0}
+% \newcommand{\comment}[1]{}
+\newcommand{\ie}{$i.e.,$\ }
+\newcommand{\eg}{e.g.\ }
+\newcommand{\cf}{c.f.\ }
+\newcommand{\yes}{\checkmark}
+\newcommand{\no}{\ding{55}}
+
+%Reference commands
+\newcommand{\flabel}[1]{\label{fig:#1}}
+\newcommand{\seclabel}[1]{\label{sec:#1}}
+\newcommand{\tlabel}[1]{\label{tab:#1}}
+\newcommand{\elabel}[1]{\label{eq:#1}}
+\newcommand{\alabel}[1]{\label{alg:#1}}
+\newcommand{\fref}[1]{\cref{fig:#1}}
+\newcommand{\sref}[1]{\cref{sec:#1}}
+\newcommand{\tref}[1]{\cref{tab:#1}}
+\newcommand{\eref}[1]{\cref{eq:#1}}
+\newcommand{\aref}[1]{\cref{alg:#1}}
+
+%Math commands
+\newcommand*\idx[2][]
+{
+\def\next{#1}%
+\ifx\empty\next
+  (#2)
+\else
+  (#1, #2)
+\fi
+}
+\newcommand*\elt[3][]
+{
+\def\next{#1}%
+\ifx\empty\next
+  #2\idx{#3}
+\else
+  #1\idx{#2,#3}
+\fi
+}
+\newcommand*\pd[3][]
+{
+\def\next{#1}%
+\ifx\empty\next
+  \frac{\partial#2}{\partial #3}
+\else
+  \frac{{\partial^{#1} #2}}{\partial#3^{#1}}
+\fi
+}
+\newcommand*\pdn[3]
+{
+\frac{{\partial#1}^{#3}}{\partial^{#3} #2}
+}
+% \newcommand{\wtsa}{\theta_{\infn}}
+% \newcommand{\wtsb}{\theta_{\outfn}}
+\newcommand{\bull}[1]{$\bullet$ #1}
+\newcommand{\argmax}{\text{argmax}}
+\newcommand{\argmin}{\text{argmin}}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\deq}{\mathrel{\stackrel{\text{\tiny{def}}}{=}}}
+\newcommand{\opequals}[1]{\ #1\hspace{-3pt}=\hspace{1pt}}
+\newcommand{\plusequals}{\opequals{+}}
+\newcommand{\minusequals}{\opequals{-}}
+\newcommand{\timesequals}{\opequals{*}}
+% \newcommand{\minusequals}{\ -\hspace{-3.2pt}=\hspace{1pt}}
+% \newcommand{\timesequals}{\ *\hspace{-3.2pt}=\hspace{1pt}}
+\newcommand{\front}[1]{beg(#1)}
+\newcommand{\back}[1]{end(#1)}
+\newcommand{\stddev}{\sigma}
+\newcommand{\variance}{\stddev^2}
+\newcommand{\ifelse}[3]{\begin{cases}#1 \text{ if } #2\\#3 \text{ otherwise}\end{cases}}
+
+
+%Figure commands
+\newcommand{\figdir}{figures/}
+\newcommand{\capt}[2]{\caption[#1]{#1#2}}
+\newcommand{\qcapt}[1]{\capt{#1}{}}
+\newcommand{\figheadingnospace}[1]{\center{\textbf{#1}}}
+\newcommand{\figheading}[1]{\figheadingnospace{#1}\vspace{3mm}}
+\newcommand{\fig}[5]
+{
+\begin{figure}
+\begin{center}
+\includegraphics[width=#3\columnwidth]{figures/#1}
+\end{center}
+\capt{#4}{#5}
+\flabel{#2}
+\end{figure}
+}
+\newcommand{\figtbph}[5]
+{
+\begin{figure}[tbph]
+\begin{center}
+\includegraphics[width=#3\columnwidth]{figures/#1}
+\end{center}
+\capt{#4}{#5}
+\flabel{#2}
+\end{figure}
+}
+\newcommand{\figt}[5]
+{
+\begin{figure}[tb]
+\begin{center}
+\includegraphics[width=#3\columnwidth]{figures/#1}
+\end{center}
+\capt{#4}{#5}
+\label{#2}
+\end{figure}
+}
+\newcommand{\figstar}[5]
+{
+\begin{figure*}
+\begin{center}
+\includegraphics[width=#3\textwidth]{figures/#1}
+\end{center}
+\capt{#4}{#5}
+\flabel{#2}
+\end{figure*}
+}
+\newcommand{\qfig}[3]{\fig{#1}{#1}{#2}{#3}{}}
+
+\def\tidx{t}
+%\def\value{V}
+% from https://www.cs.jhu.edu/~jason/advice/write-the-paper-first.html
+\newcommand{\Note}[1]{}
+\renewcommand{\Note}[1]{\hl{[#1]}}  % comment out this definition to suppress all Notes
+\newcommand{\NoteSigned}[3]{{\sethlcolor{#2}\Note{#1: #3}}}
+\newcommand{\NoteLO}[1]{\NoteSigned{LO}{YellowGreen}{#1}}  % use for notes from Lekan
+\newcommand{\NoteDN}[1]{\NoteSigned{DN}{LightBlue}{#1}}    % use for notes from Dan
+
+%\algnewcommand\algorithmicforeach{\textbf{for each}}
+%\algdef{S}[FOR]{Foreach}[1]{\algorithmicforeach\ #1\ \algorithmicdo} %
+
+\newcommand{\bolditalic}[1]{\textbf{#1}}
+
+% BOO defos
+\def\control{\textbf{u}}
+\def\action{\text{\textit{u}}} 
+\def\state{\text{\textbf{y}}} 
+\def\netstate{s}
+\def\statenext{\text{\textit{s}}_{\tidx+1}} 
+\def\reward{\text{\textit{r}}} 
+\def\dosegrid{4^\circ}
+\def\actionspace{\mc{U}}
+\def\buf{\mc{W}}
+\def\capmax{\mc{M}}
+\def\patient{\text{\textit{p}}}
+\def\patients{\text{\textit{P}}}
+\def\slice{\text{\textit{N}}}
+\def\beamangle{\theta}
+\def\beamlets{\mc{B}}
+\def\dosemat{\mc{D}}
+\def\voxtot{\mc{X}}
+\def\dij{\dosemat_{ij}}
+\def\beamsall{\bm{\Theta}}
+\def\experience{\bf{\textit{e}}}
+\def\qfunc{\textit{Q}}
+%\def\neti{\qfunc_{{\text{\textit{net}}}_\textit{1}}}
+\def\neti{\bm{f_\psi}}
+\def\netii{g_\phi}
+\def\bixel{x}
+%\def\netii{\qfunc_{{\text{\textit{net}}}_\textit{2}}}
+\def\acti{\action_\tidx}
+\def\actii{\action_\tidx^2}
+\def\optimalval{v^\star(\textit{s})}
+\def\beamblock{\textbf{\textit{B}}}
+\def\featureplanes{\textbf{\textit{X}}}
+\def\dosemask{\textbf{\textit{D}}}
+\def\lastfeatureplane{\textbf{\textit{E}}}
+\def\featurebinmask{\textbf{\textit{Y}}}
+
+% DP defs
+\def\stateset{\mc{X}}
+\def\cost{Q} % cost to go
+\def\basis{\bm{e}}
+\def\policy{\bm{\pi}}
+\def\policyimproved{\bar{\policy}}
+\def\policyspace{\bm{\Pi}}
+\def\visitcount{\mathds{N}(\netstate, \action)}
+\def\netprobs{P(\state,	\action)}
+
+\def\valuenet{v_\psi(\state)}
+\def\probneti{p(\netstate, \action)}
+
+
+% Tree defs
+\def\treepol{\bm \pi_z}
+\def\explorefactor{c}
+\def\uval{U(\netstate, \action)}
+\def\node{\textbf{\textit{x}}}
+\def\newnode{\bar \node}
+\def\pointerparent{\textit{\node.p}}
+\def\pointerchild{\textit{\node.child}}
+
+%BADMM settings
+\def\lagrangian{\mc{L}}
+\def\primal{\textbf{\textit{x}}} 
+\def\admmvar{\textbf{\textit{z}}}
+\def\dual{\bm{\lambda}}
+\def\Amat{\textbf{\textit{A}}}
+\def\Bmat{\textbf{\textit{B}}}
+\def\cvec{\textbf{\textit{c}}}
+\def\admmpen{\rho}
+\def\kldiv{\textbf{D}_{KL}}
+
+% algo defs
+\def\game{\Gamma}
+
+\newcommand{\subbold}[1]
+{
+	_\textbf{#1}
+}
+
+\newcommand{\supbold}[1]
+{
+	^\textbf{#1}
+}
+
+\newcommand{\xbold}[1]
+{
+	\textbf{#1}
+}
+
+\newcommand{\subsupbold}[3]
+{
+	\textbf{#1} _{#2}^{#3}
+}
+\newcommand{\hatsubsupbold}[3]
+{
+	\hat{\textbf{#1}} _{#2}^{#3}
+}
+
+\newcommand{\symb}[1]
+{
+	${\textbf{#1}}$
+}
+
+\newcommand{\sym}[1]{$#1$}
+\newcommand{\eq}[2]
+{
+	\begin{equation}  \label{#2}
+	\begin{split}  
+	#1
+	\end{split}
+	\end{equation}
+}
+\newcommand{\gam}{\bm{\Gamma}}
+\newcommand{\lamb}{\bm{\Lambda}}
+\newcommand{\neterror}{\bm{\varepsilon}_f}
+\newcommand{\lyap}{\textbf{V}}
+\newcommand{\lyapder}{\dot{\textbf{V}}}
+\newcommand{\processnoise}{\textbf{w}(k)}
+\newcommand{\stateT}{\textbf{y}^T}
+\newcommand{\gainx}{\subsupbold{K}{y}{}}
+\newcommand{\gainxT}{\subsupbold{K}{y}{^T}}
+\newcommand{\gainxdiff}{\tilde{\xbold{K}}_y^T}
+\newcommand{\gainxdiffo}{\tilde{\xbold{K}}_y}
+\newcommand{\gainrdiff}{\tilde{\xbold{K}}_r^T}
+\newcommand{\gainrdiffo}{\tilde{\xbold{K}}_r}
+\newcommand{\gainr}{\subsupbold{K}{r}{}}
+\newcommand{\gainrT}{\subsupbold{K}{r}{^T}}
+\newcommand{\gainxest}{\dot{\hat{\textbf{K}}}_y}
+\newcommand{\gainrest}{\dot{\hat{\textbf{K}}}_r}
+\newcommand{\errorest}{\dot{\hat{\epsilon}}_f}
+\newcommand{\gainxesto}{\hat{\textbf{K}}_y}
+\newcommand{\gainresto}{\hat{\textbf{K}}_r}
+\newcommand{\gammax}{\bm{\Gamma_y}}
+\newcommand{\gammaxT}{\bm{\Gamma_y}^T}
+\newcommand{\gammar}{\bm{\Gamma}_r}
+\newcommand{\gammarT}{\bm{\Gamma}_r^T}
+
+\newcommand{\ttbf}[1]{\textbf{\texttt{#1}}}
+\newcommand{\ttit}[1]{\texttt{#1}}
+
+
+\newcommand{\domain}[1]{\mathcal{#1}}
+
+% ICRA 2018 paper defs
+\def\nomcontrol{\bar{\textbf{u}}}
+\def\nomdist{\bar{\textbf{v}}}
+\def\control{\textbf{u}}
+\def\admcontrol{\mathcal{U}}
+\def\nomstate{\bar{\textbf{x}}}
+\def\state{\textbf{x}}
+\def\admstate{\mathcal{x}}
+\def\stateT{\textbf{x}^T}
+\def\policy{\bm{\pi}}
+\def\param{\bm{\theta}}
+\def\reward{r}
+\def\sumreward{\domain{R}}
+\def\augreward{\ell}
+\def\augsumreward{\ell}
+\def\traj{\bm{\tau}}
+\def\trajboth{\bar{\bm{\tau}}}
+\def\hinf{H_\infty}
+\def\polstoch{\bm{\pi_\param}(\control_t| \state_t)}
+\def\polstochadv{\bm{\pi_\param}(\distbo_t| \state_t)}
+\def\polstochaug{\bm{\pi_\param}(\control_t |\state_t)}
+\def\polstochaugall{\bm{\pi}_{\param i}(\control_t | \state_t)}
+\def\sensy{\bm{\gamma}}
+\def\dist{\textbf{v}}
+\def\distbo{\textbf{v}}
+\def\noise{\textbf{w}}
+\def\entropy{\domain{H}}
+\def\controlcombo{p_{uvi}}
+\def\protcontrol{p(\control_k | \state_k)}
+\def\protcontrolall{p_i(\control_k | \state_k)}
+\def\advcontrol{p(\distbo_k | \state_k)}
+\def\advcontrolall{p_i(\distbo_k | \state_k)}
+\def\jointlocalpolicy{p(\control_k | \distbo_k, \state_k)}
+\def\jointlocalpolicyall{p_i(\control_k | \distbo_k, \state_k)}
+
+
+% dynamics def ICRA18
+
+\def\hinf{H_\infty}
+\def\tidx{t}
+\def\fstate{f_{\state \tidx}}
+\def\fcontrol{f_{\control \tidx}}
+\def\fcontrolcontrol{f_{\control\control \tidx}}
+\def\fcontroldistbo{f_{\control\distbo \tidx}}
+\def\fdistbo{f_{\distbo \tidx}}
+\def\fdistbodistbo{f_{\distbo \distbo \tidx}}
+\def\fdistbostate{f_{\distbo \state \tidx}}
+\def\fcontrolstate{f_{\control \state \tidx}}
+%\def\value{V}
+\def\Vstate{V_{\state \tidx+1}}
+\def\Vstateback{V_{\state \tidx}}
+\def\Vstatestate{V_{\state \state \tidx+1}}
+\def\Vstatestateback{V_{\state \state \tidx}}
+% Q functions
+\def\Qstate{Q_{\state \tidx}}
+\def\Qcontrol{Q_{\control \tidx}}
+\def\Qdistbo{Q_{\distbo \tidx}}
+\def\Qstatestate{Q_{\state \state \tidx}}
+\def\Qstatecontrol{Q_{\state \control \tidx}}
+\def\Qcontrolstate{Q_{\control \state \tidx}}
+\def\Qcontrolcontrol{Q_{\control \control \tidx}}
+\def\Qstatecontrol{Q_{\state \control \tidx}}
+\def\Qcontrolstate{Q_{\control \state \tidx}}
+\def\Qcontrolcontrol{Q_{\control \control \tidx}}
+\def\Qcontroldistbo{Q_{\control \distbo \tidx}}
+%2nd order cross terms
+\def\Qdistbostate{Q_{\distbo \state \tidx}}
+\def\Qdistbodistbo{Q_{\distbo \distbo \tidx}}
+\def\Qstatedistbo{Q_{\state \distbo \tidx}}
+\def\Qdistbostate{Q_{\distbo \state \tidx}}
+\def\Qdistbocontrol{Q_{\distbo \control \tidx}}
+% improved Q functions
+% Q functions
+\def\TQstate{\tilde{Q}_{\state \tidx}}
+\def\TQcontrol{\tilde{Q}_{\control \tidx}}
+\def\TQdistbo{\tilde{Q}_{\distbo \tidx}}
+\def\TQstatestate{\tilde{Q}_{\state \state \tidx}}
+\def\TQstatecontrol{\tilde{Q}_{\state \control \tidx}}
+\def\TQcontrolstate{\tilde{Q}_{\control \state \tidx}}
+\def\TQcontrolcontrol{\tilde{Q}_{\control \control \tidx}}
+\def\TQstatecontrol{\tilde{Q}_{\state \control \tidx}}
+\def\TQcontrolstate{\tilde{Q}_{\control \state \tidx}}
+\def\TQcontrolcontrol{\tilde{Q}_{\control \control \tidx}}
+\def\TQcontroldistbo{\tilde{Q}_{\control \distbo \tidx}}
+%2nd order cross terms
+\def\TQdistbostate{\tilde{Q}_{\distbo \state \tidx}}
+\def\TQdistbodistbo{\tilde{Q}_{\distbo \distbo \tidx}}
+\def\TQstatedistbo{\tilde{Q}_{\state \distbo \tidx}}
+\def\TQdistbostate{\tilde{Q}_{\distbo \state \tidx}}
+\def\TQdistbocontrol{\tilde{Q}_{\distbo \control \tidx}}
+
+% Quadratized costs
+\def\cost{\mathcal{J}} % cost to go
+\def\lstate{\ell_{\state \tidx}}
+\def\lcontrol{\ell_{\control \tidx}}
+\def\ldistbo{\ell_{\distbo \tidx}}
+\def\lstatestate{\ell_{\state \state \tidx}}
+\def\lstatecontrol{\ell_{\state \control \tidx}}
+\def\lcontrolstate{\ell_{\control \state \tidx}}
+\def\lcontrolcontrol{\ell_{\control \control \tidx}}
+\def\lstatecontrol{\ell_{\state \control \tidx}}
+\def\lcontrolstate{\ell_{\control \state \tidx}}
+\def\lcontrolcontrol{\ell_{\control \control \tidx}}
+\def\lcontroldistbo{\ell_{\control \distbo \tidx}}
+%2nd order cross terms
+\def\ldistbostate{\ell_{\distbo \state \tidx}}
+\def\ldistbodistbo{\ell_{\distbo \distbo \tidx}}
+\def\lstatedistbo{\ell_{\state \distbo \tidx}}
+\def\ldistbostate{\ell_{\distbo \state \tidx}}
+\def\ldistbocontrol{\ell_{\distbo \control \tidx}}
+
+%linearized dynamics
+\def\delstate{\delta \state}
+\def\delcontrol{\delta \control}
+\def\delnoise{\delta \noise}
+\def\deldistbo{\delta \distbo}
+
+%  Q and V expanded
+\def\Kbutt{\Qcontrolcontrol^T \Qdistbodistbo - \Qcontroldistbo^T \Qcontroldistbo}
+
+%gain terms
+\def\vectorgain{\textbf{\textit{g}}}
+\def\matrixgain{\textbf{\textit{G}}}
+
+% optimal policies
+\def\optimcont{\pi_{\control}^\star}
+\def\optimdistbo{\pi_{\distbo}^\star}
+\def\udist{p_{\control_i}}
+\def\vdist{p_{\distbo_i}}
+\def\param{\bm{\theta}}
+%\def\noise{\textbf{w}_t}
+\def\blim{B_{\text{lim}}}
+\def\ball{B_{\text{tot}}}
+
+
+% RAL defs
+
+%\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\def\coriolis{\textbf{\textit{C}}}
+\def\massinertia{\textbf{\textit{M}}}
+\def\torque{\bm{\tau}}
+\def\frictionvec{\textbf{\textit{f}}}
+\def\Smat{\textbf{\textit{S}}}
+\def\Bmat{\textbf{\textit{B}}}
+\def\wheelrad{\textbf{\textit{r}}}
+
+\def\stateweight{\textbf{\textit{w}}_x}
+\def\actionweight{\textbf{\textit{w}}_u}
+\def\advactionweight{\textbf{\textit{w}}_v}
+
+%Thesis defs
+\def\kau{\mc{K}}
+\def\particle{\textbf{x}}
+\def\deformationgrad{\textbf{F}}
+\def\refconf{\bm{\bm{\chi}}_0}
+\def\refconfbody{\mc{B}_0}
+\def\conf{\bm{\bm{\chi}}}
+\def\currconf{\bm{\chi}}
+\def\Eulerian{\mc{E}}
+\def\cauchystress{\bm{\sigma}}
+\def\stresscomp{\sigma}
+\def\currconfbody{\mc{B}}
+\def\strain{W}
+\def\materialresponse{\textbf{G}}
+\def\orthoggroup{{\textit{SO}}(3)}
+\def\liegroup{{\textit{SE}}(3)}
+\def\liealgebra{\mathfrak{se}(3)}
+\def\identity{\textbf{I}}
+\newcommand{\trace}[1]{\textbf{tr}(#1)}
+\def\leftcauchy{\textbf{B}}
+\def\rightcauchy{\textbf{C}}
+\def\fiber{\textbf{dX}}
+
+\def\dof{\text{DOF }}
+\def\dofs{\text{DOFs }}
+\def\reline{\mathbb{R}}
+\def\curve{\deformationgrad}
+\def\twist{{\xi}}
+\def\contactforce{\tilde{F}}
+\def\contactforcecomp{f}
+\def\gaussianmap{\textbf{}n}
+\def\contacttorquecomp{\tau}
+\def\wrt{with respect to }
+\def\curveparam{\position}
+\def\pose{{g}}
+\def\selmap{{B}}
+\def\manipmap{{G}}
+\def\jacob{\bm{J}}
+\def\position{\textbf{r}}
+\def\deformationgradcur{\textbf{H}}
+\def\eulerianvel{\textbf{v}(\position, t)}
+\def\headparam{\zeta}
+
+% inline macros
+\newcommand{\putsoro}[2]{\includegraphics[width=.45\columnwidth,height=#2\columnwidth]{../../../PhDThesis/figures/#1}}
+\newcommand{\sorowidth}{.35}
+
+% algo defs
+\def\qfunc{\textit{Q}}
+\def\game{\Gamma}
+\def\basepolicy{\{\mu_0, \ldots, \mu_{N-1}\}}
