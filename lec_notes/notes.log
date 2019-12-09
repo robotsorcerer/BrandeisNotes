@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  9 DEC 2019 00:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  9 DEC 2019 01:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2071,14 +2071,9 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
 Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: 6BEF67BC37EECF9587D6177D7EC1993A;4361.
+Package rerunfilecheck Info: File `notes.brf' has not changed.
+(rerunfilecheck)             Checksum: 50DF894E0BDECC4F2CB23B3687686A21;1909.
 
-
-Package rerunfilecheck Warning: File `notes.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `notes.brf':
-(rerunfilecheck)             Before: 8A492054E7558A7DF6A9ACD4722B2BD5;1866
-(rerunfilecheck)             After:  50DF894E0BDECC4F2CB23B3687686A21;1909.
 
 LaTeX Warning: There were undefined references.
 
@@ -2086,7 +2081,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  50827 strings out of 492649
  1155258 string characters out of 6129622
- 1400553 words of memory out of 5000000
+ 1400554 words of memory out of 5000000
  53197 multiletter control sequences out of 15000+600000
  572053 words of font info for 257 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -2113,10 +2108,10 @@ t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
 pe1/urw/times/utmbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on notes.pdf (73 pages, 4902637 bytes).
+Output written on notes.pdf (73 pages, 4902655 bytes).
 PDF statistics:
- 1509 PDF objects out of 1728 (max. 8388607)
- 1287 compressed objects within 13 object streams
+ 1510 PDF objects out of 1728 (max. 8388607)
+ 1288 compressed objects within 13 object streams
  383 named destinations out of 1000 (max. 500000)
  26892 words of extra memory for PDF output out of 29859 (max. 10000000)
 
