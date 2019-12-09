@@ -535,12 +535,34 @@ We formally define the inverse kinematics problem as follows: given a desired co
 for some $\theta \in Q$. It is noteworthy to here point out that the IK problem mat have multiple solutions,, a unique solution or no solution at all. It is typical to use numerical optimization approaches to solve these problems in practice. In ROS, there are different IK libraries that are available such as the ones from \textsc{KDL} or 
 
 \begin{example}
-	Consider the two-link planar arm of \autoref{fig:ik_ex}. We know the forward kinematics to be 
+	Consider the two-link planar arm of \autoref{fig:ik_ex}. This example is taken from \cite{MurrayBook}. We know the forward kinematics to be 
 	%
 	\begin{align}
-		content...
+		x = l_1 \cos \theta_1 + l_2 \cos(\theta_1 + \theta_2) \nonumber \\
+		%
+		y = l_1 \sin \theta_1 + l_2 \sin(\theta_1 + \theta_2).
 	\end{align}
+	%
+	In order to solve for $\theta_1$ and $\theta_2$ given $x$ and $y$, we use polar coordinates to parameterize the geometry (see the right inset). We see that 
+	%
+	\begin{subequations}
+		\begin{align}
+			r &= \sqrt{x^2 + y^2} \\
+			\theta_2 &= \pi \pm \alpha \\
+			\alpha &= \cos^{-1} \frac{l_1^2 + l_2^2- r^2}{2 l_1 l_2}.
+		\end{align}
+	\end{subequations}
+	%
+	That is, $\theta_2$ could take on two possible values when $\alpha \neq 0$. The second value of $\theta_2$ is shown by the dashed line, called the ``flipped' solution''. We find $\theta_1$ by solving
+	%
+	\begin{align}
+	\theta_1 = a\tan2(y,x) \pm \beta, \quad \beta = \cos^{-1}\left(\frac{r^2 + l_1^2 - l_2^2}{2 l_1l_2}\right)
+	\end{align}
+	%
+	with the condition that the sign of $\alpha$ must correspond to the one used for $\beta$.
+	%
 \end{example}
+
 
 \begin{figure}[tb!]
 	\centering

@@ -57,4 +57,4 @@
 \contentsline {subsection}{\numberline {4.6.1}Spatial Jacobian}{60}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}The Body Jacobian}{61}{subsection.4.6.2}
 \contentsline {section}{\numberline {4.7}Inverse kinematics}{62}{section.4.7}
-\contentsline {chapter}{\MakeTextUppercase {References}}{63}{chapter*.28}
+\contentsline {chapter}{\MakeTextUppercase {References}}{64}{chapter*.29}

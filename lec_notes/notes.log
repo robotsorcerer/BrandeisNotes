@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  9 DEC 2019 00:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  9 DEC 2019 00:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1799,22 +1799,22 @@ Chapter 1.
 
 ] [2]) (./sections/robo_confs.tex [3]
 Chapter 2.
-<figures/StanfordArm.jpg, id=497, 1136.245pt x 666.49pt>
+<figures/StanfordArm.jpg, id=494, 1136.245pt x 666.49pt>
 File: figures/StanfordArm.jpg Graphic file (type jpg)
 <use figures/StanfordArm.jpg>
 Package pdftex.def Info: figures/StanfordArm.jpg  used on input line 9.
 (pdftex.def)             Requested size: 234.87355pt x 187.89732pt.
-<figures/PUMA.jpg, id=498, 1532.72626pt x 1776.6375pt>
+<figures/PUMA.jpg, id=495, 1532.72626pt x 1776.6375pt>
 File: figures/PUMA.jpg Graphic file (type jpg)
 <use figures/PUMA.jpg>
 Package pdftex.def Info: figures/PUMA.jpg  used on input line 11.
 (pdftex.def)             Requested size: 225.47878pt x 187.89435pt.
-<figures/octopus.jpg, id=501, 1284.8pt x 722.7pt>
+<figures/octopus.jpg, id=498, 1284.8pt x 722.7pt>
 File: figures/octopus.jpg Graphic file (type jpg)
 <use figures/octopus.jpg>
 Package pdftex.def Info: figures/octopus.jpg  used on input line 23.
 (pdftex.def)             Requested size: 234.86124pt x 187.89757pt.
-<figures/soft_parallel.png, id=502, 589.4522pt x 602.25pt>
+<figures/soft_parallel.png, id=499, 589.4522pt x 602.25pt>
 File: figures/soft_parallel.png Graphic file (type png)
 <use figures/soft_parallel.png>
 Package pdftex.def Info: figures/soft_parallel.png  used on input line 25.
@@ -1826,32 +1826,32 @@ Package pdftex.def Info: figures/soft_parallel.png  used on input line 25.
 
 LaTeX Warning: Reference `chap:statics' on page 7 undefined on input line 51.
 
-<figures/arms_hunt.png, id=563, 712.6625pt x 230.8625pt>
+<figures/arms_hunt.png, id=560, 712.6625pt x 230.8625pt>
 File: figures/arms_hunt.png Graphic file (type png)
 <use figures/arms_hunt.png>
 Package pdftex.def Info: figures/arms_hunt.png  used on input line 57.
 (pdftex.def)             Requested size: 469.75499pt x 152.17244pt.
 [7]
-<figures/Staubli.jpg, id=574, 1003.75pt x 1419.3025pt>
+<figures/Staubli.jpg, id=571, 1003.75pt x 1419.3025pt>
 File: figures/Staubli.jpg Graphic file (type jpg)
 <use figures/Staubli.jpg>
 Package pdftex.def Info: figures/Staubli.jpg  used on input line 71.
 (pdftex.def)             Requested size: 100.38087pt x 141.93855pt.
-<figures/Scara.png, id=576, 1136.245pt x 420.57124pt>
+<figures/Scara.png, id=573, 1136.245pt x 420.57124pt>
 File: figures/Scara.png Graphic file (type png)
 <use figures/Scara.png>
 Package pdftex.def Info: figures/Scara.png  used on input line 80.
 (pdftex.def)             Requested size: 469.75499pt x 173.87924pt.
  [8 <./figures/arms_hunt.png>] [9 <./figures/Staubli.jpg> <./figures/Scara.png>
 ]
-<../../Papers/PhDThesis/figures/GoughPlatform.png, id=594, 195.73125pt x 240.9p
+<../../Papers/PhDThesis/figures/GoughPlatform.png, id=591, 195.73125pt x 240.9p
 t>
 File: ../../Papers/PhDThesis/figures/GoughPlatform.png Graphic file (type png)
 <use ../../Papers/PhDThesis/figures/GoughPlatform.png>
 Package pdftex.def Info: ../../Papers/PhDThesis/figures/GoughPlatform.png  used
  on input line 98.
 (pdftex.def)             Requested size: 234.89124pt x 187.9049pt.
-<../../Papers/PhDThesis/figures/GoughPlatformNow.jpg, id=595, 238.491pt x 231.2
+<../../Papers/PhDThesis/figures/GoughPlatformNow.jpg, id=592, 238.491pt x 231.2
 64pt>
 File: ../../Papers/PhDThesis/figures/GoughPlatformNow.jpg Graphic file (type jp
 g)
@@ -1860,7 +1860,7 @@ Package pdftex.def Info: ../../Papers/PhDThesis/figures/GoughPlatformNow.jpg  u
 sed on input line 100.
 (pdftex.def)             Requested size: 225.48434pt x 187.90858pt.
  [10]
-<figures/four-bar-linkage.png, id=610, 736.7525pt x 227.85126pt>
+<figures/four-bar-linkage.png, id=607, 736.7525pt x 227.85126pt>
 File: figures/four-bar-linkage.png Graphic file (type png)
 <use figures/four-bar-linkage.png>
 Package pdftex.def Info: figures/four-bar-linkage.png  used on input line 129.
@@ -1880,13 +1880,13 @@ Underfull \vbox (badness 6493) has occurred while \output is active []
 
  [13]
 [14]
-<figures/parallel_translational.png, id=655, 953.5625pt x 607.26875pt>
+<figures/parallel_translational.png, id=652, 953.5625pt x 607.26875pt>
 File: figures/parallel_translational.png Graphic file (type png)
 <use figures/parallel_translational.png>
 Package pdftex.def Info: figures/parallel_translational.png  used on input line
  209.
 (pdftex.def)             Requested size: 234.8689pt x 187.89925pt.
-<figures/parallel_translational_workspace.png, id=656, 862.22125pt x 573.14125p
+<figures/parallel_translational_workspace.png, id=653, 862.22125pt x 573.14125p
 t>
 File: figures/parallel_translational_workspace.png Graphic file (type png)
 <use figures/parallel_translational_workspace.png>
@@ -1902,19 +1902,19 @@ Chapter 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 208.
  [21]
-<figures/revolute.png, id=725, 525.965pt x 383.4325pt>
+<figures/revolute.png, id=722, 525.965pt x 383.4325pt>
 File: figures/revolute.png Graphic file (type png)
 <use figures/revolute.png>
 Package pdftex.def Info: figures/revolute.png  used on input line 241.
 (pdftex.def)             Requested size: 281.85585pt x 205.48247pt.
  [22] [23 <./figures/revolute.png>]
-<figures/lienotations.pdf, id=749, 722.69798pt x 542.02402pt>
+<figures/lienotations.pdf, id=746, 722.69798pt x 542.02402pt>
 File: figures/lienotations.pdf Graphic file (type pdf)
 <use figures/lienotations.pdf>
 Package pdftex.def Info: figures/lienotations.pdf  used on input line 334.
 (pdftex.def)             Requested size: 469.75499pt x 352.3197pt.
  [24] [25 <./figures/lienotations.pdf>]
-<figures/brockettpoe.pdf, id=797, 722.69798pt x 542.02402pt>
+<figures/brockettpoe.pdf, id=794, 722.69798pt x 542.02402pt>
 File: figures/brockettpoe.pdf Graphic file (type pdf)
 <use figures/brockettpoe.pdf>
 Package pdftex.def Info: figures/brockettpoe.pdf  used on input line 368.
@@ -1932,7 +1932,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 412.
 
-<figures/trans_coords.png, id=898, 712.6625pt x 352.31625pt>
+<figures/trans_coords.png, id=895, 712.6625pt x 352.31625pt>
 File: figures/trans_coords.png Graphic file (type png)
 <use figures/trans_coords.png>
 Package pdftex.def Info: figures/trans_coords.png  used on input line 418.
@@ -1950,7 +1950,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 467.
 
-<figures/rotation_illus.png, id=906, 596.2275pt x 448.67625pt>
+<figures/rotation_illus.png, id=903, 596.2275pt x 448.67625pt>
 File: figures/rotation_illus.png Graphic file (type png)
 <use figures/rotation_illus.png>
 Package pdftex.def Info: figures/rotation_illus.png  used on input line 473.
@@ -1962,26 +1962,26 @@ Underfull \vbox (badness 2600) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30 <./figures/rotation_illus.png>] [31] [32]
-<figures/planar_rot.png, id=949, 639.38875pt x 370.38374pt>
+<figures/planar_rot.png, id=946, 639.38875pt x 370.38374pt>
 File: figures/planar_rot.png Graphic file (type png)
 <use figures/planar_rot.png>
 Package pdftex.def Info: figures/planar_rot.png  used on input line 608.
 (pdftex.def)             Requested size: 352.31624pt x 204.09033pt.
  [33 <./figures/planar_rot.png>]
-<figures/two_frames.png, id=960, 587.19376pt x 462.72874pt>
+<figures/two_frames.png, id=957, 587.19376pt x 462.72874pt>
 File: figures/two_frames.png Graphic file (type png)
 <use figures/two_frames.png>
 Package pdftex.def Info: figures/two_frames.png  used on input line 676.
 (pdftex.def)             Requested size: 375.80542pt x 296.14539pt.
  [34]
 [35 <./figures/two_frames.png>]
-<figures/point_transform.png, id=978, 417.56pt x 250.9375pt>
+<figures/point_transform.png, id=975, 417.56pt x 250.9375pt>
 File: figures/point_transform.png Graphic file (type png)
 <use figures/point_transform.png>
 Package pdftex.def Info: figures/point_transform.png  used on input line 723.
 (pdftex.def)             Requested size: 375.80542pt x 225.85696pt.
  [36] [37 <./figures/point_transform.png>]
-<figures/compoz.png, id=1004, 871.255pt x 351.3125pt>
+<figures/compoz.png, id=1001, 871.255pt x 351.3125pt>
 File: figures/compoz.png Graphic file (type png)
 <use figures/compoz.png>
 Package pdftex.def Info: figures/compoz.png  used on input line 796.
@@ -2001,7 +2001,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 833.
 
 [39]
-<figures/zyz.png, id=1027, 722.7pt x 314.17375pt>
+<figures/zyz.png, id=1024, 722.7pt x 314.17375pt>
 File: figures/zyz.png Graphic file (type png)
 <use figures/zyz.png>
 Package pdftex.def Info: figures/zyz.png  used on input line 905.
@@ -2009,12 +2009,12 @@ Package pdftex.def Info: figures/zyz.png  used on input line 905.
  [40 <./figures/zyz.png>] [41] [42] [43] [44] [45] [46])
 (./sections/manip_kine.tex [47]
 Chapter 4.
-<figures/manip.png, id=1134, 948.54375pt x 297.11pt>
+<figures/manip.png, id=1131, 948.54375pt x 297.11pt>
 File: figures/manip.png Graphic file (type png)
 <use figures/manip.png>
 Package pdftex.def Info: figures/manip.png  used on input line 23.
 (pdftex.def)             Requested size: 375.80542pt x 117.71304pt.
-<figures/pneunets.png, id=1139, 903.375pt x 507.8975pt>
+<figures/pneunets.png, id=1136, 903.375pt x 507.8975pt>
 File: figures/pneunets.png Graphic file (type png)
 <use figures/pneunets.png>
 Package pdftex.def Info: figures/pneunets.png  used on input line 30.
@@ -2022,7 +2022,7 @@ Package pdftex.def Info: figures/pneunets.png  used on input line 30.
 [48
 
 ] [49 <./figures/manip.png> <./figures/pneunets.png>]
-<figures/torobo7.png, id=1159, 840.13875pt x 938.75719pt>
+<figures/torobo7.png, id=1156, 840.13875pt x 938.75719pt>
 File: figures/torobo7.png Graphic file (type png)
 <use figures/torobo7.png>
 Package pdftex.def Info: figures/torobo7.png  used on input line 67.
@@ -2044,77 +2044,79 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [54]
 [55] [56]
-<figures/planar_manip.png, id=1234, 467.7475pt x 327.2225pt>
+<figures/planar_manip.png, id=1231, 467.7475pt x 327.2225pt>
 File: figures/planar_manip.png Graphic file (type png)
 <use figures/planar_manip.png>
 Package pdftex.def Info: figures/planar_manip.png  used on input line 344.
 (pdftex.def)             Requested size: 328.82706pt x 230.04779pt.
- [57 <./figures/planar_manip.png>] [58] [59] [60] [61]) (./notes.bbl
+ [57 <./figures/planar_manip.png>] [58] [59] [60] [61]
+<figures/ik_ex.png, id=1289, 763.85374pt x 386.44376pt>
+File: figures/ik_ex.png Graphic file (type png)
+<use figures/ik_ex.png>
+Package pdftex.def Info: figures/ik_ex.png  used on input line 569.
+(pdftex.def)             Requested size: 375.80542pt x 190.12566pt.
+) (./notes.bbl
 (./notes.brf)
 \tf@brf=\write10
 \openout10 = `notes.brf'.
 
- [62] [63
+ [62] [63 <./figures/ik_ex.png>] [64
 
-] [64])
+] [65])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
- [65]
+ [66]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
  (./notes.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
+Package rerunfilecheck Info: File `notes.out' has not changed.
+(rerunfilecheck)             Checksum: 6BEF67BC37EECF9587D6177D7EC1993A;4361.
 
 
-Package rerunfilecheck Warning: File `notes.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Package rerunfilecheck Warning: File `notes.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
 
-Package rerunfilecheck Info: Checksums for `notes.out':
-(rerunfilecheck)             Before: 020D69AF09E53FC71DF0844686A59038;4479
-(rerunfilecheck)             After:  D7B28837D12795C4415D62C2CBAAD41C;4361.
-Package rerunfilecheck Info: File `notes.brf' has not changed.
-(rerunfilecheck)             Checksum: 8A492054E7558A7DF6A9ACD4722B2BD5;1866.
+Package rerunfilecheck Info: Checksums for `notes.brf':
+(rerunfilecheck)             Before: 8A492054E7558A7DF6A9ACD4722B2BD5;1866
+(rerunfilecheck)             After:  50DF894E0BDECC4F2CB23B3687686A21;1909.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 50815 strings out of 492649
- 1155064 string characters out of 6129622
- 1400467 words of memory out of 5000000
- 53193 multiletter control sequences out of 15000+600000
+ 50827 strings out of 492649
+ 1155258 string characters out of 6129622
+ 1400553 words of memory out of 5000000
+ 53197 multiletter control sequences out of 15000+600000
  572053 words of font info for 257 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  63i,20n,101p,10494b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.4.8} has been referenced but does not exi
-st, replaced by a fixed one
-
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2018/texmf-dist/
-fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
-1/urw/times/utmbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/tim
-es/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a
-.pfb>
-Output written on notes.pdf (72 pages, 4866038 bytes).
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-d
+ist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2018/texmf-dis
+t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/urw/times/utmbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on notes.pdf (73 pages, 4902637 bytes).
 PDF statistics:
- 1494 PDF objects out of 1728 (max. 8388607)
- 1275 compressed objects within 13 object streams
- 376 named destinations out of 1000 (max. 500000)
- 26895 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1509 PDF objects out of 1728 (max. 8388607)
+ 1287 compressed objects within 13 object streams
+ 383 named destinations out of 1000 (max. 500000)
+ 26892 words of extra memory for PDF output out of 29859 (max. 10000000)
 
