@@ -23,38 +23,39 @@
 \contentsline {subsection}{\numberline {2.4.3}The Mobility Criterion}{14}{subsection.2.4.3}
 \contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {3}\MakeTextUppercase {Motion of Rigid Bodies}}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}Screws}{17}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Motion screws: Pitch, axis, twist}{18}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Dynamics screws: pitch, axis, twists}{19}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Screw Motions}{20}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Rodrigues' Formula}{20}{section.3.2}
-\contentsline {section}{\numberline {3.3}The Matrix Exponential, The Lie Group and Lie Algebra}{21}{section.3.3}
+\contentsline {subsection}{\numberline {3.1.1}Motion screws: Twist's Pitch, Axis, and Magnitude}{18}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{20}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Screw Motions}{21}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Rodrigues' Formula}{21}{section.3.2}
+\contentsline {section}{\numberline {3.3}The Matrix Exponential, The Lie Group and Lie Algebra}{22}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}The Lie Group Notations}{25}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Exponential Map and Kinematic Chains}{25}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Rigid Body Transformations}{27}{section.3.4}
+\contentsline {subsection}{\numberline {3.3.2}Exponential Map and Kinematic Chains}{26}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Rigid Body Transformations}{26}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Translation in $\mathbb {R}^3$}{28}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Rotations in $\mathbb {R}^3$}{30}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Rotation Matrices as Transformations}{32}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}Planar Rotations}{33}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Composition of Rotations}{35}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.5}Composition of Rotations}{36}{subsection.3.4.5}
 \contentsline {section}{\numberline {3.5}Parameterization of Rotations $\in SO(3)$}{39}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Axis-Angle Parameterizations}{39}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Euler Angles}{40}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Quaternions}{42}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.3}Quaternions}{43}{subsection.3.5.3}
 \contentsline {section}{\numberline {3.6}Homogeneous Coordinates}{43}{section.3.6}
 \contentsline {section}{\numberline {3.7}Rigid Body Velocities}{45}{section.3.7}
 \contentsline {subsection}{\numberline {3.7.1}Rotational Velocities}{45}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Rigid Body Velocity}{46}{subsection.3.7.2}
-\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {4}\MakeTextUppercase {Manipulator Kinematics}}{48}{chapter.4}
-\contentsline {section}{\numberline {4.1}Forward kinematics}{48}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Screw Axes and Base Frame}{49}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Screw Axes in Tool Frame}{52}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Manipulator parameterization with twists}{53}{section.4.2}
-\contentsline {section}{\numberline {4.3}The Universal Robot Description Format}{56}{section.4.3}
-\contentsline {section}{\numberline {4.4}Velocity Kinematics}{56}{section.4.4}
-\contentsline {section}{\numberline {4.5}Singularities in Rigid Bodies and The Manipulability Ellipsoid}{57}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}The Manipulability Ellipsoid}{58}{subsection.4.5.1}
-\contentsline {section}{\numberline {4.6}The Manipulator Jacobian}{59}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Spatial Jacobian}{60}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}The Body Jacobian}{61}{subsection.4.6.2}
-\contentsline {section}{\numberline {4.7}Inverse kinematics}{62}{section.4.7}
-\contentsline {chapter}{\MakeTextUppercase {References}}{64}{chapter*.29}
+\contentsline {subsection}{\numberline {3.7.2}Rigid Body Velocity}{47}{subsection.3.7.2}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {4}\MakeTextUppercase {Manipulator Kinematics}}{49}{chapter.4}
+\contentsline {section}{\numberline {4.1}Forward kinematics}{50}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Screw Axes and Base Frame}{51}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Screw Axes in Tool Frame}{54}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Manipulator parameterization with twists}{54}{section.4.2}
+\contentsline {section}{\numberline {4.3}The Universal Robot Description Format}{57}{section.4.3}
+\contentsline {section}{\numberline {4.4}Velocity Kinematics}{58}{section.4.4}
+\contentsline {section}{\numberline {4.5}Singularities in Rigid Bodies and The Manipulability Ellipsoid}{59}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}The Manipulability Ellipsoid}{60}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}The Manipulator Jacobian}{61}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Spatial Jacobian}{61}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}The Body Jacobian}{62}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}Inverse kinematics}{64}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Paden-Kahan Subproblems}{65}{subsection.4.7.1}
+\contentsline {chapter}{\MakeTextUppercase {References}}{68}{chapter*.30}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  9 DEC 2019 01:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  14 DEC 2019 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1559,6 +1559,7 @@ Now handling font encoding PD1 ...
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
+Package hyperref Info: Option `draft' set `true' on input line 4383.
 Package hyperref Info: Option `breaklinks' set `true' on input line 4383.
 Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
 Package hyperref Info: Option `bookmarks' set `true' on input line 4383.
@@ -1676,20 +1677,12 @@ Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.16} (current compat level: 1.5).
 
 LaTeX Info: Redefining \microtypecontext on input line 100.
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `basictext'.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-ptm.cfg
-File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
-)
-\AtBeginShipoutBox=\box127
 
+Package microtype Warning: `draft' option active.
+(microtype)                Disabling all micro-typographic extensions.
+(microtype)                This might lead to different line and page breaks.
+
+\AtBeginShipoutBox=\box127
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
@@ -1711,8 +1704,11 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package backref Info: ** backref set up for natbib ** on input line 100.
-Package hyperref Info: Link coloring ON on input line 100.
 
+
+Package hyperref Warning: Draft mode on.
+
+Package hyperref Info: Link coloring ON on input line 100.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1724,11 +1720,6 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 100.
 LaTeX Info: Redefining \pageref on input line 100.
 LaTeX Info: Redefining \nameref on input line 100.
-
-(./notes.out) (./notes.out)
-\@outlinefile=\write6
-\openout6 = `notes.out'.
-
 
 
 Class utdthesis Warning: Misplaced copyright page on input line 104.
@@ -1745,10 +1736,6 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./note
 s.toc
-(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-)
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 1.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -1759,36 +1746,42 @@ LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
 LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [2
 
 
-]
-[3])
-\tf@toc=\write7
-\openout7 = `notes.toc'.
+] [3])
+\tf@toc=\write6
+\openout6 = `notes.toc'.
 
- [4] (./notes.lof
+
+[4] (./notes.lof
+Overfull \hbox (7.21736pt too wide) in paragraph at lines 1--1
+ \OT1/ptm/m/n/12 nip-u-la-tor, 1969. \TS1/ptm/m/n/12 ©\OT1/ptm/m/n/12 Infolab, 
+Stan-ford Uni-ver-sity. \OT1/ptm/m/it/12 Right: \OT1/ptm/m/n/12 The PUMA robot 
+arm. Reprinted |
+ []
+
+
+Overfull \hbox (3.5562pt too wide) in paragraph at lines 3--3
+ [][] []\OT1/ptm/m/n/12 Schematic de-scrip-tion of in-series-actuated robot arm
+s: (a) ro-tary joint ac-tu-ated ``about" |
+ []
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
- [5
+[5
 
 ])
-\tf@lof=\write8
-\openout8 = `notes.lof'.
+\tf@lof=\write7
+\openout7 = `notes.lof'.
 
  [6] (./notes.lot)
-\tf@lot=\write9
-\openout9 = `notes.lot'.
+\tf@lot=\write8
+\openout8 = `notes.lot'.
 
  [7
 
@@ -1799,291 +1792,168 @@ Chapter 1.
 
 ] [2]) (./sections/robo_confs.tex [3]
 Chapter 2.
-<figures/StanfordArm.jpg, id=494, 1136.245pt x 666.49pt>
-File: figures/StanfordArm.jpg Graphic file (type jpg)
-<use figures/StanfordArm.jpg>
-Package pdftex.def Info: figures/StanfordArm.jpg  used on input line 9.
-(pdftex.def)             Requested size: 234.87355pt x 187.89732pt.
-<figures/PUMA.jpg, id=495, 1532.72626pt x 1776.6375pt>
-File: figures/PUMA.jpg Graphic file (type jpg)
-<use figures/PUMA.jpg>
-Package pdftex.def Info: figures/PUMA.jpg  used on input line 11.
-(pdftex.def)             Requested size: 225.47878pt x 187.89435pt.
-<figures/octopus.jpg, id=498, 1284.8pt x 722.7pt>
-File: figures/octopus.jpg Graphic file (type jpg)
-<use figures/octopus.jpg>
-Package pdftex.def Info: figures/octopus.jpg  used on input line 23.
-(pdftex.def)             Requested size: 234.86124pt x 187.89757pt.
-<figures/soft_parallel.png, id=499, 589.4522pt x 602.25pt>
-File: figures/soft_parallel.png Graphic file (type png)
-<use figures/soft_parallel.png>
-Package pdftex.def Info: figures/soft_parallel.png  used on input line 25.
-(pdftex.def)             Requested size: 225.47823pt x 187.8994pt.
-[4
+<figures/StanfordArm.jpg, id=82, 1136.245pt x 666.49pt>
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 9.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+<figures/PUMA.jpg, id=83, 1532.72626pt x 1776.6375pt>
+<figures/octopus.jpg, id=84, 1284.8pt x 722.7pt>
+<figures/soft_parallel.png, id=85, 589.4522pt x 602.25pt>
+ [4
 
- <./figures/StanfordArm.jpg> <./figures/PUMA.jpg>] [5 <./figures/octopus.jpg> <
-./figures/soft_parallel.png>] [6]
+] [5]
+[6]
 
 LaTeX Warning: Reference `chap:statics' on page 7 undefined on input line 51.
 
-<figures/arms_hunt.png, id=560, 712.6625pt x 230.8625pt>
-File: figures/arms_hunt.png Graphic file (type png)
-<use figures/arms_hunt.png>
-Package pdftex.def Info: figures/arms_hunt.png  used on input line 57.
-(pdftex.def)             Requested size: 469.75499pt x 152.17244pt.
+<figures/arms_hunt.png, id=99, 712.6625pt x 230.8625pt>
 [7]
-<figures/Staubli.jpg, id=571, 1003.75pt x 1419.3025pt>
-File: figures/Staubli.jpg Graphic file (type jpg)
-<use figures/Staubli.jpg>
-Package pdftex.def Info: figures/Staubli.jpg  used on input line 71.
-(pdftex.def)             Requested size: 100.38087pt x 141.93855pt.
-<figures/Scara.png, id=573, 1136.245pt x 420.57124pt>
-File: figures/Scara.png Graphic file (type png)
-<use figures/Scara.png>
-Package pdftex.def Info: figures/Scara.png  used on input line 80.
-(pdftex.def)             Requested size: 469.75499pt x 173.87924pt.
- [8 <./figures/arms_hunt.png>] [9 <./figures/Staubli.jpg> <./figures/Scara.png>
-]
-<../../Papers/PhDThesis/figures/GoughPlatform.png, id=591, 195.73125pt x 240.9p
+<figures/Staubli.jpg, id=103, 1003.75pt x 1419.3025pt>
+<figures/Scara.png, id=104, 1136.245pt x 420.57124pt>
+ [8] [9]
+<../../Papers/PhDThesis/figures/GoughPlatform.png, id=111, 195.73125pt x 240.9p
 t>
-File: ../../Papers/PhDThesis/figures/GoughPlatform.png Graphic file (type png)
-<use ../../Papers/PhDThesis/figures/GoughPlatform.png>
-Package pdftex.def Info: ../../Papers/PhDThesis/figures/GoughPlatform.png  used
- on input line 98.
-(pdftex.def)             Requested size: 234.89124pt x 187.9049pt.
-<../../Papers/PhDThesis/figures/GoughPlatformNow.jpg, id=592, 238.491pt x 231.2
+<../../Papers/PhDThesis/figures/GoughPlatformNow.jpg, id=112, 238.491pt x 231.2
 64pt>
-File: ../../Papers/PhDThesis/figures/GoughPlatformNow.jpg Graphic file (type jp
-g)
-<use ../../Papers/PhDThesis/figures/GoughPlatformNow.jpg>
-Package pdftex.def Info: ../../Papers/PhDThesis/figures/GoughPlatformNow.jpg  u
-sed on input line 100.
-(pdftex.def)             Requested size: 225.48434pt x 187.90858pt.
  [10]
-<figures/four-bar-linkage.png, id=607, 736.7525pt x 227.85126pt>
-File: figures/four-bar-linkage.png Graphic file (type png)
-<use figures/four-bar-linkage.png>
-Package pdftex.def Info: figures/four-bar-linkage.png  used on input line 129.
-(pdftex.def)             Requested size: 469.75499pt x 145.27846pt.
- [11 <../../Papers/PhDThesis/figures/GoughPlatform.png> <../../Papers/PhDThesis
-/figures/GoughPlatformNow.jpg>]
+<figures/four-bar-linkage.png, id=116, 736.7525pt x 227.85126pt>
+ [11]
 LaTeX Font Info:    Try loading font information for U+euf on input line 136.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-euf.cfg
-File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
-
-) [12 <./figures/four-bar-linkage.png>]
-Underfull \vbox (badness 6493) has occurred while \output is active []
-
- [13]
+) [12] [13]
 [14]
-<figures/parallel_translational.png, id=652, 953.5625pt x 607.26875pt>
-File: figures/parallel_translational.png Graphic file (type png)
-<use figures/parallel_translational.png>
-Package pdftex.def Info: figures/parallel_translational.png  used on input line
- 209.
-(pdftex.def)             Requested size: 234.8689pt x 187.89925pt.
-<figures/parallel_translational_workspace.png, id=653, 862.22125pt x 573.14125p
+<figures/parallel_translational.png, id=132, 953.5625pt x 607.26875pt>
+<figures/parallel_translational_workspace.png, id=133, 862.22125pt x 573.14125p
 t>
-File: figures/parallel_translational_workspace.png Graphic file (type png)
-<use figures/parallel_translational_workspace.png>
-Package pdftex.def Info: figures/parallel_translational_workspace.png  used on 
-input line 211.
-(pdftex.def)             Requested size: 225.47472pt x 187.89534pt.
-) (./sections/rigid_motions.tex [15] [16 <./figures/parallel_translational.png>
- <./figures/parallel_translational_workspace.png>]
+) (./sections/rigid_motions.tex [15] [16]
 Chapter 3.
+
+Overfull \hbox (21.11095pt too wide) in paragraph at lines 19--25
+\OML/cmm/m/it/12 p$\OT1/ptm/m/it/12 ) is as-so-ci-ated\OT1/ptm/m/n/12 . A screw
+ may be de-fined by a 6-vector of \OT1/ptm/m/it/12 screw co-or-di-nates\OT1/ptm
+/m/n/12 , $[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 S[]; S[]; S[]; S[]; S[]; S[]\
+OT1/cmr/m/n/12 )$|
+ []
+
 [17
 
-] [18] [19] [20]
+]
+Overfull \hbox (35.34079pt too wide) in paragraph at lines 58--59
+[]\OT1/ptm/m/n/12 Similar to the screw, the \OT1/ptm/m/it/12 twist \OT1/ptm/m/n
+/12 is char-ac-ter-ized by a six-vector of co-or-di-nates, $[] \OT1/cmr/m/n/12 
+= (\OML/cmm/m/it/12 T[]; T[]; T[]; T[]; T[]; T[]\OT1/cmr/m/n/12 )$|
+ []
+
+[18] [19] [20] [21]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 208.
- [21]
-<figures/revolute.png, id=722, 525.965pt x 383.4325pt>
-File: figures/revolute.png Graphic file (type png)
-<use figures/revolute.png>
-Package pdftex.def Info: figures/revolute.png  used on input line 241.
-(pdftex.def)             Requested size: 281.85585pt x 205.48247pt.
- [22] [23 <./figures/revolute.png>]
-<figures/lienotations.pdf, id=746, 722.69798pt x 542.02402pt>
-File: figures/lienotations.pdf Graphic file (type pdf)
-<use figures/lienotations.pdf>
-Package pdftex.def Info: figures/lienotations.pdf  used on input line 334.
-(pdftex.def)             Requested size: 469.75499pt x 352.3197pt.
- [24] [25 <./figures/lienotations.pdf>]
-<figures/brockettpoe.pdf, id=794, 722.69798pt x 542.02402pt>
-File: figures/brockettpoe.pdf Graphic file (type pdf)
-<use figures/brockettpoe.pdf>
-Package pdftex.def Info: figures/brockettpoe.pdf  used on input line 368.
-(pdftex.def)             Requested size: 469.75499pt x 352.3197pt.
- [26 <./figures/brockettpoe.pdf>] [27]
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 230.
+ [22]
+<figures/revolute.png, id=160, 525.965pt x 383.4325pt>
+ [23] [24]
+<figures/lienotations.pdf, id=169, 722.69798pt x 542.02402pt>
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 412.
+Underfull \vbox (badness 1173) has occurred while \output is active []
 
+ [25]
+<figures/brockettpoe.pdf, id=173, 722.69798pt x 542.02402pt>
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 412.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 412.
-
-<figures/trans_coords.png, id=895, 712.6625pt x 352.31625pt>
-File: figures/trans_coords.png Graphic file (type png)
-<use figures/trans_coords.png>
-Package pdftex.def Info: figures/trans_coords.png  used on input line 418.
-(pdftex.def)             Requested size: 375.80542pt x 185.78593pt.
-[28]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 467.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 467.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 467.
-
-<figures/rotation_illus.png, id=903, 596.2275pt x 448.67625pt>
-File: figures/rotation_illus.png Graphic file (type png)
-<use figures/rotation_illus.png>
-Package pdftex.def Info: figures/rotation_illus.png  used on input line 473.
-(pdftex.def)             Requested size: 469.75499pt x 353.50557pt.
-
-Underfull \vbox (badness 2600) has occurred while \output is active []
-
- [29 <./figures/trans_coords.png>]
+[26] [27]
+<figures/trans_coords.png, id=182, 712.6625pt x 352.31625pt>
+ [28] [29]
+<figures/rotation_illus.png, id=190, 596.2275pt x 448.67625pt>
+ [30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30 <./figures/rotation_illus.png>] [31] [32]
-<figures/planar_rot.png, id=946, 639.38875pt x 370.38374pt>
-File: figures/planar_rot.png Graphic file (type png)
-<use figures/planar_rot.png>
-Package pdftex.def Info: figures/planar_rot.png  used on input line 608.
-(pdftex.def)             Requested size: 352.31624pt x 204.09033pt.
- [33 <./figures/planar_rot.png>]
-<figures/two_frames.png, id=957, 587.19376pt x 462.72874pt>
-File: figures/two_frames.png Graphic file (type png)
-<use figures/two_frames.png>
-Package pdftex.def Info: figures/two_frames.png  used on input line 676.
-(pdftex.def)             Requested size: 375.80542pt x 296.14539pt.
- [34]
-[35 <./figures/two_frames.png>]
-<figures/point_transform.png, id=975, 417.56pt x 250.9375pt>
-File: figures/point_transform.png Graphic file (type png)
-<use figures/point_transform.png>
-Package pdftex.def Info: figures/point_transform.png  used on input line 723.
-(pdftex.def)             Requested size: 375.80542pt x 225.85696pt.
- [36] [37 <./figures/point_transform.png>]
-<figures/compoz.png, id=1001, 871.255pt x 351.3125pt>
-File: figures/compoz.png Graphic file (type png)
-<use figures/compoz.png>
-Package pdftex.def Info: figures/compoz.png  used on input line 796.
-(pdftex.def)             Requested size: 469.75499pt x 189.41644pt.
+ [31]
+[32]
+<figures/planar_rot.png, id=201, 639.38875pt x 370.38374pt>
+ [33] [34]
+<figures/two_frames.png, id=208, 587.19376pt x 462.72874pt>
+ [35]
+<figures/point_transform.png, id=212, 417.56pt x 250.9375pt>
+ [36]
+Underfull \vbox (badness 2213) has occurred while \output is active []
 
-[38 <./figures/compoz.png>]
+ [37]
+<figures/compoz.png, id=221, 871.255pt x 351.3125pt>
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 833.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\in' on input line 833.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 833.
-
-[39]
-<figures/zyz.png, id=1024, 722.7pt x 314.17375pt>
-File: figures/zyz.png Graphic file (type png)
-<use figures/zyz.png>
-Package pdftex.def Info: figures/zyz.png  used on input line 905.
-(pdftex.def)             Requested size: 375.80542pt x 163.37128pt.
- [40 <./figures/zyz.png>] [41] [42] [43] [44] [45] [46])
-(./sections/manip_kine.tex [47]
+[38] [39]
+<figures/zyz.png, id=228, 722.7pt x 314.17375pt>
+ [40] [41] [42] [43] [44] [45] [46] [47]) (./sections/manip_kine.tex
+[48]
 Chapter 4.
-<figures/manip.png, id=1131, 948.54375pt x 297.11pt>
-File: figures/manip.png Graphic file (type png)
-<use figures/manip.png>
-Package pdftex.def Info: figures/manip.png  used on input line 23.
-(pdftex.def)             Requested size: 375.80542pt x 117.71304pt.
-<figures/pneunets.png, id=1136, 903.375pt x 507.8975pt>
-File: figures/pneunets.png Graphic file (type png)
-<use figures/pneunets.png>
-Package pdftex.def Info: figures/pneunets.png  used on input line 30.
-(pdftex.def)             Requested size: 375.80542pt x 211.29277pt.
-[48
+<figures/manip.png, id=261, 948.54375pt x 297.11pt>
+<figures/pneunets.png, id=262, 903.375pt x 507.8975pt>
+[49
 
-] [49 <./figures/manip.png> <./figures/pneunets.png>]
-<figures/torobo7.png, id=1156, 840.13875pt x 938.75719pt>
-File: figures/torobo7.png Graphic file (type png)
-<use figures/torobo7.png>
-Package pdftex.def Info: figures/torobo7.png  used on input line 67.
-(pdftex.def)             Requested size: 469.75499pt x 524.89828pt.
- [50] [51 <./figures/torobo7.png (PNG copy)>]
+] [50]
+<figures/torobo7.png, id=269, 840.13875pt x 938.75719pt>
+ [51]
 
-Package hyperref Warning: No autoref name for `definition' on input line 105.
+Package hyperref Warning: No autoref name for `definition' on input line 107.
 
-[52]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53]
-Overfull \hbox (6.13344pt too wide) in paragraph at lines 229--243
- [][] 
+Underfull \vbox (badness 2503) has occurred while \output is active []
+
+ [52]
+[53] [54]
+Overfull \hbox (6.13344pt too wide) in paragraph at lines 231--245
+ [][] |
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
-[55] [56]
-<figures/planar_manip.png, id=1231, 467.7475pt x 327.2225pt>
-File: figures/planar_manip.png Graphic file (type png)
-<use figures/planar_manip.png>
-Package pdftex.def Info: figures/planar_manip.png  used on input line 344.
-(pdftex.def)             Requested size: 328.82706pt x 230.04779pt.
- [57 <./figures/planar_manip.png>] [58] [59] [60] [61]
-<figures/ik_ex.png, id=1289, 763.85374pt x 386.44376pt>
-File: figures/ik_ex.png Graphic file (type png)
-<use figures/ik_ex.png>
-Package pdftex.def Info: figures/ik_ex.png  used on input line 569.
-(pdftex.def)             Requested size: 375.80542pt x 190.12566pt.
-) (./notes.bbl
-(./notes.brf)
-\tf@brf=\write10
-\openout10 = `notes.brf'.
+ [55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62] [63 <./figures/ik_ex.png>] [64
-
-] [65])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
+ [56]
+[57]
+<figures/planar_manip.png, id=292, 467.7475pt x 327.2225pt>
+ [58] [59] [60] [61] [62] [63]
+<figures/ik_ex.png, id=313, 763.85374pt x 386.44376pt>
+ [64] [65]
+<elbow_manip.png, id=320, 462.72874pt x 358.33875pt>
  [66]
+Overfull \hbox (16.67502pt too wide) in paragraph at lines 609--613
+\OT1/ptm/m/n/12 Recall that rigid body trans-for-ma-tions pre-serve dis-tance. 
+If we ap-ply the trans-for-ma-tion, $\OMS/cmsy/m/n/12 f[][]g[]$|
+ []
+
+) (./notes.bbl (./notes.brf)
+\tf@brf=\write9
+\openout9 = `notes.brf'.
+
+ [67] [68
+
+] [69])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
+ [70]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
  (./notes.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
-Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 6BEF67BC37EECF9587D6177D7EC1993A;4361.
-Package rerunfilecheck Info: File `notes.brf' has not changed.
-(rerunfilecheck)             Checksum: 50DF894E0BDECC4F2CB23B3687686A21;1909.
 
+
+Package rerunfilecheck Warning: File `notes.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `notes.brf':
+(rerunfilecheck)             Before: 56BEC9025DDBC78E3F70B60ACE0421E9;2068
+(rerunfilecheck)             After:  A2346BB4AE1B1472382F99A471F70432;2170.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 50827 strings out of 492649
- 1155258 string characters out of 6129622
- 1400554 words of memory out of 5000000
- 53197 multiletter control sequences out of 15000+600000
- 572053 words of font info for 257 fonts, out of 8000000 for 9000
+ 49992 strings out of 492649
+ 1143710 string characters out of 6129622
+ 1399058 words of memory out of 5000000
+ 53005 multiletter control sequences out of 15000+600000
+ 560396 words of font info for 102 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  63i,20n,101p,10494b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -2104,14 +1974,14 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf
 ist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2018/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/t
 exmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
-pe1/urw/times/utmbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/t
-imes/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri
-8a.pfb>
-Output written on notes.pdf (73 pages, 4902655 bytes).
+t/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/
+type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/
+times/utmbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utm
+r8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on notes.pdf (77 pages, 373614 bytes).
 PDF statistics:
- 1510 PDF objects out of 1728 (max. 8388607)
- 1288 compressed objects within 13 object streams
- 383 named destinations out of 1000 (max. 500000)
- 26892 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
 

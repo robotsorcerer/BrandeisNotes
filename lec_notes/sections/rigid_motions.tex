@@ -51,25 +51,47 @@ for a finite pitch, otherwise, it is
 for an infinite pitch. Note that  for infinitesimal screws, scalar multiplication and vector addition are valid so that two screws, $\underline{s}_1$ and $\underline{s}_2$ are considered linearly dependent if there exists non-zero scalars, $c_1$ and $c_2$ \ie $c_1\underline{s}_1+c_2\underline{s}_2=0$.
 
 
-\subsection{Motion screws: Pitch, axis, twist}
+\subsection{Motion screws: Twist's Pitch, Axis, and Magnitude}
 %
-The unique line about which a body in space rotates or translates for an infinitesimal motion or velocity of the body is called the \textit{twist axis}. Formally, we say \textit{a body receives a twist about a screw when it is uniformly rotated about the screw, while it is translated uniformly parallel to the screw, through a distance equal to the product of the pitch and the circular measure of the angle of rotation}~\cite{Ball}. Similar to the screw, the \textit{twist} is characterized by a six-vector of coordinates, $\underline{t}=(T_1, T_2, T_3, T_4, T_5, T_6)$ so that the components of the angular velocity of the body are denoted by $\underline{w}=(T_1, T_2, T_3)$ while the components of the linear velocity of a fixed point in the body lying at the origin of the coordinate system is $\underline{v}\equiv(T_4, T_5, T_6)$. Hence, we have the Pl\"ucker coordinates of the \textit{twist axis} given as
+The unique line about which a body in space rotates or translates for an infinitesimal motion or velocity of the body is called the \textit{twist axis}. Formally, we say \textit{a body receives a twist about a screw when it is uniformly rotated about the screw, while it is translated uniformly parallel to the screw, through a distance equal to the product of the pitch and the circular measure of the angle of rotation}~\cite{Ball}. 
+
+Similar to the screw, the \textit{twist} is characterized by a six-vector of coordinates, $\underline{t}=(T_1, T_2, T_3, T_4, T_5, T_6)$ so that the components of the angular velocity of the body are denoted by $\underline{w}=(T_1, T_2, T_3)$ while the components of the linear velocity of a fixed point in the body lying at the origin of the coordinate system is $\underline{v}\equiv(T_4, T_5, T_6)$. 
+
+An important thing to note is that the a twist is characterized by the attributes \textit{pitch, magnitude and an axis}.  Hence, we have the Pl\"ucker coordinates of the \textit{twist axis} given as
 %
-\begin{subequations}
-	\begin{align}
-	L &= T_1,\quad M=T_2, \quad N=T_3 \\
+\begin{definition}[Twist Axis]
+	
+	\begin{subequations}
+		\begin{align}
+		L &= T_1,\quad M=T_2, \quad N=T_3 \\
+		%
+		P &= T_4 - pT_1, \quad Q=T_5-pT_2, \quad R = T_6 - pT_3.
+		\end{align}
+	\end{subequations}
+\end{definition}
+%
+\begin{definition}[Pitch of a Twist]
+	The pitch of the twist, $\twistcoord = \left(\begin{array}{cc}
+	\omega & v
+	\end{array}\right)^T$ is 
 	%
-	P &= T_4 - pT_1, \quad Q=T_5-pT_2, \quad R = T_6 - pT_3
-	\end{align}
-\end{subequations}
-%
-whereupon the pitch of the twist is 
-%
-\begin{align}
-	p = \dfrac{T_1T_4+T_2T_5+T_3T_6}{T_1^2+T_2^2+T_3^2} = \dfrac{\underline{w}\cdot \underline
-	{v}}{\underline{w}\cdot \underline{w} }.
+	\begin{align}
+	p = \ifelse{\dfrac{T_1T_4+T_2T_5+T_3T_6}{T_1^2+T_2^2+T_3^2} = \dfrac{\underline{w}^T\cdot \underline
+			{v}}{\underline{w}\cdot \underline{w} }}{\underline{\omega} \neq 0}{\infty} .
 	\label{eq:twist_pitch}
-\end{align}
+	\end{align}
+\end{definition}
+%
+\begin{definition}[Magnitude of a Twist]
+	The magnitude of the twist, $\twistcoord = \left(\begin{array}{cc}
+	\omega & v
+	\end{array}\right)^T$ is 
+	%
+	\begin{align}
+	\|\twistcoord \| = \ifelse{\|\underline{\omega}\|}{\underline{\omega}\neq 0}{\|\underline{v}\|} .
+	\label{eq:twist_mag}
+	\end{align}
+\end{definition}
 
 
 In screw theory, it is typical to concern ourselves only with the small displacements of a system's motion. Whenever a body admits an indefinitely small movement of a continuous nature, it is capable of executing that kind of movement denoted by a twist about a screw. When the body receives twists in several succession, the position that is finally attained is called the \textit{resultant twist}.
@@ -79,7 +101,7 @@ In screw theory, it is typical to concern ourselves only with the small displace
 	What is the geometric meaning of \eqref{eq:twist_pitch} on a twist axis to you. Define \textit{pure rotation} and a \textit{pure translation} in terms of \eqref{eq:twist_pitch}\footnote{Figure out how they correspond to zero pitch and infinite pitch twists.}. 
 \end{homework} 
 
-\subsection{Dynamics screws: pitch, axis, twists}
+\subsection{Dynamics Screws: Twist's Pitch, Axis, and Magnitude}
 %
 For a set of forces and moments applied to a rigid body, there is a \textit{wrench axis}, a unique line, which has associated with it a pitch, $p$, and a magnitude. We may consider the set of forces and moments that act on the body to be a single force along  the wrench axis and a a moment about exerted about the axis. This force-moment pair is termed a \textit{wrench}, and it is characterized by the 6-vector $\underline{w} = (W_1, W_2, W_3, W_4, W_5, W_6)$. We consider the first three components of $\underline{w}$ to be the net force components, $\underline{f}$, exerted on the body and $\underline{m}=\{W_4, W_5, W_6\}$ to be the components of the net moment resolved at the origin of the reference frame. We define the Pl\"ucker coordinates of the \textit{wrench axis} as 
 %

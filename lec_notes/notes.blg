@@ -1,17 +1,17 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: notes.aux
 The style file: chicago.bst
-Illegal, another \bibstyle command---line 249 of file notes.aux
+Illegal, another \bibstyle command---line 269 of file notes.aux
  : \bibstyle
  :          {wafr.bst}
 I'm skipping whatever remains of this command
 Database file #1: ../../Papers/SRS/Continuum/biblio.bib
-Repeated entry---line 500 of file ../../Papers/SRS/Continuum/biblio.bib
+Repeated entry---line 553 of file ../../Papers/SRS/Continuum/biblio.bib
  : @article{Gough1957
  :                   ,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1462 of file ../../Papers/SRS/Continuum/biblio.bib
+You're missing a field name---line 1540 of file ../../Papers/SRS/Continuum/biblio.bib
  :   
  :   % journal={Springer Nature},
 (Error may have been on previous line)
@@ -25,45 +25,45 @@ Warning--no journal in Ogunmolu19RALI
 Warning--no number and no volume in Ogunmolu19RALI
 Warning--page numbers missing in Ogunmolu19RALI
 Warning--no number and no volume in Renda2018ICRA
-You've used 25 entries,
+You've used 26 entries,
             2861 wiz_defined-function locations,
-            789 strings with 9890 characters,
-and the built_in function-call counts, 18575 in all, are:
-= -- 1504
-> -- 1440
+            795 strings with 10021 characters,
+and the built_in function-call counts, 19061 in all, are:
+= -- 1546
+> -- 1466
 < -- 7
-+ -- 436
-- -- 484
-* -- 1671
-:= -- 3375
-add.period$ -- 78
-call.type$ -- 25
-change.case$ -- 188
-chr.to.int$ -- 24
-cite$ -- 34
-duplicate$ -- 523
-empty$ -- 1101
-format.name$ -- 544
-if$ -- 3486
++ -- 442
+- -- 494
+* -- 1702
+:= -- 3474
+add.period$ -- 81
+call.type$ -- 26
+change.case$ -- 193
+chr.to.int$ -- 25
+cite$ -- 35
+duplicate$ -- 540
+empty$ -- 1133
+format.name$ -- 554
+if$ -- 3570
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 29
-newline$ -- 126
-num.names$ -- 248
-pop$ -- 173
+newline$ -- 131
+num.names$ -- 258
+pop$ -- 177
 preamble$ -- 1
-purify$ -- 342
+purify$ -- 354
 quote$ -- 0
-skip$ -- 530
+skip$ -- 548
 stack$ -- 0
-substring$ -- 979
-swap$ -- 186
+substring$ -- 999
+swap$ -- 191
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 446
+type$ -- 466
 warning$ -- 9
-while$ -- 242
+while$ -- 252
 width$ -- 0
-write$ -- 335
+write$ -- 349
 (There were 3 error messages)

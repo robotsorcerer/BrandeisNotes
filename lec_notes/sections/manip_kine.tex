@@ -11,7 +11,9 @@ Recommended Text Readings:
  \item \cite[Chapter 4]{LynchBook}
 \end{itemize}
 
-At issue in this chapter is characterizing the \textit{motion} of a robot based on the position and orientation of the links of the robot (in the case of rigid bodies). We will leave discussion of the forward or differential kinematics of soft robots to a future discussion but we will briefly discuss it in class. First off, based on the first chapter of ~\cite{Hunt1983}'s Kinematic Geometry of Mechanisms, we recollect that there are six primitive types of joints constructed from the so-called \textit{lower pairs} of mechanisms, which all exercise a subgroup of \textit{SE(3)} when they are actuated.
+At issue in this chapter is characterizing the \textit{motion} of a robot based on the position and orientation of the links of the robot (in the case of rigid bodies). We will leave discussion of the forward or differential kinematics of soft robots to a future discussion but we will briefly discuss it in class. First off, based on the first chapter of ~\cite{Hunt1983}'s Kinematic Geometry of Mechanisms, we recollect that there are six primitive types of joints constructed from the so-called \textit{lower pairs} of mechanisms, which all exercise a subgroup of \textit{SE(3)} when they are actuated. 
+
+There exist two important problems which arise in the study of the kinematics of robot manipulators. The first, commonly called the forward kinematics, is that given a configuration of the manipulator, find the configuration of the final link. The second, called the inverse kinematics is that given the configuration of the final link, find out the possible configurations of the manipulator. For anthropomorphic robot arms, the forward kinematic problem is relatively simple: the solution involves specifying the rigid motions of each joint that affect the links that follow after it and then compose the motions to determine the rigid motion of the writs relative to some \textit{base configuration}. For anthropomorphic arms, the inverse kinematics has no closed-form solution. However, most industrial manipulators have classical closed-form solutions which are typically obtained by repeatedly solving the subproblems that arise in the problem formulation.
 
 
 \section{Forward kinematics}
@@ -530,6 +532,7 @@ We formally define the inverse kinematics problem as follows: given a desired co
 %
 \begin{align}
 	\homost(\theta) = \homo_d
+	\label{eq:inv_kine_prob}
 \end{align}
 %
 for some $\theta \in Q$. It is noteworthy to here point out that the IK problem mat have multiple solutions,, a unique solution or no solution at all. It is typical to use numerical optimization approaches to solve these problems in practice. In ROS, there are different IK libraries that are available such as the ones from \textsc{KDL} or 
@@ -570,3 +573,66 @@ for some $\theta \in Q$. It is noteworthy to here point out that the IK problem 
 	\caption{Inverse Kinematics of a two-link planar manipulator}
 	\label{fig:ik_ex}
 \end{figure}
+%
+Something important of note in this planar problem is that we solved for $\theta_2$ first given $r$ and then utilize $\theta_1$ to rotate the end-effector to the desired position. The respective sub-problems we run into may have zero, one or many solutions depending on the desired end-effector position. For example, with respect to \eqref{eq:inv_kine_prob}, when the joint space has more dimensions the workspace, we find that $\homo^{-1}(\theta)$  is an infinite set. Such systems are referred to as redundant manipulators. A common example of redundant manipulators in robotics are Stewart-Gough platforms~\autoref{fig:stewart_gough}.  Here, the important thing to note is that one must find a way to exploit the extra degrees of freedom of the robot. The problem we just treated is that for when the dimension of the joint and workspace are the same. Most industrial manipulators are designed such that $\homo^{-1}(\theta)$ is easily found. 
+
+When the configuration is outside the manipulator workspace, no solutions are possible and one of the sub-problems must fail to have a solution. We end up with multiple solutions when the desired configuration is within the workspace but there are multiple joint configurations which all map to the same end-effector location.
+\subsection{Paden-Kahan Subproblems}
+%
+The techniques we treat in this section relate to the ``subproblem trick" originally invented by Kahan and published by Paden when he was a PhD student in Berkeley in 1985. The basic idea is to find points on the axes of the manipulator where one or more twist axes intersect. The key is to figure out the special points at which the axes intersect to eliminate the dependence of the rigid body transformation on certain angles. These would simplify the geometrical forward manipulation map equation from which we can repeatedly apply the exponential map to certain subproblems in order to reach an eventual solution. We could also subtract a common point from both sides of the forward manipulation map. Recall that the rigid body transformation preserves distance. Since this is the case, we take a norm of both sides of the equation and eliminate dependencies. Matter-of-factly, owing to this technique, many industrial manipulators are now so-designed to exploit this axial geometry in order to solve for the inverse kinematics of a manipulator.
+
+\begin{figure}[tb!]
+	\centering
+	\includegraphics[width=.8\columnwidth]{elbow_manip.png}
+	\caption{Elbow Manipulator. Figure reproduced from ~\cite{PadenThesis85}}
+	\label{fig:elbow_manip}
+\end{figure}
+%
+\begin{example}[The Elbow Manipulator]
+	Now consider the elbow manipulator of \autoref{fig:elbow_manip}. We see that the first two axes intersect and the last three axes intersect. These properties ensure a simplification to the inverse kinematic problem since $e^{\twistcoord\theta}p = p$ if $p$ is on the axis of a revolute twist. 
+	Let $\underline{\twistcoord} = \{\twistcoord_0, \twistcoord_2, \ldots, \twistcoord_5\}$ be the set of zero-pitch unit screws whose axes are coincident with those of the elbow manipulator for some nominal zero configuration. Let $c_\circ = \twistcoord_0 \cap \twistcoord_1$ and $c_5 = \twistcoord_3 \cap \twistcoord_4 \cap \twistcoord_5$. We may write the forward manipulation map as 
+	%
+	\begin{align}
+		\fwdmap{0}{\theta} \fwdmap{1}{\theta}\fwdmap{2}{\theta}\fwdmap{3}{\theta}\fwdmap{4}{\theta}\fwdmap{5}{\theta}=\homo
+		\label{eq:elbow_fwd}
+	\end{align}
+	Say we multiply throughout by $c_5$, we find that the equation reduces to 
+	%
+	\begin{align}
+	\fwdmap{0}{\theta} \fwdmap{1}{\theta}\fwdmap{2}{\theta}c_5=\homo \, c_5
+	\end{align}
+	%
+	since axes 3, 4, and 5 all intersect at a common point.  Next, we subtract $c_0$ from both sides and take the two-norm of the resulting relation, we obtain
+	%
+	\begin{align}
+		\|\fwdmap{0}{\theta} \fwdmap{1}{\theta}\fwdmap{2}{\theta} c_5 - c_0\|&=\|\homo \, c_5 - c_0\|.
+	\end{align}
+	%
+	Recall that rigid body transformations preserve distance. If we apply the transformation, $\{\fwdmap{0}{\theta} \fwdmap{1}{\theta}\}^{-1}$ to the left hand-side of the above equation (since $c_\circ = \twistcoord_0 \cap \twistcoord_1$), we obtain
+	%
+	\begin{align}
+	\|\fwdmap{2}{\theta} c_5 - c_0\|&=\|\homo \, c_5 - c_0\|.
+	\end{align}
+	%
+	We can easily solve for $\theta_2$ using subproblem 3 of \cite[pp 102]{MurrayBook}.
+	
+	Next, we see from \eqref{eq:elbow_fwd} that 
+	%
+	\begin{align}
+		\fwdmap{3}{\theta} \fwdmap{4}{\theta} \fwdmap{5}{\theta} = \left(\fwdmap{0}{\theta}\fwdmap{1}{\theta}\fwdmap{2}{\theta}\right)^{-1} \homo.
+	\end{align}
+	%
+	Suppose, $O_{\bar{c}_5} \neq c_5$ is a point on $\twistcoord_5$, we find that 
+	%
+	\begin{align}
+	\fwdmap{3}{\theta} \fwdmap{4}{\theta} \fwdmap{5}{\theta}O_{\bar{c}_5} = \left(\fwdmap{0}{\theta}\fwdmap{1}{\theta}\fwdmap{2}{\theta}\right)^{-1} \homo O_{\bar{c}_5}.
+	\end{align}
+	%
+	Again, we can solve for $\theta_3$ and $\theta_4$ using subproblem 2 of \cite[pp 100]{MurrayBook} so that we are now left with $\theta_5$.  From \eqref{eq:elbow_fwd}, 
+	%
+	\begin{align}
+		\fwdmap{5}{\theta} = \left(\fwdmap{0}{\theta} \fwdmap{1}{\theta} \fwdmap{2}{\theta} \fwdmaptheta{3} \fwdmaptheta{4} \right)^{-1} \homo 
+	\end{align}
+	%
+	Applying $O_{\bar{5}} \neq \twistcoord_5$ to both sides, 
+\end{example}we can use subproblem 1 of \cite[pp. 99]{MurrayBook} to find $\theta_5$. 
