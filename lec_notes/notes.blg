@@ -1,8 +1,8 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: notes.aux
 The style file: chicago.bst
-Illegal, another \bibstyle command---line 269 of file notes.aux
+Illegal, another \bibstyle command---line 295 of file notes.aux
  : \bibstyle
  :          {wafr.bst}
 I'm skipping whatever remains of this command
@@ -16,54 +16,58 @@ You're missing a field name---line 1540 of file ../../Papers/SRS/Continuum/bibli
  :   % journal={Springer Nature},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "PadenThesis85"
 Warning--empty booktitle in Hannan2000
 Warning--no journal in Hunt1983
 Warning--no journal in Ogunmolu19RALII
 Warning--no number and no volume in Ogunmolu19RALII
 Warning--page numbers missing in Ogunmolu19RALII
+Warning--no number and no volume in Ogunmolu18IROS
+Warning--page numbers missing in Ogunmolu18IROS
 Warning--no journal in Ogunmolu19RALI
 Warning--no number and no volume in Ogunmolu19RALI
 Warning--page numbers missing in Ogunmolu19RALI
 Warning--no number and no volume in Renda2018ICRA
-You've used 26 entries,
+Warning--empty institution in Stramigioli2001
+You've used 27 entries,
             2861 wiz_defined-function locations,
-            795 strings with 10021 characters,
-and the built_in function-call counts, 19061 in all, are:
-= -- 1546
-> -- 1466
+            801 strings with 10253 characters,
+and the built_in function-call counts, 19892 in all, are:
+= -- 1613
+> -- 1553
 < -- 7
-+ -- 442
-- -- 494
-* -- 1702
-:= -- 3474
-add.period$ -- 81
-call.type$ -- 26
-change.case$ -- 193
-chr.to.int$ -- 25
-cite$ -- 35
-duplicate$ -- 540
-empty$ -- 1133
-format.name$ -- 554
-if$ -- 3570
++ -- 470
+- -- 522
+* -- 1789
+:= -- 3624
+add.period$ -- 84
+call.type$ -- 27
+change.case$ -- 204
+chr.to.int$ -- 26
+cite$ -- 39
+duplicate$ -- 555
+empty$ -- 1167
+format.name$ -- 590
+if$ -- 3725
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 29
-newline$ -- 131
-num.names$ -- 258
-pop$ -- 177
+missing$ -- 30
+newline$ -- 136
+num.names$ -- 268
+pop$ -- 184
 preamble$ -- 1
-purify$ -- 354
+purify$ -- 369
 quote$ -- 0
-skip$ -- 548
+skip$ -- 569
 stack$ -- 0
-substring$ -- 999
-swap$ -- 191
+substring$ -- 1019
+swap$ -- 195
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 466
-warning$ -- 9
-while$ -- 252
+type$ -- 486
+warning$ -- 12
+while$ -- 258
 width$ -- 0
-write$ -- 349
+write$ -- 361
 (There were 3 error messages)

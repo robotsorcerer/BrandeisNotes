@@ -24,8 +24,8 @@
 \BOOKMARK [2][-]{subsection.2.4.3}{The Mobility Criterion}{section.2.4}% 24
 \BOOKMARK [0][-]{chapter.3}{Motion of Rigid Bodies}{}% 25
 \BOOKMARK [1][-]{section.3.1}{Screws}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.1.1}{Motion screws: Pitch, axis, twist}{section.3.1}% 27
-\BOOKMARK [2][-]{subsection.3.1.2}{Dynamics screws: pitch, axis, twists}{section.3.1}% 28
+\BOOKMARK [2][-]{subsection.3.1.1}{Motion screws: Twist's Pitch, Axis, and Magnitude}{section.3.1}% 27
+\BOOKMARK [2][-]{subsection.3.1.2}{Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{section.3.1}% 28
 \BOOKMARK [2][-]{subsection.3.1.3}{Screw Motions}{section.3.1}% 29
 \BOOKMARK [1][-]{section.3.2}{Rodrigues' Formula}{chapter.3}% 30
 \BOOKMARK [1][-]{section.3.3}{The Matrix Exponential, The Lie Group and Lie Algebra}{chapter.3}% 31
@@ -58,4 +58,11 @@
 \BOOKMARK [2][-]{subsection.4.6.1}{Spatial Jacobian}{section.4.6}% 58
 \BOOKMARK [2][-]{subsection.4.6.2}{The Body Jacobian}{section.4.6}% 59
 \BOOKMARK [1][-]{section.4.7}{Inverse kinematics}{chapter.4}% 60
-\BOOKMARK [0][-]{chapter*.29}{References}{}% 61
+\BOOKMARK [2][-]{subsection.4.7.1}{Paden-Kahan Subproblems}{section.4.7}% 61
+\BOOKMARK [1][-]{section.4.8}{Robot Dynamics and Control}{chapter.4}% 62
+\BOOKMARK [2][-]{subsection.4.8.1}{Lagrangian for Mechanical Systems }{section.4.8}% 63
+\BOOKMARK [2][-]{subsection.4.8.2}{Euler-Lagrange Equations}{section.4.8}% 64
+\BOOKMARK [2][-]{subsection.4.8.3}{Dynamics of a spherical Pendulum}{section.4.8}% 65
+\BOOKMARK [2][-]{subsection.4.8.4}{Dynamics of a Mecanum-Wheeled Robot}{section.4.8}% 66
+\BOOKMARK [2][-]{subsection.4.8.5}{Robot Dynamics and the POE Formula}{section.4.8}% 67
+\BOOKMARK [0][-]{chapter*.31}{References}{}% 68
