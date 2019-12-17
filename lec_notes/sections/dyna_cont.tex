@@ -44,7 +44,7 @@ Constraints act on a system of particles through the application of \textit{cons
 %
 where $\Gamma_j$ for the holonomic constraints of \eqref{eq:holonomic} can be taken as the gradients of $g_j$, essentially the level sets of $g_j(r) = 0$. 
 %
-While simple, this approach does not scale well to the configuration of the sort of rigid bodies we deal with in robotics. A better approach is to use a smaller set of variables that parameterizes the configuration of the system. For a system of $n$ particles with $k$ constraints, we find a set of $m = 3n − k$ variables $q_1, \ldots , q_m$ and smooth functions $f_1, \ldots, f_n$ such that 
+While simple, this approach does not scale well to the configuration of the sort of rigid bodies we deal with in robotics. A better approach is to use a smaller set of variables that parameterizes the configuration of the system. For a system of $n$ particles with $k$ constraints, we find a set of $m = 3n -k$ variables $q_1, \ldots , q_m$ and smooth functions $f_1, \ldots, f_n$ such that 
 %
 \begin{align}
 	r_i = f_i(q_1, \ldots, q_m), \quad i = 1, \ldots, n \\
@@ -147,10 +147,10 @@ We thus have the Lagrangian of the system as
 Now writing the derivatives of the canonical momenta, we have
 %
 \begin{align}
-\dfrac{d}{dt}\dfrac{\partial L}{\partial \dot{r}} &=  l_1^2(m_1+m_2) + m_2 l_2^2 \dot{\theta}_2 + m_2 l_1 l_2 \cos(\theta_1 - \theta_2)(\dot{\theta}_1 + \dot{\theta}_2) 
+\dfrac{d}{dt}\dfrac{\partial L}{\partial \dot{r}} &=  (m_1+m_2)l_1 \dot{\theta}_1^2 + (m_1+m_2)l_1^2 \dot{\theta}_1 + m_2 l_2^2 \dot{\theta}_2 + m_2 l_1 l_2 \cos(\theta_1 - \theta_2)(\dot{\theta}_1 + \dot{\theta}_2) 
 \end{align}
 %
-and we have for the associated generalized forces, 
+and we have for the associated generalized forces
 %
 \begin{align}
 \dfrac{\partial L}{\partial r} =  %- m_2 l_1 l_2 \dot{\theta}_1 \dot{\theta}_2 \sin(\theta_1 - \theta_2)

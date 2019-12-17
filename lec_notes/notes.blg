@@ -1,73 +1,72 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: notes.aux
 The style file: chicago.bst
-Illegal, another \bibstyle command---line 295 of file notes.aux
+Illegal, another \bibstyle command---line 294 of file notes.aux
  : \bibstyle
  :          {wafr.bst}
 I'm skipping whatever remains of this command
 Database file #1: ../../Papers/SRS/Continuum/biblio.bib
-Repeated entry---line 553 of file ../../Papers/SRS/Continuum/biblio.bib
+Repeated entry---line 556 of file ../../Papers/SRS/Continuum/biblio.bib
  : @article{Gough1957
  :                   ,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1540 of file ../../Papers/SRS/Continuum/biblio.bib
+You're missing a field name---line 1543 of file ../../Papers/SRS/Continuum/biblio.bib
  :   
  :   % journal={Springer Nature},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "PadenThesis85"
+Warning--I didn't find a database entry for "Ogunmolu18IROS"
 Warning--empty booktitle in Hannan2000
 Warning--no journal in Hunt1983
 Warning--no journal in Ogunmolu19RALII
 Warning--no number and no volume in Ogunmolu19RALII
 Warning--page numbers missing in Ogunmolu19RALII
-Warning--no number and no volume in Ogunmolu18IROS
-Warning--page numbers missing in Ogunmolu18IROS
 Warning--no journal in Ogunmolu19RALI
 Warning--no number and no volume in Ogunmolu19RALI
 Warning--page numbers missing in Ogunmolu19RALI
 Warning--no number and no volume in Renda2018ICRA
 Warning--empty institution in Stramigioli2001
-You've used 27 entries,
+You've used 26 entries,
             2861 wiz_defined-function locations,
-            801 strings with 10253 characters,
-and the built_in function-call counts, 19892 in all, are:
-= -- 1613
-> -- 1553
+            798 strings with 10061 characters,
+and the built_in function-call counts, 19221 in all, are:
+= -- 1561
+> -- 1492
 < -- 7
-+ -- 470
-- -- 522
-* -- 1789
-:= -- 3624
-add.period$ -- 84
-call.type$ -- 27
-change.case$ -- 204
-chr.to.int$ -- 26
-cite$ -- 39
-duplicate$ -- 555
-empty$ -- 1167
-format.name$ -- 590
-if$ -- 3725
++ -- 452
+- -- 504
+* -- 1722
+:= -- 3499
+add.period$ -- 81
+call.type$ -- 26
+change.case$ -- 196
+chr.to.int$ -- 25
+cite$ -- 36
+duplicate$ -- 539
+empty$ -- 1133
+format.name$ -- 568
+if$ -- 3601
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 30
-newline$ -- 136
-num.names$ -- 268
-pop$ -- 184
+missing$ -- 29
+newline$ -- 131
+num.names$ -- 258
+pop$ -- 179
 preamble$ -- 1
-purify$ -- 369
+purify$ -- 355
 quote$ -- 0
-skip$ -- 569
+skip$ -- 552
 stack$ -- 0
-substring$ -- 1019
-swap$ -- 195
+substring$ -- 999
+swap$ -- 190
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 486
-warning$ -- 12
-while$ -- 258
+type$ -- 466
+warning$ -- 10
+while$ -- 252
 width$ -- 0
-write$ -- 361
+write$ -- 348
 (There were 3 error messages)
