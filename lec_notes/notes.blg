@@ -2,71 +2,79 @@ This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: notes.aux
 The style file: chicago.bst
-Illegal, another \bibstyle command---line 294 of file notes.aux
+Illegal, another \bibstyle command---line 302 of file notes.aux
  : \bibstyle
  :          {wafr.bst}
 I'm skipping whatever remains of this command
+I couldn't open database file ../../Papers/iDG/IROS18/root.bib
+---line 303 of file notes.aux
+ : \bibdata{../../Papers/SRS/Continuum/biblio,../../Papers/iDG/IROS18/root
+ :                                                                        }
+I'm skipping whatever remains of this command
 Database file #1: ../../Papers/SRS/Continuum/biblio.bib
-Repeated entry---line 556 of file ../../Papers/SRS/Continuum/biblio.bib
+Repeated entry---line 552 of file ../../Papers/SRS/Continuum/biblio.bib
  : @article{Gough1957
  :                   ,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1543 of file ../../Papers/SRS/Continuum/biblio.bib
+You're missing a field name---line 1528 of file ../../Papers/SRS/Continuum/biblio.bib
  :   
  :   % journal={Springer Nature},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "PadenThesis85"
-Warning--I didn't find a database entry for "Ogunmolu18IROS"
+Warning--I didn't find a database entry for "Stramigioli2001"
 Warning--empty booktitle in Hannan2000
 Warning--no journal in Hunt1983
 Warning--no journal in Ogunmolu19RALII
 Warning--no number and no volume in Ogunmolu19RALII
 Warning--page numbers missing in Ogunmolu19RALII
+Warning--no number and no volume in Ogunmolu18IROS
+Warning--page numbers missing in Ogunmolu18IROS
 Warning--no journal in Ogunmolu19RALI
 Warning--no number and no volume in Ogunmolu19RALI
 Warning--page numbers missing in Ogunmolu19RALI
+Warning--no journal in PadenThesis85
+Warning--no number and no volume in PadenThesis85
+Warning--page numbers missing in PadenThesis85
 Warning--no number and no volume in Renda2018ICRA
-Warning--empty institution in Stramigioli2001
-You've used 26 entries,
+You've used 28 entries,
             2861 wiz_defined-function locations,
-            798 strings with 10061 characters,
-and the built_in function-call counts, 19221 in all, are:
-= -- 1561
-> -- 1492
+            810 strings with 10435 characters,
+and the built_in function-call counts, 20419 in all, are:
+= -- 1655
+> -- 1579
 < -- 7
-+ -- 452
-- -- 504
-* -- 1722
-:= -- 3499
-add.period$ -- 81
-call.type$ -- 26
-change.case$ -- 196
-chr.to.int$ -- 25
-cite$ -- 36
-duplicate$ -- 539
-empty$ -- 1133
-format.name$ -- 568
-if$ -- 3601
++ -- 476
+- -- 532
+* -- 1833
+:= -- 3722
+add.period$ -- 86
+call.type$ -- 28
+change.case$ -- 209
+chr.to.int$ -- 27
+cite$ -- 42
+duplicate$ -- 572
+empty$ -- 1208
+format.name$ -- 600
+if$ -- 3820
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 29
-newline$ -- 131
-num.names$ -- 258
-pop$ -- 179
+missing$ -- 32
+newline$ -- 140
+num.names$ -- 278
+pop$ -- 186
 preamble$ -- 1
-purify$ -- 355
+purify$ -- 381
 quote$ -- 0
-skip$ -- 552
+skip$ -- 586
 stack$ -- 0
-substring$ -- 999
-swap$ -- 190
+substring$ -- 1048
+swap$ -- 201
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 466
-warning$ -- 10
-while$ -- 252
+type$ -- 506
+warning$ -- 14
+while$ -- 269
 width$ -- 0
-write$ -- 348
-(There were 3 error messages)
+write$ -- 372
+(There were 4 error messages)

@@ -147,21 +147,177 @@ We thus have the Lagrangian of the system as
 Now writing the derivatives of the canonical momenta, we have
 %
 \begin{align}
-\dfrac{d}{dt}\dfrac{\partial L}{\partial \dot{r}} &=  (m_1+m_2)l_1 \dot{\theta}_1^2 + (m_1+m_2)l_1^2 \dot{\theta}_1 + m_2 l_2^2 \dot{\theta}_2 + m_2 l_1 l_2 \cos(\theta_1 - \theta_2)(\dot{\theta}_1 + \dot{\theta}_2) 
+\dfrac{\partial L}{\partial \dot{r}} &=  (m_1+m_2)l_1^2 \dot{\theta}_1 + m_2 l_2^2 \dot{\theta}_2 + m_2 l_1 l_2 \dot{\theta}_2 \cos(\theta_1 - \theta_2) + m_2 l_1 l_2 (\dot{\theta}_1 + \dot{\theta}_2 )  \cos(\theta_1 - \theta_2) 
+% (\dot{\theta}_1 + \dot{\theta}_2) 
 \end{align}
 %
+whereupon, 
+%
+\begin{align}
+	\dfrac{d}{dt}\dfrac{\partial L}{\partial \dot{r}} &=  (m_1+m_2)l_1^2 \ddot{\theta}_1 + m_2 l_1 l_2 \ddot{\theta}_2 \cos(\theta_1 - \theta_2) -  m_2 l_1 l_2 \dot{\theta}_2 \sin(\theta_1 - \theta_2) (\dot{\theta}_1 - \dot{\theta}_2) \nonumber \\
+	& \quad + m_2 l_2 \ddot{\theta}_2 + m_2 l_1 l_2 \ddot{\theta}_1 \cos(\theta_1 - \theta_2) - m_2 l_1 l_2 \dot{\theta}_1 \sin (\theta_1 - \theta_2)(\dot{\theta}_1 - \dot{\theta}_2) \\
+	%
+	\dfrac{d}{dt}\dfrac{\partial L}{\partial \dot{r}} &= (m_1+m_2)l_1^2 \ddot{\theta}_1 + m_2 l_1 l_2 (\ddot{\theta}_1 + \ddot{\theta}_2) \cos(\theta_1 - \theta_2)  + m_2 l_2 \ddot{\theta}_2  \nonumber \\
+	& \quad-  m_2 l_1 l_2(\dot{\theta}_1 + \dot{\theta}_2) \sin(\theta_1 - \theta_2) (\dot{\theta}_1 - \dot{\theta}_2) 
+\end{align}
 and we have for the associated generalized forces
 %
 \begin{align}
-\dfrac{\partial L}{\partial r} =  %- m_2 l_1 l_2 \dot{\theta}_1 \dot{\theta}_2 \sin(\theta_1 - \theta_2)
-  - (m_1 + m_2) g l_1 \sin \theta_1 - m_2 g l_2 \sin \theta_2
+\dfrac{\partial L}{\partial r} &=   - m_2 l_1 l_2  \dot{\theta}_1\dot{\theta}_2 \sin(\theta_1 - \theta_2) - (m_1+m_2)g l_1 \sin \theta_1  + m_2 l_1 l_2  \dot{\theta}_1\dot{\theta}_2 \sin(\theta_1 - \theta_2)  - m_2 g l_2 \sin \theta_2 \nonumber \\
+%
+\dfrac{\partial L}{\partial r} &= - (m_1+m_2)g l_1 \sin \theta_1- m_2 g l_2 \sin \theta_2
 \end{align}
 %
 Thus, we have the system torque as 
-
-
+%
+\begin{align}
+	\torque &= (m_1+m_2)l_1^2 \ddot{\theta}_1 + m_2 l_1 l_2 (\ddot{\theta}_1 + \ddot{\theta}_2) \cos(\theta_1 - \theta_2)  + m_2 l_2 \ddot{\theta}_2  \nonumber \\
+	& \quad-  m_2 l_1 l_2(\dot{\theta}_1 + \dot{\theta}_2) \sin(\theta_1 - \theta_2) (\dot{\theta}_1 - \dot{\theta}_2) - (m_1+m_2)g l_1 \sin \theta_1- m_2 g l_2 \sin \theta_2
+\end{align}
+%
+or in matrix form:
+%
+\begin{align}
+	\torque = 
+	\begin{bmatrix}
+	(m_1+m_2)l_1^2  + m_2 l_1 l_2 \cos(\theta_1 - \theta_2) &  0 \\
+	%
+	0 & m_2 l_2 + m_2 l_1 l_2 \cos(\theta_1 - \theta_2) 
+	\end{bmatrix}
+	%
+	\begin{bmatrix}
+	\ddot{\theta}_1 \\ \ddot{\theta}_2
+	\end{bmatrix} + \nonumber \\
+	%
+	\begin{bmatrix}
+	-  m_2 l_1 l_2 \sin(\theta_1 - \theta_2) \\
+	%
+	-  m_2 l_1 l_2 \sin(\theta_1 - \theta_2)
+	\end{bmatrix}^T
+	%
+	\begin{bmatrix}
+	\dot{\theta}_1 \\ \dot{\theta}_2
+	\end{bmatrix} 
+	%
+	+
+	\begin{bmatrix}
+	- (m_1+m_2)g l_1  \\
+	%
+	m_2 g l_2 
+	\end{bmatrix}^T
+	%
+	\begin{bmatrix}
+		\sin \theta_1 \\
+		%
+		 \sin \theta_2
+	\end{bmatrix}.
+\end{align}
+%
+Therefore, we can write the mass inertia matrix, Coriolis forces and potential energies of the system respectively as, 
+%
+\begin{align}
+	\bm{M} = \begin{bmatrix}
+	(m_1+m_2)l_1^2  + m_2 l_1 l_2 \cos(\theta_1 - \theta_2) &  0 \\
+	%
+	0 & m_2 l_2 + m_2 l_1 l_2 \cos(\theta_1 - \theta_2) 
+	\end{bmatrix}
+\end{align}
+%
+\begin{align}
+\bm{C} = 	\begin{bmatrix}
+-  m_2 l_1 l_2 \sin(\theta_1 - \theta_2) \\
+%
+-  m_2 l_1 l_2 \sin(\theta_1 - \theta_2)
+\end{bmatrix}^T \quad 
+%\end{align}
+%
+\text{ and } \quad 
+%
+%\begin{align}
+	\bm{V} = 	\begin{bmatrix}
+	- (m_1+m_2)g l_1  \sin \theta_1  \\
+	%
+	m_2 g l_2 \sin \theta_2
+	\end{bmatrix}
+	%
+\end{align}
+%
+so that we may write the equation of motion of the system as 
+%
+\begin{align}
+	\torque - \bm{M}(\theta) + \bm{C}( \theta) + \bm{V}(\theta) = 0.
+	\label{eq:torque}
+\end{align}
+%
+The derivation above is very important and will guide us when we start with the control of manipulators and wheeled robots.Equation \eqref{eq:torque} is basically a restatement of Newton's second law of motion, that is the net forces on a rigid body is a summation of the impressed forces (rate of change of the mechanical energy) of the system. The mass matrix is symmetric positive-definite while the $\bm{C}(\theta)$ matrix contains all the Coriolis and centripetal torques, while $V(\theta)$ contains the gravitational torques.
 
 \subsection{Dynamics of a Mecanum-Wheeled Robot}
+%
+The example set forth below is from \cite{Ogunmolu18IROS}. You are encouraged to read the paper to get the full context but the subject of importance to us will be introducing the way a rigid body can be controlled. In this case, we will use the gazebo simulation environment to realize torque control of the mobile manipulation system.  Formally,  we consider the KUKA youbot\footnote{\href{https://goo.gl/CYTjvD}{https://goo.gl/CYTjvD}} platform with four mecanum wheels~\cite{mecanum}, capable of spatial $\{x,y\}$ motion, \ie sideways, and forward, and an in-place $\theta$-rotation about the $z$-axis (see Fig. \autoref{fig:mecanum}). It is equipped with a 5-DoF arm, mounted on its base. We use the complete kinematic and dynamic model of the youbot platform, accounting for the wheels' friction and mass, while neglecting the links' masses and their associated inertia forces. %Our goal is to show that while iLQG solves the navigation task with an incomplete model, robust iLQG solves \cmt{the problem faster and better without knowledge of the associated disturbances}. Since the robot moves in the $x-y$ plane, we limit ourselves to the 3-DoF dynamics in Cartesian space.  
+The model is derived in spatial (world) coordinates as, $\textit{x}_I = \begin{bmatrix}\textit{x}_1, \textit{x}_2, \textit{x}_3\end{bmatrix}^T \equiv \begin{bmatrix}x_I, y_I, \theta_I\end{bmatrix}^T$, and the local frame of the robot is defined as $\textit{x}_R = \begin{bmatrix}x_R, y_R, \theta_R\end{bmatrix}^T$ (see \autoref{fig:mecanum}).
+%
+\begin{figure}[tb]
+	\centering
+	\subfloat[Mecanum Wheels Model]
+	{
+		\includegraphics[width=0.48\columnwidth]{../../Papers/iDG/IROS2018/figures/robot_mecanum.png}
+		\label{fig:mecanum}
+	}
+	% \caption{Wheels Model.}%
+	~ %\qquad
+	\subfloat[Robot frames convention	]
+	{\includegraphics[width=0.48\columnwidth]{../../Papers/iDG/IROS2018/figures/robot_torques.png}\label{fig:robot_geom}}
+	\caption{The KUKA Robot's Geometrical Illustration}
+\end{figure}
+%
+The coordinates of the robot in the world frame are  denoted $\textit{x}_R = \begin{bmatrix}x_R, y_R, \theta_R\end{bmatrix}^T$, where given as the $x_R,\,y_R$ are coordinates of the origin of the robot frame and $\theta_R$ is the relative angle between the  world and robot $x$ axes (see Fig. \autoref{fig:robot_geom}).
+%
+The torques that govern the robot's motion are obtained from \cite{mecanum}. We run our experiments in the Gazebo physics engine, which has its reference frame defined as $x$ pointing forward, $y$ pointing sideways, and $z$ pointing up. Therefore, our reference frame and robot geometry are as illustrated in Figs \ref{fig:mecanum} and \ref{fig:robot_geom}. Formally, we define the generalized Lagrangian equation of the robot as,
+\begin{align}
+\bm{M}(\bm{x})\ddot{\bm{x}} + \bm{C}(\bm{x}, \ddot{\bm{x}}) \dot{\bm{x}} + \bm{B}^T \bm{S} \bm{f} = \frac{1}{\bm{r}}\bm{B}^T \torque
+\label{eq:inverse_dyn}
+\end{align}
+%
+where $\torque = [\torque_1, \torque_2, \torque_3, \torque_4]$ is the wheel torque vector, $\bm{r}$ is the wheel radius, $\bm{f} = [\bm{f}_1, \bm{f}_2, \bm{f}_3, \bm{f}_4]^T$ is the friction vector, and $\bm{S}$ and $\bm{B}$ map the inverse kinematics, gravity, external forces and robot's angle, $\theta$, %(\ie the angle between the $Y_R$ axis in the  robot local frame's and the  $Y_I$ axis in the world frame)
+to each wheel torque; matrices $\bm{B}$ and $\bm{S}$ denote the inertia and coriolis properties of the robot. $\bm{B}$ and $\bm{S}$  are given by,
+%
+\[
+\small
+\bm{B} =
+\begin{bmatrix}
+-(\cos \theta - \sin \theta) & -(\cos \theta + \sin \theta) & -\sqrt{2}l \sin(\zeta) \\
+-(\cos \theta + \sin \theta) & (\cos \theta - \sin \theta) &- \sqrt{2}l \sin(\zeta) \\
+(\cos \theta - \sin \theta) & (\cos \theta + \sin \theta)  & -\sqrt{2}l \sin(\zeta) \\
+(\cos \theta + \sin \theta) & -(\cos \theta - \sin \theta)  & -\sqrt{2}l \sin(\zeta)
+\end{bmatrix}
+\]
+%
+\[
+\bm{S} = \text{diag} \begin{bmatrix}
+sgn(\dot{\phi}_1), \,  sgn(\dot{\phi}_2),  \, sgn(\dot{\phi}_3), \,  sgn(\dot{\phi}_4);
+\end{bmatrix}
+\]
+$\zeta=\pi/4 - \alpha$, $l$ is the mounting distance of the wheels as shown in  Fig. \autoref{fig:mecanum}, and
+$\dot{\phi}_i$, is the rotation speed of each wheel about its axis of rotation. We apply the generalized force/torque vector, $F_{i}$, to the base frame of the robot, defined as, %\cite{SpongBook}
+\begin{align}
+F_{i} = \sum_{j=1}^{4}\left(\torque_j - r \, sgn(\dot{\phi_j}) \, \bm{f}_j\right)\frac{\partial \dot{\phi}_j}{\partial \dot{\bm{x}}_i}, \, i = \{1,2,3\}
+\end{align}
+
+%
+\begin{figure}[tb!]
+	\centering
+	\subfloat[Home Position.% The controller is off.
+	]{		\includegraphics[height=0.45\columnwidth,width=0.45\columnwidth]{../../Papers/iDG/IROS2018/figures/gazebo_start_state.png}}%
+	~ %\qquad
+	\subfloat[Goal State.% after repetitive execution of the ILQG algorithm
+	]{\includegraphics[height=0.45\columnwidth,width=0.45\columnwidth]{../../Papers/iDG/IROS2018/figures/gazebo_goal.png}}%
+	\caption{Goal Navigation Illustration}
+	\label{fig:gazebo_sim}
+\end{figure}
+
+\begin{homework}
+	Using an appropriate controller, command the KUKA robot and arm to move from the center of the maze to the designated goal position shown in \autoref{fig:gazebo_sim}. For this example, students may pull the \textsc{ros docker image} available on the author's docker hub at \href{https://hub.docker.com/r/lakehanne/youbotbuntu14}{https://hub.docker.com/r/lakehanne/youbotbuntu14}. It contains all the inertia masses, Coriolis forces and gazebo package for the youbot robot that you will need for this task. Instructions for loading the environment may be found on this \href{https://github.com/lakehanne/youbot}{github webpage}.
+\end{homework}
 
 \subsection{Robot Dynamics and the POE Formula}
 

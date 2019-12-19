@@ -62,6 +62,6 @@
 \contentsline {subsection}{\numberline {4.8.1}Lagrangian for Mechanical Systems }{68}{subsection.4.8.1}
 \contentsline {subsection}{\numberline {4.8.2}Euler-Lagrange Equations}{70}{subsection.4.8.2}
 \contentsline {subsection}{\numberline {4.8.3}Dynamics of a spherical Pendulum}{71}{subsection.4.8.3}
-\contentsline {subsection}{\numberline {4.8.4}Dynamics of a Mecanum-Wheeled Robot}{72}{subsection.4.8.4}
-\contentsline {subsection}{\numberline {4.8.5}Robot Dynamics and the POE Formula}{72}{subsection.4.8.5}
-\contentsline {chapter}{\MakeTextUppercase {References}}{73}{chapter*.31}
+\contentsline {subsection}{\numberline {4.8.4}Dynamics of a Mecanum-Wheeled Robot}{74}{subsection.4.8.4}
+\contentsline {subsection}{\numberline {4.8.5}Robot Dynamics and the POE Formula}{76}{subsection.4.8.5}
+\contentsline {chapter}{\MakeTextUppercase {References}}{77}{chapter*.33}
