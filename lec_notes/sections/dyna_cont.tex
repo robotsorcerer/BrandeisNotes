@@ -1,4 +1,4 @@
-\section{Robot Dynamics and Control}
+\chapter{Robot Dynamics and Control}
 %
 At issue in this chapter are the motions of various components of a robot given the forces, torques and momentum that act upon it. In rigid body dynamics, we typically represent these dynamics using nonlinear, second-order differential equations which are a function of the kinematics and kinetics of the robot.  While in principle, we can individually sum the forces and torques acting on an object, in practice, it is easier working with the system's \textit{Lagrangian, a summation of all the mechanical energies of the system}, as this tends to be less prone to error than summing together the Coriolis, centrifugal and inertial forces acting on the robot's links. 
 
@@ -63,6 +63,14 @@ L(q, \dot{q}) = T(q, \dot{q}) - V(q).
 \label{eq:lagrange}
 \end{align}
 %
+In general, we write the kinetic energy in the form, 
+%
+\begin{align}
+	T(\theta) = \frac{1}{2} \sum_{i = 1}^{n} \sum_{j = 1}^{n}  m_{ij}(\theta) \dot{\theta}_i \dot{\theta}_j = \frac{1}{2} \dot{\theta}^T M(\theta) \dot{\theta}
+\end{align}
+% 
+with $m_{ij}$ being the ($i, j$)th element of the mass matrix $M(\theta)$. 
+%
 The equations of motion for a rigid body articulated system is of the form
 %
 \begin{align}
@@ -70,14 +78,46 @@ The equations of motion for a rigid body articulated system is of the form
 \label{eq:lagrange_compo}
 \end{align}
 %
-where $\torque_i$ is the torque acting on the $i^{th}$ generalized coordinate. Written in matrix form equation, we can write the Euler-Lagrange equation of \eqref{eq:lagrange_compo} as
+where $\torque_i$ is the torque acting on the $i^{th}$ generalized coordinate. Hence, we can explicitly write the dynamics as 
+%
+\begin{align}
+\sum_{j=1}^{n} m_{ij}(\theta) \ddot{\theta}_j + \sum_{j = 1}^{n} \sum_{k = 1}^{n} \Gamma_{ijk}(\theta) \dot{\theta}_j \dot{\theta}_k + \dfrac{\partial V}{\partial \theta_i } = 	\torque_i, \quad i = 1, \ldots, n
+\end{align} 
+%
+with $\Gamma_{ijk}(\theta) $ being the so-called \textbf{Christoffel symbols of the first kind}, defined as, 
+%
+\begin{align}
+	\Gamma_{ijk}(\theta)  = \frac{1}{2}\left(\dfrac{\partial m_{ij}}{\partial \theta_k} + \dfrac{\partial m_{ik}}{\partial \theta_k} - \dfrac{\partial m_{jk}}{\partial \theta_i}.
+	\right)
+\end{align}
+%
+Essentially, the Christoffel symbols determine the Coriolis and centripetal terms in the matrix $\coriolis(\theta, \dot{\theta}$ as we shall see shortly and they are by-products of the mass matrix $\massinertia(\theta)$. 
+%
+Written in matrix form equation, we can write the Euler-Lagrange equation of \eqref{eq:lagrange_compo} as
 %
 \begin{align}
 \dfrac{d}{dt}\dfrac{\partial L}{\partial \dot{q}} - \dfrac{\partial L}{\partial q} = \torque.
 \label{eq:lagrange_deri}
 \end{align}
 %
-Equation \eqref{eq:lagrange_deri} is elegant because it reduces the number of coordinates we need to work with from $n$ to $m$ (the number of generalized coordinates) for a system. If there are no constraints to the system, then it follows that $n=m$. As such, we can choose $q$ to be the components of $r$, giving $T=\frac{1}{2}\sum m_i \|\ddot{r}_i^2\|$ so that \eqref{eq:lagrange_compo} reduces to \eqref{eq:RBD_Newton}.
+Equation \eqref{eq:lagrange_deri} is elegant because it reduces the number of coordinates we need to work with from $n$ to $m$ (the number of generalized coordinates) for a system. It can be rewritten as 
+% 
+\begin{align}
+M(\theta) \ddot{\theta} + C(\theta, \dot{\theta}) + N(\theta) = \torque,
+\label{eq:lagrange_mat}
+\end{align}
+%
+where we see that the Coriolis and centripetal terms enter the torque equation as quadratic factors for the velocity terms, \ie
+%
+\begin{align}
+	M(\theta) \ddot{\theta} + \dot{\theta}^T \Gamma(\theta) \dot{\theta} + N(\theta) = \torque
+\end{align}
+%
+with $\Gamma_i(\theta)$ being an $n\times n$ matrix with the $(j,k)$the entry as $\Gamma_{ijk}$ and the Coriolis matrix has the $(j,k)$ entry as 
+%
+\begin{align}
+	C_{ij}(\theta, \dot{\theta}) = \sum_{k=1}^{n} \Gamma_{ijk}(\theta) \dot{\theta}_k.
+\end{align}
 %
 Thus for a given robotic mechanical system, finding the dynamics is tantamount to deriving the kinetic and potential energies for the system based on that particular system characteristics. In the next two subsections, we will treat two examples -- a simple pendulum system and the dynamics of a mecanum wheel robot. 
 

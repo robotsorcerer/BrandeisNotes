@@ -59,10 +59,10 @@
 \BOOKMARK [2][-]{subsection.4.6.2}{The Body Jacobian}{section.4.6}% 59
 \BOOKMARK [1][-]{section.4.7}{Inverse kinematics}{chapter.4}% 60
 \BOOKMARK [2][-]{subsection.4.7.1}{Paden-Kahan Subproblems}{section.4.7}% 61
-\BOOKMARK [1][-]{section.4.8}{Robot Dynamics and Control}{chapter.4}% 62
-\BOOKMARK [2][-]{subsection.4.8.1}{Lagrangian for Mechanical Systems }{section.4.8}% 63
-\BOOKMARK [2][-]{subsection.4.8.2}{Euler-Lagrange Equations}{section.4.8}% 64
-\BOOKMARK [2][-]{subsection.4.8.3}{Dynamics of a spherical Pendulum}{section.4.8}% 65
-\BOOKMARK [2][-]{subsection.4.8.4}{Dynamics of a Mecanum-Wheeled Robot}{section.4.8}% 66
-\BOOKMARK [2][-]{subsection.4.8.5}{Robot Dynamics and the POE Formula}{section.4.8}% 67
+\BOOKMARK [0][-]{chapter.5}{Robot Dynamics and Control}{}% 62
+\BOOKMARK [1][-]{subsection.5.0.1}{Lagrangian for Mechanical Systems }{chapter.5}% 63
+\BOOKMARK [2][-]{subsection.5.0.2}{Euler-Lagrange Equations}{subsection.5.0.1}% 64
+\BOOKMARK [2][-]{subsection.5.0.3}{Dynamics of a spherical Pendulum}{subsection.5.0.1}% 65
+\BOOKMARK [2][-]{subsection.5.0.4}{Dynamics of a Mecanum-Wheeled Robot}{subsection.5.0.1}% 66
+\BOOKMARK [2][-]{subsection.5.0.5}{Robot Dynamics and the POE Formula}{subsection.5.0.1}% 67
 \BOOKMARK [0][-]{chapter*.33}{References}{}% 68

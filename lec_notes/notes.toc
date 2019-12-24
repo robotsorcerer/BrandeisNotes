@@ -58,10 +58,10 @@
 \contentsline {subsection}{\numberline {4.6.2}The Body Jacobian}{62}{subsection.4.6.2}
 \contentsline {section}{\numberline {4.7}Inverse kinematics}{64}{section.4.7}
 \contentsline {subsection}{\numberline {4.7.1}Paden-Kahan Subproblems}{65}{subsection.4.7.1}
-\contentsline {section}{\numberline {4.8}Robot Dynamics and Control}{68}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Lagrangian for Mechanical Systems }{68}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}Euler-Lagrange Equations}{70}{subsection.4.8.2}
-\contentsline {subsection}{\numberline {4.8.3}Dynamics of a spherical Pendulum}{71}{subsection.4.8.3}
-\contentsline {subsection}{\numberline {4.8.4}Dynamics of a Mecanum-Wheeled Robot}{74}{subsection.4.8.4}
-\contentsline {subsection}{\numberline {4.8.5}Robot Dynamics and the POE Formula}{76}{subsection.4.8.5}
-\contentsline {chapter}{\MakeTextUppercase {References}}{77}{chapter*.33}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {5}\MakeTextUppercase {Robot Dynamics and Control}}{68}{chapter.5}
+\contentsline {subsection}{\numberline {5.0.1}Lagrangian for Mechanical Systems }{68}{subsection.5.0.1}
+\contentsline {subsection}{\numberline {5.0.2}Euler-Lagrange Equations}{70}{subsection.5.0.2}
+\contentsline {subsection}{\numberline {5.0.3}Dynamics of a spherical Pendulum}{72}{subsection.5.0.3}
+\contentsline {subsection}{\numberline {5.0.4}Dynamics of a Mecanum-Wheeled Robot}{75}{subsection.5.0.4}
+\contentsline {subsection}{\numberline {5.0.5}Robot Dynamics and the POE Formula}{77}{subsection.5.0.5}
+\contentsline {chapter}{\MakeTextUppercase {References}}{78}{chapter*.33}
