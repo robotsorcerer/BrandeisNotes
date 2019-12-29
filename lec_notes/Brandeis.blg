@@ -1,0 +1,79 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Brandeis.aux
+The style file: chicago.bst
+Illegal, another \bibstyle command---line 314 of file Brandeis.aux
+ : \bibstyle
+ :          {wafr.bst}
+I'm skipping whatever remains of this command
+I couldn't open database file ../../Papers/iDG/IROS18/root.bib
+---line 315 of file Brandeis.aux
+ : \bibdata{../../Papers/SRS/Continuum/biblio,../../Papers/iDG/IROS18/root
+ :                                                                        }
+I'm skipping whatever remains of this command
+Database file #1: ../../Papers/SRS/Continuum/biblio.bib
+Repeated entry---line 580 of file ../../Papers/SRS/Continuum/biblio.bib
+ : @article{Gough1957
+ :                   ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1556 of file ../../Papers/SRS/Continuum/biblio.bib
+ :   
+ :   % journal={Springer Nature},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Ogunmolu18IROS"
+Warning--I didn't find a database entry for "Stramigioli2001"
+Warning--empty booktitle in Hannan2000
+Warning--no journal in Hunt1983
+Warning--no journal in Ogunmolu19RALII
+Warning--no number and no volume in Ogunmolu19RALII
+Warning--page numbers missing in Ogunmolu19RALII
+Warning--no journal in Ogunmolu19RALI
+Warning--no number and no volume in Ogunmolu19RALI
+Warning--page numbers missing in Ogunmolu19RALI
+Warning--no journal in PadenThesis85
+Warning--no number and no volume in PadenThesis85
+Warning--page numbers missing in PadenThesis85
+Warning--no number and no volume in Renda2018ICRA
+You've used 27 entries,
+            2861 wiz_defined-function locations,
+            807 strings with 10249 characters,
+and the built_in function-call counts, 19748 in all, are:
+= -- 1603
+> -- 1518
+< -- 7
++ -- 458
+- -- 514
+* -- 1766
+:= -- 3597
+add.period$ -- 83
+call.type$ -- 27
+change.case$ -- 201
+chr.to.int$ -- 26
+cite$ -- 39
+duplicate$ -- 556
+empty$ -- 1174
+format.name$ -- 578
+if$ -- 3696
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 31
+newline$ -- 135
+num.names$ -- 268
+pop$ -- 181
+preamble$ -- 1
+purify$ -- 367
+quote$ -- 0
+skip$ -- 569
+stack$ -- 0
+substring$ -- 1028
+swap$ -- 196
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 486
+warning$ -- 12
+while$ -- 263
+width$ -- 0
+write$ -- 359
+(There were 4 error messages)
