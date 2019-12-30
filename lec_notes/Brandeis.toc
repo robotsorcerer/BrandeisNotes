@@ -64,4 +64,7 @@
 \contentsline {subsection}{\numberline {5.0.3}Dynamics of a spherical Pendulum}{72}{subsection.5.0.3}
 \contentsline {subsection}{\numberline {5.0.4}Dynamics of a Mecanum-Wheeled Robot}{75}{subsection.5.0.4}
 \contentsline {subsection}{\numberline {5.0.5}Robot Dynamics and the POE Formula}{77}{subsection.5.0.5}
-\contentsline {chapter}{\MakeTextUppercase {References}}{78}{chapter*.33}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {6}\MakeTextUppercase {Motion Planning}}{78}{chapter.6}
+\contentsline {subsection}{\numberline {6.0.1}Planning: Motion/Trajectory Planning}{79}{subsection.6.0.1}
+\contentsline {section}{\numberline {6.1}Planning in Discrete Spaces}{80}{section.6.1}
+\contentsline {chapter}{\MakeTextUppercase {References}}{81}{chapter*.33}
