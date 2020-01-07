@@ -10,19 +10,53 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5698,        169]
-NotebookOptionsPosition[      5042,        148]
-NotebookOutlinePosition[      5397,        164]
-CellTagsIndexPosition[      5354,        161]
+NotebookDataLength[     87500,       2077]
+NotebookOptionsPosition[     86421,       2050]
+NotebookOutlinePosition[     86775,       2066]
+CellTagsIndexPosition[     86732,       2063]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-
-Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{
-  RowBox[{"OverDot", "[", "r", "]"}], " ", "=", " ", 
+  RowBox[{"RemoveAbs", "[", "x_", "]"}], ":=", 
+  RowBox[{"FullSimplify", "[", 
+   RowBox[{"ComplexExpand", "[", 
+    RowBox[{"Sqrt", "[", 
+     RowBox[{"x", " ", 
+      RowBox[{"Conjugate", "[", "x", "]"}]}], "]"}], "]"}], "]"}]}]], "Input",\
+
+ CellLabel->"In[12]:=",ExpressionUUID->"fe9e6e56-d969-4c2d-8454-c38341945ac4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"OverDot", "[", "r", "]"}], "[", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Subscript", "[", 
+      RowBox[{"l", ",", " ", "1"}], "]"}], "_"}], ",", " ", 
+    RowBox[{
+     RowBox[{"Subscript", "[", 
+      RowBox[{"l", ",", " ", "2"}], "]"}], "_"}], ",", " ", 
+    RowBox[{
+     RowBox[{"Subscript", "[", 
+      RowBox[{"\[Theta]", ",", " ", "1"}], "]"}], "_"}], ",", " ", 
+    RowBox[{
+     RowBox[{"Subscript", "[", 
+      RowBox[{"\[Theta]", ",", " ", "2"}], "]"}], "_"}], ",", " ", 
+    RowBox[{
+     RowBox[{"OverDot", "[", 
+      RowBox[{"Subscript", "[", 
+       RowBox[{"\[Theta]", ",", " ", "1"}], "]"}], "]"}], "_"}], ",", " ", 
+    RowBox[{"OverDot", "[", 
+     RowBox[{
+      RowBox[{"Subscript", "[", 
+       RowBox[{"\[Theta]", ",", " ", "2"}], "]"}], "_"}], "]"}]}], " ", "]"}],
+   " ", "=", " ", 
   RowBox[{"{", 
    RowBox[{
     RowBox[{"{", 
@@ -86,36 +120,711 @@ Cell[BoxData[
         RowBox[{"Sin", "[", 
          RowBox[{"Subscript", "[", 
           RowBox[{"\[Theta]", ",", " ", "2"}], "]"}], "]"}]}]}]}], "}"}]}], 
-   "}"}]}]], "Input",
- CellChangeTimes->{{3.785576912029546*^9, 
-  3.785577140016037*^9}},ExpressionUUID->"3190c8ed-ce48-4e84-800e-\
-aabeb4a28cc3"],
+   "}"}], " "}]], "Input",
+ CellChangeTimes->{{3.785576912029546*^9, 3.785577140016037*^9}, {
+  3.785577336129863*^9, 3.785577359879345*^9}, {3.785578234979683*^9, 
+  3.785578374462038*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"3190c8ed-ce48-4e84-800e-aabeb4a28cc3"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Set","write",
+   "\"Tag \\!\\(\\*RowBox[{\\\"List\\\"}]\\) in \
+\\!\\(\\*RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{RowBox[{\\\"Cos\\\", \\\"[\\\", \
+SubscriptBox[\\\"\[Theta]\\\", \\\"1\\\"], \\\"]\\\"}], \\\" \\\", \
+OverscriptBox[SubscriptBox[\\\"\[Theta]\\\", \\\"1\\\"], \\\".\\\"], \\\" \
+\\\", SubscriptBox[\\\"l\\\", \\\"1\\\"]}], \\\",\\\", \
+RowBox[{RowBox[{RowBox[{\\\"Cos\\\", \\\"[\\\", \
+SubscriptBox[\\\"\[Theta]\\\", \\\"1\\\"], \\\"]\\\"}], \\\" \\\", \
+OverscriptBox[SubscriptBox[\\\"\[Theta]\\\", \\\"1\\\"], \\\".\\\"], \\\" \
+\\\", SubscriptBox[\\\"l\\\", \\\"1\\\"]}], \\\"+\\\", \
+RowBox[{RowBox[{\\\"Cos\\\", \\\"[\\\", SubscriptBox[\\\"\[Theta]\\\", \
+\\\"2\\\"], \\\"]\\\"}], \\\" \\\", OverscriptBox[SubscriptBox[\\\"\[Theta]\\\
+\", \\\"2\\\"], \\\".\\\"], \\\" \\\", SubscriptBox[\\\"l\\\", \
+\\\"2\\\"]}]}]}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{OverscriptBox[SubscriptBox[\\\"\[Theta]\\\", \\\"1\\\"], \
+\\\".\\\"], \\\" \\\", RowBox[{\\\"Sin\\\", \\\"[\\\", SubscriptBox[\\\"\
+\[Theta]\\\", \\\"1\\\"], \\\"]\\\"}], \\\" \\\", SubscriptBox[\\\"l\\\", \
+\\\"1\\\"]}], \\\",\\\", RowBox[{RowBox[{OverscriptBox[SubscriptBox[\\\"\
+\[Theta]\\\", \\\"1\\\"], \\\".\\\"], \\\" \\\", RowBox[{\\\"Sin\\\", \\\"[\\\
+\", SubscriptBox[\\\"\[Theta]\\\", \\\"1\\\"], \\\"]\\\"}], \\\" \\\", \
+SubscriptBox[\\\"l\\\", \\\"1\\\"]}], \\\"+\\\", \
+RowBox[{OverscriptBox[SubscriptBox[\\\"\[Theta]\\\", \\\"2\\\"], \\\".\\\"], \
+\\\" \\\", RowBox[{\\\"Sin\\\", \\\"[\\\", SubscriptBox[\\\"\[Theta]\\\", \
+\\\"2\\\"], \\\"]\\\"}], \\\" \\\", SubscriptBox[\\\"l\\\", \\\"2\\\"]}]}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"[\\\", RowBox[{RowBox[{\\\"_\\\", \\\" \\\", \
+SubscriptBox[\\\"l\\\", \\\"1\\\"]}], \\\",\\\", RowBox[{\\\"_\\\", \\\" \
+\\\", SubscriptBox[\\\"l\\\", \\\"2\\\"]}], \\\",\\\", RowBox[{\\\"_\\\", \
+\\\" \\\", SubscriptBox[\\\"\[Theta]\\\", \\\"1\\\"]}], \\\",\\\", RowBox[{\\\
+\"_\\\", \\\" \\\", SubscriptBox[\\\"\[Theta]\\\", \\\"2\\\"]}], \\\",\\\", \
+RowBox[{\\\"_\\\", \\\" \\\", OverscriptBox[SubscriptBox[\\\"\[Theta]\\\", \\\
+\"1\\\"], \\\".\\\"]}], \\\",\\\", OverscriptBox[RowBox[{\\\"_\\\", \\\" \
+\\\", SubscriptBox[\\\"\[Theta]\\\", \\\"2\\\"]}], \\\".\\\"]}], \
+\\\"]\\\"}]\\) is Protected.\"",2,20,4,32779827235750864243,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.785578376822294*^9},
+ CellLabel->
+  "During evaluation of \
+In[20]:=",ExpressionUUID->"9d2af318-b300-481a-86e7-02a6afccf63f"],
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{"{", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"Cos", "[", 
-      SubscriptBox["\[Theta]", "1"], "]"}], " ", 
-     OverscriptBox[
-      SubscriptBox["\[Theta]", "1"], "."], " ", 
-     SubscriptBox["l", "1"]}], ",", 
+  RowBox[{
+   RowBox[{"{", 
     RowBox[{
      RowBox[{
       RowBox[{"Cos", "[", 
        SubscriptBox["\[Theta]", "1"], "]"}], " ", 
       OverscriptBox[
        SubscriptBox["\[Theta]", "1"], "."], " ", 
-      SubscriptBox["l", "1"]}], "+", 
+      SubscriptBox["l", "1"]}], ",", 
      RowBox[{
-      RowBox[{"Cos", "[", 
-       SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+       OverscriptBox[
+        SubscriptBox["\[Theta]", "1"], "."], " ", 
+       SubscriptBox["l", "1"]}], "+", 
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+       OverscriptBox[
+        SubscriptBox["\[Theta]", "2"], "."], " ", 
+       SubscriptBox["l", "2"]}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
       OverscriptBox[
-       SubscriptBox["\[Theta]", "2"], "."], " ", 
-      SubscriptBox["l", "2"]}]}]}], "}"}], "}"}]], "Output",
- CellChangeTimes->{{3.785577057045412*^9, 3.785577105018955*^9}},
- CellLabel->"Out[6]=",ExpressionUUID->"932a81e2-444c-40ce-8a4c-601edeb39527"]
+       SubscriptBox["\[Theta]", "1"], "."], " ", 
+      RowBox[{"Sin", "[", 
+       SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+      SubscriptBox["l", "1"]}], ",", 
+     RowBox[{
+      RowBox[{
+       OverscriptBox[
+        SubscriptBox["\[Theta]", "1"], "."], " ", 
+       RowBox[{"Sin", "[", 
+        SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+       SubscriptBox["l", "1"]}], "+", 
+      RowBox[{
+       OverscriptBox[
+        SubscriptBox["\[Theta]", "2"], "."], " ", 
+       RowBox[{"Sin", "[", 
+        SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+       SubscriptBox["l", "2"]}]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.785578376828432*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"77bb384b-4b1d-4f1d-a4c1-4eee31ad8f81"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Norm", "[", 
+   RowBox[{"OverDot", "[", "r", "]"}], "]"}], "/.", 
+  RowBox[{"Abs", "\[Rule]", "RemoveAbs"}]}]], "Input",
+ CellChangeTimes->{{3.785577155726123*^9, 3.7855771588029413`*^9}, {
+  3.7855771948634663`*^9, 3.785577231175795*^9}, {3.7855783952782393`*^9, 
+  3.785578425449463*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"f3935feb-9db2-4c3c-9537-630bb85c14c3"],
+
+Cell[BoxData[
+ RowBox[{"Max", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", 
+     SqrtBox["2"]], 
+    RowBox[{"(", 
+     RowBox[{"\[Sqrt]", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Conjugate", "[", 
+          RowBox[{
+           RowBox[{"Cos", "[", 
+            SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+           OverscriptBox[
+            SubscriptBox["\[Theta]", "1"], "."], " ", 
+           SubscriptBox["l", "1"]}], "]"}], " ", 
+         RowBox[{"Cos", "[", 
+          SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+         OverscriptBox[
+          SubscriptBox["\[Theta]", "1"], "."], " ", 
+         SubscriptBox["l", "1"]}], "+", 
+        RowBox[{
+         RowBox[{"Conjugate", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Cos", "[", 
+             SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "1"], "."], " ", 
+            SubscriptBox["l", "1"]}], "+", 
+           RowBox[{
+            RowBox[{"Cos", "[", 
+             SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "2"], "."], " ", 
+            SubscriptBox["l", "2"]}]}], "]"}], " ", 
+         RowBox[{"Cos", "[", 
+          SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+         OverscriptBox[
+          SubscriptBox["\[Theta]", "1"], "."], " ", 
+         SubscriptBox["l", "1"]}], "+", 
+        RowBox[{
+         RowBox[{"Conjugate", "[", 
+          RowBox[{
+           OverscriptBox[
+            SubscriptBox["\[Theta]", "1"], "."], " ", 
+           RowBox[{"Sin", "[", 
+            SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+           SubscriptBox["l", "1"]}], "]"}], " ", 
+         OverscriptBox[
+          SubscriptBox["\[Theta]", "1"], "."], " ", 
+         RowBox[{"Sin", "[", 
+          SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+         SubscriptBox["l", "1"]}], "+", 
+        RowBox[{
+         RowBox[{"Conjugate", "[", 
+          RowBox[{
+           RowBox[{
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "1"], "."], " ", 
+            RowBox[{"Sin", "[", 
+             SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+            SubscriptBox["l", "1"]}], "+", 
+           RowBox[{
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "2"], "."], " ", 
+            RowBox[{"Sin", "[", 
+             SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+            SubscriptBox["l", "2"]}]}], "]"}], " ", 
+         OverscriptBox[
+          SubscriptBox["\[Theta]", "1"], "."], " ", 
+         RowBox[{"Sin", "[", 
+          SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+         SubscriptBox["l", "1"]}], "+", 
+        RowBox[{
+         RowBox[{"Conjugate", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Cos", "[", 
+             SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "1"], "."], " ", 
+            SubscriptBox["l", "1"]}], "+", 
+           RowBox[{
+            RowBox[{"Cos", "[", 
+             SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "2"], "."], " ", 
+            SubscriptBox["l", "2"]}]}], "]"}], " ", 
+         RowBox[{"Cos", "[", 
+          SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+         OverscriptBox[
+          SubscriptBox["\[Theta]", "2"], "."], " ", 
+         SubscriptBox["l", "2"]}], "+", 
+        RowBox[{
+         RowBox[{"Conjugate", "[", 
+          RowBox[{
+           RowBox[{
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "1"], "."], " ", 
+            RowBox[{"Sin", "[", 
+             SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+            SubscriptBox["l", "1"]}], "+", 
+           RowBox[{
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "2"], "."], " ", 
+            RowBox[{"Sin", "[", 
+             SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+            SubscriptBox["l", "2"]}]}], "]"}], " ", 
+         OverscriptBox[
+          SubscriptBox["\[Theta]", "2"], "."], " ", 
+         RowBox[{"Sin", "[", 
+          SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+         SubscriptBox["l", "2"]}], "-", 
+        RowBox[{"\[Sqrt]", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", 
+                RowBox[{"Conjugate", "[", 
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  SubscriptBox["l", "1"]}], "]"}]}], " ", 
+               RowBox[{"Cos", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               SubscriptBox["l", "1"]}], "-", 
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  SubscriptBox["l", "1"]}], "+", 
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "2"], "."], " ", 
+                  SubscriptBox["l", "2"]}]}], "]"}], " ", 
+               RowBox[{"Cos", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               SubscriptBox["l", "1"]}], "-", 
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 OverscriptBox[
+                  SubscriptBox["\[Theta]", "1"], "."], " ", 
+                 RowBox[{"Sin", "[", 
+                  SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                 SubscriptBox["l", "1"]}], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               SubscriptBox["l", "1"]}], "-", 
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  RowBox[{"Sin", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  SubscriptBox["l", "1"]}], "+", 
+                 RowBox[{
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "2"], "."], " ", 
+                  RowBox[{"Sin", "[", 
+                   SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                  SubscriptBox["l", "2"]}]}], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               SubscriptBox["l", "1"]}], "-", 
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  SubscriptBox["l", "1"]}], "+", 
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "2"], "."], " ", 
+                  SubscriptBox["l", "2"]}]}], "]"}], " ", 
+               RowBox[{"Cos", "[", 
+                SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "2"], "."], " ", 
+               SubscriptBox["l", "2"]}], "-", 
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  RowBox[{"Sin", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  SubscriptBox["l", "1"]}], "+", 
+                 RowBox[{
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "2"], "."], " ", 
+                  RowBox[{"Sin", "[", 
+                   SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                  SubscriptBox["l", "2"]}]}], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "2"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+               SubscriptBox["l", "2"]}]}], ")"}], "2"], "-", 
+           RowBox[{"4", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 OverscriptBox[
+                  SubscriptBox["\[Theta]", "1"], "."], " ", 
+                 RowBox[{"Sin", "[", 
+                  SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                 SubscriptBox["l", "1"]}], "]"}], " ", 
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  SubscriptBox["l", "1"]}], "+", 
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "2"], "."], " ", 
+                  SubscriptBox["l", "2"]}]}], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "2"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                RowBox[{
+                 SubscriptBox["\[Theta]", "1"], "-", 
+                 SubscriptBox["\[Theta]", "2"]}], "]"}], " ", 
+               SubscriptBox["l", "1"], " ", 
+               SubscriptBox["l", "2"]}], "-", 
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{"Cos", "[", 
+                  SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                 OverscriptBox[
+                  SubscriptBox["\[Theta]", "1"], "."], " ", 
+                 SubscriptBox["l", "1"]}], "]"}], " ", 
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  RowBox[{"Sin", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  SubscriptBox["l", "1"]}], "+", 
+                 RowBox[{
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "2"], "."], " ", 
+                  RowBox[{"Sin", "[", 
+                   SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                  SubscriptBox["l", "2"]}]}], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "2"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                RowBox[{
+                 SubscriptBox["\[Theta]", "1"], "-", 
+                 SubscriptBox["\[Theta]", "2"]}], "]"}], " ", 
+               SubscriptBox["l", "1"], " ", 
+               SubscriptBox["l", "2"]}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+     ")"}]}], ",", 
+   RowBox[{
+    FractionBox["1", 
+     SqrtBox["2"]], 
+    RowBox[{"(", 
+     RowBox[{"\[Sqrt]", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Conjugate", "[", 
+          RowBox[{
+           RowBox[{"Cos", "[", 
+            SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+           OverscriptBox[
+            SubscriptBox["\[Theta]", "1"], "."], " ", 
+           SubscriptBox["l", "1"]}], "]"}], " ", 
+         RowBox[{"Cos", "[", 
+          SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+         OverscriptBox[
+          SubscriptBox["\[Theta]", "1"], "."], " ", 
+         SubscriptBox["l", "1"]}], "+", 
+        RowBox[{
+         RowBox[{"Conjugate", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Cos", "[", 
+             SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "1"], "."], " ", 
+            SubscriptBox["l", "1"]}], "+", 
+           RowBox[{
+            RowBox[{"Cos", "[", 
+             SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "2"], "."], " ", 
+            SubscriptBox["l", "2"]}]}], "]"}], " ", 
+         RowBox[{"Cos", "[", 
+          SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+         OverscriptBox[
+          SubscriptBox["\[Theta]", "1"], "."], " ", 
+         SubscriptBox["l", "1"]}], "+", 
+        RowBox[{
+         RowBox[{"Conjugate", "[", 
+          RowBox[{
+           OverscriptBox[
+            SubscriptBox["\[Theta]", "1"], "."], " ", 
+           RowBox[{"Sin", "[", 
+            SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+           SubscriptBox["l", "1"]}], "]"}], " ", 
+         OverscriptBox[
+          SubscriptBox["\[Theta]", "1"], "."], " ", 
+         RowBox[{"Sin", "[", 
+          SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+         SubscriptBox["l", "1"]}], "+", 
+        RowBox[{
+         RowBox[{"Conjugate", "[", 
+          RowBox[{
+           RowBox[{
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "1"], "."], " ", 
+            RowBox[{"Sin", "[", 
+             SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+            SubscriptBox["l", "1"]}], "+", 
+           RowBox[{
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "2"], "."], " ", 
+            RowBox[{"Sin", "[", 
+             SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+            SubscriptBox["l", "2"]}]}], "]"}], " ", 
+         OverscriptBox[
+          SubscriptBox["\[Theta]", "1"], "."], " ", 
+         RowBox[{"Sin", "[", 
+          SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+         SubscriptBox["l", "1"]}], "+", 
+        RowBox[{
+         RowBox[{"Conjugate", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Cos", "[", 
+             SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "1"], "."], " ", 
+            SubscriptBox["l", "1"]}], "+", 
+           RowBox[{
+            RowBox[{"Cos", "[", 
+             SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "2"], "."], " ", 
+            SubscriptBox["l", "2"]}]}], "]"}], " ", 
+         RowBox[{"Cos", "[", 
+          SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+         OverscriptBox[
+          SubscriptBox["\[Theta]", "2"], "."], " ", 
+         SubscriptBox["l", "2"]}], "+", 
+        RowBox[{
+         RowBox[{"Conjugate", "[", 
+          RowBox[{
+           RowBox[{
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "1"], "."], " ", 
+            RowBox[{"Sin", "[", 
+             SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+            SubscriptBox["l", "1"]}], "+", 
+           RowBox[{
+            OverscriptBox[
+             SubscriptBox["\[Theta]", "2"], "."], " ", 
+            RowBox[{"Sin", "[", 
+             SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+            SubscriptBox["l", "2"]}]}], "]"}], " ", 
+         OverscriptBox[
+          SubscriptBox["\[Theta]", "2"], "."], " ", 
+         RowBox[{"Sin", "[", 
+          SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+         SubscriptBox["l", "2"]}], "+", 
+        RowBox[{"\[Sqrt]", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", 
+                RowBox[{"Conjugate", "[", 
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  SubscriptBox["l", "1"]}], "]"}]}], " ", 
+               RowBox[{"Cos", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               SubscriptBox["l", "1"]}], "-", 
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  SubscriptBox["l", "1"]}], "+", 
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "2"], "."], " ", 
+                  SubscriptBox["l", "2"]}]}], "]"}], " ", 
+               RowBox[{"Cos", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               SubscriptBox["l", "1"]}], "-", 
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 OverscriptBox[
+                  SubscriptBox["\[Theta]", "1"], "."], " ", 
+                 RowBox[{"Sin", "[", 
+                  SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                 SubscriptBox["l", "1"]}], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               SubscriptBox["l", "1"]}], "-", 
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  RowBox[{"Sin", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  SubscriptBox["l", "1"]}], "+", 
+                 RowBox[{
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "2"], "."], " ", 
+                  RowBox[{"Sin", "[", 
+                   SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                  SubscriptBox["l", "2"]}]}], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               SubscriptBox["l", "1"]}], "-", 
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  SubscriptBox["l", "1"]}], "+", 
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "2"], "."], " ", 
+                  SubscriptBox["l", "2"]}]}], "]"}], " ", 
+               RowBox[{"Cos", "[", 
+                SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "2"], "."], " ", 
+               SubscriptBox["l", "2"]}], "-", 
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  RowBox[{"Sin", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  SubscriptBox["l", "1"]}], "+", 
+                 RowBox[{
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "2"], "."], " ", 
+                  RowBox[{"Sin", "[", 
+                   SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                  SubscriptBox["l", "2"]}]}], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "2"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+               SubscriptBox["l", "2"]}]}], ")"}], "2"], "-", 
+           RowBox[{"4", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 OverscriptBox[
+                  SubscriptBox["\[Theta]", "1"], "."], " ", 
+                 RowBox[{"Sin", "[", 
+                  SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                 SubscriptBox["l", "1"]}], "]"}], " ", 
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  SubscriptBox["l", "1"]}], "+", 
+                 RowBox[{
+                  RowBox[{"Cos", "[", 
+                   SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "2"], "."], " ", 
+                  SubscriptBox["l", "2"]}]}], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "2"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                RowBox[{
+                 SubscriptBox["\[Theta]", "1"], "-", 
+                 SubscriptBox["\[Theta]", "2"]}], "]"}], " ", 
+               SubscriptBox["l", "1"], " ", 
+               SubscriptBox["l", "2"]}], "-", 
+              RowBox[{
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{"Cos", "[", 
+                  SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                 OverscriptBox[
+                  SubscriptBox["\[Theta]", "1"], "."], " ", 
+                 SubscriptBox["l", "1"]}], "]"}], " ", 
+               RowBox[{"Conjugate", "[", 
+                RowBox[{
+                 RowBox[{
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "1"], "."], " ", 
+                  RowBox[{"Sin", "[", 
+                   SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                  SubscriptBox["l", "1"]}], "+", 
+                 RowBox[{
+                  OverscriptBox[
+                   SubscriptBox["\[Theta]", "2"], "."], " ", 
+                  RowBox[{"Sin", "[", 
+                   SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                  SubscriptBox["l", "2"]}]}], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "2"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                RowBox[{
+                 SubscriptBox["\[Theta]", "1"], "-", 
+                 SubscriptBox["\[Theta]", "2"]}], "]"}], " ", 
+               SubscriptBox["l", "1"], " ", 
+               SubscriptBox["l", "2"]}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+     ")"}]}]}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.785577159310317*^9, {3.7855772049436626`*^9, 3.785577232332046*^9}, 
+   3.7855773055410843`*^9, 3.785577354810547*^9, 3.785577411227056*^9, {
+   3.7855784118406982`*^9, 3.785578427105534*^9}},
+ CellLabel->"Out[22]=",ExpressionUUID->"2f7bbd87-9188-450b-963f-186c29f586ca"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -136,18 +845,1211 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"Subscript", "[", 
       RowBox[{"l", ",", " ", "2"}], "]"}], "_"}], ",", " ", 
-    RowBox[{"\[Theta]_", "1"}]}], "]"}], " ", "=", " ", "1"}]], "Input",
+    RowBox[{"\[Theta]_", "1"}]}], "]"}], " ", "=", " ", 
+  RowBox[{".5", " ", "*", " ", 
+   RowBox[{"{", 
+    RowBox[{"m1", ",", " ", "m2"}], "}"}], "*", " ", 
+   RowBox[{
+    RowBox[{"Norm", "[", 
+     RowBox[{"OverDot", "[", "r", "]"}], "]"}], "^", "2"}]}]}]], "Input",
  CellChangeTimes->{{3.785576754706511*^9, 3.785576810784783*^9}, {
-  3.785576862983431*^9, 3.785576889666553*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"daae751d-39ce-4898-99e8-eaca73caf9ed"],
+  3.785576862983431*^9, 3.785576889666553*^9}, {3.785577779611244*^9, 
+  3.785577818793713*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"daae751d-39ce-4898-99e8-eaca73caf9ed"],
 
-Cell[BoxData["1"], "Output",
- CellChangeTimes->{3.785576890100891*^9},
- CellLabel->"Out[1]=",ExpressionUUID->"06831492-c37f-4ea0-8a09-a0b8929ca7fb"]
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"0.5`", " ", "m1", " ", 
+    SuperscriptBox[
+     RowBox[{"Max", "[", 
+      RowBox[{
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox["2"]], 
+        RowBox[{"(", 
+         RowBox[{"\[Sqrt]", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{"Cos", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               SubscriptBox["l", "1"]}], "]"}], " ", 
+             RowBox[{"Cos", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             RowBox[{"Cos", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               SubscriptBox["l", "1"]}], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             RowBox[{"Sin", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             RowBox[{"Sin", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             RowBox[{"Cos", "[", 
+              SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "2"], "."], " ", 
+             SubscriptBox["l", "2"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "2"], "."], " ", 
+             RowBox[{"Sin", "[", 
+              SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+             SubscriptBox["l", "2"]}], "-", 
+            RowBox[{"\[Sqrt]", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox[
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "]"}]}], " ", 
+                   RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   SubscriptBox["l", "2"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                   SubscriptBox["l", "2"]}]}], ")"}], "2"], "-", 
+               RowBox[{"4", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "]"}], " ", 
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    RowBox[{
+                    SubscriptBox["\[Theta]", "1"], "-", 
+                    SubscriptBox["\[Theta]", "2"]}], "]"}], " ", 
+                   SubscriptBox["l", "1"], " ", 
+                   SubscriptBox["l", "2"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "]"}], " ", 
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    RowBox[{
+                    SubscriptBox["\[Theta]", "1"], "-", 
+                    SubscriptBox["\[Theta]", "2"]}], "]"}], " ", 
+                   SubscriptBox["l", "1"], " ", 
+                   SubscriptBox["l", "2"]}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+         ")"}]}], ",", 
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox["2"]], 
+        RowBox[{"(", 
+         RowBox[{"\[Sqrt]", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{"Cos", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               SubscriptBox["l", "1"]}], "]"}], " ", 
+             RowBox[{"Cos", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             RowBox[{"Cos", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               SubscriptBox["l", "1"]}], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             RowBox[{"Sin", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             RowBox[{"Sin", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             RowBox[{"Cos", "[", 
+              SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "2"], "."], " ", 
+             SubscriptBox["l", "2"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "2"], "."], " ", 
+             RowBox[{"Sin", "[", 
+              SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+             SubscriptBox["l", "2"]}], "+", 
+            RowBox[{"\[Sqrt]", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox[
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "]"}]}], " ", 
+                   RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   SubscriptBox["l", "2"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                   SubscriptBox["l", "2"]}]}], ")"}], "2"], "-", 
+               RowBox[{"4", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "]"}], " ", 
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    RowBox[{
+                    SubscriptBox["\[Theta]", "1"], "-", 
+                    SubscriptBox["\[Theta]", "2"]}], "]"}], " ", 
+                   SubscriptBox["l", "1"], " ", 
+                   SubscriptBox["l", "2"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "]"}], " ", 
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    RowBox[{
+                    SubscriptBox["\[Theta]", "1"], "-", 
+                    SubscriptBox["\[Theta]", "2"]}], "]"}], " ", 
+                   SubscriptBox["l", "1"], " ", 
+                   SubscriptBox["l", "2"]}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+         ")"}]}]}], "]"}], "2"]}], ",", 
+   RowBox[{"0.5`", " ", "m2", " ", 
+    SuperscriptBox[
+     RowBox[{"Max", "[", 
+      RowBox[{
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox["2"]], 
+        RowBox[{"(", 
+         RowBox[{"\[Sqrt]", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{"Cos", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               SubscriptBox["l", "1"]}], "]"}], " ", 
+             RowBox[{"Cos", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             RowBox[{"Cos", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               SubscriptBox["l", "1"]}], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             RowBox[{"Sin", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             RowBox[{"Sin", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             RowBox[{"Cos", "[", 
+              SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "2"], "."], " ", 
+             SubscriptBox["l", "2"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "2"], "."], " ", 
+             RowBox[{"Sin", "[", 
+              SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+             SubscriptBox["l", "2"]}], "-", 
+            RowBox[{"\[Sqrt]", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox[
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "]"}]}], " ", 
+                   RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   SubscriptBox["l", "2"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                   SubscriptBox["l", "2"]}]}], ")"}], "2"], "-", 
+               RowBox[{"4", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "]"}], " ", 
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    RowBox[{
+                    SubscriptBox["\[Theta]", "1"], "-", 
+                    SubscriptBox["\[Theta]", "2"]}], "]"}], " ", 
+                   SubscriptBox["l", "1"], " ", 
+                   SubscriptBox["l", "2"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "]"}], " ", 
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    RowBox[{
+                    SubscriptBox["\[Theta]", "1"], "-", 
+                    SubscriptBox["\[Theta]", "2"]}], "]"}], " ", 
+                   SubscriptBox["l", "1"], " ", 
+                   SubscriptBox["l", "2"]}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+         ")"}]}], ",", 
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox["2"]], 
+        RowBox[{"(", 
+         RowBox[{"\[Sqrt]", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{"Cos", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               SubscriptBox["l", "1"]}], "]"}], " ", 
+             RowBox[{"Cos", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             RowBox[{"Cos", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               OverscriptBox[
+                SubscriptBox["\[Theta]", "1"], "."], " ", 
+               RowBox[{"Sin", "[", 
+                SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+               SubscriptBox["l", "1"]}], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             RowBox[{"Sin", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "1"], "."], " ", 
+             RowBox[{"Sin", "[", 
+              SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+             SubscriptBox["l", "1"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                RowBox[{"Cos", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             RowBox[{"Cos", "[", 
+              SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "2"], "."], " ", 
+             SubscriptBox["l", "2"]}], "+", 
+            RowBox[{
+             RowBox[{"Conjugate", "[", 
+              RowBox[{
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "1"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                SubscriptBox["l", "1"]}], "+", 
+               RowBox[{
+                OverscriptBox[
+                 SubscriptBox["\[Theta]", "2"], "."], " ", 
+                RowBox[{"Sin", "[", 
+                 SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                SubscriptBox["l", "2"]}]}], "]"}], " ", 
+             OverscriptBox[
+              SubscriptBox["\[Theta]", "2"], "."], " ", 
+             RowBox[{"Sin", "[", 
+              SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+             SubscriptBox["l", "2"]}], "+", 
+            RowBox[{"\[Sqrt]", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox[
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", 
+                    RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "]"}]}], " ", 
+                   RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                   SubscriptBox["l", "1"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   SubscriptBox["l", "2"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                   SubscriptBox["l", "2"]}]}], ")"}], "2"], "-", 
+               RowBox[{"4", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "]"}], " ", 
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    RowBox[{
+                    SubscriptBox["\[Theta]", "1"], "-", 
+                    SubscriptBox["\[Theta]", "2"]}], "]"}], " ", 
+                   SubscriptBox["l", "1"], " ", 
+                   SubscriptBox["l", "2"]}], "-", 
+                  RowBox[{
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    SubscriptBox["l", "1"]}], "]"}], " ", 
+                   RowBox[{"Conjugate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "1"], "]"}], " ", 
+                    SubscriptBox["l", "1"]}], "+", 
+                    RowBox[{
+                    OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                    RowBox[{"Sin", "[", 
+                    SubscriptBox["\[Theta]", "2"], "]"}], " ", 
+                    SubscriptBox["l", "2"]}]}], "]"}], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "1"], "."], " ", 
+                   OverscriptBox[
+                    SubscriptBox["\[Theta]", "2"], "."], " ", 
+                   RowBox[{"Sin", "[", 
+                    RowBox[{
+                    SubscriptBox["\[Theta]", "1"], "-", 
+                    SubscriptBox["\[Theta]", "2"]}], "]"}], " ", 
+                   SubscriptBox["l", "1"], " ", 
+                   SubscriptBox["l", "2"]}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+         ")"}]}]}], "]"}], "2"]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.785576890100891*^9, 3.785577820074649*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"d6431fd7-ad46-44d3-b954-649c7ec73968"]
 }, Open  ]]
 },
 WindowSize->{808, 911},
-WindowMargins->{{311, Automatic}, {54, Automatic}},
+WindowMargins->{{73, Automatic}, {45, Automatic}},
 FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
 2018)",
 StyleDefinitions->"Default.nb"
@@ -163,13 +2065,19 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[558, 20, 347, 9, 30, "Input",ExpressionUUID->"fe9e6e56-d969-4c2d-8454-c38341945ac4"],
 Cell[CellGroupData[{
-Cell[580, 22, 2676, 69, 157, "Input",ExpressionUUID->"3190c8ed-ce48-4e84-800e-aabeb4a28cc3"],
-Cell[3259, 93, 833, 24, 37, "Output",ExpressionUUID->"932a81e2-444c-40ce-8a4c-601edeb39527"]
+Cell[930, 33, 3581, 93, 178, "Input",ExpressionUUID->"3190c8ed-ce48-4e84-800e-aabeb4a28cc3"],
+Cell[4514, 128, 2547, 40, 48, "Message",ExpressionUUID->"9d2af318-b300-481a-86e7-02a6afccf63f"],
+Cell[7064, 170, 1514, 46, 37, "Output",ExpressionUUID->"77bb384b-4b1d-4f1d-a4c1-4eee31ad8f81"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4129, 122, 746, 19, 52, "Input",ExpressionUUID->"daae751d-39ce-4898-99e8-eaca73caf9ed"],
-Cell[4878, 143, 148, 2, 34, "Output",ExpressionUUID->"06831492-c37f-4ea0-8a09-a0b8929ca7fb"]
+Cell[8615, 221, 404, 8, 30, "Input",ExpressionUUID->"f3935feb-9db2-4c3c-9537-630bb85c14c3"],
+Cell[9022, 231, 24236, 595, 661, "Output",ExpressionUUID->"2f7bbd87-9188-450b-963f-186c29f586ca"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33295, 831, 995, 26, 52, "Input",ExpressionUUID->"daae751d-39ce-4898-99e8-eaca73caf9ed"],
+Cell[34293, 859, 52112, 1188, 1295, "Output",ExpressionUUID->"d6431fd7-ad46-44d3-b954-649c7ec73968"]
 }, Open  ]]
 }
 ]
