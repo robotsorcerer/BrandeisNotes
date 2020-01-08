@@ -47,3 +47,75 @@ The planning problem occurs over a certain (time) horizon. This horizon is often
 
 \section{Planning in Discrete Spaces}
 Discrete planning shall involve planning in state spaces where the dimension of the state is finite ot at least infinitely countable \ie, there exists a unique integer that can be assigned to every state. As such, the concepts of representing the state space with a geometric model or complicated differential equations shall not be dealt with herein. We will generally relegate the concepts of uncertainty and avoid methods of representing uncertainty with probability theory.
+
+\subsection{Discrete Feasible Planning}
+Suppose we have a state $x \subset X$  where $X$ is a countable finite set.  The events that occur in the world are governed by an action $u$ which acts on a state transition function $f(x, u)$ to generate a new state $\bar{x}$ \ie, 
+\[
+\bar{x} = f(x, u).
+\]
+%
+Let $U(x)$ be the set of all action spaces for each state $x$ so that the set $U$ of all  possible actions for every state $x \in X$ is defined by 
+%
+\begin{align}
+	U = \bigcup_{x\in X} U(x)
+\end{align}
+%
+while the goal states will be defined by $X_G \subset X$. Our goal will be to find the finite sequence of actions that when applied, transforms the initial state $x_I$ to the goal state in $X_G$. We have the following definition for the model.
+%
+\begin{algorithm}[tbph!]
+	\begin{algorithmic}[1]
+		\caption{Discrete Feasible Planning}
+		\Require A finite or countably infinite nonempty state space $X$
+		%\Function{Discrete Feasible Planning}$X$
+		\State For each state $x \in X$, there exists a finite action space $U(x)$
+		\State A \textit{state transition function} $f$ produces a state $f(x, u) \in X$ for every $x \in X$ and $u \in U(x)$ so that the \textit{state transition equation} is derived from $f$ as $\bar{x} = f(x,u)$.
+		\State An initial state $x_i \in X$.
+		\State A goal state $X_g \subset X$
+	%	\EndFunction
+	\end{algorithmic}
+\end{algorithm}
+
+\section{Search Algorithms}
+%
+Our goal here is to give a skeleton of the common graph search algorithms in robotics. While the questions of computational complexity might be important, this is not our goal here. But rather, we will take a look at the underlings of the popular search algorithms in discrete planning. The state transition graph of such methods are considered to be incrementally given. An important prerequisite in these search paradigms is that the algorithm must be \textit{systematic}. By this, we mean that all visited states must be kept a tab on so that the search does not continue indefinitely. 
+
+For infinite graphs, we may introduce a weaker definition of the \textit{systematic search} requirement. We would require that solutions that exist be found in finite time in such cases; if the solution is however non-existent, we will require the search to run indefinitely. The indefinite search is accomplished by ensuring that as the time taken for exploration of the state space $X$ tends to infinity, every reachable vertex in the graph is explored.
+%
+\begin{algorithm}[tbph!]
+	\begin{algorithmic}[1]
+		\caption{Generic Search}
+		\Require A priority queue $Q$ for which a sorting function is prescribed
+		%\Function{Discrete Feasible Planning}$X$
+		\State $Q.add(x_i)$ and mark $x_i$ as visited
+		\While{$Q \neq \emptyset$ }
+		\State $x\leftarrow Q.getFirst()$ \label{alg:generic-search-lgetfirst}
+		\If{$x \in X_g$}
+		\State \Return EXIT\_SUCCESS
+		\EndIf
+		\For {$u\in U(x)$}
+		\State $\bar{x} \leftarrow f(x, u)$
+		\If{$\bar{x}$ not visited}
+		\State Mark $\bar{x}$ as visited
+		\State $Q.add(\bar{x})$
+		\Else
+		\State Resolve duplicate $\bar{x}$
+		\EndIf
+		\EndFor
+		\EndWhile 
+		\State \Return EXIT\_FAILURE
+	\end{algorithmic}
+\label{alg:generic-search}
+\end{algorithm}
+%
+\subsection{General Search Algorithms}
+Now consider a general template for the search algorithm where it is required that we transition from an initial state $x_i$ to a final state $x_g$ as depicted in algorithm \ref{alg:generic-search}. At any time during search, three types of states may be encountered viz,
+%
+\begin{itemize}
+	\item \textbf{Unvisited States}: These are states that are not yet visited up until the present time $t$. At the start of the search, this wou;d be every state except $x_i$.
+	%
+	\item \textbf{Dead States}: These are states that are already visited, and for which every possible next state has also been visited. We say the next state of a state $x$ is a state for which there exists a $u \in U(x)$ such that $\bar{x} = f(x, u)$. Such states are said to be dead because they no longer contribute to the current search procedure.
+	%
+	\item \textbf{Alive States}: These are states that are already visited, but may have unvisited next states. Originally, the only alive state is $x_i$.
+\end{itemize}
+
+The major difference between different search algorithms will be in the type of function that is used to sort the graph $Q$. Typical sorting mechanisms may include one of \textit{first-in first-out (FIFO) policy}, \textit{last-in first-out (LIFO) policy}, \textit{breadth-first search}, or \textit{depth-first search} among others. In a FIFO queue, the state that is the longest in the queue is the one chosen on line \ref{alg:generic-search-lgetfirst}.  The \textit{while} loop is then executed after which it terminates whenever all the states in $Q$ are exhausted. 
