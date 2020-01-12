@@ -6,7 +6,7 @@ The control problem for robot manipulators requires us knowing the dynamics of t
 
 There are two methods of controlling a rigid robot: \textit{joint space control} and \textit{workspace control}. In joint space control, a manipulation or navigation task is converted to a desired trajectory for the joints of a robot. We then find a control law to apply actuator torques to the joints of the robot in order to follow a given trajectory. In workspace control, the dynamics and control problem is changed into the task space of the robot so that trajectory commands are given in the coordinates of the end-effector.
 
-\subsection{Lagrangian for Mechanical Systems }
+\section{Lagrangian for Mechanical Systems }
 %
 For a system of $n$ particles obeying Newton's second law of motion, the time rate of change of the particle's momentum is the external force applied on the particle. Suppose $F_i$ is the applied force on the $i^{th}$ particle, $m_i$ is the particle's mass, and $r_i$ is the position, it follows from Newton's law that 
 %
@@ -15,7 +15,7 @@ For a system of $n$ particles obeying Newton's second law of motion, the time ra
 	\label{eq:RBD_Newton}
 \end{align}
 %
-We are interested in the \cmt{material description} of the material where the overall degrees of freedom is constrained by the coupling between the individual robots. As such, we write out the constraints which govern the particle's positions as the following holonomic constraint\footnote{
+We are interested in the material description of the body where the overall degrees of freedom is constrained by the coupling between the individual robots. In the \textit{material description}, we are interested with the body-points as it is treated in analytical dynamics, where it is typical to work with first, second, $\ldots$, $n^{th}$ masses. As such, we write out the constraints which govern the particle's positions as the following holonomic constraint\footnote{
 %
 If time enters the relation in the equation explicitly, then we have a rheonomic constraint, otherwise, the constraint is called sclerenomic constraint. A particle suspended from a tight rope in 3D space would be an example of a rheonomic constraint with the equation, $(x_1-1)^2  + (x_2 - b)^2 + (x_3-c)^2 - r^2 = 0$, while a particle on a carousel would be a sclerenomically-constrained system. Such a system would be described by the following equation, $x_1 = a \cos(\omega t + \phi); x_2 = a \sin (\omega t + \phi).$}. These are the constraints of position in a system.  
 %
@@ -54,7 +54,7 @@ While simple, this approach does not scale well to the configuration of the sort
 %
 where $q_i$'s are the generalized coordinates of the system, which in the case of robot manipulators is almost always the joint angles.  The forces expressed along the coordinates of the generalized coordinates of position are referred to as \textit{generalized forces}. 
 
-\subsection{Euler-Lagrange Equations}
+\section{Euler-Lagrange Equations}
 %
 For a kinetic energy $T$ and a potential energy $V$, the \textit{Lagrangian, $L$}, of the system in generalized coordinates is the difference between the kinetic and potential energy, \ie
 %
@@ -121,7 +121,7 @@ with $\Gamma_i(\theta)$ being an $n\times n$ matrix with the $(j,k)$the entry as
 %
 Thus for a given robotic mechanical system, finding the dynamics is tantamount to deriving the kinetic and potential energies for the system based on that particular system characteristics. In the next two subsections, we will treat two examples -- a simple pendulum system and the dynamics of a mecanum wheel robot. 
 
-\subsection{Dynamics of a spherical Pendulum}
+\section{Dynamics of a spherical Pendulum}
 %
 We now consider the double pendulum of \autoref{fig:double-pendulum} with masses $m_1$ and $m_2$. We would like to find the overall torque of the system based on the Euler-Lagrange system of equations we just derived.
 %
@@ -291,7 +291,7 @@ so that we may write the equation of motion of the system as
 %
 The derivation above is very important and will guide us when we start with the control of manipulators and wheeled robots.Equation \eqref{eq:torque} is basically a restatement of Newton's second law of motion, that is the net forces on a rigid body is a summation of the impressed forces (rate of change of the mechanical energy) of the system. The mass matrix is symmetric positive-definite while the $\bm{C}(\theta)$ matrix contains all the Coriolis and centripetal torques, while $V(\theta)$ contains the gravitational torques.
 
-\subsection{Dynamics of a Mecanum-Wheeled Robot}
+\section{Dynamics of a Mecanum-Wheeled Robot}
 %
 The example set forth below is from \cite{Ogunmolu18IROS}. You are encouraged to read the paper to get the full context but the subject of importance to us will be introducing the way a rigid body can be controlled. In this case, we will use the gazebo simulation environment to realize torque control of the mobile manipulation system.  Formally,  we consider the KUKA youbot\footnote{\href{https://goo.gl/CYTjvD}{https://goo.gl/CYTjvD}} platform with four mecanum wheels~\cite{mecanum}, capable of spatial $\{x,y\}$ motion, \ie sideways, and forward, and an in-place $\theta$-rotation about the $z$-axis (see Fig. \autoref{fig:mecanum}). It is equipped with a 5-DoF arm, mounted on its base. We use the complete kinematic and dynamic model of the youbot platform, accounting for the wheels' friction and mass, while neglecting the links' masses and their associated inertia forces. %Our goal is to show that while iLQG solves the navigation task with an incomplete model, robust iLQG solves \cmt{the problem faster and better without knowledge of the associated disturbances}. Since the robot moves in the $x-y$ plane, we limit ourselves to the 3-DoF dynamics in Cartesian space.  
 The model is derived in spatial (world) coordinates as, $\textit{x}_I = \begin{bmatrix}\textit{x}_1, \textit{x}_2, \textit{x}_3\end{bmatrix}^T \equiv \begin{bmatrix}x_I, y_I, \theta_I\end{bmatrix}^T$, and the local frame of the robot is defined as $\textit{x}_R = \begin{bmatrix}x_R, y_R, \theta_R\end{bmatrix}^T$ (see \autoref{fig:mecanum}).
@@ -359,7 +359,7 @@ F_{i} = \sum_{j=1}^{4}\left(\torque_j - r \, sgn(\dot{\phi_j}) \, \bm{f}_j\right
 	Using an appropriate controller, command the KUKA robot and arm to move from the center of the maze to the designated goal position shown in \autoref{fig:gazebo_sim}. For this example, students may pull the \textsc{ros docker image} available on the author's docker hub at \href{https://hub.docker.com/r/lakehanne/youbotbuntu14}{https://hub.docker.com/r/lakehanne/youbotbuntu14}. It contains all the inertia masses, Coriolis forces and gazebo package for the youbot robot that you will need for this task. Instructions for loading the environment may be found on this \href{https://github.com/lakehanne/youbot}{github webpage}.
 \end{homework}
 
-\subsection{Robot Dynamics and the POE Formula}
+%\section{Robot Dynamics and the POE Formula}
 
 
 

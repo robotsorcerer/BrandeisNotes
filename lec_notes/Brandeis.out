@@ -60,15 +60,14 @@
 \BOOKMARK [1][-]{section.4.7}{Inverse kinematics}{chapter.4}% 60
 \BOOKMARK [2][-]{subsection.4.7.1}{Paden-Kahan Subproblems}{section.4.7}% 61
 \BOOKMARK [0][-]{chapter.5}{Robot Dynamics and Control}{}% 62
-\BOOKMARK [1][-]{subsection.5.0.1}{Lagrangian for Mechanical Systems }{chapter.5}% 63
-\BOOKMARK [2][-]{subsection.5.0.2}{Euler-Lagrange Equations}{subsection.5.0.1}% 64
-\BOOKMARK [2][-]{subsection.5.0.3}{Dynamics of a spherical Pendulum}{subsection.5.0.1}% 65
-\BOOKMARK [2][-]{subsection.5.0.4}{Dynamics of a Mecanum-Wheeled Robot}{subsection.5.0.1}% 66
-\BOOKMARK [2][-]{subsection.5.0.5}{Robot Dynamics and the POE Formula}{subsection.5.0.1}% 67
-\BOOKMARK [0][-]{chapter.6}{Motion Planning}{}% 68
-\BOOKMARK [1][-]{subsection.6.0.1}{Planning: Motion/Trajectory Planning}{chapter.6}% 69
-\BOOKMARK [1][-]{section.6.1}{Planning in Discrete Spaces}{chapter.6}% 70
-\BOOKMARK [2][-]{subsection.6.1.1}{Discrete Feasible Planning}{section.6.1}% 71
-\BOOKMARK [1][-]{section.6.2}{Search Algorithms}{chapter.6}% 72
-\BOOKMARK [2][-]{subsection.6.2.1}{General Search Algorithms}{section.6.2}% 73
-\BOOKMARK [0][-]{chapter*.33}{References}{}% 74
+\BOOKMARK [1][-]{section.5.1}{Lagrangian for Mechanical Systems }{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.2}{Euler-Lagrange Equations}{chapter.5}% 64
+\BOOKMARK [1][-]{section.5.3}{Dynamics of a spherical Pendulum}{chapter.5}% 65
+\BOOKMARK [1][-]{section.5.4}{Dynamics of a Mecanum-Wheeled Robot}{chapter.5}% 66
+\BOOKMARK [0][-]{chapter.6}{Motion Planning}{}% 67
+\BOOKMARK [1][-]{section.6.1}{Planning: Motion/Trajectory Planning}{chapter.6}% 68
+\BOOKMARK [1][-]{section.6.2}{Planning in Discrete Spaces}{chapter.6}% 69
+\BOOKMARK [2][-]{subsection.6.2.1}{Discrete Feasible Planning}{section.6.2}% 70
+\BOOKMARK [1][-]{section.6.3}{Search Algorithms}{chapter.6}% 71
+\BOOKMARK [2][-]{subsection.6.3.1}{General Search Algorithms}{section.6.3}% 72
+\BOOKMARK [0][-]{chapter*.33}{References}{}% 73

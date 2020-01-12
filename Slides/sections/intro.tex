@@ -15,7 +15,7 @@
 	 		%
 	 		\vspace{0.5em}
 	 		%
-	 		 \item To ease setup for labs, a dockerized environment has been provided for you that has all the tools you need to get a jumpstart onmost of the lab exercises in the notes.
+	 		 \item To ease setup for labs, a dockerized environment has been provided for you that has all the tools you need to get a jumpstart most of the lab exercises in the notes.
 	 	\end{itemize}
 \end{frame}
 
@@ -26,7 +26,7 @@
 		%
 		\vspace{.5em}
 		%
-		\item To download and install the Ubuntu OS, hop over to the Ubuntu download page: \href{https://ubuntu.com/download/desktop}{https://ubuntu.com/download/desktop} and follow the download and install instructions 
+		\item To download and install the Ubuntu OS, hop over to the Ubuntu download page: \href{https://ubuntu.com/download/desktop}{https://ubuntu.com/download/desktop} and follow the download and installation instructions 
 		% \href
 		\vspace{.5em}
 		\item When you are done installing ubuntu, be sure to install the docker environment 
@@ -67,7 +67,7 @@
 	\vspace{.5em}
 	%
 	\begin{itemize}
-		\small \item \textsf{``docker pull lakehanne/brandeis"}
+		\small \item \textsf{``docker pull lakehanne/brandeis:melodic"}
 	\end{itemize}
 	%
 	\vspace{.5em}
@@ -76,17 +76,30 @@
 	%
 	\vspace{.5em}
 	%
-	\small \textsf{``docker run -ti --rm lakehanne/brandeis:latest -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=\$DISPLAY --privileged -v /dev/bus/usb:/dev/bus/usb"}
+	\small \textsf{``docker run -ti --rm lakehanne/brandeis:melodic -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=\$DISPLAY --privileged -v /dev/bus/usb:/dev/bus/usb"}
 	%
 	\vspace{.5em}
 	%
-	\item This would launch the image together with usb access and access to your xorg server.  The ros installation is at \textsf{``/opt/ros/indigo"} and the catkin workspace is located at \textsf{``/home/lex/catkin\_ws/src"}. This is the directory from which all tutorials shall be launched.
+	\item This would launch the image together with usb access and access to your xorg server.  The ros installation is at \textsf{``/opt/ros/melodic"} and the catkin workspace is located at \textsf{``/home/rbot250/catkin\_ws/src"}. This is the directory from which all tutorials shall be launched.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{ROS Introduction}
 	\begin{itemize}
+		\item An easier way to run would be to launch the `docker-run` executable available here: `https://github.com/lakehanne/Shells/blob/master/docker-run'.
+		%
+		\item Follow the instructions that the bash script gives you 
+		%
+		\item Note that to compile, I have installed the catkin-build tools globally in the image which you can use as follows:
+		\begin{itemize}
+			\item `catkin build'
+			%
+			\item You can also run catkin build with the alias `cb'
+			%
+			\item To compile just a single package, say dr\_kdl, 		run `cb dr\_kdl'
+		\end{itemize}
+		
 		\item Now that you have the ros environment setup, why don't you start playing around with the tutorials at \textsf{\href{http://wiki.ros.org/ROS/Tutorials}{\bl{ROS Tutorials Page}}}.
 	\end{itemize}
 \end{frame}

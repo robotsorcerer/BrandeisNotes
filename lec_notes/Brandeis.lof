@@ -24,9 +24,9 @@
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Inverse Kinematics of a two-link planar manipulator\relax }}{65}{figure.caption.28}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Elbow Manipulator. Figure reproduced from \nobreakspace {}\citep {PadenThesis85}\relax }}{66}{figure.caption.29}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces The double pendulum with configuration is decribed by the angles $\theta _1$ and $\theta _2$.\relax }}{72}{figure.caption.30}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The KUKA Robot's Geometrical Illustration\relax }}{76}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mecanum Wheels Model}}}{76}{subfigure.2.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Robot frames convention }}}{76}{subfigure.2.2}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The KUKA Robot's Geometrical Illustration\relax }}{75}{figure.caption.31}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mecanum Wheels Model}}}{75}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Robot frames convention }}}{75}{subfigure.2.2}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Goal Navigation Illustration\relax }}{77}{figure.caption.32}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Home Position.}}}{77}{subfigure.3.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Goal State.}}}{77}{subfigure.3.2}
