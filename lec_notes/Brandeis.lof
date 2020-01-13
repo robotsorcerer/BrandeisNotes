@@ -4,7 +4,7 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces The Staubli 6-DOF Arm is an example of a Spherical Manipulator. Reprinted from DirectIndustry's Webpage.\relax }}{9}{figure.caption.7}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces The SCARA Arm. \copyright Fanuc America.\relax }}{9}{figure.caption.8}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Stewart-Gough Platforms \textit {Left:} The 1954 Octahedral hexapod of the original Gough platform. \textit {Right:} The retired platform from Dunlop tires in 2000. Picture courtesy of Parallemic.org.\relax }}{11}{figure.caption.9}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Insert Kinematic Pair Table here\relax }}{12}{figure.caption.10}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces The Lower Kinematic Pairs. Reprinted from \citep {HuntBook1977}.\relax }}{12}{figure.caption.10}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces The planar $RRR$ linkage, (\textit {left}) is modified in (\textit {right}) to allow spatial spin-movement of the coupler 3; the connectivity $\mathscr {C}_{13}=2$). Reprinted from \nobreakspace {}\citep {HuntBook1977}.\relax }}{12}{figure.caption.11}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces \textit {Left}: A Parallel Planar Robot Mechanism. \textit {Right:} Workspace of the mechanism.\relax }}{16}{figure.caption.12}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of rotation of interconnecting link of two spherical links.\relax }}{23}{figure.caption.13}

@@ -51,12 +51,12 @@
 \contentsline {section}{\numberline {4.2}Manipulator parameterization with twists}{54}{section.4.2}
 \contentsline {section}{\numberline {4.3}The Universal Robot Description Format}{57}{section.4.3}
 \contentsline {section}{\numberline {4.4}Velocity Kinematics}{58}{section.4.4}
-\contentsline {section}{\numberline {4.5}Singularities in Rigid Bodies and The Manipulability Ellipsoid}{59}{section.4.5}
+\contentsline {section}{\numberline {4.5}Singularities in Rigid Bodies and The Manipulability Ellipsoid}{58}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}The Manipulability Ellipsoid}{60}{subsection.4.5.1}
 \contentsline {section}{\numberline {4.6}The Manipulator Jacobian}{61}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Spatial Jacobian}{61}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}The Body Jacobian}{62}{subsection.4.6.2}
-\contentsline {section}{\numberline {4.7}Inverse kinematics}{64}{section.4.7}
+\contentsline {section}{\numberline {4.7}Inverse kinematics}{63}{section.4.7}
 \contentsline {subsection}{\numberline {4.7.1}Paden-Kahan Subproblems}{65}{subsection.4.7.1}
 \contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {5}\MakeTextUppercase {Robot Dynamics and Control}}{68}{chapter.5}
 \contentsline {section}{\numberline {5.1}Lagrangian for Mechanical Systems }{68}{section.5.1}
