@@ -66,4 +66,7 @@
 \contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {6}\MakeTextUppercase {Motion Planning}}{78}{chapter.6}
 \contentsline {section}{\numberline {6.1}Planning: Motion/Trajectory Planning}{79}{section.6.1}
 \contentsline {section}{\numberline {6.2}Planning in Discrete Spaces}{81}{section.6.2}
-\contentsline {chapter}{\MakeTextUppercase {References}}{82}{chapter*.33}
+\contentsline {subsection}{\numberline {6.2.1}Discrete Feasible Planning}{81}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Search Algorithms}{82}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}General Search Algorithms}{83}{subsection.6.3.1}
+\contentsline {chapter}{\MakeTextUppercase {References}}{84}{chapter*.33}
