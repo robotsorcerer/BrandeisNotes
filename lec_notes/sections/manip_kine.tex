@@ -35,6 +35,11 @@ Formally, we define the \textit{forward kinematics of a robot as a means of find
 \end{figure}
 %
 
+
+\begin{homework}
+	For this homework, you are asked to get familiar with the URDF Tutorials \href{http://wiki.ros.org/urdf}{here}: http://wiki.ros.org/urdf. In particular, go through the PR2 composition in the tutorial given. The knowledge gained from this tutorial will be helpful as we go forward in this class.
+\end{homework}
+
 \subsection{Screw Axes and  Base Frame}
 
 For consider the kinematic chain of \autoref{fig:manip}. Suppose that we fix a right-handed triad of orthogonal vectors at the tip of each member of the chain, the\textit{ joint space} $Q$ of the robot is the set of all possible values of the joint variables of the robot, which happens to also be the C-space of the robot given that the joint angles completely determine the locations of every link in the robot. 
@@ -310,9 +315,6 @@ When we program robots, it is often helpful to write the transformation from one
 
 Note that the URDF format provided by Open Robotics is only valid for open kinematic chains and wheeled robots. The engine used in writing the ROS and gazebo frameworks are not optimized for parallel manipulators and soft materials as yet. In addition, Gazebo, uses a pseudo-URDF file called \textsc{SDF}. 
 
-\begin{homework}
-	For this homework, you are asked to get familiar with the URDF Tutorials \href{http://wiki.ros.org/urdf}{here}: http://wiki.ros.org/urdf. In particular, go through the PR2 composition in the tutorial given. The knowledge gained from this tutorial will be helpful as we go forward in this class.
-\end{homework}
 
 \section{Velocity Kinematics}
 
@@ -401,7 +403,7 @@ We now formally introduce the manipulability ellipsoid of the robot arm. When yo
 	The quantitative index that defines the set of all end-effector velocities that are realizable by joint velocities under a magnitude constraint (\eg a Euclidean norm  $<=1$) such that \textit{those end-effector velocities are \textbf{large and spherical} as much as possible} is the \textbf{manipulability measure} of the robot.
 \end{definition}
 
-The manipulability measures the performance of the arm's kinematics (motions) in order for us to optimize the size of the robot. To illustrate the intuitive mesaning of the manipulability measure, play with the cdf file located on the wolfram cloud at this \href{https://demonstrations.wolfram.com/ManipulabilityEllipsoidOfARobotArm/}{web address}. What happens, when you set all the angles of the robot to zero or $180^\circ$? Notice that the manipulability becomes $0$. Coincidentally, we find that this is a situation that occurs when the robot is at a singularity and the manipulability ellipsoid is at its lowest coverage within the manipulator workspace.
+The manipulability measures the performance of the arm's kinematics (motions) in order for us to optimize the size of the robot. To illustrate the intuitive meaning of the manipulability measure, play with the cdf file located on the wolfram cloud at this \href{https://demonstrations.wolfram.com/ManipulabilityEllipsoidOfARobotArm/}{web address}. What happens, when you set all the angles of the robot to zero or $180^\circ$? Notice that the manipulability becomes $0$. Coincidentally, we find that this is a situation that occurs when the robot is at a singularity and the manipulability ellipsoid is at its lowest coverage within the manipulator workspace.
 
 \begin{homework}
 	Explain what happens when you adjust the parameters of the robot as follows 
