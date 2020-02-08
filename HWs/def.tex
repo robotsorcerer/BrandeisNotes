@@ -1,0 +1,132 @@
+\definecolor{light-blue}{rgb}{0.30,0.35,1}
+\definecolor{light-green}{rgb}{0.20,0.49,.85}
+\definecolor{purple}{rgb}{0.70,0.69,.2}
+
+\newcommand{\lb}[1]{\textcolor{light-blue}{#1}}
+\newcommand{\bl}[1]{\textcolor{blue}{#1}}
+
+\newcommand{\maybe}[1]{\textcolor{gray}{\textbf{MAYBE: }{#1}}}
+\newcommand{\inspect}[1]{\textcolor{cyan}{\textbf{CHECK THIS: }{#1}}}
+\newcommand{\more}[1]{\textcolor{red}{\textbf{MORE: }{#1}}}
+
+% FYA
+\newcommand{\cmt}[1]{{\footnotesize\textcolor{red}{#1}}}%{#2}
+%\newcommand{\note}[1]{\cmt{Note: #1}}
+%\newcommand{\todo}[1]{\textcolor{cyan}{TO-DO: #1}}
+\newcommand{\review}[1]{\noindent\textcolor{red}{$\rightarrow$ #1}}
+\newcommand{\response}[1]{\noindent{#1}}
+\newcommand{\stopped}[1]{\color{red}STOPPED HERE #1\hrulefill}
+
+%Text commands
+\newcounter{mnote}
+\newcommand{\marginote}[1]{\addtocounter{mnote}{1}\marginpar{\themnote. \scriptsize #1}}
+\setcounter{mnote}{0}
+% \newcommand{\comment}[1]{}
+\newcommand{\ie}{$i.e.$\ }
+\newcommand{\eg}{e.g.\ }
+\newcommand{\cf}{c.f.\ }
+\newcommand{\yes}{\checkmark}
+\newcommand{\no}{\ding{55}}
+
+%Reference commands
+\newcommand{\flabel}[1]{\label{fig:#1}}
+\newcommand{\seclabel}[1]{\label{sec:#1}}
+\newcommand{\tlabel}[1]{\label{tab:#1}}
+\newcommand{\elabel}[1]{\label{eq:#1}}
+\newcommand{\alabel}[1]{\label{alg:#1}}
+\newcommand{\fref}[1]{\cref{fig:#1}}
+\newcommand{\sref}[1]{\cref{sec:#1}}
+\newcommand{\tref}[1]{\cref{tab:#1}}
+\newcommand{\eref}[1]{\cref{eq:#1}}
+\newcommand{\aref}[1]{\cref{alg:#1}}
+
+\newcommand{\bull}[1]{$\bullet$ #1}
+\newcommand{\argmax}{\text{argmax}}
+\newcommand{\argmin}{\text{argmin}}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+
+
+\def\tidx{t}
+%\def\comment
+%\def\value{V}
+% from https://www.cs.jhu.edu/~jason/advice/write-the-paper-first.html
+\newcommand{\Note}[1]{}
+\renewcommand{\Note}[1]{\hl{[#1]}}  % comment out this definition to suppress all Notes
+%\algnewcommand\algorithmicforeach{\textbf{for each}}
+%\algdef{S}[FOR]{Foreach}[1]{\algorithmicforeach\ #1\ \algorithmicdo} %
+
+%\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\def\coriolis{\textbf{\textit{C}}}
+\def\massinertia{\textbf{\textit{M}}}
+\def\torque{\bm{\tau}}
+\def\frictionvec{\textbf{\textit{f}}}
+\def\Smat{\textbf{\textit{S}}}
+\def\Bmat{\textbf{\textit{B}}}
+\def\wheelrad{\textbf{\textit{r}}}
+
+\def\stateweight{\textbf{\textit{w}}_x}
+\def\actionweight{\textbf{\textit{w}}_u}
+\def\advactionweight{\textbf{\textit{w}}_v}
+
+%Thesis defs
+%\def\upchi{\textchi}
+\def\kau{\mc{K}}
+\def\particle{\bm{x}}
+\def\deformationgrad{\textbf{F}}
+\def\refconf{\bm{\upchi}_0}
+\def\refconfbody{\mathscr{B}_0}
+\def\conf{\bm{\upchi}}
+\def\currconf{\bm{\upchi}}
+\def\Eulerian{\mc{E}}
+\def\cauchystress{\bm{\sigma}}
+\def\stresscomp{\sigma}
+\def\currconfbody{\mathscr{B}}
+\def\materialresponse{\textbf{G}}
+\def\orthoggroup{{\textit{SO}}(3)}
+\def\liegroup{{\textit{SE}}(3)}
+\def\liealgebra{\mathfrak{se}(3)}
+\def\identity{\textbf{I}}
+\newcommand{\trace}[1]{\textbf{tr}(#1)}
+\def\leftcauchy{\textbf{B}}
+\def\rightcauchy{\textbf{C}}
+\def\fiber{\textbf{dx}}
+
+\def\dof{\text{DOF }}
+\def\dofs{\text{DOFs }}
+\def\reline{\mathbb{R}}
+\def\curve{\deformationgrad}
+\def\twist{{\xi}}
+\def\contactforce{\tilde{F}}
+\def\contactforcecomp{f}
+\def\gaussianmap{\textbf{}n}
+\def\contacttorquecomp{\tau}
+\def\wrt{with respect to }
+\def\curveparam{\position}
+\def\basis{\bm{e}}
+\def\pose{{g}}
+\def\selmap{{B}}
+\def\manipmap{{G}}
+\def\jacob{\bm{J}}
+\def\normal{\bm{n}}
+\def\position{\textbf{r}}
+\def\deformationgradcur{\textbf{H}}
+\def\eulerianvel{\textbf{v}(\position, t)}
+\def\headparam{\zeta}
+\def\strain{\mathrm{\Psi}}
+\def\strainiso{\mathrm{\Psi_{\text{iso}}}}
+\def\strainfiber{\mathrm{\Psi_{\text{mesh}}}}
+
+% mechanism defs
+\def\wallthickness{1cm}
+\def\sorodiam{9 cm}
+\def\sorodiamdim{5-6.25cm}
+
+% inline macros
+\newcommand{\putsoro}[2]{\includegraphics[width=.45\columnwidth,height=#2\columnwidth]{../../../PhDThesis/figures/#1}}
+\newcommand{\sorowidth}{.35}
+
+
+%\newtheorem{theorem}{Theorem}[]
+%\newtheorem{example}{Example}
+%\newtheorem{homework}{Homework}
