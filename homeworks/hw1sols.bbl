@@ -1,4 +1,4 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
 \providecommand{\url}[1]{#1}
 \csname url@rmstyle\endcsname
 \providecommand{\newblock}{\relax}
@@ -17,5 +17,10 @@
 \language=\csname l@#1\endcsname
 \fi
 #2}}
+
+\bibitem{Gogu}
+G.~Gogu, ``Maximally regular t3-type translational parallel robots,''
+  \emph{Structural Synthesis of Parallel Robots: Part 2: Translational
+  Topologies with Two and Three Degrees of Freedom}, pp. 687--748, 2009.
 
 \end{thebibliography}
