@@ -1,31 +1,3 @@
-\documentclass[]{article}
-
-
-\usepackage{bm}
-\usepackage{color}
-\usepackage{graphicx}
-\usepackage{mathrsfs}
-\usepackage{microtype}
-\usepackage{algpseudocode}
-\usepackage[final]{pdfpages}
-\usepackage{amssymb,amsthm,amsmath}
-
-%opening
-\title{Homework II}
-\author{Dr. Olalekan Ogunmolu}
-
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[]
-\newtheorem{theorem}{Theorem}[]
-\newtheorem{example}{Example}
-\newtheorem{homework}{Homework}
-\newtheorem{solution}{Solution}
-\input{def}
-
-\begin{document}
-
-\maketitle
-
 
 \noindent 
 \begin{homework}
@@ -89,13 +61,17 @@
 	First recall that we can expand $e^{\hat{\omega}\theta}$ using Taylor series so that 
 	%
 	\begin{align}
-		e^{\hat{\omega}\theta} = \identity + \theta \hat{\omega} + \frac{\theta^2}{2!}\hat{\omega}^2 + \frac{\theta^3}{3!}\hat{\omega}^3 + \frac{\theta^4}{4!}\hat{\omega}^4 + + \frac{\theta^5}{5!}\hat{\omega}^5 + \frac{\theta^6}{6!}\hat{\omega}^6 + \frac{\theta^7}{7!}\hat{\omega}^7 + \cdots
+		e^{\hat{\omega}\theta} &= \identity + \theta \hat{\omega} + \frac{\theta^2}{2!}\hat{\omega}^2 + \frac{\theta^3}{3!}\hat{\omega}^3 + \frac{\theta^4}{4!}\hat{\omega}^4 +  \frac{\theta^5}{5!}\hat{\omega}^5 + \nonumber \\
+		%
+		&\quad  \frac{\theta^6}{6!}\hat{\omega}^6 + \frac{\theta^7}{7!}\hat{\omega}^7 + \cdots
 	\end{align}
 	%
 	Rewriting, we find that
 	%	
 	\begin{align}
-	e^{\hat{\omega}\theta} = \identity + \hat{\omega} \left(\theta + \frac{\theta^3}{3!}\hat{\omega}^2  + \frac{\theta^5}{5!}\hat{\omega}^4 + \frac{\theta^7}{7!}\hat{\omega}^6  + \cdots \right)  +
+	e^{\hat{\omega}\theta} &= \identity + \hat{\omega} \left(\theta + \frac{\theta^3}{3!}\hat{\omega}^2  + \frac{\theta^5}{5!}\hat{\omega}^4 + \frac{\theta^7}{7!}\hat{\omega}^6  + \cdots \right)   + \nonumber \\
+	%
+	&\quad  
 	% 
 	\hat{\omega}^2 \left( \frac{\theta^2}{2!} + \frac{\theta^4}{4!}\hat{\omega}^2 + + \frac{\theta^6}{6!}\hat{\omega}^4  + \cdots \right).
 	\label{eq:exp_expand}
@@ -114,14 +90,16 @@
 	we may write \eqref{eq:exp_expand} as 
 	%
 	\begin{align}
-	e^{\hat{\omega}\theta} &= I + \hat{\omega} \left(\theta + \frac{\theta^3}{3!}\left(\omega \omega^T - \|\omega\|^2 \identity\right)  + \frac{\theta^5}{5!}\left(\omega \omega^T - \|\omega\|^2 \identity\right)^2 + \frac{\theta^7}{7!}\left(\omega \omega^T - \|\omega\|^2 \identity\right)^3  + \cdots \right) \nonumber \\
+	e^{\hat{\omega}\theta} &= I + \hat{\omega} \left(\theta + \frac{\theta^3}{3!}\left(\omega \omega^T - \|\omega\|^2 \identity\right)  + \frac{\theta^5}{5!}\left(\omega \omega^T - \|\omega\|^2 \identity\right)^2 %+ \frac{\theta^7}{7!}\left(\omega \omega^T - \|\omega\|^2 \identity\right)^3  
+	+ \cdots \right) \nonumber \\
 	&\quad +
 	% 
-	\hat{\omega}^2 \left( \frac{\theta^2}{2!} + \frac{\theta^4}{4!}\left(\omega \omega^T - \|\omega\|^2 \identity \right) + \frac{\theta^6}{6!}\left(\omega \omega^T - \|\omega\|^2 \identity \right)^2  + \frac{\theta^8}{8!}\left(\omega \omega^T - \|\omega\|^2 \identity\right)^4 + \cdots \right) \nonumber \\
+	\hat{\omega}^2 \left( \frac{\theta^2}{2!} + \frac{\theta^4}{4!}\left(\omega \omega^T - \|\omega\|^2 \identity \right) + \frac{\theta^6}{6!}\left(\omega \omega^T - \|\omega\|^2 \identity \right)^2  %+ \frac{\theta^8}{8!}\left(\omega \omega^T - \|\omega\|^2 \identity\right)^4
+	 + \cdots \right) \nonumber \\
 	%
-	&= \identity + \hat{\omega} \left(\theta - \frac{\theta^3}{3!}\hat{\omega}^2  + \frac{\theta^5}{5!}\hat{\omega}^4 - \frac{\theta^7}{7!}\hat{\omega}^6  + \cdots \right)  +
-	% 
-	\hat{\omega}^2 \left( \frac{\theta^2}{2!} - \frac{\theta^4}{4!}\hat{\omega}^2 + + \frac{\theta^6}{6!}\hat{\omega}^4  + \cdots \right)
+	&= \identity + \hat{\omega} \left(\theta - \frac{\theta^3}{3!}\hat{\omega}^2  + \frac{\theta^5}{5!}\hat{\omega}^4 - \frac{\theta^7}{7!}\hat{\omega}^6  + \cdots \right)   \nonumber \\
+	%
+	&\quad + \hat{\omega}^2 \left( \frac{\theta^2}{2!} - \frac{\theta^4}{4!}\hat{\omega}^2 + + \frac{\theta^6}{6!}\hat{\omega}^4  + \cdots \right)
 	\label{eq:exp_lemma}
 	\end{align}
 	%

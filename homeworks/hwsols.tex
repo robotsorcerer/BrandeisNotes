@@ -28,6 +28,9 @@
 \usepackage[pagebackref=true,breaklinks=true,colorlinks=true, citecolor=green,linkcolor=cyan,urlcolor=blue,bookmarks=true]{hyperref}
 
 
+\title{RBOT 250: Homework Solutions}
+\author{Dr. Olalekan Ogunmolu}
+
 %% zero out space between sec and subsecs
 %\usepackage[compact]{titlesec}
 %\titlespacing{\section}{0pt}{*0}{*0}
@@ -40,8 +43,12 @@
 \include{def}
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
-% correct bad hyphenation here
-%\hyphenation{op-tical net-works semi-conduc-tor}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[]
+\newtheorem{theorem}{Theorem}[]
+\newtheorem{example}{Example}
+\newtheorem{homework}{Homework}
+\newtheorem{solution}{Solution}
 
 \addtolength{\textfloatsep}{-3mm}
 \addtolength{\floatsep}{-3mm}
@@ -56,6 +63,7 @@
 \makeatother
 
 \begin{document}
+	\maketitle
 	
 	% activate no dash in reference names 
 	\bstctlcite{IEEEexample:BSTcontrol}
@@ -65,7 +73,8 @@
 	% Make room for more info lines in the \author command  
 	\author{Olalekan Ogunmolu}
 
-\input{hw1}
+\input{sec/hw1}
+\input{sec/hw2}
 
 % ---- Bibliography ----
 \providecommand\BIBentryALTinterwordstretchfactor{2.5}

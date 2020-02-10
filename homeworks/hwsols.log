@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  9 FEB 2020 19:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.5)  10 FEB 2020 16:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**hw1sols.tex
-(./hw1sols.tex
+**hwsols.tex
+(./hwsols.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 7 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -1233,45 +1233,51 @@ File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \@input{def.aux}
 \openout2 = `def.aux'.
 
-(./def.tex) (./hw1sols.aux)
-\openout1 = `hw1sols.aux'.
+(./def.tex)
+\c@definition=\count333
+\c@theorem=\count334
+\c@example=\count335
+\c@homework=\count336
+\c@solution=\count337
+ (./hwsols.aux)
+\openout1 = `hwsols.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 65.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 -- Lines per column: 58 (exact).
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count333
+\scratchcounter=\count338
 \scratchdimen=\dimen318
 \scratchbox=\box102
-\nofMPsegments=\count334
-\nofMParguments=\count335
+\nofMPsegments=\count339
+\nofMParguments=\count340
 \everyMPshowfont=\toks54
-\MPscratchCnt=\count336
+\MPscratchCnt=\count341
 \MPscratchDim=\dimen319
-\MPnumerator=\count337
-\makeMPintoPDFobject=\count338
+\MPnumerator=\count342
+\makeMPintoPDFobject=\count343
 \everyMPtoPDFconversion=\toks55
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1289,7 +1295,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count339
+\c@lstlisting=\count344
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
@@ -1297,7 +1303,7 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@posthook=\toks57
 )
 \AtBeginShipoutBox=\box103
-Package hyperref Info: Link coloring ON on input line 58.
+Package hyperref Info: Link coloring ON on input line 65.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1305,107 +1311,113 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count340
+\c@section@level=\count345
 )
-LaTeX Info: Redefining \ref on input line 58.
-LaTeX Info: Redefining \pageref on input line 58.
-LaTeX Info: Redefining \nameref on input line 58.
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
 
-(./hw1sols.out) (./hw1sols.out)
+(./hwsols.out) (./hwsols.out)
 \@outlinefile=\write6
-\openout6 = `hw1sols.out'.
+\openout6 = `hwsols.out'.
 
- (./hw1.tex
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 6.
+ (./sec/hw1.tex
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 6.
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 6.
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+euf on input line 9.
+LaTeX Font Info:    Try loading font information for U+euf on input line 12.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-<../lec_notes/figures/parallel_translational.png, id=61, 953.5625pt x 607.26875
+<../lec_notes/figures/parallel_translational.png, id=45, 953.5625pt x 607.26875
 pt>
 File: ../lec_notes/figures/parallel_translational.png Graphic file (type png)
 <use ../lec_notes/figures/parallel_translational.png>
 Package pdftex.def Info: ../lec_notes/figures/parallel_translational.png  used 
-on input line 27.
+on input line 31.
 (pdftex.def)             Requested size: 125.98994pt x 100.79732pt.
-<../lec_notes/figures/parallel_translational_workspace.png, id=63, 862.22125pt 
+<../lec_notes/figures/parallel_translational_workspace.png, id=47, 862.22125pt 
 x 573.14125pt>
 File: ../lec_notes/figures/parallel_translational_workspace.png Graphic file (t
 ype png)
 <use ../lec_notes/figures/parallel_translational_workspace.png>
 Package pdftex.def Info: ../lec_notes/figures/parallel_translational_workspace.
-png  used on input line 29.
+png  used on input line 33.
 (pdftex.def)             Requested size: 120.94696pt x 100.79095pt.
 
-Overfull \hbox (1.77101pt too wide) in paragraph at lines 26--31
+Overfull \hbox (1.77101pt too wide) in paragraph at lines 30--35
  [][] 
  []
 
-) (./hw1sols.bbl (./hw1sols.brf)
-\tf@brf=\write7
-\openout7 = `hw1sols.brf'.
 
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+LaTeX Warning: Citation `Gogu' on page 1 undefined on input line 42.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
 
 
 
  <../lec_notes/figures/parallel_translational.png> <../lec_notes/figures/parall
-el_translational_workspace.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
- [2
+el_translational_workspace.png>]) (./sec/hw2.tex
+Overfull \hbox (39.75435pt too wide) detected at line 104
+[]
+ []
+
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
+ [3
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
- (./hw1sols.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
-Package rerunfilecheck Info: File `hw1sols.out' has not changed.
-(rerunfilecheck)             Checksum: D2397BFE2776270C92A2B16E942DFE98;251.
-Package rerunfilecheck Info: File `hw1sols.brf' has not changed.
-(rerunfilecheck)             Checksum: 872BA14E19DEEA5BECBAE7753D23C256;62.
- ) 
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
+ (./hwsols.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
+Package rerunfilecheck Info: File `hwsols.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: There were undefined references.
+
+ ) ) 
 Here is how much of TeX's memory you used:
- 33667 strings out of 494847
- 674193 string characters out of 6179079
- 765625 words of memory out of 5000000
- 36433 multiletter control sequences out of 15000+600000
- 566359 words of font info for 96 fonts, out of 8000000 for 9000
- 59 hyphenation exceptions out of 8191
- 63i,12n,101p,10492b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on hw1sols.pdf (2 pages, 385332 bytes).
+ 33749 strings out of 492982
+ 674968 string characters out of 6134896
+ 776634 words of memory out of 5000000
+ 36718 multiletter control sequences out of 15000+600000
+ 574108 words of font info for 120 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 63i,12n,101p,10491b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on hwsols.pdf (3 pages, 387098 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 179 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 
