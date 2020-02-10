@@ -1,0 +1,92 @@
+\definecolor{light-blue}{rgb}{0.30,0.35,1}
+\definecolor{light-green}{rgb}{0.20,0.49,.85}
+\definecolor{purple}{rgb}{0.70,0.69,.2}
+
+\newcommand{\lb}[1]{\textcolor{light-blue}{#1}}
+\newcommand{\bl}[1]{\textcolor{blue}{#1}}
+
+\newcommand{\maybe}[1]{\textcolor{gray}{\textbf{MAYBE: }{#1}}}
+\newcommand{\inspect}[1]{\textcolor{cyan}{\textbf{CHECK THIS: }{#1}}}
+\newcommand{\more}[1]{\textcolor{red}{\textbf{MORE: }{#1}}}
+\renewcommand{\figureautorefname}{Fig.}
+\renewcommand{\sectionautorefname}{$\S$}
+\renewcommand{\equationautorefname}{eq.}
+\renewcommand{\subsectionautorefname}{$\S$}
+
+% FYA
+\newcommand{\cmt}[1]{{\footnotesize\textcolor{red}{#1}}}%{#2}
+%\newcommand{\note}[1]{\cmt{Note: #1}}
+\newcommand{\todo}[1]{\textcolor{cyan}{TO-DO: #1}}
+\newcommand{\review}[1]{\noindent\textcolor{red}{$\rightarrow$ #1}}
+\newcommand{\response}[1]{\noindent{#1}}
+\newcommand{\stopped}[1]{\color{red}STOPPED HERE #1\hrulefill}
+
+%Text commands
+% \newcommand{\comment}[1]{}
+\newcommand{\ie}{$i.e.$\ }
+\newcommand{\eg}{e.g.\ }
+\newcommand{\cf}{c.f.\ }
+
+%Reference commands
+\newcommand{\flabel}[1]{\label{fig:#1}}
+\newcommand{\seclabel}[1]{\label{sec:#1}}
+\newcommand{\tlabel}[1]{\label{tab:#1}}
+\newcommand{\elabel}[1]{\label{eq:#1}}
+\newcommand{\alabel}[1]{\label{alg:#1}}
+\newcommand{\fref}[1]{\cref{fig:#1}}
+\newcommand{\sref}[1]{\cref{sec:#1}}
+\newcommand{\tref}[1]{\cref{tab:#1}}
+\newcommand{\eref}[1]{\cref{eq:#1}}
+\newcommand{\aref}[1]{\cref{alg:#1}}
+
+% \newcommand{\wtsa}{\theta_{\infn}}
+% \newcommand{\wtsb}{\theta_{\outfn}}
+\newcommand{\bull}[1]{$\bullet$ #1}
+\newcommand{\argmax}{\text{argmax}}
+\newcommand{\argmin}{\text{argmin}}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\front}[1]{beg(#1)}
+\newcommand{\back}[1]{end(#1)}
+\newcommand{\stddev}{\sigma}
+\newcommand{\variance}{\stddev^2}
+\newcommand{\ifelse}[3]{\begin{cases}#1 \text{ if } #2\\#3 \text{ otherwise}\end{cases}}
+
+
+\def\tidx{t}
+%\def\value{V}
+% from https://www.cs.jhu.edu/~jason/advice/write-the-paper-first.html
+\newcommand{\Note}[1]{}
+\renewcommand{\Note}[1]{\hl{[#1]}} 
+\newcommand{\bolditalic}[1]{\textbf{#1}}
+\theoremstyle{definition}
+%
+\newcommand{\emptybox}[2][\textwidth]
+{%
+	\begingroup
+	\setlength{\fboxsep}{-\fboxrule}%
+	\noindent\framebox[#1]{\rule{0pt}{#2}}%
+	\endgroup
+}
+
+
+\def\dof{\text{DOF }}
+\def\dofs{\text{DOFs }}
+\def\rot{{R}}
+\def\rthree{\bb{R}^3}
+\def\ren{\bb{R}^n}
+\def\disp{{d}}
+\def\homo{g}
+\def\homost{g_{st}}
+\def\skew{S}
+\def\jacob{J}
+\def\twistcoord{\xi}
+\def\twistmap{\hat{\xi}}
+\def\bodyform{\mathcal{B}}
+\def\identity{I}
+\newcommand{\fwdmap}[2]{{e^{\twistmap_{#1} #2_#1} }}
+\newcommand{\fwdmaptheta}[1]{{e^{\twistmap_{#1} \theta_#1} }}
+%\def\fwdmap[1]{e^{\twistmap_{#1} } }
+\def\coriolis{\textbf{\textit{C}}}
+\def\massinertia{\textbf{\textit{M}}}
+\def\torque{\bm{\tau}}
