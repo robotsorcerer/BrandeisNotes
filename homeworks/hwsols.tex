@@ -1,4 +1,4 @@
-\documentclass[letterpaper, 10 pt, journal, twoside]{IEEEtran} 
+\documentclass[10 pt, journal, twoside]{IEEEtran} 
 \usepackage{bm}
 \usepackage{url}
 \usepackage{tikz}
@@ -31,13 +31,6 @@
 \title{RBOT 250: Homework Solutions}
 \author{Dr. Olalekan Ogunmolu}
 
-%% zero out space between sec and subsecs
-%\usepackage[compact]{titlesec}
-%\titlespacing{\section}{0pt}{*0}{*0}
-%\titlespacing{\subsection}{0pt}{*0}{*0}
-%\titlespacing{\subsubsection}{0pt}{*0}{*0}
-%\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.eps}
-
 \DeclareGraphicsExtensions{.pdf,.jpeg,.png,.eps}
 
 \include{def}
@@ -55,12 +48,12 @@
 
 \pdfoutput=1    % for arxiv tex p
 
-\makeatletter
-\def\endthebibliography{%
-	\def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
-	\endlist
-}
-\makeatother
+%\makeatletter
+%\def\endthebibliography{%
+%	\def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
+%	\endlist
+%}
+%\makeatother
 
 \begin{document}
 	\maketitle
@@ -69,11 +62,10 @@
 	\bstctlcite{IEEEexample:BSTcontrol}
 	
 	\title{Homework Solutions}
-	
-	% Make room for more info lines in the \author command  
+	 
 	\author{Olalekan Ogunmolu}
 
-\input{sec/hw1}
+%\input{sec/hw1}
 \input{sec/hw2}
 
 % ---- Bibliography ----

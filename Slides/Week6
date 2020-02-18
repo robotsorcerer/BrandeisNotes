@@ -1,0 +1,17 @@
+
+Hello everyone!
+
+Welcome to the new week.
+
+This week, we will begin to decipher the dynamics of a robot as well as possible ways of establishing control. Before I give you your reading plans of the weekm first a broad introduction.
+
+You see, every physical, chemical, biological and even financial process has an underlying natural law that governs its behavior. We do not always know what this natural law is and even when we do, we only know it in part. Dynamical systems are systems that are mathematically represented with ordinary and partial differential equations so we can better understand them from a technical viewpoint. Differential equations are continuous by default. Why? Because the world we live in is mostly continuous. Most systems are continuous as well. So differential equations are very well-suited for describing these systems. 
+
+In mechanical systems that involve contact, impact or any natural event that has a discontinuity in time, it becomes difficult to use established classical Newtonian mechanics, or Newton-Euler equations to describe such events. This is where differential equations with discontinuous right-hand-sides shine. A famous example of such differential equations with discontinuous right hand sides are Fillipo solutions developed in the sixties and seventies. I am sure by now, you realize where this is going: Rigid robots are mechanical systems which mostly work in continuous space yet make discrete events when their end-effectors make contact with an object. Another good analogy are humanoids (see the Boston Dynamics videos on youtube). These have discrete events when they impact the ground during their gait cycles. As such, we need to rethink the way to model such systems. An hybrid of discrete and continous dynamics are used to better handle such systems. 
+
+For the purposes of this class, discrete systems will not be handled since it is too advanced for us. However, it helps to know that the contents you will be reading this week is only a tiny piece of cog in a proverbial giant wheel of tools you can use to model your physical system. 
+
+We will be working along the edges of Newtonian mechanics mostly in modeling serial chain robots that are of concern in this chapter. Control theory will be used in appropriating derived dynamics for our intended use-cases.  
+
+This week, be sure to read through the whole of chapter 5 and do all the homeworks posted therein. Due date is the time posted on your submission portal. Goodluck!
+
