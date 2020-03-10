@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  10 MAR 2020 11:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.5)  10 MAR 2020 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Brandeis.tex
 (./Brandeis.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 7 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./brandeis.cls
 
 LaTeX Warning: You have requested document class `brandeis',
@@ -1887,4 +1887,259 @@ File: figures/two_frames.png Graphic file (type png)
 Package pdftex.def Info: figures/two_frames.png  used on input line 698.
 (pdftex.def)             Requested size: 375.80542pt x 296.14539pt.
  [35 <./figures/two_frames.png>]
-<figures/po
+<figures/point_transform.png, id=1087, 417.56pt x 250.9375pt>
+File: figures/point_transform.png Graphic file (type png)
+<use figures/point_transform.png>
+Package pdftex.def Info: figures/point_transform.png  used on input line 745.
+(pdftex.def)             Requested size: 375.80542pt x 225.85696pt.
+ [36]
+Underfull \vbox (badness 2213) has occurred while \output is active []
+
+ [37 <./figures/point_transform.png>]
+<figures/compoz.png, id=1110, 871.255pt x 351.3125pt>
+File: figures/compoz.png Graphic file (type png)
+<use figures/compoz.png>
+Package pdftex.def Info: figures/compoz.png  used on input line 818.
+(pdftex.def)             Requested size: 469.75499pt x 189.41644pt.
+ [38]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 855.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\in' on input line 855.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 855.
+
+[39 <./figures/compoz.png>]
+<figures/zyz.png, id=1132, 722.7pt x 314.17375pt>
+File: figures/zyz.png Graphic file (type png)
+<use figures/zyz.png>
+Package pdftex.def Info: figures/zyz.png  used on input line 927.
+(pdftex.def)             Requested size: 375.80542pt x 163.37128pt.
+ [40] [41 <./figures/zyz.png>] [42] [43] [44]
+[45] [46] [47]) (./sections/manip_kine.tex [48]
+Chapter 4.
+<figures/manip.png, id=1247, 948.54375pt x 297.11pt>
+File: figures/manip.png Graphic file (type png)
+<use figures/manip.png>
+Package pdftex.def Info: figures/manip.png  used on input line 25.
+(pdftex.def)             Requested size: 375.80542pt x 117.71304pt.
+<figures/pneunets.png, id=1252, 903.375pt x 507.8975pt>
+File: figures/pneunets.png Graphic file (type png)
+<use figures/pneunets.png>
+Package pdftex.def Info: figures/pneunets.png  used on input line 32.
+(pdftex.def)             Requested size: 375.80542pt x 211.29277pt.
+[49
+
+] [50 <./figures/manip.png> <./figures/pneunets.png>] [51]
+<figures/torobo7.png, id=1280, 840.13875pt x 938.75719pt>
+File: figures/torobo7.png Graphic file (type png)
+<use figures/torobo7.png>
+Package pdftex.def Info: figures/torobo7.png  used on input line 74.
+(pdftex.def)             Requested size: 469.75499pt x 524.89828pt.
+
+
+Package hyperref Warning: No autoref name for `definition' on input line 112.
+
+[52] [53 <./figures/torobo7.png (PNG copy)>] [54]
+Overfull \hbox (6.13344pt too wide) in paragraph at lines 236--250
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+[57]
+<figures/planar_manip.png, id=1344, 467.7475pt x 327.2225pt>
+File: figures/planar_manip.png Graphic file (type png)
+<use figures/planar_manip.png>
+Package pdftex.def Info: figures/planar_manip.png  used on input line 348.
+(pdftex.def)             Requested size: 328.82706pt x 230.04779pt.
+ [58] [59 <./figures/planar_manip.png>] [60] [61] [62] [63]
+<figures/ik_ex.png, id=1410, 763.85374pt x 386.44376pt>
+File: figures/ik_ex.png Graphic file (type png)
+<use figures/ik_ex.png>
+Package pdftex.def Info: figures/ik_ex.png  used on input line 574.
+(pdftex.def)             Requested size: 375.80542pt x 190.12566pt.
+ [64]
+<elbow_manip.png, id=1424, 462.72874pt x 358.33875pt>
+File: elbow_manip.png Graphic file (type png)
+<use elbow_manip.png>
+Package pdftex.def Info: elbow_manip.png  used on input line 588.
+(pdftex.def)             Requested size: 375.80542pt x 291.02922pt.
+ [65 <./figures/ik_ex.png>] [66 <./elbow_manip.png>]
+Overfull \hbox (8.01361pt too wide) in paragraph at lines 611--615
+\OT1/ptm/m/n/12 (-20) Recall that rigid body trans-for-ma-tions pre-serve dis-t
+ance. If we ap-ply the trans-for-ma-tion, $\OMS/cmsy/m/n/12 f[][]g[]$
+ []
+
+) (./sections/dyna_cont.tex [67]
+Chapter 5.
+[68
+
+] [69] [70]
+<figures/double-pendulum.png, id=1493, 501.875pt x 408.52625pt>
+File: figures/double-pendulum.png Graphic file (type png)
+<use figures/double-pendulum.png>
+Package pdftex.def Info: figures/double-pendulum.png  used on input line 130.
+(pdftex.def)             Requested size: 375.80542pt x 305.92018pt.
+ [71] [72 <./figures/double-pendulum.png>]
+
+Package natbib Warning: Citation `Stramigioli2001' on page 73 undefined on inpu
+t line 166.
+
+
+Overfull \hbox (6.4992pt too wide) detected at line 185
+[]
+ []
+
+[73]
+<../../Papers/iDG/IROS2018/figures/robot_mecanum.png, id=1532, 908.64468pt x 57
+9.66562pt>
+File: ../../Papers/iDG/IROS2018/figures/robot_mecanum.png Graphic file (type pn
+g)
+<use ../../Papers/iDG/IROS2018/figures/robot_mecanum.png>
+Package pdftex.def Info: ../../Papers/iDG/IROS2018/figures/robot_mecanum.png  u
+sed on input line 305.
+(pdftex.def)             Requested size: 225.48038pt x 143.83696pt.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 305.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<../../Papers/iDG/IROS2018/figures/robot_torques.png, id=1533, 1011.02719pt x 6
+03.75563pt>
+File: ../../Papers/iDG/IROS2018/figures/robot_torques.png Graphic file (type pn
+g)
+<use ../../Papers/iDG/IROS2018/figures/robot_torques.png>
+Package pdftex.def Info: ../../Papers/iDG/IROS2018/figures/robot_torques.png  u
+sed on input line 309.
+(pdftex.def)             Requested size: 225.48038pt x 134.65073pt.
+ [74] [75 <../../Papers/iDG/IROS2018/figures/robot_mecanum.png> <../../Papers/i
+DG/IROS2018/figures/robot_torques.png>]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 325.
+
+<../../Papers/iDG/IROS2018/figures/gazebo_start_state.png, id=1558, 1020.81375p
+t x 589.20125pt>
+File: ../../Papers/iDG/IROS2018/figures/gazebo_start_state.png Graphic file (ty
+pe png)
+<use ../../Papers/iDG/IROS2018/figures/gazebo_start_state.png>
+Package pdftex.def Info: ../../Papers/iDG/IROS2018/figures/gazebo_start_state.p
+ng  used on input line 350.
+(pdftex.def)             Requested size: 211.38655pt x 211.38405pt.
+<../../Papers/iDG/IROS2018/figures/gazebo_goal.png, id=1559, 1108.14pt x 739.76
+375pt>
+File: ../../Papers/iDG/IROS2018/figures/gazebo_goal.png Graphic file (type png)
+
+<use ../../Papers/iDG/IROS2018/figures/gazebo_goal.png>
+Package pdftex.def Info: ../../Papers/iDG/IROS2018/figures/gazebo_goal.png  use
+d on input line 353.
+(pdftex.def)             Requested size: 211.37732pt x 211.38795pt.
+) (./sections/motion_planning.tex [76] [77 <../../Papers/iDG/IROS2018/figures/g
+azebo_start_state.png> <../../Papers/iDG/IROS2018/figures/gazebo_goal.png>]
+Chapter 6.
+[78
+
+]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+ [79] [80]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 67.
+ [81]
+
+Package caption Warning: \label without proper reference on input line 107.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `alg:generic-search' on page 82 undefined on input lin
+e 111.
+
+[82]) (./section/term_project.tex [83]
+Chapter 7.
+[84
+
+] [85]
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+ [86]) (./Brandeis.bbl (./Brandeis.brf)
+\tf@brf=\write10
+\openout10 = `Brandeis.brf'.
+
+ [87] [88
+
+] [89] [90])
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
+[91]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
+ (./Brandeis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package rerunfilecheck Info: File `Brandeis.out' has not changed.
+(rerunfilecheck)             Checksum: 44CC5DB799FAD23832E425C0CF32E058;5638.
+
+
+Package rerunfilecheck Warning: File `Brandeis.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `Brandeis.brf':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  F392EA6E5655E12AE98D391A8C96F123;2666.
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 50718 strings out of 492982
+ 1150056 string characters out of 6134896
+ 1390285 words of memory out of 5000000
+ 52607 multiletter control sequences out of 15000+600000
+ 581808 words of font info for 297 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 63i,20n,101p,10497b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvet
+ic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Brandeis.pdf (98 pages, 5529597 bytes).
+PDF statistics:
+ 1865 PDF objects out of 2073 (max. 8388607)
+ 1599 compressed objects within 16 object streams
+ 495 named destinations out of 1000 (max. 500000)
+ 37308 words of extra memory for PDF output out of 42996 (max. 10000000)
+

@@ -5,30 +5,41 @@
 \end{homework}
 
 \begin{solution}
-	We have from equation 3.4.9 in our notes that
+	We have 
 %
 \begin{align}
-R_{ji} &= 	\begin{bmatrix}
+R_{ij} &= 	\begin{bmatrix}
+	\bm{x}_i \cdot \bm{x}_j & \bm{y}_i \cdot \bm{x}_j & \bm{z}_i \cdot \bm{x}_j \\
+	%
+	\bm{x}_i \cdot \bm{y}_j & \bm{y}_i \cdot \bm{y}_j & \bm{z}_i \cdot \bm{y}_j \\
+	%
+	\bm{x}_i \cdot \bm{z}_j & \bm{y}_i \cdot \bm{z}_j & \bm{z}_i \cdot \bm{z}_j 
+	\end{bmatrix},
+	\label{eq:rot}
+	\end{align} 
+	%
+	\begin{align}
+	R_{ji} &= 	\begin{bmatrix}
 	\bm{x}_j \cdot \bm{x}_i & \bm{y}_j \cdot \bm{x}_i & \bm{z}_j \cdot \bm{x}_i \\
 	%
 	\bm{x}_j \cdot \bm{y}_i & \bm{y}_j \cdot \bm{y}_i & \bm{z}_j \cdot \bm{y}_i \\
 	%
 	\bm{x}_j \cdot \bm{z}_i & \bm{y}_j \cdot \bm{z}_i & \bm{z}_j \cdot \bm{z}_i 
-	\end{bmatrix} 
-	\label{eq:rot}
-	\end{align}
+	\end{bmatrix},
+	\label{eq:rot_rev}
+	\end{align}	
 	%
 	and that
 	%
 \begin{align}
-	R_{ij}^T & = 
+	R_{ji}^T & = 
 	\begin{bmatrix}
 	\bm{x}_j \cdot \bm{x}_i & \bm{x}_j \cdot \bm{y}_i  & \bm{x}_j \cdot \bm{z}_i \\
 	%
 	\bm{y}_j \cdot \bm{x}_i & \bm{y}_j \cdot \bm{y}_i & \bm{y}_j \cdot \bm{z}_i \\
 	%
 	\bm{z}_j \cdot \bm{x}_i & \bm{z}_j \cdot \bm{y}_i  & \bm{z}_j \cdot \bm{z}_i 
-	\end{bmatrix}
+	\end{bmatrix}.
 	\end{align}
 	%
 	Inspecting the rows of $R_{ij}$ and $R_{ij}^T$, the dot products between the respective vector elements are simply the cosine of the angles between them \ie $p_j \cdot p_i = cos \theta$, where $\theta$ is the angle between the vectors $p_j$ and $p_i$. Evaluating, it follows that $R_{ij}^T = R_{ij}$. Similarly, we know that a matrix $X$ is invertible if there exists a matrix $B$ such that
@@ -40,24 +51,25 @@ R_{ji} &= 	\begin{bmatrix}
 	where $I_n$ is an $n \times n$ matrix. In this case, we have that 
 	%
 	\begin{align}
-	R_{ij} R_{ij}^T = R_{ij}^T R_{ij} = \identity_3.
+	R_{ji} R_{ji}^T = R_{ji}^T R_{ji} = \identity_3.
 	\end{align}
 	%
 	It follows that, 
 	%
 	\begin{align}
-	R_{ij} = \dfrac{1}{R_{ij}^T} = \dfrac{1}{R_{ij}} 
+	R_{ji} = \dfrac{1}{R_{ji}^T}
 	\end{align}
 	%
 	or 
 	\begin{align}
-	R_{ij} = R_{ij}^{-T} = R_{ij}^{-1}. 
+	R_{ji}^T = R_{ji}^{-1}. 
 	\end{align}
 	%
-	Hence, 
-	\begin{tcolorbox}[title=QED]
-		$R_{ij} = R_{ji}^{-1} \equiv R_{ji}^T$.
-	\end{tcolorbox}.
+	From \eqref{eq:rot} and \eqref{eq:rot_rev}, it follows that see that
+	%
+	\begin{align}
+	R_{ji}^T = R_{ji}^{-1} = R_{ij}. 
+	\end{align}
 \end{solution}
 
 

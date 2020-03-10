@@ -8,11 +8,11 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ../../Papers/SRS/Continuum/biblio.bib
-Repeated entry---line 342 of file ../../Papers/SRS/Continuum/biblio.bib
+Repeated entry---line 390 of file ../../Papers/SRS/Continuum/biblio.bib
  : @ieeetranbstctl{IEEEexample:BSTcontrol
  :                                       ,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1805 of file ../../Papers/SRS/Continuum/biblio.bib
+You're missing a field name---line 1853 of file ../../Papers/SRS/Continuum/biblio.bib
  :   
  :   % journal={Springer Nature},
 (Error may have been on previous line)

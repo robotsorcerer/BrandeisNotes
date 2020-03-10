@@ -1,0 +1,78 @@
+\BOOKMARK [0][-]{chapter*.1}{Table of Contents}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{List of Figures}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{List of Tables}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Preamble}{}% 4
+\BOOKMARK [1][-]{section.1.1}{Course Description}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Course Outcomes}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.3}{Prerequisites}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.4}{Recommended Texts}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.5}{Recommended Journals}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.6}{Required Software}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.7}{Online Course Content}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.8}{Assessments and Labs}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.9}{Errata}{chapter.1}% 13
+\BOOKMARK [0][-]{chapter.2}{Introduction}{}% 14
+\BOOKMARK [1][-]{section.2.1}{Robots Components}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.2}{Robot Spaces, Geometries, and Classifications}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.3}{Characterization of Kinematic Geometry}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.3.1}{Kinematic Geometries}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.2}{Open Kinematic Chains}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.3}{Closed-loop Kinematic Chains}{section.2.3}% 20
+\BOOKMARK [1][-]{section.2.4}{Freedom and Structure in Mechanisms}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.4.1}{Freedom, Connectivity and Mobility}{section.2.4}% 22
+\BOOKMARK [2][-]{subsection.2.4.2}{Constraints and Freedoms}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.3}{The Mobility Criterion}{section.2.4}% 24
+\BOOKMARK [0][-]{chapter.3}{Motion of Rigid Bodies}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Screws}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.1.1}{Motion screws: Twist's Pitch, Axis, and Magnitude}{section.3.1}% 27
+\BOOKMARK [2][-]{subsection.3.1.2}{Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{section.3.1}% 28
+\BOOKMARK [2][-]{subsection.3.1.3}{Screw Motions}{section.3.1}% 29
+\BOOKMARK [1][-]{section.3.2}{Rodrigues' Formula}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.3}{The Matrix Exponential, The Lie Group and Lie Algebra}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.1}{The Lie Group Notations}{section.3.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.2}{Exponential Map and Kinematic Chains}{section.3.3}% 33
+\BOOKMARK [1][-]{section.3.4}{Rigid Body Transformations}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.4.1}{Translation in R3}{section.3.4}% 35
+\BOOKMARK [2][-]{subsection.3.4.2}{Rotations in R3}{section.3.4}% 36
+\BOOKMARK [2][-]{subsection.3.4.3}{Rotation Matrices as Transformations}{section.3.4}% 37
+\BOOKMARK [2][-]{subsection.3.4.4}{Planar Rotations}{section.3.4}% 38
+\BOOKMARK [2][-]{subsection.3.4.5}{Composition of Rotations}{section.3.4}% 39
+\BOOKMARK [1][-]{section.3.5}{Parameterization of Rotations SO\(3\)}{chapter.3}% 40
+\BOOKMARK [2][-]{subsection.3.5.1}{Axis-Angle Parameterizations}{section.3.5}% 41
+\BOOKMARK [2][-]{subsection.3.5.2}{Euler Angles}{section.3.5}% 42
+\BOOKMARK [2][-]{subsection.3.5.3}{Quaternions}{section.3.5}% 43
+\BOOKMARK [1][-]{section.3.6}{Homogeneous Coordinates}{chapter.3}% 44
+\BOOKMARK [1][-]{section.3.7}{Rigid Body Velocities}{chapter.3}% 45
+\BOOKMARK [2][-]{subsection.3.7.1}{Rotational Velocities}{section.3.7}% 46
+\BOOKMARK [2][-]{subsection.3.7.2}{Rigid Body Velocity}{section.3.7}% 47
+\BOOKMARK [0][-]{chapter.4}{Manipulator Kinematics}{}% 48
+\BOOKMARK [1][-]{section.4.1}{Forward kinematics}{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.1.1}{Screw Axes and Base Frame}{section.4.1}% 50
+\BOOKMARK [2][-]{subsection.4.1.2}{Screw Axes in Tool Frame}{section.4.1}% 51
+\BOOKMARK [1][-]{section.4.2}{Manipulator parameterization with twists}{chapter.4}% 52
+\BOOKMARK [1][-]{section.4.3}{The Universal Robot Description Format}{chapter.4}% 53
+\BOOKMARK [1][-]{section.4.4}{Velocity Kinematics}{chapter.4}% 54
+\BOOKMARK [1][-]{section.4.5}{Singularities in Rigid Bodies and The Manipulability Ellipsoid}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.5.1}{The Manipulability Ellipsoid}{section.4.5}% 56
+\BOOKMARK [1][-]{section.4.6}{The Manipulator Jacobian}{chapter.4}% 57
+\BOOKMARK [2][-]{subsection.4.6.1}{Spatial Jacobian}{section.4.6}% 58
+\BOOKMARK [2][-]{subsection.4.6.2}{The Body Jacobian}{section.4.6}% 59
+\BOOKMARK [1][-]{section.4.7}{Inverse kinematics}{chapter.4}% 60
+\BOOKMARK [2][-]{subsection.4.7.1}{Paden-Kahan Subproblems}{section.4.7}% 61
+\BOOKMARK [0][-]{chapter.5}{Robot Dynamics and Control}{}% 62
+\BOOKMARK [1][-]{section.5.1}{Lagrangian for Mechanical Systems }{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.2}{Euler-Lagrange Equations}{chapter.5}% 64
+\BOOKMARK [1][-]{section.5.3}{Dynamics of a spherical Pendulum}{chapter.5}% 65
+\BOOKMARK [1][-]{section.5.4}{Dynamics of a Mecanum-Wheeled Robot}{chapter.5}% 66
+\BOOKMARK [0][-]{chapter.6}{Motion Planning}{}% 67
+\BOOKMARK [1][-]{section.6.1}{Planning: Motion/Trajectory Planning}{chapter.6}% 68
+\BOOKMARK [1][-]{section.6.2}{Planning in Discrete Spaces}{chapter.6}% 69
+\BOOKMARK [2][-]{subsection.6.2.1}{Discrete Feasible Planning}{section.6.2}% 70
+\BOOKMARK [1][-]{section.6.3}{Search Algorithms}{chapter.6}% 71
+\BOOKMARK [2][-]{subsection.6.3.1}{General Search Algorithms}{section.6.3}% 72
+\BOOKMARK [0][-]{chapter.7}{Visual-Inertial Odometry SLAM}{}% 73
+\BOOKMARK [1][-]{section.7.1}{Project Framework}{chapter.7}% 74
+\BOOKMARK [1][-]{section.7.2}{Simultaneous Localization and Mapping \(SLAM\)}{chapter.7}% 75
+\BOOKMARK [1][-]{section.7.3}{Relevant Texts and Materials}{chapter.7}% 76
+\BOOKMARK [1][-]{section.7.4}{Term Project Part I}{chapter.7}% 77
+\BOOKMARK [0][-]{chapter*.33}{References}{}% 78
