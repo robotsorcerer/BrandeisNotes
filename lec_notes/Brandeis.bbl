@@ -25,6 +25,14 @@ Brockett, R.~W. (1990).
 \newblock In {\em Proceedings of Symposia in Applied Mathematics}, Volume~41,
   pp.\  1--19.
 
+\bibitem[\protect\citeauthoryear{Cadena, Carlone, Carrillo, Latif, Scaramuzza,
+  Neira, Reid, and Leonard}{Cadena et~al.}{2016}]{SLAMLeonard}
+Cadena, C., L.~Carlone, H.~Carrillo, Y.~Latif, D.~Scaramuzza, J.~Neira,
+  I.~Reid, and J.~J. Leonard (2016).
+\newblock Past, present, and future of simultaneous localization and mapping:
+  Toward the robust-perception age.
+\newblock {\em IEEE Transactions on robotics\/}~{\em 32\/}(6), 1309--1332.
+
 \bibitem[\protect\citeauthoryear{Giorelli, Renda, Calisti, Arienti, Ferri, and
   Laschi}{Giorelli et~al.}{2015}]{Laschi15NeuNet}
 Giorelli, M., F.~Renda, M.~Calisti, A.~Arienti, G.~Ferri, and C.~Laschi (2015).
@@ -68,6 +76,17 @@ Hunt, K.~H. (1983).
 \newblock {Structural Kinematics of In- Parallel-Actuated Robot-Arms}.
 \newblock ~{\em 105\/}(December 1983), 705--712.
 
+\bibitem[\protect\citeauthoryear{Leger, Trebi-Ollennu, Wright, Maxwell, Bonitz,
+  Biesiadecki, Hartman, Cooper, Baumgartner, and Maimone}{Leger
+  et~al.}{2005}]{leger2005mars}
+Leger, P.~C., A.~Trebi-Ollennu, J.~R. Wright, S.~A. Maxwell, R.~G. Bonitz,
+  J.~J. Biesiadecki, F.~R. Hartman, B.~K. Cooper, E.~T. Baumgartner, and M.~W.
+  Maimone (2005).
+\newblock Mars exploration rover surface operations: Driving spirit at gusev
+  crater.
+\newblock In {\em 2005 IEEE International Conference on Systems, Man and
+  Cybernetics}, Volume~2, pp.\  1815--1822. IEEE.
+
 \bibitem[\protect\citeauthoryear{Lin and Shih}{Lin and Shih}{2013}]{mecanum}
 Lin, L.-C. and H.-Y. Shih (2013).
 \newblock Modeling and adaptive control of an omni-mecanum-wheeled robot.
@@ -78,6 +97,12 @@ Lin, L.-C. and H.-Y. Shih (2013).
 Lynch, K.~M. and F.~C. Park (2017).
 \newblock {\em Modern Robotics}.
 \newblock Cambridge University Press.
+
+\bibitem[\protect\citeauthoryear{Maimone, Cheng, and Matthies}{Maimone
+  et~al.}{}]{MarsVisualOdometry}
+Maimone, M., Y.~Cheng, and L.~Matthies.
+\newblock Two years of visual odometry on the mars exploration rovers.
+\newblock {\em Journal of Field Robotics\/}~{\em 24\/}(3).
 
 \bibitem[\protect\citeauthoryear{Merlet}{Merlet}{2015}]{Merlet2015}
 Merlet, J. (2015).

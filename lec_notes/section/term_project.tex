@@ -14,6 +14,8 @@ SLAM has a common ground with research fields such as computer vision and signal
  The goal of SLAM is to build a globally-consistent representation of the environment, leveraging ego-motion measurements and loop closures. Earlier SLAM applications involved odometry being found by integrating wheel encoders. However, the pose estimate from such wheel odometry drifts quickly making the estimate unreliable after a few meters. Recent odometry algorithms are however based on visual and inertial information, and these tend to have very small drift ($< 0.5\%$ of the trajectory length~\cite{SLAMLeonard}). 
  
  In the evolution of robot-based SLAM research, mapping a 2-D indoor environment with a robot that has wheel encoders and a laser scanner with enough accuracy ($< 10$cm) and enough robustness (\eg low failure rate) is almost a solved problem. You can look through the codes available on this page that implements this 2D indoor navigation using the Pioneer P3-DX robot \href{https://github.com/SeRViCE-Lab/p3-dx}{\textit{P3-DX}}. Feel free to play with the simulation using the ROSARIA and ROSARNL libraries as described in the README files on the page. A good industrial example is the \href{https://www.kuka.com/-/media/kuka-downloads/imported/9cb8e311bfd744b4b0eab25ca883f6d3/kuka_navigation_solution_en.pdf}{\textit{Kuka Navigation solution}}. Vision-based SLAM for slowly-moving robots such as the Mars exploration  rovers~\cite{MarsVisualOdometry} can be considered an almost solved problem as well. For example, prior to 2006, NASA's MER were commanded only once per Martian solar day using a prescheduled sequence of precise metrically specified commands such as ``drive forward 2.34 meters, turn in place $0.3567$ radians to the right, drive to location $X, Y$ and take colored pictures of the terrain at location $X,Y, Z$~\cite{leger2005mars}.
+ 
+ The combinations of other robot, environment  or performance requires a large amount of fundamental research since existing SLAM algorithms can be easily induced to fail when either the motion of the robot or the environment are too challenging such as when we have fast robot dynamics, or when we have highly dynamic environment. On the MERS, it was reported that when the robots climbed steeped slopes or rocks, the inertial odometry's accuracy was reduced and vision based estimation correction had to be carried out to fix the errors. There is now an active area of research called visual inertial odometry SLAM which often combines in part classical computer vision algorithms and in part deep learning -based computer vision algorithms to infer the pose of a robot in the world. I want to point your particular attention to these texts below for a quick overview of the past, present and future of SLAM research before we delve into our project.
 
 %\section{GMapping}
 %To successfully be able to navigate a robot in an environment, the grid map of the robot's environment must be built from the ground up. GMapping is a widely used tool in robotics navigation to solve the grid world building and update process. It is based on the OpenSLAM \
@@ -27,7 +29,23 @@ SLAM has a common ground with research fields such as computer vision and signal
 	%
 	\item SLAM Survey: \href{https://ieeexplore-ieee-org.proxy.library.upenn.edu/stamp/stamp.jsp?tp=&arnumber=7747236}{Cadena, Cesar, Luca Carlone, Henry Carrillo, Yasir Latif, Davide Scaramuzza, José Neira, Ian Reid, and John J. Leonard. "Past, present, and future of simultaneous localization and mapping: Toward the robust-perception age." IEEE Transactions on robotics 32, no. 6 (2016): 1309-1332.}
 	%
-	\item SLAM Tutorial: Part I. \href{}{Durrant-Whyte, Hugh, and Tim Bailey. "Simultaneous localization and mapping: part I." IEEE robotics \& automation magazine 13, no. 2 (2006): 99-110.}
+	\item SLAM Tutorial: Part I. \href{https://ieeexplore.ieee.org/document/1638022}{Durrant-Whyte, Hugh, and Tim Bailey. "Simultaneous localization and mapping: part I." IEEE robotics \& automation magazine 13, no. 2 (2006): 99-110.}
 	%
 	\item SLAM Tutorial: Part II. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1678144}{Bailey, Tim, and Hugh Durrant-Whyte. "Simultaneous localization and mapping (SLAM): Part II." IEEE robotics \& automation magazine 13, no. 3 (2006): 108-117.}
+	%
+	\item D3VO: \href{https://arxiv.org/abs/2003.01060}{Yang, Nan, Lukas von Stumberg, Rui Wang, and Daniel Cremers. "D3VO: Deep Depth, Deep Pose and Deep Uncertainty for Monocular Visual Odometry." arXiv preprint arXiv:2003.01060 (2020).}
+\end{itemize}
+
+\section{Term Project Part I}
+
+A core requirement of your term project is to implement a visual inertial odometry based SLAM navigation of your robot in an environment of your own choosing. Please have a suitable environmental setup that is sufficiently challenging sent to me for review before my office hours on Thursday, March 12, 2020. We will use this Thursday's office hours to discuss what you need to get done.
+
+
+
+In addition, look into the \textsf{strero\_vo} algorithm within the Isaac SDK. While this example uses a zed camera to navigate the robot, you are asked to utilize the real-sense sensor onboard of your robot in executing the tasks described on this \href{https://docs.nvidia.com/isaac/isaac/packages/perception/doc/visual_odometry.html}{tutorial page}. You may find the following pages relevant to your work this week:
+
+\begin{itemize}
+	\item \href{https://docs.nvidia.com/isaac/isaac/packages/stereo_depth/doc/c2f-stereo-depth.html}{Stereo Depth}  %
+	%
+	\item \href{https://docs.nvidia.com/isaac/isaac/doc/engine/components.html}{Isaac codelets}
 \end{itemize}
