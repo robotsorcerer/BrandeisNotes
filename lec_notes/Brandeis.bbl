@@ -105,8 +105,8 @@ Ogunmolu, O., N.~Gans, and T.~Summers (2018).
 \bibitem[\protect\citeauthoryear{Ogunmolu, Kulkarni, Tadesse, Gu, Jiang, and
   Gans}{Ogunmolu et~al.}{2017}]{Ogunmolu17IROS}
 Ogunmolu, O., A.~Kulkarni, Y.~Tadesse, X.~Gu, S.~Jiang, and N.~Gans (2017).
-\newblock Soft-neuroadapt: A 3-dof neuro-adaptive patient pose correction
-  system for frameless and maskless cancer radiotherapy.
+\newblock {Soft-NeuroAdapt: A 3-DOF Neuro-Adaptive Patient Pose Correction
+  System for Frameless and Maskless Cancer Radiotherapy}.
 \newblock In {\em IEEE/RSJ International Conference on Intelligent Robots and
   Systems (IROS), Vancouver, BC, CA}, pp.\  3661--3668. IEEE.
 
@@ -128,16 +128,16 @@ Ogunmolu, O.~P. (2019b).
 \bibitem[\protect\citeauthoryear{Ogunmolu, Gu, Jiang, and Gans}{Ogunmolu
   et~al.}{2015}]{Ogunmolu15CASE}
 Ogunmolu, O.~P., X.~Gu, S.~Jiang, and N.~R. Gans (2015).
-\newblock A real-time, soft robotic patient positioning system for maskless
-  head-and-neck cancer radiotherapy: An initial investigation.
+\newblock {A Real-Time, Soft Robotic Patient Positioning System for Maskless
+  Head and Neck Cancer Radiotherapy: An Initial Investigation}.
 \newblock In {\em Automation Science and Engineering (CASE), 2015 IEEE
   International Conference on, Gothenburg, Sweden}, pp.\  1539--1545. IEEE.
 
 \bibitem[\protect\citeauthoryear{Ogunmolu, Gu, Jiang, and Gans}{Ogunmolu
   et~al.}{2016}]{Ogunmolu16CASE}
 Ogunmolu, O.~P., X.~Gu, S.~Jiang, and N.~R. Gans (2016).
-\newblock Vision-based control of a soft robot for maskless head and neck
-  cancer radiotherapy.
+\newblock {Vision-based Control of a Soft Robot for Maskless Head and Neck
+  Cancer Radiotherapy}.
 \newblock In {\em Automation Science and Engineering (CASE), 2016 IEEE
   International Conference on, Fort Worth, Texas}, pp.\  180--187. IEEE.
 

@@ -70,4 +70,8 @@
 \BOOKMARK [2][-]{subsection.6.2.1}{Discrete Feasible Planning}{section.6.2}% 70
 \BOOKMARK [1][-]{section.6.3}{Search Algorithms}{chapter.6}% 71
 \BOOKMARK [2][-]{subsection.6.3.1}{General Search Algorithms}{section.6.3}% 72
-\BOOKMARK [0][-]{chapter*.33}{References}{}% 73
+\BOOKMARK [0][-]{chapter.7}{Visual-Inertial Odometry SLAM}{}% 73
+\BOOKMARK [1][-]{section.7.1}{Project Framework}{chapter.7}% 74
+\BOOKMARK [1][-]{section.7.2}{Simultaneous Localization and Mapping \(SLAM\)}{chapter.7}% 75
+\BOOKMARK [1][-]{section.7.3}{Relevant Texts and Materials}{chapter.7}% 76
+\BOOKMARK [0][-]{chapter*.33}{References}{}% 77

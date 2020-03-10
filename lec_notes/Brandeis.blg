@@ -2,26 +2,27 @@ This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Brandeis.aux
 The style file: chicago.bst
-Illegal, another \bibstyle command---line 333 of file Brandeis.aux
+Illegal, another \bibstyle command---line 337 of file Brandeis.aux
  : \bibstyle
  :          {wafr.bst}
 I'm skipping whatever remains of this command
 I couldn't open database file ../../Papers/iDG/IROS18/root.bib
----line 334 of file Brandeis.aux
+---line 338 of file Brandeis.aux
  : \bibdata{../../Papers/SRS/Continuum/biblio,../../Papers/iDG/IROS18/root
- :                                                                        }
+ :                                                                        , biblio}
 I'm skipping whatever remains of this command
 Database file #1: ../../Papers/SRS/Continuum/biblio.bib
-Repeated entry---line 705 of file ../../Papers/SRS/Continuum/biblio.bib
+Repeated entry---line 869 of file ../../Papers/SRS/Continuum/biblio.bib
  : @article{Gough1957
  :                   ,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1697 of file ../../Papers/SRS/Continuum/biblio.bib
+You're missing a field name---line 1853 of file ../../Papers/SRS/Continuum/biblio.bib
  :   
  :   % journal={Springer Nature},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Stramigioli2001"
+Warning--I didn't find a database entry for "SLAMLeonard"
 Warning--empty booktitle in Hannan2000
 Warning--no journal in Hunt1983
 Warning--no journal in Ogunmolu19RALII
@@ -35,12 +36,12 @@ Warning--page numbers missing in PadenThesis85
 Warning--no number and no volume in Renda2018ICRA
 You've used 28 entries,
             2861 wiz_defined-function locations,
-            812 strings with 10542 characters,
-and the built_in function-call counts, 20549 in all, are:
+            814 strings with 10570 characters,
+and the built_in function-call counts, 20545 in all, are:
 = -- 1662
 > -- 1596
 < -- 7
-+ -- 482
++ -- 480
 - -- 538
 * -- 1843
 := -- 3744
@@ -64,7 +65,7 @@ purify$ -- 382
 quote$ -- 0
 skip$ -- 586
 stack$ -- 0
-substring$ -- 1048
+substring$ -- 1046
 swap$ -- 202
 text.length$ -- 7
 text.prefix$ -- 0

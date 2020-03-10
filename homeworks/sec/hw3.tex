@@ -229,12 +229,45 @@ The equivalence of the two preceding equations prove our case. (QED)
 	For the two frames shown in \autoref{fig:two_frames}, determine the rotation matrix between them. In addition, explain the difference between rotating about a \textit{current frame} and rotating about a \textit{fixed frame}\footnote{See sections 2.4.1 and 2.4.2 of Spong's book.}. In particular, when is it necessary to carry out a \textit{pre-multiplication} and when is it necessary to carry out a \textit{post-multiplication} when transforming points or vectors about coordinate frames?
 \end{homework}
 
+\begin{solution}
+	From the given figure, observe that the $x_0$ axis was rotated counterclockwise by $60^\circ$ from the horizontal. To find the rotation matrix between the two frames, we can project the unit vectors $x_1, y_1, z_1$ onto $x_0, y_0, z_0$ to generate the coordinates of $x_1, y_1, z_1$ in the $x_0, y_0, z_0$ frame. We therefore have
+	%
+	\begin{align}
+		x_1 = \begin{bmatrix}
+		\frac{1}{2} 
+		\\
+		0
+		\\
+		\frac{\sqrt{3}}{2}
+		\end{bmatrix}, \quad
+		%
+		y_1 = \begin{bmatrix}
+		\frac{\sqrt{3}}{2}
+		\\
+		0
+		\\
+		-\frac{\sqrt{3}}{2}
+		\end{bmatrix},  \quad
+		%
+		z_1 = \begin{bmatrix}
+		0
+		\\
+		1
+		\\
+		0
+		\end{bmatrix}
+	\end{align}
+\end{solution}
+
 
 \noindent 
 \begin{homework}
 	For the robot manipulator we are using in this class, suppose that you have the following point in the base frame of the robot, $q_o = [-2, 3, 1]$. Furthermore, suppose that the joint angles for all six joints are respectively $\{-90, 60, 30, 45, 90, 125 \}$, transform the point $q_0$ in the base frame to a coordinate frame on the sixth joint.
 \end{homework}
 
+\begin{solution}
+Since we changed the robot we are using, this homework is rendered moot and you will not be graded for it.
+\end{solution}
 
 Consider the composition of rotations of \autoref{fig:compoz} where we first rotate by an angle $\theta$ about the $x$ axis and then rotate about an angle $\psi$ about the $z$ axis. The rotation matrix can be composed as 
 %
@@ -261,17 +294,50 @@ c_\psi & -s_\psi & 0 \\
 s_\psi & c_\psi & 0 \\
 0 & 0 & 1
 \end{array}\right)
-%
-&= \left(\begin{array}{ccc}
-c_\psi & -s_\psi & 0 \\
-0 & c_\theta c_\psi &  -s_\theta \\
-s_\theta s_\psi & s_\theta c_\psi & c_\theta 
-\end{array}\right)
 \end{align}
 %
+\begin{align}
+R	&= \left(\begin{array}{ccc}
+	c_\psi & -s_\psi & 0 \\
+	c_\theta s_\psi & c_\theta c_\psi &  -s_\theta \\
+	s_\theta s_\psi & s_\theta c_\psi & c_\theta 
+	\end{array}\right)
+\end{align}
 Notice how the order of multiplication is carried out, owing to the axis about which we are making the transformation. 
 
 \noindent 
 \begin{homework}
 	Carry out the transformation above in reverse order. What do you notice?
 \end{homework} 
+
+\begin{solution}
+	Reversing the order of transformation reveals that
+	\begin{align}
+ R_{z, \psi} R_{x, \theta}=
+	%
+	\left(\begin{array}{ccc}
+	c_\psi & -s_\psi & 0 \\
+	s_\psi & c_\psi & 0 \\
+	0 & 0 & 1
+	\end{array}\right)
+	%
+	\cdot
+	%
+	 \left(\begin{array}{ccc}
+	1 & 0 & 0 \\
+	0 & c_\theta & -s_\theta \\
+	0 & s_\theta & c_\theta
+	\end{array}\right) 
+	\end{align}
+	%
+	\begin{align}
+		R &=  R_{z, \psi} R_{x, \theta} = \left(\begin{array}{ccc}
+		c_\psi & -c_\theta s_\psi & s_\psi s_\theta \\
+		s_\psi & c_\psi c_\theta  & - c_\psi s_\theta \\
+		0 & s_\theta & c_\theta
+		\end{array}\right)
+	\end{align}
+	\ie $R_{x, \theta} R_{z, \psi} = (R_{x, -\theta} R_{z, -\psi})^T $
+\end{solution}
+%
+which goes to show that reversing the order of rotations is tantamount to reversing the order of angle rotations and then taking the transpose of the ensuing result. 

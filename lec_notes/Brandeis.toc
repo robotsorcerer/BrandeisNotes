@@ -69,4 +69,8 @@
 \contentsline {subsection}{\numberline {6.2.1}Discrete Feasible Planning}{81}{subsection.6.2.1}
 \contentsline {section}{\numberline {6.3}Search Algorithms}{82}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}General Search Algorithms}{83}{subsection.6.3.1}
-\contentsline {chapter}{\MakeTextUppercase {References}}{84}{chapter*.33}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {7}\MakeTextUppercase {Visual-Inertial Odometry SLAM}}{84}{chapter.7}
+\contentsline {section}{\numberline {7.1}Project Framework}{84}{section.7.1}
+\contentsline {section}{\numberline {7.2}Simultaneous Localization and Mapping (SLAM)}{84}{section.7.2}
+\contentsline {section}{\numberline {7.3}Relevant Texts and Materials}{86}{section.7.3}
+\contentsline {chapter}{\MakeTextUppercase {References}}{87}{chapter*.33}
