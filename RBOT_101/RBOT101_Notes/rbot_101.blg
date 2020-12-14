@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: rbot_101.aux
+The style file: chicago.bst
+Illegal, another \bibstyle command---line 221 of file rbot_101.aux
+ : \bibstyle
+ :          {wafr.bst}
+I'm skipping whatever remains of this command
+Database file #1: biblio.bib
+Database file #2: ../../../Papers/SRS/Continuum/biblio.bib
+Repeated entry---line 2555 of file ../../../Papers/SRS/Continuum/biblio.bib
+ : @article{Gough1957
+ :                   ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4595 of file ../../../Papers/SRS/Continuum/biblio.bib
+ :   
+ :   % journal={Springer Nature},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Database file #3: ../../../Papers/iDG/IROS2018/root.bib
+Repeated entry---line 12 of file ../../../Papers/iDG/IROS2018/root.bib
+ : @book{SpongBook
+ :                ,
+I'm skipping whatever remains of this entry
+Warning--empty booktitle in Hannan2000
+Warning--no journal in Hunt1983
+Warning--no journal in Ogunmolu19RALII
+Warning--no number and no volume in Ogunmolu19RALII
+Warning--page numbers missing in Ogunmolu19RALII
+Warning--no number and no volume in Renda2018ICRA
+You've used 23 entries,
+            2861 wiz_defined-function locations,
+            780 strings with 9830 characters,
+and the built_in function-call counts, 17423 in all, are:
+= -- 1404
+> -- 1379
+< -- 5
++ -- 418
+- -- 460
+* -- 1589
+:= -- 3163
+add.period$ -- 73
+call.type$ -- 23
+change.case$ -- 177
+chr.to.int$ -- 22
+cite$ -- 29
+duplicate$ -- 485
+empty$ -- 1024
+format.name$ -- 516
+if$ -- 3274
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 26
+newline$ -- 117
+num.names$ -- 228
+pop$ -- 164
+preamble$ -- 1
+purify$ -- 318
+quote$ -- 0
+skip$ -- 482
+stack$ -- 0
+substring$ -- 918
+swap$ -- 171
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 416
+warning$ -- 6
+while$ -- 219
+width$ -- 0
+write$ -- 309
+(There were 4 error messages)

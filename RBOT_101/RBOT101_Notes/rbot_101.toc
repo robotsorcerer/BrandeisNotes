@@ -1,0 +1,47 @@
+\contentsline {chapter}{\MakeTextUppercase {List of Figures}}{iv}{chapter*.2}
+\contentsline {chapter}{\MakeTextUppercase {List of Tables}}{v}{chapter*.3}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {1}\MakeTextUppercase {Preamble}}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Course Description}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Course Outcomes}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Prerequisites}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Recommended Texts}{2}{section.1.4}
+\contentsline {section}{\numberline {1.5}Recommended Journals}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}Required Software}{3}{section.1.6}
+\contentsline {section}{\numberline {1.7}Online Course Content}{3}{section.1.7}
+\contentsline {section}{\numberline {1.8}Assessments and Labs}{4}{section.1.8}
+\contentsline {section}{\numberline {1.9}Errata}{4}{section.1.9}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {2}\MakeTextUppercase {Introduction}}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Robots Components}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Robot Spaces, Geometries, and Classifications}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Characterization of Kinematic Geometry}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Kinematic Geometries}{9}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Open Kinematic Chains}{9}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Closed-loop Kinematic Chains}{12}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Freedom and Structure in Mechanisms}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Freedom, Connectivity and Mobility}{13}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Constraints and Freedoms}{15}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}The Mobility Criterion}{16}{subsection.2.4.3}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {3}\MakeTextUppercase {Motion of Rigid Bodies}}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Screws}{19}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Motion screws: Twist's Pitch, Axis, and Magnitude}{20}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{22}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Screw Motions}{23}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Rodrigues' Formula}{23}{section.3.2}
+\contentsline {section}{\numberline {3.3}The Matrix Exponential, The Lie Group and Lie Algebra}{24}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}The Lie Group Notations}{27}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Exponential Map and Kinematic Chains}{27}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Rigid Body Transformations}{28}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Translation in $\mathbb {R}^3$}{30}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Rotations in $\mathbb {R}^3$}{32}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Rotation Matrices as Transformations}{35}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Planar Rotations}{35}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Composition of Rotations}{38}{subsection.3.4.5}
+\contentsline {section}{\numberline {3.5}Parameterization of Rotations $\in SO(3)$}{42}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Axis-Angle Parameterizations}{42}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Euler Angles}{43}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Quaternions}{45}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Homogeneous Coordinates}{46}{section.3.6}
+\contentsline {section}{\numberline {3.7}Rigid Body Velocities}{47}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Rotational Velocities}{48}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Rigid Body Velocity}{49}{subsection.3.7.2}
+\contentsline {chapter}{\MakeTextUppercase {References}}{51}{chapter*.23}
