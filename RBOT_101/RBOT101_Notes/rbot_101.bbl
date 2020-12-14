@@ -11,6 +11,13 @@ Bern, J.~M., K.-H. Chang, and S.~Coros (2017).
 \newblock Interactive design of animated plushies.
 \newblock {\em ACM Transactions on Graphics (TOG)\/}~{\em 36\/}(4), 80.
 
+\bibitem[\protect\citeauthoryear{Besl and McKay}{Besl and
+  McKay}{1992}]{besl1992method}
+Besl, P.~J. and N.~D. McKay (1992).
+\newblock Method for registration of 3-d shapes.
+\newblock In {\em Sensor fusion IV: control paradigms and data structures},
+  Volume 1611, pp.\  586--606. International Society for Optics and Photonics.
+
 \bibitem[\protect\citeauthoryear{Bishop-Moser, Krishnan, Kim, and
   Kota}{Bishop-Moser et~al.}{2012}]{BishopFREE2012}
 Bishop-Moser, J., G.~Krishnan, C.~Kim, and S.~Kota (2012).
@@ -61,6 +68,12 @@ Hunt, K.~H. (1977).
 Hunt, K.~H. (1983).
 \newblock {Structural Kinematics of In- Parallel-Actuated Robot-Arms}.
 \newblock ~{\em 105\/}(December 1983), 705--712.
+
+\bibitem[\protect\citeauthoryear{Kabsch}{Kabsch}{1978}]{Kabsch1978}
+Kabsch, W. (1978).
+\newblock {A discussion of the solution for the best rotation to relate two
+  sets of vectors}.
+\newblock {\em Acta Crystallographica Section A\/}~{\em 34\/}(5), 827--828.
 
 \bibitem[\protect\citeauthoryear{Merlet}{Merlet}{2015}]{Merlet2015}
 Merlet, J. (2015).
