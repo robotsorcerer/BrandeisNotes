@@ -46,4 +46,5 @@
 \contentsline {subsection}{\numberline {3.7.2}Rigid Body Velocity}{48}{subsection.3.7.2}
 \contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {4}\MakeTextUppercase {Objects' Alignment in Robotics.}}{50}{chapter.4}
 \contentsline {section}{\numberline {4.1}Kabsch Algorithm}{51}{section.4.1}
-\contentsline {chapter}{\MakeTextUppercase {References}}{53}{chapter*.23}
+\contentsline {subsection}{\numberline {4.1.1}Examples}{53}{subsection.4.1.1}
+\contentsline {chapter}{\MakeTextUppercase {References}}{58}{chapter*.23}

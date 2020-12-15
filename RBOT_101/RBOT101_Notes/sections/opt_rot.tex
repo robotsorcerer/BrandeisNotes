@@ -12,7 +12,8 @@
  Suppose we have two sets of vectors $\bm{x_n}$ and $\bm{y_n}$ where $n=1,\ldots, N$, and weight $w_n$ that corresponds to each pair $\bm{x_n}$ and $\bm{y_n}$. Our goal is to find an orthogonal matrix $\cup = (u_{ij})$ which minimizes the cost function
  %
  \begin{align}
- 	C = \frac{1}{2} \sigma_n w_n \left(\cup \bm{x_n} - \bm{y_n}\right)^2 
+ 	C = \frac{1}{2} \Sigma_n w_n \left(\cup \bm{x_n} - \bm{y_n}\right)^2 
+ 	\label{eq:kabsch_unconstraint}
  \end{align}
  %
  subject to 
@@ -59,15 +60,42 @@
  If the matrix \eqref{eq:kabsch_deri2} has $1$ along its diagonal, we must have the minimum of the Lagrangian E to mean that $S+L$ is positive definite, and \eqref{eq:kabsch_deri1} translates to 
  %
  \begin{align}
- \cup . \left(S+L\right) = R.
+ U . \left(S+L\right) = R.
  \label{eq:pre_rot}
  \end{align}
  %
  Our goal would be to find a matrix $L$ of Lagrange multipliers so that $\cup$ is orthogonal. We can do this by multiplying both sides of \eqref{eq:pre_rot} by their transposed matrices so that we can get rid of matrix $\cup$ as follows:
  %
  \begin{align}
- 	\cuo \tilde{(S+L)}(S+L) &= \tilde{(S+L)}\tilde{U}U(S+L) \nonumber \\
- 	&= (S+L)(S+L) = \tilde{R}R.
+ 	U {(S+L)}^T(S+L) &= {(S+L)}^T{U}^TU(S+L) \nonumber \\
+ 	&= (S+L)(S+L) = {R}^TR.
  \end{align}
  %
- Now, we know that $\tilde{R}R$ is a symmetric positive definite matrix so that we can find the eigen values $\lambda_k$ and eigen vectors $\bm{v}_k$ using standard procedures \eg single value decomposition.
+ Now, we know that ${R}^TR$ is a symmetric positive definite matrix so that we can find the eigenvalues $\lambda_k$ and eigenvectors $\bm{v}_k$ using standard procedures \eg single value decomposition. Thus, since $S+L$ is symmetric and positive definite, it must have normalized eigenvectors, $\bm{v}_k$ and positive eigenvalues $\sqrt{\lambda_k}$  so that the Lagrange multipliers are
+ %
+ \begin{align}
+ 	l_{ij} = \Sigma_k \sqrt{\lambda_k}; \qquad \qquad \bm{v}_{ki} \bm{v}_{ki} - s_{ij}
+ \end{align}
+ %
+ where $\bm{v}_{ki}$ signifies the $i$th component of $\bm{v}_k$ and the effect of the orthogonal matrix $U$ on these eigenvectors $\bm{a}_k$ is determined from \eqref{eq:pre_rot} which defines the unit vectors $\bm{q}_k$ as 
+ %
+ \begin{align}
+ 	\bm{q}_k = U . \bm{v}_k = \frac{1}{\sqrt{\lambda_k}} U (S+L) \bm{v}_k = \frac{1}{\sqrt{\lambda_k}} R \bm{v}_k.
+ \end{align}
+ 
+ The solution to find the constraint minimum of the minimum of the proposed cost function in \eqref{eq:kabsch_unconstraint} is then given by,
+ %
+ \begin{tcolorbox}[title=Kabsch's Optimal Rotation]
+ 	\begin{align}
+ 		u_{ij} = \Sigma_k b_{kl} a_{kj}.
+ 	\end{align}
+ \end{tcolorbox}
+
+\subsection{Examples}
+%
+There are clever ways of solving the optimal rotation between two vectors.
+
+There is a jupyter notebook at the following  link: \href{https://colab.research.google.com/drive/1DL_Hq-Bp-pQuQyR6nDHnzwxIqhj4_Obq}{Kabsch Algorithm and Implementation}. For your convenience, it is included as a pdf file below.
+
+\includepdf[pages=1-]{Kabsch.pdf}
+

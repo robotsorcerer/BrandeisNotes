@@ -1,0 +1,429 @@
+
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{Kabsch}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \subsection{Overview}\label{overview}
+
+Throughout this course, we will be leveraging Google's Colab Notebooks
+to reinforce the concepts we have been learning in class. For an
+introduction into how to use collab, in case you are not already
+familiar with it, have a go at this
+\href{https://colab.research.google.com/notebooks/basic_features_overview.ipynb\#scrollTo=Id6tDF1HQSHD}{overview
+of Colaboratory features}.
+
+    \subsubsection{Kabsch's Algorithm}\label{kabschs-algorithm}
+
+As stated in the course notes, the Kabsch algorithm is a very versatile
+tool for optimally aligning two vectors to one another. In this example,
+we are provided with two point sets - a model set and a point (measured)
+set, and our goal would be to compute the optimal rotation matrix \(U\)
+that allows us to efficiently rotate the point set into the model set.
+
+    \subsubsection{Load the Measured Point
+Set}\label{load-the-measured-point-set}
+
+For the example we are interested in, we have measured the position of
+an object in 3D space using a Northern Digital Inc's
+\href{https://www.ndigital.com/products/}{Polaris Camera}. The points
+are collected as a set of three-dimensional (3D) points in space,
+arranged in rows of \texttt{(x,y,z)} tuples and they are as given by the
+\texttt{measured\_points\_full} function below:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{c+c1}{\PYZsh{} Here, we are importing all the libraries we will be using in these notebook}
+        \PY{k+kn}{import} \PY{n+nn}{os}
+        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+        \PY{k+kn}{from} \PY{n+nn}{os}\PY{n+nn}{.}\PY{n+nn}{path} \PY{k}{import} \PY{n}{join}\PY{p}{,} \PY{n}{expanduser}
+        \PY{k+kn}{import} \PY{n+nn}{scipy}\PY{n+nn}{.}\PY{n+nn}{linalg} \PY{k}{as} \PY{n+nn}{LA}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{k}{def} \PY{n+nf}{measured\PYZus{}points\PYZus{}full}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+            \PY{c+c1}{\PYZsh{} these are the (x,y,z) tuples}
+            \PY{n}{pre\PYZus{}calib} \PY{o}{=} \PY{p}{\PYZob{}}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.0}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{369.88531494140625}\PY{p}{,} \PY{l+m+mf}{101.30087280273438}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1960.3780517578125}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{200,0}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{369.8937683105469}\PY{p}{,} \PY{l+m+mf}{101.32111358642578}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1960.302734375}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.1}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{369.8780212402344}\PY{p}{,} \PY{l+m+mf}{101.32646942138672}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1960.353271484375}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{220,0}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{369.8780212402344}\PY{p}{,} \PY{l+m+mf}{101.32646942138672}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1960.353271484375}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.2}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{367.74957275390625}\PY{p}{,} \PY{l+m+mf}{101.65080261230469}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1953.7960205078125}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{240,0}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{370.8532409667969}\PY{p}{,} \PY{l+m+mf}{101.074951171875}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1942.255126953125}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.3}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{366.7646484375}\PY{p}{,} \PY{l+m+mf}{101.17594909667969}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1949.628173828125}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{255,0}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{381.33837890625}\PY{p}{,} \PY{l+m+mf}{97.10205078125}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1920.667236328125}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.4}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{368.0609436035156}\PY{p}{,} \PY{l+m+mf}{100.83153533935547}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1953.857177734375}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,220}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{382.8047790527344}\PY{p}{,} \PY{l+m+mf}{100.34918975830078}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1944.807373046875}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.5}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{369.7981262207031}\PY{p}{,} \PY{l+m+mf}{100.01362609863281}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1958.6396484375}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,240}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{382.71600341796875}\PY{p}{,} \PY{l+m+mf}{99.87244415283203}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1945.184326171875}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.6}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{370.24237060546875}\PY{p}{,} \PY{l+m+mf}{98.66026306152344}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1957.2281494140625}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,255}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{382.71600341796875}\PY{p}{,} \PY{l+m+mf}{99.87244415283203}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1945.184326171875}\PY{p}{]}\PY{p}{,}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.7}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{370.1295166015625}\PY{p}{,} \PY{l+m+mf}{98.33242797851562}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{1956.1732177734375}\PY{p}{]}\PY{p}{,}
+                \PY{p}{\PYZcb{}}
+            \PY{k}{def} \PY{n+nf}{exp}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{:}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{This function expands the array along the second dimension so that }\PY{l+s+s1}{\PYZsq{}}
+                \PY{k}{return} \PY{n}{np}\PY{o}{.}\PY{n}{expand\PYZus{}dims}\PY{p}{(}\PY{n}{x}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}
+            
+            \PY{c+c1}{\PYZsh{} sort pre\PYZhy{}recorded points in the order.}
+            \PY{n}{measured\PYZus{}calib} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{(}\PY{p}{[}\PY{p}{[}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.0}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,220}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.1}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,240}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.2}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,255}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.3}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{200,0}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.4}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{220,0}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.5}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{240,0}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.6}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{255,0}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{pre\PYZus{}calib}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{0,0.7}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}
+                                    \PY{p}{]}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+            \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}}
+        \PY{l+s+sd}{     As it is currently, our array has 3 dimensions. We need to reduce the size of the }
+        \PY{l+s+sd}{     array alongthe singleton dimention for efficient matrix manipulations, hence why we }
+        \PY{l+s+sd}{     are squeezing the matrix}
+        \PY{l+s+sd}{    \PYZdq{}\PYZdq{}\PYZdq{}}
+            \PY{n}{measured\PYZus{}calib\PYZus{}zero\PYZus{}centered} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+            \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{measured\PYZus{}calib}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+                \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ find the centroid of the points }\PY{l+s+s1}{\PYZsq{}}
+                \PY{n}{centered} \PY{o}{=} \PY{n}{measured\PYZus{}calib}\PY{p}{[}\PY{n}{i}\PY{p}{]} \PY{o}{\PYZhy{}} \PY{n}{np}\PY{o}{.}\PY{n}{min}\PY{p}{(}\PY{n}{measured\PYZus{}calib}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}
+                \PY{n}{measured\PYZus{}calib\PYZus{}zero\PYZus{}centered} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{vstack}\PY{p}{(}\PY{p}{(}\PY{n}{measured\PYZus{}calib\PYZus{}zero\PYZus{}centered}\PY{p}{,} \PY{n}{centered}\PY{p}{)}\PY{p}{)} 
+            \PY{n}{measured\PYZus{}calib\PYZus{}zero\PYZus{}centered} \PY{o}{=} \PY{n}{measured\PYZus{}calib\PYZus{}zero\PYZus{}centered}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}
+        
+            \PY{k}{return} \PY{n}{measured\PYZus{}calib\PYZus{}zero\PYZus{}centered}
+\end{Verbatim}
+
+
+    \subsubsection{Load the model set}\label{load-the-model-set}
+
+It now behooves us to load the model set so we can begin our Kabsch
+computation. For this, we have them saved in a numpy array. Therefore,
+we will import numpy as well as associated and needed libraries
+necessary for our computation.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}12}]:} \PY{n}{model\PYZus{}points} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{(}
+                                 \PY{p}{[}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1755.87720294}\PY{p}{,}   \PY{l+m+mf}{866.87898685}\PY{p}{,}   \PY{l+m+mf}{283.0353811} \PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1755.76266696}\PY{p}{,}   \PY{l+m+mf}{866.8540598}\PY{p}{,}    \PY{l+m+mf}{282.9782946} \PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1758.9453555}\PY{p}{,}    \PY{l+m+mf}{857.8363267}\PY{p}{,}    \PY{l+m+mf}{296.13326449}\PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1759.02853104}\PY{p}{,}   \PY{l+m+mf}{865.92774874}\PY{p}{,}   \PY{l+m+mf}{283.52951211}\PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1777.42772925}\PY{p}{,}   \PY{l+m+mf}{826.8692224}\PY{p}{,}    \PY{l+m+mf}{293.38292356}\PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1784.34737705}\PY{p}{,}   \PY{l+m+mf}{836.7521396}\PY{p}{,}    \PY{l+m+mf}{281.74652354}\PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1777.77335781}\PY{p}{,}   \PY{l+m+mf}{826.96331701}\PY{p}{,}   \PY{l+m+mf}{292.88727602}\PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1783.56649649}\PY{p}{,}   \PY{l+m+mf}{836.45510137}\PY{p}{,}   \PY{l+m+mf}{281.56390533}\PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1783.53245361}\PY{p}{,}   \PY{l+m+mf}{836.46510174}\PY{p}{,}   \PY{l+m+mf}{281.54257437}\PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1783.6947516}\PY{p}{,}    \PY{l+m+mf}{836.55773878}\PY{p}{,}   \PY{l+m+mf}{281.52364873}\PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1783.58522171}\PY{p}{,}   \PY{l+m+mf}{836.46979064}\PY{p}{,}   \PY{l+m+mf}{281.55684051}\PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1783.66230977}\PY{p}{,}   \PY{l+m+mf}{836.54098015}\PY{p}{,}   \PY{l+m+mf}{281.50709046}\PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1783.52724697}\PY{p}{,}   \PY{l+m+mf}{836.44927943}\PY{p}{,}   \PY{l+m+mf}{281.56064662}\PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1783.59681243}\PY{p}{,}   \PY{l+m+mf}{836.52118858}\PY{p}{,}   \PY{l+m+mf}{281.52347799}\PY{p}{]}\PY{p}{,}
+                                  \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mf}{1783.44129296}\PY{p}{,}   \PY{l+m+mf}{836.40624764}\PY{p}{,}   \PY{l+m+mf}{281.5671847} \PY{p}{]}\PY{p}{]}
+         \PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \subsubsection{Get the point set from the function
+above.}\label{get-the-point-set-from-the-function-above.}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}13}]:} \PY{n}{point\PYZus{}set} \PY{o}{=} \PY{n}{measured\PYZus{}points\PYZus{}full}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+    \subsection{Now, let us calculate the transformation as we described in
+our
+notes}\label{now-let-us-calculate-the-transformation-as-we-described-in-our-notes}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}23}]:} \PY{k}{def} \PY{n+nf}{Kabsch}\PY{p}{(}\PY{n}{P}\PY{o}{=}\PY{k+kc}{None}\PY{p}{,} \PY{n}{Q}\PY{o}{=}\PY{k+kc}{None}\PY{p}{,} \PY{n}{augment\PYZus{}Q}\PY{o}{=}\PY{k+kc}{True}\PY{p}{,} \PY{n}{center}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}\PY{p}{:}
+             \PY{l+s+sd}{\PYZsq{}\PYZsq{}\PYZsq{}P and Q must be nX3. This rotation is accurate.}
+         \PY{l+s+sd}{     Rotates points in P optimally to measured reference points in Q}
+         
+         \PY{l+s+sd}{     Params}
+         \PY{l+s+sd}{     ======}
+         \PY{l+s+sd}{     Q: Points to be rotated into}
+         \PY{l+s+sd}{     augment\PYZus{}Q: Whether Q was recorded without the zero/home points embedded between successive readings}
+         
+         \PY{l+s+sd}{     \PYZsq{}\PYZsq{}\PYZsq{}}
+             \PY{k}{if} \PY{o+ow}{not} \PY{n+nb}{isinstance}\PY{p}{(}\PY{n}{P}\PY{p}{,} \PY{n}{np}\PY{o}{.}\PY{n}{ndarray}\PY{p}{)} \PY{o+ow}{or} \PY{o+ow}{not} \PY{n+nb}{isinstance}\PY{p}{(}\PY{n}{Q}\PY{p}{,} \PY{n}{np}\PY{o}{.}\PY{n}{ndarray}\PY{p}{)}\PY{p}{:}
+                 \PY{n}{P}\PY{p}{,} \PY{n}{Q} \PY{o}{=} \PY{n}{prepro}\PY{p}{(}\PY{p}{)}
+         
+             \PY{c+c1}{\PYZsh{} calculate the centroids}
+             \PY{k}{if} \PY{n}{center}\PY{p}{:}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{This only for computed old points}\PY{l+s+s1}{\PYZsq{}}
+                 \PY{n}{q0} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{Q}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}
+                 \PY{n}{p0} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{P}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}
+         
+                 \PY{n}{Q\PYZus{}ctr} \PY{o}{=} \PY{n}{Q} \PY{o}{\PYZhy{}} \PY{n}{np}\PY{o}{.}\PY{n}{expand\PYZus{}dims}\PY{p}{(}\PY{n}{q0}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}
+                 \PY{n}{P\PYZus{}ctr} \PY{o}{=} \PY{n}{P} \PY{o}{\PYZhy{}} \PY{n}{np}\PY{o}{.}\PY{n}{expand\PYZus{}dims}\PY{p}{(}\PY{n}{p0}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}
+             \PY{k}{else}\PY{p}{:}
+                 \PY{n}{Q\PYZus{}ctr}\PY{p}{,} \PY{n}{P\PYZus{}ctr} \PY{o}{=} \PY{n}{Q}\PY{p}{,} \PY{n}{P}
+         
+             \PY{c+c1}{\PYZsh{} add the zero points to preconputed control points}
+             \PY{k}{if} \PY{n}{augment\PYZus{}Q}\PY{p}{:}
+                 \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{This only for computed old points}\PY{l+s+s1}{\PYZsq{}}
+                 \PY{n}{Q\PYZus{}aug} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+                 \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{Q\PYZus{}ctr}\PY{o}{.}\PY{n}{shape}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{:}
+                         \PY{n}{Q\PYZus{}aug} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{Q\PYZus{}aug}\PY{p}{,} \PY{n}{np}\PY{o}{.}\PY{n}{expand\PYZus{}dims}\PY{p}{(}\PY{n}{Q\PYZus{}ctr}\PY{p}{[}\PY{n}{i}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{)}
+                         \PY{n}{Q\PYZus{}aug}\PY{o}{=}  \PY{n}{np}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{Q\PYZus{}aug}\PY{p}{,} \PY{n}{np}\PY{o}{.}\PY{n}{expand\PYZus{}dims}\PY{p}{(}\PY{n}{Q\PYZus{}ctr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{)}
+                 \PY{n}{Q\PYZus{}ctr} \PY{o}{=} \PY{n}{Q\PYZus{}aug}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}
+         
+         
+             \PY{n}{Hmat} \PY{o}{=} \PY{n}{P\PYZus{}ctr}\PY{o}{.}\PY{n}{T}\PY{n+nd}{@Q\PYZus{}ctr}
+             \PY{n}{U}\PY{p}{,} \PY{n}{S}\PY{p}{,} \PY{n}{V} \PY{o}{=} \PY{n}{LA}\PY{o}{.}\PY{n}{svd}\PY{p}{(}\PY{n}{Hmat}\PY{p}{)}
+             \PY{n}{d} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{sign}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{linalg}\PY{o}{.}\PY{n}{det}\PY{p}{(}\PY{n}{V}\PY{n+nd}{@U}\PY{o}{.}\PY{n}{T}\PY{p}{)}\PY{p}{)}
+             \PY{n}{M} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{eye}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{;} \PY{n}{M}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]} \PY{o}{=}\PY{n}{d}
+             \PY{n}{opt\PYZus{}rot} \PY{o}{=} \PY{n}{V}\PY{n+nd}{@M}\PY{n+nd}{@U}\PY{o}{.}\PY{n}{T}
+             \PY{n}{opt\PYZus{}trans} \PY{o}{=} \PY{n}{Q\PYZus{}ctr}\PY{o}{.}\PY{n}{T}\PY{o}{\PYZhy{}} \PY{n}{opt\PYZus{}rot}\PY{n+nd}{@P}\PY{o}{.}\PY{n}{T}
+         
+             \PY{k}{return} \PY{n}{opt\PYZus{}rot}\PY{p}{,} \PY{n}{np}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{n}{opt\PYZus{}trans}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}
+\end{Verbatim}
+
+
+    \subsubsection{Test the algorithm}\label{test-the-algorithm}
+
+Remember that we are rotating the points in \texttt{point\_set} into
+\texttt{model\_points}. So we would go ahead and call the Kabsch
+function above as follows:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}24}]:} \PY{n}{Rot}\PY{p}{,} \PY{n}{Trans} \PY{o}{=} \PY{n}{Kabsch}\PY{p}{(}\PY{n}{model\PYZus{}points}\PY{p}{,} \PY{n}{point\PYZus{}set}\PY{p}{,} \PY{n}{augment\PYZus{}Q}\PY{o}{=}\PY{k+kc}{False}\PY{p}{,} \PY{n}{center}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}25}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{Rot}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}26}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n}{Trans}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+[1775.85125374 -842.66314863 -284.40256961]
+
+    \end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
