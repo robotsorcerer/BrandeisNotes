@@ -47,4 +47,4 @@
 \contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {4}\MakeTextUppercase {Objects' Alignment in Robotics.}}{50}{chapter.4}
 \contentsline {section}{\numberline {4.1}Kabsch Algorithm}{51}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Examples}{53}{subsection.4.1.1}
-\contentsline {chapter}{\MakeTextUppercase {References}}{58}{chapter*.23}
+\contentsline {chapter}{\MakeTextUppercase {References}}{59}{chapter*.23}

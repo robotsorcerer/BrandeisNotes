@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  15 DEC 2020 10:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  17 DEC 2020 03:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2116,15 +2116,15 @@ Package pdftex.def Info: Kabsch.pdf , page4 used on input line 100.
 \tf@brf=\write10
 \openout10 = `rbot_101.brf'.
 
- [58
+ [58] [59
 
-] [59])
+] [60])
 
 Package caption Warning: Unused \captionsetup[table] on input line 42.
 See the caption package documentation for explanation.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
-[60]
+[61]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
  (./rbot_101.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
@@ -2135,9 +2135,9 @@ Package rerunfilecheck Info: File `rbot_101.brf' has not changed.
 (rerunfilecheck)             Checksum: 4348F81A491C86278623226DB3AB94E9;1778.
  ) 
 Here is how much of TeX's memory you used:
- 50871 strings out of 492649
- 1156476 string characters out of 6129622
- 1393764 words of memory out of 5000000
+ 50878 strings out of 492649
+ 1156542 string characters out of 6129622
+ 1393763 words of memory out of 5000000
  53320 multiletter control sequences out of 15000+600000
  581863 words of font info for 248 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -2168,10 +2168,10 @@ pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw
 /utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.p
 fb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/l
 ocal/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on rbot_101.pdf (65 pages, 4720240 bytes).
+Output written on rbot_101.pdf (66 pages, 4722631 bytes).
 PDF statistics:
- 1362 PDF objects out of 1440 (max. 8388607)
- 1144 compressed objects within 12 object streams
- 315 named destinations out of 1000 (max. 500000)
+ 1373 PDF objects out of 1440 (max. 8388607)
+ 1154 compressed objects within 12 object streams
+ 322 named destinations out of 1000 (max. 500000)
  22736 words of extra memory for PDF output out of 24883 (max. 10000000)
 

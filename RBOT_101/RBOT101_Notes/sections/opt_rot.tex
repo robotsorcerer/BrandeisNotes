@@ -99,3 +99,47 @@ There is a jupyter notebook at the following  link: \href{https://colab.research
 
 \includepdf[pages=1-]{Kabsch.pdf}
 
+\begin{homework}
+	For the following model points $P$ and measured poinyts $Q$, compute the optimal rotation matrices for moving points $Q$ into point $P$. 
+	%
+	For the three assignments below, report your results within a colab notebook, download the colab notebook as a pdf and upload on Latte.
+	\begin{enumerate}
+		\item  \begin{align}
+			P = \begin{bmatrix}
+			-1 & 0 & 0 \\
+			%
+			0 & 0 & 0 \\
+			%
+			0 & 1 & 1
+			\end{bmatrix},
+			%
+			\qquad 
+			Q = \begin{bmatrix}
+			0 & -1 & -1 \\
+			0 & -1 & 0 \\
+			0 & 0 & 0 \\
+			-1 & 0 & 0
+			\end{bmatrix}
+		\end{align}
+		%
+		\item \begin{align}
+			P = \begin{bmatrix}
+			3172.79468418  &  727.52462347  & 7122.70450243 \\
+			165.28953155 &  -3552.32467068 & -2045.15346584 \\
+			5292.45250241 & -1748.52037006 & -6181.40300009 \\
+			1893.07584225  & 5897.19719625  & 3130.41287776
+			\end{bmatrix}, 
+			\\
+			Q = \begin{bmatrix}
+			1774.11606309 & -4241.11341178  & 5259.04277742 \\
+			6079.70499031  &  -98.14197972 & -3442.0914569 \\
+			813.07069876  & 3334.26289147 & -6112.55652513 \\
+			1856.72080823 &  2328.86927901  & 6322.16611888 \\
+			\end{bmatrix} \nonumber
+		\end{align}
+		%
+		\item For a toy problem, measure the coordinates of an object in the world using your favorite measuring instrument (a 3D camera sensor, iPhone app (e.g. ArkIt), android app e.t.c.). Be sure to record the position of the object at multiple points in world coordinates and make sure that the physical locations of these points are known (these are your model points). Then compute the optimal rotation and translation between the model and measured points.
+	\end{enumerate}
+\end{homework}
+
+\section{Iterative Closest Point}
