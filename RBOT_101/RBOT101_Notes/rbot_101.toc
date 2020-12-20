@@ -10,41 +10,44 @@
 \contentsline {section}{\numberline {1.7}Online Course Content}{3}{section.1.7}
 \contentsline {section}{\numberline {1.8}Assessments and Labs}{3}{section.1.8}
 \contentsline {section}{\numberline {1.9}Errata}{4}{section.1.9}
-\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {2}\MakeTextUppercase {Introduction}}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Robots Components}{6}{section.2.1}
-\contentsline {section}{\numberline {2.2}Robot Spaces, Geometries, and Classifications}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Characterization of Kinematic Geometry}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Kinematic Geometries}{8}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Open Kinematic Chains}{9}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Closed-loop Kinematic Chains}{11}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Freedom and Structure in Mechanisms}{12}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Freedom, Connectivity and Mobility}{12}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Constraints and Freedoms}{14}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}The Mobility Criterion}{15}{subsection.2.4.3}
-\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {3}\MakeTextUppercase {Motion of Rigid Bodies}}{18}{chapter.3}
-\contentsline {section}{\numberline {3.1}Screws}{18}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Motion screws: Twist's Pitch, Axis, and Magnitude}{19}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{21}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Screw Motions}{22}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Rodrigues' Formula}{22}{section.3.2}
-\contentsline {section}{\numberline {3.3}The Matrix Exponential, The Lie Group and Lie Algebra}{23}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}The Lie Group Notations}{26}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Exponential Map and Kinematic Chains}{27}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Rigid Body Transformations}{27}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Translation in $\mathbb {R}^3$}{29}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Rotations in $\mathbb {R}^3$}{31}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Rotation Matrices as Transformations}{33}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Planar Rotations}{34}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Composition of Rotations}{37}{subsection.3.4.5}
-\contentsline {section}{\numberline {3.5}Parameterization of Rotations $\in SO(3)$}{40}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Axis-Angle Parameterizations}{40}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Euler Angles}{41}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Quaternions}{44}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Homogeneous Coordinates}{44}{section.3.6}
-\contentsline {section}{\numberline {3.7}Rigid Body Velocities}{46}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Rotational Velocities}{46}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Rigid Body Velocity}{48}{subsection.3.7.2}
-\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {4}\MakeTextUppercase {Objects' Alignment in Robotics.}}{50}{chapter.4}
-\contentsline {section}{\numberline {4.1}Kabsch Algorithm}{51}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Examples}{53}{subsection.4.1.1}
-\contentsline {chapter}{\MakeTextUppercase {References}}{59}{chapter*.23}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {2}\MakeTextUppercase {Objects' Alignment in Robotics.}}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Preliminaries}{6}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Distance between a Point and a Parameterized Entity}{8}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Kabsch Algorithm}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Examples}{12}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Iterative Closest Point}{17}{section.2.3}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {3}\MakeTextUppercase {Rigid Body Motions: Introduction}}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Robots Components}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Robot Spaces, Geometries, and Classifications}{20}{section.3.2}
+\contentsline {section}{\numberline {3.3}Characterization of Kinematic Geometry}{21}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Kinematic Geometries}{21}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Open Kinematic Chains}{22}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Closed-loop Kinematic Chains}{24}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Freedom and Structure in Mechanisms}{25}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Freedom, Connectivity and Mobility}{25}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Constraints and Freedoms}{27}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}The Mobility Criterion}{28}{subsection.3.4.3}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {4}\MakeTextUppercase {Motion of Rigid Bodies}}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Screws}{31}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Motion screws: Twist's Pitch, Axis, and Magnitude}{32}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{34}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Screw Motions}{35}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Rodrigues' Formula}{35}{section.4.2}
+\contentsline {section}{\numberline {4.3}The Matrix Exponential, The Lie Group and Lie Algebra}{36}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}The Lie Group Notations}{39}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Exponential Map and Kinematic Chains}{40}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Rigid Body Transformations}{40}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Translation in $\mathbb {R}^3$}{42}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Rotations in $\mathbb {R}^3$}{44}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Rotation Matrices as Transformations}{46}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Planar Rotations}{47}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Composition of Rotations}{50}{subsection.4.4.5}
+\contentsline {section}{\numberline {4.5}Parameterization of Rotations $\in SO(3)$}{53}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Axis-Angle Parameterizations}{53}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Euler Angles}{54}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Quaternions}{57}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Homogeneous Coordinates}{57}{section.4.6}
+\contentsline {section}{\numberline {4.7}Rigid Body Velocities}{59}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Rotational Velocities}{59}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Rigid Body Velocity}{61}{subsection.4.7.2}
+\contentsline {chapter}{\MakeTextUppercase {References}}{63}{chapter*.23}

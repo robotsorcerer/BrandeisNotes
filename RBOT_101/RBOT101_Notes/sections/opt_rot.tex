@@ -7,6 +7,140 @@
  
  While other newer algorithms exist, these are the two popular algorithms that we shall be concerning ourselves with in this chapter.
  
+ 
+ \section{Preliminaries}
+ \seclabel{sec:opt_rot_prelim}
+ 
+ We will denote the real line by $\mathbb{R}$. An example of a \textbf{metric space} is the \textbf{Euclidean } $n$-\textbf{space} $\mathbb{R}^n$, which consists of $n-$tuples $x = \left(x_1, x_2, \ldots, x_n\right)$ where each $x_i \in \mathbb{R}$. We shall mean an $\mathbb{R}^n$ metric space to have the metric 
+ %
+ \begin{align}
+ d(x,y) = \sqrt{\sum_{i=1}^{n} (y_i - x_i)^2}.
+ \end{align} 
+ %
+ If $n=0$, then $\mathbb{R}^0$ is taken to be a single point $0 \in \mathbb{R}$.
+ 
+ A manifold is ``locally" similar to one of the example metric spaces $\mathbb{R}^n$. Precisely, a \textbf{manifold} is a metric space $\bm{M}$ with the property that, \textit{if $x \in M$., then there is some neighborhood $U$ of x and some integer $n \ge 0$ such that $U$ is homeomorphic to $\mathbb{R}^n$}. 
+ 
+ A simple example of a manifold is $\mathbb{R}^n$: for each $x \in \mathbb{R}^n$ we can take $U$ to be everything in $\mathbb{R}^n$. 
+ 
+ \begin{quiz}
+ 	 Suppose we supply $\mathbb{R}^n$ with an equivalent metric, which makes it homeomorphic to $\mathbb{R}^n$, would it also be a manifold?
+ \end{quiz}
+ 
+ Another example of a metric space is an open ball in $\mathbb{R}^n$, wherein one can take $U$ to be the entire open ball since an open ball in $\mathbb{R}^n$ is homeomorphic to $\mathbb{R}^n$. Similarly, an open subset $V$ of $\mathbb{R}^n$ is a manifold, \ie for each $x \in V$ we can choose $U$ to be some open ball with $x\in U \subset V$.
+ 
+ 
+ The \textbf{Euclidean distance} $d(\bm{r}_1, \bm{r}_2)$ between two points $\bm{r}_1 = (x_1, y_1, z_1)$ and $\bm{r}_2 = (x_2, y_2, z_2)$ is given by 
+ %
+ \begin{align}
+ d(\bm{r}_1, \bm{r}_2) = \|\bm{r}_1 - \bm{r}_2\| =\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}.
+ \end{align}
+ 
+ Suppose that $P$ is a point set with $N_p$ points denoted as $\bm{p}_i: P=\{p_i\}$ for $i=1,\ldots,N_p$. The distance between the point $\bm{q}$ and the point set $P$ is
+ %
+ \begin{align}
+ 	d(\bm{q}, P) = \min_{i\in \{1,\ldots,N_p\}}{d(\bm{q}, \bm{p}_i)}.
+ \end{align}
+ %
+ We find that the closest point $\bm{p}_j$ of $P$  satisfies $d(\bm{q}, \bm{p}_j) = d(\bm{q}, P)$.
+ 
+ Suppose that we have a \textbf{line segment} that connects the points, $bm{r}_1, \bm{r}_2$, the distance between the point $\bm{r}$ and the line segment $l$ is
+ %
+ \begin{align}
+ 	d(\bm{p}, l) = \min_{x+y=1} \|x\bm{r}_1 + y \bm{r}_2 - \bm{p} \|
+ 	\label{eq:line_seg}
+ \end{align}
+ %
+ where $x, y \in [0, 1 ]$.
+ %
+ \begin{homework}
+ 	Find a closed-form expression for the solution to \eqref{eq:line_seg}.
+ \end{homework}
+%
+Now, if instead of a line segment, suppose we have a set of $N_l$ line segments denoted $l_i$, and let $L=\{l_i\}$ for $i=1,\ldots,N_l$. The \textbf{distance between the point $\bm{p}$ and the line segment set $L$} is 
+%
+\begin{align}
+	d(\bm{p}, L) = \min_{i\in \{1,\ldots, N_l\}} d(\bm{p}, l_i).
+\end{align}
+%
+The closest point $y_j$ on the line segment set $L$ satisfies $d(\bm{p}, y_j) = d(\bm{p}, L)$.
+%
+Let $g$ be a triangle with the following coordinates  $\bm{r}=(x_1,y_1,z_1), \bm{r}_2 = (x, y, z)$, and $\bm{r}_3 = (x_3,y_3,z_3)$. The \textbf{distance between the point $\bm{p}$ and the triangle $g$} is 
+%
+\begin{align}
+	d(\bm{p}, g) = \min_{x+y+z=1} \| x\bm{r}_1 + y\bm{r}_2 + z \bm{r}_3 - \bm{p} \|
+	\label{eq:triangle_dist}
+\end{align}
+%
+where $x \in [0,1], \,\, y\in [0,1],$ and $z \in [0,1]$. 
+%
+\begin{homework}
+	Find a closed-form expression for the problem in \eqref{eq:triangle_dist}.
+\end{homework}
+ 
+ Now, if we have a collection of $N_g$ triangles $G$, denoted by $g_i$ such that $G =\{g_i\}$ for $i=1,\ldots,N_g$. The \textbf{distance between the point $\bm{p}$ and the triangle set $G$} is 
+ %
+ \begin{align}
+ 	d(\bm{p}, G) = \min_{i\in \{1,\ldots, N_g\}} d(\bm{p}, g_i),
+ \end{align}
+ %
+ and the closest point $y_j$ on the triangle set $G$ satisfies the equality $d(\bm{p}, y_j) = d(\bm{p}, G)$.
+ 
+ \subsection{Distance between a Point and a  Parameterized  Entity}
+ %
+We define a parametric curve and a parametric surface as single parametric entities $\bm{r}(\bm{u})$, where $\bm{u} = u\in \mathbb{R}^1$ denotes a parameterized curve, and $\bm{u} = (u,v) \in \mathbb{R}^2$ denotes parametric surfaces. We will evaluate a curve within an interval domain \eg $[x,y]$ while the evaluation domain of a surface can be an arbitrarily closely-connected region in a plane. 
+
+We will take the distance from a given point $\bm{p}$ to a parametric entity $E$ to be 
+%
+\begin{align}
+	d(\bm{p}, E)  = \min_{\bm{r}(\bm{u}) \in E} d(\bm{p}, \bm{r}(\bm{u}))
+\end{align}
+ %
+ To compute the point-to-curve and point-to-surface distances, let $F$ be the set of $N_e$ parametric entities denoted by $E_i$, and let $F = \{E_i\}$ for $i = 1, N_e$> The distance between a point $\bm{p}$ and the parametric entity set $F$ is
+ %
+ \begin{align}
+ 	d(\bm{p}, F) = \min_{i\in \{1,\ldots, N_e\}} d(\bm{p}, \bm{E}_i).
+ \end{align}
+ 
+ To find the distance from a point to a parametric entity, we can create a simplex-based approximation for \eg a line segment or triangle. For a parametric space curve $C =\{\bm{r}(u)\}$, we can compute a polyline $L(C, \delta)$ such that the piecewise-linear approximation never deviates from the space curve by more than a prespecified distance $\delta$. If we tag every point of the polyline with a corresponding $u$ argument values of the parametric curve, we can obtain an estimate of the closest point from the line segment set.
+ 
+ In a similar vein, for a parametric surface $S = \{\bm{r}(u, v)\}$, one can compute a triangle set $G(S, \delta)$ such that the piecewise triangular approximation never deviates from the surface by more than a prespecified distance $\delta$. If we tag each truangle vertex with the corresponding $(u, v)$ argument values of the parametric surface, we can find the $U_a, v_a)$ of the argument values of the closest point from the triangle set. The initial value of $\bm{u}_a$ is assumed to be available such that $\bm{r}(\bm{u}_a)$ is very close to the closest point on the parametric entity.
+ 
+ We can employ a Newtonian minimization approach for solving the point to parametric entity problem when a reliable starting point $\bm{u}_a$ is available. The scalar objective function to be minimized is 
+ %
+ \begin{align}
+ 	f(\bm{u}) = \| \bm{r}(\bm{u}) - \bm{p} \|^2.
+ \end{align}
+ %
+ Suppose $\Delta = \left[\partial/\partial \bm{u}\right]^T$ is the vector differential gradient operator, the minimum of $f$ must occur at $\Delta f = 0$. If we have a surface, then we must have $\Delta f = \left[f_u, f_v\right]^T$, with the 2-D Hessian matrix is given by
+ %
+ \begin{align}
+ 	\Delta \Delta^T(f) = \begin{bmatrix}
+ 	f_{uu} & f_{uv} \\
+ 	f_{uv} & f_{vv}
+ 	\end{bmatrix}
+ \end{align}
+ %
+ where the partial derivatives of the objective function is
+ %
+ \begin{subequations}
+ 	\begin{align}
+ 	f_u(\bm{u}) &= 2 \bm{r}_u^T(\bm{u})(\bm{r}(\bm{u})-\bm{p}) \\
+ 	f_v(\bm{u}) &= 2 \bm{r}_v^T(\bm{u})(\bm{r}(\bm{u})-\bm{p}) \\
+ 	f_{uu}(\bm{u}) &= 2 \bm{r}_{uu}^T(\bm{u})(\bm{r}(\bm{u})-\bm{p}) + 2 \bm{r}_u^T(\bm{u})  \bm{r}_u(\bm{u}) \\
+ 	f_{vv}(\bm{u}) &= 2 \bm{r}_{vv}^T(\bm{u})(\bm{r}(\bm{u})-\bm{p}) + 2 \bm{r}_v^T(\bm{u})  \bm{r}_v(\bm{u}) \\
+ 	f_{uv}(\bm{u}) &= 2 \bm{r}_{uv}^T(\bm{u})(\bm{r}(\bm{u})-\bm{p}) + 2 \bm{r}_u^T(\bm{u})  \bm{r}_v(\bm{u}).
+ 	\end{align}
+ \end{subequations}
+%
+And the update relation for the curve and surface case is
+%
+\begin{align}
+	\bm{u}_{k+1} = \bm{u}_k - \left[\Delta \Delta^T(f)(\bm{u}_k)\right]^{-1} \Delta f(\bm{u}_k)
+\end{align}
+ %
+ where $\bm{u}_0 = \bm{u}_a$. 
+  
  \section{Kabsch Algorithm}
  
  Suppose we have two sets of vectors $\bm{x_n}$ and $\bm{y_n}$ where $n=1,\ldots, N$, and weight $w_n$ that corresponds to each pair $\bm{x_n}$ and $\bm{y_n}$. Our goal is to find an orthogonal matrix $\cup = (u_{ij})$ which minimizes the cost function

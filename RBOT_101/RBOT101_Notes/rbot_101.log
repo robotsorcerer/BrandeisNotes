@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  17 DEC 2020 03:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  18 DEC 2020 06:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1501,7 +1501,8 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 )
 \c@definition=\count346
 \c@example=\count347
-\c@homework=\count348
+\c@quiz=\count348
+\c@homework=\count349
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
@@ -1553,15 +1554,15 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen333
-\Hy@linkcounter=\count349
-\Hy@pagecounter=\count350
+\Hy@linkcounter=\count350
+\Hy@pagecounter=\count351
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count351
+\Hy@SavedSpaceFactor=\count352
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1585,10 +1586,10 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count352
+\c@Hy@tempcnt=\count353
 LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen334
-\Fld@menulength=\count353
+\Fld@menulength=\count354
 \Field@Width=\dimen335
 \Fld@charsize=\dimen336
 Package hyperref Info: Hyper figures OFF on input line 6369.
@@ -1600,16 +1601,16 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count354
-\c@Item=\count355
-\c@Hfootnote=\count356
+\Hy@abspage=\count355
+\c@Item=\count356
+\c@Hfootnote=\count357
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count357
-\c@bookmark@seq@number=\count358
+\Fld@listcount=\count358
+\c@bookmark@seq@number=\count359
 \Hy@SectionHShift=\skip84
 )
 \@input{def.aux}
@@ -1618,29 +1619,29 @@ File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 (./def.tex) (./rbot_101.aux)
 \openout1 = `rbot_101.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 104.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 103.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 104.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -1648,16 +1649,16 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count359
+\scratchcounter=\count360
 \scratchdimen=\dimen337
 \scratchbox=\box126
-\nofMPsegments=\count360
-\nofMParguments=\count361
+\nofMPsegments=\count361
+\nofMParguments=\count362
 \everyMPshowfont=\toks64
-\MPscratchCnt=\count362
+\MPscratchCnt=\count363
 \MPscratchDim=\dimen338
-\MPnumerator=\count363
-\makeMPintoPDFobject=\count364
+\MPnumerator=\count364
+\makeMPintoPDFobject=\count365
 \everyMPtoPDFconversion=\toks65
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1679,7 +1680,7 @@ e
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.16} (current compat level: 1.5).
 
-LaTeX Info: Redefining \microtypecontext on input line 103.
+LaTeX Info: Redefining \microtypecontext on input line 104.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1702,7 +1703,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count365
+\c@lstlisting=\count366
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/04/06 v1.3b Input encoding file
@@ -1714,8 +1715,8 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package backref Info: ** backref set up for natbib ** on input line 103.
-Package hyperref Info: Link coloring ON on input line 103.
+Package backref Info: ** backref set up for natbib ** on input line 104.
+Package hyperref Info: Link coloring ON on input line 104.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1723,11 +1724,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count366
+\c@section@level=\count367
 )
-LaTeX Info: Redefining \ref on input line 103.
-LaTeX Info: Redefining \pageref on input line 103.
-LaTeX Info: Redefining \nameref on input line 103.
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \pageref on input line 104.
+LaTeX Info: Redefining \nameref on input line 104.
 
 (./rbot_101.out) (./rbot_101.out)
 \@outlinefile=\write6
@@ -1735,9 +1736,9 @@ LaTeX Info: Redefining \nameref on input line 103.
 
 
 
-Class utdthesis Warning: Misplaced copyright page on input line 107.
+Class utdthesis Warning: Misplaced copyright page on input line 108.
 
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 107.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 108.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1807,51 +1808,130 @@ Overfull \hbox (55.52864pt too wide) in paragraph at lines 33--35
 ^^U3334. https://doi.org/10.5860/choice.44-
  []
 
-[2]) (./sections/robo_confs.tex [3] [4]
+[2]) (./sections/opt_rot.tex [3] [4]
 Chapter 2.
-<figures/StanfordArm.jpg, id=426, 1136.245pt x 666.49pt>
+[5
+
+] [6] [7] [8] [9] [10]
+<Kabsch.pdf, id=514, 614.295pt x 794.97pt>
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf>
+Package pdftex.def Info: Kabsch.pdf  used on input line 234.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf>
+Package pdftex.def Info: Kabsch.pdf  used on input line 234.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<Kabsch.pdf, id=517, page=1, 614.295pt x 794.97pt>
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 1>
+Package pdftex.def Info: Kabsch.pdf , page1 used on input line 234.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 1>
+Package pdftex.def Info: Kabsch.pdf , page1 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [11] [12]
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 1>
+Package pdftex.def Info: Kabsch.pdf , page1 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 1>
+Package pdftex.def Info: Kabsch.pdf , page1 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 1>
+Package pdftex.def Info: Kabsch.pdf , page1 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [13 <./Kabsch.pdf>]
+<Kabsch.pdf, id=564, page=2, 614.295pt x 794.97pt>
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 2>
+Package pdftex.def Info: Kabsch.pdf , page2 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 2>
+Package pdftex.def Info: Kabsch.pdf , page2 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 2>
+Package pdftex.def Info: Kabsch.pdf , page2 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [14 <./Kabsch.pdf>]
+<Kabsch.pdf, id=570, page=3, 614.295pt x 794.97pt>
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 3>
+Package pdftex.def Info: Kabsch.pdf , page3 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 3>
+Package pdftex.def Info: Kabsch.pdf , page3 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 3>
+Package pdftex.def Info: Kabsch.pdf , page3 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+[15 <./Kabsch.pdf>]
+<Kabsch.pdf, id=578, page=4, 614.295pt x 794.97pt>
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 4>
+Package pdftex.def Info: Kabsch.pdf , page4 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 4>
+Package pdftex.def Info: Kabsch.pdf , page4 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 4>
+Package pdftex.def Info: Kabsch.pdf , page4 used on input line 234.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [16 <./Kabsch.pdf>]) (./sections/robo_confs.tex [17]
+Chapter 3.
+<figures/StanfordArm.jpg, id=597, 1136.245pt x 666.49pt>
 File: figures/StanfordArm.jpg Graphic file (type jpg)
 <use figures/StanfordArm.jpg>
 Package pdftex.def Info: figures/StanfordArm.jpg  used on input line 9.
 (pdftex.def)             Requested size: 234.87355pt x 187.89732pt.
-<figures/PUMA.jpg, id=427, 1532.72626pt x 1776.6375pt>
+<figures/PUMA.jpg, id=598, 1532.72626pt x 1776.6375pt>
 File: figures/PUMA.jpg Graphic file (type jpg)
 <use figures/PUMA.jpg>
 Package pdftex.def Info: figures/PUMA.jpg  used on input line 11.
 (pdftex.def)             Requested size: 225.47878pt x 187.89435pt.
-<figures/octopus.jpg, id=430, 1284.8pt x 722.7pt>
+<figures/octopus.jpg, id=601, 1284.8pt x 722.7pt>
 File: figures/octopus.jpg Graphic file (type jpg)
 <use figures/octopus.jpg>
 Package pdftex.def Info: figures/octopus.jpg  used on input line 23.
 (pdftex.def)             Requested size: 234.86124pt x 187.89757pt.
-<figures/soft_parallel.png, id=431, 589.4522pt x 602.25pt>
+<figures/soft_parallel.png, id=602, 589.4522pt x 602.25pt>
 File: figures/soft_parallel.png Graphic file (type png)
 <use figures/soft_parallel.png>
 Package pdftex.def Info: figures/soft_parallel.png  used on input line 25.
 (pdftex.def)             Requested size: 225.47823pt x 187.8994pt.
-[5
+[18
 
- <./figures/StanfordArm.jpg> <./figures/PUMA.jpg>] [6 <./figures/octopus.jpg> <
-./figures/soft_parallel.png>] [7]
-<figures/arms_hunt.png, id=491, 712.6625pt x 230.8625pt>
+ <./figures/StanfordArm.jpg> <./figures/PUMA.jpg>] [19 <./figures/octopus.jpg> 
+<./figures/soft_parallel.png>] [20]
+<figures/arms_hunt.png, id=663, 712.6625pt x 230.8625pt>
 File: figures/arms_hunt.png Graphic file (type png)
 <use figures/arms_hunt.png>
 Package pdftex.def Info: figures/arms_hunt.png  used on input line 57.
 (pdftex.def)             Requested size: 469.75499pt x 152.17244pt.
- [8]
-<figures/Staubli.jpg, id=503, 1003.75pt x 1419.3025pt>
+ [21]
+<figures/Staubli.jpg, id=674, 1003.75pt x 1419.3025pt>
 File: figures/Staubli.jpg Graphic file (type jpg)
 <use figures/Staubli.jpg>
 Package pdftex.def Info: figures/Staubli.jpg  used on input line 71.
 (pdftex.def)             Requested size: 100.38087pt x 141.93855pt.
-<figures/Scara.png, id=505, 1136.245pt x 420.57124pt>
+<figures/Scara.png, id=676, 1136.245pt x 420.57124pt>
 File: figures/Scara.png Graphic file (type png)
 <use figures/Scara.png>
 Package pdftex.def Info: figures/Scara.png  used on input line 80.
 (pdftex.def)             Requested size: 469.75499pt x 173.87924pt.
- [9 <./figures/arms_hunt.png>] [10 <./figures/Staubli.jpg> <./figures/Scara.png
->]
-<../../../Papers/PhDThesis/figures/GoughPlatform.png, id=523, 195.73125pt x 240
+ [22 <./figures/arms_hunt.png>]
+[23 <./figures/Staubli.jpg> <./figures/Scara.png>]
+<../../../Papers/PhDThesis/figures/GoughPlatform.png, id=694, 195.73125pt x 240
 .9pt>
 File: ../../../Papers/PhDThesis/figures/GoughPlatform.png Graphic file (type pn
 g)
@@ -1859,7 +1939,7 @@ g)
 Package pdftex.def Info: ../../../Papers/PhDThesis/figures/GoughPlatform.png  u
 sed on input line 98.
 (pdftex.def)             Requested size: 234.89124pt x 187.9049pt.
-<../../../Papers/PhDThesis/figures/GoughPlatformNow.jpg, id=524, 238.491pt x 23
+<../../../Papers/PhDThesis/figures/GoughPlatformNow.jpg, id=695, 238.491pt x 23
 1.264pt>
 File: ../../../Papers/PhDThesis/figures/GoughPlatformNow.jpg Graphic file (type
  jpg)
@@ -1867,23 +1947,23 @@ File: ../../../Papers/PhDThesis/figures/GoughPlatformNow.jpg Graphic file (type
 Package pdftex.def Info: ../../../Papers/PhDThesis/figures/GoughPlatformNow.jpg
   used on input line 100.
 (pdftex.def)             Requested size: 225.48434pt x 187.90858pt.
- [11]
-<figures/kinematic_pair2.jpg, id=536, 525.965pt x 642.4pt>
+ [24]
+<figures/kinematic_pair2.jpg, id=707, 525.965pt x 642.4pt>
 File: figures/kinematic_pair2.jpg Graphic file (type jpg)
 <use figures/kinematic_pair2.jpg>
 Package pdftex.def Info: figures/kinematic_pair2.jpg  used on input line 120.
 (pdftex.def)             Requested size: 216.08844pt x 234.87103pt.
-<figures/kinematic_pair.jpg, id=537, 473.77pt x 642.4pt>
+<figures/kinematic_pair.jpg, id=708, 473.77pt x 642.4pt>
 File: figures/kinematic_pair.jpg Graphic file (type jpg)
 <use figures/kinematic_pair.jpg>
 Package pdftex.def Info: figures/kinematic_pair.jpg  used on input line 121.
 (pdftex.def)             Requested size: 216.08618pt x 234.87103pt.
-<figures/four-bar-linkage.png, id=545, 736.7525pt x 227.85126pt>
+<figures/four-bar-linkage.png, id=716, 736.7525pt x 227.85126pt>
 File: figures/four-bar-linkage.png Graphic file (type png)
 <use figures/four-bar-linkage.png>
 Package pdftex.def Info: figures/four-bar-linkage.png  used on input line 130.
 (pdftex.def)             Requested size: 469.75499pt x 145.27846pt.
- [12 <../../../Papers/PhDThesis/figures/GoughPlatform.png> <../../../Papers/PhD
+ [25 <../../../Papers/PhDThesis/figures/GoughPlatform.png> <../../../Papers/PhD
 Thesis/figures/GoughPlatformNow.jpg>]
 LaTeX Font Info:    Try loading font information for U+euf on input line 137.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueuf.fd
@@ -1892,29 +1972,29 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-euf.cfg
 File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
 
-) [13 <./figures/kinematic_pair2.jpg> <./figures/kinematic_pair.jpg> <./figures
-/four-bar-linkage.png>] [14] [15]
+) [26 <./figures/kinematic_pair2.jpg> <./figures/kinematic_pair.jpg> <./figures
+/four-bar-linkage.png>] [27] [28]
 Underfull \hbox (badness 10000) in paragraph at lines 193--197
 
  []
 
-<figures/parallel_translational.png, id=590, 953.5625pt x 607.26875pt>
+<figures/parallel_translational.png, id=761, 953.5625pt x 607.26875pt>
 File: figures/parallel_translational.png Graphic file (type png)
 <use figures/parallel_translational.png>
 Package pdftex.def Info: figures/parallel_translational.png  used on input line
  210.
 (pdftex.def)             Requested size: 234.8689pt x 187.89925pt.
-<figures/parallel_translational_workspace.png, id=591, 862.22125pt x 573.14125p
+<figures/parallel_translational_workspace.png, id=762, 862.22125pt x 573.14125p
 t>
 File: figures/parallel_translational_workspace.png Graphic file (type png)
 <use figures/parallel_translational_workspace.png>
 Package pdftex.def Info: figures/parallel_translational_workspace.png  used on 
 input line 212.
 (pdftex.def)             Requested size: 225.47472pt x 187.89534pt.
-) (./sections/rigid_motions.tex [16] [17 <./figures/parallel_translational.png>
+) (./sections/rigid_motions.tex [29] [30 <./figures/parallel_translational.png>
  <./figures/parallel_translational_workspace.png>]
-Chapter 3.
-[18
+Chapter 4.
+[31
 
 ]
 Overfull \hbox (27.30112pt too wide) in paragraph at lines 58--59
@@ -1924,17 +2004,17 @@ OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 T[]; T[]; T[]; T[]; T[]; T[]\OT1/cmr/m/n/12
 )$
  []
 
-[19] [20] [21] [22]
+[32] [33] [34] [35]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 230.
- [23]
-<figures/revolute.png, id=676, 525.965pt x 383.4325pt>
+ [36]
+<figures/revolute.png, id=846, 525.965pt x 383.4325pt>
 File: figures/revolute.png Graphic file (type png)
 <use figures/revolute.png>
 Package pdftex.def Info: figures/revolute.png  used on input line 263.
 (pdftex.def)             Requested size: 281.85585pt x 205.48247pt.
- [24 <./figures/revolute.png>] [25]
-<figures/lienotations.pdf, id=698, 722.69798pt x 542.02402pt>
+ [37 <./figures/revolute.png>] [38]
+<figures/lienotations.pdf, id=869, 722.69798pt x 542.02402pt>
 File: figures/lienotations.pdf Graphic file (type pdf)
 <use figures/lienotations.pdf>
 Package pdftex.def Info: figures/lienotations.pdf  used on input line 356.
@@ -1942,13 +2022,13 @@ Package pdftex.def Info: figures/lienotations.pdf  used on input line 356.
 
 Underfull \vbox (badness 1173) has occurred while \output is active []
 
- [26 <./figures/lienotations.pdf>]
-<figures/brockettpoe.pdf, id=738, 722.69798pt x 542.02402pt>
+ [39 <./figures/lienotations.pdf>]
+<figures/brockettpoe.pdf, id=907, 722.69798pt x 542.02402pt>
 File: figures/brockettpoe.pdf Graphic file (type pdf)
 <use figures/brockettpoe.pdf>
 Package pdftex.def Info: figures/brockettpoe.pdf  used on input line 390.
 (pdftex.def)             Requested size: 469.75499pt x 352.3197pt.
- [27] [28 <./figures/brockettpoe.pdf>]
+ [40] [41 <./figures/brockettpoe.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 434.
@@ -1961,12 +2041,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 434.
 
-<figures/trans_coords.png, id=838, 712.6625pt x 352.31625pt>
+<figures/trans_coords.png, id=1007, 712.6625pt x 352.31625pt>
 File: figures/trans_coords.png Graphic file (type png)
 <use figures/trans_coords.png>
 Package pdftex.def Info: figures/trans_coords.png  used on input line 440.
 (pdftex.def)             Requested size: 375.80542pt x 185.78593pt.
-[29] [30 <./figures/trans_coords.png>]
+[42] [43 <./figures/trans_coords.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 489.
@@ -1979,42 +2059,42 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 489.
 
-<figures/rotation_illus.png, id=853, 596.2275pt x 448.67625pt>
+<figures/rotation_illus.png, id=1021, 596.2275pt x 448.67625pt>
 File: figures/rotation_illus.png Graphic file (type png)
 <use figures/rotation_illus.png>
 Package pdftex.def Info: figures/rotation_illus.png  used on input line 495.
 (pdftex.def)             Requested size: 469.75499pt x 353.50557pt.
-[31]
+[44]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32 <./figures/rotation_illus.png>] [33]
-<figures/planar_rot.png, id=889, 639.38875pt x 370.38374pt>
+ [45 <./figures/rotation_illus.png>] [46]
+<figures/planar_rot.png, id=1056, 639.38875pt x 370.38374pt>
 File: figures/planar_rot.png Graphic file (type png)
 <use figures/planar_rot.png>
 Package pdftex.def Info: figures/planar_rot.png  used on input line 630.
 (pdftex.def)             Requested size: 352.31624pt x 204.09033pt.
- [34] [35 <./figures/planar_rot.png>]
-<figures/two_frames.png, id=909, 587.19376pt x 462.72874pt>
+ [47] [48 <./figures/planar_rot.png>]
+<figures/two_frames.png, id=1076, 587.19376pt x 462.72874pt>
 File: figures/two_frames.png Graphic file (type png)
 <use figures/two_frames.png>
 Package pdftex.def Info: figures/two_frames.png  used on input line 698.
 (pdftex.def)             Requested size: 375.80542pt x 296.14539pt.
- [36 <./figures/two_frames.png>]
-<figures/point_transform.png, id=920, 417.56pt x 250.9375pt>
+ [49 <./figures/two_frames.png>]
+<figures/point_transform.png, id=1087, 417.56pt x 250.9375pt>
 File: figures/point_transform.png Graphic file (type png)
 <use figures/point_transform.png>
 Package pdftex.def Info: figures/point_transform.png  used on input line 745.
 (pdftex.def)             Requested size: 375.80542pt x 225.85696pt.
- [37]
+ [50]
 Underfull \vbox (badness 2221) has occurred while \output is active []
 
- [38 <./figures/point_transform.png>]
-<figures/compoz.png, id=943, 871.255pt x 351.3125pt>
+ [51 <./figures/point_transform.png>]
+<figures/compoz.png, id=1111, 871.255pt x 351.3125pt>
 File: figures/compoz.png Graphic file (type png)
 <use figures/compoz.png>
 Package pdftex.def Info: figures/compoz.png  used on input line 818.
 (pdftex.def)             Requested size: 469.75499pt x 189.41644pt.
- [39]
+ [52]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 855.
@@ -2027,119 +2107,41 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 855.
 
-[40 <./figures/compoz.png>]
-<figures/zyz.png, id=965, 722.7pt x 314.17375pt>
+[53 <./figures/compoz.png>]
+<figures/zyz.png, id=1133, 722.7pt x 314.17375pt>
 File: figures/zyz.png Graphic file (type png)
 <use figures/zyz.png>
 Package pdftex.def Info: figures/zyz.png  used on input line 927.
 (pdftex.def)             Requested size: 375.80542pt x 163.37128pt.
- [41] [42 <./figures/zyz.png>] [43] [44] [45]
-[46] [47] [48]) (./sections/opt_rot.tex [49]
-Chapter 4.
-[50
-
-] [51] [52]
-<Kabsch.pdf, id=1112, 614.295pt x 794.97pt>
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf>
-Package pdftex.def Info: Kabsch.pdf  used on input line 100.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf>
-Package pdftex.def Info: Kabsch.pdf  used on input line 100.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Kabsch.pdf, id=1115, page=1, 614.295pt x 794.97pt>
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 1>
-Package pdftex.def Info: Kabsch.pdf , page1 used on input line 100.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 1>
-Package pdftex.def Info: Kabsch.pdf , page1 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [53]
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 1>
-Package pdftex.def Info: Kabsch.pdf , page1 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 1>
-Package pdftex.def Info: Kabsch.pdf , page1 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 1>
-Package pdftex.def Info: Kabsch.pdf , page1 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [54 <./Kabsch.pdf>]
-<Kabsch.pdf, id=1155, page=2, 614.295pt x 794.97pt>
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 2>
-Package pdftex.def Info: Kabsch.pdf , page2 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 2>
-Package pdftex.def Info: Kabsch.pdf , page2 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 2>
-Package pdftex.def Info: Kabsch.pdf , page2 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [55 <./Kabsch.pdf>]
-<Kabsch.pdf, id=1160, page=3, 614.295pt x 794.97pt>
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 3>
-Package pdftex.def Info: Kabsch.pdf , page3 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 3>
-Package pdftex.def Info: Kabsch.pdf , page3 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 3>
-Package pdftex.def Info: Kabsch.pdf , page3 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [56 <./Kabsch.pdf>]
-<Kabsch.pdf, id=1169, page=4, 614.295pt x 794.97pt>
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 4>
-Package pdftex.def Info: Kabsch.pdf , page4 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 4>
-Package pdftex.def Info: Kabsch.pdf , page4 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 4>
-Package pdftex.def Info: Kabsch.pdf , page4 used on input line 100.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[57 <./Kabsch.pdf>]) (./rbot_101.bbl (./rbot_101.brf)
+ [54] [55 <./figures/zyz.png>] [56] [57] [58]
+[59] [60] [61]) (./rbot_101.bbl (./rbot_101.brf)
 \tf@brf=\write10
 \openout10 = `rbot_101.brf'.
 
- [58] [59
+ [62] [63
 
-] [60])
+] [64])
 
 Package caption Warning: Unused \captionsetup[table] on input line 42.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
-[61]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+[65]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
  (./rbot_101.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
 Package rerunfilecheck Info: File `rbot_101.out' has not changed.
-(rerunfilecheck)             Checksum: B762E7AB36A229CC388C8EDC103B4FAA;3598.
+(rerunfilecheck)             Checksum: 9FEC4ACD748A784853C0551D39A21EFB;3853.
 Package rerunfilecheck Info: File `rbot_101.brf' has not changed.
-(rerunfilecheck)             Checksum: 4348F81A491C86278623226DB3AB94E9;1778.
+(rerunfilecheck)             Checksum: CF553397AAAB06F3E07C0FC691E6A970;1793.
  ) 
 Here is how much of TeX's memory you used:
- 50878 strings out of 492649
- 1156542 string characters out of 6129622
- 1393763 words of memory out of 5000000
- 53320 multiletter control sequences out of 15000+600000
- 581863 words of font info for 248 fonts, out of 8000000 for 9000
+ 50922 strings out of 492649
+ 1157076 string characters out of 6129622
+ 1393948 words of memory out of 5000000
+ 53333 multiletter control sequences out of 15000+600000
+ 582088 words of font info for 250 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  63i,20n,101p,10497b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -2168,10 +2170,10 @@ pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw
 /utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.p
 fb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/l
 ocal/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on rbot_101.pdf (66 pages, 4722631 bytes).
+Output written on rbot_101.pdf (70 pages, 4740191 bytes).
 PDF statistics:
- 1373 PDF objects out of 1440 (max. 8388607)
- 1154 compressed objects within 12 object streams
- 322 named destinations out of 1000 (max. 500000)
- 22736 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 1435 PDF objects out of 1440 (max. 8388607)
+ 1211 compressed objects within 13 object streams
+ 350 named destinations out of 1000 (max. 500000)
+ 22760 words of extra memory for PDF output out of 24883 (max. 10000000)
 
