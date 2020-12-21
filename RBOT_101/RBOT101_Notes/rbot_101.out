@@ -1,54 +1,58 @@
-\BOOKMARK [0][-]{chapter*.1}{Table of Contents}{}% 1
-\BOOKMARK [0][-]{chapter*.2}{List of Figures}{}% 2
-\BOOKMARK [0][-]{chapter*.3}{List of Tables}{}% 3
+\BOOKMARK [0][-]{chapter*.1}{Table\040of\040Contents}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{List\040of\040Figures}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{List\040of\040Tables}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Preamble}{}% 4
-\BOOKMARK [1][-]{section.1.1}{Course Description}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.2}{Course Outcomes}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.1}{Course\040Description}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Course\040Outcomes}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.3}{Prerequisites}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.4}{Recommended Texts}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.5}{Recommended Journals}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.6}{Required Software}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.7}{Online Course Content}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.8}{Assessments and Labs}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.4}{Recommended\040Texts}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.5}{Recommended\040Journals}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.6}{Required\040Software}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.7}{Online\040Course\040Content}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.8}{Assessments\040and\040Labs}{chapter.1}% 12
 \BOOKMARK [1][-]{section.1.9}{Errata}{chapter.1}% 13
-\BOOKMARK [0][-]{chapter.2}{Objects' Alignment in Robotics.}{}% 14
+\BOOKMARK [0][-]{chapter.2}{Objects'\040Alignment\040in\040Robotics.}{}% 14
 \BOOKMARK [1][-]{section.2.1}{Preliminaries}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.1.1}{Distance between a Point and a Parameterized Entity}{section.2.1}% 16
-\BOOKMARK [1][-]{section.2.2}{Kabsch Algorithm}{chapter.2}% 17
-\BOOKMARK [2][-]{subsection.2.2.1}{Examples}{section.2.2}% 18
-\BOOKMARK [1][-]{section.2.3}{Iterative Closest Point}{chapter.2}% 19
-\BOOKMARK [0][-]{chapter.3}{Rigid Body Motions: Introduction}{}% 20
-\BOOKMARK [1][-]{section.3.1}{Robots Components}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.2}{Robot Spaces, Geometries, and Classifications}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.3}{Characterization of Kinematic Geometry}{chapter.3}% 23
-\BOOKMARK [2][-]{subsection.3.3.1}{Kinematic Geometries}{section.3.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.2}{Open Kinematic Chains}{section.3.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.3}{Closed-loop Kinematic Chains}{section.3.3}% 26
-\BOOKMARK [1][-]{section.3.4}{Freedom and Structure in Mechanisms}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.4.1}{Freedom, Connectivity and Mobility}{section.3.4}% 28
-\BOOKMARK [2][-]{subsection.3.4.2}{Constraints and Freedoms}{section.3.4}% 29
-\BOOKMARK [2][-]{subsection.3.4.3}{The Mobility Criterion}{section.3.4}% 30
-\BOOKMARK [0][-]{chapter.4}{Motion of Rigid Bodies}{}% 31
-\BOOKMARK [1][-]{section.4.1}{Screws}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.1.1}{Motion screws: Twist's Pitch, Axis, and Magnitude}{section.4.1}% 33
-\BOOKMARK [2][-]{subsection.4.1.2}{Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{section.4.1}% 34
-\BOOKMARK [2][-]{subsection.4.1.3}{Screw Motions}{section.4.1}% 35
-\BOOKMARK [1][-]{section.4.2}{Rodrigues' Formula}{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.3}{The Matrix Exponential, The Lie Group and Lie Algebra}{chapter.4}% 37
-\BOOKMARK [2][-]{subsection.4.3.1}{The Lie Group Notations}{section.4.3}% 38
-\BOOKMARK [2][-]{subsection.4.3.2}{Exponential Map and Kinematic Chains}{section.4.3}% 39
-\BOOKMARK [1][-]{section.4.4}{Rigid Body Transformations}{chapter.4}% 40
-\BOOKMARK [2][-]{subsection.4.4.1}{Translation in R3}{section.4.4}% 41
-\BOOKMARK [2][-]{subsection.4.4.2}{Rotations in R3}{section.4.4}% 42
-\BOOKMARK [2][-]{subsection.4.4.3}{Rotation Matrices as Transformations}{section.4.4}% 43
-\BOOKMARK [2][-]{subsection.4.4.4}{Planar Rotations}{section.4.4}% 44
-\BOOKMARK [2][-]{subsection.4.4.5}{Composition of Rotations}{section.4.4}% 45
-\BOOKMARK [1][-]{section.4.5}{Parameterization of Rotations SO\(3\)}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.5.1}{Axis-Angle Parameterizations}{section.4.5}% 47
-\BOOKMARK [2][-]{subsection.4.5.2}{Euler Angles}{section.4.5}% 48
-\BOOKMARK [2][-]{subsection.4.5.3}{Quaternions}{section.4.5}% 49
-\BOOKMARK [1][-]{section.4.6}{Homogeneous Coordinates}{chapter.4}% 50
-\BOOKMARK [1][-]{section.4.7}{Rigid Body Velocities}{chapter.4}% 51
-\BOOKMARK [2][-]{subsection.4.7.1}{Rotational Velocities}{section.4.7}% 52
-\BOOKMARK [2][-]{subsection.4.7.2}{Rigid Body Velocity}{section.4.7}% 53
-\BOOKMARK [0][-]{chapter*.23}{References}{}% 54
+\BOOKMARK [2][-]{subsection.2.1.1}{Distance\040between\040a\040Point\040and\040a\040Parameterized\040Entity}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.2}{Distance\040between\040a\040Point\040and\040an\040Implicit\040Entity}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.3}{Quaternions}{section.2.1}% 18
+\BOOKMARK [1][-]{section.2.2}{Closed-form\040Solution\040using\040Least\040Sum\040of\040Squares\040Errors}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.1}{Kabsch\040Algorithm}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.2}{Examples}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.3}{Corresponding\040Point\040Set\040Registration\040with\040Quaternions}{section.2.2}% 22
+\BOOKMARK [1][-]{section.2.3}{Iterative\040Closest\040Point}{chapter.2}% 23
+\BOOKMARK [0][-]{chapter.3}{Rigid\040Body\040Motions:\040Introduction}{}% 24
+\BOOKMARK [1][-]{section.3.1}{Robots\040Components}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.2}{Robot\040Spaces,\040Geometries,\040and\040Classifications}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.3}{Characterization\040of\040Kinematic\040Geometry}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.1}{Kinematic\040Geometries}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.2}{Open\040Kinematic\040Chains}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.3}{Closed-loop\040Kinematic\040Chains}{section.3.3}% 30
+\BOOKMARK [1][-]{section.3.4}{Freedom\040and\040Structure\040in\040Mechanisms}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.4.1}{Freedom,\040Connectivity\040and\040Mobility}{section.3.4}% 32
+\BOOKMARK [2][-]{subsection.3.4.2}{Constraints\040and\040Freedoms}{section.3.4}% 33
+\BOOKMARK [2][-]{subsection.3.4.3}{The\040Mobility\040Criterion}{section.3.4}% 34
+\BOOKMARK [0][-]{chapter.4}{Motion\040of\040Rigid\040Bodies}{}% 35
+\BOOKMARK [1][-]{section.4.1}{Screws}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.1.1}{Motion\040screws:\040Twist's\040Pitch,\040Axis,\040and\040Magnitude}{section.4.1}% 37
+\BOOKMARK [2][-]{subsection.4.1.2}{Dynamics\040Screws:\040Twist's\040Pitch,\040Axis,\040and\040Magnitude}{section.4.1}% 38
+\BOOKMARK [2][-]{subsection.4.1.3}{Screw\040Motions}{section.4.1}% 39
+\BOOKMARK [1][-]{section.4.2}{Rodrigues'\040Formula}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.3}{The\040Matrix\040Exponential,\040The\040Lie\040Group\040and\040Lie\040Algebra}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.3.1}{The\040Lie\040Group\040Notations}{section.4.3}% 42
+\BOOKMARK [2][-]{subsection.4.3.2}{Exponential\040Map\040and\040Kinematic\040Chains}{section.4.3}% 43
+\BOOKMARK [1][-]{section.4.4}{Rigid\040Body\040Transformations}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.4.1}{Translation\040in\040R3}{section.4.4}% 45
+\BOOKMARK [2][-]{subsection.4.4.2}{Rotations\040in\040R3}{section.4.4}% 46
+\BOOKMARK [2][-]{subsection.4.4.3}{Rotation\040Matrices\040as\040Transformations}{section.4.4}% 47
+\BOOKMARK [2][-]{subsection.4.4.4}{Planar\040Rotations}{section.4.4}% 48
+\BOOKMARK [2][-]{subsection.4.4.5}{Composition\040of\040Rotations}{section.4.4}% 49
+\BOOKMARK [1][-]{section.4.5}{Parameterization\040of\040Rotations\040SO\(3\)}{chapter.4}% 50
+\BOOKMARK [2][-]{subsection.4.5.1}{Axis-Angle\040Parameterizations}{section.4.5}% 51
+\BOOKMARK [2][-]{subsection.4.5.2}{Euler\040Angles}{section.4.5}% 52
+\BOOKMARK [2][-]{subsection.4.5.3}{Quaternions}{section.4.5}% 53
+\BOOKMARK [1][-]{section.4.6}{Homogeneous\040Coordinates}{chapter.4}% 54
+\BOOKMARK [1][-]{section.4.7}{Rigid\040Body\040Velocities}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.7.1}{Rotational\040Velocities}{section.4.7}% 56
+\BOOKMARK [2][-]{subsection.4.7.2}{Rigid\040Body\040Velocity}{section.4.7}% 57
+\BOOKMARK [0][-]{chapter*.27}{References}{}% 58

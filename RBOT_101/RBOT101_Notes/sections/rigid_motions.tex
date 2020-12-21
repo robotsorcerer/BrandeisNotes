@@ -1003,6 +1003,7 @@ In the scenario that results from homework viii, there will be infinitely many s
 Using the $ZYZ$ angles are not the only way of parameterizing the rotation matrix. We could permute the order of rotation or rotate successively about different axis. Examples include $ZYX$ axes rotations (or Fick angles) and the $YZX$ axes parameterization or Helmholtz angles. In general robotics speak, note that the \textit{$ZYX$  angles are otherwise referred to as the yaw, pitch and roll angles, wherein the rotation matrix $\rot_{ij}$ is defined by rotating about the $x-$axis in the body frame (roll), then the $y-$axis in the body frame (pitch), and finally the $z-$axis in the body frame (yaw). } An advantage of the Fick angle  and Helmholtz angle parameterization is that they avoid singularity at $\rot = \identity$ though they do contain singularities at other configurations.
 
 \subsection{Quaternions}
+\label{chap:rbd_quat}
 %
 Rather than use rotation matrices to represent orientations, a more effective approach of representing orientations are \textit{quaternions}. Intead of locally parameterizing the \textit{SO(3)} Lie group, quaternions, unlike rotation matrices, globally parameterize the \textit{SO(3)} Lie Group. Formally, we represent a quaternion as follows:
 %

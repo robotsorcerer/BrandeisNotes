@@ -59,6 +59,11 @@ Hopkins, J.~B., J.~Rivera, C.~Kim, and G.~Krishnan (2015).
   constraints.
 \newblock {\em Journal of Mechanisms and Robotics\/}~{\em 7\/}(1), 011002.
 
+\bibitem[\protect\citeauthoryear{Horn}{Horn}{1987}]{horn1987closed}
+Horn, B.~K. (1987).
+\newblock Closed-form solution of absolute orientation using unit quaternions.
+\newblock {\em Josa a\/}~{\em 4\/}(4), 629--642.
+
 \bibitem[\protect\citeauthoryear{Hunt}{Hunt}{1977}]{HuntBook1977}
 Hunt, K.~H. (1977).
 \newblock {\em Kinematic Geometry of Mechanisms}.
@@ -163,5 +168,9 @@ Stewart, D. (1965).
 \newblock A platform with six degrees of freedom.
 \newblock {\em Proceedings of the institution of mechanical engineers\/}~{\em
   180\/}(1), 371--386.
+
+\bibitem[\protect\citeauthoryear{Weisstein}{Weisstein}{}]{homeomorphic}
+Weisstein, E.~W.
+\newblock Homeomorphic.
 
 \end{thebibliography}

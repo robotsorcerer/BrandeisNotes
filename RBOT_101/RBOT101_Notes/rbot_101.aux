@@ -15,8 +15,8 @@
 \fi}
 \global\let\hyper@last\relax 
 \gdef\HyperFirstAtBeginDocument#1{#1}
-\providecommand\HyField@AuxAddToFields[1]{}
-\providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/r>>}
 \providecommand \oddpage@label [2]{}
 \providecommand\tcolorbox@label[2]{}
 \citation{hopkins2015synthesis}
@@ -31,6 +31,7 @@
 \@writefile{brf}{\backcite{HuntBook1977}{{iv}{(document)}{Doc-Start}}}
 \@writefile{brf}{\backcite{SpongBook}{{iv}{(document)}{Doc-Start}}}
 \@writefile{toc}{\contentsline {chapter}{\MakeTextUppercase  {List of Tables}}{v}{chapter*.3}}
+\HyPL@Entry{5<</S/D>>}
 \@writefile{toc}{\contentsline {chapter}{\MakeTextUppercase  {Chapter}\nobreakspace  \numberline {1}\MakeTextUppercase  {Preamble}}{1}{chapter.1}}
 \newlabel{chap:intro}{{1}{1}{Preamble}{chapter.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Course Description}{1}{section.1.1}}
@@ -40,40 +41,60 @@
 \@writefile{toc}{\contentsline {section}{\numberline {1.5}Recommended Journals}{3}{section.1.5}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.6}Required Software}{3}{section.1.6}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.7}Online Course Content}{3}{section.1.7}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.8}Assessments and Labs}{3}{section.1.8}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.8}Assessments and Labs}{4}{section.1.8}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.9}Errata}{4}{section.1.9}}
 \citation{besl1992method}
 \citation{Kabsch1978}
 \@writefile{toc}{\contentsline {chapter}{\MakeTextUppercase  {Chapter}\nobreakspace  \numberline {2}\MakeTextUppercase  {Objects' Alignment in Robotics.}}{5}{chapter.2}}
-\newlabel{chap:opt_rot}{{2}{5}{Objects' Alignment in Robotics}{chapter.2}{}}
+\newlabel{chap:opt_rot::intro}{{2}{5}{Objects' Alignment in Robotics}{chapter.2}{}}
 \@writefile{brf}{\backcite{besl1992method}{{5}{2}{chapter.2}}}
+\citation{homeomorphic}
 \@writefile{brf}{\backcite{Kabsch1978}{{6}{2}{chapter.2}}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Preliminaries}{6}{section.2.1}}
-\newlabel{sec:sec:opt_rot_prelim}{{2.1}{6}{Preliminaries}{section.2.1}{}}
+\newlabel{chap:opt_rot::prelim}{{2.1}{6}{Preliminaries}{section.2.1}{}}
+\@writefile{brf}{\backcite{homeomorphic}{{6}{2}{Hfootnote.2}}}
 \newlabel{eq:line_seg}{{2.1.4}{7}{Preliminaries}{equation.2.1.4}{}}
-\newlabel{eq:triangle_dist}{{2.1.6}{7}{Preliminaries}{equation.2.1.6}{}}
+\newlabel{eq:triangle_dist}{{2.1.6}{8}{Preliminaries}{equation.2.1.6}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Distance between a Point and a Parameterized Entity}{8}{subsection.2.1.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Kabsch Algorithm}{9}{section.2.2}}
-\newlabel{eq:kabsch_unconstraint}{{2.2.1}{10}{Kabsch Algorithm}{equation.2.2.1}{}}
-\newlabel{eq:kabsch_constraint}{{2.2.2}{10}{Kabsch Algorithm}{equation.2.2.2}{}}
-\newlabel{eq:kabsch_deri1}{{2.2.4}{10}{Kabsch Algorithm}{equation.2.2.4}{}}
-\newlabel{eq:kabsch_deri2}{{2.2.5}{10}{Kabsch Algorithm}{equation.2.2.5}{}}
-\newlabel{eq:pre_rot}{{2.2.8}{11}{Kabsch Algorithm}{equation.2.2.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Examples}{12}{subsection.2.2.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Iterative Closest Point}{17}{section.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Distance between a Point and an Implicit Entity}{10}{subsection.2.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Quaternions}{11}{subsection.2.1.3}}
+\citation{horn1987closed,Kabsch1978}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Given two coordinate systems, we measure a number of points in the two different coordinate systems. The goal is to find the transformation between the two points.\relax }}{12}{figure.caption.4}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:least_squares}{{2.1}{12}{Given two coordinate systems, we measure a number of points in the two different coordinate systems. The goal is to find the transformation between the two points.\relax }{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Closed-form Solution using Least Sum of Squares Errors}{12}{section.2.2}}
+\newlabel{chap:opt_rot::least_sum}{{2.2}{12}{Closed-form Solution using Least Sum of Squares Errors}{section.2.2}{}}
+\@writefile{brf}{\backcite{horn1987closed}{{12}{2.2}{figure.caption.4}}}
+\@writefile{brf}{\backcite{Kabsch1978}{{12}{2.2}{figure.caption.4}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Kabsch Algorithm}{13}{subsection.2.2.1}}
+\newlabel{sec:opt_rot::kabsch}{{2.2.1}{13}{Kabsch Algorithm}{subsection.2.2.1}{}}
+\newlabel{eq:kabsch_unconstraint}{{2.2.1}{13}{Kabsch Algorithm}{equation.2.2.1}{}}
+\newlabel{eq:kabsch_constraint}{{2.2.2}{13}{Kabsch Algorithm}{equation.2.2.2}{}}
+\newlabel{eq:kabsch_deri1}{{2.2.4}{13}{Kabsch Algorithm}{equation.2.2.4}{}}
+\newlabel{eq:kabsch_deri2}{{2.2.5}{13}{Kabsch Algorithm}{equation.2.2.5}{}}
+\newlabel{eq:pre_rot}{{2.2.8}{14}{Kabsch Algorithm}{equation.2.2.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Examples}{15}{subsection.2.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Corresponding Point Set Registration with Quaternions}{20}{subsection.2.2.3}}
+\newlabel{chap:opt_rot::pt_set_rot}{{2.2.3}{20}{Corresponding Point Set Registration with Quaternions}{subsection.2.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Finding Translation}{21}{section*.5}}
+\newlabel{eq:error_w_trans}{{2.2.20}{22}{Finding Translation}{equation.2.2.20}{}}
+\newlabel{eq:error_no_trans}{{2.2.23}{22}{Finding Translation}{equation.2.2.23}{}}
+\newlabel{eq:resulting_error}{{2.2.24}{22}{Finding Translation}{equation.2.2.24}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Finding Scale}{23}{section*.6}}
+\@writefile{toc}{\contentsline {subsubsection}{Finding rotation}{23}{section*.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Iterative Closest Point}{24}{section.2.3}}
 \citation{Bern17ACM}
 \citation{BishopFREE2012}
 \citation{HuntBook1977}
 \citation{hopkins2015synthesis}
 \citation{hopkins2015synthesis}
-\@writefile{toc}{\contentsline {chapter}{\MakeTextUppercase  {Chapter}\nobreakspace  \numberline {3}\MakeTextUppercase  {Rigid Body Motions: Introduction}}{18}{chapter.3}}
-\newlabel{chap:back}{{3}{18}{Rigid Body Motions: Introduction}{chapter.3}{}}
-\@writefile{brf}{\backcite{Bern17ACM}{{18}{3}{chapter.3}}}
-\@writefile{brf}{\backcite{BishopFREE2012}{{18}{3}{chapter.3}}}
-\@writefile{brf}{\backcite{HuntBook1977}{{18}{3}{figure.caption.4}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Early serial kinematic chain robot manipulators. \textit  {Left:} The Stanford Arm Serial Manipulator, 1969. \copyright  Infolab, Stanford University. \textit  {Right:} The PUMA robot arm. Reprinted from Wikipedia.\relax }}{18}{figure.caption.4}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:robot_arms}{{3.1}{18}{Early serial kinematic chain robot manipulators. \textit {Left:} The Stanford Arm Serial Manipulator, 1969. \copyright Infolab, Stanford University. \textit {Right:} The PUMA robot arm. Reprinted from Wikipedia.\relax }{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\MakeTextUppercase  {Chapter}\nobreakspace  \numberline {3}\MakeTextUppercase  {Rigid Body Motions: Introduction}}{25}{chapter.3}}
+\newlabel{chap:back}{{3}{25}{Rigid Body Motions: Introduction}{chapter.3}{}}
+\@writefile{brf}{\backcite{Bern17ACM}{{25}{3}{chapter.3}}}
+\@writefile{brf}{\backcite{BishopFREE2012}{{25}{3}{chapter.3}}}
+\@writefile{brf}{\backcite{HuntBook1977}{{25}{3}{figure.caption.8}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Early serial kinematic chain robot manipulators. \textit  {Left:} The Stanford Arm Serial Manipulator, 1969. \copyright  Infolab, Stanford University. \textit  {Right:} The PUMA robot arm. Reprinted from Wikipedia.\relax }}{25}{figure.caption.8}}
+\newlabel{fig:robot_arms}{{3.1}{25}{Early serial kinematic chain robot manipulators. \textit {Left:} The Stanford Arm Serial Manipulator, 1969. \copyright Infolab, Stanford University. \textit {Right:} The PUMA robot arm. Reprinted from Wikipedia.\relax }{figure.caption.8}{}}
 \citation{Ogunmolu15CASE}
 \citation{Hannan2000}
 \citation{Ogunmolu16CASE}
@@ -86,158 +107,159 @@
 \citation{Renda2014Cosserat}
 \citation{Ogunmolu19RALII}
 \citation{OgunmoluThesis}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Soft Robot Manipulators \textit  {Left:} An octopus inspired soft robot. Robots classified under muscular hydrostats. \copyright  Cecilia Laschi. \textit  {Right:} A soft parallel robot manipulator \nobreakspace  {}\citep  {hopkins2015synthesis}.\relax }}{19}{figure.caption.5}}
-\@writefile{brf}{\backcite{hopkins2015synthesis}{{19}{3.2}{figure.caption.5}}}
-\newlabel{fig:soft_robots}{{3.2}{19}{Soft Robot Manipulators \textit {Left:} An octopus inspired soft robot. Robots classified under muscular hydrostats. \copyright Cecilia Laschi. \textit {Right:} A soft parallel robot manipulator ~\cite {hopkins2015synthesis}.\relax }{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Robots Components}{19}{section.3.1}}
-\@writefile{brf}{\backcite{Ogunmolu15CASE}{{20}{3.1}{section.3.1}}}
-\@writefile{brf}{\backcite{Hannan2000}{{20}{3.1}{section.3.1}}}
-\@writefile{brf}{\backcite{Ogunmolu16CASE}{{20}{3.1}{section.3.1}}}
-\@writefile{brf}{\backcite{Renda2018ICRA}{{20}{3.1}{section.3.1}}}
-\@writefile{brf}{\backcite{ShepherdMultigait}{{20}{3.1}{section.3.1}}}
-\@writefile{brf}{\backcite{Hannan2003}{{20}{3.1}{section.3.1}}}
-\@writefile{brf}{\backcite{Ogunmolu17IROS}{{20}{3.1}{section.3.1}}}
-\@writefile{brf}{\backcite{Laschi15NeuNet}{{20}{3.1}{section.3.1}}}
-\@writefile{brf}{\backcite{Ogunmolu19RALI}{{20}{3.1}{section.3.1}}}
-\@writefile{brf}{\backcite{Renda2014Cosserat}{{20}{3.1}{section.3.1}}}
-\@writefile{brf}{\backcite{Ogunmolu19RALII}{{20}{3.1}{section.3.1}}}
-\@writefile{brf}{\backcite{OgunmoluThesis}{{20}{3.1}{section.3.1}}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Robot Spaces, Geometries, and Classifications}{20}{section.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Soft Robot Manipulators \textit  {Left:} An octopus inspired soft robot. Robots classified under muscular hydrostats. \copyright  Cecilia Laschi. \textit  {Right:} A soft parallel robot manipulator \nobreakspace  {}\citep  {hopkins2015synthesis}.\relax }}{26}{figure.caption.9}}
+\@writefile{brf}{\backcite{hopkins2015synthesis}{{26}{3.2}{figure.caption.9}}}
+\newlabel{fig:soft_robots}{{3.2}{26}{Soft Robot Manipulators \textit {Left:} An octopus inspired soft robot. Robots classified under muscular hydrostats. \copyright Cecilia Laschi. \textit {Right:} A soft parallel robot manipulator ~\cite {hopkins2015synthesis}.\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Robots Components}{26}{section.3.1}}
+\@writefile{brf}{\backcite{Ogunmolu15CASE}{{27}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{Hannan2000}{{27}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{Ogunmolu16CASE}{{27}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{Renda2018ICRA}{{27}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{ShepherdMultigait}{{27}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{Hannan2003}{{27}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{Ogunmolu17IROS}{{27}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{Laschi15NeuNet}{{27}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{Ogunmolu19RALI}{{27}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{Renda2014Cosserat}{{27}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{Ogunmolu19RALII}{{27}{3.1}{section.3.1}}}
+\@writefile{brf}{\backcite{OgunmoluThesis}{{27}{3.1}{section.3.1}}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Robot Spaces, Geometries, and Classifications}{27}{section.3.2}}
 \citation{Hunt1983}
 \citation{Hunt1983}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Characterization of Kinematic Geometry}{21}{section.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Kinematic Geometries}{21}{subsection.3.3.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematic description of in-series-actuated robot arms: (a) rotary joint actuated ``about" the hinge (b) prismatic joint actuated ``across" a hinge. Reprinted from \citep  {Hunt1983}.\relax }}{22}{figure.caption.6}}
-\@writefile{brf}{\backcite{Hunt1983}{{22}{3.3}{figure.caption.6}}}
-\newlabel{fig:arms_schematic}{{3.3}{22}{Schematic description of in-series-actuated robot arms: (a) rotary joint actuated ``about" the hinge (b) prismatic joint actuated ``across" a hinge. Reprinted from \cite {Hunt1983}.\relax }{figure.caption.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Open Kinematic Chains}{22}{subsection.3.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces The Staubli 6-DOF Arm is an example of a Spherical Manipulator. Reprinted from DirectIndustry's Webpage.\relax }}{23}{figure.caption.7}}
-\newlabel{fig:staubli}{{3.4}{23}{The Staubli 6-DOF Arm is an example of a Spherical Manipulator. Reprinted from DirectIndustry's Webpage.\relax }{figure.caption.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces The SCARA Arm. \copyright  Fanuc America.\relax }}{23}{figure.caption.8}}
-\newlabel{fig:scara_bot}{{3.5}{23}{The SCARA Arm. \copyright Fanuc America.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Characterization of Kinematic Geometry}{28}{section.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Kinematic Geometries}{28}{subsection.3.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematic description of in-series-actuated robot arms: (a) rotary joint actuated ``about" the hinge (b) prismatic joint actuated ``across" a hinge. Reprinted from \citep  {Hunt1983}.\relax }}{29}{figure.caption.10}}
+\@writefile{brf}{\backcite{Hunt1983}{{29}{3.3}{figure.caption.10}}}
+\newlabel{fig:arms_schematic}{{3.3}{29}{Schematic description of in-series-actuated robot arms: (a) rotary joint actuated ``about" the hinge (b) prismatic joint actuated ``across" a hinge. Reprinted from \cite {Hunt1983}.\relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Open Kinematic Chains}{29}{subsection.3.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces The Staubli 6-DOF Arm is an example of a Spherical Manipulator. Reprinted from DirectIndustry's Webpage.\relax }}{30}{figure.caption.11}}
+\newlabel{fig:staubli}{{3.4}{30}{The Staubli 6-DOF Arm is an example of a Spherical Manipulator. Reprinted from DirectIndustry's Webpage.\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces The SCARA Arm. \copyright  Fanuc America.\relax }}{30}{figure.caption.12}}
+\newlabel{fig:scara_bot}{{3.5}{30}{The SCARA Arm. \copyright Fanuc America.\relax }{figure.caption.12}{}}
 \citation{Merlet2015}
 \citation{Stewart1965}
 \citation{Gough1957}
 \citation{Merlet2015}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Closed-loop Kinematic Chains}{24}{subsection.3.3.3}}
-\@writefile{brf}{\backcite{Merlet2015}{{24}{3.3.3}{subsection.3.3.3}}}
-\@writefile{brf}{\backcite{Stewart1965}{{24}{3.3.3}{subsection.3.3.3}}}
-\@writefile{brf}{\backcite{Gough1957}{{24}{3.3.3}{subsection.3.3.3}}}
-\@writefile{brf}{\backcite{Merlet2015}{{24}{3.3.3}{figure.caption.9}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Closed-loop Kinematic Chains}{31}{subsection.3.3.3}}
+\@writefile{brf}{\backcite{Merlet2015}{{31}{3.3.3}{subsection.3.3.3}}}
+\@writefile{brf}{\backcite{Stewart1965}{{31}{3.3.3}{subsection.3.3.3}}}
+\@writefile{brf}{\backcite{Gough1957}{{31}{3.3.3}{subsection.3.3.3}}}
 \citation{HuntBook1977}
 \citation{HuntBook1977}
 \citation{MurrayBook}
 \citation{HuntBook1977}
 \citation{HuntBook1977}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Stewart-Gough Platforms \textit  {Left:} The 1954 Octahedral hexapod of the original Gough platform. \textit  {Right:} The retired platform from Dunlop tires in 2000. Picture courtesy of Parallemic.org.\relax }}{25}{figure.caption.9}}
-\newlabel{fig:stewart_gough}{{3.6}{25}{Stewart-Gough Platforms \textit {Left:} The 1954 Octahedral hexapod of the original Gough platform. \textit {Right:} The retired platform from Dunlop tires in 2000. Picture courtesy of Parallemic.org.\relax }{figure.caption.9}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Freedom and Structure in Mechanisms}{25}{section.3.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Freedom, Connectivity and Mobility}{25}{subsection.3.4.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces The Lower Kinematic Pairs. Reprinted from \citep  {HuntBook1977}.\relax }}{26}{figure.caption.10}}
-\@writefile{brf}{\backcite{HuntBook1977}{{26}{3.7}{figure.caption.10}}}
-\newlabel{fig:kinematic pair}{{3.7}{26}{The Lower Kinematic Pairs. Reprinted from \cite {HuntBook1977}.\relax }{figure.caption.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces The planar $RRR$ linkage, (\textit  {left}) is modified in (\textit  {right}) to allow spatial spin-movement of the coupler 3; the connectivity $\mathscr  {C}_{13}=2$). Reprinted from \nobreakspace  {}\citep  {HuntBook1977}.\relax }}{26}{figure.caption.11}}
-\@writefile{brf}{\backcite{HuntBook1977}{{26}{3.8}{figure.caption.11}}}
-\newlabel{fig:four_bar}{{3.8}{26}{The planar $RRR$ linkage, (\textit {left}) is modified in (\textit {right}) to allow spatial spin-movement of the coupler 3; the connectivity $\mathscr {C}_{13}=2$). Reprinted from ~\cite {HuntBook1977}.\relax }{figure.caption.11}{}}
-\@writefile{brf}{\backcite{MurrayBook}{{26}{3.4.1}{figure.caption.10}}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Constraints and Freedoms}{27}{subsection.3.4.2}}
-\newlabel{eq:unfreedom}{{3.4.1}{28}{Constraints and Freedoms}{equation.3.4.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}The Mobility Criterion}{28}{subsection.3.4.3}}
-\newlabel{eq:mob_bodies}{{3.4.2}{28}{The Mobility Criterion}{equation.3.4.2}{}}
-\newlabel{eq:mob_cond_gen}{{3.4.4}{28}{The Mobility Criterion}{equation.3.4.4}{}}
-\newlabel{eq:mob_loop}{{3.4.5}{28}{The Mobility Criterion}{equation.3.4.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Stewart-Gough Platforms \textit  {Left:} The 1954 Octahedral hexapod of the original Gough platform. \textit  {Right:} The retired platform from Dunlop tires in 2000. Picture courtesy of Parallemic.org.\relax }}{32}{figure.caption.13}}
+\newlabel{fig:stewart_gough}{{3.6}{32}{Stewart-Gough Platforms \textit {Left:} The 1954 Octahedral hexapod of the original Gough platform. \textit {Right:} The retired platform from Dunlop tires in 2000. Picture courtesy of Parallemic.org.\relax }{figure.caption.13}{}}
+\@writefile{brf}{\backcite{Merlet2015}{{32}{3.3.3}{figure.caption.13}}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Freedom and Structure in Mechanisms}{32}{section.3.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Freedom, Connectivity and Mobility}{32}{subsection.3.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces The Lower Kinematic Pairs. Reprinted from \citep  {HuntBook1977}.\relax }}{33}{figure.caption.14}}
+\@writefile{brf}{\backcite{HuntBook1977}{{33}{3.7}{figure.caption.14}}}
+\newlabel{fig:kinematic pair}{{3.7}{33}{The Lower Kinematic Pairs. Reprinted from \cite {HuntBook1977}.\relax }{figure.caption.14}{}}
+\@writefile{brf}{\backcite{MurrayBook}{{33}{3.4.1}{figure.caption.14}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces The planar $RRR$ linkage, (\textit  {left}) is modified in (\textit  {right}) to allow spatial spin-movement of the coupler 3; the connectivity $\mathscr  {C}_{13}=2$). Reprinted from \nobreakspace  {}\citep  {HuntBook1977}.\relax }}{34}{figure.caption.15}}
+\@writefile{brf}{\backcite{HuntBook1977}{{34}{3.8}{figure.caption.15}}}
+\newlabel{fig:four_bar}{{3.8}{34}{The planar $RRR$ linkage, (\textit {left}) is modified in (\textit {right}) to allow spatial spin-movement of the coupler 3; the connectivity $\mathscr {C}_{13}=2$). Reprinted from ~\cite {HuntBook1977}.\relax }{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Constraints and Freedoms}{34}{subsection.3.4.2}}
+\newlabel{eq:unfreedom}{{3.4.1}{35}{Constraints and Freedoms}{equation.3.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}The Mobility Criterion}{35}{subsection.3.4.3}}
+\newlabel{eq:mob_bodies}{{3.4.2}{35}{The Mobility Criterion}{equation.3.4.2}{}}
+\newlabel{eq:mob_cond_gen}{{3.4.4}{35}{The Mobility Criterion}{equation.3.4.4}{}}
+\newlabel{eq:mob_loop}{{3.4.5}{35}{The Mobility Criterion}{equation.3.4.5}{}}
 \citation{SpongBook}
-\newlabel{eq:mob_cond_planar}{{3.4.6}{29}{The Mobility Criterion}{equation.3.4.6}{}}
-\@writefile{brf}{\backcite{SpongBook}{{29}{4}{homework.4}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces \textit  {Left}: A Parallel Planar Robot Mechanism. \textit  {Right:} Workspace of the mechanism.\relax }}{30}{figure.caption.12}}
-\newlabel{fig:para_mech}{{3.9}{30}{\textit {Left}: A Parallel Planar Robot Mechanism. \textit {Right:} Workspace of the mechanism.\relax }{figure.caption.12}{}}
-\@writefile{toc}{\contentsline {chapter}{\MakeTextUppercase  {Chapter}\nobreakspace  \numberline {4}\MakeTextUppercase  {Motion of Rigid Bodies}}{31}{chapter.4}}
-\newlabel{chap:rbm}{{4}{31}{Motion of Rigid Bodies}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Screws}{31}{section.4.1}}
-\newlabel{eq:plucker_line}{{4.1.1a}{31}{Screws}{equation.4.1.1a}{}}
-\newlabel{eq:plucker_mom}{{4.1.1b}{31}{Screws}{equation.4.1.1b}{}}
+\newlabel{eq:mob_cond_planar}{{3.4.6}{36}{The Mobility Criterion}{equation.3.4.6}{}}
+\@writefile{brf}{\backcite{SpongBook}{{36}{4}{homework.4}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces \textit  {Left}: A Parallel Planar Robot Mechanism. \textit  {Right:} Workspace of the mechanism.\relax }}{37}{figure.caption.16}}
+\newlabel{fig:para_mech}{{3.9}{37}{\textit {Left}: A Parallel Planar Robot Mechanism. \textit {Right:} Workspace of the mechanism.\relax }{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {chapter}{\MakeTextUppercase  {Chapter}\nobreakspace  \numberline {4}\MakeTextUppercase  {Motion of Rigid Bodies}}{38}{chapter.4}}
+\newlabel{chap:rbm}{{4}{38}{Motion of Rigid Bodies}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Screws}{38}{section.4.1}}
+\newlabel{eq:plucker_line}{{4.1.1a}{38}{Screws}{equation.4.1.1a}{}}
+\newlabel{eq:plucker_mom}{{4.1.1b}{38}{Screws}{equation.4.1.1b}{}}
 \citation{Ball}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Motion screws: Twist's Pitch, Axis, and Magnitude}{32}{subsection.4.1.1}}
-\@writefile{brf}{\backcite{Ball}{{32}{4.1.1}{subsection.4.1.1}}}
-\newlabel{eq:twist_pitch}{{4.1.6}{33}{Pitch of a Twist}{equation.4.1.6}{}}
-\newlabel{eq:twist_mag}{{4.1.7}{33}{Magnitude of a Twist}{equation.4.1.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{34}{subsection.4.1.2}}
-\newlabel{eq:wrench_pitch}{{4.1.9}{34}{Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{equation.4.1.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Screw Motions}{35}{subsection.4.1.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Rodrigues' Formula}{35}{section.4.2}}
-\newlabel{eq:rodrigues}{{4.2.6}{35}{}{equation.4.2.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}The Matrix Exponential, The Lie Group and Lie Algebra}{36}{section.4.3}}
-\newlabel{eq:eulers_theorem}{{4.3.3}{36}{The Matrix Exponential, The Lie Group and Lie Algebra}{equation.4.3.3}{}}
-\newlabel{eq:special_euclid3}{{4.3.4}{36}{The Matrix Exponential, The Lie Group and Lie Algebra}{equation.4.3.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of rotation of interconnecting link of two spherical links.\relax }}{37}{figure.caption.13}}
-\newlabel{fig:revolute_point}{{4.1}{37}{Illustration of rotation of interconnecting link of two spherical links.\relax }{figure.caption.13}{}}
-\newlabel{eq:twist_defo}{{4.3.6}{37}{The Matrix Exponential, The Lie Group and Lie Algebra}{equation.4.3.6}{}}
-\newlabel{eq:matrix_exponential}{{4.3.9}{38}{The Matrix Exponential, The Lie Group and Lie Algebra}{equation.4.3.9}{}}
-\newlabel{def:exp_map}{{4}{38}{Exponential Map Properties}{definition.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}The Lie Group Notations}{39}{subsection.4.3.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Lie Group and their Notations. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }}{39}{figure.caption.14}}
-\newlabel{fig:lienotations}{{4.2}{39}{Lie Group and their Notations. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Motion screws: Twist's Pitch, Axis, and Magnitude}{39}{subsection.4.1.1}}
+\@writefile{brf}{\backcite{Ball}{{39}{4.1.1}{subsection.4.1.1}}}
+\newlabel{eq:twist_pitch}{{4.1.6}{40}{Pitch of a Twist}{equation.4.1.6}{}}
+\newlabel{eq:twist_mag}{{4.1.7}{40}{Magnitude of a Twist}{equation.4.1.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{41}{subsection.4.1.2}}
+\newlabel{eq:wrench_pitch}{{4.1.9}{41}{Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{equation.4.1.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Screw Motions}{42}{subsection.4.1.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Rodrigues' Formula}{42}{section.4.2}}
+\newlabel{eq:rodrigues}{{4.2.6}{42}{}{equation.4.2.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}The Matrix Exponential, The Lie Group and Lie Algebra}{43}{section.4.3}}
+\newlabel{eq:eulers_theorem}{{4.3.3}{43}{The Matrix Exponential, The Lie Group and Lie Algebra}{equation.4.3.3}{}}
+\newlabel{eq:special_euclid3}{{4.3.4}{43}{The Matrix Exponential, The Lie Group and Lie Algebra}{equation.4.3.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of rotation of interconnecting link of two spherical links.\relax }}{44}{figure.caption.17}}
+\newlabel{fig:revolute_point}{{4.1}{44}{Illustration of rotation of interconnecting link of two spherical links.\relax }{figure.caption.17}{}}
+\newlabel{eq:twist_defo}{{4.3.6}{44}{The Matrix Exponential, The Lie Group and Lie Algebra}{equation.4.3.6}{}}
+\newlabel{eq:matrix_exponential}{{4.3.9}{45}{The Matrix Exponential, The Lie Group and Lie Algebra}{equation.4.3.9}{}}
+\newlabel{def:exp_map}{{4}{45}{Exponential Map Properties}{definition.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}The Lie Group Notations}{46}{subsection.4.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Lie Group and their Notations. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }}{46}{figure.caption.18}}
+\newlabel{fig:lienotations}{{4.2}{46}{Lie Group and their Notations. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }{figure.caption.18}{}}
 \citation{MurrayBook}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Exponential Map and Kinematic Chains}{40}{subsection.4.3.2}}
-\newlabel{subsec:matexp}{{4.3.2}{40}{Exponential Map and Kinematic Chains}{subsection.4.3.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Rigid Body Transformations}{40}{section.4.4}}
-\@writefile{brf}{\backcite{MurrayBook}{{40}{4.4}{section.4.4}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces An illustration of the exponential map for a multi-body rigid system. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }}{41}{figure.caption.15}}
-\newlabel{fig:brockettpoe}{{4.3}{41}{An illustration of the exponential map for a multi-body rigid system. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }{figure.caption.15}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Translation in $\mathbb  {R}^3$}{42}{subsection.4.4.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces A point $q$ in space with respect to two coordinate frames.\relax }}{43}{figure.caption.16}}
-\newlabel{fig:2_coords}{{4.4}{43}{A point $q$ in space with respect to two coordinate frames.\relax }{figure.caption.16}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Rotations in $\mathbb  {R}^3$}{44}{subsection.4.4.2}}
-\newlabel{eq:rotation_compoz}{{4.4.6}{44}{Rotations in $\bb {R}^3$}{equation.4.4.6}{}}
-\newlabel{eq:direction_cosines}{{4.4.7}{44}{Rotations in $\bb {R}^3$}{equation.4.4.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces An illustration of the relative orientation of a rigid object $q$ between an inertial frame $I$ and a body frame $J$.\relax }}{45}{figure.caption.17}}
-\newlabel{fig:rotation_illus}{{4.5}{45}{An illustration of the relative orientation of a rigid object $q$ between an inertial frame $I$ and a body frame $J$.\relax }{figure.caption.17}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Rotation Matrices as Transformations}{46}{subsection.4.4.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Planar Rotations}{47}{subsection.4.4.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Illustration of rotation between two frames in a plane.\relax }}{48}{figure.caption.18}}
-\newlabel{fig:planar_rot}{{4.6}{48}{Illustration of rotation between two frames in a plane.\relax }{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Relative orientation between two frames.\relax }}{49}{figure.caption.19}}
-\newlabel{fig:two_frames}{{4.7}{49}{Relative orientation between two frames.\relax }{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Exponential Map and Kinematic Chains}{47}{subsection.4.3.2}}
+\newlabel{subsec:matexp}{{4.3.2}{47}{Exponential Map and Kinematic Chains}{subsection.4.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Rigid Body Transformations}{47}{section.4.4}}
+\@writefile{brf}{\backcite{MurrayBook}{{47}{4.4}{section.4.4}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces An illustration of the exponential map for a multi-body rigid system. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }}{48}{figure.caption.19}}
+\newlabel{fig:brockettpoe}{{4.3}{48}{An illustration of the exponential map for a multi-body rigid system. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Translation in $\mathbb  {R}^3$}{49}{subsection.4.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces A point $q$ in space with respect to two coordinate frames.\relax }}{50}{figure.caption.20}}
+\newlabel{fig:2_coords}{{4.4}{50}{A point $q$ in space with respect to two coordinate frames.\relax }{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Rotations in $\mathbb  {R}^3$}{51}{subsection.4.4.2}}
+\newlabel{eq:rotation_compoz}{{4.4.6}{51}{Rotations in $\bb {R}^3$}{equation.4.4.6}{}}
+\newlabel{eq:direction_cosines}{{4.4.7}{51}{Rotations in $\bb {R}^3$}{equation.4.4.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces An illustration of the relative orientation of a rigid object $q$ between an inertial frame $I$ and a body frame $J$.\relax }}{52}{figure.caption.21}}
+\newlabel{fig:rotation_illus}{{4.5}{52}{An illustration of the relative orientation of a rigid object $q$ between an inertial frame $I$ and a body frame $J$.\relax }{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Rotation Matrices as Transformations}{53}{subsection.4.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Planar Rotations}{54}{subsection.4.4.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Illustration of rotation between two frames in a plane.\relax }}{55}{figure.caption.22}}
+\newlabel{fig:planar_rot}{{4.6}{55}{Illustration of rotation between two frames in a plane.\relax }{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Relative orientation between two frames.\relax }}{56}{figure.caption.23}}
+\newlabel{fig:two_frames}{{4.7}{56}{Relative orientation between two frames.\relax }{figure.caption.23}{}}
 \citation{SpongBook}
 \citation{SpongBook}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.5}Composition of Rotations}{50}{subsection.4.4.5}}
-\newlabel{eq:current_frame_rotation}{{4.4.22}{50}{Composition of Rotations}{equation.4.4.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Coordinate frames on a body. Reprinted from \citep  {SpongBook}\relax }}{51}{figure.caption.20}}
-\@writefile{brf}{\backcite{SpongBook}{{51}{4.8}{figure.caption.20}}}
-\newlabel{fig:point_transform}{{4.8}{51}{Coordinate frames on a body. Reprinted from \cite {SpongBook}\relax }{figure.caption.20}{}}
-\newlabel{eq:point_transform1}{{4.4.23}{51}{Composition of Rotations}{equation.4.4.23}{}}
-\newlabel{eq:point_transform2}{{4.4.24}{51}{Composition of Rotations}{equation.4.4.24}{}}
-\newlabel{eq:point_transform3}{{4.4.25}{52}{Composition of Rotations}{equation.4.4.25}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Illustration of composition of rotations about a \textbf  {current axis}.\relax }}{53}{figure.caption.21}}
-\newlabel{fig:compoz}{{4.9}{53}{Illustration of composition of rotations about a \textbf {current axis}.\relax }{figure.caption.21}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Parameterization of Rotations $\in SO(3)$}{53}{section.4.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Axis-Angle Parameterizations}{53}{subsection.4.5.1}}
-\newlabel{eq:axis_angle}{{4.5.3}{54}{Axis-Angle Parameterizations}{equation.4.5.3}{}}
-\newlabel{eq:angle_part}{{4.5.5}{54}{Axis-Angle Parameterizations}{equation.4.5.5}{}}
-\newlabel{eq:axis_part}{{4.5.6}{54}{}{equation.4.5.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Euler Angles}{54}{subsection.4.5.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces An illustration of the ZYZ rotation angles\relax }}{55}{figure.caption.22}}
-\newlabel{fig:zyz}{{4.10}{55}{An illustration of the ZYZ rotation angles\relax }{figure.caption.22}{}}
-\newlabel{eq:zyz}{{4.5.8}{55}{Euler Angles}{equation.4.5.8}{}}
-\newlabel{eq:euler_a}{{4.5.9a}{56}{Euler Angles}{equation.4.5.9a}{}}
-\newlabel{eq:euler_b}{{4.5.9b}{56}{Euler Angles}{equation.4.5.9b}{}}
-\newlabel{eq:euler}{{4.5.9}{56}{Euler Angles}{equation.4.5.9c}{}}
-\newlabel{eq:euler_neg_a}{{4.5.10a}{56}{Euler Angles}{equation.4.5.10a}{}}
-\newlabel{eq:euler_neg_b}{{4.5.10b}{56}{Euler Angles}{equation.4.5.10b}{}}
-\newlabel{eq:euler_neg}{{4.5.10}{56}{Euler Angles}{equation.4.5.10c}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Quaternions}{57}{subsection.4.5.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Homogeneous Coordinates}{57}{section.4.6}}
-\newlabel{eq:transform_compoz}{{4.6.7}{59}{Homogeneous Coordinates}{equation.4.6.7}{}}
-\newlabel{eq:compact_transform}{{4.6.8}{59}{Homogeneous Coordinates}{equation.4.6.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.7}Rigid Body Velocities}{59}{section.4.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.7.1}Rotational Velocities}{59}{subsection.4.7.1}}
-\newlabel{eq:body_spatial}{{4.7.1}{59}{Rotational Velocities}{equation.4.7.1}{}}
-\newlabel{eq:angular_vel}{{4.7.3}{60}{Rotational Velocities}{equation.4.7.3}{}}
-\newlabel{eq:angular_vel_compact}{{4.7.7}{60}{Rotational Velocities}{equation.4.7.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.7.2}Rigid Body Velocity}{61}{subsection.4.7.2}}
-\newlabel{eq:twist_spatial}{{4.7.9}{61}{Rigid Body Velocity}{equation.4.7.9}{}}
-\newlabel{eq:twist_body}{{4.7.11}{61}{Rigid Body Velocity}{equation.4.7.11}{}}
-\newlabel{eq:twist_equiv}{{4.7.13}{61}{Rigid Body Velocity}{equation.4.7.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.5}Composition of Rotations}{57}{subsection.4.4.5}}
+\newlabel{eq:current_frame_rotation}{{4.4.22}{57}{Composition of Rotations}{equation.4.4.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Coordinate frames on a body. Reprinted from \citep  {SpongBook}\relax }}{58}{figure.caption.24}}
+\@writefile{brf}{\backcite{SpongBook}{{58}{4.8}{figure.caption.24}}}
+\newlabel{fig:point_transform}{{4.8}{58}{Coordinate frames on a body. Reprinted from \cite {SpongBook}\relax }{figure.caption.24}{}}
+\newlabel{eq:point_transform1}{{4.4.23}{58}{Composition of Rotations}{equation.4.4.23}{}}
+\newlabel{eq:point_transform2}{{4.4.24}{58}{Composition of Rotations}{equation.4.4.24}{}}
+\newlabel{eq:point_transform3}{{4.4.25}{59}{Composition of Rotations}{equation.4.4.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Illustration of composition of rotations about a \textbf  {current axis}.\relax }}{60}{figure.caption.25}}
+\newlabel{fig:compoz}{{4.9}{60}{Illustration of composition of rotations about a \textbf {current axis}.\relax }{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Parameterization of Rotations $\in SO(3)$}{60}{section.4.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Axis-Angle Parameterizations}{60}{subsection.4.5.1}}
+\newlabel{eq:axis_angle}{{4.5.3}{61}{Axis-Angle Parameterizations}{equation.4.5.3}{}}
+\newlabel{eq:angle_part}{{4.5.5}{61}{Axis-Angle Parameterizations}{equation.4.5.5}{}}
+\newlabel{eq:axis_part}{{4.5.6}{61}{}{equation.4.5.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Euler Angles}{61}{subsection.4.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces An illustration of the ZYZ rotation angles\relax }}{62}{figure.caption.26}}
+\newlabel{fig:zyz}{{4.10}{62}{An illustration of the ZYZ rotation angles\relax }{figure.caption.26}{}}
+\newlabel{eq:zyz}{{4.5.8}{62}{Euler Angles}{equation.4.5.8}{}}
+\newlabel{eq:euler_a}{{4.5.9a}{63}{Euler Angles}{equation.4.5.9a}{}}
+\newlabel{eq:euler_b}{{4.5.9b}{63}{Euler Angles}{equation.4.5.9b}{}}
+\newlabel{eq:euler}{{4.5.9}{63}{Euler Angles}{equation.4.5.9c}{}}
+\newlabel{eq:euler_neg_a}{{4.5.10a}{63}{Euler Angles}{equation.4.5.10a}{}}
+\newlabel{eq:euler_neg_b}{{4.5.10b}{63}{Euler Angles}{equation.4.5.10b}{}}
+\newlabel{eq:euler_neg}{{4.5.10}{63}{Euler Angles}{equation.4.5.10c}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Quaternions}{64}{subsection.4.5.3}}
+\newlabel{chap:rbd_quat}{{4.5.3}{64}{Quaternions}{subsection.4.5.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Homogeneous Coordinates}{64}{section.4.6}}
+\newlabel{eq:transform_compoz}{{4.6.7}{66}{Homogeneous Coordinates}{equation.4.6.7}{}}
+\newlabel{eq:compact_transform}{{4.6.8}{66}{Homogeneous Coordinates}{equation.4.6.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Rigid Body Velocities}{66}{section.4.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7.1}Rotational Velocities}{66}{subsection.4.7.1}}
+\newlabel{eq:body_spatial}{{4.7.1}{66}{Rotational Velocities}{equation.4.7.1}{}}
+\newlabel{eq:angular_vel}{{4.7.3}{67}{Rotational Velocities}{equation.4.7.3}{}}
+\newlabel{eq:angular_vel_compact}{{4.7.7}{67}{Rotational Velocities}{equation.4.7.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7.2}Rigid Body Velocity}{68}{subsection.4.7.2}}
+\newlabel{eq:twist_spatial}{{4.7.9}{68}{Rigid Body Velocity}{equation.4.7.9}{}}
+\newlabel{eq:twist_body}{{4.7.11}{68}{Rigid Body Velocity}{equation.4.7.11}{}}
+\newlabel{eq:twist_equiv}{{4.7.13}{68}{Rigid Body Velocity}{equation.4.7.13}{}}
 \bibstyle{wafr.bst}
 \bibdata{biblio,../../../Papers/SRS/Continuum/biblio,../../../Papers/iDG/IROS2018/root}
 \bibcite{Ball}{{1}{1908}{{Ball}}{{Ball}}}
@@ -249,20 +271,22 @@
 \bibcite{Hannan2000}{{7}{2000}{{Hannan and Walker}}{{Hannan and Walker}}}
 \bibcite{Hannan2003}{{8}{2003}{{Hannan and Walker}}{{Hannan and Walker}}}
 \bibcite{hopkins2015synthesis}{{9}{2015}{{Hopkins et~al.}}{{Hopkins, Rivera, Kim, and Krishnan}}}
-\bibcite{HuntBook1977}{{10}{1977}{{Hunt}}{{Hunt}}}
-\bibcite{Hunt1983}{{11}{1983}{{Hunt}}{{Hunt}}}
-\@writefile{toc}{\contentsline {chapter}{\MakeTextUppercase  {References}}{63}{chapter*.23}}
-\bibcite{Kabsch1978}{{12}{1978}{{Kabsch}}{{Kabsch}}}
-\bibcite{Merlet2015}{{13}{2015}{{Merlet}}{{Merlet}}}
-\bibcite{MurrayBook}{{14}{1994}{{Murray}}{{Murray}}}
-\bibcite{Ogunmolu19RALII}{{15}{2019a}{{Ogunmolu}}{{Ogunmolu}}}
-\bibcite{Ogunmolu17IROS}{{16}{2017}{{Ogunmolu et~al.}}{{Ogunmolu, Kulkarni, Tadesse, Gu, Jiang, and Gans}}}
-\bibcite{Ogunmolu19RALI}{{17}{2020}{{Ogunmolu et~al.}}{{Ogunmolu, Liu, Gans, and Wiersma}}}
-\bibcite{OgunmoluThesis}{{18}{2019b}{{Ogunmolu}}{{Ogunmolu}}}
-\bibcite{Ogunmolu15CASE}{{19}{2015}{{Ogunmolu et~al.}}{{Ogunmolu, Gu, Jiang, and Gans}}}
-\bibcite{Ogunmolu16CASE}{{20}{2016}{{Ogunmolu et~al.}}{{Ogunmolu, Gu, Jiang, and Gans}}}
-\bibcite{Renda2014Cosserat}{{21}{2014}{{Renda et~al.}}{{Renda, Giorelli, Calisti, Cianchetti, and Laschi}}}
-\bibcite{Renda2018ICRA}{{22}{2018}{{Renda and Seneviratne}}{{Renda and Seneviratne}}}
-\bibcite{ShepherdMultigait}{{23}{2011}{{Shepherd et~al.}}{{Shepherd, Ilievski, Choi, Morin, Stokes, Mazzeo, Chen, Wang, and Whitesides}}}
-\bibcite{SpongBook}{{24}{2006}{{Spong et~al.}}{{Spong, Hutchinson, and Vidyasagar}}}
-\bibcite{Stewart1965}{{25}{1965}{{Stewart}}{{Stewart}}}
+\@writefile{toc}{\contentsline {chapter}{\MakeTextUppercase  {References}}{70}{chapter*.27}}
+\bibcite{horn1987closed}{{10}{1987}{{Horn}}{{Horn}}}
+\bibcite{HuntBook1977}{{11}{1977}{{Hunt}}{{Hunt}}}
+\bibcite{Hunt1983}{{12}{1983}{{Hunt}}{{Hunt}}}
+\bibcite{Kabsch1978}{{13}{1978}{{Kabsch}}{{Kabsch}}}
+\bibcite{Merlet2015}{{14}{2015}{{Merlet}}{{Merlet}}}
+\bibcite{MurrayBook}{{15}{1994}{{Murray}}{{Murray}}}
+\bibcite{Ogunmolu19RALII}{{16}{2019a}{{Ogunmolu}}{{Ogunmolu}}}
+\bibcite{Ogunmolu17IROS}{{17}{2017}{{Ogunmolu et~al.}}{{Ogunmolu, Kulkarni, Tadesse, Gu, Jiang, and Gans}}}
+\bibcite{Ogunmolu19RALI}{{18}{2020}{{Ogunmolu et~al.}}{{Ogunmolu, Liu, Gans, and Wiersma}}}
+\bibcite{OgunmoluThesis}{{19}{2019b}{{Ogunmolu}}{{Ogunmolu}}}
+\bibcite{Ogunmolu15CASE}{{20}{2015}{{Ogunmolu et~al.}}{{Ogunmolu, Gu, Jiang, and Gans}}}
+\bibcite{Ogunmolu16CASE}{{21}{2016}{{Ogunmolu et~al.}}{{Ogunmolu, Gu, Jiang, and Gans}}}
+\bibcite{Renda2014Cosserat}{{22}{2014}{{Renda et~al.}}{{Renda, Giorelli, Calisti, Cianchetti, and Laschi}}}
+\bibcite{Renda2018ICRA}{{23}{2018}{{Renda and Seneviratne}}{{Renda and Seneviratne}}}
+\bibcite{ShepherdMultigait}{{24}{2011}{{Shepherd et~al.}}{{Shepherd, Ilievski, Choi, Morin, Stokes, Mazzeo, Chen, Wang, and Whitesides}}}
+\bibcite{SpongBook}{{25}{2006}{{Spong et~al.}}{{Spong, Hutchinson, and Vidyasagar}}}
+\bibcite{Stewart1965}{{26}{1965}{{Stewart}}{{Stewart}}}
+\bibcite{homeomorphic}{{27}{Weisstein}{{Weisstein}}{{}}}
