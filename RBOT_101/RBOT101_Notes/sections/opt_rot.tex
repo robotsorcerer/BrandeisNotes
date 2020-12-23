@@ -462,3 +462,50 @@ The cyclic components of the skew symmetric matrix $Q_{ij} = \left(\Sigma_{lr} -
 where $\bm{I}_3$ is the $3\times3$ identity matrix and the unit eigenvector $\bm{q}_R = \left[q_0 \quad q_1 \quad q_2 \quad q_3\right]^T$ that corresponds to the maximum eigenvalue of $	Q(\Sigma_{lr})$ is chosen as the optimal rotation.
 
 \section{Iterative Closest Point}
+
+The Iterative Closest Point (ICP) algorithm applies to the following sets of problems
+%
+\begin{inparaenum}[(i)]
+	\item sets of points,
+	%
+	\item sets of line segments,
+	%
+	\item sets of parametric curves,
+	%
+	\item sets of implicit curves,
+	%
+	\item sets of triangles,
+	%
+	\item sets of parametric surfaces, and
+	%
+	\item sets of implicit surfaces.
+\end{inparaenum}
+%
+To properly describe the algorithm, we choose a data, $P$, which is to be moved or registered/positioned to best align with a ``model" data $X$. It is best if the data and model shape are decomposed into a point set if they are not already in point set form. For triangles and line segments, we use their vertices and endpoints respectively; while for curves and surfaces, an approximation to the vertices and endpoints of triangles and lines are used. Suppose we denote, as before, the number of points in the data shape as $N_p$ and $N_x$ as the number of points, line segments, or triangles in the model shape. The distance metric $d$ between an individual data point $\bm{p}$ and a model shape $X$ will be denoted 
+%
+\begin{align}
+	d(\bm{p}, X) = \min_{\bm{x}(X)} \|\bm{x} - \bm{p} \|.
+\end{align}
+
+The closest point in $X$ that yields the minimum distance is denoted $\bm{y}$ such that $d(\bm{p}, \bm{y}) = d(\bm{p}, X)$, where $\bm{y} \in X$.
+%
+\begin{quiz} 
+	%\newline
+	\begin{enumerate}
+	\item What is the worst case asymptotic computation for the closest point in $X$ and why? %Answer $O(N_x)$
+	%
+	\item What is the expected worst case computation time?
+	\end{enumerate}
+\end{quiz}
+%
+When the closest point computation from $\bm{p}$ to $X$ is performed for each point $P$, that process is worst case $O(N_p, N_x)$. Let $Y$ denote the resulting set of closest points, and $\mathcal{C}$ the closest point operator, \ie 
+%
+\begin{align}
+	Y = \mathcal{C}(P, X).
+\end{align}
+%
+For the resultant corresponding point set $Y$, the least squares registration can be computed as
+%
+\begin{align}
+	content...
+\end{align}
