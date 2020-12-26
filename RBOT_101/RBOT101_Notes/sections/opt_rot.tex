@@ -507,5 +507,32 @@ When the closest point computation from $\bm{p}$ to $X$ is performed for each po
 For the resultant corresponding point set $Y$, the least squares registration can be computed as
 %
 \begin{align}
-	content...
+	\left(\bm{q}, d\right) = \mathcal{Q}\left(P, Y\right).
 \end{align}
+%
+and the positions of the data shape point set are] then updated via $P=\bm{q}(P)$.
+
+\begin{algorithm}[tb!]
+	\caption{ICP Algorithm 
+		\label{alg:ICP}}
+	\begin{algorithmic}[1]
+		\State Given point set $P$ with $N_p$ points $\{\bm{p}_i\}$ from the data shape and the model shape $X$ with $N_x$ supporting geometric primitives: points, lines, or triangles
+		%
+		\State Start the iteration with $P_0$ set to $P$, $\bm{q}_0 = \left[1, 0, 0, 0, 0, 0, 0 \right]^T$ and $k=0$ and define the registration vector relative to the initial data set $P_0$ so that the final registration denotes the complete transformation. 
+		%
+		\State Given a mean-square error with preset threshold $\tau >0$, and a desired registration accuracy, $d$
+		\While{$\tau > d_k - d_{k+1}$ }
+		\State Compute the closest points, $Y_k = \mathcal{C}(P_k, X)$ (cost: $O(N_o, N_x)$, worst-case: $O(N_p \text{log} N_x)$ average).
+		%
+		\State Compute the registration: $\left(\bm{q}_k, d_k\right) = \mathcal{Q}(P_0, Y_k)$ (cost: $O(N_p)$).
+		%
+		\State Apply the registration, $P_{k+1} = \bm{q}(P_0)$ (cost: $O(N_p)$).
+		\EndWhile
+		%\State $\mathcal{J}^*_\gamma = \min_\theta \sum_i D_{KL}(\psi_\theta  \| p_i )$
+		% \EndFor
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{Example}
+	content...
+\end{Example}
