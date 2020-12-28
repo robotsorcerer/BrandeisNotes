@@ -63,3 +63,104 @@
  whereupon we are interested in the behavior of $Q(u,v)$ in the vicinity of $u=v=0$ and the fact that $Q(u,v)$ is homogeneous allows us to examine the range of values of $Q(u,v)$ for the set of values on $u^2 + v^2 = 1$. 
  
  If $Q(u,v) > 0$ for all $u$ and $v$ distinct from $u=v=0$, $f(x,y)$ will have a relative minimum at $x = c_1$, $y=c_2$; and if $Q(u,v) < 0$ for all $u$ and $v$ distinct from $u=v=0$, $f(x,y)$ will have a relative maximum at $x = c_1$, $y=c_2$; The stationary point is a \textit{saddle point} if $Q(u,v)$ can take on both positive and negative values.
+  
+
+ \subsection{Algebraic Approach}
+ %
+ How do we determine which of the three situations described in the foregoing occur for any given quadratic form, $au^2 + 2buv +cv^2$, with real coefficients. To determine the sign of $Q(u,v)$, we complete the square in $au^2 + 2buv$ and write $Q(u,v)$ as 
+ %
+ \begin{align}
+ 	Q(u,v) = a\left(u+\dfrac{bv}{a}\right)^2 +  \left(c-\dfrac{b^2}{a}\right)v^2
+ 	\label{eq:algebraic_main}
+ \end{align}
+ % 
+ provided that $a \neq 0$. 
+ 
+ If $a=c=-$, then $Q(u,v) \equiv 2buv$ . If $b\neq0$, then $Q(u,v)$ can be positive or negative. If however, $b=0$, the quadratic form is eliminated.
+ 
+ If $a \neq 0$, from \eqref{eq:algebraic_main}, we must have a $Q(u,v) > 0$ for all unique $u$ and $v$ different from the pair $\left(0,0\right)$ provided that $a>0$ and $c - \frac{b^2}{a} >0$. 
+ 
+ In the same vein, $Q(u,v) < 0$ for all nontrivial $u$ and $v$, provided that we have the inequalities, $a<0$ and $c - \frac{b^2}{a} < 0$.
+ 
+\begin{tcolorbox}[title=Positivity Requirement]
+	A set of \textit{necessary and sufficient} conditions that $Q(u,v)$ be positive for all nontrivial $u$ and $v$ is that 
+	%
+	\begin{align}
+		a > 0, \qquad \qquad \begin{vmatrix}
+				a & b \\
+		      b & c 
+		\end{vmatrix} > 0.
+	\end{align}
+\end{tcolorbox}
+
+ \subsection{Analytic Approach}
+%
+To find the range of values of $Q(u,v)$, we can examine the set of values that $Q(u,v)$ occupies on the circle $u^2+v^2=1$. If $Q$ is to be positive for all nontrivial values of $u$ and $v$, we must have
+%
+\begin{align}
+\min_{u^2+v^2=1} Q(u,v) > 0
+\end{align}
+%
+and to have $Q(u,v)$ negative for all $u$ and $v$ on the unit circle, we must have
+%
+\begin{align}
+\max_{u^2+v^2=1} Q(u,v) < 0.
+\end{align}
+%
+Introducing a Lagrange multiplier, $\lambda$, we can rewrite the problem as 
+%
+\begin{align}
+R(u,v) = aU^2 + 2buv + cv^2 - \lambda (u^2 + v^2).
+\end{align}
+
+At the stationary points, we must have $\frac{\partial R}{\partial u} = \frac{\partial R}{\partial v} = 0$ so that
+%
+\begin{align}
+au + bv - \lambda u = 0 \nonumber \\
+bu + cv - \lambda v = 0
+\label{eq:linear}
+\end{align}
+%
+whereupon, we see that $\lambda$ satisfies 
+%
+\begin{align}
+\begin{vmatrix}
+a - \lambda & b \\
+%
+b & c-\lambda
+\end{vmatrix} &= 0 \\
+%
+\lambda^2 - (a+c)\lambda + ac - b^2 = 0.
+\label{eq:determinant}
+\end{align}
+%
+The roots of \eqref{eq:determinant} are real seeing that the discriminant is non-negative \ie 
+%
+\begin{align}
+	\left(a+c\right)^2 - 4\left(ac-b^2\right) = \left(a-c\right)^2 + 4b^2,
+\end{align}
+%
+and as long as $a\neq 0$ and $b \neq 0$, the roots are distinct. 
+
+If $b=0$, the roots of the quadratic in \eqref{eq:determinant} becomes $\lambda_1 = a$, $\lambda_2=c$. For $\lambda_1 = a$, the linear set of equations from \eqref{eq:linear} becomes 
+%
+\begin{align}
+	\left(a-\lambda_1\right) u = 0 \qquad \left(c-\lambda_1\right) v = 0
+\end{align}
+%
+which leaves $u$ arbitrary and $v=0$, if $a\neq c$.
+
+Whereas if $b\neq 0$, we obtain the nontrivial solutions of \eqref{eq:linear} by using one equation and discarding the other. Therefore, $u$ and $v$ are connected by the relation
+%
+\begin{align}
+	\left(a-\lambda_1\right)u = -bv.
+\end{align}
+%
+For the exact solution, we can add the normalization requirement that $u^2 + v^2 = 1$ so that the values of $u$ and $v$ are 
+%
+\begin{align}
+	u_1 &= -b/\left(b^2 + (a-\lambda_1)^2\right)^{1/2} \nonumber \\
+	v_1 &= (a-\lambda_1)/\left(b^2 + (a-\lambda_1)^2\right)^{1/2}
+\end{align}
+%
+with another set $(u_2,v_2)$ determined in a similar fashion when $\lambda_2$ is used in place of $\lambda_1$.
