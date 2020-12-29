@@ -1,0 +1,20 @@
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Given two coordinate systems, we measure a number of points in the two different coordinate systems. The goal is to find the transformation between the two points.\relax }}{17}{figure.caption.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Early serial kinematic chain robot manipulators. \textit {Left:} The Stanford Arm Serial Manipulator, 1969. \copyright Infolab, Stanford University. \textit {Right:} The PUMA robot arm. Reprinted from Wikipedia.\relax }}{31}{figure.caption.8}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Soft Robot Manipulators \textit {Left:} An octopus inspired soft robot. Robots classified under muscular hydrostats. \copyright Cecilia Laschi. \textit {Right:} A soft parallel robot manipulator \nobreakspace {}\citep {hopkins2015synthesis}.\relax }}{32}{figure.caption.9}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Schematic description of in-series-actuated robot arms: (a) rotary joint actuated ``about" the hinge (b) prismatic joint actuated ``across" a hinge. Reprinted from \citep {Hunt1983}.\relax }}{35}{figure.caption.10}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The Staubli 6-DOF Arm is an example of a Spherical Manipulator. Reprinted from DirectIndustry's Webpage.\relax }}{36}{figure.caption.11}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The SCARA Arm. \copyright Fanuc America.\relax }}{36}{figure.caption.12}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Stewart-Gough Platforms \textit {Left:} The 1954 Octahedral hexapod of the original Gough platform. \textit {Right:} The retired platform from Dunlop tires in 2000. Picture courtesy of Parallemic.org.\relax }}{38}{figure.caption.13}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The Lower Kinematic Pairs. Reprinted from \citep {HuntBook1977}.\relax }}{39}{figure.caption.14}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces The planar $RRR$ linkage, (\textit {left}) is modified in (\textit {right}) to allow spatial spin-movement of the coupler 3; the connectivity $\mathscr {C}_{13}=2$). Reprinted from \nobreakspace {}\citep {HuntBook1977}.\relax }}{39}{figure.caption.15}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces \textit {Left}: A Parallel Planar Robot Mechanism. \textit {Right:} Workspace of the mechanism.\relax }}{43}{figure.caption.16}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Illustration of rotation of interconnecting link of two spherical links.\relax }}{50}{figure.caption.17}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Lie Group and their Notations. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }}{52}{figure.caption.18}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces An illustration of the exponential map for a multi-body rigid system. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }}{54}{figure.caption.19}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces A point $q$ in space with respect to two coordinate frames.\relax }}{56}{figure.caption.20}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces An illustration of the relative orientation of a rigid object $q$ between an inertial frame $I$ and a body frame $J$.\relax }}{58}{figure.caption.21}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Illustration of rotation between two frames in a plane.\relax }}{61}{figure.caption.22}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Relative orientation between two frames.\relax }}{62}{figure.caption.23}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Coordinate frames on a body. Reprinted from \citep {SpongBook}\relax }}{64}{figure.caption.24}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Illustration of composition of rotations about a \textbf {current axis}.\relax }}{66}{figure.caption.25}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces An illustration of the ZYZ rotation angles\relax }}{68}{figure.caption.26}
