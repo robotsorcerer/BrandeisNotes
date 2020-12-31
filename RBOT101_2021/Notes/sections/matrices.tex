@@ -1,0 +1,166 @@
+\chapter{Matrix Analysis.}  
+ \label{chap:mat_anal::intro}
+ 
+ Our goal here is to introduce the student to the study of matrix theory. Matrices are symbolism of the important transformations in everyday life; these transformations lie at the heart of mathematics and robotics. The contents of this topic are thus positioned toward the aspiration of roboticists, engineers of all stripes and scientists. Specifically, we are concerned with the \textit{theory of symmetric matrices},  which is important for all fields, \textit{matrices and differential equations}, necessary for engineering and robotics, as well as \textit{positive matrices}, necessary for probability theory. Most of the texts im this chapter are drawn from Richard Bellman's Matrix Analysis Book given in the Syllabus.
+ 
+ \section{Maximization and Minimization}
+ %
+ Of importance to us in this section is to ascertain the range of values of \textit{homogeneous quadratic functions} of two variables and how it is connected to the determination of the maximum or minimum of a general function of two variables.
+ 
+ \subsection{Maximization of Functions of a Variable}
+ %
+ Suppose $f(x)$ is a real function of the real variable $x$ for $x \in \left[a, b\right]$, and let us suppose that it is a Taylor series of the form 
+ %
+ \begin{align}
+ 	f(x) = f(c) + f^\prime (x-c) + f^{\prime\prime}\frac{\left(x-c\right)^2}{2!} + \ldots
+ \end{align}
+ %
+ around every point in the open interval $\left(a, b\right)$. We define a \textit{stationary point} of $f(x)$ to be a point where $f^\prime(x) = 0$ and it is the point that determines if $c$ is a point at which $f(x)$ is a relative maximum, a relative minimum, or a stationary point of a subtle characteristic. If $c$ is a stationary point, we must have 
+ %
+ \begin{align}
+ 	f(x) = f(c) + f^{\prime\prime}\frac{\left(x-c\right)^2}{2!} + \ldots
+ \end{align}
+ 
+ If $f^{\prime\prime}(c) > 0$, then $f(x)$ has a relative minimum at $x=c$. Otherwise, if $f^{\prime\prime}(c) < 0$, $f(x)$ has a relative maximum at $x=c$. Whereas, if $f^{\prime\prime}(c) = 0$, we must needs consider further terms in the expansion.
+ 
+ \begin{quiz}
+ 	Suppose that $f^{\prime\prime}(c) = 0$, what are the sufficient conditions that $c$ must furnish to be a relative minimum? % expand up to third term and  If $f^{\prime\prime\prime}(c) > 0$
+ \end{quiz}
+ 
+ \subsection{Maximization of Functions of Two Variables}
+ %
+ Now, suppose that we have two variables $x, y$ as arguments of a function $f$, defined over the rectangle $a_1 \le x \le b_1$, $a_2 \le y \le b_2$, and possessing a convergent Taylor series around each point $(c_1, c_2)$ within the region. Then, for sufficiently small $|x-c_1$ and $|y-c_2|$ , we have
+ %
+ \begin{align}
+ 	f(x,y) &= f(c_1, c_2) + (x-c_1) \dfrac{\partial f}{\partial c_1} + \left(y-c_2\right) \dfrac{\partial f}{\partial c_2} + \dfrac{(x-c_1)^2}{2} \dfrac{\partial^2 f}{\partial c_1^2}  \nonumber \\
+ 	% 
+ 	& \qquad + (x-c_1)(y-c_2) \dfrac{\partial^2 f}{\partial c_1 \partial c_2} + \dfrac{(y-c_2)^2}{2} \dfrac{\partial^2 f}{\partial c_2^2} + \ldots 
+ 	\label{eq:quad_2var}
+ \end{align}
+ %
+ where
+ %
+ \begin{align}
+ 	\dfrac{\partial f}{\partial c_1} &= \dfrac{\partial f}{\partial x} \text{ at } x = c_1, \qquad y = c_2 \nonumber \\
+ 	\dfrac{\partial f}{\partial c_2} &= \dfrac{\partial f}{\partial y} \text{ at } x = c_1, \qquad y = c_2 \text{ e.t.c. }
+ \end{align}
+ 
+ As before, the stationary point of $f(x, y)$ is defined to be $(c_1, c_2)$ so that $\frac{\partial f}{\partial c_1} = 0$ and $\frac{\partial f}{\partial c_2} = 0$; and the behavior of $f(x,y)$ in the immediate neighborhood of $(c_1, c_2)$ depends on the nature of the quadratic terms in the expansion of \eqref{eq:quad_2var}, 
+ %
+ \begin{align}
+ 	Q_2(x,y) = a(x-c_1)^2 + 2b(x-c_1)(y-c_2) + c(y-c_2)^2
+ \end{align}
+ %
+ where
+ $a = \frac{1}{2} \frac{\partial^2 f}{\partial c_1^2}$, $2b = \frac{\partial^2 f}{\partial c_1 \partial c_2}$, and $c=\frac{1}{2}\frac{\partial^2 f}{ \partial c_2^2}$.
+ 
+ Suppose we set $x-c_1 = u$ and $y - c_2 = v$, then we can write a quadratic expression in variables $u$ and $v$ \ie 
+ %
+ \begin{align}
+	Q(u,v) = au^2 + 2buv + cv^2
+ \end{align}
+ %
+ whereupon we are interested in the behavior of $Q(u,v)$ in the vicinity of $u=v=0$ and the fact that $Q(u,v)$ is homogeneous allows us to examine the range of values of $Q(u,v)$ for the set of values on $u^2 + v^2 = 1$. 
+ 
+ If $Q(u,v) > 0$ for all $u$ and $v$ distinct from $u=v=0$, $f(x,y)$ will have a relative minimum at $x = c_1$, $y=c_2$; and if $Q(u,v) < 0$ for all $u$ and $v$ distinct from $u=v=0$, $f(x,y)$ will have a relative maximum at $x = c_1$, $y=c_2$; The stationary point is a \textit{saddle point} if $Q(u,v)$ can take on both positive and negative values.
+  
+
+ \subsection{Algebraic Approach}
+ %
+ How do we determine which of the three situations described in the foregoing occur for any given quadratic form, $au^2 + 2buv +cv^2$, with real coefficients. To determine the sign of $Q(u,v)$, we complete the square in $au^2 + 2buv$ and write $Q(u,v)$ as 
+ %
+ \begin{align}
+ 	Q(u,v) = a\left(u+\dfrac{bv}{a}\right)^2 +  \left(c-\dfrac{b^2}{a}\right)v^2
+ 	\label{eq:algebraic_main}
+ \end{align}
+ % 
+ provided that $a \neq 0$. 
+ 
+ If $a=c=-$, then $Q(u,v) \equiv 2buv$ . If $b\neq0$, then $Q(u,v)$ can be positive or negative. If however, $b=0$, the quadratic form is eliminated.
+ 
+ If $a \neq 0$, from \eqref{eq:algebraic_main}, we must have a $Q(u,v) > 0$ for all unique $u$ and $v$ different from the pair $\left(0,0\right)$ provided that $a>0$ and $c - \frac{b^2}{a} >0$. 
+ 
+ In the same vein, $Q(u,v) < 0$ for all nontrivial $u$ and $v$, provided that we have the inequalities, $a<0$ and $c - \frac{b^2}{a} < 0$.
+ 
+\begin{tcolorbox}[title=Positivity Requirement]
+	A set of \textit{necessary and sufficient} conditions that $Q(u,v)$ be positive for all nontrivial $u$ and $v$ is that 
+	%
+	\begin{align}
+		a > 0, \qquad \qquad \begin{vmatrix}
+				a & b \\
+		      b & c 
+		\end{vmatrix} > 0.
+	\end{align}
+\end{tcolorbox}
+
+ \subsection{Analytic Approach}
+%
+To find the range of values of $Q(u,v)$, we can examine the set of values that $Q(u,v)$ occupies on the circle $u^2+v^2=1$. If $Q$ is to be positive for all nontrivial values of $u$ and $v$, we must have
+%
+\begin{align}
+\min_{u^2+v^2=1} Q(u,v) > 0
+\end{align}
+%
+and to have $Q(u,v)$ negative for all $u$ and $v$ on the unit circle, we must have
+%
+\begin{align}
+\max_{u^2+v^2=1} Q(u,v) < 0.
+\end{align}
+%
+Introducing a Lagrange multiplier, $\lambda$, we can rewrite the problem as 
+%
+\begin{align}
+R(u,v) = aU^2 + 2buv + cv^2 - \lambda (u^2 + v^2).
+\end{align}
+
+At the stationary points, we must have $\frac{\partial R}{\partial u} = \frac{\partial R}{\partial v} = 0$ so that
+%
+\begin{align}
+au + bv - \lambda u = 0 \nonumber \\
+bu + cv - \lambda v = 0
+\label{eq:linear}
+\end{align}
+%
+whereupon, we see that $\lambda$ satisfies 
+%
+\begin{align}
+\begin{vmatrix}
+a - \lambda & b \\
+%
+b & c-\lambda
+\end{vmatrix} &= 0 \\
+%
+\lambda^2 - (a+c)\lambda + ac - b^2 = 0.
+\label{eq:determinant}
+\end{align}
+%
+The roots of \eqref{eq:determinant} are real seeing that the discriminant is non-negative \ie 
+%
+\begin{align}
+	\left(a+c\right)^2 - 4\left(ac-b^2\right) = \left(a-c\right)^2 + 4b^2,
+\end{align}
+%
+and as long as $a\neq 0$ and $b \neq 0$, the roots are distinct. 
+
+If $b=0$, the roots of the quadratic in \eqref{eq:determinant} becomes $\lambda_1 = a$, $\lambda_2=c$. For $\lambda_1 = a$, the linear set of equations from \eqref{eq:linear} becomes 
+%
+\begin{align}
+	\left(a-\lambda_1\right) u = 0 \qquad \left(c-\lambda_1\right) v = 0
+\end{align}
+%
+which leaves $u$ arbitrary and $v=0$, if $a\neq c$.
+
+Whereas if $b\neq 0$, we obtain the nontrivial solutions of \eqref{eq:linear} by using one equation and discarding the other. Therefore, $u$ and $v$ are connected by the relation
+%
+\begin{align}
+	\left(a-\lambda_1\right)u = -bv.
+\end{align}
+%
+For the exact solution, we can add the normalization requirement that $u^2 + v^2 = 1$ so that the values of $u$ and $v$ are 
+%
+\begin{align}
+	u_1 &= -b/\left(b^2 + (a-\lambda_1)^2\right)^{1/2} \nonumber \\
+	v_1 &= (a-\lambda_1)/\left(b^2 + (a-\lambda_1)^2\right)^{1/2}
+\end{align}
+%
+with another set $(u_2,v_2)$ determined in a similar fashion when $\lambda_2$ is used in place of $\lambda_1$.

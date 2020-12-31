@@ -1,0 +1,121 @@
+\chapter{Motion Planning} 
+\label{chap:moplan}
+
+Planning is an important part of robotics. Consider a child (one-year-old) trying to execute a certain simple task such as drinking from a cup of milk. For such a child, this is a very difficult task as they are yet to develop the motor control section of their brain that helps with the hand-eye coordination necessary for the execution of this simple motor task. As such a child evolves, different parts of their brain develops such as the pre-frontal lobes and visual cortex. These, together with innate skills and learning from their environment helps them in eventually mastering the most mundane tasks that aids them throughout life. The way the human brain develops is still a mystery to scientists and if we can understand how the brain works, it would be easy for us to replicate most of these simple automation tasks in real-life. However, given the complexity required for such mastery, researchers have been chipping away at more simpler  ways to plan automation behaviors for a robot. The rest of this course is divided into two phases. In  the first phase, we will deal with works that emerged in the '90's and early 2000's on planning and execution for robots in the world. These tended to leverage subjects that ran the gamut of control theory, information theory and uncertainty quantification. A second parallel in planning and automation that is an evolving field of research has been reinforcement learning and deep reinforcement learning. This area of research involved largely using very deep neural networks (in most cases) as function approximators in encoding future behaviors of a robot by extensively training such a function approximator in a simulator or in a controlled environment.
+
+As the field of studies in these areas are relatively new, there is no certain textbook or mantra for learning what the state-of-the-art is. However, there is a vast array of literature out there in the world on these subjects. Authors of particular interest whose work are very influential are (listed in no particular order of importance) Lydia Kavraki, Steven Lavalle, James Kuffner, Marc Deisenroth, Pieter Abbeel, Ken Goldberg, Sergey Levine and CHelsea Finn among others. In particular, I would refer you to the following text and survey paper as a useful reference throughout the rest of what follows in these notes.
+%
+\begin{itemize}
+	\item LaValle, Steven M. Planning algorithms. Cambridge university press, 2006. \textit{Available at: \href{http://planning.cs.uiuc.edu/}{http://planning.cs.uiuc.edu/}}
+	%
+	\item Deisenroth, M. P. (2011). A Survey on Policy Search for Robotics. Foundations and Trends in Robotics, 2(1), 1–142. \textit{Available at: \href{https://www.nowpublishers.com/article/Details/ROB-021}{https://www.nowpublishers.com/article/Details/ROB-021}}.
+\end{itemize}
+%
+If you are having trouble downloading any of these materials, please email the instructor for an electronic copy.
+
+\section{Planning: Motion/Trajectory Planning}
+
+In robotics, by planning, we mean the task of automating mechanical or pneumatic systems with the capability for sensing, actuation, and computation abilities. In general, we want to have some sort of algorithm that converts a high-level description of a task to a lower-level one such that we can realize what we want in the real world. \textit{In control systems}, we often design local feedback laws that can act on the dynamics (an encoding of the behavior of the world) of the system so as to realize that which we desire to control. In executing these feedback control laws, we often need a sense of measure of the position and motion of objects in the environment. Typically, this is the sensing problem and it is typically achieved with a vision or tactile or tactile-vision sensor.  Together with the sensed position of the world, we are able to accurately execute an automation task as desired. In \textit{artificial intelligence}, the planning problem is a little loose. Here, the task might involve using discretizing a continuous state space, approximating a complex world with a microcosm of its model.   
+
+Our focus in this chapter is on the algorithmic and the computational issues that arise in planning within several disciplines. In this sentiment, we introduce the notions that enable us to accurately represent a planning algorithm as completely as possible. These are the \textit{states}, \textit{time}, \textit{actions},  \textit{cost} and the \textit{plan}.
+%
+\begin{definition}[State]
+	The state is defined broadly enough to capture all subjective unknowns that might influence future behaviors by a system. For a robot navigating within a grid, for example, the state could be the location of the grid blocks, obstacles and edges within the grid. States can be discrete or continuous. 
+\end{definition}
+%
+\begin{definition}[Time]
+The planning problem occurs over a certain (time) horizon. This horizon is often explicitly modeled or implicitly. The important consideration is that a proper sequence must be maintained. Just as a state, time can be dicretized or made continuous.
+\end{definition}
+%
+\begin{definition}[Actions]
+	This is a taxonomy that is often used in the AI/computer science robotics world. It is an input that is given to a system that causes it to transition from one state to another state. In control theory literature, you might come across the same term as control/control law.
+\end{definition}
+%
+\begin{definition}[Criterion]
+	The criterion is the embodiment of the task's goals. It defines the problem to be solved and provides a measure of how well we are performing towards realizing our objective during the task's execution. There are two functions that we generally concern ourselves about in this regard: 
+	\begin{itemize}
+	\item \textit{Feasibility}, which is to determine a plan that enables us to reach a goal state, without regard to efficiency
+	%
+	\item \textit{Optimality}, which is to determine a plan that fulfills certain index or indices of performance such that the end result is arrived at through the most optimal means.
+	\end{itemize}
+\end{definition}
+%
+\begin{definition}[Plan]
+	A plan imposes a definite strategy or behavior on the decision-making agent. It could be the sequence of actions taken or actions as a function of the state. The plan enables \textit{feedback or reactive plans.}
+\end{definition}
+%
+
+\section{Planning in Discrete Spaces}
+Discrete planning shall involve planning in state spaces where the dimension of the state is finite ot at least infinitely countable \ie, there exists a unique integer that can be assigned to every state. As such, the concepts of representing the state space with a geometric model or complicated differential equations shall not be dealt with herein. We will generally relegate the concepts of uncertainty and avoid methods of representing uncertainty with probability theory.
+
+\subsection{Discrete Feasible Planning}
+Suppose we have a state $x \subset X$  where $X$ is a countable finite set.  The events that occur in the world are governed by an action $u$ which acts on a state transition function $f(x, u)$ to generate a new state $\bar{x}$ \ie, 
+\[
+\bar{x} = f(x, u).
+\]
+%
+Let $U(x)$ be the set of all action spaces for each state $x$ so that the set $U$ of all  possible actions for every state $x \in X$ is defined by 
+%
+\begin{align}
+	U = \bigcup_{x\in X} U(x)
+\end{align}
+%
+while the goal states will be defined by $X_G \subset X$. Our goal will be to find the finite sequence of actions that when applied, transforms the initial state $x_I$ to the goal state in $X_G$. We have the following definition for the model.
+%
+\begin{algorithm}[tbph!]
+	\begin{algorithmic}[1]
+		\caption{Discrete Feasible Planning}
+		\Require A finite or countably infinite nonempty state space $X$
+		%\Function{Discrete Feasible Planning}$X$
+		\State For each state $x \in X$, there exists a finite action space $U(x)$
+		\State A \textit{state transition function} $f$ produces a state $f(x, u) \in X$ for every $x \in X$ and $u \in U(x)$ so that the \textit{state transition equation} is derived from $f$ as $\bar{x} = f(x,u)$.
+		\State An initial state $x_i \in X$.
+		\State A goal state $X_g \subset X$
+	%	\EndFunction
+	\end{algorithmic}
+\end{algorithm}
+
+\section{Search Algorithms}
+%
+Our goal here is to give a skeleton of the common graph search algorithms in robotics. While the questions of computational complexity might be important, this is not our goal here. But rather, we will take a look at the underlings of the popular search algorithms in discrete planning. The state transition graph of such methods are considered to be incrementally given. An important prerequisite in these search paradigms is that the algorithm must be \textit{systematic}. By this, we mean that all visited states must be kept a tab on so that the search does not continue indefinitely. 
+
+For infinite graphs, we may introduce a weaker definition of the \textit{systematic search} requirement. We would require that solutions that exist be found in finite time in such cases; if the solution is however non-existent, we will require the search to run indefinitely. The indefinite search is accomplished by ensuring that as the time taken for exploration of the state space $X$ tends to infinity, every reachable vertex in the graph is explored.
+%
+\begin{algorithm}[tbph!]
+	\begin{algorithmic}[1]
+		\caption{Generic Search}
+		\Require A priority queue $Q$ for which a sorting function is prescribed
+		%\Function{Discrete Feasible Planning}$X$
+		\State $Q.add(x_i)$ and mark $x_i$ as visited
+		\While{$Q \neq \emptyset$ }
+		\State $x\leftarrow Q.getFirst()$ \label{alg:generic-search-lgetfirst}
+		\If{$x \in X_g$}
+		\State \Return EXIT\_SUCCESS
+		\EndIf
+		\For {$u\in U(x)$}
+		\State $\bar{x} \leftarrow f(x, u)$
+		\If{$\bar{x}$ not visited}
+		\State Mark $\bar{x}$ as visited
+		\State $Q.add(\bar{x})$
+		\Else
+		\State Resolve duplicate $\bar{x}$
+		\EndIf
+		\EndFor
+		\EndWhile 
+		\State \Return EXIT\_FAILURE
+	\end{algorithmic}
+\label{alg:generic-search}
+\end{algorithm}
+%
+\subsection{General Search Algorithms}
+Now consider a general template for the search algorithm where it is required that we transition from an initial state $x_i$ to a final state $x_g$ as depicted in algorithm \ref{alg:generic-search}. At any time during search, three types of states may be encountered viz,
+%
+\begin{itemize}
+	\item \textbf{Unvisited States}: These are states that are not yet visited up until the present time $t$. At the start of the search, this wou;d be every state except $x_i$.
+	%
+	\item \textbf{Dead States}: These are states that are already visited, and for which every possible next state has also been visited. We say the next state of a state $x$ is a state for which there exists a $u \in U(x)$ such that $\bar{x} = f(x, u)$. Such states are said to be dead because they no longer contribute to the current search procedure.
+	%
+	\item \textbf{Alive States}: These are states that are already visited, but may have unvisited next states. Originally, the only alive state is $x_i$.
+\end{itemize}
+
+The major difference between different search algorithms will be in the type of function that is used to sort the graph $Q$. Typical sorting mechanisms may include one of \textit{first-in first-out (FIFO) policy}, \textit{last-in first-out (LIFO) policy}, \textit{breadth-first search}, or \textit{depth-first search} among others. In a FIFO queue, the state that is the longest in the queue is the one chosen on line \ref{alg:generic-search-lgetfirst}.  The \textit{while} loop is then executed after which it terminates whenever all the states in $Q$ are exhausted. 

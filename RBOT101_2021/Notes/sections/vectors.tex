@@ -1,0 +1,458 @@
+\chapter{Vectors and Matrices}  
+ \label{chap:vectors::intro}
+ 
+ In the previous chapter, we looked into the problem of the minima and maxima (locally) of a function of a single and two variables. Suppose that we have $N$ variables, and proceed in a similar manner as before, we see that finding basic necessary and sufficient conditions that ensure the positivity of a quadratic form of $N$ variables are of the form
+ %
+ \begin{align}
+ 	Q(x_1, x_2, \ldots, x_N) = \sum_{i,j=1}^{N} a_{ij} x_i x_j
+ \end{align}
+ %
+ We will thus develop a notation that allows us to solve the problem \textit{analytically} using a minimum of arithmetic or analytical calculation. In this light, we will develop a notation that allows us to study linear transformations such as
+ %
+ \begin{align}
+ 	y_i = \sum_{j=1}^{N} a_{ij} x_j \qquad i=1,2, \ldots, N
+ \end{align}
+ 
+ \section{Vectors}
+ 
+ We shall define a set of $N$ complex-valued numbers as a \textit{vector}, written as
+ %
+ \begin{align}
+ 	\bm{x} = \begin{bmatrix}
+ 	x_1 \\ x_2 \\ \vdots \\ x_N
+ 	\end{bmatrix}
+ 	\label{eq:col_vec}
+ \end{align}
+ %
+ The vector $\bm{x}$ in \eqref{eq:col_vec} shall be called a \textit{column vector}. If the elements of the vector are stacked horizontally, \ie 
+ %
+ \begin{align}
+\bm{x} = \begin{bmatrix}
+x_1 & x_2 & \vdots & x_N,
+\end{bmatrix}
+\label{eq:row_vec}
+\end{align}
+%
+then we shall call it a \textit{row vector}.
+
+Going forward, we shall use the notation of \eqref{eq:col_vec} to represent all forms of vectors we shall be using. When we mean a row vector, we shall use the notation of a transpose of \eqref{eq:col_vec}, \ie $\bm{x}^T$. Bold font letters such as $\bm{x}$, or  $\bm{y}$ shall denote vectors and lower-case letters with subscripts $i$ such as $x_i, y_i, z_i$ or $p_i, q_i, r_i$ shall denote the components of a vector. When discussing a particular set of vectors, we shall use the superscripts $\bm{x}^1, \bm{x}^2$ e.t.c. $N$ shall denote the dimension of a vector $\bm{x}$.
+
+One-dimensional vectors are called \textit{scalars} and shall be our quantities of analysis. When we write $\bar{\bm{x}}$, we shall mean the vector whose components are the complex conjugates of the elements of $\bm{x}$.
+
+\section{Addition of Vectors}
+%
+Two vectors $\bm{x}$ and $\bm{y}$ are said to be equal if all of their components, $(x_i, y_i)$ are equal for $i=1,2,\ldots, N$. Addition is the simplest of the arithmetic operations on vectors. We shall write the sum of two vectors as $\bm{x} + \bm{y}$ so that 
+%
+\begin{align}
+	\bm{x} + \bm{y} = \begin{bmatrix}
+	x_1 + y_1 \\ x_2+y_2 \\ \vdots x_N + y_N,
+	\end{bmatrix}
+\end{align}
+% 
+whereupon we note that the $``+"$ sign connecting $\bm{x}$ and $\bm{y}$ is different from the one connecting $x_i$ and $y_i$.
+
+\begin{homework}
+	Prove that we have the \textit{commutativity}, $\bm{x}+\bm{y} = \bm{y} + \bm{x}$, and the associativity $\bm{x} + \left(\bm{y}+\bm{z}\right) = \left(\bm{x} + \bm{y}\right)+\bm{z}$
+\end{homework}
+%
+\begin{homework}
+	Just as we showed the addition property of two vectors above, show the subtraction property of two vectors $\bm{x}$ and $\bm{y}$.
+\end{homework}
+
+\section{Scalar Multiplication}
+When a vector is multiplied by a scalar, we shall write it out as follows
+%
+\begin{align}
+	c_1 \bm{x} = \bm{x} c_1 = \begin{bmatrix}
+	c_1 x_1 \\ c_1 x_2 \\ c_1 x_N
+	\end{bmatrix}
+\end{align}
+%
+\section{The Inner Product of Two Vectors}
+%
+This is a scalar function of two vectors $\bm{x}$ and $\bm{y}$ defined as 
+%
+\begin{align}
+	\langle \bm{x}, \bm{y} \rangle = \sum_{i=1}^{N} x_i y_i.
+\end{align}
+
+Further to the above, we define the following properties for inner product
+%
+\begin{subequations}
+	\begin{align}
+	\langle \bm{x}, \bm{y} \rangle &= 	\langle \bm{y}, \bm{x} \rangle \\
+	\langle \bm{x} + \bm{y},  \bm{u} + \bm{v}\rangle &= \langle \bm{x}, \bm{u} \rangle  + \langle \bm{x}, \bm{v} \rangle + \langle \bm{y}, \bm{u} \rangle + \langle \bm{y}, \bm{v} \rangle \\
+	\langle c_1 \bm{x}, \bm{y} \rangle &= c_1 \langle \bm{x}, \bm{y} \rangle
+	\end{align}
+\end{subequations}
+%
+The above is an easy way to \textit{multiply} two vectors. The inner product is important because $\langle \bm{x}, \bm{x} \rangle$ can be considered as the square of the ``length" of the real vector $\bm{x}$. 
+%
+\begin{homework}
+	Prove that $\langle a\bm{x}+b \bm{y}, a\bm{x}+b \bm{y} \rangle = a^2 \langle \bm{x}, \bm{x} \rangle + 2 ab \langle \bm{x}, \bm{x} \rangle  + b^2 \langle \bm{y}, \bm{y} \rangle $ is a non-negative quadratic form in the scalar variables $a$ and $b$ if $\bm{x}$ and $\bm{y}$ are real.
+\end{homework}
+%
+\begin{homework}
+	Hence, show that for real-valued vectors $\bm{x}$ and $\bm{y}$, that the Cauchy-Schwarz Inequality $\langle \bm{x}, \bm{y} \rangle^2 \le  \langle \bm{x}, \bm{x} \rangle \langle \bm{y}, \bm{y} \rangle$ holds.
+\end{homework}
+%
+\begin{homework}
+	Using the above result, show that  for any two complex vectors $\bm{x}$  and $\bm{y}$, $|\langle \bm{x}, \bm{y}\rangle|^2 \le \langle \bm{x}, \bar{\bm{x}}\rangle \, \langle \bm{y}, \bar{\bm{y}}\rangle$
+\end{homework}
+%
+\begin{homework}
+	Show that the \textit{triangle inequality} 
+	\[
+		\langle \bm{x}+ \bm{y}, \bm{x}+ \bm{y} \rangle^{\frac{1}{2}} \le \langle \bm{x}, \bm{x} \rangle^{\frac{1}{2}}  + \langle  \bm{y},  \bm{y} \rangle^{\frac{1}{2}} 
+	\]
+	holds for any two real-valued variables.
+\end{homework}
+
+\section{Orthogonality}
+
+Two vectors are said to be orthogonal if their inner product is $0$ \ie 
+%
+\begin{align}
+	\langle \bm{x}, \bm{y}\rangle = 0
+\end{align}
+%
+When the set of real vectors $\{\bm{x}^i\}$ possess the property that $\langle \bm{x}^i, \bm{y}^i\rangle = 1$, then we say they are \textit{orthonormal.}
+%
+\begin{homework}
+	show that $\bm{x}^i$ are mutually orthogonal and normalized \ie orthonormal for the following $N$-dimensional Euclidean basis coordinate vectors
+	\begin{align}
+		\bm{x}^1 = \begin{bmatrix}
+		1 \\ 0 \\ \vdots \\ 0
+		\end{bmatrix}
+		%
+		\qquad
+		%
+		\bm{x}^2 = \begin{bmatrix}
+		0 \\ 1 \\ \vdots \\ 0
+		\end{bmatrix}
+		%
+		\qquad
+		%
+		\bm{x}^N = \begin{bmatrix}
+		0 \\ 0 \\ \vdots \\ 1
+		\end{bmatrix}
+	\end{align}
+\end{homework}
+
+\section{Matrices}
+%
+We can write an array of complex numbers in the form 
+%
+\begin{align}
+	X = \begin{bmatrix}
+	x_{11} & x_{12} & \ldots & x_{1N} \\
+	%
+	x_{21} & x_{22} & \ldots & x_{2N} \\
+	%
+	\vdots & \vdots & \ddots & \vdots \\
+	%
+	x_{N1} & x_{N2} & \ldots & x_{NN} \\
+	\end{bmatrix}
+	\label{eq:square_matrix}
+\end{align}
+%
+The matrix of \eqref{eq:square_matrix} shall be called a \textit{square matrix}. The quantities $x_{ij}$ are the \textit{elements} of the matrix $X$; the quantities $x_{i1}, x_{i2}, \ldots,  x_{iN}$ are the $i$th \textit{rows} of the matrix $X$ and the quantities $x_{1j}, x_{2j}, \ldots,  x_{Nj}$ are the $j$th columns of $X$. We denote matrices with upper case letters or the lower-case subscript notations 
+%
+\begin{align}
+	X = \left(x_{ij}\right)
+\end{align}
+%
+while the \textit{determinant} of the array associated with \eqref{eq:square_matrix} shall be denoted $|X|$ or $|x_{ij}$.
+
+Similar to the equality definition between vectors, two matrices are said to be equal if and only if their elements are equal \ie 
+%
+\begin{align}
+	A + B = \left(a_{ij} + b_{ij}\right)
+\end{align}
+
+Scalar multiplication of a matrix can be expressed as 
+%
+\begin{align}
+	c_1 X = X c_1 = \left(c_1 x_{ij}\right)
+\end{align}
+
+Lastly, by $\bar{X}$ we shall mean the matrix whose elements are the complex conjugates of $X$. $X$ is a real matrix if the elements of $X$ are real.
+
+\section{Vector by Matrix Multiplication}
+
+Recall the linear transformation
+%
+\begin{align}
+	y_i = \sum_{j=1}^{N} a_{ij} x_j \qquad i=1,2,\ldots, N
+\end{align}
+%
+where $a_{ij}$ are complex quantities. For two vectors $\bm{x}$ and $\bm{y}$ related as above, we have
+%
+\begin{align}
+	\bm{y} = A \bm{x}
+	\label{eq:linear_y}
+\end{align}
+%
+to describe the multiplication of a vector $\bm{x}$ by a matrix $X$. 
+
+\begin{homework}
+	Consider the identity matrix $I$, so defined
+	\begin{align}
+		I = \begin{bmatrix}
+		1 & 0 & \ldots & 0 \\
+		0 & 1 & \ldots & 0 \\
+		\vdots & \vdots & \ddots & \vdots \\
+		0 & 0 & \ldots & 1 \\
+		\end{bmatrix}
+	\end{align}
+	\ie $I = (\delta_{ij})$, where $\delta_{ij}$ is the Kronecker delta symbol, defined as
+	\begin{align}
+		\delta_{ij} = \begin{cases}
+		0, \qquad \text{if  } i \neq j \\
+		1, \qquad \text{if  }  i=j
+		\end{cases}
+	\end{align}
+	Show that 
+	\begin{align}
+		\delta_{ij} = \sum_{k=1}^{N} \delta_{ik} \delta_{kj}
+	\end{align}
+\end{homework}
+
+\begin{homework}
+	Show that 
+	\begin{align}
+		\langle Ax, Ax \rangle = \sum_{i=1}^{N} \left(\sum_{j=1}^{N} a_{ij}x_j\right)^2
+	\end{align}
+\end{homework}
+
+\section{Matrix by Matrix Multiplication}
+
+Consider \eqref{eq:linear_y}. Now, suppose our goal is to generate a second-order linear transformation so defined 
+%
+\begin{align}
+	\bm{z} = B\bm{y}
+\end{align}
+%
+which converts the components of $\bm{y}$ into components of $\bm{z}$. To express the components of $\bm{z}$ in terms of the components of $\bm{x}$ this, we write
+%
+\begin{align}
+	z_i &= \sum_{k=1}^{N} b_{ik} y_k = \sum_{k=1}^{N} b_{ik} \left(\sum_{j=1}^{N}a_{kj}x_j\right) \\
+	&= \sum_{j=1}^{N} \left(\sum_{k=1}^{N}b_{ik}a_{kj}\right)\bm{x}_j
+\end{align}
+
+Introducing $C=\left(c_{ij}\right)$ defined as 
+%
+\begin{align}
+	c_{ij} = \sum_{k=1}^{N} b_{ik} a_{kj} \qquad i,j = 1,2,\ldots,N
+\end{align}
+%
+we may write 
+%
+\begin{align}
+	\bm{z} = C \bm{x}
+\end{align}
+%
+Since, formally
+%
+\begin{align}
+	\bm{z} = B\bm{y} = B(A\bm{x}) = B(A\bm{x}) = (BA) \bm{x}
+\end{align}
+%
+so that 
+%
+\begin{align}
+	C = BA
+\end{align}
+%
+Note the ordering of the matrix product above.
+%
+\begin{homework}
+	Show that 
+	%
+	\begin{align}
+		f(\theta_1) f(\theta_2) = f(\theta_2) f(\theta_1) = f(\theta_1 + \theta_2)
+	\end{align}
+	%
+	where 
+	\begin{align}
+		f(\theta) = \begin{bmatrix}
+		\cos \theta & -\sin \theta \\
+		\sin  \theta & \cos \theta
+		\end{bmatrix}
+	\end{align}
+\end{homework}
+
+\begin{homework}
+	Show that 
+	\begin{align}
+		\left(a_1^2 + a_2^2\right)\left(b_1^2 + b_2^2\right) = \left(a_2 b_1 + a_1 b_2\right)^2 + \left(a_1 b_1 + a_2 b_2\right)^2
+	\end{align}
+	\textbf{Hint:}  $|A B | = |A| |B|$, 
+\end{homework}
+
+\section{Non-Commutativity}
+
+Matrix multiplication is not commutative, \ie $AB \neq BA$. For an example, consider the following $3\times3$ matrices
+%
+\begin{align}
+	A = \begin{bmatrix}
+	5 & 6 & 9 \\
+	2 & 1  & 6 \\
+	3 & 6 & 9
+	\end{bmatrix} 
+	\qquad 
+	B = \begin{bmatrix}
+	1   &  4  &  13 \\
+	23  &   6  &  24 \\
+	8   &  3    & 9
+	\end{bmatrix} 
+\end{align}
+%
+where
+%
+\begin{align}
+	AB = \begin{bmatrix}
+	215  &  83 &  290 \\
+	73  &  32 &  104 \\
+	213  &  75 &  264
+	\end{bmatrix} 
+	%
+	\qquad
+	%
+	\text{ and }
+	%
+	BA = \begin{bmatrix}
+	52   & 88  & 150 \\
+	199 &  288 &  459 \\
+	73 &  105 &  171
+	\end{bmatrix} 
+\end{align}
+%
+so that $AB \neq BA$. If, however, $AB = BA$, we say $A$ and $B$ \textit{commute}.
+
+\section{Associativity}
+Associativity of matrix multiplication gets preserved unlike the commutativity. So for matrices $A$, $B$, and $C$, we have
+%
+\begin{align}
+	\left(AB\right)C = A\left(BC\right)
+\end{align}
+%
+that is, the product $ABC$ is unambiguously defined without the parentheses. To prove this, we write the $ij$th element of $AB$ as 
+%
+\begin{align}
+	a_{ik} b_{kj}
+\end{align} 
+%
+so that the definition of multiplication implies that 
+%
+\begin{align}
+	\left(AB\right) C &= \left[\left(a_{ik} b_{kl} \right)c_{lj}\right] \\
+	A \left(BC\right) & = \left[a_{ik}\left( b_{kl} c_{lj} \right)\right]
+\end{align}
+%
+which establishes the equality $\left(AB\right) C$ and $A \left(BC\right)$.
+
+\section{Invariant Vectors}
+%
+The problem of finding the minimum or maximum of  $Q = \sum_{i,j=1}^{N} a_{ij} \bm{x}_i \bm{x}_j$ for $\bm{x}_i$ satisfying the relation $\sum_{i=1}^{N} \bm{x}_i^2 = 1$ can be reduced to the problem of finding the values of the scalar $\lambda$ that satisfies the set of linear homogeneous equations
+%
+\begin{align}
+	\sum_{j=1}^{N} a_{ij} \bm{x}_j = \lambda \bm{x}_i, \qquad i=1,2,\ldots, N
+\end{align}
+%
+which possesses nontrivial solutions. Vectorizing, we have
+%
+\begin{align}
+	A \bm{x} = \lambda \bm{x}
+\end{align}
+%
+Here, $\bm{x}$ signifies the direction indicated by the $N$ direction numbers $\bm{x}_1, \bm{x}_2, \ldots, \bm{x}_N$, and we are searching for the directions  that are invariant.
+
+\section{The Matrix Transpose}
+
+We define the transpose of the matrix $A = (a_{ij})$ as $A^T = (a_{ji})$ \ie the rows of $A^T$ are the columns of $A$ and vice versa. An important consequence of this is that the transformation $A$ on the set of a vector $\bm{x}$ is same as the transformation of the matrix $A^T$ on the set $\bm{y}$. This is shown in the following
+%
+\begin{align}
+	\langle A\bm{x}, \bm{y} \rangle  = y_1 \sum_{j=1}^{N} a_{1j} \bm{x}_j +  y_2 \sum_{j=1}^{N} a_{2j} \bm{x}_j +  \ldots +  y_N \sum_{j=1}^{N} a_{Nj} \bm{x}_j 
+\end{align}
+%
+which becomes upon rearrangement,
+%
+\begin{align}
+		\langle A\bm{x}, \bm{y} \rangle  & = x_1 \sum_{i=1}^{N} a_{i1} \bm{y}_i +  x_2 \sum_{i=1}^{N} a_{i2} \bm{y}_i +  \ldots +  x_N \sum_{i=1}^{N} a_{iN} \bm{y}_i  \\
+		&= \langle \bm{x}, A^T \bm{y} \rangle 
+\end{align}
+
+We can then regard $A^T$ as the \textit{induced or adjoint transformation} of $A$.
+
+\section{Symmetric Matrices}
+Matrices that satisfy the relation 
+\begin{align}
+	A = A^T
+\end{align}
+%
+play a crucial role in the study of quadratic forms and such matrices are said to be \textit{symmetric}, with the property that 
+%
+\begin{align}
+	a_{ij} = a_{ji}
+\end{align}
+
+\begin{homework}
+	Prove that $(A^T)^T = A$
+\end{homework}
+%
+\begin{homework}
+	Prove that $\langle A\bm{x}, B\bm{y}\rangle = \langle \bm{x}, A^T B \bm{y} \rangle$
+\end{homework}
+
+\section{Hermitian Matrices}
+
+The scalar function for complex vectors is the expression $\langle \bm{x}, \bm{\bar{y}}\rangle$. Suppose we define $\bm{z}=\bar{A^T} \bm{y}$, then 
+%
+\begin{align}
+\langle A \bm{x}, \bar{y}\rangle =\langle \bm{x}, \bar{\bm{z}}\rangle 
+\end{align}
+%
+\ie the induced transformation is now $\bar{A^T}$, the complex conjugate of $A$. Matrices for which 
+%
+\begin{align}
+	A = \bar{A^T}
+\end{align}
+%
+are called Hermitian. Note that in some literature, the Hermitian matrix is often written as $A^\star$.
+
+\section{Orthogonal Matrices}
+%
+This section has to do with the invariance of distance between matrices, that is, taking the Euclidean measure of distance as the measure of the magnitude of the real-valued vector $\bm{x}$. The prodding question of interest is to figure out the linear transformation $\bm{y} = H \bm{x}$ that leaves the inner product $\langle\bm{x}, \bm{z}\rangle$. Mathematically, we express this problem such that 
+%
+\begin{align}
+	\langle \bm{x}, \bm{x}\rangle = \langle H\bm{x}, H \bm{x} \rangle 
+	\label{eq:orthogonal}
+\end{align}
+%
+is satisfied for \textit{all} $\bm{x}$. We know that  
+%
+\begin{align}
+	\langle H \bm{x}, H \bm{x}\rangle = \langle \bm{x}, H^T H \bm{x}\rangle
+\end{align}
+%
+and that $H^TH$ is symmetric so that  \eqref{eq:orthogonal}, gives 
+%
+\begin{align}
+	H^TH = I.
+	\label{eq:real_invar}
+\end{align}
+%
+\begin{tcolorbox}[title=Orthogonal Matrix]
+	A real matrix $H$ for which $H^TH=I$ is called \textit{orthogonal}.
+\end{tcolorbox}
+
+\section{Unitary Matrices}
+
+This is the measure of the distance of a complex vector, akin to the invariance condition of real-valued matrices \eqref{eq:real_invar}. We define the unitary property as follows:
+%
+\begin{align}
+	H^\star H = I.
+\end{align}
+%
+Matrices defined as in the foregoing play a crucial role in the treatment of Hernitian matrices, such as the role that orthogonal matrices play in symmetric matrices theory.
