@@ -1,0 +1,28 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Cadena, Carlone, Carrillo, Latif, Scaramuzza,
+  Neira, Reid, and Leonard}{Cadena et~al.}{2016}]{SLAMLeonard}
+Cadena, C., L.~Carlone, H.~Carrillo, Y.~Latif, D.~Scaramuzza, J.~Neira,
+  I.~Reid, and J.~J. Leonard (2016).
+\newblock Past, present, and future of simultaneous localization and mapping:
+  Toward the robust-perception age.
+\newblock {\em IEEE Transactions on robotics\/}~{\em 32\/}(6), 1309--1332.
+
+\bibitem[\protect\citeauthoryear{Leger, Trebi-Ollennu, Wright, Maxwell, Bonitz,
+  Biesiadecki, Hartman, Cooper, Baumgartner, and Maimone}{Leger
+  et~al.}{2005}]{leger2005mars}
+Leger, P.~C., A.~Trebi-Ollennu, J.~R. Wright, S.~A. Maxwell, R.~G. Bonitz,
+  J.~J. Biesiadecki, F.~R. Hartman, B.~K. Cooper, E.~T. Baumgartner, and M.~W.
+  Maimone (2005).
+\newblock Mars exploration rover surface operations: Driving spirit at gusev
+  crater.
+\newblock In {\em 2005 IEEE International Conference on Systems, Man and
+  Cybernetics}, Volume~2, pp.\  1815--1822. IEEE.
+
+\bibitem[\protect\citeauthoryear{Maimone, Cheng, and Matthies}{Maimone
+  et~al.}{}]{MarsVisualOdometry}
+Maimone, M., Y.~Cheng, and L.~Matthies.
+\newblock Two years of visual odometry on the mars exploration rovers.
+\newblock {\em Journal of Field Robotics\/}~{\em 24\/}(3).
+
+\end{thebibliography}
