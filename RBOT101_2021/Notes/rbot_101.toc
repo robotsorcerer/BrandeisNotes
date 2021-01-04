@@ -1,0 +1,26 @@
+\contentsline {chapter}{\MakeTextUppercase {List of Figures}}{iii}{chapter*.2}
+\contentsline {chapter}{\MakeTextUppercase {List of Tables}}{iv}{chapter*.3}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {1}\MakeTextUppercase {Vectors and Matrices}}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Vectors}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Addition of Vectors}{2}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Scalar Multiplication}{3}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}The Inner Product of Two Vectors}{3}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Orthogonality}{4}{subsection.1.1.4}
+\contentsline {section}{\numberline {1.2}Matrices}{4}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Vector by Matrix Multiplication}{5}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Matrix by Matrix Multiplication}{6}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Non-Commutativity}{7}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Associativity}{8}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Invariant Vectors}{8}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.6}The Matrix Transpose}{9}{subsection.1.2.6}
+\contentsline {subsection}{\numberline {1.2.7}Symmetric Matrices}{10}{subsection.1.2.7}
+\contentsline {subsection}{\numberline {1.2.8}Hermitian Matrices}{10}{subsection.1.2.8}
+\contentsline {subsection}{\numberline {1.2.9}Orthogonal Matrices}{10}{subsection.1.2.9}
+\contentsline {subsection}{\numberline {1.2.10}Unitary Matrices}{11}{subsection.1.2.10}
+\contentsline {subsection}{\numberline {1.2.11}Matrix Determinant}{11}{subsection.1.2.11}
+\contentsline {subsection}{\numberline {1.2.12}Properties of the Matrix Determinant}{12}{subsection.1.2.12}
+\contentsline {subsection}{\numberline {1.2.13}The Matrix Trace}{13}{subsection.1.2.13}
+\contentsline {subsection}{\numberline {1.2.14}Eigenvectors and Eigenvalues of a Matrix}{14}{subsection.1.2.14}
+\contentsline {subsection}{\numberline {1.2.15}Other Matrix Properties}{14}{subsection.1.2.15}
+\contentsline {subsection}{\numberline {1.2.16}The Matrix Inversion Lemma}{15}{subsection.1.2.16}
+\contentsline {chapter}{\MakeTextUppercase {References}}{18}{chapter*.4}

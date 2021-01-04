@@ -39,7 +39,7 @@ Going forward, we shall use the notation of \eqref{eq:col_vec} to represent all 
 
 One-dimensional vectors are called \textit{scalars} and shall be our quantities of analysis. When we write $\bar{\bm{x}}$, we shall mean the vector whose components are the complex conjugates of the elements of $\bm{x}$.
 
-\section{Addition of Vectors}
+\subsection{Addition of Vectors}
 %
 Two vectors $\bm{x}$ and $\bm{y}$ are said to be equal if all of their components, $(x_i, y_i)$ are equal for $i=1,2,\ldots, N$. Addition is the simplest of the arithmetic operations on vectors. We shall write the sum of two vectors as $\bm{x} + \bm{y}$ so that 
 %
@@ -59,7 +59,7 @@ whereupon we note that the $``+"$ sign connecting $\bm{x}$ and $\bm{y}$ is diffe
 	Just as we showed the addition property of two vectors above, show the subtraction property of two vectors $\bm{x}$ and $\bm{y}$.
 \end{homework}
 
-\section{Scalar Multiplication}
+\subsection{Scalar Multiplication}
 When a vector is multiplied by a scalar, we shall write it out as follows
 %
 \begin{align}
@@ -68,7 +68,7 @@ When a vector is multiplied by a scalar, we shall write it out as follows
 	\end{bmatrix}
 \end{align}
 %
-\section{The Inner Product of Two Vectors}
+\subsection{The Inner Product of Two Vectors}
 %
 This is a scalar function of two vectors $\bm{x}$ and $\bm{y}$ defined as 
 %
@@ -108,7 +108,7 @@ The above is an easy way to \textit{multiply} two vectors. The inner product is 
 	holds for any two real-valued variables.
 \end{homework}
 
-\section{Orthogonality}
+\subsection{Orthogonality}
 
 Two vectors are said to be orthogonal if their inner product is $0$ \ie 
 %
@@ -178,7 +178,7 @@ Scalar multiplication of a matrix can be expressed as
 
 Lastly, by $\bar{X}$ we shall mean the matrix whose elements are the complex conjugates of $X$. $X$ is a real matrix if the elements of $X$ are real.
 
-\section{Vector by Matrix Multiplication}
+\subsection{Vector by Matrix Multiplication}
 
 Recall the linear transformation
 %
@@ -225,7 +225,7 @@ to describe the multiplication of a vector $\bm{x}$ by a matrix $X$.
 	\end{align}
 \end{homework}
 
-\section{Matrix by Matrix Multiplication}
+\subsection{Matrix by Matrix Multiplication}
 
 Consider \eqref{eq:linear_y}. Now, suppose our goal is to generate a second-order linear transformation so defined 
 %
@@ -290,7 +290,7 @@ Note the ordering of the matrix product above.
 	\textbf{Hint:}  $|A B | = |A| |B|$, 
 \end{homework}
 
-\section{Non-Commutativity}
+\subsection{Non-Commutativity}
 
 Matrix multiplication is not commutative, \ie $AB \neq BA$. For an example, consider the following $3\times3$ matrices
 %
@@ -328,9 +328,13 @@ where
 	\end{bmatrix} 
 \end{align}
 %
-so that $AB \neq BA$. If, however, $AB = BA$, we say $A$ and $B$ \textit{commute}.
+so that $AB \neq BA$. If, however, $AB = BA$, we say $A$ and $B$ \textit{commute}. Note that 
+%
+\begin{align}
+	(AB)^{-1} = B^{-1} A^{-1}.
+\end{align}
 
-\section{Associativity}
+\subsection{Associativity}
 Associativity of matrix multiplication gets preserved unlike the commutativity. So for matrices $A$, $B$, and $C$, we have
 %
 \begin{align}
@@ -352,7 +356,7 @@ so that the definition of multiplication implies that
 %
 which establishes the equality $\left(AB\right) C$ and $A \left(BC\right)$.
 
-\section{Invariant Vectors}
+\subsection{Invariant Vectors}
 %
 The problem of finding the minimum or maximum of  $Q = \sum_{i,j=1}^{N} a_{ij} \bm{x}_i \bm{x}_j$ for $\bm{x}_i$ satisfying the relation $\sum_{i=1}^{N} \bm{x}_i^2 = 1$ can be reduced to the problem of finding the values of the scalar $\lambda$ that satisfies the set of linear homogeneous equations
 %
@@ -368,7 +372,7 @@ which possesses nontrivial solutions. Vectorizing, we have
 %
 Here, $\bm{x}$ signifies the direction indicated by the $N$ direction numbers $\bm{x}_1, \bm{x}_2, \ldots, \bm{x}_N$, and we are searching for the directions  that are invariant.
 
-\section{The Matrix Transpose}
+\subsection{The Matrix Transpose}
 
 We define the transpose of the matrix $A = (a_{ij})$ as $A^T = (a_{ji})$ \ie the rows of $A^T$ are the columns of $A$ and vice versa. An important consequence of this is that the transformation $A$ on the set of a vector $\bm{x}$ is same as the transformation of the matrix $A^T$ on the set $\bm{y}$. This is shown in the following
 %
@@ -383,9 +387,13 @@ which becomes upon rearrangement,
 		&= \langle \bm{x}, A^T \bm{y} \rangle 
 \end{align}
 
-We can then regard $A^T$ as the \textit{induced or adjoint transformation} of $A$.
+We can then regard $A^T$ as the \textit{induced or adjoint transformation} of $A$. An interesting property of the transpose of amatrix product is that 
+%
+\begin{align}
+	(AB)^T = B^T A^T
+\end{align}
 
-\section{Symmetric Matrices}
+\subsection{Symmetric Matrices}
 Matrices that satisfy the relation 
 \begin{align}
 	A = A^T
@@ -405,7 +413,7 @@ play a crucial role in the study of quadratic forms and such matrices are said t
 	Prove that $\langle A\bm{x}, B\bm{y}\rangle = \langle \bm{x}, A^T B \bm{y} \rangle$
 \end{homework}
 
-\section{Hermitian Matrices}
+\subsection{Hermitian Matrices}
 
 The scalar function for complex vectors is the expression $\langle \bm{x}, \bm{\bar{y}}\rangle$. Suppose we define $\bm{z}=\bar{A^T} \bm{y}$, then 
 %
@@ -421,7 +429,7 @@ The scalar function for complex vectors is the expression $\langle \bm{x}, \bm{\
 %
 are called Hermitian. Note that in some literature, the Hermitian matrix is often written as $A^\star$.
 
-\section{Orthogonal Matrices}
+\subsection{Orthogonal Matrices}
 %
 This section has to do with the invariance of distance between matrices, that is, taking the Euclidean measure of distance as the measure of the magnitude of the real-valued vector $\bm{x}$. The prodding question of interest is to figure out the linear transformation $\bm{y} = H \bm{x}$ that leaves the inner product $\langle\bm{x}, \bm{z}\rangle$. Mathematically, we express this problem such that 
 %
@@ -447,7 +455,7 @@ and that $H^TH$ is symmetric so that  \eqref{eq:orthogonal}, gives
 	A real matrix $H$ for which $H^TH=I$ is called \textit{orthogonal}.
 \end{tcolorbox}
 
-\section{Unitary Matrices}
+\subsection{Unitary Matrices}
 
 This is the measure of the distance of a complex vector, akin to the invariance condition of real-valued matrices \eqref{eq:real_invar}. We define the unitary property as follows:
 %
@@ -455,4 +463,303 @@ This is the measure of the distance of a complex vector, akin to the invariance 
 	H^\star H = I.
 \end{align}
 %
-Matrices defined as in the foregoing play a crucial role in the treatment of Hernitian matrices, such as the role that orthogonal matrices play in symmetric matrices theory.
+Matrices defined as in the foregoing play a crucial role in the treatment of Hermitian matrices, such as the role that orthogonal matrices play in symmetric matrices theory.
+
+\subsection{Matrix Determinant}
+%
+The determinant of a scalar is same as the scalar while the determinant of a matrix shall be inductively defined for square matrices. Suppose we have an $n \times n$ matrix $A$, its determinant is defined as 
+%
+\begin{align}
+	|A| = \sum_{j=1}^N (-1)^{i+j} a_{(i,j)} | a^{(i,j)} |
+	\label{eq:laplace_exp}
+\end{align}
+%
+for any value of $i \in [1, n]$, where \eqref{eq:laplace_exp} is called the Laplace expansion of $|A|$ along its $i$th row. Equation \eqref{eq:laplace_exp} shows us that the determinant of the square matrix $A$ is found in terms of the determinants of the $(n-1) \times (n-1)$ matrices. Similarly, the determinants of $(n-1) \times (n-1)$ matrices are defined by $(n-2) \times (n-2)$ and so on until we get to the determinant of $1\times1$ matrices which are scalars. We can also define the determinant of $A$ as 
+%
+\begin{align}
+	 |A| = \sum_{i=1}^N(-1)^{i+j} a_{(i,j)} |a^{(i,j)}|
+\end{align}
+%
+for any value of $j \in [1, n]$. This is termed the Laplace expansion of $A$ along its $j$th column. It follows that 
+%
+\begin{subequations}
+	\begin{align}
+	   |A_{11}| &= A_{11} 
+	\end{align}
+	%
+	\begin{align}
+	\text{det} \begin{bmatrix}
+	A_{11} & A_{12} \\
+	%
+	A_{21} & A_{22}
+	\end{bmatrix} = A_{11} A_{22} - A_{12}A_{21}
+	\end{align}
+	%
+	\text{and that}
+	%
+	\begin{align}
+	\text{det} \begin{bmatrix}
+	A_{11} & A_{12} & A_{13} \\
+	%
+	A_{21} & A_{22} & A_{23} \\
+	%
+	A_{31} & A_{32} & A_{33} 
+	\end{bmatrix} &= A_{11} (A_{22} A_{33}- A_{23}A_{32}) - \\
+						  & A_{12} (A_{21} A_{33}- A_{23}A_{31}) + \\
+						  & A_{13} (A_{21} A_{32}- A_{22}A_{31}) \
+	\end{align}
+\end{subequations}
+
+\subsection{Properties of the Matrix Determinant}
+\begin{enumerate}
+	\item $|AB| = |A| |B|$, where $A$ and $B$ are assumed to be of equal dimensions.
+	%
+	\item $|A| = \prod_{i=1}^{N} \lambda_i$, where $\lambda_i$ are the eigenvalues of $A$.
+	%
+	\item The inverse of $A$ is said to exist if $AA^{-1} = I$. Such a matrix is said to be \textit{non-singular}. Note that $A$ must be a square matrix in order for it to have a determinant. A square matrix whose inverse does not exist is said to be \textit{singular}. 
+\end{enumerate}
+%
+Take for example,
+%
+\begin{align}
+	\begin{bmatrix}
+	3 & 0 \\ 2, 1
+	\end{bmatrix}
+	%
+	 \begin{bmatrix}
+	1/3 & 0 \\ -2/3, 1
+	\end{bmatrix} = 
+	%
+	 \begin{bmatrix}
+	1 & 0 \\ 0, 1
+	\end{bmatrix}.
+\end{align}
+%
+Then we say that the two matrices on the left are inverses of one another. Among other ways of stating the nonsingularity of $A$ are that 
+%
+\begin{itemize}
+	\item $A$'s rows or columns are linearly independent.
+	%
+	\item $|A| \neq 0$.
+	%
+	\item $Ax = b$ has a unique solution $x$ for all $b$.
+	%
+	\item The rank of $A=n$.
+	%
+	\item $0$ is not an eigenvalue of $A$. 
+	%
+	\item $A^{-1}$ exists.
+\end{itemize}
+
+\subsection{The Matrix Trace}
+%
+The trace of a matrix exists if and only of the matrix is square. It is defined as the sum of its diagonal elements.
+%
+\begin{align}
+	\text{Tr}(A) = \sum_{i=1} A_{ii}
+\end{align}
+%
+Also, the trace can be expressed in terms of the sum of the matrix's eigenvalues,
+%
+\begin{align}
+\text{Tr}(A) = \sum_{i=1} \lambda_i.
+\end{align}
+%
+The trace of a matrix product is not dependent in the order of multiplication of the matrices:
+%
+\begin{align}
+	\text{Tr}(AB) = \text{Tr}(BA).
+\end{align}
+
+\subsection{Eigenvectors and Eigenvalues of a Matrix}
+
+A square $n\times n$ matrix $A$ has $n$ eigenvalues and $n$ eigenvectors. If 
+%
+\begin{align}
+	A \bm{x} = \lambda \bm{x}
+\end{align}
+%
+for a scalar $\lambda$ and an $n \times 1$  vector $\bm{x}$ then we say the matrix $A$ has eigenvalues $\lambda$ and eigenvectors $\bm{x}$. Together, $\lambda$ and $\bm{x}$ are called \textit{eigendata}, the \textit{characteristic roots}, \textit{latent roots}, or \textit{proper numbers and vectors} of the matrix.
+
+\begin{homework}
+	If $A$ has eigendata $\left(\lambda, \bm{x}\right)$, then $A^2$ has eigendata $\left(\lambda^2, \bm{x}\right)$. 
+\end{homework}
+%
+\begin{homework}
+	Show that $A^{-1}$ exists if and only if none of the eigenvalues of $A$ are zero.
+\end{homework}
+%
+\begin{homework}
+	Show that the eigenvalues of $A$ are real numbers if $A$ is symmetric.
+\end{homework}
+
+\subsection{Other Matrix Properties}
+%
+A \textit{symmetric} $n \times n$ matrix $A$ can be characterized as either positive definite, positive semidefinite, negative definite, negative semidefinite, or indefinite if matrix $A$ is
+%
+\begin{itemize}
+	\item \textit{Positive definite} if $\bm{x}^TA\bm{x}>0$ for all nonzero $n \times 1$ vectors $\bm{x}$. That is, all the eigenvalues of $A$ are positive real numbers.  If $A$ is positive definite, then so is $A^{-1}$.
+	%
+	\item \textit{Positive semidefinite} if $\bm{x}^TA\bm{x} \ge 0$ for all nonzero $n \times 1$ vectors $\bm{x}$. That is, all the eigenvalues of $A$ are non-negative real numbers. A positive semidefinite matrices are sometimes called nonnegative definite.
+	%
+	\item \textit{Negative definite} if $\bm{x}^TA\bm{x} < 0$ for all nonzero $n \times 1$ vectors $\bm{x}$. That is, all the eigenvalues of $A$ are negative real numbers.  If $A$ is negative definite, then so is $A^{-1}$.
+	%
+	\item \textit{Negative semidefinite} if $\bm{x}^TA\bm{x} \le 0$ for all nonzero $n \times 1$ vectors $\bm{x}$. That is, all the eigenvalues of $A$ are non-negative real numbers. A positive semidefinite matrices are sometimes called non positive definite.
+	%
+	\item When some of the eigenvalues of $A$ are positive and some are negative, then the matrix is said to be \textit{indefinite}.
+\end{itemize}
+
+The singular values of matrix $A$ are defined as 
+%
+\begin{align}
+	\sigma^2 (A) &= \lambda (A^TA) \nonumber \\
+						&= \lambda (A^TA)
+\end{align}
+%
+For an $n \times n$ matrix $A$, we have a $\min(n,m)$ singular values. If $n > m$, then $AA^T$ will have the same eigenvalues as $A^TA$ and an additional $n-m$ zeroes. We do not consider the additional zeroes to be singular values of $A$ because $A$ always has $\min (n, m)$ singular values.
+%
+\begin{quiz}
+	If $A$ is $n \times m$, what are number of eigenvalues of $A^TA$ and $AA^T$ respectively?
+\end{quiz}
+
+
+
+
+\subsection{The Matrix Inversion Lemma}
+%
+This is sometimes called the \textit{Woodbury matrix identity}, named after Max A. Woodbury., \textit{Sherman-Morrison formula}, or the \textit{modified matrices formula}.  It a tool frequently used in statistics, system identification, state estimation and control theory. Assume we have a blockwise matrix 
+%
+$\left(\begin{array}{cc}
+	A & B \\ C & D
+\end{array}\right)$
+%
+where $A$ and $D$ are invertible square matrices, and $B$ and $C$ are not necessarily square. We can define the following matrices
+%
+\begin{align}
+	E &= D - C A^{-1} B \nonumber \\
+	F &= A - BD^{-1} C.
+\end{align}
+%
+If $E$ is invertible, it follows that
+%
+\begin{align}
+	\begin{bmatrix}
+		A & B \\ C & D
+	\end{bmatrix}
+	%
+		\begin{bmatrix}
+	A^{-1}  + A^{-1} B E^{-1} C A^{-1} & -A^{-1}B E^{-1} \\ -E^{-1} C A^{-1} & E^{-1}
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	I & 0 \\ 0 & I
+	\end{bmatrix}.
+	\label{eq:inv_lemma1}
+\end{align}
+%
+Also, if $F$ were invertible, it follows that 
+%
+\begin{align}
+\begin{bmatrix}
+A & B \\ C & D
+\end{bmatrix}
+%
+\begin{bmatrix}
+F^{-1} & -A^{-1} B E^{-1} \\ -D^{-1} C F^{-1} & E^{-1}
+\end{bmatrix}
+=
+\begin{bmatrix}
+I & 0 \\ 0 & I
+\end{bmatrix}.
+\label{eq:inv_lemma2}
+\end{align}
+%
+It follows that \eqref{eq:inv_lemma1} and \eqref{eq:inv_lemma2} are two expressions for the inverse of $\left(\begin{array}{cc}
+A & B \\ C & D
+\end{array}\right)$. We must therefore have the upper-left partitions of the two matrices equal so that 
+%
+\begin{align}
+	F^{-1} = A^{-1} + A^{-1} B E^{-1} C A^{-1}
+\end{align}
+%
+and from the definition of $F$, we have
+%
+\begin{align}
+ \left(A - B D^{-1}C\right)^{-1} = A^{-1} + A^{-1} B \left(D - C A^{-1} B\right)^{-1} C A^{-1}
+\end{align}
+%
+An alternative statement of the matrix inversion lemma is
+%
+\begin{align}
+\left(A -+B D^{-1}C\right)^{-1} = A^{-1} + A^{-1} B \left(D + C A^{-1} B\right)^{-1} C A^{-1}
+\end{align}
+%
+\begin{quiz}
+	Verify the expressions in \eqref{eq:inv_lemma1} and \eqref{eq:inv_lemma2}.
+\end{quiz}
+
+\begin{example}
+	Suppose that at Brandeis, you took three courses in your Freshman year namely, RBOT 101, RBOT 103, and RBOT 105 where you got $90\%$, $85\%$, and $86\%$ respectively. In your Sophomore year, you took  RBOT 201, RBOT 203, and RBOT 205, where you got $65\%$, $68\%$, and $92\%$ respectively, and in your junior year, you decide to retake your Sophomore classes, where your scores increased by $10\%$, $5\%$, on the first two courses and decreased by $8\%$ in the last course. Your GPA each year increased by $4\%$, $3.5\%$ and $2.5\%$  respectively. Given your analytical prowess, you decide to model each year's GPA changes with the equation $z = a u + b v + c w$, where $u$ and $v$ and $w$ are the scores/grades you got as percentages and $a$, $b$, and $c$ are unknown constants. To find the unknown constants, you figure you need to invert the matrix
+	%
+	\begin{align}
+		A = \begin{bmatrix}
+			90 & 85 & 86 \\
+			65 & 68 & 92 \\
+			71.5 & 71.4 & 84.64
+		\end{bmatrix}
+	\end{align}
+	%
+	so that 
+	%
+	\begin{align}
+	A^{-1} = \begin{bmatrix}
+	23/20 & 155/104 & -145/52 \\
+	-207/136 & -569/274 & 6725/1768 \\
+	5/16 & 205/416 & -175/208
+	\end{bmatrix}
+	\end{align}
+	%
+	It follows that the unknown constants are 
+	%
+	\begin{align}
+		X = A^{-1} \left(\begin{array}{c}
+			4 \\ 7/2 \\ 5/2
+		\end{array}\right) = \left(\begin{array}{c}
+		2959/1040 \\ -2693/700 \\ 725/832
+		\end{array}\right) 
+	\end{align}
+	%
+	As a result, you are able to determine a model which allows you to predict future GPA changes based on how hard you work, sleep, engage in social activities. You can better allocate your time resource and improve your grades in the following years.
+	
+	Suppose that in the aftermath of generating this model, you now realize that your grade in RBOT 201  the second year was $86\%$ rather than $65\%$, this means that in order to find the constants, you want to invert
+	%
+	\begin{align}
+	\bar{A} = \begin{bmatrix}
+	90 & 85 & 86 \\
+	86 & 68 & 92 \\
+	71.5 & 71.4 & 84.64
+	\end{bmatrix}.
+	\end{align}
+	%
+	Rather than invert all the matrix all over, you decide to apply a mathematical trick leveraging the inversion lemma. You write $\bar{A} = A + BD^{-1}C$, where 
+	%
+	\begin{subequations}
+		\begin{align}
+			B = \begin{bmatrix}
+					0 & 21 & 3.44
+			\end{bmatrix}^T
+			%
+			C = \begin{bmatrix}
+			1 & 0 & 0
+			\end{bmatrix}
+			%
+			D = 1
+		\end{align}
+	\end{subequations}
+so that 
+%
+\begin{align}
+	\bar{A}^{-1} &= \left(A + BD^{-1}C\right)^{-1} \\
+						&= A^{-1} - A^{-1} B\left(D + C A^{-1}B\right)^{-1} C A^{-1-}
+\end{align}
+\end{example}
