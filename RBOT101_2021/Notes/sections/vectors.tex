@@ -762,4 +762,32 @@ so that
 	\bar{A}^{-1} &= \left(A + BD^{-1}C\right)^{-1} \\
 						&= A^{-1} - A^{-1} B\left(D + C A^{-1}B\right)^{-1} C A^{-1}
 \end{align}
+%
+The $\left(D + C A^{-1}B\right)^{-1}$ term turns out to be a scalar so that 
+%
+\begin{align}
+\bar{A}^{-1} &= \begin{bmatrix}
+0.0506 & 0.0656 & -0.1228 \\
+%
+0.0239 & -0.073 & 0.0551 \\
+%
+-0.065 & 0.0035 & 0.0741
+\end{bmatrix}
+\end{align}
+%
+\begin{align}
+	X &= \bar{A}^{-1} \left(\begin{array}{c}
+	4 \\ 7/2 \\ 5/2
+	\end{array}\right) \nonumber \\
+	%
+	&= 
+	\left(\begin{array}{c}
+	51/407   \\
+	-134/6037  \\
+	-148/2361 
+	\end{array}\right)
+\end{align}
+%
+Here, the matrix inversion lemma may not be necessary since the size of the matrix is small. However, if the matrix had a larger size, the computational savings of using the matrix inversion lemma becomes appreciated.
+
 \end{example}

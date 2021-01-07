@@ -1,2 +1,39 @@
 \chapter{State Estimation}
 \label{chap:state_ext}
+
+The next few topics in this course shall involve the quantification of uncertainty in order to enable a robot navigate, move, or understand its environment via visual or audio sensors. In order to do justice to this topic, we shall soon find out that the concept of putting a value or percentage on how sure we are about a robot's environment shall be very helpful in effective control of our robots. Thus the concept of probability shall greatly aid us in quantifying uncertainty. Even so, we introduce the concept of states, grounded in a mathematical theory that allows the engineer to implement a state through discrete-time systems (since we assume that most implementations shall be done on digital computers). By the \textit{state} of a system, we shall loosely mean ``those variables that provide a complete representation of the internal condition ot status of the system at a given time instant." In this sentiment, the states of a motor system may mean currents that flow through the inductive coils, the position and speed of motor shaft, or the voltage across the coils of a solenoid valve. The states of a military power may include the number of its aircraft carriers, the size and horsepower of its nuclear submarines, the number of enlisted servicemen in its forces e.t.c. For a biological system, the states might include blood sugar levels, heart and respiration rates, or body temperature.
+
+Robot systems may include mobile platforms for extraterrestrial navigation, robotics arms in assembly lines, autonomous cars, or actuated surgical devices that assist surgeons. Our goal is to treat uncertainty. Uncertainty occurs if the robot lacks important information that hinders it from carrying out assigned tasks. We may classify this uncertainty into five different factors, viz.,
+%
+\begin{enumerate}
+	\item \textbf{Environments.} The physical worlds is inherently unpredictable. While the degree of uncertainty in well-structured environments such assembly lines is small, environments such as highways and private homes are highly dynamic and unpredictable.
+	%
+	\item \textbf{Sensors.} Most sensors have limitations in their perceptual ability arising from noise and the range and the resolution of the sensors. For example, environmental disturbances, weather, lighting conditions limit the information that can be extracted from sensors. Secondly, as to range and resolution, cameras cannot see through walls despite the perceptual range that the spatial resolution of the camera is limited.
+	%
+	\item \textbf{Models.} In general, models are at best an approximation or a mathematical representation or abstraction of the physical world. As such, model errors are a source of uncertainty that need to be incorporated in modeling robotics problems.
+	%
+	\item \textbf{Computation.} Being real-time systems, robots require a lot of computation in order to be able to achieve timely-response through sacrificing accuracy.
+\end{enumerate}
+
+We will estimate states as they shall represent latent or underlying variables that influence the physical or chemical or financial properties of the system. And in motivating the study of a system's state, we can resolve to many weapons in our estimation arsenal which may include linear state filtering (the simple Kalman filter), nonlinear state filters (the extended Kalman filter, unscented Kalman filter e.t.c.), Bayesian estimation, and \textit{frequentist/classical} estimation approaches. In general, state estimation is an important topic to the engineer because:
+%
+\begin{itemize}
+	\item We may need to implement a feedback controller in order to regulate a system's behavior. If the application was for a surgeon to regulate blood pH levels, we may need to estimate the system's state. Or if the challenge is to adequately position a patient's head to a position in 3D space during cancer stereotactic radiosurgery, we may need to estimate the position and orientation of the patient's head and neck in the inertial frame.
+	%
+	\item If the states in question are curious enough, we may want to measure these states to understand the faults tolerance of the system in order to perform a good fault identification and prognosis. For example, we might want to estimate the internal states of an aircraft system in flight such that if an aircraft engine fails during flight, we can safely monitor system states in real-time in order to determine how long we can continue flying the aircraft or if we should quickly find a near-by airport where we could land the aircraft for maintenance.
+\end{itemize} 
+%
+In our treatment, therefore, we shall give a brief introduction to linear systems theory, touch upon standard linear filters and then proceed to treat probability theory before we treat frequentist and Bayes inference for classification, and decision-making.
+
+\section{Linear Systems}
+
+State-space systems are very important in engineering systems because they allow us to gain insight into the characteristics of the system, be able to predict future behaviors of the system, as well as identify the controllable and observable states of the system. The mathematical model of the process allows us to infer the information about the process. State-space models can be classified into linear and nonlinear systems. While most real-world systems are nonlinear, the tools that exist for analyzing and synthesizing nonlinear systems  are well-developed and sophisticated that most nonlinear systems can be approximated by linear systems in order to exercise good control and estimation for real-world applications.
+
+A continuous-time, deterministic linear system can be described by the equations 
+%
+\begin{align}
+	\dot{x} &= Ax + Bu \nonumber \\
+	y &= Cx
+\end{align}
+%
+where $x$ is the \textit{state vector} in $\mathbb{R}^n \times 1$, $u$ is the \textit{control vector} in $\mathbb{R}^p \times 1$, and $y$ is an  $\mathbb{R}^n \times 1$ vector. Matrices $A$, $B$, and $C$ are respectively $n\times n$, $n \times p$ and $n \times 1$ in dimension.

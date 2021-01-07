@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.12.5)  6 JAN 2021 18:14
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.12.5)  7 JAN 2021 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1724,68 +1724,64 @@ Overfull \hbox (2.04715pt too wide) in paragraph at lines 630--638
 -sume we have a block-wise ma-trix $[]$
  []
 
-[24] [25]) (./sections/opt_rot.tex [26]
+[24] [25] [26]) (./sections/opt_rot.tex [27]
 Chapter 4.
-[27
+[28
 
-] [28] [29] [30]
+] [29] [30] [31]
 Underfull \vbox (badness 2626) has occurred while \output is active []
 
- [31]
-[32]
+ [32]
+[33]
 File: figures/least_squares.png Graphic file (type bmp)
 <figures/least_squares.png>
- [33]
+ [34]
 Underfull \vbox (badness 3930) has occurred while \output is active []
 
- [34]
-[35] [36]
+ [35]
+[36] [37]
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf>
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 1>
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 1>
- [37]
-File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 1>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf, page 1>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf, page 1>
  [38]
 File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 2>
+<use Kabsch.pdf, page 1>
 File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 2>
+<use Kabsch.pdf, page 1>
 File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 2>
+<use Kabsch.pdf, page 1>
  [39]
 File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 3>
+<use Kabsch.pdf, page 2>
 File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 3>
+<use Kabsch.pdf, page 2>
 File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 3>
+<use Kabsch.pdf, page 2>
  [40]
 File: Kabsch.pdf Graphic file (type pdf)
-<use Kabsch.pdf, page 4>
+<use Kabsch.pdf, page 3>
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 3>
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 3>
+ [41]
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf, page 4>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf, page 4>
- [41] [42] [43] [44] [45]
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 4>
+ [42] [43] [44] [45] [46]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 516.
 )
-(./sections/state_est.tex [46] [47]
+(./sections/robo_confs.tex [47] [48]
 Chapter 5.
-) (./sections/robo_confs.tex [48
-
-]
-Chapter 6.
 File: figures/StanfordArm.jpg Graphic file (type bmp)
 <figures/StanfordArm.jpg>
 File: figures/PUMA.jpg Graphic file (type bmp)
@@ -1838,7 +1834,7 @@ File: figures/parallel_translational.png Graphic file (type bmp)
 File: figures/parallel_translational_workspace.png Graphic file (type bmp)
 <figures/parallel_translational_workspace.png>
 ) (./sections/rigid_motions.tex [60] [61]
-Chapter 7.
+Chapter 6.
 
 Overfull \hbox (19.7362pt too wide) in paragraph at lines 19--25
 \OML/cmm/m/it/12 p$\T1/ptm/m/it/12 ) is as-so-ci-ated\T1/ptm/m/n/12 . A screw m
@@ -1861,113 +1857,4 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 230.
  [67]
 File: figures/revolute.png Graphic file (type bmp)
-<figures/revolute.png>
- [68] [69]
-File: figures/lienotations.pdf Graphic file (type pdf)
-<use figures/lienotations.pdf>
-
-Underfull \vbox (badness 1173) has occurred while \output is active []
-
- [70]
-File: figures/brockettpoe.pdf Graphic file (type pdf)
-<use figures/brockettpoe.pdf>
-
-[71] [72]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 434.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 434.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 434.
-
-File: figures/trans_coords.png Graphic file (type bmp)
-<figures/trans_coords.png>
-[73] [74]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 489.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 489.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 489.
-
-File: figures/rotation_illus.png Graphic file (type bmp)
-<figures/rotation_illus.png>
-[75]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [76]
-[77]
-File: figures/planar_rot.png Graphic file (type bmp)
-<figures/planar_rot.png>
- [78] [79]
-File: figures/two_frames.png Graphic file (type bmp)
-<figures/two_frames.png>
- [80]
-File: figures/point_transform.png Graphic file (type bmp)
-<figures/point_transform.png>
- [81]
-Underfull \vbox (badness 2221) has occurred while \output is active []
-
- [82]
-File: figures/compoz.png Graphic file (type bmp)
-<figures/compoz.png>
-
-[83]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 855.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\in' on input line 855.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 855.
-
-[84]
-File: figures/zyz.png Graphic file (type bmp)
-<figures/zyz.png>
- [85] [86] [87] [88] [89] [90] [91] [92]) (./rbot_101.bbl (./rbot_101.brf)
-\tf@brf=\write10
-\openout10 = `rbot_101.brf'.
-
-
-[93] [94
-
-] [95] [96])
-
-Package caption Warning: Unused \captionsetup[table] on input line 42.
-See the caption package documentation for explanation.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
-[97]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
- (./rbot_101.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 136.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 136.
-Package rerunfilecheck Info: File `rbot_101.out' has not changed.
-(rerunfilecheck)             Checksum: 10CB5916811E352776052C8617D02CC7.
-Package rerunfilecheck Info: File `rbot_101.brf' has not changed.
-(rerunfilecheck)             Checksum: 099A67CCC254EE32EB92AF9FB999F2C2.
- ) 
-Here is how much of TeX's memory you used:
- 52185 strings out of 493007
- 1167423 string characters out of 6136719
- 1398175 words of memory out of 5000000
- 55267 multiletter control sequences out of 15000+600000
- 564175 words of font info for 94 fonts, out of 8000000 for 9000
- 1351 hyphenation exceptions out of 8191
- 63i,20n,101p,10497b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on rbot_101.pdf (103 pages).
+<f
