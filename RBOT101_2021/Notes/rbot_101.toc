@@ -1,26 +1,89 @@
-\contentsline {chapter}{\MakeTextUppercase {List of Figures}}{iii}{chapter*.2}
-\contentsline {chapter}{\MakeTextUppercase {List of Tables}}{iv}{chapter*.3}
-\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {1}\MakeTextUppercase {Vectors and Matrices}}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Vectors}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Addition of Vectors}{2}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Scalar Multiplication}{3}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}The Inner Product of Two Vectors}{3}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}Orthogonality}{4}{subsection.1.1.4}
-\contentsline {section}{\numberline {1.2}Matrices}{4}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Vector by Matrix Multiplication}{5}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Matrix by Matrix Multiplication}{6}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Non-Commutativity}{7}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Associativity}{8}{subsection.1.2.4}
-\contentsline {subsection}{\numberline {1.2.5}Invariant Vectors}{8}{subsection.1.2.5}
-\contentsline {subsection}{\numberline {1.2.6}The Matrix Transpose}{9}{subsection.1.2.6}
-\contentsline {subsection}{\numberline {1.2.7}Symmetric Matrices}{10}{subsection.1.2.7}
-\contentsline {subsection}{\numberline {1.2.8}Hermitian Matrices}{10}{subsection.1.2.8}
-\contentsline {subsection}{\numberline {1.2.9}Orthogonal Matrices}{10}{subsection.1.2.9}
-\contentsline {subsection}{\numberline {1.2.10}Unitary Matrices}{11}{subsection.1.2.10}
-\contentsline {subsection}{\numberline {1.2.11}Matrix Determinant}{11}{subsection.1.2.11}
-\contentsline {subsection}{\numberline {1.2.12}Properties of the Matrix Determinant}{12}{subsection.1.2.12}
-\contentsline {subsection}{\numberline {1.2.13}The Matrix Trace}{13}{subsection.1.2.13}
-\contentsline {subsection}{\numberline {1.2.14}Eigenvectors and Eigenvalues of a Matrix}{14}{subsection.1.2.14}
-\contentsline {subsection}{\numberline {1.2.15}Other Matrix Properties}{14}{subsection.1.2.15}
-\contentsline {subsection}{\numberline {1.2.16}The Matrix Inversion Lemma}{15}{subsection.1.2.16}
-\contentsline {chapter}{\MakeTextUppercase {References}}{18}{chapter*.4}
+\contentsline {chapter}{\MakeTextUppercase {List of Figures}}{v}{chapter*.2}
+\contentsline {chapter}{\MakeTextUppercase {List of Tables}}{vi}{chapter*.3}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {1}\MakeTextUppercase {Preamble}}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Course Description}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Course Outcomes}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Prerequisites}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Recommended Texts}{2}{section.1.4}
+\contentsline {section}{\numberline {1.5}Recommended Journals}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}Required Software}{3}{section.1.6}
+\contentsline {section}{\numberline {1.7}Online Course Content}{3}{section.1.7}
+\contentsline {section}{\numberline {1.8}Errata}{4}{section.1.8}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {2}\MakeTextUppercase {Introduction to Matrix Analysis.}}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Maximization and Minimization}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Maximization of Functions of a Variable}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Maximization of Functions of Two Variables}{6}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Algebraic Approach}{7}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Analytic Approach}{8}{subsection.2.1.4}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {3}\MakeTextUppercase {Vectors and Matrices}}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Vectors}{10}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Addition of Vectors}{11}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Scalar Multiplication}{12}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}The Inner Product of Two Vectors}{12}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Orthogonality}{13}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Matrices}{13}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Vector by Matrix Multiplication}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Matrix by Matrix Multiplication}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Non-Commutativity}{16}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Associativity}{17}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Invariant Vectors}{17}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}The Matrix Transpose}{18}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Symmetric Matrices}{19}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}Hermitian Matrices}{19}{subsection.3.2.8}
+\contentsline {subsection}{\numberline {3.2.9}Orthogonal Matrices}{19}{subsection.3.2.9}
+\contentsline {subsection}{\numberline {3.2.10}Unitary Matrices}{20}{subsection.3.2.10}
+\contentsline {subsection}{\numberline {3.2.11}Matrix Determinant}{20}{subsection.3.2.11}
+\contentsline {subsection}{\numberline {3.2.12}Properties of the Matrix Determinant}{21}{subsection.3.2.12}
+\contentsline {subsection}{\numberline {3.2.13}The Matrix Trace}{22}{subsection.3.2.13}
+\contentsline {subsection}{\numberline {3.2.14}Eigenvectors and Eigenvalues of a Matrix}{23}{subsection.3.2.14}
+\contentsline {subsection}{\numberline {3.2.15}Other Matrix Properties}{23}{subsection.3.2.15}
+\contentsline {subsection}{\numberline {3.2.16}The Matrix Inversion Lemma}{24}{subsection.3.2.16}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {4}\MakeTextUppercase {Registration of Objects in Robotics.}}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Preliminaries}{28}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Distance between a Point and a Parameterized Entity}{30}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Distance between a Point and an Implicit Entity}{32}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Quaternions}{33}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Closed-form Solution using Least Sum of Squares Errors}{34}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Kabsch Algorithm}{35}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Examples}{37}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Corresponding Point Set Registration with Quaternions}{42}{subsection.4.2.3}
+\contentsline {subsubsection}{Finding Translation}{43}{section*.5}
+\contentsline {subsubsection}{Finding Scale}{45}{section*.6}
+\contentsline {subsubsection}{Finding rotation}{45}{section*.7}
+\contentsline {section}{\numberline {4.3}Iterative Closest Point}{46}{section.4.3}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {5}\MakeTextUppercase {State Estimation}}{48}{chapter.5}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {6}\MakeTextUppercase {Rigid Body Motions: Introduction}}{49}{chapter.6}
+\contentsline {section}{\numberline {6.1}Robots Components}{50}{section.6.1}
+\contentsline {section}{\numberline {6.2}Robot Spaces, Geometries, and Classifications}{51}{section.6.2}
+\contentsline {section}{\numberline {6.3}Characterization of Kinematic Geometry}{52}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Kinematic Geometries}{52}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Open Kinematic Chains}{53}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Closed-loop Kinematic Chains}{55}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Freedom and Structure in Mechanisms}{56}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Freedom, Connectivity and Mobility}{56}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Constraints and Freedoms}{58}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}The Mobility Criterion}{59}{subsection.6.4.3}
+\contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {7}\MakeTextUppercase {Motion of Rigid Bodies}}{62}{chapter.7}
+\contentsline {section}{\numberline {7.1}Screws}{62}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Motion screws: Twist's Pitch, Axis, and Magnitude}{63}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{65}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Screw Motions}{66}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Rodrigues' Formula}{66}{section.7.2}
+\contentsline {section}{\numberline {7.3}The Matrix Exponential, The Lie Group and Lie Algebra}{67}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}The Lie Group Notations}{70}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Exponential Map and Kinematic Chains}{71}{subsection.7.3.2}
+\contentsline {section}{\numberline {7.4}Rigid Body Transformations}{71}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Translation in $\mathbb {R}^3$}{73}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Rotations in $\mathbb {R}^3$}{75}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Rotation Matrices as Transformations}{77}{subsection.7.4.3}
+\contentsline {subsection}{\numberline {7.4.4}Planar Rotations}{78}{subsection.7.4.4}
+\contentsline {subsection}{\numberline {7.4.5}Composition of Rotations}{81}{subsection.7.4.5}
+\contentsline {section}{\numberline {7.5}Parameterization of Rotations $\in SO(3)$}{84}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Axis-Angle Parameterizations}{84}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Euler Angles}{85}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Quaternions}{88}{subsection.7.5.3}
+\contentsline {section}{\numberline {7.6}Homogeneous Coordinates}{88}{section.7.6}
+\contentsline {section}{\numberline {7.7}Rigid Body Velocities}{90}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Rotational Velocities}{90}{subsection.7.7.1}
+\contentsline {subsection}{\numberline {7.7.2}Rigid Body Velocity}{92}{subsection.7.7.2}
+\contentsline {chapter}{\MakeTextUppercase {References}}{94}{chapter*.27}
