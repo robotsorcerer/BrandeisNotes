@@ -24,9 +24,9 @@
 \contentsline {section}{\numberline {3.2}Matrices}{13}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Vector by Matrix Multiplication}{14}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Matrix by Matrix Multiplication}{15}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Non-Commutativity}{16}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Non-Commutativity}{17}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Associativity}{17}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Invariant Vectors}{17}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.5}Invariant Vectors}{18}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}The Matrix Transpose}{18}{subsection.3.2.6}
 \contentsline {subsection}{\numberline {3.2.7}Symmetric Matrices}{19}{subsection.3.2.7}
 \contentsline {subsection}{\numberline {3.2.8}Hermitian Matrices}{19}{subsection.3.2.8}

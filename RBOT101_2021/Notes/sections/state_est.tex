@@ -36,4 +36,31 @@ A continuous-time, deterministic linear system can be described by the equations
 	y &= Cx
 \end{align}
 %
-where $x$ is the \textit{state vector} in $\mathbb{R}^n \times 1$, $u$ is the \textit{control vector} in $\mathbb{R}^p \times 1$, and $y$ is an  $\mathbb{R}^n \times 1$ vector. Matrices $A$, $B$, and $C$ are respectively $n\times n$, $n \times p$ and $n \times 1$ in dimension.
+where $x$ is the \textit{state vector} in $\mathbb{R}^n \times 1$, $u$ is the \textit{control vector} in $\mathbb{R}^p \times 1$, and $y$ is an  $\mathbb{R}^n \times 1$ vector. Matrices $A$, $B$, and $C$ are respectively $n\times n$, $n \times p$ and $n \times 1$ in dimension. The matrix $A$ is often called the system matrix, $B$ the input or control matrix, while $C$ is often called the output matrix. $A, B$, and $C$ can be time-varying matrices, in which case the system is linear. Otherwise, the solution to the linear system of equations above is 
+%
+\begin{align}
+	x(t) &= e^{A(t-t_0)} x(t_0) + \int_{t_0}^{t} e^{A(t-\tau)} B u(\tau) d\tau  \\
+	y(t) &= C x(t)
+	\label{eq:matrix_exp}
+\end{align}
+%
+where $t_0$ is the initial time of the system. If the input control law is zero, then we have 
+%
+\begin{align}
+	x(t) &= e^{A(t-t_0)} x(t_0) 
+\end{align}
+%
+and because of this, $e^{AT}$ is called the state-transition matrix \ie it describes how the state moves between transitions at different times regardless of external inputs. At $t = t_0$, we have that 
+%
+\begin{align}
+	e^{A \, 0} = I,
+\end{align}
+%
+which is similar to the scalar exponential of a zero. What happens if $x$ is an $n$-element vector? The solution in \eqref{eq:matrix_exp} still remains valid but we must note that the exponential of the matrix becomes interpreted as 
+%
+\begin{align}
+	e^{At} &= \sum_{j=0}^{\infty} \dfrac{(At)^j}{j!} \nonumber \\
+	&= \mathcal{L}^{-1} \left[sI - A\right]^{-1} = Q e^{\hat{A}t} Q^{-1}
+\end{align}
+
+
