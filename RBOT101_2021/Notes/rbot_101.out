@@ -1,88 +1,91 @@
-\BOOKMARK [0][-]{chapter*.1}{Table\040of\040Contents}{}% 1
-\BOOKMARK [0][-]{chapter*.2}{List\040of\040Figures}{}% 2
-\BOOKMARK [0][-]{chapter*.3}{List\040of\040Tables}{}% 3
+\BOOKMARK [0][-]{chapter*.1}{Table of Contents}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{List of Figures}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{List of Tables}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Preamble}{}% 4
-\BOOKMARK [1][-]{section.1.1}{Course\040Description}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.2}{Course\040Outcomes}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.1}{Course Description}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Course Outcomes}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.3}{Prerequisites}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.4}{Recommended\040Texts}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.5}{Recommended\040Journals}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.6}{Required\040Software}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.7}{Online\040Course\040Content}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.4}{Recommended Texts}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.5}{Recommended Journals}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.6}{Required Software}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.7}{Online Course Content}{chapter.1}% 11
 \BOOKMARK [1][-]{section.1.8}{Errata}{chapter.1}% 12
-\BOOKMARK [0][-]{chapter.2}{Introduction\040to\040Matrix\040Analysis.}{}% 13
-\BOOKMARK [1][-]{section.2.1}{Maximization\040and\040Minimization}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.1.1}{Maximization\040of\040Functions\040of\040a\040Variable}{section.2.1}% 15
-\BOOKMARK [2][-]{subsection.2.1.2}{Maximization\040of\040Functions\040of\040Two\040Variables}{section.2.1}% 16
-\BOOKMARK [2][-]{subsection.2.1.3}{Algebraic\040Approach}{section.2.1}% 17
-\BOOKMARK [2][-]{subsection.2.1.4}{Analytic\040Approach}{section.2.1}% 18
-\BOOKMARK [0][-]{chapter.3}{Vectors\040and\040Matrices}{}% 19
+\BOOKMARK [0][-]{chapter.2}{Introduction to Matrix Analysis.}{}% 13
+\BOOKMARK [1][-]{section.2.1}{Maximization and Minimization}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.1.1}{Maximization of Functions of a Variable}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.2}{Maximization of Functions of Two Variables}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.3}{Algebraic Approach}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.4}{Analytic Approach}{section.2.1}% 18
+\BOOKMARK [0][-]{chapter.3}{Vectors and Matrices}{}% 19
 \BOOKMARK [1][-]{section.3.1}{Vectors}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.1.1}{Addition\040of\040Vectors}{section.3.1}% 21
-\BOOKMARK [2][-]{subsection.3.1.2}{Scalar\040Multiplication}{section.3.1}% 22
-\BOOKMARK [2][-]{subsection.3.1.3}{The\040Inner\040Product\040of\040Two\040Vectors}{section.3.1}% 23
+\BOOKMARK [2][-]{subsection.3.1.1}{Addition of Vectors}{section.3.1}% 21
+\BOOKMARK [2][-]{subsection.3.1.2}{Scalar Multiplication}{section.3.1}% 22
+\BOOKMARK [2][-]{subsection.3.1.3}{The Inner Product of Two Vectors}{section.3.1}% 23
 \BOOKMARK [2][-]{subsection.3.1.4}{Orthogonality}{section.3.1}% 24
 \BOOKMARK [1][-]{section.3.2}{Matrices}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.2.1}{Vector\040by\040Matrix\040Multiplication}{section.3.2}% 26
-\BOOKMARK [2][-]{subsection.3.2.2}{Matrix\040by\040Matrix\040Multiplication}{section.3.2}% 27
+\BOOKMARK [2][-]{subsection.3.2.1}{Vector by Matrix Multiplication}{section.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.2.2}{Matrix by Matrix Multiplication}{section.3.2}% 27
 \BOOKMARK [2][-]{subsection.3.2.3}{Non-Commutativity}{section.3.2}% 28
 \BOOKMARK [2][-]{subsection.3.2.4}{Associativity}{section.3.2}% 29
-\BOOKMARK [2][-]{subsection.3.2.5}{Invariant\040Vectors}{section.3.2}% 30
-\BOOKMARK [2][-]{subsection.3.2.6}{The\040Matrix\040Transpose}{section.3.2}% 31
-\BOOKMARK [2][-]{subsection.3.2.7}{Symmetric\040Matrices}{section.3.2}% 32
-\BOOKMARK [2][-]{subsection.3.2.8}{Hermitian\040Matrices}{section.3.2}% 33
-\BOOKMARK [2][-]{subsection.3.2.9}{Orthogonal\040Matrices}{section.3.2}% 34
-\BOOKMARK [2][-]{subsection.3.2.10}{Unitary\040Matrices}{section.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.2.11}{Matrix\040Determinant}{section.3.2}% 36
-\BOOKMARK [2][-]{subsection.3.2.12}{Properties\040of\040the\040Matrix\040Determinant}{section.3.2}% 37
-\BOOKMARK [2][-]{subsection.3.2.13}{The\040Matrix\040Trace}{section.3.2}% 38
-\BOOKMARK [2][-]{subsection.3.2.14}{Eigenvectors\040and\040Eigenvalues\040of\040a\040Matrix}{section.3.2}% 39
-\BOOKMARK [2][-]{subsection.3.2.15}{Other\040Matrix\040Properties}{section.3.2}% 40
-\BOOKMARK [2][-]{subsection.3.2.16}{The\040Matrix\040Inversion\040Lemma}{section.3.2}% 41
-\BOOKMARK [0][-]{chapter.4}{Registration\040of\040Objects\040in\040Robotics.}{}% 42
+\BOOKMARK [2][-]{subsection.3.2.5}{Invariant Vectors}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.6}{The Matrix Transpose}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.7}{Symmetric Matrices}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.8}{Hermitian Matrices}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.9}{Orthogonal Matrices}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.10}{Unitary Matrices}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.11}{Matrix Determinant}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.12}{Properties of the Matrix Determinant}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.13}{The Matrix Trace}{section.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.2.14}{Eigenvectors and Eigenvalues of a Matrix}{section.3.2}% 39
+\BOOKMARK [2][-]{subsection.3.2.15}{Other Matrix Properties}{section.3.2}% 40
+\BOOKMARK [2][-]{subsection.3.2.16}{The Matrix Inversion Lemma}{section.3.2}% 41
+\BOOKMARK [0][-]{chapter.4}{Registration of Objects in Robotics.}{}% 42
 \BOOKMARK [1][-]{section.4.1}{Preliminaries}{chapter.4}% 43
-\BOOKMARK [2][-]{subsection.4.1.1}{Distance\040between\040a\040Point\040and\040a\040Parameterized\040Entity}{section.4.1}% 44
-\BOOKMARK [2][-]{subsection.4.1.2}{Distance\040between\040a\040Point\040and\040an\040Implicit\040Entity}{section.4.1}% 45
+\BOOKMARK [2][-]{subsection.4.1.1}{Distance between a Point and a Parameterized Entity}{section.4.1}% 44
+\BOOKMARK [2][-]{subsection.4.1.2}{Distance between a Point and an Implicit Entity}{section.4.1}% 45
 \BOOKMARK [2][-]{subsection.4.1.3}{Quaternions}{section.4.1}% 46
-\BOOKMARK [1][-]{section.4.2}{Closed-form\040Solution\040using\040Least\040Sum\040of\040Squares\040Errors}{chapter.4}% 47
-\BOOKMARK [2][-]{subsection.4.2.1}{Kabsch\040Algorithm}{section.4.2}% 48
+\BOOKMARK [1][-]{section.4.2}{Closed-form Solution using Least Sum of Squares Errors}{chapter.4}% 47
+\BOOKMARK [2][-]{subsection.4.2.1}{Kabsch Algorithm}{section.4.2}% 48
 \BOOKMARK [2][-]{subsection.4.2.2}{Examples}{section.4.2}% 49
-\BOOKMARK [2][-]{subsection.4.2.3}{Corresponding\040Point\040Set\040Registration\040with\040Quaternions}{section.4.2}% 50
-\BOOKMARK [1][-]{section.4.3}{Iterative\040Closest\040Point}{chapter.4}% 51
-\BOOKMARK [0][-]{chapter.5}{Rigid\040Body\040Motions:\040Introduction}{}% 52
-\BOOKMARK [1][-]{section.5.1}{Robots\040Components}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.2}{Robot\040Spaces,\040Geometries,\040and\040Classifications}{chapter.5}% 54
-\BOOKMARK [1][-]{section.5.3}{Characterization\040of\040Kinematic\040Geometry}{chapter.5}% 55
-\BOOKMARK [2][-]{subsection.5.3.1}{Kinematic\040Geometries}{section.5.3}% 56
-\BOOKMARK [2][-]{subsection.5.3.2}{Open\040Kinematic\040Chains}{section.5.3}% 57
-\BOOKMARK [2][-]{subsection.5.3.3}{Closed-loop\040Kinematic\040Chains}{section.5.3}% 58
-\BOOKMARK [1][-]{section.5.4}{Freedom\040and\040Structure\040in\040Mechanisms}{chapter.5}% 59
-\BOOKMARK [2][-]{subsection.5.4.1}{Freedom,\040Connectivity\040and\040Mobility}{section.5.4}% 60
-\BOOKMARK [2][-]{subsection.5.4.2}{Constraints\040and\040Freedoms}{section.5.4}% 61
-\BOOKMARK [2][-]{subsection.5.4.3}{The\040Mobility\040Criterion}{section.5.4}% 62
-\BOOKMARK [0][-]{chapter.6}{Motion\040of\040Rigid\040Bodies}{}% 63
+\BOOKMARK [2][-]{subsection.4.2.3}{Corresponding Point Set Registration with Quaternions}{section.4.2}% 50
+\BOOKMARK [1][-]{section.4.3}{Iterative Closest Point}{chapter.4}% 51
+\BOOKMARK [0][-]{chapter.5}{Rigid Body Motions: Introduction}{}% 52
+\BOOKMARK [1][-]{section.5.1}{Robots Components}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.2}{Robot Spaces, Geometries, and Classifications}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.3}{Characterization of Kinematic Geometry}{chapter.5}% 55
+\BOOKMARK [2][-]{subsection.5.3.1}{Kinematic Geometries}{section.5.3}% 56
+\BOOKMARK [2][-]{subsection.5.3.2}{Open Kinematic Chains}{section.5.3}% 57
+\BOOKMARK [2][-]{subsection.5.3.3}{Closed-loop Kinematic Chains}{section.5.3}% 58
+\BOOKMARK [1][-]{section.5.4}{Freedom and Structure in Mechanisms}{chapter.5}% 59
+\BOOKMARK [2][-]{subsection.5.4.1}{Freedom, Connectivity and Mobility}{section.5.4}% 60
+\BOOKMARK [2][-]{subsection.5.4.2}{Constraints and Freedoms}{section.5.4}% 61
+\BOOKMARK [2][-]{subsection.5.4.3}{The Mobility Criterion}{section.5.4}% 62
+\BOOKMARK [0][-]{chapter.6}{Motion of Rigid Bodies}{}% 63
 \BOOKMARK [1][-]{section.6.1}{Screws}{chapter.6}% 64
-\BOOKMARK [2][-]{subsection.6.1.1}{Motion\040screws:\040Twist's\040Pitch,\040Axis,\040and\040Magnitude}{section.6.1}% 65
-\BOOKMARK [2][-]{subsection.6.1.2}{Dynamics\040Screws:\040Twist's\040Pitch,\040Axis,\040and\040Magnitude}{section.6.1}% 66
-\BOOKMARK [2][-]{subsection.6.1.3}{Screw\040Motions}{section.6.1}% 67
-\BOOKMARK [1][-]{section.6.2}{Rodrigues'\040Formula}{chapter.6}% 68
-\BOOKMARK [1][-]{section.6.3}{The\040Matrix\040Exponential,\040The\040Lie\040Group\040and\040Lie\040Algebra}{chapter.6}% 69
-\BOOKMARK [2][-]{subsection.6.3.1}{The\040Lie\040Group\040Notations}{section.6.3}% 70
-\BOOKMARK [2][-]{subsection.6.3.2}{Exponential\040Map\040and\040Kinematic\040Chains}{section.6.3}% 71
-\BOOKMARK [1][-]{section.6.4}{Rigid\040Body\040Transformations}{chapter.6}% 72
-\BOOKMARK [2][-]{subsection.6.4.1}{Translation\040in\040R3}{section.6.4}% 73
-\BOOKMARK [2][-]{subsection.6.4.2}{Rotations\040in\040R3}{section.6.4}% 74
-\BOOKMARK [2][-]{subsection.6.4.3}{Rotation\040Matrices\040as\040Transformations}{section.6.4}% 75
-\BOOKMARK [2][-]{subsection.6.4.4}{Planar\040Rotations}{section.6.4}% 76
-\BOOKMARK [2][-]{subsection.6.4.5}{Composition\040of\040Rotations}{section.6.4}% 77
-\BOOKMARK [1][-]{section.6.5}{Parameterization\040of\040Rotations\040SO\(3\)}{chapter.6}% 78
-\BOOKMARK [2][-]{subsection.6.5.1}{Axis-Angle\040Parameterizations}{section.6.5}% 79
-\BOOKMARK [2][-]{subsection.6.5.2}{Euler\040Angles}{section.6.5}% 80
+\BOOKMARK [2][-]{subsection.6.1.1}{Motion screws: Twist's Pitch, Axis, and Magnitude}{section.6.1}% 65
+\BOOKMARK [2][-]{subsection.6.1.2}{Dynamics Screws: Twist's Pitch, Axis, and Magnitude}{section.6.1}% 66
+\BOOKMARK [2][-]{subsection.6.1.3}{Screw Motions}{section.6.1}% 67
+\BOOKMARK [1][-]{section.6.2}{Rodrigues' Formula}{chapter.6}% 68
+\BOOKMARK [1][-]{section.6.3}{The Matrix Exponential, The Lie Group and Lie Algebra}{chapter.6}% 69
+\BOOKMARK [2][-]{subsection.6.3.1}{The Lie Group Notations}{section.6.3}% 70
+\BOOKMARK [2][-]{subsection.6.3.2}{Exponential Map and Kinematic Chains}{section.6.3}% 71
+\BOOKMARK [1][-]{section.6.4}{Rigid Body Transformations}{chapter.6}% 72
+\BOOKMARK [2][-]{subsection.6.4.1}{Translation in R3}{section.6.4}% 73
+\BOOKMARK [2][-]{subsection.6.4.2}{Rotations in R3}{section.6.4}% 74
+\BOOKMARK [2][-]{subsection.6.4.3}{Rotation Matrices as Transformations}{section.6.4}% 75
+\BOOKMARK [2][-]{subsection.6.4.4}{Planar Rotations}{section.6.4}% 76
+\BOOKMARK [2][-]{subsection.6.4.5}{Composition of Rotations}{section.6.4}% 77
+\BOOKMARK [1][-]{section.6.5}{Parameterization of Rotations SO\(3\)}{chapter.6}% 78
+\BOOKMARK [2][-]{subsection.6.5.1}{Axis-Angle Parameterizations}{section.6.5}% 79
+\BOOKMARK [2][-]{subsection.6.5.2}{Euler Angles}{section.6.5}% 80
 \BOOKMARK [2][-]{subsection.6.5.3}{Quaternions}{section.6.5}% 81
-\BOOKMARK [1][-]{section.6.6}{Homogeneous\040Coordinates}{chapter.6}% 82
-\BOOKMARK [1][-]{section.6.7}{Rigid\040Body\040Velocities}{chapter.6}% 83
-\BOOKMARK [2][-]{subsection.6.7.1}{Rotational\040Velocities}{section.6.7}% 84
-\BOOKMARK [2][-]{subsection.6.7.2}{Rigid\040Body\040Velocity}{section.6.7}% 85
-\BOOKMARK [0][-]{chapter.7}{State\040Estimation}{}% 86
-\BOOKMARK [1][-]{section.7.1}{Linear\040Systems}{chapter.7}% 87
-\BOOKMARK [0][-]{chapter*.27}{References}{}% 88
+\BOOKMARK [1][-]{section.6.6}{Homogeneous Coordinates}{chapter.6}% 82
+\BOOKMARK [1][-]{section.6.7}{Rigid Body Velocities}{chapter.6}% 83
+\BOOKMARK [2][-]{subsection.6.7.1}{Rotational Velocities}{section.6.7}% 84
+\BOOKMARK [2][-]{subsection.6.7.2}{Rigid Body Velocity}{section.6.7}% 85
+\BOOKMARK [0][-]{chapter.7}{State Estimation}{}% 86
+\BOOKMARK [1][-]{section.7.1}{Linear Systems}{chapter.7}% 87
+\BOOKMARK [1][-]{section.7.2}{State Space Standard Forms}{chapter.7}% 88
+\BOOKMARK [2][-]{subsection.7.2.1}{Companion form}{section.7.2}% 89
+\BOOKMARK [2][-]{subsection.7.2.2}{Controllable Canonical Form}{section.7.2}% 90
+\BOOKMARK [0][-]{chapter*.27}{References}{}% 91
