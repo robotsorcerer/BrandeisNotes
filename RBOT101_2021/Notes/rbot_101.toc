@@ -87,4 +87,4 @@
 \contentsline {subsection}{\numberline {6.7.2}Rigid Body Velocity}{92}{subsection.6.7.2}
 \contentsline {chapter}{\MakeTextUppercase {Chapter}\nobreakspace \numberline {7}\MakeTextUppercase {State Estimation}}{94}{chapter.7}
 \contentsline {section}{\numberline {7.1}Linear Systems}{96}{section.7.1}
-\contentsline {chapter}{\MakeTextUppercase {References}}{97}{chapter*.27}
+\contentsline {chapter}{\MakeTextUppercase {References}}{100}{chapter*.27}

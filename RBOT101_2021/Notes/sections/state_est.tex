@@ -61,6 +61,142 @@ which is similar to the scalar exponential of a zero. What happens if $x$ is an 
 \begin{align}
 	e^{At} &= \sum_{j=0}^{\infty} \dfrac{(At)^j}{j!} \nonumber \\
 	&= \mathcal{L}^{-1} \left[sI - A\right]^{-1} = Q e^{\hat{A}t} Q^{-1}
+	\label{eq:matrix_exp_jordan}
+\end{align}
+%
+where the symbol $\mathcal{L}^{-1}$ is the symbol for the inverse Laplace transform and $``s"$ is the Laplace operator. We see that $A$ must be square in order for $e^{At}$ to exist. $Q$ contains the eigenvectors of $A$ and $\hat{A}$ are the Jordan form of $A$.
+%
+\begin{quiz}
+	Write a note about the Jordan form. Also, explain how it can be determined from \eqref{eq:matrix_exp_jordan}.
+	% ANS
+	% \eqref{eq:matrix_exp_jordan} can be used to define the Jordan form of the matrix. 
+\end{quiz}
+%
+\begin{quiz}
+	Does the matrix $A$ commute with its exponential i.e. does $A \, e^{At} = e^{At} \, A$? 
+\end{quiz}
+
+The matrix $\hat{A}$ is often diagonal, so that case $e^{\hat{A}t}$ can be computed as
+%
+\begin{align}
+	\hat{A} = \begin{bmatrix}
+	\hat{A}_{11} & 0 & \ldots & 0 \\
+		0 & \hat{A}_{22} & \ldots 0 \\
+		\vdots & \ddots & \ddots & \vdots \\
+		0 & \ldots & \ldots & \hat{A}_{nn} 
+	\end{bmatrix} \quad 
+	%	
+	e^{\hat{A}t} = \begin{bmatrix}
+	e^{\hat{A}_{11}} & 0 & \ldots & 0 \\
+	0 & e^{\hat{A}_{22}} & \ldots 0 \\
+	\vdots & \ddots & \ddots & \vdots \\
+	0 & \ldots & \ldots & e^{\hat{A}_{nn}}
+	\end{bmatrix}
 \end{align}
 
+From \eqref{eq:matrix_exp_jordan}, we can write 
+%
+\begin{align}
+	\left[e^{At}\right]^{-1} = e^{-At} = Q e ^{-\hat{A}t} Q^{-1}
+\end{align}
+%
+Since $A$ and $-A$ have eigenvalues that are negative of each other, $e^{At}$ is always invertible.
 
+\begin{example}
+	Suppose we are controlling angular heading of a mobile robot (for example, using voltage applied to its wheels' rotor windings in order to generate command velocity along the $x$, $y$, and $z$ heading, i.e. $\theta$, $\omega$ and $\alpha$ respectively). The derivative of the angular velocity vector can be written as 
+	%
+	\begin{align}
+	\dot{\theta} &= \omega + \alpha + 3.5 \omega_1 + 6 \theta_2 \nonumber \\
+	\dot{\omega} &= u + 0.1 \theta  + 2.5 \alpha + \omega_1 + \omega_2^2\nonumber \\
+		\dot{\alpha} &= \theta_1 + 2 u %\nonumber \\
+	\end{align}
+	%
+	The scalars $\omega_1$, $\omega_2$, $\theta_1$ and $\theta_2$ are acceleration noise terms such as gear backlash, friction, and modeling errors. If our measurement consists of the $\theta$ and $\omega$ states, it follows that we can write the state space equation as 
+	%
+	\begin{align}
+		\begin{bmatrix}
+		 \dot{\theta} \\ \dot{\omega} \\ \dot{\alpha}
+		\end{bmatrix}
+		& =
+		\begin{bmatrix}
+		0 & 1 & 1 \\
+		1 & 0 & 2.5 \\
+		0 & 0 & 0
+		\end{bmatrix}
+		+
+		\begin{bmatrix}
+		0 \\ 1 \\ 2
+		\end{bmatrix} u
+		+
+		\begin{bmatrix}
+		 3.5 \omega_1 + 6 \theta_2 \\
+		 \omega_1 + \omega_2^2 \\
+		 \theta_1
+		\end{bmatrix} \nonumber \\
+		%
+		y &= \begin{bmatrix}
+		1 & 1 & 0
+		\end{bmatrix} +
+		\begin{bmatrix}
+		\theta \\ \omega \\ \alpha
+		\end{bmatrix} + \begin{bmatrix}
+		{v_x} \\ {v_y} \\ {v_z}
+		\end{bmatrix}
+	\end{align}
+	where $v = [v_x, v_y, v_z]^T$ is the linear velocity vector for  the robot.
+\end{example}
+
+\begin{example}
+	Suppose that 
+	\begin{align}
+		A = \begin{bmatrix}
+		0 & 1 \\ 0 & 0
+		\end{bmatrix}
+	\end{align}
+	%
+	It follows that
+	%
+	\begin{align}
+		e^{At} &= \sum_{j=0}^{\infty} \dfrac{(At)^j}{j!} \nonumber \\
+		       &= (At)^0 + (At)^1 + \frac{(At)^2}{2!} +  \frac{(At)^3}{3!} + \ldots \nonumber \\
+		       &= I + At
+	\end{align}	
+	where the last term follows from the fact that $A^k = 0$ for $k>1$ so that 
+	%
+	\begin{align}
+		e^{At} = \begin{bmatrix}
+		1 & 0 \\ 0 & 1
+		\end{bmatrix}
+		+ 
+		\begin{bmatrix}
+		0 & t \\ 0 & 0
+		\end{bmatrix}
+		= 
+		\begin{bmatrix}
+		1 & t \\ 0 & 1
+		\end{bmatrix}
+	\end{align}
+	%
+	Using the expression for the inverse Laplace transform earlier, we have 
+	%
+	\begin{align}
+		e^{At} &= \mathcal{L}^{-1}\left[\left(sI-A\right)^{-1}\right] \nonumber \\
+		&= \mathcal{L}^{-1}\left(
+		\begin{bmatrix}
+		s & -1 \\ 0 & s
+		\end{bmatrix}^{-1}\right) \nonumber \\
+		&= \mathcal{L}^{-1} 
+		\begin{bmatrix}
+		1/s & 1/s^2 \\ 0 & 1/s
+		\end{bmatrix} \nonumber \\
+		&= \begin{bmatrix}
+		1 & t \\ 0 & 1
+		\end{bmatrix}
+		\label{eq:example_matrix_eq}
+	\end{align}
+\end{example}
+
+\begin{homework}
+	Find the eigendata of the matrix A in \eqref{eq:example_matrix_eq}. Then determine the following terms using the eigenvector and eigenvalue that you may find
+	$\hat{A}, Q$ and $e^{At}$.
+\end{homework}
