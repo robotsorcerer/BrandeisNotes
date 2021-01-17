@@ -275,13 +275,27 @@ When we want to design a controller that leverages the full state of the system 
 \begin{example}
 	For the system 
 	\begin{align}
-		\dfrac{Y(s)}{U(s)} = \dfrac{2s^3 + 5s^2-s+8}{s^2+4s-2}
+		\dfrac{Y(s)}{U(s)} = \dfrac{s^3 + 5s^2-s+8}{s^2+4s-2}
 	\end{align}
 	%
 	we can realize the state space representation in canonical form as follows:
 	\begin{enumerate}
+%		\item First we rewrite the transfer function as 
+%		%
+%		\begin{align}
+%		\dfrac{Y(s)}{U(s)} = \dfrac{s^3 + 5/2s^2-1/2s+4}{s^2+4s-2}
+%		\end{align}
+		%
 		\item Observe that $n$ from \eqref{eq:transfer_fcn} is $3$, \ie the highest $s$ exponent in the given transfer function. 
 		%
-		\item It follows that we have $a_1= 4$ and $a_2 = -2$
+		\item It follows that we have $a_1= 4$ and $a_2 = -2$ and so on. Therefore, we write  
 	\end{enumerate}
+	%
+	\begin{align}
+		\begin{bmatrix}
+		\ddot{x}_1 \\ \ddot{x}_2 \\ \ddot{x}_3
+		\end{bmatrix} = \begin{bmatrix}
+		-4 & 2 \\
+		\end{bmatrix}
+	\end{align}
 \end{example}
