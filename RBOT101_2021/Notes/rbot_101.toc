@@ -89,5 +89,7 @@
 \contentsline {section}{\numberline {7.1}Linear Systems}{96}{section.7.1}
 \contentsline {section}{\numberline {7.2}State Space Standard Forms}{99}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Companion form}{100}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Controllable Canonical Form}{101}{subsection.7.2.2}
-\contentsline {chapter}{\MakeTextUppercase {References}}{102}{chapter*.27}
+\contentsline {subsection}{\numberline {7.2.2}Modal Form}{100}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Controllable Canonical Form}{102}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Observable Canonical Form}{103}{subsection.7.2.4}
+\contentsline {chapter}{\MakeTextUppercase {References}}{105}{chapter*.27}
