@@ -87,5 +87,8 @@
 \BOOKMARK [1][-]{section.7.1}{Linear Systems}{chapter.7}% 87
 \BOOKMARK [1][-]{section.7.2}{State Space Standard Forms}{chapter.7}% 88
 \BOOKMARK [2][-]{subsection.7.2.1}{Companion form}{section.7.2}% 89
-\BOOKMARK [2][-]{subsection.7.2.2}{Controllable Canonical Form}{section.7.2}% 90
-\BOOKMARK [0][-]{chapter*.27}{References}{}% 91
+\BOOKMARK [2][-]{subsection.7.2.2}{Modal Form}{section.7.2}% 90
+\BOOKMARK [2][-]{subsection.7.2.3}{Controllable Canonical Form}{section.7.2}% 91
+\BOOKMARK [2][-]{subsection.7.2.4}{Observable Canonical Form}{section.7.2}% 92
+\BOOKMARK [1][-]{section.7.3}{Nonlinear Systems}{chapter.7}% 93
+\BOOKMARK [0][-]{chapter*.27}{References}{}% 94

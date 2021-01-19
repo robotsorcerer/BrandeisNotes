@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  13 JAN 2021 07:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  17 JAN 2021 23:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1826,7 +1826,7 @@ Underfull \vbox (badness 2626) has occurred while \output is active []
 
  [32]
 [33]
-<figures/least_squares.png, id=950, 960.58875pt x 613.29124pt>
+<figures/least_squares.png, id=965, 960.58875pt x 613.29124pt>
 File: figures/least_squares.png Graphic file (type png)
 <use figures/least_squares.png>
 Package pdftex.def Info: figures/least_squares.png  used on input line 202.
@@ -1835,7 +1835,7 @@ Package pdftex.def Info: figures/least_squares.png  used on input line 202.
 Underfull \vbox (badness 3930) has occurred while \output is active []
 
  [35 <./figures/least_squares.png>] [36] [37]
-<Kabsch.pdf, id=998, 614.295pt x 794.97pt>
+<Kabsch.pdf, id=1013, 614.295pt x 794.97pt>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf>
 Package pdftex.def Info: Kabsch.pdf  used on input line 302.
@@ -1844,7 +1844,7 @@ File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf>
 Package pdftex.def Info: Kabsch.pdf  used on input line 302.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Kabsch.pdf, id=1001, page=1, 614.295pt x 794.97pt>
+<Kabsch.pdf, id=1016, page=1, 614.295pt x 794.97pt>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf, page 1>
 Package pdftex.def Info: Kabsch.pdf , page1 used on input line 302.
@@ -1867,7 +1867,7 @@ File: Kabsch.pdf Graphic file (type pdf)
 Package pdftex.def Info: Kabsch.pdf , page1 used on input line 302.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [39 <./Kabsch.pdf>]
-<Kabsch.pdf, id=1039, page=2, 614.295pt x 794.97pt>
+<Kabsch.pdf, id=1054, page=2, 614.295pt x 794.97pt>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf, page 2>
 Package pdftex.def Info: Kabsch.pdf , page2 used on input line 302.
@@ -1881,7 +1881,7 @@ File: Kabsch.pdf Graphic file (type pdf)
 Package pdftex.def Info: Kabsch.pdf , page2 used on input line 302.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [40 <./Kabsch.pdf>]
-<Kabsch.pdf, id=1044, page=3, 614.295pt x 794.97pt>
+<Kabsch.pdf, id=1059, page=3, 614.295pt x 794.97pt>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf, page 3>
 Package pdftex.def Info: Kabsch.pdf , page3 used on input line 302.
@@ -1896,7 +1896,7 @@ Package pdftex.def Info: Kabsch.pdf , page3 used on input line 302.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
 [41 <./Kabsch.pdf>]
-<Kabsch.pdf, id=1052, page=4, 614.295pt x 794.97pt>
+<Kabsch.pdf, id=1067, page=4, 614.295pt x 794.97pt>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf, page 4>
 Package pdftex.def Info: Kabsch.pdf , page4 used on input line 302.
@@ -1915,22 +1915,22 @@ put line 516.
 )
 (./sections/robo_confs.tex [47] [48]
 Chapter 5.
-<figures/StanfordArm.jpg, id=1129, 1136.245pt x 666.49pt>
+<figures/StanfordArm.jpg, id=1144, 1136.245pt x 666.49pt>
 File: figures/StanfordArm.jpg Graphic file (type jpg)
 <use figures/StanfordArm.jpg>
 Package pdftex.def Info: figures/StanfordArm.jpg  used on input line 9.
 (pdftex.def)             Requested size: 234.87355pt x 187.89732pt.
-<figures/PUMA.jpg, id=1130, 1532.72626pt x 1776.6375pt>
+<figures/PUMA.jpg, id=1145, 1532.72626pt x 1776.6375pt>
 File: figures/PUMA.jpg Graphic file (type jpg)
 <use figures/PUMA.jpg>
 Package pdftex.def Info: figures/PUMA.jpg  used on input line 11.
 (pdftex.def)             Requested size: 225.47878pt x 187.89435pt.
-<figures/octopus.jpg, id=1133, 1284.8pt x 722.7pt>
+<figures/octopus.jpg, id=1148, 1284.8pt x 722.7pt>
 File: figures/octopus.jpg Graphic file (type jpg)
 <use figures/octopus.jpg>
 Package pdftex.def Info: figures/octopus.jpg  used on input line 23.
 (pdftex.def)             Requested size: 234.86124pt x 187.89757pt.
-<figures/soft_parallel.png, id=1134, 589.4522pt x 602.25pt>
+<figures/soft_parallel.png, id=1149, 589.4522pt x 602.25pt>
 File: figures/soft_parallel.png Graphic file (type png)
 <use figures/soft_parallel.png>
 Package pdftex.def Info: figures/soft_parallel.png  used on input line 25.
@@ -1939,25 +1939,25 @@ Package pdftex.def Info: figures/soft_parallel.png  used on input line 25.
 
  <./figures/StanfordArm.jpg> <./figures/PUMA.jpg>] [50 <./figures/octopus.jpg> 
 <./figures/soft_parallel.png>] [51]
-<figures/arms_hunt.png, id=1192, 712.6625pt x 230.8625pt>
+<figures/arms_hunt.png, id=1207, 712.6625pt x 230.8625pt>
 File: figures/arms_hunt.png Graphic file (type png)
 <use figures/arms_hunt.png>
 Package pdftex.def Info: figures/arms_hunt.png  used on input line 57.
 (pdftex.def)             Requested size: 469.75499pt x 152.17244pt.
  [52]
-<figures/Staubli.jpg, id=1203, 1003.75pt x 1419.3025pt>
+<figures/Staubli.jpg, id=1218, 1003.75pt x 1419.3025pt>
 File: figures/Staubli.jpg Graphic file (type jpg)
 <use figures/Staubli.jpg>
 Package pdftex.def Info: figures/Staubli.jpg  used on input line 71.
 (pdftex.def)             Requested size: 100.38087pt x 141.93855pt.
-<figures/Scara.png, id=1205, 1136.245pt x 420.57124pt>
+<figures/Scara.png, id=1220, 1136.245pt x 420.57124pt>
 File: figures/Scara.png Graphic file (type png)
 <use figures/Scara.png>
 Package pdftex.def Info: figures/Scara.png  used on input line 80.
 (pdftex.def)             Requested size: 469.75499pt x 173.87924pt.
  [53 <./figures/arms_hunt.png>]
 [54 <./figures/Staubli.jpg> <./figures/Scara.png>]
-<../../../Papers/PhDThesis/figures/GoughPlatform.png, id=1225, 195.73125pt x 24
+<../../../Papers/PhDThesis/figures/GoughPlatform.png, id=1240, 195.73125pt x 24
 0.9pt>
 File: ../../../Papers/PhDThesis/figures/GoughPlatform.png Graphic file (type pn
 g)
@@ -1965,7 +1965,7 @@ g)
 Package pdftex.def Info: ../../../Papers/PhDThesis/figures/GoughPlatform.png  u
 sed on input line 98.
 (pdftex.def)             Requested size: 234.89124pt x 187.9049pt.
-<../../../Papers/PhDThesis/figures/GoughPlatformNow.jpg, id=1226, 238.491pt x 2
+<../../../Papers/PhDThesis/figures/GoughPlatformNow.jpg, id=1241, 238.491pt x 2
 31.264pt>
 File: ../../../Papers/PhDThesis/figures/GoughPlatformNow.jpg Graphic file (type
  jpg)
@@ -1974,17 +1974,17 @@ Package pdftex.def Info: ../../../Papers/PhDThesis/figures/GoughPlatformNow.jpg
   used on input line 100.
 (pdftex.def)             Requested size: 225.48434pt x 187.90858pt.
  [55]
-<figures/kinematic_pair2.jpg, id=1238, 525.965pt x 642.4pt>
+<figures/kinematic_pair2.jpg, id=1253, 525.965pt x 642.4pt>
 File: figures/kinematic_pair2.jpg Graphic file (type jpg)
 <use figures/kinematic_pair2.jpg>
 Package pdftex.def Info: figures/kinematic_pair2.jpg  used on input line 120.
 (pdftex.def)             Requested size: 216.08844pt x 234.87103pt.
-<figures/kinematic_pair.jpg, id=1239, 473.77pt x 642.4pt>
+<figures/kinematic_pair.jpg, id=1254, 473.77pt x 642.4pt>
 File: figures/kinematic_pair.jpg Graphic file (type jpg)
 <use figures/kinematic_pair.jpg>
 Package pdftex.def Info: figures/kinematic_pair.jpg  used on input line 121.
 (pdftex.def)             Requested size: 216.08618pt x 234.87103pt.
-<figures/four-bar-linkage.png, id=1247, 736.7525pt x 227.85126pt>
+<figures/four-bar-linkage.png, id=1262, 736.7525pt x 227.85126pt>
 File: figures/four-bar-linkage.png Graphic file (type png)
 <use figures/four-bar-linkage.png>
 Package pdftex.def Info: figures/four-bar-linkage.png  used on input line 130.
@@ -2004,13 +2004,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--197
 
  []
 
-<figures/parallel_translational.png, id=1290, 953.5625pt x 607.26875pt>
+<figures/parallel_translational.png, id=1305, 953.5625pt x 607.26875pt>
 File: figures/parallel_translational.png Graphic file (type png)
 <use figures/parallel_translational.png>
 Package pdftex.def Info: figures/parallel_translational.png  used on input line
  210.
 (pdftex.def)             Requested size: 234.8689pt x 187.89925pt.
-<figures/parallel_translational_workspace.png, id=1291, 862.22125pt x 573.14125
+<figures/parallel_translational_workspace.png, id=1306, 862.22125pt x 573.14125
 pt>
 File: figures/parallel_translational_workspace.png Graphic file (type png)
 <use figures/parallel_translational_workspace.png>
@@ -2034,13 +2034,13 @@ OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 T[]; T[]; T[]; T[]; T[]; T[]\OT1/cmr/m/n/12
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 230.
  [67]
-<figures/revolute.png, id=1377, 525.965pt x 383.4325pt>
+<figures/revolute.png, id=1392, 525.965pt x 383.4325pt>
 File: figures/revolute.png Graphic file (type png)
 <use figures/revolute.png>
 Package pdftex.def Info: figures/revolute.png  used on input line 263.
 (pdftex.def)             Requested size: 281.85585pt x 205.48247pt.
  [68 <./figures/revolute.png>] [69]
-<figures/lienotations.pdf, id=1398, 722.69798pt x 542.02402pt>
+<figures/lienotations.pdf, id=1413, 722.69798pt x 542.02402pt>
 File: figures/lienotations.pdf Graphic file (type pdf)
 <use figures/lienotations.pdf>
 Package pdftex.def Info: figures/lienotations.pdf  used on input line 356.
@@ -2049,7 +2049,7 @@ Package pdftex.def Info: figures/lienotations.pdf  used on input line 356.
 Underfull \vbox (badness 1173) has occurred while \output is active []
 
  [70 <./figures/lienotations.pdf>]
-<figures/brockettpoe.pdf, id=1436, 722.69798pt x 542.02402pt>
+<figures/brockettpoe.pdf, id=1451, 722.69798pt x 542.02402pt>
 File: figures/brockettpoe.pdf Graphic file (type pdf)
 <use figures/brockettpoe.pdf>
 Package pdftex.def Info: figures/brockettpoe.pdf  used on input line 390.
@@ -2067,7 +2067,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 434.
 
-<figures/trans_coords.png, id=1536, 712.6625pt x 352.31625pt>
+<figures/trans_coords.png, id=1551, 712.6625pt x 352.31625pt>
 File: figures/trans_coords.png Graphic file (type png)
 <use figures/trans_coords.png>
 Package pdftex.def Info: figures/trans_coords.png  used on input line 440.
@@ -2085,7 +2085,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 489.
 
-<figures/rotation_illus.png, id=1550, 596.2275pt x 448.67625pt>
+<figures/rotation_illus.png, id=1565, 596.2275pt x 448.67625pt>
 File: figures/rotation_illus.png Graphic file (type png)
 <use figures/rotation_illus.png>
 Package pdftex.def Info: figures/rotation_illus.png  used on input line 495.
@@ -2094,19 +2094,19 @@ Package pdftex.def Info: figures/rotation_illus.png  used on input line 495.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [76 <./figures/rotation_illus.png>] [77]
-<figures/planar_rot.png, id=1584, 639.38875pt x 370.38374pt>
+<figures/planar_rot.png, id=1600, 639.38875pt x 370.38374pt>
 File: figures/planar_rot.png Graphic file (type png)
 <use figures/planar_rot.png>
 Package pdftex.def Info: figures/planar_rot.png  used on input line 630.
 (pdftex.def)             Requested size: 352.31624pt x 204.09033pt.
  [78] [79 <./figures/planar_rot.png>]
-<figures/two_frames.png, id=1606, 587.19376pt x 462.72874pt>
+<figures/two_frames.png, id=1621, 587.19376pt x 462.72874pt>
 File: figures/two_frames.png Graphic file (type png)
 <use figures/two_frames.png>
 Package pdftex.def Info: figures/two_frames.png  used on input line 698.
 (pdftex.def)             Requested size: 375.80542pt x 296.14539pt.
  [80 <./figures/two_frames.png>]
-<figures/point_transform.png, id=1617, 417.56pt x 250.9375pt>
+<figures/point_transform.png, id=1632, 417.56pt x 250.9375pt>
 File: figures/point_transform.png Graphic file (type png)
 <use figures/point_transform.png>
 Package pdftex.def Info: figures/point_transform.png  used on input line 745.
@@ -2115,7 +2115,7 @@ Package pdftex.def Info: figures/point_transform.png  used on input line 745.
 Underfull \vbox (badness 2221) has occurred while \output is active []
 
  [82 <./figures/point_transform.png>]
-<figures/compoz.png, id=1639, 871.255pt x 351.3125pt>
+<figures/compoz.png, id=1654, 871.255pt x 351.3125pt>
 File: figures/compoz.png Graphic file (type png)
 <use figures/compoz.png>
 Package pdftex.def Info: figures/compoz.png  used on input line 818.
@@ -2134,7 +2134,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 855.
 
 [84 <./figures/compoz.png>]
-<figures/zyz.png, id=1662, 722.7pt x 314.17375pt>
+<figures/zyz.png, id=1677, 722.7pt x 314.17375pt>
 File: figures/zyz.png Graphic file (type png)
 <use figures/zyz.png>
 Package pdftex.def Info: figures/zyz.png  used on input line 927.
@@ -2144,37 +2144,37 @@ Package pdftex.def Info: figures/zyz.png  used on input line 927.
 Chapter 7.
 [94
 
-] [95] [96] [97] [98] [99]
-Underfull \vbox (badness 1275) has occurred while \output is active []
+] [95] [96] [97] [98] [99] [100]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [100])
-(./rbot_101.bbl (./rbot_101.brf)
+ [101]
+[102] [103] [104]) (./rbot_101.bbl (./rbot_101.brf)
 \tf@brf=\write10
 \openout10 = `rbot_101.brf'.
 
- [101] [102
+ [105] [106
 
-] [103])
+] [107])
 
 Package caption Warning: Unused \captionsetup[table] on input line 42.
 See the caption package documentation for explanation.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
-[104]
+[108]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
  (./rbot_101.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 136.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 136.
 Package rerunfilecheck Info: File `rbot_101.out' has not changed.
-(rerunfilecheck)             Checksum: CFB3A77C1399C2BC41B510F1BFE2C658;6679.
+(rerunfilecheck)             Checksum: 1F5F96B570CE994EFEB8D206F776C724;6886.
 Package rerunfilecheck Info: File `rbot_101.brf' has not changed.
 (rerunfilecheck)             Checksum: 2F03C4A784E413B52439D1356630C34F;1954.
  ) 
 Here is how much of TeX's memory you used:
- 51336 strings out of 492649
- 1162820 string characters out of 6129622
- 1397704 words of memory out of 5000000
- 53437 multiletter control sequences out of 15000+600000
+ 51361 strings out of 492649
+ 1163150 string characters out of 6129622
+ 1395737 words of memory out of 5000000
+ 53441 multiletter control sequences out of 15000+600000
  583473 words of font info for 264 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  63i,20n,101p,10497b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2205,10 +2205,10 @@ palatino/uplri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pf
 b></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
 cal/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on rbot_101.pdf (111 pages, 4877647 bytes).
+Output written on rbot_101.pdf (115 pages, 4887152 bytes).
 PDF statistics:
- 2103 PDF objects out of 2487 (max. 8388607)
- 1829 compressed objects within 19 object streams
- 629 named destinations out of 1000 (max. 500000)
- 23061 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 2158 PDF objects out of 2487 (max. 8388607)
+ 1880 compressed objects within 19 object streams
+ 650 named destinations out of 1000 (max. 500000)
+ 23085 words of extra memory for PDF output out of 24883 (max. 10000000)
 
