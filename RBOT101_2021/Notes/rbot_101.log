@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  17 JAN 2021 23:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  1 MAR 2021 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2171,8 +2171,8 @@ Package rerunfilecheck Info: File `rbot_101.brf' has not changed.
 (rerunfilecheck)             Checksum: 2F03C4A784E413B52439D1356630C34F;1954.
  ) 
 Here is how much of TeX's memory you used:
- 51361 strings out of 492649
- 1163150 string characters out of 6129622
+ 51362 strings out of 492649
+ 1163164 string characters out of 6129622
  1395737 words of memory out of 5000000
  53441 multiletter control sequences out of 15000+600000
  583473 words of font info for 264 fonts, out of 8000000 for 9000
@@ -2205,10 +2205,10 @@ palatino/uplri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pf
 b></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
 cal/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on rbot_101.pdf (115 pages, 4887152 bytes).
+Output written on rbot_101.pdf (115 pages, 4887259 bytes).
 PDF statistics:
- 2158 PDF objects out of 2487 (max. 8388607)
- 1880 compressed objects within 19 object streams
- 650 named destinations out of 1000 (max. 500000)
+ 2159 PDF objects out of 2487 (max. 8388607)
+ 1881 compressed objects within 19 object streams
+ 651 named destinations out of 1000 (max. 500000)
  23085 words of extra memory for PDF output out of 24883 (max. 10000000)
 

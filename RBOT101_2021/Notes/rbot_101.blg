@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: rbot_101.aux
 The style file: chicago.bst
-Illegal, another \bibstyle command---line 320 of file rbot_101.aux
+Illegal, another \bibstyle command---line 321 of file rbot_101.aux
  : \bibstyle
  :          {wafr.bst}
 I'm skipping whatever remains of this command
@@ -13,11 +13,11 @@ I was expecting a `,' or a `}'---line 18 of file biblio.bib
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Database file #2: ../../../Papers/SRS/Continuum/biblio.bib
-Repeated entry---line 2555 of file ../../../Papers/SRS/Continuum/biblio.bib
+Repeated entry---line 2663 of file ../../../Papers/SRS/Continuum/biblio.bib
  : @article{Gough1957
  :                   ,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 4595 of file ../../../Papers/SRS/Continuum/biblio.bib
+You're missing a field name---line 4731 of file ../../../Papers/SRS/Continuum/biblio.bib
  :   
  :   % journal={Springer Nature},
 (Error may have been on previous line)
@@ -36,7 +36,7 @@ Warning--no number and no volume in Renda2018ICRA
 Warning--empty year in homeomorphic
 You've used 27 entries,
             2861 wiz_defined-function locations,
-            806 strings with 10371 characters,
+            806 strings with 10359 characters,
 and the built_in function-call counts, 19929 in all, are:
 = -- 1634
 > -- 1509
