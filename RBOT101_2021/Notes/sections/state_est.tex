@@ -201,6 +201,10 @@ Since $A$ and $-A$ have eigenvalues that are negative of each other, $e^{At}$ is
 	$\hat{A}, Q$ and $e^{At}$.
 \end{homework}
 
+\begin{homework}
+	Produce a one-page report on a control system transfer function.
+\end{homework}
+%
 \section{State Space Standard Forms}
 For a linear system, there are many possible state space models that can result in the same \textit{transfer function dynamics}. Therefore, standardizing the state space model structures is 
 relevant for solving problems in a conformal way. For consider the following input-output system linear difference equation
@@ -303,6 +307,12 @@ When we want to design a controller that leverages the full state of the system 
 	%
 	we can realize the state space representation in canonical form as follows:
 	\begin{enumerate}
+%		\item First we rewrite the transfer function as 
+%		%
+%		\begin{align}
+%		\dfrac{Y(s)}{U(s)} = \dfrac{s^3 + 5/2s^2-1/2s+4}{s^2+4s-2}
+%		\end{align}
+		%
 		\item Observe that $n$ from \eqref{eq:transfer_fcn} is $3$, \ie the highest $s$ exponent in the given transfer function. 
 		%
 		\item It follows that we have $a_0= -2$ and $a_1 = 4$; and $b_0 = 1, \, b_1=-21$, \, $b_2 = 102$, so that we can write the state space model as
@@ -402,3 +412,38 @@ The observable and controllable canonical forms' matrices are respectively trans
 \begin{homework}
 Transform the exercise of \ref{eq:companion_ex} to observable canonical form.
 \end{homework}
+
+\section{Nonlinear Systems}
+
+\textit{All the world is a nonlinear system. He linearized to the right. He linearized to the left. Till nothing was right. And nothing was left. -- Stephen Billings.}
+
+Our treatment of dynamical so far has involved linear systems. These are optimistic models of the real world as in the reality, nothing is really linear. In general, a nonlinear system is a system which is not linear \ie, does not satisfy the \textit{principle of superposition}. Even a simple resistor exhibits nonlinearity. However, we utilize Ohm's law in approximating the dynamics of a resistor. This is because the equation is valid over a wide enough operating range. In this light, while we may say linear systems do not exist in real life, linear systems is a useful tool for describing nonlinear systems. We will write a general nonlinear system with the equation
+%
+\begin{align}
+	\dot{x} &= f(x, u, w) \nonumber \\
+	y &= h(x, v)
+\end{align}
+%
+where $f(\cdot)$ and $h(\cdot)$ are arbitrary vector valued functions, $w$ denotes the process noise, and $v$ denotes the measurement noise. We have a time-varying system if $f(\cdot)$ and $h(\cdot)$ are explicit functions of $t$, otherwise, the system is termed time-invariant. Suppose that $f(x, u, w) = Ax + Bu + w$ and $h(x,v) = Hx + v$, then the system is linear. Otherwise, the system is nonlinear.
+
+Often, we will need to linearize a nonlinear system in order to properly analyze its stability properties or synthesize its parameters for example, a particular control application. Suppose we have a nonlinear vector function $f(\cdot)$ of a scalar $x$, we can expand $f(x)$ in a Taylor series around some nominal operating point, $x = \bar{x}$ so that 
+%
+\begin{align}
+	f(x) = f(\bar{x}) + \dfrac{\partial f}{\partial x} \bigg\rvert_{\tilde{x}} \tilde{x}+ \dfrac{1}{2!} \dfrac{\partial^2f}{\partial x^2} \bigg\rvert_{\tilde{x}} \tilde{x}^2 + \dfrac{1}{3!} \dfrac{\partial^3f}{\partial x^3} \bigg\rvert_{\tilde{x}} \tilde{x}^3 +  \ldots
+\end{align}
+%
+where $\tilde{x} = x - \bar{x}$. For a $2 \times 1$ vector $x$, we can write $f(x)$ as follows:
+%
+\begin{align}
+	f(x) &= f(\bar{x}) + \dfrac{\partial f}{\partial x_1} \bigg\rvert_{\tilde{x}} \tilde{x}_1 + \dfrac{\partial f}{\partial x_2} \bigg\rvert_{\tilde{x}} \tilde{x}_2 + \dfrac{1}{2!} \left(\dfrac{\partial^2f}{\partial x_1^2} \bigg\rvert_{\tilde{x}} \tilde{x}_1^2 + \dfrac{\partial^2f}{\partial x_2^2} \bigg\rvert_{\tilde{x}} \tilde{x}_2^2 + 2 \dfrac{\partial ^2 f}{\partial x_1 x_2}\bigg \rvert_{\tilde{x}} \tilde{x}_1 \tilde{x}_2 \right) + \nonumber \\
+	%
+	& 
+	%
+	\dfrac{1}{3!} \left(\dfrac{\partial^3f}{\partial x_1^3} \bigg\rvert_{\tilde{x}} \tilde{x}_1^3 + \dfrac{\partial^3f}{\partial x_2^3} \bigg\rvert_{\tilde{x}} \tilde{x}_2^3 + 3 \dfrac{\partial ^3 f}{\partial x_1^2 x_2}\bigg \rvert_{\tilde{x}} \tilde{x}_1^2  \tilde{x}_2 + 3 \dfrac{\partial ^3 f}{\partial x_1 x_2^2}\bigg \rvert_{\tilde{x}} \tilde{x}_1  \tilde{x}_2^2  \right) + \ldots
+\end{align}
+ %
+ which can be compactly written as 
+ %
+ \begin{align}
+ 	f(x) = f(\tilde{x}) + 
+ \end{align}
