@@ -1,0 +1,124 @@
+
+\noindent 
+\begin{homework}
+	What is the geometric meaning of equation 3.1.6 on a twist axis to you. Define \textit{pure rotation} and a \textit{pure translation} in terms of equation 3.1.6\footnote{Figure out how they correspond to zero pitch and infinite pitch twists.}. 
+\end{homework} 
+
+\begin{solution}
+	Twists and pitches of twists.
+	\begin{enumerate}
+		\item The pitch of the twist is the ratio of the magnitude of a point on the axis of the twist to the magnitude of the angular velocity about the axis of the twist. By this, we see that the pitch of the twist is the unit velocity traveled along the axis of the twist.
+		%
+		\item A pure rotation occurs when the numerator of equation 3.1.6 is zero \ie when a point travels only in the angular velocity direction of the twist axis; this is called a zero pitch twist.
+		%
+		\item A pure translation occurs when the right hand side of 3.1.6 is infinite. This corresponds to an infinite pitch twist \ie a point on the twist axis only travels along the linear velocity direction of the twist axis.
+	\end{enumerate}
+\end{solution}
+
+\noindent 
+\begin{homework}
+	A unit screw, twist or wrench is one where the magnitude of the screw, twist or wrench is $1$.  
+	\begin{enumerate}
+		\item  What is the geometric meaning of a unit screw to you? 
+		\item Consult the identified reference materials and explain what a reciprocal screw is in no more than five sentences.
+	\end{enumerate}
+\end{homework}
+
+\noindent \begin{solution}
+	Here is a geometric meaning of the screw:
+	%
+	\begin{enumerate}
+		\item 
+		Imagine a nut fitted upon a mechanical screw. As we tighten the nut around the threads of the screw, there exists a rectilinear distance by which the screw travels into the nut. This rectilinear distance is called the \textit{pitch} of the screw. Thus, the pitch is a linear magnitude. When a nut is rotated about the threads of a screw, the rectilinear distance by which the nut moves when rotated through a particular angle is the product of the pitch and the the circular measure of the angle. \textit{A screw then may be geometrically seen as a straight line with which a definite linear magnitude, \ie the pitch, travels in space.}
+		
+		Often with twist and wrenches, we wish to associate a magnitude other than 1 so that there are $\infty^6$ different twists and wrenches if we consider their magnitudes as well. With this interpretation we can think of a unit screw as defining only an axis and a pitch. Then we can think of a given magnitude as defining a twist (if its units are rotation/time) or a wrench (if its units are force) acting along the screw. In both cases the pitch is expressed in length units. These six-spaces of (infinitesial) twists or wrenches can be considered to be vector spaces in that they are closed under vector addition and scalar multiplication.
+		%
+		\item \textbf{Reciprocal Screws:} Suppose a body is free to twist about a screw $x$ and that body is in equilibrium, while being acted upon by a wrench on another screw $\chi$; we can extend this logic and infer that a body that is free to rotate about the screw $\chi$ will be in equilibrium, while being acted upon by a wrench on a screw $x$. By the principle of virtual velocities, if the body is in equilibrium the work done in a small displacement against external forces must be zero with the virtual coefficient vanishing. %Suppose $p_\alpha$ represent the pitch of a screw $\alpha$ 
+		\textit{A pair of screws are reciprocal when their virtual coefficient is zero.}
+	\end{enumerate}
+\end{solution}
+
+
+\noindent 
+\begin{homework}
+	Given a matrix $\hat{m} \in so(3)$, suppose that the following relation holds,
+	%
+	\begin{align}
+	\hat{m}^2 = m m^T - \|m\|^2 \identity \\
+	%
+	\hat{m}^3 = - \|m\|^2 \hat{m}
+	\end{align}
+	%
+	with the fact that higher powers of $\hat{m}$ can be recursively found. Utilizing this lemma along with $m =\omega \theta$, and $\|\omega\| = 1$, show that 
+	%
+	\begin{align}
+	e^{\hat{\omega}\theta}  = \identity + \hat{\omega} \sin \theta + \hat{\omega}^2(1 - \cos \theta).
+	\label{eq:rodrigues}
+	\end{align}
+\end{homework} 
+
+\begin{solution}
+	First recall that we can expand $e^{\hat{\omega}\theta}$ using Taylor series so that 
+	%
+	\begin{align}
+		e^{\hat{\omega}\theta} &= \identity + \theta \hat{\omega} + \frac{\theta^2}{2!}\hat{\omega}^2 + \frac{\theta^3}{3!}\hat{\omega}^3 + \frac{\theta^4}{4!}\hat{\omega}^4 +  \frac{\theta^5}{5!}\hat{\omega}^5 + \nonumber \\
+		%
+		&\quad  \frac{\theta^6}{6!}\hat{\omega}^6 + \frac{\theta^7}{7!}\hat{\omega}^7 + \cdots
+	\end{align}
+	%
+	Rewriting, we find that
+	%	
+	\begin{align}
+	e^{\hat{\omega}\theta} &= \identity + \hat{\omega} \left(\theta + \frac{\theta^3}{3!}\hat{\omega}^2  + \frac{\theta^5}{5!}\hat{\omega}^4 + \frac{\theta^7}{7!}\hat{\omega}^6  + \cdots \right)   + \nonumber \\
+	%
+	&\quad  
+	% 
+	\hat{\omega}^2 \left( \frac{\theta^2}{2!} + \frac{\theta^4}{4!}\hat{\omega}^2 + + \frac{\theta^6}{6!}\hat{\omega}^4  + \cdots \right).
+	\label{eq:exp_expand}
+	\end{align}
+	%
+	Since we have from the lemma that 
+	%
+	\begin{subequations}
+		\begin{align}
+		\hat{\omega}^2 = \omega \omega^T - \|\omega\|^2 \identity  \\
+		%
+		\hat{\omega}^3 = - \|\omega\|^2 \hat{\omega}
+		\end{align}
+	\end{subequations}
+	%
+	we may write \eqref{eq:exp_expand} as 
+	%
+	\begin{align}
+	e^{\hat{\omega}\theta} &= I + \hat{\omega} \left(\theta + \frac{\theta^3}{3!}\left(\omega \omega^T - \|\omega\|^2 \identity\right)  + \frac{\theta^5}{5!}\left(\omega \omega^T - \|\omega\|^2 \identity\right)^2 %+ \frac{\theta^7}{7!}\left(\omega \omega^T - \|\omega\|^2 \identity\right)^3  
+	+ \cdots \right) \nonumber \\
+	&\quad +
+	% 
+	\hat{\omega}^2 \left( \frac{\theta^2}{2!} + \frac{\theta^4}{4!}\left(\omega \omega^T - \|\omega\|^2 \identity \right) + \frac{\theta^6}{6!}\left(\omega \omega^T - \|\omega\|^2 \identity \right)^2  %+ \frac{\theta^8}{8!}\left(\omega \omega^T - \|\omega\|^2 \identity\right)^4
+	 + \cdots \right) \nonumber \\
+	%
+	&= \identity + \hat{\omega} \left(\theta - \frac{\theta^3}{3!}\hat{\omega}^2  + \frac{\theta^5}{5!}\hat{\omega}^4 - \frac{\theta^7}{7!}\hat{\omega}^6  + \cdots \right)   \nonumber \\
+	%
+	&\quad + \hat{\omega}^2 \left( \frac{\theta^2}{2!} - \frac{\theta^4}{4!}\hat{\omega}^2 + + \frac{\theta^6}{6!}\hat{\omega}^4  + \cdots \right)
+	\label{eq:exp_lemma}
+	\end{align}
+	%
+	Recall from trigonometric identities that 
+	%
+	\begin{subequations}
+		\begin{align}
+		\sin \theta &= \theta - \frac{\theta^3}{3!}  + \frac{\theta^5}{5!} - \frac{\theta^7}{7!}  + \cdots  \nonumber \\
+		%
+		\cos \theta		&= 1 - \frac{\theta^2}{2!} + \frac{\theta^4}{4!} - \frac{\theta^6}{6!} + \cdots
+		\end{align}
+	\end{subequations}
+%
+Therefore, \eqref{eq:exp_lemma} becomes 
+%
+	\begin{align}
+		e^{\hat{\omega}\theta} &= \identity + \hat{\omega} \sin \theta + \hat{\omega}^2\left(1-\cos \theta \right)
+	\end{align}
+	%
+	where we have used the identities $\hat{\omega}^2 = -1$ and $\hat{\omega}^4 = 1$ etc.
+\end{solution}
+
