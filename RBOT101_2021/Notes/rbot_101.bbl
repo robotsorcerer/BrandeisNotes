@@ -1,3 +1,176 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{Ball}{Ball}{1908}]{Ball}
+Ball, R.~S. (1908).
+\newblock {\em A Treatise on the Theory of Screws}.
+\newblock Cambridge university press.
+
+\bibitem[\protect\citeauthoryear{Bern, Chang, and Coros}{Bern
+  et~al.}{2017}]{Bern17ACM}
+Bern, J.~M., K.-H. Chang, and S.~Coros (2017).
+\newblock Interactive design of animated plushies.
+\newblock {\em ACM Transactions on Graphics (TOG)\/}~{\em 36\/}(4), 80.
+
+\bibitem[\protect\citeauthoryear{Besl and McKay}{Besl and
+  McKay}{1992}]{besl1992method}
+Besl, P.~J. and N.~D. McKay (1992).
+\newblock Method for registration of 3-d shapes.
+\newblock In {\em Sensor fusion IV: control paradigms and data structures},
+  Volume 1611, pp.\  586--606. International Society for Optics and Photonics.
+
+\bibitem[\protect\citeauthoryear{Bishop-Moser, Krishnan, Kim, and
+  Kota}{Bishop-Moser et~al.}{2012}]{BishopFREE2012}
+Bishop-Moser, J., G.~Krishnan, C.~Kim, and S.~Kota (2012).
+\newblock Design of soft robotic actuators using fluid-filled fiber-reinforced
+  elastomeric enclosures in parallel combinations.
+\newblock In {\em 2012 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems}, pp.\  4264--4269. IEEE.
+
+\bibitem[\protect\citeauthoryear{Giorelli, Renda, Calisti, Arienti, Ferri, and
+  Laschi}{Giorelli et~al.}{2015}]{Laschi15NeuNet}
+Giorelli, M., F.~Renda, M.~Calisti, A.~Arienti, G.~Ferri, and C.~Laschi (2015).
+\newblock {Neural Network And Jacobian Method For Solving The Inverse Statics
+  Of A Cable-driven Soft Arm With Nonconstant Curvature}.
+\newblock {\em IEEE Transactions on Robotics\/}~{\em 31\/}(4), 823--834.
+
+\bibitem[\protect\citeauthoryear{Gough}{Gough}{1957}]{Gough1957}
+Gough, V. (1957).
+\newblock Contribution to discussion of papers on research in automobile
+  stability, control and tyre performance.
+\newblock {\em Proc. of Auto Div. Inst. Mech. Eng.\/}~{\em 171}, 392--395.
+
+\bibitem[\protect\citeauthoryear{Hannan and Walker}{Hannan and
+  Walker}{2000}]{Hannan2000}
+Hannan, M.~W. and I.~D. Walker (2000).
+\newblock {Novel Kinematics for Continuum Robots}.
+\newblock pp.\  227--238. {Advances in Robot Kinematics}.
+
+\bibitem[\protect\citeauthoryear{Hannan and Walker}{Hannan and
+  Walker}{2003}]{Hannan2003}
+Hannan, M.~W. and I.~D. Walker (2003).
+\newblock {Kinematics and the Implementation of an Elephant's Trunk Manipulator
+  and Other Continuum Style Robots}.
+\newblock {\em Journal of Robotic Systems\/}~{\em 20\/}(2), 45--63.
+
+\bibitem[\protect\citeauthoryear{Hopkins, Rivera, Kim, and Krishnan}{Hopkins
+  et~al.}{2015}]{hopkins2015synthesis}
+Hopkins, J.~B., J.~Rivera, C.~Kim, and G.~Krishnan (2015).
+\newblock Synthesis and analysis of soft parallel robots comprised of active
+  constraints.
+\newblock {\em Journal of Mechanisms and Robotics\/}~{\em 7\/}(1), 011002.
+
+\bibitem[\protect\citeauthoryear{Horn}{Horn}{1987}]{horn1987closed}
+Horn, B.~K. (1987).
+\newblock Closed-form solution of absolute orientation using unit quaternions.
+\newblock {\em Josa a\/}~{\em 4\/}(4), 629--642.
+
+\bibitem[\protect\citeauthoryear{Hunt}{Hunt}{1977}]{HuntBook1977}
+Hunt, K.~H. (1977).
+\newblock {\em Kinematic Geometry of Mechanisms}.
+\newblock Oxford University Press.
+
+\bibitem[\protect\citeauthoryear{Hunt}{Hunt}{1983}]{Hunt1983}
+Hunt, K.~H. (1983).
+\newblock {Structural Kinematics of In- Parallel-Actuated Robot-Arms}.
+\newblock ~{\em 105\/}(December 1983), 705--712.
+
+\bibitem[\protect\citeauthoryear{Kabsch}{Kabsch}{1978}]{Kabsch1978}
+Kabsch, W. (1978).
+\newblock {A discussion of the solution for the best rotation to relate two
+  sets of vectors}.
+\newblock {\em Acta Crystallographica Section A\/}~{\em 34\/}(5), 827--828.
+
+\bibitem[\protect\citeauthoryear{Merlet}{Merlet}{2015}]{Merlet2015}
+Merlet, J. (2015).
+\newblock {\em {Parallel robots}}.
+\newblock Springer.
+
+\bibitem[\protect\citeauthoryear{Murray}{Murray}{1994}]{MurrayBook}
+Murray, R.~M. (1994).
+\newblock {\em {A Mathematical Introduction To Robotic Manipulation}}.
+\newblock CRC press.
+
+\bibitem[\protect\citeauthoryear{Ogunmolu}{Ogunmolu}{2019a}]{Ogunmolu19RALII}
+Ogunmolu, O. (2019a).
+\newblock {Kinematics and Dynamics of an In-Parallel-Actuated Soft Robot
+  Manipulator: Application to Cranial Cancer Radiosurgery.}
+
+\bibitem[\protect\citeauthoryear{Ogunmolu, Kulkarni, Tadesse, Gu, Jiang, and
+  Gans}{Ogunmolu et~al.}{2017}]{Ogunmolu17IROS}
+Ogunmolu, O., A.~Kulkarni, Y.~Tadesse, X.~Gu, S.~Jiang, and N.~Gans (2017).
+\newblock {Soft-NeuroAdapt: A 3-DOF Neuro-Adaptive Patient Pose Correction
+  System for Frameless and Maskless Cancer Radiotherapy}.
+\newblock In {\em IEEE/RSJ International Conference on Intelligent Robots and
+  Systems (IROS), Vancouver, BC, CA}, pp.\  3661--3668. IEEE.
+
+\bibitem[\protect\citeauthoryear{Ogunmolu, Liu, Gans, and Wiersma}{Ogunmolu
+  et~al.}{2020}]{Ogunmolu19RALI}
+Ogunmolu, O., X.~Liu, N.~Gans, and R.~Wiersma (2020).
+\newblock {Mechanism and Constitutive Model of a Continuum Robot for Head and
+  Neck Cancer Radiotherapy}.
+\newblock In {\em IEEE International Conference on Robotics and Automation
+  (ICRA), Paris, France}.
+
+\bibitem[\protect\citeauthoryear{Ogunmolu}{Ogunmolu}{2019b}]{OgunmoluThesis}
+Ogunmolu, O.~P. (2019b).
+\newblock {\em {A Multi-DOF Soft Robot Mechanism for Patient Motion Correction
+  and Beam Orientation Selection in Cancer Radiation Therapy.}}
+\newblock Ph.\ D. thesis, The University of Texas at Dallas; UT Southwestern
+  Medical Center.
+
+\bibitem[\protect\citeauthoryear{Ogunmolu, Gu, Jiang, and Gans}{Ogunmolu
+  et~al.}{2015}]{Ogunmolu15CASE}
+Ogunmolu, O.~P., X.~Gu, S.~Jiang, and N.~R. Gans (2015).
+\newblock {A Real-Time, Soft Robotic Patient Positioning System for Maskless
+  Head and Neck Cancer Radiotherapy: An Initial Investigation}.
+\newblock In {\em Automation Science and Engineering (CASE), 2015 IEEE
+  International Conference on, Gothenburg, Sweden}, pp.\  1539--1545. IEEE.
+
+\bibitem[\protect\citeauthoryear{Ogunmolu, Gu, Jiang, and Gans}{Ogunmolu
+  et~al.}{2016}]{Ogunmolu16CASE}
+Ogunmolu, O.~P., X.~Gu, S.~Jiang, and N.~R. Gans (2016).
+\newblock {Vision-based Control of a Soft Robot for Maskless Head and Neck
+  Cancer Radiotherapy}.
+\newblock In {\em Automation Science and Engineering (CASE), 2016 IEEE
+  International Conference on, Fort Worth, Texas}, pp.\  180--187. IEEE.
+
+\bibitem[\protect\citeauthoryear{Renda, Giorelli, Calisti, Cianchetti, and
+  Laschi}{Renda et~al.}{2014}]{Renda2014Cosserat}
+Renda, F., M.~Giorelli, M.~Calisti, M.~Cianchetti, and C.~Laschi (2014).
+\newblock Dynamic model of a multibending soft robot arm driven by cables.
+\newblock {\em IEEE Transactions on Robotics\/}~{\em 30\/}(5), 1109--1122.
+
+\bibitem[\protect\citeauthoryear{Renda and Seneviratne}{Renda and
+  Seneviratne}{2018}]{Renda2018ICRA}
+Renda, F. and L.~Seneviratne (2018).
+\newblock {A Geometric and Unified Approach for Modeling Soft-Rigid Multi-body
+  Systems with Lumped and Distributed Degrees of Freedom}.
+\newblock {\em 2018 IEEE International Conference on Robotics and Automation
+  (ICRA)\/}, 1567 -- 1574.
+
+\bibitem[\protect\citeauthoryear{Shepherd, Ilievski, Choi, Morin, Stokes,
+  Mazzeo, Chen, Wang, and Whitesides}{Shepherd
+  et~al.}{2011}]{ShepherdMultigait}
+Shepherd, R.~F., F.~Ilievski, W.~Choi, S.~A. Morin, A.~A. Stokes, A.~D. Mazzeo,
+  X.~Chen, M.~Wang, and G.~M. Whitesides (2011).
+\newblock Multigait soft robot.
+\newblock {\em Proceedings of the National Academy of Sciences\/}~{\em
+  108\/}(51), 20400--20403.
+
+\bibitem[\protect\citeauthoryear{Spong, Hutchinson, and Vidyasagar}{Spong
+  et~al.}{2006}]{SpongBook}
+Spong, M.~W., S.~A. Hutchinson, and M.~Vidyasagar (2006).
+\newblock Robot modeling and control.
+\newblock {\em IEEE Control Systems\/}~{\em 26\/}(6), 113--115.
+
+\bibitem[\protect\citeauthoryear{Stewart}{Stewart}{1965}]{Stewart1965}
+Stewart, D. (1965).
+\newblock A platform with six degrees of freedom.
+\newblock {\em Proceedings of the institution of mechanical engineers\/}~{\em
+  180\/}(1), 371--386.
+
+\bibitem[\protect\citeauthoryear{Weisstein}{Weisstein}{}]{homeomorphic}
+Weisstein, E.~W.
+\newblock Homeomorphic.
+
 \end{thebibliography}
