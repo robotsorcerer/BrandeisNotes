@@ -1,12 +1,12 @@
 \chapter{State Estimation}
 \label{chap:state_ext}
 
-The next few topics in this course shall involve the quantification of uncertainty in order to enable a robot navigate, move, or understand its environment via visual or audio sensors. In order to do justice to this topic, we shall soon find out that the concept of putting a value or percentage on how sure we are about a robot's environment shall be very helpful in effective control of our robots. Thus the concept of probability shall greatly aid us in quantifying uncertainty. Even so, we introduce the concept of states, grounded in a mathematical theory that allows the engineer to implement a state through discrete-time systems (since we assume that most implementations shall be done on digital computers). By the \textit{state} of a system, we shall loosely mean ``those variables that provide a complete representation of the internal condition ot status of the system at a given time instant." In this sentiment, the states of a motor system may mean currents that flow through the inductive coils, the position and speed of motor shaft, or the voltage across the coils of a solenoid valve. The states of a military power may include the number of its aircraft carriers, the size and horsepower of its nuclear submarines, the number of enlisted servicemen in its forces e.t.c. For a biological system, the states might include blood sugar levels, heart and respiration rates, or body temperature.
+The next few topics in this course shall involve the quantification of uncertainty in order to enable a robot navigate, move, or understand its environment via visual or audio sensors. In order to do justice to this topic, we shall soon find out that the concept of putting a value or percentage on how sure we are about a robot's environment shall be very helpful in effective control of our robots. Thus the concept of probability shall greatly aid us in quantifying uncertainty. Even so, we introduce the concept of states, grounded in a mathematical theory that allows the engineer to implement a state through discrete-time systems (since we assume that most implementations shall be done on digital computers). By the \textit{state} of a system, we shall loosely mean ``those variables that provide a complete representation of the internal condition or status of the system at a given time instant." In this sentiment, the states of a motor system may mean currents that flow through the inductive coils, the position and speed of its motor shaft, or the voltage across the coils of a solenoid valve. The states of a military power may include the number of its aircraft carriers, the size and horsepower of its nuclear submarines, the number of enlisted servicemen in its forces e.t.c. For a biological system, the states might include blood sugar levels, heart and respiration rates, or body temperature.
 
 Robot systems may include mobile platforms for extraterrestrial navigation, robotics arms in assembly lines, autonomous cars, or actuated surgical devices that assist surgeons. Our goal is to treat uncertainty. Uncertainty occurs if the robot lacks important information that hinders it from carrying out assigned tasks. We may classify this uncertainty into five different factors, viz.,
 %
 \begin{enumerate}
-	\item \textbf{Environments.} The physical worlds is inherently unpredictable. While the degree of uncertainty in well-structured environments such assembly lines is small, environments such as highways and private homes are highly dynamic and unpredictable.
+	\item \textbf{Environments.} The physical world is inherently unpredictable. While the degree of uncertainty in well-structured environments such as  assembly lines is small, environments such as highways and private homes are highly dynamic and unpredictable.
 	%
 	\item \textbf{Sensors.} Most sensors have limitations in their perceptual ability arising from noise and the range and the resolution of the sensors. For example, environmental disturbances, weather, lighting conditions limit the information that can be extracted from sensors. Secondly, as to range and resolution, cameras cannot see through walls despite the perceptual range that the spatial resolution of the camera is limited.
 	%
@@ -23,11 +23,19 @@ We will estimate states as they shall represent latent or underlying variables t
 	\item If the states in question are curious enough, we may want to measure these states to understand the faults tolerance of the system in order to perform a good fault identification and prognosis. For example, we might want to estimate the internal states of an aircraft system in flight such that if an aircraft engine fails during flight, we can safely monitor system states in real-time in order to determine how long we can continue flying the aircraft or if we should quickly find a near-by airport where we could land the aircraft for maintenance.
 \end{itemize} 
 %
-In our treatment, therefore, we shall give a brief introduction to linear systems theory, touch upon standard linear filters and then proceed to treat probability theory before we treat frequentist and Bayes inference for classification, and decision-making.
+In our treatment, therefore, we shall give a brief introduction to linear systems theory, touch upon standard linear filters and then proceed to treat probability theory before we treat nonlinear systems, and decision-making.
 
 \section{Linear Systems}
 
-State-space systems are very important in engineering systems because they allow us to gain insight into the characteristics of the system, be able to predict future behaviors of the system, as well as identify the controllable and observable states of the system. The mathematical model of the process allows us to infer the information about the process. State-space models can be classified into linear and nonlinear systems. While most real-world systems are nonlinear, the tools that exist for analyzing and synthesizing nonlinear systems  are well-developed and sophisticated that most nonlinear systems can be approximated by linear systems in order to exercise good control and estimation for real-world applications.
+State-space systems are very important in engineering systems because they allow us 
+%
+\begin{inparaenum}[(i)]
+	\item to gain insight into the characteristics of the system,
+	\item be able to predict future behaviors of the system, 
+	\item  identify the controllable and observable states of the system.
+\end{inparaenum} 
+%
+The mathematical model of the process allows us to infer the information about the process. State-space models can be classified into linear and nonlinear systems. While most real-world systems are nonlinear, the tools that exist for analyzing and synthesizing nonlinear systems  are well-developed and sophisticated that most nonlinear systems can be approximated by linear systems in order to exercise good control and estimation for real-world applications.
 
 A continuous-time, deterministic linear system can be described by the equations 
 %
@@ -44,7 +52,7 @@ where $x$ is the \textit{state vector} in $\mathbb{R}^n \times 1$, $u$ is the \t
 	\label{eq:matrix_exp}
 \end{align}
 %
-where $t_0$ is the initial time of the system. If the input control law is zero, then we have 
+where $t_0$ is the initial time of the system. If the input control law is zero, then we have a \textit{non-autonomous system} i.e.
 %
 \begin{align}
 	x(t) &= e^{A(t-t_0)} x(t_0) 
@@ -206,8 +214,10 @@ Since $A$ and $-A$ have eigenvalues that are negative of each other, $e^{At}$ is
 \end{homework}
 %
 \section{State Space Standard Forms}
-For a linear system, there are many possible state space models that can result in the same \textit{transfer function dynamics}. Therefore, standardizing the state space model structures is 
-relevant for solving problems in a conformal way. For consider the following input-output system linear difference equation
+For a linear system, there are many possible state space models that can result in the same \textit{transfer function dynamics}. Therefore, standardizing state space model structures is 
+relevant for solving problems in a conformal way. For consider the following input-output system's \textit{linear difference equation\footnote{\begin{quiz}
+			What is the difference between a \textit{linear difference equation} and a \textit{linear ordinary differential equation?}
+\end{quiz}}}
 %
 \begin{align}
 	y_n + a_1 y_{n-1}  + \ldots + a_{n-1} y_1 + a_n y = b_0 u_n + b_1 u_{n-1} + \ldots + b_{n-1} u_1 + b_n u
@@ -315,7 +325,7 @@ When we want to design a controller that leverages the full state of the system 
 		%
 		\item Observe that $n$ from \eqref{eq:transfer_fcn} is $3$, \ie the highest $s$ exponent in the given transfer function. 
 		%
-		\item It follows that we have $a_0= -2$ and $a_1 = 4$; and $b_0 = 1, \, b_1=-21$, \, $b_2 = 102$, so that we can write the state space model as
+		\item It follows that we have $a_0= -2$ and $a_1 = 4$; and $b_0 = 5, \, b_1=-1$, \, $b_2 = 8$, so that we can write the state space model as
 		%
 		\begin{align}
 			  \begin{bmatrix}
@@ -349,7 +359,7 @@ When we want to design a controller that leverages the full state of the system 
 			  \end{bmatrix} \nonumber \\
 			  %
 			  y &= \begin{bmatrix}
-			  -21 & 102
+			  -1 & 8
 			  \end{bmatrix}
 			  %			  
 			  \begin{bmatrix}
@@ -417,64 +427,192 @@ Transform the exercise of \ref{eq:companion_ex} to observable canonical form.
 
 \textit{All the world is a nonlinear system. He linearized to the right. He linearized to the left. Till nothing was right. And nothing was left. -- Stephen Billings.}
 
-Our treatment of dynamical so far has involved linear systems. These are optimistic models of the real world as in the reality, nothing is really linear. In general, a nonlinear system is a system which is not linear \ie, does not satisfy the \textit{principle of superposition}. Even a simple resistor exhibits nonlinearity. However, we utilize Ohm's law in approximating the dynamics of a resistor. This is because the equation is valid over a wide enough operating range. In this light, while we may say linear systems do not exist in real life, linear systems is a useful tool for describing nonlinear systems. We will write a general nonlinear system with the equation
+Our treatment of dynamical so far has involved linear systems. These are optimistic models of the real world as in the reality, nothing is really linear. In general, a nonlinear system is a system which is not linear \ie, does not satisfy the \textit{principle of superposition}. Even a simple resistor exhibits nonlinearity. However, we utilize Ohm's law in approximating the dynamics of a resistor. This is because the equation is valid over a wide enough operating range. In this light, while we may say linear systems do not exist in real life, linear systems are a useful tool for describing nonlinear systems. We will write a general nonlinear system with the equation
 %
 \begin{align}
 	\dot{x} &= f(x, u, w) \nonumber \\
 	y &= h(x, v)
+	\label{eq:nlnr}
 \end{align}
 %
-where $f(\cdot)$ and $h(\cdot)$ are arbitrary vector valued functions, $w$ denotes the process noise, and $v$ denotes the measurement noise. We have a time-varying system if $f(\cdot)$ and $h(\cdot)$ are explicit functions of $t$, otherwise, the system is termed time-invariant. Suppose that $f(x, u, w) = Ax + Bu + w$ and $h(x,v) = Hx + v$, then the system is linear. Otherwise, the system is nonlinear.
+where $f(\cdot)$ and $h(\cdot)$ are arbitrary vector valued functions, $w$ denotes the process noise, and $v$ denotes the measurement noise. We have a \textit{time-varying} system if $f(\cdot)$ and $h(\cdot)$ are explicit functions of $t$, otherwise, the system is termed \textit{time-invariant}. Suppose that %
+\begin{align}
+	f(x, u, w) &= Ax + Bu + w; \text{  and  } \\
+	 h(x,v) &= Hx + v,
+\end{align}
+%
+then the system is linear. Otherwise, the system is nonlinear.
 
-Often, we will need to linearize a nonlinear system in order to properly analyze its stability properties or synthesize its parameters for a particular control application. Suppose we have a nonlinear vector function $f(\cdot)$ of a scalar $x$, we can expand $f(x)$ in a Taylor series around some nominal operating point, $x = \bar{x}$ so that 
+Often, we will need to linearize a nonlinear system in order to properly analyze its stability properties or synthesize its parameters for a particular control application. Suppose we have a nonlinear vector function $f(\cdot)$ of a scalar $x$, we can expand $f(x)$ in a Taylor series around some nominal operating point, $x = \bar{x}$ i.e.
 %
 \begin{align}
-	f(x) = f(\bar{x}) + \dfrac{\partial f}{\partial x} \bigg\rvert_{\tilde{x}} \tilde{x}+ \dfrac{1}{2!} \dfrac{\partial^2f}{\partial x^2} \bigg\rvert_{\tilde{x}} \tilde{x}^2 + \dfrac{1}{3!} \dfrac{\partial^3f}{\partial x^3} \bigg\rvert_{\tilde{x}} \tilde{x}^3 +  \ldots
+	f(x) = f(\bar{x}) + \dfrac{\partial f}{\partial x} \bigg\rvert_{\bar{x}} \tilde{x}+ \dfrac{1}{2!} \dfrac{\partial^2f}{\partial x^2} \bigg\rvert_{\bar{x}} \tilde{x}^2 + \dfrac{1}{3!} \dfrac{\partial^3f}{\partial x^3} \bigg\rvert_{\bar{x}} \tilde{x}^3 +  \ldots
 \end{align}
 %
 where $\tilde{x} = x - \bar{x}$. For a $2 \times 1$ vector $x$, we can write $f(x)$ as follows:
 %
 \begin{align}
-	f(x) &= f(\bar{x}) + \dfrac{\partial f}{\partial x_1} \bigg\rvert_{\tilde{x}} \tilde{x}_1 + \dfrac{\partial f}{\partial x_2} \bigg\rvert_{\tilde{x}} \tilde{x}_2 + \dfrac{1}{2!} \left(\dfrac{\partial^2f}{\partial x_1^2} \bigg\rvert_{\tilde{x}} \tilde{x}_1^2 + \dfrac{\partial^2f}{\partial x_2^2} \bigg\rvert_{\tilde{x}} \tilde{x}_2^2 + 2 \dfrac{\partial ^2 f}{\partial x_1 x_2}\bigg \rvert_{\tilde{x}} \tilde{x}_1 \tilde{x}_2 \right) + \nonumber \\
+	f(x) &= f(\bar{x}) + \dfrac{\partial f}{\partial x_1} \bigg\rvert_{\bar{x}} \tilde{x}_1 + \dfrac{\partial f}{\partial x_2} \bigg\rvert_{\bar{x}} \tilde{x}_2 + \dfrac{1}{2!} \left(\dfrac{\partial^2f}{\partial x_1^2} \bigg\rvert_{\bar{x}} \tilde{x}_1^2 + \dfrac{\partial^2f}{\partial x_2^2} \bigg\rvert_{\bar{x}} \tilde{x}_2^2 + 2 \dfrac{\partial ^2 f}{\partial x_1 x_2}\bigg \rvert_{\bar{x}} \tilde{x}_1 \tilde{x}_2 \right) + \nonumber \\
 	%
 	& 
 	%
-	\dfrac{1}{3!} \left(\dfrac{\partial^3f}{\partial x_1^3} \bigg\rvert_{\tilde{x}} \tilde{x}_1^3 + \dfrac{\partial^3f}{\partial x_2^3} \bigg\rvert_{\tilde{x}} \tilde{x}_2^3 + 3 \dfrac{\partial ^3 f}{\partial x_1^2 x_2}\bigg \rvert_{\tilde{x}} \tilde{x}_1^2  \tilde{x}_2 + 3 \dfrac{\partial ^3 f}{\partial x_1 x_2^2}\bigg \rvert_{\tilde{x}} \tilde{x}_1  \tilde{x}_2^2  \right) + \ldots
+	\dfrac{1}{3!} \left(\dfrac{\partial^3f}{\partial x_1^3} \bigg\rvert_{\bar{x}} \tilde{x}_1^3 + \dfrac{\partial^3f}{\partial x_2^3} \bigg\rvert_{\bar{x}} \tilde{x}_2^3 + 3 \dfrac{\partial ^3 f}{\partial x_1^2 x_2}\bigg \rvert_{\bar{x}} \tilde{x}_1^2  \tilde{x}_2 + 3 \dfrac{\partial ^3 f}{\partial x_1 x_2^2}\bigg \rvert_{\bar{x}} \tilde{x}_1  \tilde{x}_2^2  \right) + \ldots
 \end{align}
  %
  which can be compactly written as 
  %
  \begin{align}
- 	f(x) & = f(\tilde{x}) + \left(\tilde{x}_1 \dfrac{\partial}{\partial x_1} + \tilde{x}_2 \dfrac{\partial}{\partial x_2}\right)f\bigg\rvert_{\tilde{x}} +
+ 	f(x) & = f(\tilde{x}) + \left(\tilde{x}_1 \dfrac{\partial}{\partial x_1} + \tilde{x}_2 \dfrac{\partial}{\partial x_2}\right)f\bigg\rvert_{\bar{x}} +
  	%
- 	\dfrac{1}{2!} \left(\tilde{x}_1 \dfrac{\partial}{\partial x_1} + \tilde{x}_2 \dfrac{\partial}{\partial x_2}\right)^2f\bigg\rvert_{\tilde{x}} + \nonumber \\
+ 	\dfrac{1}{2!} \left(\tilde{x}_1 \dfrac{\partial}{\partial x_1} + \tilde{x}_2 \dfrac{\partial}{\partial x_2}\right)^2f\bigg\rvert_{\bar{x}} + \nonumber \\
  	%
  	& 
  	%
- 	\qquad \dfrac{1}{3!}\left(\tilde{x}_1 \dfrac{\partial}{\partial x_1} + \tilde{x}_2 \dfrac{\partial}{\partial x_2}\right)^3f\bigg\rvert_{\tilde{x}} + \ldots
+ 	\qquad \dfrac{1}{3!}\left(\tilde{x}_1 \dfrac{\partial}{\partial x_1} + \tilde{x}_2 \dfrac{\partial}{\partial x_2}\right)^3f\bigg\rvert_{\bar{x}} + \ldots
  \end{align}
 %
 And when $n$ is an $n\times 1$ vector, the vector $f(x)$, expanded in a Taylor series becomes
 %
 \begin{align}
-	f(x) &=  f(\tilde{x}) + \left(\tilde{x}_1 \dfrac{\partial}{\partial x_1} + \ldots + \tilde{x}_n \dfrac{\partial}{\partial x_n}\right)f\bigg\rvert_{\tilde{x}} +
+	f(x) &=  f(\tilde{x}) + \left(\tilde{x}_1 \dfrac{\partial}{\partial x_1} + \ldots + \tilde{x}_n \dfrac{\partial}{\partial x_n}\right)f\bigg\rvert_{\bar{x}} +
 	%
-	\dfrac{1}{2!} \left(\tilde{x}_1 \dfrac{\partial}{\partial x_1} + \ldots + \tilde{x}_n \dfrac{\partial}{\partial x_n}\right)^2f\bigg\rvert_{\tilde{x}} + \nonumber \\
+	\dfrac{1}{2!} \left(\tilde{x}_1 \dfrac{\partial}{\partial x_1} + \ldots + \tilde{x}_n \dfrac{\partial}{\partial x_n}\right)^2f\bigg\rvert_{\bar{x}} + \nonumber \\
 	%
 	& 
 	%
-	\qquad \dfrac{1}{3!}\left(\tilde{x}_1 \dfrac{\partial}{\partial x_1} + \ldots + \tilde{x}_n \dfrac{\partial}{\partial x_n}\right)^3f\bigg\rvert_{\tilde{x}} + \ldots
+	\qquad \dfrac{1}{3!}\left(\tilde{x}_1 \dfrac{\partial}{\partial x_1} + \ldots + \tilde{x}_n \dfrac{\partial}{\partial x_n}\right)^3f\bigg\rvert_{\bar{x}} + \ldots
 \end{align}
 %
 Suppose we define the operation $D^k_{\tilde{x}}f$ as 
 %
 \begin{align}
-	D^k_{\tilde{x}} = \left(\sum_{i=1}^{n} \tilde{x}_i \dfrac{\partial}{\partial x_i}\right)^k f(x) \bigg \rvert_{\tilde{x}}
+	D^k_{\tilde{x}} = \left(\sum_{i=1}^{n} \tilde{x}_i \dfrac{\partial}{\partial x_i}\right)^k f(x) \bigg \rvert_{\bar{x}}
 \end{align}
 %
 so that we can define $f(x)$ in Taylor series form as 
 %
 \begin{align}
-	f(x) = f(\tilde{x}) + D_{\tilde{x}} f + \dfrac{1}{2!} D^2_{\tilde{x}} f + \dfrac{1}{3!} D^3_{\tilde{x}} f + \ldots
+	f(x) &= f(\bar{x}) + D_{\tilde{x}} f + \dfrac{1}{2!} D^2_{\tilde{x}} f + \dfrac{1}{3!} D^3_{\tilde{x}} f + \ldots \\
+	& = f(\bar{x}) + D_{\tilde{x}} f +o(\delta).
 \end{align}
 %
+If $f(x)$ is ``sufficiently smooth", it is not far fetched to see that the above equation turns to
+%
+\begin{align}
+	f(x) \approx f(\bar{x}) + D_{\tilde{x}} f \approx  f(\bar{x}) + \dfrac{\partial f}{\partial x}\rvert_{\bar{x}} \tilde{x} \approx  f(\bar{x}) + A \tilde{x}.
+\end{align} 
+%
+since $o(\delta)$ implies that higher order terms satisfy $\lim_{\delta\rightarrow 0} \frac{o(\delta)}{\delta}=0$, and $A = \dfrac{\partial f}{\partial x}\bigg\rvert_{\bar{x}}$.
+
+Recall \eqref{eq:nlnr}, if we choose a nominal operating point $(\bar{x}, \bar{u}, \bar{w})$ and carry out a Taylor series expansion about this nominal point of the nonlinear system of equations, for the state part, we have
+
+\begin{align}
+	\dot{x} &= f(x, u, w) \nonumber \\
+	&\approx f(\bar{x}, \bar{u}, \bar{w}) + \dfrac{\partial f}{\partial x}\bigg\rvert_{(\bar{x}, \bar{u}, \bar{w})} (x - \bar{x}) +  \dfrac{\partial f}{\partial u}\bigg\rvert_{(\bar{x}, \bar{u}, \bar{w})} (u - \bar{u}) +  \dfrac{\partial f}{\partial w}\bigg\rvert_{(\bar{x}, \bar{u}, \bar{w})} (w - \bar{w}) + o(\delta)  \\
+	%
+	& = 	 f(\bar{x}, \bar{u}, \bar{w}) + \dfrac{\partial f}{\partial x}\bigg\rvert_{(\bar{x}, \bar{u}, \bar{w})} \tilde{x} +  \dfrac{\partial f}{\partial u}\bigg\rvert_{(\bar{x}, \bar{u}, \bar{w})} \tilde{u} +  \dfrac{\partial f}{\partial w}\bigg\rvert_{(\bar{x}, \bar{u}, \bar{w})} \tilde{w} + o(\delta) \nonumber \\
+	%
+	& = 	 \dot{\bar{x}} + A \tilde{x} +  B \tilde{u} +  L \tilde{w} \nonumber 
+\end{align}
+%
+Since $\tilde{w}$ is a noise term, it suffices that $\tilde{w} = \bar{w}= w$ so that we can write
+%
+\begin{align}
+	\dot{x} - \dot{\bar{x}} &=  A \tilde{x} +  B \tilde{u} +  L w \qquad \text{ or }\nonumber \\
+	\dot{\tilde{x}} &= A \tilde{x} +  B \tilde{u} +  L w.
+	\label{eq:nlnr_dev}
+\end{align}
+%
+In other words, we have a linear equation for the deviations of the nonlinear system from the nominal system. It is therefore reason that as long as the deviations are minute enough, the linearization will be valid and the linear equation of \eqref{eq:nlnr_dev} will describe the nonlinear system \eqref{eq:nlnr} well enough. 
+
+In a similar vein, the measurement equation from \eqref{eq:nlnr} will be approximated with the Taylor series expansion about the nominal operating point $(\bar{x}, \bar{u})$ as follows:
+%
+\begin{align}
+	y &= h(x, u) \nonumber \\
+	  & \approx h(\bar{x}, \bar{u}) + \dfrac{\partial h}{\partial x}\bigg\rvert_{(\bar{x}, \bar{\nu})} \tilde{x} +  \dfrac{\partial h}{\partial \nu}\bigg\rvert_{(\bar{x}, \bar{\nu})} \tilde{\nu} + o(\delta)  \\
+	  &= \bar{y} + C \tilde{x} + D \tilde{\nu} \qquad  \text{ or } \nonumber \\
+	  \tilde{y} &= C  \tilde{x} + D \tilde{\nu}.
+\end{align}
+%
+It follows that we can ``solve" a nonlinear control problem by finding linear operating regions whereby we can solve the control problem, after which we can obtain locally linear solutions for the nonlinear control problem.
+
+\begin{example}
+	Consider the longitudinal flight control of a hypersonic aircraft cruising at a Mach number of $15$ at an altitude of $110,000ft$. The dynamic equations are \cite{StengelHypersonic}
+	%
+	\begin{subequations}
+		\begin{align}
+			\dot{V} &= \left(T \cos \alpha - D\right)/m - \mu \sin \gamma / r^2  \\
+			\dot{\gamma} &= \left(L + T \sin \alpha\right)/mV - \left[(\mu - V^2 r) \cos \gamma\right]/(Vr^2) \\
+			\dot{h} &= V \sin \gamma \\
+			\dot{\alpha} &= q - \dot{\gamma} \\
+			\dot{q} &= M_{yy} / I_{yy}
+		\end{align}
+	\label{eq:hypersonic_dyn}
+	\end{subequations}
+where
+%
+\begin{subequations}
+	\begin{align}
+		L &= \frac{1}{2} \rho V^2 S C_L \\
+		D &= \frac{1}{2} \rho V^2 S C_D \\
+		T &= \frac{1}{2} \rho V^2 S C_T.
+	\end{align}
+\end{subequations}
+%
+Here, $\alpha$ is the angle of attack, $\gamma$ is the flight path angle, $rad$, $r$ is the radial distance from the center of the Earth, $20,903,500$ft, $C_T$ is the thrust coefficient, $C_D$ is the drag coefficient, $C_L$ is the lift coefficient, $L$ is the lift, $D$ is the drag in $lbf$, $h$ is the altitude, $T$ is the thrust in $lbf$, $V$ is the velocity in $ft/sec$, $m$ is the mass, $9375$ slugs, $q$ is the pitch rate in $rad/sec$, $S$ is the reference area, $3603 ft^2$, $I_{yy}$ is the moment of inertia, $7 \times 10^6$ slug-ft$^2$, $M_{yy}$ is the pitching moment in lbf-ft, $\mu$ is the gravitational constant, $1.39 \times 10^16 ft^3/s^2$.
+
+We can write the state space vector of the dynamics as follows:
+\[
+	\dot{x} = \begin{bmatrix}
+				\dot{x}_1 & \dot{x}_2 & \dot{x}_3 & \dot{x}_4 & \dot{x}_5
+	\end{bmatrix} = \begin{bmatrix}
+	\dot{V} & \dot{\gamma} & \dot{h} & \dot{\alpha} & \dot{q}
+\end{bmatrix}
+\].
+
+So that the \textit{nonlinear} dynamics of the hypersonic aircraft at the specified cruising altitude of $110,000$ ft and Mach number 15 becomes
+%
+\begin{subequations}
+	\begin{align}
+		\dot{x}_1 & = \frac{1}{2m}\rho S \left(C_T \cos x_4 - C_D\right) x_1^2 - \frac{\mu}{r^2} \sin x_2 \\
+		\dot{x}_2 &=  \left(\frac{1}{2m}\rho S C_L - \frac{\mu}{x_1^2r^2}\right) x_1 + \frac{x_1}{r} \cos x_2 +\frac{1}{2m}\rho S C_D \sin x_4 \\
+		\dot{x}_3 &= x_1 \sin x_2 \\
+		\dot{x}_4 &= - \left(\frac{1}{2m}\rho S  C_L - \frac{\mu}{x_1^2r^2}\right) x_1 - \frac{x_1}{r} \cos x_2 -\frac{1}{2m}\rho S C_D \sin x_4 + x_5   \\
+		\dot{x}_5 &= M_{yy}/I_{yy}
+	\end{align}
+\end{subequations}
+%
+Following our earlier argument, we proceed to linearize the dynamics by first finding the Jacobian with respect to the  state transition matrix, $x$:
+%
+\begin{align}
+	A &= \dfrac{\partial f}{\partial x} \nonumber \\%\bigg\rve \\
+	  &= \begin{bmatrix}
+	  	\frac{1}{m}\rho S \left(C_T \cos x_4 - C_D\right) x_1 & - \frac{\mu}{r^2}\cos x_2 & 0 & -\frac{1}{2m}\rho S C_T \sin x_4 x_1^2 & 0 \\
+	  	\frac{1}{2m}\rho S C_L - \frac{\mu}{r^2 \, x_1^2} +  \frac{1}{r} \cos x_2 &  -\frac{x_1}{r} \sin x_2 & 0 & \frac{1}{2m}\rho S C_D \cos x_4 & 0 \\
+	  	\sin x_2 & x_1 \cos x_2 & 0 & 0 & 0 \\
+	  	%
+	  	- \frac{1}{2m}\rho S C_L - \frac{1}{r} \cos x_2 - \frac{\mu}{r^2 x^2_1} & \frac{x_1}{r} \sin x_2 & 0 & -\frac{1}{2m}\rho S C_D \cos x_4 & 1 \\
+	  	0 & 0 & 0 & 0 & 0
+	  \end{bmatrix}.
+\end{align}
+
+Similarly, the input matrix can be obtained by finding the Jacobian with respect to the lift, $L$, drag $D$, and thrust, $T$,  are
+%
+\begin{align}
+	B &= \dfrac{\partial f}{\partial u} \\
+	  &= \begin{bmatrix}
+		  	0 & -1/m & 0 \\
+		  	1/mV & 0 & \frac{\sin \alpha}{mV} \\
+		  	0 & 0 & 0 \\
+		  	0 & 0 & 0 \\
+		  	0 & 0 & 0
+	  \end{bmatrix}
+\end{align}
+%
+so that the linear system 
+\begin{align}
+	\dot{\tilde{x}} = A \tilde{x} + B \tilde{u} 
+\end{align}
+%
+approximately describes the nonlinear hypersonic aircraft's deviation from its nominal value $\bar{x}$. We can simulate the lift, drag and thrust with the following nominal control values: $L = \sin 2 \pi t$, $D= \cos 2\pi t$, $T = 2L - D$ to find the nominal state trajectory $\bar{x}$.
+\end{example}

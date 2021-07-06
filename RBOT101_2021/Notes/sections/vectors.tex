@@ -582,7 +582,7 @@ A square $n\times n$ matrix $A$ has $n$ eigenvalues and $n$ eigenvectors. If
 for a scalar $\lambda$ and an $n \times 1$  vector $\bm{x}$ then we say the matrix $A$ has eigenvalues $\lambda$ and eigenvectors $\bm{x}$. Together, $\lambda$ and $\bm{x}$ are called \textit{eigendata}, the \textit{characteristic roots}, \textit{latent roots}, or \textit{proper numbers and vectors} of the matrix.
 
 \begin{homework}
-	If $A$ has eigendata $\left(\lambda, \bm{x}\right)$, then $A^2$ has eigendata $\left(\lambda^2, \bm{x}\right)$. 
+	If $A$ has eigendata $\left(\lambda, \bm{x}\right)$, show that $A^2$ has eigendata $\left(\lambda^2, \bm{x}\right)$. 
 \end{homework}
 %
 \begin{homework}
@@ -699,6 +699,7 @@ An alternative statement of the matrix inversion lemma is
 \end{quiz}
 
 \begin{example}
+	\label{ex:mat_inv_lemma}
 	Suppose that at Brandeis, you took three courses in your Freshman year namely, RBOT 101, RBOT 103, and RBOT 105 where you got $90\%$, $85\%$, and $86\%$ respectively. In your Sophomore year, you took  RBOT 201, RBOT 203, and RBOT 205, where you got $65\%$, $68\%$, and $92\%$ respectively, and in your junior year, you decide to retake your Sophomore classes, where your scores increased by $10\%$, $5\%$, on the first two courses and decreased by $8\%$ in the last course. Your GPA each year increased by $4\%$, $3.5\%$ and $2.5\%$  respectively. Given your analytical prowess, you decide to model each year's GPA changes with the equation $z = a u + b v + c w$, where $u$ and $v$ and $w$ are the scores/grades you got as percentages and $a$, $b$, and $c$ are unknown constants. To find the unknown constants, you figure you need to invert the matrix
 	%
 	\begin{align}
@@ -791,3 +792,7 @@ The $\left(D + C A^{-1}B\right)^{-1}$ term turns out to be a scalar so that
 Here, the matrix inversion lemma may not be necessary since the size of the matrix is small. However, if the matrix had a larger size, the computational savings of using the matrix inversion lemma becomes appreciated.
 
 \end{example}
+
+\begin{homework}
+	Using the same linear model employed in \ref{ex:mat_inv_lemma}, suppose that on a typical weekend, you go to your local Farmers' market and bought tomatoes, bell peppers, and blue berries for $\$35\%$, $\$18\%$, and $\$32\%$ respectively; on your way home, you drove to your local grocery store and found that the prices for each item were actually increased by $10\%$, $25\%$ for each of tomatoes, and bell peppers, and decreased by $68\%$  for the blue berries. You decide to buy more blueberries that cost a total of $\$50$ at your local grocery; and discovered that $\$5$ worth of tomatoes bought at the Farmers' market was defective and had to be discarded. Can you compute a model that allows you to predict future prices for good tomatoes, blue berries and bell peppers at your local Farmers' market?
+\end{homework}
