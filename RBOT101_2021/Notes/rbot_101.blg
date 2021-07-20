@@ -3,7 +3,7 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: rbot_101.aux
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: chicago.bst
-Illegal, another \bibstyle command---line 40 of file rbot_101.aux
+Illegal, another \bibstyle command---line 134 of file rbot_101.aux
  : \bibstyle
  :          {wafr.bst}
 I'm skipping whatever remains of this command
@@ -23,45 +23,46 @@ You're missing a field name---line 2366 of file ../../../Papers/SRS/Continuum/bi
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Database file #3: ../../../Papers/iDG/IROS2018/root.bib
-You've used 1 entry,
+Warning--empty year in homeomorphic
+You've used 5 entries,
             2861 wiz_defined-function locations,
-            622 strings with 5099 characters,
-and the built_in function-call counts, 759 in all, are:
-= -- 68
-> -- 52
-< -- 0
-+ -- 16
-- -- 20
-* -- 67
-:= -- 139
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 7
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 18
-empty$ -- 45
-format.name$ -- 24
-if$ -- 138
+            649 strings with 5641 characters,
+and the built_in function-call counts, 3265 in all, are:
+= -- 298
+> -- 182
+< -- 2
++ -- 50
+- -- 70
+* -- 253
+:= -- 587
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 32
+chr.to.int$ -- 5
+cite$ -- 6
+duplicate$ -- 101
+empty$ -- 220
+format.name$ -- 78
+if$ -- 609
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 10
-pop$ -- 4
+missing$ -- 4
+newline$ -- 27
+num.names$ -- 50
+pop$ -- 31
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 62
 quote$ -- 0
-skip$ -- 23
+skip$ -- 102
 stack$ -- 0
-substring$ -- 45
-swap$ -- 6
-text.length$ -- 0
+substring$ -- 207
+swap$ -- 38
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
-warning$ -- 0
-while$ -- 12
+type$ -- 100
+warning$ -- 1
+while$ -- 59
 width$ -- 0
-write$ -- 15
+write$ -- 67
 (There were 3 error messages)

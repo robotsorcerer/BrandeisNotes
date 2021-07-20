@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.7.2)  6 JUL 2021 01:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.7.2)  18 JUL 2021 20:26
 entering extended mode
 **./rbot_101.tex
 (rbot_101.tex
@@ -1413,72 +1413,203 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (C:\Program Files\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-))
+) [2
+
+
+] [3])
 \tf@toc=\write5
 \openout5 = `rbot_101.toc'.
 
- [2
-
-
-] (rbot_101.lof)
+ [4]
+(rbot_101.lof)
 \tf@lof=\write6
 \openout6 = `rbot_101.lof'.
 
-
-[3
+ [5
 
 ] (rbot_101.lot)
 \tf@lot=\write7
 \openout7 = `rbot_101.lot'.
 
- [4
+ [6
 
-] (sections/state_est.tex
+] (sections/intro.tex
 Chapter 1.
+
+Overfull \hbox (55.52864pt too wide) in paragraph at lines 33--35
+\T1/ptm/m/n/12 (-20) proaches. Choice Re-views On-line, Vol. 44, pp. 44-3334-44
+3334. https://doi.org/10.5860/choice.44-
+ []
+
 [1
 
 
-] [2] [3] [4] [5] [6] [7] [8] [9] [10]) (rbot_101.bbl (rbot_101.brf)
+] [2]) (sections/matrices.tex [3]
+Chapter 2.
+[4
+
+] [5] [6]) (sections/vectors.tex [7]
+Chapter 3.
+[8
+
+] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19])
+(sections/opt_rot.tex [20]
+Chapter 4.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21
+
+]
+[22] [23] [24]
+
+LaTeX Warning: Reference `chap:rbd_quat' on page 25 undefined on input line 193
+.
+
+<figures/least_squares.png, id=681, 960.58875pt x 613.29124pt>
+File: figures/least_squares.png Graphic file (type png)
+<use figures/least_squares.png>
+Package pdftex.def Info: figures/least_squares.png  used on input line 202.
+(pdftex.def)             Requested size: 399.2946pt x 254.93222pt.
+[25] [26 <./figures/least_squares.png>] [27]
+<Kabsch.pdf, id=723, 614.295pt x 794.97pt>
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf>
+Package pdftex.def Info: Kabsch.pdf  used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf>
+Package pdftex.def Info: Kabsch.pdf  used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<Kabsch.pdf, id=726, page=1, 614.295pt x 794.97pt>
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 1>
+Package pdftex.def Info: Kabsch.pdf , page1 used on input line 302.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 1>
+Package pdftex.def Info: Kabsch.pdf , page1 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [28]
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 1>
+Package pdftex.def Info: Kabsch.pdf , page1 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 1>
+Package pdftex.def Info: Kabsch.pdf , page1 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 1>
+Package pdftex.def Info: Kabsch.pdf , page1 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [29 <./Kabsch.pdf>]
+<Kabsch.pdf, id=765, page=2, 614.295pt x 794.97pt>
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 2>
+Package pdftex.def Info: Kabsch.pdf , page2 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 2>
+Package pdftex.def Info: Kabsch.pdf , page2 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 2>
+Package pdftex.def Info: Kabsch.pdf , page2 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [30 <./Kabsch.pdf>]
+<Kabsch.pdf, id=770, page=3, 614.295pt x 794.97pt>
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 3>
+Package pdftex.def Info: Kabsch.pdf , page3 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 3>
+Package pdftex.def Info: Kabsch.pdf , page3 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 3>
+Package pdftex.def Info: Kabsch.pdf , page3 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [31 <./Kabsch.pdf>]
+<Kabsch.pdf, id=778, page=4, 614.295pt x 794.97pt>
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 4>
+Package pdftex.def Info: Kabsch.pdf , page4 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 4>
+Package pdftex.def Info: Kabsch.pdf , page4 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Kabsch.pdf Graphic file (type pdf)
+<use Kabsch.pdf, page 4>
+Package pdftex.def Info: Kabsch.pdf , page4 used on input line 302.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [32 <./Kabsch.pdf>]
+
+LaTeX Warning: Reference `fig:2_coords' on page 33 undefined on input line 358.
+
+
+[33] [34] [35]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 516.
+) (sections/state_est.tex [36] [37]
+Chapter 5.
+[38
+
+] [39] [40] [41] [42] [43] [44] [45] [46] [47]) (rbot_101.bbl (rbot_101.brf)
 \tf@brf=\write8
 \openout8 = `rbot_101.brf'.
 
- [11])
+[48])
 
 Package caption Warning: Unused \captionsetup[table] on input line 42.
 See the caption package documentation for explanation.
 
-[12
+[49
 
 ] (rbot_101.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `rbot_101.out' has not changed.
-(rerunfilecheck)             Checksum: 479BB950B4BD93D636D4B761B3BD2FD2;1707.
-Package rerunfilecheck Info: File `rbot_101.brf' has not changed.
-(rerunfilecheck)             Checksum: DCC776B3C38B16277269FB3B11526DD9;50.
+(rerunfilecheck)             Checksum: 12DD77FE883ADF9E050965B493F16C39;10326.
+
+Package rerunfilecheck Warning: File `rbot_101.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `rbot_101.brf':
+(rerunfilecheck)             Before: 4E188FA2D292DFCD87CBDE104E2D5F38;50
+(rerunfilecheck)             After:  0D3FB3D5810E801D8BC28FA08EB9E8D2;295.
  ) 
 Here is how much of TeX's memory you used:
- 46195 strings out of 478864
- 1043149 string characters out of 2858506
- 1534848 words of memory out of 3000000
- 62918 multiletter control sequences out of 15000+600000
- 451192 words of font info for 229 fonts, out of 8000000 for 9000
+ 46784 strings out of 478864
+ 1052160 string characters out of 2858506
+ 1536898 words of memory out of 3000000
+ 63129 multiletter control sequences out of 15000+600000
+ 454992 words of font info for 273 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 102i,16n,117p,1499b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,17n,117p,1481b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Pr
-ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-<C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiK
-TeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on rbot_101.pdf (16 pages, 244362 bytes).
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pro
+gram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/M
+iKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/
+urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri
+8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Fi
+les/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type
+1/urw/times/utmri8a.pfb>
+Output written on rbot_101.pdf (55 pages, 611473 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 117 named destinations out of 1000 (max. 500000)
- 43261 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1157 PDF objects out of 1200 (max. 8388607)
+ 413 named destinations out of 1000 (max. 500000)
+ 43685 words of extra memory for PDF output out of 51595 (max. 10000000)
 

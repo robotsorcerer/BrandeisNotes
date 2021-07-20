@@ -1,10 +1,32 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{Besl and McKay}{Besl and
+  McKay}{1992}]{besl1992method}
+Besl, P.~J. and N.~D. McKay (1992).
+\newblock Method for registration of 3-d shapes.
+\newblock In {\em Sensor fusion IV: control paradigms and data structures},
+  Volume 1611, pp.\  586--606. International Society for Optics and Photonics.
+
+\bibitem[\protect\citeauthoryear{Horn}{Horn}{1987}]{horn1987closed}
+Horn, B.~K. (1987).
+\newblock Closed-form solution of absolute orientation using unit quaternions.
+\newblock {\em Josa a\/}~{\em 4\/}(4), 629--642.
+
+\bibitem[\protect\citeauthoryear{Kabsch}{Kabsch}{1978}]{Kabsch1978}
+Kabsch, W. (1978).
+\newblock {A discussion of the solution for the best rotation to relate two
+  sets of vectors}.
+\newblock {\em Acta Crystallographica Section A\/}~{\em 34\/}(5), 827--828.
+
 \bibitem[\protect\citeauthoryear{Wang and Stengel}{Wang and
   Stengel}{2000}]{StengelHypersonic}
 Wang, Q. and R.~F. Stengel (2000).
 \newblock Robust nonlinear control of a hypersonic aircraft.
 \newblock {\em Journal of guidance, control, and dynamics\/}~{\em 23\/}(4),
   577--585.
+
+\bibitem[\protect\citeauthoryear{Weisstein}{Weisstein}{}]{homeomorphic}
+Weisstein, E.~W.
+\newblock Homeomorphic.
 
 \end{thebibliography}
