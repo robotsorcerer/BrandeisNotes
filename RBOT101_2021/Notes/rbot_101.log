@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.7.2)  18 JUL 2021 20:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.7.2)  19 JUL 2021 21:31
 entering extended mode
 **./rbot_101.tex
 (rbot_101.tex
@@ -1574,13 +1574,8 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `rbot_101.out' has not changed.
 (rerunfilecheck)             Checksum: 12DD77FE883ADF9E050965B493F16C39;10326.
-
-Package rerunfilecheck Warning: File `rbot_101.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `rbot_101.brf':
-(rerunfilecheck)             Before: 4E188FA2D292DFCD87CBDE104E2D5F38;50
-(rerunfilecheck)             After:  0D3FB3D5810E801D8BC28FA08EB9E8D2;295.
+Package rerunfilecheck Info: File `rbot_101.brf' has not changed.
+(rerunfilecheck)             Checksum: 0D3FB3D5810E801D8BC28FA08EB9E8D2;295.
  ) 
 Here is how much of TeX's memory you used:
  46784 strings out of 478864
@@ -1607,9 +1602,9 @@ urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri
 8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Fi
 les/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on rbot_101.pdf (55 pages, 611473 bytes).
+Output written on rbot_101.pdf (55 pages, 612406 bytes).
 PDF statistics:
- 1157 PDF objects out of 1200 (max. 8388607)
+ 1162 PDF objects out of 1200 (max. 8388607)
  413 named destinations out of 1000 (max. 500000)
  43685 words of extra memory for PDF output out of 51595 (max. 10000000)
 
