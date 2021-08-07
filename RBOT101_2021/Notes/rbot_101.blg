@@ -3,7 +3,7 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: rbot_101.aux
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: chicago.bst
-Illegal, another \bibstyle command---line 134 of file rbot_101.aux
+Illegal, another \bibstyle command---line 139 of file rbot_101.aux
  : \bibstyle
  :          {wafr.bst}
 I'm skipping whatever remains of this command
