@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.7.2)  6 AUG 2021 20:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.7.2)  8 AUG 2021 18:13
 entering extended mode
 **./rbot_101.tex
 (rbot_101.tex
@@ -1466,13 +1466,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: Reference `chap:rbd_quat' on page 25 undefined on input line 193
 .
 
-<figures/least_squares.png, id=681, 960.58875pt x 613.29124pt>
+<figures/least_squares.png, id=682, 960.58875pt x 613.29124pt>
 File: figures/least_squares.png Graphic file (type png)
 <use figures/least_squares.png>
 Package pdftex.def Info: figures/least_squares.png  used on input line 202.
 (pdftex.def)             Requested size: 399.2946pt x 254.93222pt.
 [25] [26 <./figures/least_squares.png>] [27]
-<Kabsch.pdf, id=723, 614.295pt x 794.97pt>
+<Kabsch.pdf, id=724, 614.295pt x 794.97pt>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf>
 Package pdftex.def Info: Kabsch.pdf  used on input line 302.
@@ -1481,7 +1481,7 @@ File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf>
 Package pdftex.def Info: Kabsch.pdf  used on input line 302.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Kabsch.pdf, id=726, page=1, 614.295pt x 794.97pt>
+<Kabsch.pdf, id=727, page=1, 614.295pt x 794.97pt>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf, page 1>
 Package pdftex.def Info: Kabsch.pdf , page1 used on input line 302.
@@ -1504,7 +1504,7 @@ File: Kabsch.pdf Graphic file (type pdf)
 Package pdftex.def Info: Kabsch.pdf , page1 used on input line 302.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [29 <./Kabsch.pdf>]
-<Kabsch.pdf, id=765, page=2, 614.295pt x 794.97pt>
+<Kabsch.pdf, id=766, page=2, 614.295pt x 794.97pt>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf, page 2>
 Package pdftex.def Info: Kabsch.pdf , page2 used on input line 302.
@@ -1518,7 +1518,7 @@ File: Kabsch.pdf Graphic file (type pdf)
 Package pdftex.def Info: Kabsch.pdf , page2 used on input line 302.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [30 <./Kabsch.pdf>]
-<Kabsch.pdf, id=770, page=3, 614.295pt x 794.97pt>
+<Kabsch.pdf, id=771, page=3, 614.295pt x 794.97pt>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf, page 3>
 Package pdftex.def Info: Kabsch.pdf , page3 used on input line 302.
@@ -1532,7 +1532,7 @@ File: Kabsch.pdf Graphic file (type pdf)
 Package pdftex.def Info: Kabsch.pdf , page3 used on input line 302.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [31 <./Kabsch.pdf>]
-<Kabsch.pdf, id=778, page=4, 614.295pt x 794.97pt>
+<Kabsch.pdf, id=779, page=4, 614.295pt x 794.97pt>
 File: Kabsch.pdf Graphic file (type pdf)
 <use Kabsch.pdf, page 4>
 Package pdftex.def Info: Kabsch.pdf , page4 used on input line 302.
@@ -1578,8 +1578,8 @@ Package rerunfilecheck Info: File `rbot_101.brf' has not changed.
 (rerunfilecheck)             Checksum: 0D3FB3D5810E801D8BC28FA08EB9E8D2;295.
  ) 
 Here is how much of TeX's memory you used:
- 46769 strings out of 478864
- 1052054 string characters out of 2858506
+ 46770 strings out of 478864
+ 1052069 string characters out of 2858506
  1536792 words of memory out of 3000000
  63117 multiletter control sequences out of 15000+600000
  454865 words of font info for 271 fonts, out of 8000000 for 9000
@@ -1602,9 +1602,9 @@ urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri
 8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Fi
 les/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on rbot_101.pdf (55 pages, 612404 bytes).
+Output written on rbot_101.pdf (55 pages, 612637 bytes).
 PDF statistics:
- 1162 PDF objects out of 1200 (max. 8388607)
- 413 named destinations out of 1000 (max. 500000)
+ 1163 PDF objects out of 1200 (max. 8388607)
+ 414 named destinations out of 1000 (max. 500000)
  43685 words of extra memory for PDF output out of 51595 (max. 10000000)
 

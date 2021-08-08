@@ -1,89 +1,27 @@
 \noindent 
 
 \begin{homework}
-	Find a closed-form expression for the solution to
-	 \begin{align}
-	d(\bm{p}, l) = \min_{x+y=1} \|x\bm{r}_1 + y \bm{r}_2 - \bm{p} \|
-	\label{eq:line_seg}
+	Show that $\bm{x}^i$ are mutually orthogonal and normalized \ie orthonormal for the following $N$-dimensional Euclidean basis coordinate vectors
+	\begin{align}
+		\bm{x}^1 = \begin{bmatrix}
+			1 \\ 0 \\ \vdots \\ 0
+		\end{bmatrix}
+		%
+		\qquad
+		%
+		\bm{x}^2 = \begin{bmatrix}
+			0 \\ 1 \\ \vdots \\ 0
+		\end{bmatrix}
+		%
+		\qquad
+		%
+		\bm{x}^N = \begin{bmatrix}
+			0 \\ 0 \\ \vdots \\ 1
+		\end{bmatrix}
 	\end{align}
-	%
-	where $x, y \in [0, 1 ]$.
-	%.
 \end{homework}
 
 \begin{solution}
-	Since $p$ is 3-D, we have
-	%
-	\begin{align}
-		\bm{p} = \left(
-		\begin{array}{c}
-		p_{1x} \\ p_{1y} \\p_{1z}
-		\end{array}\right),  \quad \left(
-		\begin{array}{c}
-		p_{2x} \\ p_{2y} \\p_{2z}
-		\end{array}\right), \ldots, 
-		%
-		\left(
-		\begin{array}{c}
-		p_{nx} \\ p_{ny} \\p_{nz}
-		\end{array}\right), 
-	\end{align}
-	%
-	and since $\bm{l}$ is a point set, we can write 
-	%
-	\begin{align}
-	 \bm{l} = \{l_1, l_2, \ldots, l_n\}.
-	\end{align}
-	%
-	Now, rewrite $\bm{r}_1 = \left(\begin{array}{c}
-	\bm{r}_{1x} \\ \bm{r}_{1y} \\ \bm{r}_{1z}
-	\end{array}\right)$, 
-	%
-	and 
-	%
-	$\bm{r}_2 = \left(\begin{array}{c}
-	\bm{r}_{2x} \\ \bm{r}_{2y} \\ \bm{r}_{2z}
-	\end{array}\right)$
-	%
-	so that 
-	%
-	\begin{align}
-		u\bm{r} + v\bm{r} - \bm{p} = \left(\begin{array}{c}
-		u\bm{r}_{1x} \\ u\bm{r}_{1y} \\ u \bm{r}_{1z}
-		\end{array}\right)
-		%
-		+ 
-		%
-		\left(\begin{array}{c}
-		v\bm{r}_{2x} \\ v\bm{r}_{2y} \\ v\bm{r}_{2z}
-		\end{array}\right)
-		%
-		-
-		%
-		 \left(
-		\begin{array}{c}
-		p_{ix} \\ p_{iy} \\p_{iz}
-		\end{array}\right)
-	\end{align}
-	%
-	where $i = 1, \ldots, n$
+	To prove orthogonality, we must have %
 	
-	This informs,
-	\begin{align}
-		d(\bm{p}, \bm{l}) = \left|\left|\begin{array}{c}
-		u\bm{r}_{1x} + v\bm{r}_{2x} -	p_{ix} \\ u\bm{r}_{1y}+ v\bm{r}_{2y} - p_{iy}   \\ u \bm{r}_{1z} + v\bm{r}_{2z} - p_{iz} 
-		\end{array}  
-		\right|\right|.
-	\end{align}
-	%
-	Write $D(\bm{p}, \bm{l}) = d(\bm{p}, \bm{l})^2 =  \left[\begin{array}{c}
-	u\bm{r}_{1x} + v\bm{r}_{2x} -	p_{ix} \\ u\bm{r}_{1y}+ v\bm{r}_{2y} - p_{iy}   \\ u \bm{r}_{1z} + v\bm{r}_{2z} - p_{iz} 
-	\end{array}  
-	\right]$.
-	
-	From which,
-	%
-	\begin{align}
-		D^\prime (\bm{p}, \bm{l}) = 
-	\end{align}
 \end{solution}

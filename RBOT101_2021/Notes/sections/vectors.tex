@@ -119,7 +119,7 @@ Two vectors are said to be orthogonal if their inner product is $0$ \ie
 When the set of real vectors $\{\bm{x}^i\}$ possess the property that $\langle \bm{x}^i, \bm{y}^i\rangle = 1$, then we say they are \textit{orthonormal.}
 %
 \begin{homework}
-	show that $\bm{x}^i$ are mutually orthogonal and normalized \ie orthonormal for the following $N$-dimensional Euclidean basis coordinate vectors
+	Show that $\bm{x}^i$ are mutually orthogonal and normalized \ie orthonormal for the following $N$-dimensional Euclidean basis coordinate vectors
 	\begin{align}
 		\bm{x}^1 = \begin{bmatrix}
 		1 \\ 0 \\ \vdots \\ 0
@@ -283,7 +283,20 @@ Note the ordering of the matrix product above.
 \end{homework}
 
 \begin{homework}
-	Show that 
+	Let 
+		\begin{align}
+			A = \begin{bmatrix}
+				a_1 & a_2 \\
+				-a_2 & a_1
+			\end{bmatrix} 
+		\text{ and }
+		B = \begin{bmatrix}
+			b_1 & b_2 \\
+			-b_2 & b_1
+		\end{bmatrix},
+		\end{align}
+	%
+		show that 
 	\begin{align}
 		\left(a_1^2 + a_2^2\right)\left(b_1^2 + b_2^2\right) = \left(a_2 b_1 + a_1 b_2\right)^2 + \left(a_1 b_1 - a_2 b_2\right)^2
 	\end{align}
@@ -387,7 +400,7 @@ which becomes upon rearrangement,
 		&= \langle \bm{x}, A^T \bm{y} \rangle 
 \end{align}
 
-We can then regard $A^T$ as the \textit{induced or adjoint transformation} of $A$. An interesting property of the transpose of amatrix product is that 
+We can then regard $A^T$ as the \textit{induced or adjoint transformation} of $A$. An interesting property of the transpose of a matrix product is that 
 %
 \begin{align}
 	(AB)^T = B^T A^T
@@ -691,7 +704,7 @@ and from the definition of $F$, we have
 An alternative statement of the matrix inversion lemma is
 %
 \begin{align}
-\left(A -+B D^{-1}C\right)^{-1} = A^{-1} + A^{-1} B \left(D + C A^{-1} B\right)^{-1} C A^{-1}
+\left(A +B D^{-1}C\right)^{-1} = A^{-1} - A^{-1} B \left(D + C A^{-1} B\right)^{-1} C A^{-1}
 \end{align}
 %
 \begin{quiz}
@@ -747,12 +760,12 @@ An alternative statement of the matrix inversion lemma is
 	\begin{subequations}
 		\begin{align}
 			B = \begin{bmatrix}
-					0 & 21 & 3.44
-			\end{bmatrix}^T
+					0 & 21 & 0%3.44
+			\end{bmatrix}^T, \,
 			%
 			C = \begin{bmatrix}
 			1 & 0 & 0
-			\end{bmatrix}
+			\end{bmatrix}, \, \text{ and }
 			%
 			D = 1
 		\end{align}
