@@ -1,32 +1,32 @@
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Early serial kinematic chain robot manipulators. \textit {Left:} The Stanford Arm Serial Manipulator, 1969. \copyright Infolab, Stanford University. \textit {Right:} The PUMA robot arm. Reprinted from Wikipedia.\relax }}{4}{figure.caption.4}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Soft Robot Manipulators \textit {Left:} An octopus inspired soft robot. Robots classified under muscular hydrostats. \copyright Cecilia Laschi. \textit {Right:} A soft parallel robot manipulator \nobreakspace {}\citep {hopkins2015synthesis}.\relax }}{5}{figure.caption.5}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Schematic description of in-series-actuated robot arms: (a) rotary joint actuated ``about" the hinge (b) prismatic joint actuated ``across" a hinge. Reprinted from \citep {Hunt1983}.\relax }}{8}{figure.caption.6}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces The Staubli 6-DOF Arm is an example of a Spherical Manipulator. Reprinted from DirectIndustry's Webpage.\relax }}{9}{figure.caption.7}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces The SCARA Arm. \copyright Fanuc America.\relax }}{9}{figure.caption.8}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Stewart-Gough Platforms \textit {Left:} The 1954 Octahedral hexapod of the original Gough platform. \textit {Right:} The retired platform from Dunlop tires in 2000. Picture courtesy of Parallemic.org.\relax }}{11}{figure.caption.9}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces The Lower Kinematic Pairs. Reprinted from \citep {HuntBook1977}.\relax }}{12}{figure.caption.10}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces The planar $RRR$ linkage, (\textit {left}) is modified in (\textit {right}) to allow spatial spin-movement of the coupler 3; the connectivity $\mathscr {C}_{13}=2$). Reprinted from \nobreakspace {}\citep {HuntBook1977}.\relax }}{12}{figure.caption.11}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces \textit {Left}: A Parallel Planar Robot Mechanism. \textit {Right:} Workspace of the mechanism.\relax }}{16}{figure.caption.12}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of rotation of interconnecting link of two spherical links.\relax }}{23}{figure.caption.13}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Lie Group and their Notations. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }}{25}{figure.caption.14}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces An illustration of the exponential map for a multi-body rigid system. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }}{27}{figure.caption.15}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces A point $q$ in space with respect to two coordinate frames.\relax }}{29}{figure.caption.16}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces An illustration of the relative orientation of a rigid object $q$ between an inertial frame $I$ and a body frame $J$.\relax }}{31}{figure.caption.17}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of rotation between two frames in a plane.\relax }}{34}{figure.caption.18}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Relative orientation between two frames.\relax }}{35}{figure.caption.19}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Coordinate frames on a body. Reprinted from \citep {SpongBook}\relax }}{37}{figure.caption.20}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Illustration of composition of rotations about a \textbf {current axis}.\relax }}{39}{figure.caption.21}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces An illustration of the ZYZ rotation angles\relax }}{41}{figure.caption.22}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces An open kinematic chain. Reprinted from \citep {Brockett1990}.\relax }}{50}{figure.caption.23}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The Pneunets Soft Robot\relax }}{50}{figure.caption.24}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Forward Kinematic Planning for The Torobo 7 Arm\relax }}{53}{figure.caption.25}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces An illustration of the geometric configuration of the planar arm\relax }}{59}{figure.caption.27}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Inverse Kinematics of a two-link planar manipulator\relax }}{65}{figure.caption.28}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Elbow Manipulator. Figure reproduced from \nobreakspace {}\citep {PadenThesis85}\relax }}{66}{figure.caption.29}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The double pendulum with configuration is decribed by the angles $\theta _1$ and $\theta _2$.\relax }}{72}{figure.caption.30}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The KUKA Robot's Geometrical Illustration\relax }}{75}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mecanum Wheels Model}}}{75}{subfigure.2.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Robot frames convention }}}{75}{subfigure.2.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Goal Navigation Illustration\relax }}{77}{figure.caption.32}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Home Position.}}}{77}{subfigure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Goal State.}}}{77}{subfigure.3.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Early serial kinematic chain robot manipulators. \textit {Left:} The Stanford Arm Serial Manipulator, 1969. \copyright Infolab, Stanford University. \textit {Right:} The PUMA robot arm. Reprinted from Wikipedia.\relax }}{4}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Soft Robot Manipulators \textit {Left:} An octopus inspired soft robot. Robots classified under muscular hydrostats. \copyright Cecilia Laschi. \textit {Right:} A soft parallel robot manipulator \nobreakspace {}\citep {hopkins2015synthesis}.\relax }}{5}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Schematic description of in-series-actuated robot arms: (a) rotary joint actuated ``about" the hinge (b) prismatic joint actuated ``across" a hinge. Reprinted from \citep {Hunt1983}.\relax }}{7}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The Staubli 6-DOF Arm is an example of a Spherical Manipulator. Reprinted from DirectIndustry's Webpage.\relax }}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The SCARA Arm. \copyright Fanuc America.\relax }}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Stewart-Gough Platforms \textit {Left:} The 1954 Octahedral hexapod of the original Gough platform. \textit {Right:} The retired platform from Dunlop tires in 2000. Picture courtesy of Parallemic.org.\relax }}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces The Lower Kinematic Pairs. Reprinted from \citep {HuntBook1977}.\relax }}{10}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The planar $RRR$ linkage, (\textit {left}) is modified in (\textit {right}) to allow spatial spin-movement of the coupler 3; the connectivity $\mathscr {C}_{13}=2$). Reprinted from \nobreakspace {}\citep {HuntBook1977}.\relax }}{11}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces \textit {Left}: A Parallel Planar Robot Mechanism. \textit {Right:} Workspace of the mechanism.\relax }}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of rotation of interconnecting link of two spherical links.\relax }}{19}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Lie Group and their Notations. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces An illustration of the exponential map for a multi-body rigid system. Reprinted with permission from Federico Renda. IROS 2018, Screw Theory Tutorial.\relax }}{22}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A point $q$ in space with respect to two coordinate frames.\relax }}{24}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces An illustration of the relative orientation of a rigid object $q$ between an inertial frame $I$ and a body frame $J$.\relax }}{25}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of rotation between two frames in a plane.\relax }}{27}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Relative orientation between two frames.\relax }}{29}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Coordinate frames on a body. Reprinted from \citep {SpongBook}\relax }}{30}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Illustration of composition of rotations about a \textbf {current axis}.\relax }}{31}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces An illustration of the ZYZ rotation angles\relax }}{33}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces An open kinematic chain. Reprinted from \citep {Brockett1990}.\relax }}{39}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The Pneunets Soft Robot\relax }}{39}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Forward Kinematic Planning for The Torobo 7 Arm\relax }}{41}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces An illustration of the geometric configuration of the planar arm\relax }}{46}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Inverse Kinematics of a two-link planar manipulator\relax }}{50}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Elbow Manipulator. Figure reproduced from \nobreakspace {}\citep {PadenThesis85}\relax }}{51}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The double pendulum with configuration is decribed by the angles $\theta _1$ and $\theta _2$.\relax }}{56}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The KUKA Robot's Geometrical Illustration\relax }}{59}{figure.caption.31}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mecanum Wheels Model}}}{59}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Robot frames convention }}}{59}{subfigure.2.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Goal Navigation Illustration\relax }}{60}{figure.caption.32}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Home Position.}}}{60}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Goal State.}}}{60}{subfigure.3.2}%
