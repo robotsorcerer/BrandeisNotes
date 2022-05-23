@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}[1997/04/30]
-\ProvidesClass{utdthesis}
-  [2016/11/04 v1.7 University of Texas at Dallas Thesis Class]
+\ProvidesClass{brandeis}
+  [2016/11/04 v1.7 Brandeis University]
 
 %% Example Usage:
 %%

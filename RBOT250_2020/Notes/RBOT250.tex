@@ -36,8 +36,8 @@
 %\usepackage{microtype}
 \usepackage[most]{tcolorbox}
 \usepackage{booktabs,tabularx}
-\usepackage{caption}
-\captionsetup[table]{skip=4pt,singlelinecheck=off}
+%\usepackage{caption}
+%\captionsetup[table]{skip=4pt,singlelinecheck=off}
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
@@ -57,14 +57,6 @@
 \addtolength{\textfloatsep}{-3mm}
 \pgfplotsset{compat=1.5}
 
-% Required: To satisfy UTD's formatting requirements for citations, use the
-% "natbib" package.  (Use other citation packages at your own risk; not all
-% are flexible enough to meet UTD's requirements.)  If you wish to use numeric
-% citations, change "authoryear" to "numbers" below.  Use the "chicago" BibTeX
-% style, which most closely matches the Turabian formatting required by UTD.
-% UTD mandates a blank line between each pair of bibliography entries, so set
-% \bibsep as shown below.  Finally, if you are accustomed to using \cite as
-% your citation macro, point it to natbib's \citep macro as shown.
 \usepackage[authoryear, sort]{natbib}
 \bibliographystyle{chicago}
 \setlength{\bibsep}{12pt plus 1pt minus 1pt}
@@ -78,7 +70,7 @@
 \newtheorem{example}{Example}
 \newtheorem{homework}{Homework}
 %\usepackage[pagebackref=true,breaklinks=true,bookmarks=true]{hyperref}
-\usepackage[pagebackref=true,breaklinks=true,colorlinks=true, citecolor=green,linkcolor=light-blue,urlcolor=blue,bookmarks=true]{hyperref}
+\usepackage[pagebackref=true,breaklinks=true,colorlinks=true, citecolor=magenta,linkcolor=light-blue,urlcolor=blue,bookmarks=true]{hyperref}
 %%% End of packages.
 % Define all your personal macros here (if you have any).
 %
@@ -88,9 +80,6 @@
 \newenvironment{exampleclasscode}
 {\parindent=1cm\vskip0pt plus2pt minus0pt\begin{verse}}
 	{\end{verse}\vskip0pt plus2pt minus0pt}
-%
-%%% End of personal macro definitions.
-%%% The following definitionhttps://raw.githubusercontent.com/lakehanne/BrandeisNotes/master/lec_notes/def.tex?token=ACAKCJEHYDW72GOQJBSXI3K6GXPIMs MUST come before the document begins.
 %
 \author{RBOT250: Robot Motion Planning, Manipulation and Control \\
 	Instructor: Dr. Lekan Molu}
@@ -110,16 +99,6 @@
 	
 	\mainmatter
 %%
-%\authorrunning{Lekan Molu} 
-%
-%\institute{
-%	Graduate Professional Studies \\
-%	Rabb School of Continuing Studies \\
-%	Brandeis University}
-
-
-%\titlerunning{RBOT 250}
-%\maketitle              % typeset the title of the contribution
 
 \newpage
 \input{sections/intro}
@@ -133,8 +112,8 @@
 %
 % ---- Bibliography ----
 \providecommand\BIBentryALTinterwordstretchfactor{2.5}
-\bibliographystyle{wafr.bst}
+\bibliographystyle{chicago.bst}
 %\addbibresource{biblio}
-\bibliography{biblio,../../Papers/iDG/IROS2018/root}
+\bibliography{biblio}%,../../Papers/iDG/IROS2018/root}
 
 \end{document}
