@@ -1,0 +1,145 @@
+\section{Pairs, Linkages, and Configurations}
+
+\begin{frame}
+	\frametitle{Outline}
+	\begin{tcolorbox}[coltitle=white!80,colframe=blue!85,split=.2,title=Mechanism Components]
+		Kinematic geometry. Rigid bodies. Joints.
+		\tcblower
+		Joints: Curve and straight line contacts; joint closure;
+		\vspace{.2cm}
+		\newline
+		Pairs; couplings.
+		\vspace{.2cm}
+		\newline
+		Lower pairs and linkages, Higher and lower pairs.
+		\vspace{.2cm}
+		\newline
+		Motions: Planar and spherical motions.
+		\vspace{.2cm}
+		\newline
+		Synthesis: Type-, number-, and size-syntheses.
+	\end{tcolorbox}
+\end{frame}
+
+\subsection{Mechanics}
+\begin{frame}
+	\frametitle{Preamble -- Mechanics Overview.}
+	%
+	\begin{block}{Mechanics.}
+		\textcolor{blue}{Mechanics} takes an indirect approach to the study of nature --via \textcolor{red}{bodies} --  essentially mathematical abstractions of common natural things; the \textcolor{red}{mass} is an allocation in \textit{place} to each body; \textcolor{red}{geometry}, deals with the \textcolor{red}{theory of places}; geometry is the bedrock of \textcolor{red}{robotics, control theory}, and many fields of \textcolor{red}{modern engineering and the physical sciences}.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Preamble -- Mechanics Overview.}
+	%
+	\begin{definition}[Motion.]
+		When a  \textcolor{blue}{place} undergoes \textcolor{red}{body transformation} in the course of  \textcolor{red}{time}, we shall have \textcolor{red}{motion}.
+	\end{definition}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Preamble -- Mass, Body, Rigid Body Motion.}
+	%		
+	\begin{definition}[Body -- Truesdell, 1977.]
+		By a \textcolor{blue}{body}, we shall mean the \textcolor{red}{closure of an open set} in some \textcolor{red}{measure space} $\Omega$ over which a \textcolor{red}{non-negative measure $M$, called the mass}, is defined, and that $M$ can be extended to a Borel measure over the $\sigma-$ algebra of Borel sets in $\Omega$.
+	\end{definition}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Preamble -- Mass, Body, Rigid Body Motion.}
+	%	
+	\begin{block}{Bodies -- Truesdell, 1977.}
+		That in \textcolor{blue}{mechanics} which deals with  \begin{inparaenum}[(i)]
+			\item \textcolor{red}{mass points}, which occupy a single point at any one time;
+			\item \textcolor{red}{rigid bodies}, which never deform;
+			\item \textcolor{red}{strings and rods and jets}, which are 1-dimensional;  membranes and shells, that sweep out surfaces;
+			\item \textcolor{red}{space-filling fluids and solids} e.t.c.
+		\end{inparaenum}   
+		are termed bodies.
+	\end{block}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Statics, Dynamics, Rigid Body (Motion).}
+	%		
+	\begin{block}{Statics and Dynamics}
+		That which studies \textcolor{blue}{putative equilibria} is referred to as  \textcolor{red}{statics}. That which concerns  \textcolor{blue}{motion of all sorts} is referred to as  \textcolor{red}{dynamics}. The dynamics that are specific to  \textcolor{red}{particular bodies} are termed  \textcolor{red}{constitutive}.
+	\end{block}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Statics, Dynamics, Rigid Body (Motion).}
+	%	
+	\begin{block}{The Rigid Body}
+		A \textcolor{blue}{rigid body} does not \textcolor{red}{stretch, buckle, contract, bend, twist, nor deform}. Well, not really!
+	\end{block}
+	%
+	\begin{block}{The Rigid Body}
+		As engineers, we judge  \textcolor{blue}{kinematic rigid hardware} with the expectation that kinematic changes do not depart from rigid-body predictions.
+	\end{block}
+	%
+\end{frame}
+
+\begin{frame}
+	\frametitle{Statics, Dynamics, Rigid Body (Motion).}
+	%
+	\begin{block}{The Rigid Body}
+		We expect that \textcolor{light-blue}{localized stresses}, \textcolor{red}{active noise},  \textcolor{cyan}{vibrations} and \textcolor{magenta}{heat} e.t.c will not cause \textcolor{light-red}{reasonable departures} from expectations.
+	\end{block}
+	%	
+	\begin{block}{Rigid Body Motion}
+		That \textcolor{blue}{motion} that \textcolor{red}{preserves distance} between all points in a body is termed a \textcolor{red}{rigid body motion}.
+	\end{block}
+	%
+\end{frame}
+
+\begin{frame}
+	\frametitle{Statics, Dynamics, Rigid Body (Motion).}
+	%		
+	\begin{block}{Rigid Body Motion}
+		At issue are components of a rigid body's \textcolor{red}{movement} w.r.t to a fixed or moving \textcolor{blue}{frame of reference}. In its most basic form, this movement is parameterized by displacement (and is sometimes time-varying e.g. for a continuum body). When solving for the movements of bodies, it is often useful to include velocities (\textcolor{red}{twists}) in order to characterize the motion.
+	\end{block}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Kinematics vs. Kinetics}
+	%
+	\begin{definition}[Kinematics.]
+		That which \textcolor{blue}{describes a motion} of a body is termed the \textcolor{red}{kinematics}. \textcolor{blue}{{Kinematics}} is the English version of the word  \textcolor{blue}{\textit{cin{\'e}matique}} coined by A.M. Amp{\`e}re (1775-1836), who translated it from the Greek word \textcolor{red}{\textit{k{\'i}$\nu \eta \mu \alpha$}}.
+	\end{definition}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Kinematics vs. Kinetics.}
+	\begin{definition}[Kinematics -- Technical Definition]
+		That part of a system's \textcolor{blue}{dynamics} that involves its \textcolor{red}{motion} by \textcolor{cyan}{displacement} -- both linear and angular -- and \textcolor{red}{separated from motions owing to forces and  torques}, together with the successive derivatives with respect to time of all such displacements (this includes velocities, accelerations, and hyper accelerations) all form the \textcolor{red}{kinematics} of a \textcolor{light-blue}{{rigid}}, \textcolor{light-blue}{{continuum}} or \textcolor{light-blue}{{laminae}} of bodies.
+	\end{definition}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Kinematics vs. Kinetics}
+	%
+	\begin{block}{Kinetics}
+		The \textcolor{blue}{motion} of bodies can also be conceived as resulting from the  \textcolor{red}{forces' action}.  \textcolor{red}{Energy, temperature, and calory} of a body are resultant effects of gains or loss of heat. Motions arising as a result of these are called \textcolor{blue}{kinetics}.
+	\end{block}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Kinematics vs. Kinetics.}
+	\begin{definition}[Kinetics -- Technical Definition]
+		That part of a system's \textcolor{blue}{dynamics} that involves its \textcolor{red}{motion} by \textcolor{cyan}{forces, energy, torque, inertia, dynamic stability, and equilibrium} and similar properties all form the \textcolor{red}{kinetics} of a \textcolor{light-blue}{{rigid}}, \textcolor{light-blue}{{continuum}} or \textcolor{light-blue}{{laminae}} of bodies.
+	\end{definition}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Kinematic Geometry.}
+	\begin{definition}[Kinetic Geometry]
+		The \textcolor{blue}{solid geometry of a relatively moving rigid bodies} is termed the \textcolor{red}{kinematic geometry} of the rigid body. With motion, we'd have to include the successive derivatives of the displacement such as acceleration e.t.c as the `laws of motion' stipulates in mechanics.
+	\end{definition}
+\end{frame}

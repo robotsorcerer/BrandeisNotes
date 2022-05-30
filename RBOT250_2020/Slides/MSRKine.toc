@@ -1,3 +1,5 @@
-\beamer@sectionintoc {1}{Introduction}{4}{0}{1}
-\beamer@subsectionintoc {1}{1}{Textbooks}{4}{0}{1}
-\beamer@sectionintoc {2}{Mechanisms}{7}{0}{2}
+\beamer@sectionintoc {1}{Introduction}{5}{0}{1}
+\beamer@subsectionintoc {1}{1}{Textbooks}{5}{0}{1}
+\beamer@sectionintoc {2}{Mechanisms Overview}{8}{0}{2}
+\beamer@sectionintoc {3}{Pairs, Linkages, and Configurations}{25}{0}{3}
+\beamer@subsectionintoc {3}{1}{Mechanics}{26}{0}{3}

@@ -1,12 +1,15 @@
-\documentclass[utf8x,show notes,pagenumber,hyperref={pagebackref=true,citecolor=green,bookmarks=true,pdfpagelabels=false}]{beamer} %remove draft when done with tex prep
+\documentclass[utf8x,notes,pagenumber,hyperref={pagebackref=true,citecolor=green,bookmarks=true,pdfpagelabels=false}]{beamer} %remove draft when done with tex prep
 %\documentclass[notes]{beamer} 
 \usepackage{etex}
 \usepackage{beamerthemesplit}
 \usetheme{PaloAlto} %Hannover, Belin, Warsaw, PaloAlto, Frankfurt, Berkeley  etc
 
 \usepackage{pgfpages}
+\usepackage{xcolor}
+\definecolor{light-blue}{rgb}{0.95,0.55,.9}
+\definecolor{light-red}{rgb}{0.95,0.15,.19}
 \mode<handout>{\setbeamercolor{background canvas sidebar}{bg=red!45}}
-\setbeamercolor{structure}{fg=gray}
+\setbeamercolor{structure}{fg=light-blue}
 \usepackage{bm}
 \usepackage{subfloat}
 \usepackage{paralist}
@@ -22,8 +25,6 @@
 \usetikzlibrary{shapes,arrows, circuits, patterns, snakes, decorations.pathreplacing}
 \usepackage{schemabloc, verbatim}
 \usepackage{graphicx}
-%\graphicspath{../}  % path to base directory of all papers
-\DeclareGraphicsExtensions{.eps}
 
 \usepackage{media9} % for video embeddings
 \usepackage{multimedia} % for video embeddings
@@ -89,8 +90,10 @@
 	\tableofcontents[pausesections]
 \end{frame}
 
+\lecture{Robot Mechanisms}{week I}
 \include{sections/intro}
 \include{sections/mechanisms}
+\include{sections/linkages}
 
 % ---- Bibliography ----
 \bibliographystyle{../../Proposal/styles/bibtex/spmpsci_unsrt}
