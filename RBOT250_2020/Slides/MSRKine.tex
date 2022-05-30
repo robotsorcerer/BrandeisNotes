@@ -1,0 +1,101 @@
+\documentclass[utf8x,show notes,pagenumber,hyperref={pagebackref=true,citecolor=green,bookmarks=true,pdfpagelabels=false}]{beamer} %remove draft when done with tex prep
+%\documentclass[notes]{beamer} 
+\usepackage{etex}
+\usepackage{beamerthemesplit}
+\usetheme{PaloAlto} %Hannover, Belin, Warsaw, PaloAlto, Frankfurt, Berkeley  etc
+
+\usepackage{pgfpages}
+\mode<handout>{\setbeamercolor{background canvas sidebar}{bg=red!45}}
+\setbeamercolor{structure}{fg=gray}
+\usepackage{bm}
+\usepackage{subfloat}
+\usepackage{paralist}
+\usepackage{subcaption}
+\usepackage{amssymb, amsmath}
+\usepackage[round]{natbib}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\bibliographystyle{unsrtnat}
+\usepackage[export]{adjustbox}
+\usepackage{array,booktabs,tabularx}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows, circuits, patterns, snakes, decorations.pathreplacing}
+\usepackage{schemabloc, verbatim}
+\usepackage{graphicx}
+%\graphicspath{../}  % path to base directory of all papers
+\DeclareGraphicsExtensions{.eps}
+
+\usepackage{media9} % for video embeddings
+\usepackage{multimedia} % for video embeddings
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+\newcommand{\tcb}[2]
+{
+ \begin{tcolorbox}[title=\text{#2}]
+ #1
+ \end{tcolorbox}
+}
+
+%\renewcommand\thefootnote{}\footnote{#1}
+\include{def}
+\tikzstyle{block} = [draw, fill=yellow!80, rectangle,minimum height=3em, minimum width=4em]
+\tikzstyle{sum} = [draw, fill=white!20, circle, node distance=1cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+\newcolumntype{Z}{>{\centering\arraybackslash}X} % centered tabularx columns
+\newcommand{\pphantom}{\textcolor{ta3aluminium}} % phantom
+%\setbeamerfont{title}{shape=\itshape,family=\rmfamily}
+\setbeamercolor{title}{fg=magenta!70!black,bg=yellow!70!white}
+%
+\title{\small A short treatise on robots' geometry, kinematics, and dynamics.}
+
+\author{Author: Lekan Molu}
+\institute{
+	%
+	\vspace{0.5em}
+	%
+	Dissemination: Microsoft Research RL Group, \\
+	New York City, NY 10012 
+}
+
+\date{\today} 
+
+
+\setbeamersize{sidebar width left=2cm}
+%remove title and author names from sidebar
+  \makeatletter
+\setbeamertemplate{sidebar \beamer@sidebarside}%{sidebar theme}
+{
+	\beamer@tempdim=\beamer@sidebarwidth%
+	\advance\beamer@tempdim by -6pt%
+	\insertverticalnavigation{\beamer@sidebarwidth}%
+	\vfill
+	\ifx\beamer@sidebarside\beamer@lefttext%
+	\else%
+	\usebeamercolor{normal text}%
+	\llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+	\vskip2pt%
+	\fi%
+}%
+\makeatother
+
+\begin{document}
+	\maketitle
+%http://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf#subsection.21.3
+\begin{frame}
+	\frametitle{Table of Contents}
+	\tableofcontents[pausesections]
+\end{frame}
+
+\include{sections/intro}
+\include{sections/mechanisms}
+
+% ---- Bibliography ----
+\bibliographystyle{../../Proposal/styles/bibtex/spmpsci_unsrt}
+{
+\tiny
+\bibliography{../../../SRS/Continuum/biblio}
+}
+\end{document}

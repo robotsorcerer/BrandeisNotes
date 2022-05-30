@@ -1,0 +1,105 @@
+
+\subsection{Prerequisites}
+\begin{frame}
+	\frametitle{Prerequisites}
+	 	\begin{itemize}
+	 		 \item A Working Knowlegde of C++: Occasionally, we would dabble into using the C++ 1z standards in our coding styles
+	 		%
+	 		\vspace{0.5em}
+	 		%
+	 		 \item A working knowledge of the python programming language
+	 		%
+	 		\vspace{0.5em}
+	 		%
+	 		 \item A working knowledge of the robot operating system (ROS) middleware.
+	 		%
+	 		\vspace{0.5em}
+	 		%
+	 		 \item To ease setup for labs, a dockerized environment has been provided for you that has all the tools you need to get a jumpstart most of the lab exercises in the notes.
+	 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Loading the Docker Environment}
+	\begin{itemize}
+		\item Ensure you have a Ubuntu OS. For now, any distro from 14.04+ would do.
+		%
+		\vspace{.5em}
+		%
+		\item To download and install the Ubuntu OS, hop over to the Ubuntu download page: \href{https://ubuntu.com/download/desktop}{https://ubuntu.com/download/desktop} and follow the download and installation instructions 
+		% \href
+		\vspace{.5em}
+		\item When you are done installing ubuntu, be sure to install the docker environment 
+		%
+		\vspace{.5em}
+		%
+		\item Go to \href{https://download.docker.com/linux/ubuntu/dists/}{ \textsf{this webpage}}, choose your Ubuntu version, browse to  \textsf{pool/stable/, choose amd64, armhf, arm64, ppc64el, or s390x}, and download the  \textsf{.deb} file for the Docker Engine - Community version you want to install.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item Install Docker Engine - Community, changing the path below to the path where you downloaded the Docker package.
+		%
+		\vspace{.5em}
+		%
+		\begin{itemize}
+			\item \textsf{sudo dpkg -i /path/to/package.deb}
+		\end{itemize}
+	%
+		\item Confirm that your installation runs by testing the \textsf{hello-world-run} image:
+			\textsf{docker run hello-world}
+			%
+			\vspace{.5em}
+			%
+		\item Further instructions can be found on this \href{https://docs.docker.com/install/linux/docker-ce/ubuntu/}{\bl{webpage}}.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+	\item When you are done, there is a docker image that is already prepared for your use for most of the simulations we would use in this course.
+	%
+	\vspace{.5em}
+	%
+	\item It can be pulled like so:
+	%
+	\vspace{.5em}
+	%
+	\begin{itemize}
+		\small \item \textsf{``docker pull lakehanne/brandeis:melodic"}
+	\end{itemize}
+	%
+	\vspace{.5em}
+	%
+	\item Run the image:
+	%
+	\vspace{.5em}
+	%
+	\small \textsf{``docker run -ti --rm lakehanne/brandeis:melodic -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=\$DISPLAY --privileged -v /dev/bus/usb:/dev/bus/usb"}
+	%
+	\vspace{.5em}
+	%
+	\item This would launch the image together with usb access and access to your xorg server.  The ros installation is at \textsf{``/opt/ros/melodic"} and the catkin workspace is located at \textsf{``/home/rbot250/catkin\_ws/src"}. This is the directory from which all tutorials shall be launched.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{ROS Introduction}
+	\begin{itemize}
+		\item An easier way to run would be to launch the `docker-run` executable available here: `https://github.com/lakehanne/Shells/blob/master/docker-run'.
+		%
+		\item Follow the instructions that the bash script gives you 
+		%
+		\item Note that to compile, I have installed the catkin-build tools globally in the image which you can use as follows:
+		\begin{itemize}
+			\item `catkin build'
+			%
+			\item You can also run catkin build with the alias `cb'
+			%
+			\item To compile just a single package, say dr\_kdl, 		run `cb dr\_kdl'
+		\end{itemize}
+		
+		\item Now that you have the ros environment setup, why don't you start playing around with the tutorials at \textsf{\href{http://wiki.ros.org/ROS/Tutorials}{\bl{ROS Tutorials Page}}}.
+	\end{itemize}
+\end{frame}
