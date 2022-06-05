@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.2.7)  5 JUN 2022 15:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.2.7)  5 JUN 2022 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1380,7 +1380,8 @@ LaTeX Font Info:    No file PUcmss.fd. on input line 94.
 LaTeX Font Warning: Font shape `PU/cmss/m/n' undefined
 (Font)              using `PU/pdf/m/n' instead on input line 94.
 
-(./MSRKine.aux (./sections/mobility.aux
+(./MSRKine.aux (./sections/intro.aux) (./sections/linkages.aux)
+(./sections/mobility.aux
 
 LaTeX Warning: Label `grubler' multiply defined.
 
@@ -1713,23 +1714,23 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [22
 
 ]
-<figures/spring-mass-damper.jpg, id=788, 801.99625pt x 470.75874pt>
+<figures/spring-mass-damper.jpg, id=1010, 801.99625pt x 470.75874pt>
 File: figures/spring-mass-damper.jpg Graphic file (type jpg)
 <use figures/spring-mass-damper.jpg>
 Package pdftex.def Info: figures/spring-mass-damper.jpg  used on input line 212
 .
 (pdftex.def)             Requested size: 109.48856pt x 54.75027pt.
-<figures/excavJohnDeere.jpg, id=789, 1061.51419pt x 596.81032pt>
+<figures/excavJohnDeere.jpg, id=1011, 1061.51419pt x 596.81032pt>
 File: figures/excavJohnDeere.jpg Graphic file (type jpg)
 <use figures/excavJohnDeere.jpg>
 Package pdftex.def Info: figures/excavJohnDeere.jpg  used on input line 212.
 (pdftex.def)             Requested size: 109.4943pt x 54.74875pt.
-<figures/carsusp.jpg, id=790, 432.1746pt x 256.5585pt>
+<figures/carsusp.jpg, id=1012, 432.1746pt x 256.5585pt>
 File: figures/carsusp.jpg Graphic file (type jpg)
 <use figures/carsusp.jpg>
 Package pdftex.def Info: figures/carsusp.jpg  used on input line 212.
 (pdftex.def)             Requested size: 109.49416pt x 54.74794pt.
-<figures/daimler_manuf.jpeg, id=791, 1284.8pt x 642.4pt>
+<figures/daimler_manuf.jpeg, id=1013, 1284.8pt x 642.4pt>
 File: figures/daimler_manuf.jpeg Graphic file (type jpg)
 <use figures/daimler_manuf.jpeg>
 Package pdftex.def Info: figures/daimler_manuf.jpeg  used on input line 212.
@@ -1753,7 +1754,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 
 pdfTeX warning: /usr/bin/pdflatex (file ../Notes/figures/prismatic_joint.pdf): 
 PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../Notes/figures/prismatic_joint.pdf, id=856, 1485.55pt x 859.21pt>
+<../Notes/figures/prismatic_joint.pdf, id=1094, 1485.55pt x 859.21pt>
 File: ../Notes/figures/prismatic_joint.pdf Graphic file (type pdf)
 <use ../Notes/figures/prismatic_joint.pdf>
 Package pdftex.def Info: ../Notes/figures/prismatic_joint.pdf  used on input li
@@ -1767,12 +1768,12 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [25
 
  <../Notes/figures/prismatic_joint.pdf>]
-<figures/revolute.jpg, id=896, 1284.8pt x 963.6pt>
+<figures/revolute.jpg, id=1142, 1284.8pt x 963.6pt>
 File: figures/revolute.jpg Graphic file (type jpg)
 <use figures/revolute.jpg>
 Package pdftex.def Info: figures/revolute.jpg  used on input line 268.
 (pdftex.def)             Requested size: 139.41856pt x 104.55539pt.
-<figures/revolute_cutaway.jpg, id=897, 561.7626pt x 456.69781pt>
+<figures/revolute_cutaway.jpg, id=1143, 561.7626pt x 456.69781pt>
 File: figures/revolute_cutaway.jpg Graphic file (type jpg)
 <use figures/revolute_cutaway.jpg>
 Package pdftex.def Info: figures/revolute_cutaway.jpg  used on input line 268.
@@ -1785,12 +1786,12 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [26
 
  <./figures/revolute.jpg> <./figures/revolute_cutaway.jpg>]
-<figures/helical.jpg, id=931, 773.89125pt x 681.54625pt>
+<figures/helical.jpg, id=1185, 773.89125pt x 681.54625pt>
 File: figures/helical.jpg Graphic file (type jpg)
 <use figures/helical.jpg>
 Package pdftex.def Info: figures/helical.jpg  used on input line 292.
 (pdftex.def)             Requested size: 139.41856pt x 122.77702pt.
-<figures/ujoint.jpg, id=932, 720.6925pt x 671.50874pt>
+<figures/ujoint.jpg, id=1186, 720.6925pt x 671.50874pt>
 File: figures/ujoint.jpg Graphic file (type jpg)
 <use figures/ujoint.jpg>
 Package pdftex.def Info: figures/ujoint.jpg  used on input line 292.
@@ -1811,7 +1812,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [27
 
  <./figures/helical.jpg> <./figures/ujoint.jpg>]
-<figures/pairs2.jpg, id=965, 1523.6925pt x 809.0225pt>
+<figures/pairs2.jpg, id=1228, 1523.6925pt x 809.0225pt>
 File: figures/pairs2.jpg Graphic file (type jpg)
 <use figures/pairs2.jpg>
 Package pdftex.def Info: figures/pairs2.jpg  used on input line 307.
@@ -1824,7 +1825,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [28
 
  <./figures/pairs2.jpg>]
-<figures/pairs.jpg, id=1000, 1523.6925pt x 809.0225pt>
+<figures/pairs.jpg, id=1270, 1523.6925pt x 809.0225pt>
 File: figures/pairs.jpg Graphic file (type jpg)
 <use figures/pairs.jpg>
 Package pdftex.def Info: figures/pairs.jpg  used on input line 318.
@@ -1837,7 +1838,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [29
 
  <./figures/pairs.jpg>]
-<../Notes/figures/arms_hunt.png, id=1034, 712.6625pt x 230.8625pt>
+<../Notes/figures/arms_hunt.png, id=1312, 712.6625pt x 230.8625pt>
 File: ../Notes/figures/arms_hunt.png Graphic file (type png)
 <use ../Notes/figures/arms_hunt.png>
 Package pdftex.def Info: ../Notes/figures/arms_hunt.png  used on input line 332
@@ -1867,7 +1868,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 ] [33
 
 ]
-<../Notes/figures/PUMA.jpg, id=1144, 1532.72626pt x 1776.6375pt>
+<../Notes/figures/PUMA.jpg, id=1446, 1532.72626pt x 1776.6375pt>
 File: ../Notes/figures/PUMA.jpg Graphic file (type jpg)
 <use ../Notes/figures/PUMA.jpg>
 Package pdftex.def Info: ../Notes/figures/PUMA.jpg  used on input line 403.
@@ -1887,7 +1888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 403--403
 \OT1/cmss/m/n/9 PUMA Robot
  []
 
-<../Notes/figures/StanfordArm.jpg, id=1145, 1136.245pt x 666.49pt>
+<../Notes/figures/StanfordArm.jpg, id=1447, 1136.245pt x 666.49pt>
 File: ../Notes/figures/StanfordArm.jpg Graphic file (type jpg)
 <use ../Notes/figures/StanfordArm.jpg>
 Package pdftex.def Info: ../Notes/figures/StanfordArm.jpg  used on input line 4
@@ -1929,7 +1930,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 ] [38
 
 ]
-<figures/cmu_arm.jpg, id=1288, 431.6125pt x 507.8975pt>
+<figures/cmu_arm.jpg, id=1622, 431.6125pt x 507.8975pt>
 File: figures/cmu_arm.jpg Graphic file (type jpg)
 <use figures/cmu_arm.jpg>
 Package pdftex.def Info: figures/cmu_arm.jpg  used on input line 488.
@@ -1939,7 +1940,7 @@ Overfull \hbox (25.09026pt too wide) in paragraph at lines 488--488
 [][] 
  []
 
-<figures/dd_joints.jpg, id=1289, 470.75874pt x 452.69125pt>
+<figures/dd_joints.jpg, id=1623, 470.75874pt x 452.69125pt>
 File: figures/dd_joints.jpg Graphic file (type jpg)
 <use figures/dd_joints.jpg>
 Package pdftex.def Info: figures/dd_joints.jpg  used on input line 488.
@@ -1957,7 +1958,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [39
 
  <./figures/cmu_arm.jpg> <./figures/dd_joints.jpg>]
-<figures/dd_kinematics.jpg, id=1322, 428.60126pt x 469.755pt>
+<figures/dd_kinematics.jpg, id=1666, 428.60126pt x 469.755pt>
 File: figures/dd_kinematics.jpg Graphic file (type jpg)
 <use figures/dd_kinematics.jpg>
 Package pdftex.def Info: figures/dd_kinematics.jpg  used on input line 507.
@@ -1967,7 +1968,7 @@ Overfull \hbox (12.54916pt too wide) in paragraph at lines 507--507
 [][] 
  []
 
-<figures/dd_load_joints.jpg, id=1323, 474.77374pt x 344.28625pt>
+<figures/dd_load_joints.jpg, id=1667, 474.77374pt x 344.28625pt>
 File: figures/dd_load_joints.jpg Graphic file (type jpg)
 <use figures/dd_load_joints.jpg>
 Package pdftex.def Info: figures/dd_load_joints.jpg  used on input line 507.
@@ -1991,7 +1992,7 @@ Overfull \vbox (4.60223pt too high) detected at line 510
 [41
 
 ]
-<figures/adeptone.jpg, id=1367, 466.74374pt x 648.4225pt>
+<figures/adeptone.jpg, id=1717, 466.74374pt x 648.4225pt>
 File: figures/adeptone.jpg Graphic file (type jpg)
 <use figures/adeptone.jpg>
 Package pdftex.def Info: figures/adeptone.jpg  used on input line 529.
@@ -2011,7 +2012,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 529--529
 \OT1/cmss/m/n/9 SCARA robot
  []
 
-<figures/Scara.jpg, id=1368, 1565.85pt x 1290.8225pt>
+<figures/Scara.jpg, id=1718, 1565.85pt x 1290.8225pt>
 File: figures/Scara.jpg Graphic file (type jpg)
 <use figures/Scara.jpg>
 Package pdftex.def Info: figures/Scara.jpg  used on input line 529.
@@ -2039,7 +2040,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [42
 
  <./figures/adeptone.jpg> <./figures/Scara.jpg>]
-<../Notes/figures/Staubli.jpg, id=1401, 1003.75pt x 1419.3025pt>
+<../Notes/figures/Staubli.jpg, id=1761, 1003.75pt x 1419.3025pt>
 File: ../Notes/figures/Staubli.jpg Graphic file (type jpg)
 <use ../Notes/figures/Staubli.jpg>
 Package pdftex.def Info: ../Notes/figures/Staubli.jpg  used on input line 542.
@@ -2077,7 +2078,7 @@ Underfull \hbox (badness 1354) in paragraph at lines 579--579
 \OT1/cmss/m/n/10.95 po-nents. RAIL script-
  []
 
-<figures/Automatix.jpg, id=1468, 1284.8pt x 969.6225pt>
+<figures/Automatix.jpg, id=1842, 1284.8pt x 969.6225pt>
 File: figures/Automatix.jpg Graphic file (type jpg)
 <use figures/Automatix.jpg>
 Package pdftex.def Info: figures/Automatix.jpg  used on input line 579.
@@ -2090,18 +2091,18 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [45
 
  <./figures/Automatix.jpg>]
-<figures/multisec_continuum.jpg, id=1501, 499.8675pt x 507.8975pt>
+<figures/multisec_continuum.jpg, id=1883, 499.8675pt x 507.8975pt>
 File: figures/multisec_continuum.jpg Graphic file (type jpg)
 <use figures/multisec_continuum.jpg>
 Package pdftex.def Info: figures/multisec_continuum.jpg  used on input line 605
 .
 (pdftex.def)             Requested size: 60.71373pt x 66.78848pt.
-<figures/multi_sec_manip.jpg, id=1502, 541.02126pt x 433.62pt>
+<figures/multi_sec_manip.jpg, id=1884, 541.02126pt x 433.62pt>
 File: figures/multi_sec_manip.jpg Graphic file (type jpg)
 <use figures/multi_sec_manip.jpg>
 Package pdftex.def Info: figures/multi_sec_manip.jpg  used on input line 605.
 (pdftex.def)             Requested size: 60.71779pt x 66.78694pt.
-<figures/multi_sec_scheme.jpg, id=1503, 477.785pt x 405.515pt>
+<figures/multi_sec_scheme.jpg, id=1885, 477.785pt x 405.515pt>
 File: figures/multi_sec_scheme.jpg Graphic file (type jpg)
 <use figures/multi_sec_scheme.jpg>
 Package pdftex.def Info: figures/multi_sec_scheme.jpg  used on input line 605.
@@ -2115,7 +2116,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 
  <./figures/multisec_continuum.jpg> <./figures/multi_sec_manip.jpg> <./figures/
 multi_sec_scheme.jpg>]
-<../Notes/figures/octopus.jpg, id=1537, 1284.8pt x 722.7pt>
+<../Notes/figures/octopus.jpg, id=1926, 1284.8pt x 722.7pt>
 File: ../Notes/figures/octopus.jpg Graphic file (type jpg)
 <use ../Notes/figures/octopus.jpg>
 Package pdftex.def Info: ../Notes/figures/octopus.jpg  used on input line 618.
@@ -2135,12 +2136,12 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [48
 
 ]
-<figures/Stewart.jpg, id=1603, 413.545pt x 416.55624pt>
+<figures/Stewart.jpg, id=2008, 413.545pt x 416.55624pt>
 File: figures/Stewart.jpg Graphic file (type jpg)
 <use figures/Stewart.jpg>
 Package pdftex.def Info: figures/Stewart.jpg  used on input line 650.
 (pdftex.def)             Requested size: 102.54268pt x 103.28708pt.
-<../../../Papers/PhDThesis/figures/GoughPlatform.jpg, id=1604, 202.04517pt x 24
+<../../../Papers/PhDThesis/figures/GoughPlatform.jpg, id=2009, 202.04517pt x 24
 8.67097pt>
 File: ../../../Papers/PhDThesis/figures/GoughPlatform.jpg Graphic file (type jp
 g)
@@ -2156,7 +2157,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [49
 
  <./figures/Stewart.jpg> <../../../Papers/PhDThesis/figures/GoughPlatform.jpg>]
-<figures/truss.jpg, id=1638, 465.74pt x 443.6575pt>
+<figures/truss.jpg, id=2051, 465.74pt x 443.6575pt>
 File: figures/truss.jpg Graphic file (type jpg)
 <use figures/truss.jpg>
 Package pdftex.def Info: figures/truss.jpg  used on input line 663.
@@ -2169,7 +2170,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [50
 
  <./figures/truss.jpg>]
-<figures/stewart.jpg, id=1672, 828.09375pt x 622.325pt>
+<figures/stewart.jpg, id=2093, 828.09375pt x 622.325pt>
 File: figures/stewart.jpg Graphic file (type jpg)
 <use figures/stewart.jpg>
 Package pdftex.def Info: figures/stewart.jpg  used on input line 678.
@@ -2182,7 +2183,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [51
 
  <./figures/stewart.jpg>]
-<../Notes/figures/soft_parallel.jpg, id=1706, 608.46678pt x 621.67741pt>
+<../Notes/figures/soft_parallel.jpg, id=2134, 608.46678pt x 621.67741pt>
 File: ../Notes/figures/soft_parallel.jpg Graphic file (type jpg)
 <use ../Notes/figures/soft_parallel.jpg>
 Package pdftex.def Info: ../Notes/figures/soft_parallel.jpg  used on input line
@@ -2215,7 +2216,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [54
 
 ]
-<figures/dualgraph_stewart.jpg, id=1805, 507.8975pt x 625.33624pt>
+<figures/dualgraph_stewart.jpg, id=2256, 507.8975pt x 625.33624pt>
 File: figures/dualgraph_stewart.jpg Graphic file (type jpg)
 <use figures/dualgraph_stewart.jpg>
 Package pdftex.def Info: figures/dualgraph_stewart.jpg  used on input line 46.
@@ -2235,7 +2236,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [56
 
 ]
-<../Notes/figures/four-bar-linkage.png, id=1873, 736.7525pt x 227.85126pt>
+<../Notes/figures/four-bar-linkage.png, id=2340, 736.7525pt x 227.85126pt>
 File: ../Notes/figures/four-bar-linkage.png Graphic file (type png)
 <use ../Notes/figures/four-bar-linkage.png>
 Package pdftex.def Info: ../Notes/figures/four-bar-linkage.png  used on input l
@@ -2251,12 +2252,12 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  <../Notes/figures/four-bar-linkage.png>] [58
 
 ]
-<figures/4bar_me.jpg, id=1917, 457.71pt x 493.845pt>
+<figures/4bar_me.jpg, id=2391, 457.71pt x 493.845pt>
 File: figures/4bar_me.jpg Graphic file (type jpg)
 <use figures/4bar_me.jpg>
 Package pdftex.def Info: figures/4bar_me.jpg  used on input line 96.
 (pdftex.def)             Requested size: 111.39188pt x 120.18301pt.
-<figures/4bardual.jpg, id=1918, 692.5875pt x 692.5875pt>
+<figures/4bardual.jpg, id=2392, 692.5875pt x 692.5875pt>
 File: figures/4bardual.jpg Graphic file (type jpg)
 <use figures/4bardual.jpg>
 Package pdftex.def Info: figures/4bardual.jpg  used on input line 96.
@@ -2301,7 +2302,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [63
 
 ]
-<figures/screw.jpg, id=2088, 401.5pt x 334.24875pt>
+<figures/screw.jpg, id=2601, 401.5pt x 334.24875pt>
 File: figures/screw.jpg Graphic file (type jpg)
 <use figures/screw.jpg>
 Package pdftex.def Info: figures/screw.jpg  used on input line 177.
@@ -2314,7 +2315,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [64
 
  <./figures/screw.jpg>]
-<figures/plucker_coords.jpg, id=2121, 249.93375pt x 228.855pt>
+<figures/plucker_coords.jpg, id=2642, 249.93375pt x 228.855pt>
 File: figures/plucker_coords.jpg Graphic file (type jpg)
 <use figures/plucker_coords.jpg>
 Package pdftex.def Info: figures/plucker_coords.jpg  used on input line 198.
@@ -2341,7 +2342,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [67
 
 ]
-<figures/serret.jpg, id=2226, 418.56375pt x 263.98625pt>
+<figures/serret.jpg, id=2770, 418.56375pt x 263.98625pt>
 File: figures/serret.jpg Graphic file (type jpg)
 <use figures/serret.jpg>
 Package pdftex.def Info: figures/serret.jpg  used on input line 246.
@@ -2420,7 +2421,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [76
 
 ]
-<figures/scara_schematic.jpg, id=2512, 421.8159pt x 344.7279pt>
+<figures/scara_schematic.jpg, id=3115, 421.8159pt x 344.7279pt>
 File: figures/scara_schematic.jpg Graphic file (type jpg)
 <use figures/scara_schematic.jpg>
 Package pdftex.def Info: figures/scara_schematic.jpg  used on input line 403.
@@ -2444,12 +2445,12 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [78
 
 ]
-<figures/ur16.jpg, id=2578, 358.33875pt x 397.485pt>
+<figures/ur16.jpg, id=3197, 358.33875pt x 397.485pt>
 File: figures/ur16.jpg Graphic file (type jpg)
 <use figures/ur16.jpg>
 Package pdftex.def Info: figures/ur16.jpg  used on input line 444.
 (pdftex.def)             Requested size: 139.41856pt x 154.64854pt.
-<figures/ur_scheme.jpg, id=2579, 694.5147pt x 403.5075pt>
+<figures/ur_scheme.jpg, id=3198, 694.5147pt x 403.5075pt>
 File: figures/ur_scheme.jpg Graphic file (type jpg)
 <use figures/ur_scheme.jpg>
 Package pdftex.def Info: figures/ur_scheme.jpg  used on input line 444.
@@ -2462,13 +2463,13 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [79
 
  <./figures/ur16.jpg> <./figures/ur_scheme.jpg>]
-<figures/stewart_spherical.jpg, id=2616, 434.62375pt x 499.8675pt>
+<figures/stewart_spherical.jpg, id=3244, 434.62375pt x 499.8675pt>
 File: figures/stewart_spherical.jpg Graphic file (type jpg)
 <use figures/stewart_spherical.jpg>
 Package pdftex.def Info: figures/stewart_spherical.jpg  used on input line 461.
 
 (pdftex.def)             Requested size: 111.53314pt x 128.27682pt.
-<figures/spherical.jpg, id=2617, 349.305pt x 428.60126pt>
+<figures/spherical.jpg, id=3245, 349.305pt x 428.60126pt>
 File: figures/spherical.jpg Graphic file (type jpg)
 <use figures/spherical.jpg>
 Package pdftex.def Info: figures/spherical.jpg  used on input line 461.
@@ -2515,26 +2516,15 @@ Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
- (./MSRKine.aux
-*************************************************
-* pdfbase warning: "rerun"
-* 
-* Rerun to get internal references right!
-*************************************************
-(./sections/intro.aux) (./sections/linkages.aux) (./sections/mobility.aux))
+ (./MSRKine.aux (./sections/intro.aux) (./sections/linkages.aux)
+(./sections/mobility.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
-
-
-Package rerunfilecheck Warning: File `MSRKine.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MSRKine.out':
-(rerunfilecheck)             Before: 2F37F483BEACC7C3B41320F03792EC2E;816
-(rerunfilecheck)             After:  4FB74EBF39B2FA3D59B2A149E3930DB3;1980.
+Package rerunfilecheck Info: File `MSRKine.out' has not changed.
+(rerunfilecheck)             Checksum: 4FB74EBF39B2FA3D59B2A149E3930DB3;1980.
 Package rerunfilecheck Info: File `MSRKine.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2543,57 +2533,42 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 44017 strings out of 494847
- 880536 string characters out of 6179081
- 938444 words of memory out of 5000000
- 46299 multiletter control sequences out of 15000+600000
+ 44138 strings out of 494847
+ 881691 string characters out of 6179081
+ 945462 words of memory out of 5000000
+ 46421 multiletter control sequences out of 15000+600000
  555718 words of font info for 117 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  56i,17n,80p,10395b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Outline0.1.5.24} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.1.4.24} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.1.3.21} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.1.2.16} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.1.1.13} has been referenced but does not e
-xist, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on MSRKine.pdf (81 pages, 5584496 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eu
+fm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
+m10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on MSRKine.pdf (81 pages, 5615293 bytes).
 PDF statistics:
- 2813 PDF objects out of 2984 (max. 8388607)
- 2604 compressed objects within 27 object streams
- 188 named destinations out of 1000 (max. 500000)
- 364 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3453 PDF objects out of 3580 (max. 8388607)
+ 3238 compressed objects within 33 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 428 words of extra memory for PDF output out of 10000 (max. 10000000)
 
