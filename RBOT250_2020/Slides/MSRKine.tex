@@ -1,8 +1,15 @@
-\documentclass[utf8x,notes,pagenumber,hyperref={pagebackref=true,citecolor=green,bookmarks=true,pdfpagelabels=false}]{beamer} %remove draft when done with tex prep
+\documentclass[utf8x,notes,pagenumber,hyperref={pagebackref=true,citecolor=green,bookmarks=true,pdfpagelabels=true}]{beamer} %remove draft when done with tex prep
 %\documentclass[notes]{beamer} 
 \usepackage{etex}
 \usepackage{beamerthemesplit}
 \usetheme{PaloAlto} %Hannover, Belin, Warsaw, PaloAlto, Frankfurt, Berkeley  etc
+
+% Itemize breaks compilation: https://tex.stackexchange.com/questions/414419/put-bullets-in-a-block-inside-itemize-environment
+\usefonttheme{professionalfonts}
+\setbeamertemplate{itemize items}[ball]
+\setbeamercolor{block title}{fg=white, bg=blue!70!black}
+\setbeamercolor{block body}{fg=black, bg=gray!20}
+\setbeamertemplate{blocks}[rounded][shadow=true]
 
 \usepackage{pgfpages}
 \usepackage{xcolor}
@@ -15,6 +22,7 @@
 \usepackage{paralist}
 \usepackage{subcaption}
 \usepackage{amssymb, amsmath}
+\usepackage{mathrsfs}
 \usepackage[round]{natbib}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
@@ -57,11 +65,12 @@
 	%
 	\vspace{0.5em}
 	%
-	Dissemination: Microsoft Research RL Group, \\
+	Dissemination Venue: Microsoft Research RL Group, \\
 	New York City, NY 10012 
 }
 
-\date{\today} 
+%\date{\today} 
+\date{June 09, 2022} 
 
 
 \setbeamersize{sidebar width left=2cm}
@@ -87,13 +96,13 @@
 %http://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf#subsection.21.3
 \begin{frame}
 	\frametitle{Table of Contents}
-	\tableofcontents[pausesections]
+	\tableofcontents
 \end{frame}
 
-\lecture{Robot Mechanisms}{week I}
+\lecture{Robot Mechanisms}{Mechanisms and Pairs}
 \include{sections/intro}
-\include{sections/mechanisms}
 \include{sections/linkages}
+\include{sections/mobility}
 
 % ---- Bibliography ----
 \bibliographystyle{../../Proposal/styles/bibtex/spmpsci_unsrt}

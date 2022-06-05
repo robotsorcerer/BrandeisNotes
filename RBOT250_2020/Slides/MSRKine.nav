@@ -1,84 +1,190 @@
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\slideentry {0}{0}{2}{2/4}{}{0}}
-\headcommand {\beamer@framepages {2}{4}}
-\headcommand {\beamer@sectionpages {1}{4}}
-\headcommand {\beamer@subsectionpages {1}{4}}
-\headcommand {\sectionentry {1}{Introduction}{5}{Introduction}{0}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{5}{Textbooks}}
-\headcommand {\slideentry {1}{1}{1}{5/5}{Textbooks}{0}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Introduction}{3}{Introduction}{0}}
+\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Textbooks}}
+\headcommand {\slideentry {1}{1}{1}{3/3}{Textbooks}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{1}{2}{4/4}{Textbooks}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{1}{3}{5/5}{Textbooks}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {1}{1}{2}{6/6}{Textbooks}{0}}
+\headcommand {\beamer@sectionpages {3}{5}}
+\headcommand {\beamer@subsectionpages {3}{5}}
+\headcommand {\sectionentry {2}{Pairs, Linkages, and Configurations}{6}{Pairs, Linkages, and Configurations}{0}}
+\headcommand {\slideentry {2}{0}{1}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {1}{1}{3}{7/7}{Textbooks}{0}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{7}{Mechanics}}
+\headcommand {\slideentry {2}{1}{1}{7/7}{Mechanics}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@sectionpages {5}{7}}
-\headcommand {\beamer@subsectionpages {5}{7}}
-\headcommand {\sectionentry {2}{Mechanisms Overview}{8}{Mechanisms Overview}{0}}
-\headcommand {\slideentry {2}{0}{1}{8/8}{}{0}}
+\headcommand {\slideentry {2}{1}{2}{8/8}{Mechanics}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{0}{2}{9/9}{}{0}}
+\headcommand {\slideentry {2}{1}{3}{9/9}{Mechanics}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {2}{0}{3}{10/10}{}{0}}
+\headcommand {\slideentry {2}{1}{4}{10/10}{Mechanics}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{0}{4}{11/11}{}{0}}
+\headcommand {\slideentry {2}{1}{5}{11/11}{Mechanics}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{0}{5}{12/12}{}{0}}
+\headcommand {\slideentry {2}{1}{6}{12/12}{Mechanics}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {2}{0}{6}{14/14}{}{0}}
+\headcommand {\slideentry {2}{1}{7}{13/13}{Mechanics}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {2}{1}{8}{14/14}{Mechanics}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {2}{0}{7}{15/15}{}{0}}
+\headcommand {\slideentry {2}{1}{9}{15/15}{Mechanics}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {2}{0}{8}{16/16}{}{0}}
+\headcommand {\slideentry {2}{1}{10}{16/16}{Mechanics}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {2}{0}{9}{17/17}{}{0}}
+\headcommand {\slideentry {2}{1}{11}{17/17}{Mechanics}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {2}{0}{10}{19/19}{}{0}}
+\headcommand {\slideentry {2}{1}{12}{18/18}{Mechanics}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {2}{1}{13}{19/19}{Mechanics}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {2}{0}{11}{20/20}{}{0}}
+\headcommand {\slideentry {2}{1}{14}{20/20}{Mechanics}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {2}{0}{12}{22/22}{}{0}}
+\headcommand {\slideentry {2}{1}{15}{21/21}{Mechanics}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@subsectionpages {7}{21}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{22}{Mechanisms}}
+\headcommand {\slideentry {2}{2}{1}{22/22}{Mechanisms}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {2}{0}{13}{23/23}{}{0}}
+\headcommand {\slideentry {2}{2}{2}{23/23}{Mechanisms}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {2}{0}{14}{24/24}{}{0}}
+\headcommand {\beamer@subsectionpages {22}{23}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{24}{Pairs and Linkages}}
+\headcommand {\slideentry {2}{3}{1}{24/24}{Pairs and Linkages}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\beamer@sectionpages {8}{24}}
-\headcommand {\beamer@subsectionpages {8}{24}}
-\headcommand {\sectionentry {3}{Pairs, Linkages, and Configurations}{25}{Pairs, Linkages, and Configurations}{0}}
-\headcommand {\slideentry {3}{0}{1}{25/25}{}{0}}
+\headcommand {\slideentry {2}{3}{2}{25/25}{Pairs and Linkages}{0}}
 \headcommand {\beamer@framepages {25}{25}}
-\headcommand {\beamer@subsectionpages {25}{25}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{26}{Mechanics}}
-\headcommand {\slideentry {3}{1}{1}{26/26}{Mechanics}{0}}
+\headcommand {\slideentry {2}{3}{3}{26/26}{Pairs and Linkages}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\slideentry {3}{1}{2}{27/27}{Mechanics}{0}}
+\headcommand {\slideentry {2}{3}{4}{27/27}{Pairs and Linkages}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {3}{1}{3}{28/28}{Mechanics}{0}}
+\headcommand {\slideentry {2}{3}{5}{28/28}{Pairs and Linkages}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {3}{1}{4}{29/29}{Mechanics}{0}}
+\headcommand {\slideentry {2}{3}{6}{29/29}{Pairs and Linkages}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {3}{1}{5}{30/30}{Mechanics}{0}}
+\headcommand {\slideentry {2}{3}{7}{30/30}{Pairs and Linkages}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {3}{1}{6}{31/31}{Mechanics}{0}}
+\headcommand {\slideentry {2}{3}{8}{31/31}{Pairs and Linkages}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {3}{1}{7}{32/32}{Mechanics}{0}}
+\headcommand {\beamer@subsectionpages {24}{31}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{32}{Serial Chains}}
+\headcommand {\slideentry {2}{4}{1}{32/32}{Serial Chains}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {3}{1}{8}{33/33}{Mechanics}{0}}
-\headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {3}{1}{9}{34/34}{Mechanics}{0}}
+\headcommand {\slideentry {2}{4}{2}{34/34}{Serial Chains}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\slideentry {3}{1}{10}{35/35}{Mechanics}{0}}
+\headcommand {\slideentry {2}{4}{3}{35/35}{Serial Chains}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {3}{1}{11}{36/36}{Mechanics}{0}}
+\headcommand {\slideentry {2}{4}{4}{36/36}{Serial Chains}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {3}{1}{12}{37/37}{Mechanics}{0}}
+\headcommand {\slideentry {2}{4}{5}{37/37}{Serial Chains}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {3}{1}{13}{38/38}{Mechanics}{0}}
-\headcommand {\beamer@framepages {38}{38}}
-\headcommand {\beamer@partpages {1}{38}}
-\headcommand {\beamer@subsectionpages {26}{38}}
-\headcommand {\beamer@sectionpages {25}{38}}
-\headcommand {\beamer@documentpages {38}}
-\headcommand {\gdef \inserttotalframenumber {33}}
+\headcommand {\slideentry {2}{4}{6}{39/39}{Serial Chains}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\slideentry {2}{4}{7}{40/40}{Serial Chains}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {2}{4}{8}{42/42}{Serial Chains}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\slideentry {2}{4}{9}{43/43}{Serial Chains}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\slideentry {2}{4}{10}{44/44}{Serial Chains}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {2}{4}{11}{45/45}{Serial Chains}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\beamer@subsectionpages {32}{45}}
+\headcommand {\beamer@subsectionentry {0}{2}{5}{46}{Hyperredundant and Parallel robots}}
+\headcommand {\slideentry {2}{5}{1}{46/46}{Hyperredundant and Parallel robots}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\slideentry {2}{5}{2}{47/47}{Hyperredundant and Parallel robots}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\slideentry {2}{5}{3}{48/48}{Hyperredundant and Parallel robots}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\slideentry {2}{5}{4}{49/49}{Hyperredundant and Parallel robots}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\slideentry {2}{5}{5}{50/50}{Hyperredundant and Parallel robots}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\slideentry {2}{5}{6}{51/51}{Hyperredundant and Parallel robots}{0}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\slideentry {2}{5}{7}{52/52}{Hyperredundant and Parallel robots}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\beamer@sectionpages {6}{52}}
+\headcommand {\beamer@subsectionpages {46}{52}}
+\headcommand {\sectionentry {3}{Mobility}{53}{Mobility}{0}}
+\headcommand {\slideentry {3}{0}{1}{53/53}{}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\slideentry {3}{0}{2}{54/54}{}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\slideentry {3}{0}{3}{55/55}{}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\slideentry {3}{0}{4}{56/56}{}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\slideentry {3}{0}{5}{57/57}{}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\slideentry {3}{0}{6}{59/59}{}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\slideentry {3}{0}{7}{60/60}{}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\slideentry {3}{0}{8}{61/61}{}{0}}
+\headcommand {\beamer@framepages {61}{61}}
+\headcommand {\slideentry {3}{0}{9}{62/62}{}{0}}
+\headcommand {\beamer@framepages {62}{62}}
+\headcommand {\beamer@subsectionpages {53}{62}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{63}{Screws}}
+\headcommand {\slideentry {3}{1}{1}{63/63}{Screws}{0}}
+\headcommand {\beamer@framepages {63}{63}}
+\headcommand {\slideentry {3}{1}{2}{64/64}{Screws}{0}}
+\headcommand {\beamer@framepages {64}{64}}
+\headcommand {\slideentry {3}{1}{3}{65/65}{Screws}{0}}
+\headcommand {\beamer@framepages {65}{65}}
+\headcommand {\beamer@subsectionpages {63}{65}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{66}{Pl{\"u}cker coordinates}}
+\headcommand {\slideentry {3}{2}{1}{66/66}{Pl{\"u}cker coordinates}{0}}
+\headcommand {\beamer@framepages {66}{66}}
+\headcommand {\slideentry {3}{2}{2}{67/67}{Pl{\"u}cker coordinates}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\slideentry {3}{2}{3}{68/68}{Pl{\"u}cker coordinates}{0}}
+\headcommand {\beamer@framepages {68}{68}}
+\headcommand {\slideentry {3}{2}{4}{69/69}{Pl{\"u}cker coordinates}{0}}
+\headcommand {\beamer@framepages {69}{69}}
+\headcommand {\slideentry {3}{2}{5}{70/70}{Pl{\"u}cker coordinates}{0}}
+\headcommand {\beamer@framepages {70}{70}}
+\headcommand {\beamer@subsectionpages {66}{70}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{71}{Freedoms and Constraints}}
+\headcommand {\slideentry {3}{3}{1}{71/71}{Freedoms and Constraints}{0}}
+\headcommand {\beamer@framepages {71}{71}}
+\headcommand {\slideentry {3}{3}{2}{72/72}{Freedoms and Constraints}{0}}
+\headcommand {\beamer@framepages {72}{72}}
+\headcommand {\slideentry {3}{3}{3}{73/73}{Freedoms and Constraints}{0}}
+\headcommand {\beamer@framepages {73}{73}}
+\headcommand {\beamer@subsectionpages {71}{73}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{74}{Mobility Criterion}}
+\headcommand {\beamer@subsectionpages {74}{73}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{74}{Mobility Criterion}}
+\headcommand {\slideentry {3}{5}{1}{74/74}{Mobility Criterion}{0}}
+\headcommand {\beamer@framepages {74}{74}}
+\headcommand {\slideentry {3}{5}{2}{75/75}{Mobility Criterion}{0}}
+\headcommand {\beamer@framepages {75}{75}}
+\headcommand {\slideentry {3}{5}{3}{76/76}{Mobility Criterion}{0}}
+\headcommand {\beamer@framepages {76}{76}}
+\headcommand {\slideentry {3}{5}{4}{77/77}{Mobility Criterion}{0}}
+\headcommand {\beamer@framepages {77}{77}}
+\headcommand {\slideentry {3}{5}{5}{78/78}{Mobility Criterion}{0}}
+\headcommand {\beamer@framepages {78}{78}}
+\headcommand {\slideentry {3}{5}{6}{79/79}{Mobility Criterion}{0}}
+\headcommand {\beamer@framepages {79}{79}}
+\headcommand {\slideentry {3}{5}{7}{80/80}{Mobility Criterion}{0}}
+\headcommand {\beamer@framepages {80}{80}}
+\headcommand {\slideentry {3}{5}{8}{81/81}{Mobility Criterion}{0}}
+\headcommand {\beamer@framepages {81}{81}}
+\headcommand {\beamer@partpages {1}{81}}
+\headcommand {\beamer@subsectionpages {74}{81}}
+\headcommand {\beamer@sectionpages {53}{81}}
+\headcommand {\beamer@documentpages {81}}
+\headcommand {\gdef \inserttotalframenumber {77}}

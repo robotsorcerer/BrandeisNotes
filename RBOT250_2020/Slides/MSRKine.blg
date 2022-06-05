@@ -2,14 +2,14 @@ This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: MSRKine.aux
 The style file: unsrtnat.bst
-A level-1 auxiliary file: sections/intro.aux
-A level-1 auxiliary file: sections/mechanisms.aux
-Illegal, another \bibstyle command---line 44 of file MSRKine.aux
+A level-1 auxiliary file: sections/linkages.aux
+A level-1 auxiliary file: sections/mobility.aux
+Illegal, another \bibstyle command---line 85 of file MSRKine.aux
  : \bibstyle
  :          {../../Proposal/styles/bibtex/spmpsci_unsrt}
 I'm skipping whatever remains of this command
 I couldn't open database file ../../../SRS/Continuum/biblio.bib
----line 45 of file MSRKine.aux
+---line 86 of file MSRKine.aux
  : \bibdata{../../../SRS/Continuum/biblio
  :                                       }
 I'm skipping whatever remains of this command
@@ -17,7 +17,7 @@ I found no \citation commands---while reading file MSRKine.aux
 I found no database files---while reading file MSRKine.aux
 You've used 0 entries,
             2481 wiz_defined-function locations,
-            553 strings with 4488 characters,
+            553 strings with 4489 characters,
 and the built_in function-call counts, 34 in all, are:
 = -- 0
 > -- 0

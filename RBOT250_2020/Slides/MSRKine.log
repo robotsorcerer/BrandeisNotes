@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.2.7)  30 MAY 2022 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.2.7)  5 JUN 2022 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -420,7 +420,7 @@ Package hyperref Info: Option `unicode' set `true' on input line 4383.
 File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `bookmarks' set `true' on input line 4383.
-Package hyperref Info: Option `pdfpagelabels' set `false' on input line 4383.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4383.
 Package hyperref Info: Option `implicit' set `false' on input line 4383.
 Package hyperref Info: Hyper figures OFF on input line 4509.
 Package hyperref Info: Link nesting OFF on input line 4514.
@@ -458,6 +458,7 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count124
 
 
 Package hyperref Message: Stopped early.
@@ -466,8 +467,8 @@ Package hyperref Message: Stopped early.
 Package hyperref Info: Driver: hpdftex.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count124
-\c@bookmark@seq@number=\count125
+\Fld@listcount=\count125
+\c@bookmark@seq@number=\count126
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
@@ -475,7 +476,7 @@ Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count126
+\uc@secondtry=\count127
 \uc@combtoks=\toks26
 \uc@combtoksb=\toks27
 \uc@temptokena=\toks28
@@ -518,40 +519,40 @@ Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemisc.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
-\beamer@argscount=\count127
+\beamer@argscount=\count128
 \beamer@lastskipcover=\skip44
-\beamer@trivlistdepth=\count128
+\beamer@trivlistdepth=\count129
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetitle.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasesection.sty
-\c@lecture=\count129
-\c@part=\count130
-\c@section=\count131
-\c@subsection=\count132
-\c@subsubsection=\count133
+\c@lecture=\count130
+\c@part=\count131
+\c@section=\count132
+\c@subsection=\count133
+\c@subsubsection=\count134
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
 \beamer@framebox=\box40
 \beamer@frametitlebox=\box41
 \beamer@zoombox=\box42
-\beamer@zoomcount=\count134
-\beamer@zoomframecount=\count135
+\beamer@zoomcount=\count135
+\beamer@zoomframecount=\count136
 \beamer@frametextheight=\dimen167
-\c@subsectionslide=\count136
+\c@subsectionslide=\count137
 \beamer@frametopskip=\skip45
 \beamer@framebottomskip=\skip46
 \beamer@frametopskipautobreak=\skip47
 \beamer@framebottomskipautobreak=\skip48
 \beamer@envbody=\toks32
 \framewidth=\dimen168
-\c@framenumber=\count137
+\c@framenumber=\count138
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
 \beamer@verbatimfileout=\write4
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
 \beamer@splitbox=\box43
-\beamer@autobreakcount=\count138
+\beamer@autobreakcount=\count139
 \beamer@autobreaklastheight=\dimen169
 \beamer@frametitletoks=\toks33
 \beamer@framesubtitletoks=\toks34
@@ -590,8 +591,8 @@ Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks36
 )
-\c@figure=\count139
-\c@table=\count140
+\c@figure=\count140
+\c@table=\count141
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 )
@@ -619,13 +620,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count141
+\inf@bad=\count142
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count142
-\leftroot@=\count143
+\uproot@=\count143
+\leftroot@=\count144
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count144
-\DOTSCASE@=\count145
+\classnum@=\count145
+\DOTSCASE@=\count146
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -634,15 +635,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen181
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count146
-\c@MaxMatrixCols=\count147
+\macc@depth=\count147
+\c@MaxMatrixCols=\count148
 \dotsspace@=\muskip11
-\c@parentequation=\count148
-\dspbrk@lvl=\count149
+\c@parentequation=\count149
+\dspbrk@lvl=\count150
 \tag@help=\toks38
-\row@=\count150
-\column@=\count151
-\maxfields@=\count152
+\row@=\count151
+\column@=\count152
+\maxfields@=\count153
 \andhelp@=\toks39
 \eqnshift@=\dimen182
 \alignsep@=\dimen183
@@ -669,7 +670,7 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip56
 \dth@everypar=\toks47
 )
-\c@theorem=\count153
+\c@theorem=\count154
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasethemes.sty))
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemedefault.sty
@@ -682,7 +683,7 @@ Package: amsthm 2017/10/31 v2.20.4
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 2016/08/01 v2.7 eTeX basic definition package (PEB,DPC)
-\et@xins=\count154
+\et@xins=\count155
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemesplit.sty
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
@@ -695,43 +696,38 @@ y)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemePaloAlto.sty
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemeprofessionalfont
+s.sty) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
 Package: pgfpages 2011/01/05 ver 0.02
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count155
-\calc@Bcount=\count156
+\calc@Acount=\count156
+\calc@Bcount=\count157
 \calc@Adimen=\dimen192
 \calc@Bdimen=\dimen193
 \calc@Askip=\skip57
 \calc@Bskip=\skip58
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count157
+\calc@Ccount=\count158
 \calc@Cskip=\skip59
 )
-\pgf@logicalpages=\count158
-\pgf@firstshipout=\count159
-\pgf@lastshipout=\count160
-\pgf@currentshipout=\count161
-\pgf@cpn=\count162
-\pgf@shipoutnextto=\count163
+\pgf@logicalpages=\count159
+\pgf@firstshipout=\count160
+\pgf@lastshipout=\count161
+\pgf@currentshipout=\count162
+\pgf@cpn=\count163
+\pgf@shipoutnextto=\count164
 \pgfphysicalheight=\dimen194
 \pgfphysicalwidth=\dimen195
 \pgfpages@shipoutbox=\box53
 )
-\sympureletters=\mathgroup6
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 14.
-
 (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup7
-\symboldletters=\mathgroup8
-\symboldsymbols=\mathgroup9
-\symboldpureletters=\mathgroup10
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
@@ -774,21 +770,25 @@ Normal \dimen register pool exhausted, switching to extended pool.
 \caption@parindent=\dimen257
 \caption@hangindent=\dimen258
 )
-\c@ContinuedFloat=\count164
+\c@ContinuedFloat=\count165
 Package caption Info: beamer document class.
 Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
 )
-\c@subfigure=\count165
-\c@subtable=\count166
+\c@subfigure=\count166
+\c@subtable=\count167
+)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup9
 )
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip64
 \bibsep=\skip65
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count167
+\c@NAT@ctr=\count168
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -796,7 +796,7 @@ nment
 
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count168
+\c@float@type=\count169
 \float@exts=\toks49
 \float@box=\box54
 \@float@everytoks=\toks50
@@ -806,7 +806,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks51
-\c@algorithm=\count169
+\c@algorithm=\count170
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -815,15 +815,15 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count170
-\c@ALG@rem=\count171
-\c@ALG@nested=\count172
+\c@ALG@line=\count171
+\c@ALG@rem=\count172
+\c@ALG@nested=\count173
 \ALG@tlm=\skip66
 \ALG@thistlm=\skip67
-\c@ALG@Lnr=\count173
-\c@ALG@blocknr=\count174
-\c@ALG@storecount=\count175
-\c@ALG@tmpcounter=\count176
+\c@ALG@Lnr=\count174
+\c@ALG@blocknr=\count175
+\c@ALG@storecount=\count176
+\c@ALG@tmpcounter=\count177
 \ALG@tmplength=\skip68
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -838,7 +838,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks52
 \XKV@tempa@toks=\toks53
 )
-\XKV@depth=\count177
+\XKV@depth=\count178
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -868,12 +868,12 @@ File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count178
+\c@checkoddpage=\count179
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box57
-\sift@deathcycles=\count179
+\sift@deathcycles=\count180
 \@vwid@loff=\dimen267
 \@vwid@roff=\dimen268
 ))
@@ -897,12 +897,12 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen278
 \cmidrulekern=\dimen279
 \defaultaddspace=\dimen280
-\@cmidla=\count180
-\@cmidlb=\count181
+\@cmidla=\count181
+\@cmidlb=\count182
 \@aboverulesep=\dimen281
 \@belowrulesep=\dimen282
-\@thisruleclass=\count182
-\@lastruleclass=\count183
+\@thisruleclass=\count183
+\@lastruleclass=\count184
 \@thisrulewidth=\dimen283
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
@@ -912,7 +912,7 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@old@col=\dimen286
 \TX@target=\dimen287
 \TX@delta=\dimen288
-\TX@cols=\count184
+\TX@cols=\count185
 \TX@ftn=\toks55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
@@ -954,7 +954,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count185
+\pgf@plot@mark@count=\count186
 \pgfplotmarksize=\dimen293
 )
 \tikz@lastx=\dimen294
@@ -967,18 +967,18 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box60
 \tikz@tempbox=\box61
 \tikz@tempbox@bg=\box62
-\tikztreelevel=\count186
-\tikznumberofchildren=\count187
-\tikznumberofcurrentchild=\count188
-\tikz@fig@count=\count189
+\tikztreelevel=\count187
+\tikznumberofchildren=\count188
+\tikznumberofcurrentchild=\count189
+\tikz@fig@count=\count190
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count190
-\pgfmatrixcurrentcolumn=\count191
-\pgf@matrix@numberofcolumns=\count192
+\pgfmatrixcurrentrow=\count191
+\pgfmatrixcurrentcolumn=\count192
+\pgf@matrix@numberofcolumns=\count193
 )
-\tikz@expandcount=\count193
+\tikz@expandcount=\count194
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -1078,7 +1078,7 @@ e.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen303
 \pgfdecoratedinputsegmentremainingdistance=\dimen304
 \pgf@decorate@distancetomove=\dimen305
-\pgf@decorate@repeatstate=\count194
+\pgf@decorate@repeatstate=\count195
 \pgfdecorationsegmentamplitude=\dimen306
 \pgfdecorationsegmentlength=\dimen307
 )
@@ -1090,7 +1090,7 @@ decorations.markings.code.tex))
 zlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 )
-\tikz@lib@circ@count=\count195
+\tikz@lib@circ@count=\count196
 \tikzcircuitssizeunit=\dimen308
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
@@ -1137,19 +1137,19 @@ Package: expl3 2018/02/21 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2018/02/21 L3 programming layer (code)
-\c_max_int=\count196
-\l_tmpa_int=\count197
-\l_tmpb_int=\count198
-\g_tmpa_int=\count199
+\c_max_int=\count197
+\l_tmpa_int=\count198
+\l_tmpb_int=\count199
 Normal \count register pool exhausted, switching to extended pool.
-\g_tmpb_int=\count277
-\g__intarray_font_int=\count278
-\g__prg_map_int=\count279
-\c_log_iow=\count280
-\l_iow_line_count_int=\count281
-\l__iow_line_target_int=\count282
-\l__iow_one_indent_int=\count283
-\l__iow_indent_int=\count284
+\g_tmpa_int=\count277
+\g_tmpb_int=\count278
+\g__intarray_font_int=\count279
+\g__prg_map_int=\count280
+\c_log_iow=\count281
+\l_iow_line_count_int=\count282
+\l__iow_line_target_int=\count283
+\l__iow_one_indent_int=\count284
+\l__iow_indent_int=\count285
 \c_zero_dim=\dimen309
 \c_max_dim=\dimen310
 \l_tmpa_dim=\dimen311
@@ -1168,77 +1168,77 @@ Normal \count register pool exhausted, switching to extended pool.
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count285
-\c__fp_leading_shift_int=\count286
-\c__fp_middle_shift_int=\count287
-\c__fp_trailing_shift_int=\count288
-\c__fp_big_leading_shift_int=\count289
-\c__fp_big_middle_shift_int=\count290
-\c__fp_big_trailing_shift_int=\count291
-\c__fp_Bigg_leading_shift_int=\count292
-\c__fp_Bigg_middle_shift_int=\count293
-\c__fp_Bigg_trailing_shift_int=\count294
-\c__fp_rand_size_int=\count295
-\c__fp_rand_four_int=\count296
-\c__fp_rand_eight_int=\count297
-\l__sort_length_int=\count298
-\l__sort_min_int=\count299
-\l__sort_top_int=\count300
-\l__sort_max_int=\count301
-\l__sort_true_max_int=\count302
-\l__sort_block_int=\count303
-\l__sort_begin_int=\count304
-\l__sort_end_int=\count305
-\l__sort_A_int=\count306
-\l__sort_B_int=\count307
-\l__sort_C_int=\count308
-\l__tl_build_start_index_int=\count309
-\l__tl_build_index_int=\count310
-\l__tl_analysis_normal_int=\count311
-\l__tl_analysis_index_int=\count312
-\l__tl_analysis_nesting_int=\count313
-\l__tl_analysis_type_int=\count314
-\l__regex_internal_a_int=\count315
-\l__regex_internal_b_int=\count316
-\l__regex_internal_c_int=\count317
-\l__regex_balance_int=\count318
-\l__regex_group_level_int=\count319
-\l__regex_mode_int=\count320
-\c__regex_cs_in_class_mode_int=\count321
-\c__regex_cs_mode_int=\count322
-\l__regex_catcodes_int=\count323
-\l__regex_default_catcodes_int=\count324
-\c__regex_catcode_D_int=\count325
-\c__regex_catcode_S_int=\count326
-\c__regex_catcode_L_int=\count327
-\c__regex_catcode_O_int=\count328
-\c__regex_catcode_A_int=\count329
-\c__regex_all_catcodes_int=\count330
-\l__regex_show_lines_int=\count331
-\l__regex_min_state_int=\count332
-\l__regex_max_state_int=\count333
-\l__regex_left_state_int=\count334
-\l__regex_right_state_int=\count335
-\l__regex_capturing_group_int=\count336
-\l__regex_min_pos_int=\count337
-\l__regex_max_pos_int=\count338
-\l__regex_curr_pos_int=\count339
-\l__regex_start_pos_int=\count340
-\l__regex_success_pos_int=\count341
-\l__regex_curr_char_int=\count342
-\l__regex_curr_catcode_int=\count343
-\l__regex_last_char_int=\count344
-\l__regex_case_changed_char_int=\count345
-\l__regex_curr_state_int=\count346
-\l__regex_step_int=\count347
-\l__regex_min_active_int=\count348
-\l__regex_max_active_int=\count349
-\l__regex_replacement_csnames_int=\count350
-\l__regex_match_count_int=\count351
-\l__regex_min_submatch_int=\count352
-\l__regex_submatch_int=\count353
-\l__regex_zeroth_submatch_int=\count354
-\g__regex_trace_regex_int=\count355
+\l_keys_choice_int=\count286
+\c__fp_leading_shift_int=\count287
+\c__fp_middle_shift_int=\count288
+\c__fp_trailing_shift_int=\count289
+\c__fp_big_leading_shift_int=\count290
+\c__fp_big_middle_shift_int=\count291
+\c__fp_big_trailing_shift_int=\count292
+\c__fp_Bigg_leading_shift_int=\count293
+\c__fp_Bigg_middle_shift_int=\count294
+\c__fp_Bigg_trailing_shift_int=\count295
+\c__fp_rand_size_int=\count296
+\c__fp_rand_four_int=\count297
+\c__fp_rand_eight_int=\count298
+\l__sort_length_int=\count299
+\l__sort_min_int=\count300
+\l__sort_top_int=\count301
+\l__sort_max_int=\count302
+\l__sort_true_max_int=\count303
+\l__sort_block_int=\count304
+\l__sort_begin_int=\count305
+\l__sort_end_int=\count306
+\l__sort_A_int=\count307
+\l__sort_B_int=\count308
+\l__sort_C_int=\count309
+\l__tl_build_start_index_int=\count310
+\l__tl_build_index_int=\count311
+\l__tl_analysis_normal_int=\count312
+\l__tl_analysis_index_int=\count313
+\l__tl_analysis_nesting_int=\count314
+\l__tl_analysis_type_int=\count315
+\l__regex_internal_a_int=\count316
+\l__regex_internal_b_int=\count317
+\l__regex_internal_c_int=\count318
+\l__regex_balance_int=\count319
+\l__regex_group_level_int=\count320
+\l__regex_mode_int=\count321
+\c__regex_cs_in_class_mode_int=\count322
+\c__regex_cs_mode_int=\count323
+\l__regex_catcodes_int=\count324
+\l__regex_default_catcodes_int=\count325
+\c__regex_catcode_D_int=\count326
+\c__regex_catcode_S_int=\count327
+\c__regex_catcode_L_int=\count328
+\c__regex_catcode_O_int=\count329
+\c__regex_catcode_A_int=\count330
+\c__regex_all_catcodes_int=\count331
+\l__regex_show_lines_int=\count332
+\l__regex_min_state_int=\count333
+\l__regex_max_state_int=\count334
+\l__regex_left_state_int=\count335
+\l__regex_right_state_int=\count336
+\l__regex_capturing_group_int=\count337
+\l__regex_min_pos_int=\count338
+\l__regex_max_pos_int=\count339
+\l__regex_curr_pos_int=\count340
+\l__regex_start_pos_int=\count341
+\l__regex_success_pos_int=\count342
+\l__regex_curr_char_int=\count343
+\l__regex_curr_catcode_int=\count344
+\l__regex_last_char_int=\count345
+\l__regex_case_changed_char_int=\count346
+\l__regex_curr_state_int=\count347
+\l__regex_step_int=\count348
+\l__regex_min_active_int=\count349
+\l__regex_max_active_int=\count350
+\l__regex_replacement_csnames_int=\count351
+\l__regex_match_count_int=\count352
+\l__regex_min_submatch_int=\count353
+\l__regex_submatch_int=\count354
+\l__regex_zeroth_submatch_int=\count355
+\g__regex_trace_regex_int=\count356
 \c_empty_box=\box84
 \l_tmpa_box=\box85
 \l_tmpb_box=\box86
@@ -1282,7 +1282,7 @@ Normal \count register pool exhausted, switching to extended pool.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count356
+\l__driver_color_stack_int=\count357
 \l__driver_tmp_box=\box99
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
@@ -1290,34 +1290,34 @@ Package: l3keys2e 2018/02/21 LaTeX2e option processing using LaTeX3 keys
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2018/02/21 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count357
-\g__xparse_grabber_int=\count358
-\l__xparse_m_args_int=\count359
-\l__xparse_mandatory_args_int=\count360
-\l__xparse_v_nesting_int=\count361
+\l__xparse_current_arg_int=\count358
+\g__xparse_grabber_int=\count359
+\l__xparse_m_args_int=\count360
+\l__xparse_mandatory_args_int=\count361
+\l__xparse_v_nesting_int=\count362
 )
 Package: media9 2018/02/28 v0.90 acrobat-9/X compatible media
-\g_mix_pkgresizeflag_int=\count362
+\g_mix_pkgresizeflag_int=\count363
 
 (/usr/share/texlive/texmf-dist/tex/latex/media9/pdfbase.sty
 Package: pdfbase 2018/02/28 v0.21 driver independent access to low-level PDF fe
 atures
-\g_pbs_page_int=\count363
-\g_pbs_oc_int=\count364
+\g_pbs_page_int=\count364
+\g_pbs_oc_int=\count365
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ocgx2/ocgbase.sty
 Package: ocgbase 2017/09/29 v0.12 support package for ocgx2.sty
-\g_ocgbase_nd_int=\count365
+\g_ocgbase_nd_int=\count366
 )
 \l_mix_poster_box=\box100
 \g_mix_wd_dim=\dimen340
 \g_mix_ht_dim=\dimen341
 \g_mix_dp_dim=\dimen342
-\g_mix_rmcnt_int=\count366
-\l_mix_viewcnt_int=\count367
-\g@mix@page@int=\count368
-\g_mix_resizeflag_int=\count369
-\l_mix_lineno_int=\count370
+\g_mix_rmcnt_int=\count367
+\l_mix_viewcnt_int=\count368
+\g@mix@page@int=\count369
+\g_mix_resizeflag_int=\count370
+\l_mix_lineno_int=\count371
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1330,7 +1330,7 @@ Package: ocgbase 2017/09/29 v0.12 support package for ocgx2.sty
 . 
 . Defining command \includemedia with sig. 'O{}mm' on line 1212.
 .................................................
-\g_mix_mbtncnt_int=\count371
+\g_mix_mbtncnt_int=\count372
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1339,7 +1339,7 @@ Package: ocgbase 2017/09/29 v0.12 support package for ocgx2.sty
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/multimedia.sty
 Package: multimedia 2012/05/02 ver 0.02
-\mm@movie=\count372
+\mm@movie=\count373
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2018/01/12 version 4.12 text color boxes
@@ -1354,9 +1354,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box103
 \tcb@lowerbox=\box104
 \tcb@phantombox=\box105
-\c@tcbbreakpart=\count373
-\c@tcblayer=\count374
-\tcolorbox@number=\count375
+\c@tcbbreakpart=\count374
+\c@tcblayer=\count375
+\tcolorbox@number=\count376
 \tcb@temp=\box106
 \tcb@temp=\box107
 \tcb@temp=\box108
@@ -1371,35 +1371,38 @@ Library (tcolorbox): 'tcbtheorems.code.tex' version '4.12'
 \openout2 = `def.aux'.
 
 (./def.tex
-\c@mnote=\count376
+\c@mnote=\count377
 )
-LaTeX Font Info:    Try loading font information for PU+cmss on input line 85.
-LaTeX Font Info:    No file PUcmss.fd. on input line 85.
+LaTeX Font Info:    Try loading font information for PU+cmss on input line 94.
+LaTeX Font Info:    No file PUcmss.fd. on input line 94.
 
 
 LaTeX Font Warning: Font shape `PU/cmss/m/n' undefined
-(Font)              using `PU/pdf/m/n' instead on input line 85.
+(Font)              using `PU/pdf/m/n' instead on input line 94.
 
-(./MSRKine.aux (./sections/intro.aux) (./sections/mechanisms.aux)
-(./sections/linkages.aux))
+(./MSRKine.aux (./sections/mobility.aux
+
+LaTeX Warning: Label `grubler' multiply defined.
+
+))
 \openout1 = `MSRKine.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1437,16 +1440,16 @@ LaTeX Font Info:    ... okay on input line 85.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count377
+\scratchcounter=\count378
 \scratchdimen=\dimen344
 \scratchbox=\box110
-\nofMPsegments=\count378
-\nofMParguments=\count379
+\nofMPsegments=\count379
+\nofMParguments=\count380
 \everyMPshowfont=\toks60
-\MPscratchCnt=\count380
+\MPscratchCnt=\count381
 \MPscratchDim=\dimen345
-\MPnumerator=\count381
-\makeMPintoPDFobject=\count382
+\MPnumerator=\count382
+\makeMPintoPDFobject=\count383
 \everyMPtoPDFconversion=\toks61
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1467,8 +1470,8 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box111
-Package backref Info: ** backref set up for natbib ** on input line 85.
-Package hyperref Info: Link coloring OFF on input line 85.
+Package backref Info: ** backref set up for natbib ** on input line 94.
+Package hyperref Info: Link coloring OFF on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1476,11 +1479,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count383
+\c@section@level=\count384
 )
-LaTeX Info: Redefining \ref on input line 85.
-LaTeX Info: Redefining \pageref on input line 85.
-LaTeX Info: Redefining \nameref on input line 85.
+LaTeX Info: Redefining \ref on input line 94.
+LaTeX Info: Redefining \pageref on input line 94.
+LaTeX Info: Redefining \nameref on input line 94.
 
 (./MSRKine.out) (./MSRKine.out)
 \@outlinefile=\write7
@@ -1496,61 +1499,6 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 )
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 85.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 85.
-\symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 85.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 8
-5.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 
-85.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 85.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 85.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 85.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 85.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 85.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 85.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 85.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 85.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 85.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 85.
-LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 85.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 85.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 85.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 85.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 85.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 85.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 85.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 85.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 8
-5.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-85.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 85.
-
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -1579,7 +1527,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (./MSRKine.nav)
-Overfull \hbox (128.91994pt too wide) in paragraph at lines 85--85
+Overfull \hbox (128.91994pt too wide) in paragraph at lines 94--94
  [][][][] 
  []
 
@@ -1599,20 +1547,6 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 
 [2
 
-] (./MSRKine.toc)
-Overfull \hbox (128.91994pt too wide) has occurred while \output is active
- [][][][] 
- []
-
-[3
-
-] (./MSRKine.toc)
-Overfull \hbox (128.91994pt too wide) has occurred while \output is active
- [][][][] 
- []
-
-[4
-
 ]
 \openout2 = `sections/intro.aux'.
 
@@ -1621,7 +1555,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
-[5
+[3
 
 
 ]
@@ -1629,7 +1563,7 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
-[6
+[4
 
 ] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
@@ -1638,21 +1572,49 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
-[7
+[5
 
 ])
-\openout2 = `sections/mechanisms.aux'.
+\openout2 = `sections/linkages.aux'.
 
- (./sections/mechanisms.tex
+ (./sections/linkages.tex
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[6
+
+
+
+]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[7
+
+]
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [8
 
-
-
 ]
+LaTeX Font Info:    Try loading font information for U+msa on input line 48.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 48.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 48.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1667,100 +1629,34 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 [10
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 60.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 60.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 60.
-
-(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)
-<figures/spring-mass-damper.jpg, id=387, 801.99625pt x 470.75874pt>
-File: figures/spring-mass-damper.jpg Graphic file (type jpg)
-<use figures/spring-mass-damper.jpg>
-Package pdftex.def Info: figures/spring-mass-damper.jpg  used on input line 60.
-
-(pdftex.def)             Requested size: 109.48856pt x 54.75027pt.
-<figures/excavJohnDeere.jpg, id=388, 1061.51419pt x 596.81032pt>
-File: figures/excavJohnDeere.jpg Graphic file (type jpg)
-<use figures/excavJohnDeere.jpg>
-Package pdftex.def Info: figures/excavJohnDeere.jpg  used on input line 60.
-(pdftex.def)             Requested size: 109.4943pt x 54.74875pt.
-<figures/carsusp.jpg, id=389, 432.1746pt x 256.5585pt>
-File: figures/carsusp.jpg Graphic file (type jpg)
-<use figures/carsusp.jpg>
-Package pdftex.def Info: figures/carsusp.jpg  used on input line 60.
-(pdftex.def)             Requested size: 109.49416pt x 54.74794pt.
-<figures/daimler_manuf.jpeg, id=390, 1284.8pt x 642.4pt>
-File: figures/daimler_manuf.jpeg Graphic file (type jpg)
-<use figures/daimler_manuf.jpeg>
-Package pdftex.def Info: figures/daimler_manuf.jpeg  used on input line 60.
-(pdftex.def)             Requested size: 109.49081pt x 54.7454pt.
-
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [11
 
- <./figures/spring-mass-damper.jpg> <./figures/excavJohnDeere.jpg> <./figures/c
-arsusp.jpg> <./figures/daimler_manuf.jpeg>]
+]
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [12
 
-] [13
+]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[13
 
 ]
-<../Notes/figures/PUMA.jpg, id=463, 1532.72626pt x 1776.6375pt>
-File: ../Notes/figures/PUMA.jpg Graphic file (type jpg)
-<use ../Notes/figures/PUMA.jpg>
-Package pdftex.def Info: ../Notes/figures/PUMA.jpg  used on input line 101.
-(pdftex.def)             Requested size: 106.69373pt x 106.67497pt.
-
-Overfull \hbox (35.56184pt too wide) in paragraph at lines 101--101
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
-\OT1/cmss/m/n/9 The St^^?aubli
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
-\OT1/cmss/m/n/9 PUMA Robot
- []
-
-<../Notes/figures/StanfordArm.jpg, id=464, 1136.245pt x 666.49pt>
-File: ../Notes/figures/StanfordArm.jpg Graphic file (type jpg)
-<use ../Notes/figures/StanfordArm.jpg>
-Package pdftex.def Info: ../Notes/figures/StanfordArm.jpg  used on input line 1
-01.
-(pdftex.def)             Requested size: 106.69608pt x 106.69142pt.
-
-Overfull \hbox (35.5642pt too wide) in paragraph at lines 101--101
-[][] 
- []
-
-
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [14
 
- <../Notes/figures/PUMA.jpg> <../Notes/figures/StanfordArm.jpg>]
+]
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1781,129 +1677,63 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 
 [17
 
-] [18
+]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[18
 
 ]
-<figures/cmu_arm.jpg, id=601, 431.6125pt x 507.8975pt>
-File: figures/cmu_arm.jpg Graphic file (type jpg)
-<use figures/cmu_arm.jpg>
-Package pdftex.def Info: figures/cmu_arm.jpg  used on input line 185.
-(pdftex.def)             Requested size: 150.5661pt x 150.5647pt.
-
-Overfull \hbox (25.09026pt too wide) in paragraph at lines 185--185
-[][] 
- []
-
-<figures/dd_joints.jpg, id=602, 470.75874pt x 452.69125pt>
-File: figures/dd_joints.jpg Graphic file (type jpg)
-<use figures/dd_joints.jpg>
-Package pdftex.def Info: figures/dd_joints.jpg  used on input line 185.
-(pdftex.def)             Requested size: 150.56686pt x 150.56975pt.
-
-Overfull \hbox (25.09102pt too wide) in paragraph at lines 185--185
-[][] 
- []
-
-
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [19
 
- <./figures/cmu_arm.jpg> <./figures/dd_joints.jpg>]
-<figures/dd_kinematics.jpg, id=636, 428.60126pt x 469.755pt>
-File: figures/dd_kinematics.jpg Graphic file (type jpg)
-<use figures/dd_kinematics.jpg>
-Package pdftex.def Info: figures/dd_kinematics.jpg  used on input line 204.
-(pdftex.def)             Requested size: 138.02501pt x 188.21405pt.
-
-Overfull \hbox (12.54916pt too wide) in paragraph at lines 204--204
-[][] 
- []
-
-<figures/dd_load_joints.jpg, id=637, 474.77374pt x 344.28625pt>
-File: figures/dd_load_joints.jpg Graphic file (type jpg)
-<use figures/dd_load_joints.jpg>
-Package pdftex.def Info: figures/dd_load_joints.jpg  used on input line 204.
-(pdftex.def)             Requested size: 150.56874pt x 188.21278pt.
-
-Overfull \hbox (25.0929pt too wide) in paragraph at lines 204--204
-[][] 
- []
-
-
+]
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [20
 
- <./figures/dd_kinematics.jpg> <./figures/dd_load_joints.jpg>]
-Overfull \vbox (4.60223pt too high) detected at line 207
+]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
  []
 
 [21
 
 ]
-<figures/adeptone.jpg, id=676, 466.74374pt x 648.4225pt>
-File: figures/adeptone.jpg Graphic file (type jpg)
-<use figures/adeptone.jpg>
-Package pdftex.def Info: figures/adeptone.jpg  used on input line 226.
-(pdftex.def)             Requested size: 106.69357pt x 106.69817pt.
-
-Overfull \hbox (35.56169pt too wide) in paragraph at lines 226--226
-[][] 
- []
-
-
-Underfull \hbox (badness 4341) in paragraph at lines 226--226
-\OT1/cmss/m/n/9 The Adept One
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
-\OT1/cmss/m/n/9 SCARA robot
- []
-
-<figures/Scara.jpg, id=677, 1565.85pt x 1290.8225pt>
-File: figures/Scara.jpg Graphic file (type jpg)
-<use figures/Scara.jpg>
-Package pdftex.def Info: figures/Scara.jpg  used on input line 226.
-(pdftex.def)             Requested size: 106.68187pt x 106.69507pt.
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 226
-.
-LaTeX Font Info:    No file OMScmss.fd. on input line 226.
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 226.
-
-
-Overfull \hbox (35.54999pt too wide) in paragraph at lines 226--226
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
-\OT1/cmss/m/n/9 Kuka's SCARA
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
-\OT1/cmss/m/n/9 arm, 2022.
- []
-
-
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [22
 
- <./figures/adeptone.jpg> <./figures/Scara.jpg>]
-Overfull \vbox (5.2703pt too high) detected at line 243
- []
-
+]
+<figures/spring-mass-damper.jpg, id=788, 801.99625pt x 470.75874pt>
+File: figures/spring-mass-damper.jpg Graphic file (type jpg)
+<use figures/spring-mass-damper.jpg>
+Package pdftex.def Info: figures/spring-mass-damper.jpg  used on input line 212
+.
+(pdftex.def)             Requested size: 109.48856pt x 54.75027pt.
+<figures/excavJohnDeere.jpg, id=789, 1061.51419pt x 596.81032pt>
+File: figures/excavJohnDeere.jpg Graphic file (type jpg)
+<use figures/excavJohnDeere.jpg>
+Package pdftex.def Info: figures/excavJohnDeere.jpg  used on input line 212.
+(pdftex.def)             Requested size: 109.4943pt x 54.74875pt.
+<figures/carsusp.jpg, id=790, 432.1746pt x 256.5585pt>
+File: figures/carsusp.jpg Graphic file (type jpg)
+<use figures/carsusp.jpg>
+Package pdftex.def Info: figures/carsusp.jpg  used on input line 212.
+(pdftex.def)             Requested size: 109.49416pt x 54.74794pt.
+<figures/daimler_manuf.jpeg, id=791, 1284.8pt x 642.4pt>
+File: figures/daimler_manuf.jpeg Graphic file (type jpg)
+<use figures/daimler_manuf.jpeg>
+Package pdftex.def Info: figures/daimler_manuf.jpeg  used on input line 212.
+(pdftex.def)             Requested size: 109.49081pt x 54.7454pt.
 
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
@@ -1911,81 +1741,116 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 
 [23
 
-]
-Underfull \hbox (badness 1515) in paragraph at lines 264--264
-[]\OT1/cmss/m/n/10.95 First industrial-scale re-
- []
-
-
-Underfull \hbox (badness 4660) in paragraph at lines 264--264
-\OT1/cmss/m/n/10.95 configurable robot and
- []
-
-
-Underfull \hbox (badness 1354) in paragraph at lines 264--264
-\OT1/cmss/m/n/10.95 po-nents. RAIL script-
- []
-
-<figures/Automatix.jpg, id=742, 1284.8pt x 969.6225pt>
-File: figures/Automatix.jpg Graphic file (type jpg)
-<use figures/Automatix.jpg>
-Package pdftex.def Info: figures/Automatix.jpg  used on input line 264.
-(pdftex.def)             Requested size: 144.99649pt x 109.4255pt.
-
+ <./figures/spring-mass-damper.jpg> <./figures/excavJohnDeere.jpg> <./figures/c
+arsusp.jpg> <./figures/daimler_manuf.jpeg>]
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [24
 
- <./figures/Automatix.jpg>])
-\openout2 = `sections/linkages.aux'.
+]
 
- (./sections/linkages.tex
+pdfTeX warning: /usr/bin/pdflatex (file ../Notes/figures/prismatic_joint.pdf): 
+PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../Notes/figures/prismatic_joint.pdf, id=856, 1485.55pt x 859.21pt>
+File: ../Notes/figures/prismatic_joint.pdf Graphic file (type pdf)
+<use ../Notes/figures/prismatic_joint.pdf>
+Package pdftex.def Info: ../Notes/figures/prismatic_joint.pdf  used on input li
+ne 245.
+(pdftex.def)             Requested size: 195.18513pt x 112.88116pt.
+
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [25
 
+ <../Notes/figures/prismatic_joint.pdf>]
+<figures/revolute.jpg, id=896, 1284.8pt x 963.6pt>
+File: figures/revolute.jpg Graphic file (type jpg)
+<use figures/revolute.jpg>
+Package pdftex.def Info: figures/revolute.jpg  used on input line 268.
+(pdftex.def)             Requested size: 139.41856pt x 104.55539pt.
+<figures/revolute_cutaway.jpg, id=897, 561.7626pt x 456.69781pt>
+File: figures/revolute_cutaway.jpg Graphic file (type jpg)
+<use figures/revolute_cutaway.jpg>
+Package pdftex.def Info: figures/revolute_cutaway.jpg  used on input line 268.
+(pdftex.def)             Requested size: 139.41856pt x 113.3449pt.
 
-
-]
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [26
 
-]
+ <./figures/revolute.jpg> <./figures/revolute_cutaway.jpg>]
+<figures/helical.jpg, id=931, 773.89125pt x 681.54625pt>
+File: figures/helical.jpg Graphic file (type jpg)
+<use figures/helical.jpg>
+Package pdftex.def Info: figures/helical.jpg  used on input line 292.
+(pdftex.def)             Requested size: 139.41856pt x 122.77702pt.
+<figures/ujoint.jpg, id=932, 720.6925pt x 671.50874pt>
+File: figures/ujoint.jpg Graphic file (type jpg)
+<use figures/ujoint.jpg>
+Package pdftex.def Info: figures/ujoint.jpg  used on input line 292.
+(pdftex.def)             Requested size: 139.41856pt x 129.90367pt.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 292
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 292.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead on input line 292.
+
+
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [27
 
-]
+ <./figures/helical.jpg> <./figures/ujoint.jpg>]
+<figures/pairs2.jpg, id=965, 1523.6925pt x 809.0225pt>
+File: figures/pairs2.jpg Graphic file (type jpg)
+<use figures/pairs2.jpg>
+Package pdftex.def Info: figures/pairs2.jpg  used on input line 307.
+(pdftex.def)             Requested size: 278.83713pt x 148.04967pt.
+
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [28
 
-]
+ <./figures/pairs2.jpg>]
+<figures/pairs.jpg, id=1000, 1523.6925pt x 809.0225pt>
+File: figures/pairs.jpg Graphic file (type jpg)
+<use figures/pairs.jpg>
+Package pdftex.def Info: figures/pairs.jpg  used on input line 318.
+(pdftex.def)             Requested size: 278.83713pt x 148.04967pt.
+
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [29
 
-]
+ <./figures/pairs.jpg>]
+<../Notes/figures/arms_hunt.png, id=1034, 712.6625pt x 230.8625pt>
+File: ../Notes/figures/arms_hunt.png Graphic file (type png)
+<use ../Notes/figures/arms_hunt.png>
+Package pdftex.def Info: ../Notes/figures/arms_hunt.png  used on input line 332
+.
+(pdftex.def)             Requested size: 284.52756pt x 92.17075pt.
+
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [30
 
-]
+ <../Notes/figures/arms_hunt.png>]
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1999,21 +1864,48 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 
 [32
 
+] [33
+
 ]
-Overfull \hbox (128.91994pt too wide) has occurred while \output is active
- [][][][] 
+<../Notes/figures/PUMA.jpg, id=1144, 1532.72626pt x 1776.6375pt>
+File: ../Notes/figures/PUMA.jpg Graphic file (type jpg)
+<use ../Notes/figures/PUMA.jpg>
+Package pdftex.def Info: ../Notes/figures/PUMA.jpg  used on input line 403.
+(pdftex.def)             Requested size: 106.69373pt x 106.67497pt.
+
+Overfull \hbox (35.56184pt too wide) in paragraph at lines 403--403
+[][] 
  []
 
-[33
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 403--403
+\OT1/cmss/m/n/9 The St^^?aubli
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--403
+\OT1/cmss/m/n/9 PUMA Robot
+ []
+
+<../Notes/figures/StanfordArm.jpg, id=1145, 1136.245pt x 666.49pt>
+File: ../Notes/figures/StanfordArm.jpg Graphic file (type jpg)
+<use ../Notes/figures/StanfordArm.jpg>
+Package pdftex.def Info: ../Notes/figures/StanfordArm.jpg  used on input line 4
+03.
+(pdftex.def)             Requested size: 106.69608pt x 106.69142pt.
+
+Overfull \hbox (35.5642pt too wide) in paragraph at lines 403--403
+[][] 
+ []
+
+
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [34
 
-]
+ <../Notes/figures/PUMA.jpg> <../Notes/figures/StanfordArm.jpg>]
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2034,12 +1926,570 @@ Overfull \hbox (128.91994pt too wide) has occurred while \output is active
 
 [37
 
+] [38
+
+]
+<figures/cmu_arm.jpg, id=1288, 431.6125pt x 507.8975pt>
+File: figures/cmu_arm.jpg Graphic file (type jpg)
+<use figures/cmu_arm.jpg>
+Package pdftex.def Info: figures/cmu_arm.jpg  used on input line 488.
+(pdftex.def)             Requested size: 150.5661pt x 150.5647pt.
+
+Overfull \hbox (25.09026pt too wide) in paragraph at lines 488--488
+[][] 
+ []
+
+<figures/dd_joints.jpg, id=1289, 470.75874pt x 452.69125pt>
+File: figures/dd_joints.jpg Graphic file (type jpg)
+<use figures/dd_joints.jpg>
+Package pdftex.def Info: figures/dd_joints.jpg  used on input line 488.
+(pdftex.def)             Requested size: 150.56686pt x 150.56975pt.
+
+Overfull \hbox (25.09102pt too wide) in paragraph at lines 488--488
+[][] 
+ []
+
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[39
+
+ <./figures/cmu_arm.jpg> <./figures/dd_joints.jpg>]
+<figures/dd_kinematics.jpg, id=1322, 428.60126pt x 469.755pt>
+File: figures/dd_kinematics.jpg Graphic file (type jpg)
+<use figures/dd_kinematics.jpg>
+Package pdftex.def Info: figures/dd_kinematics.jpg  used on input line 507.
+(pdftex.def)             Requested size: 138.02501pt x 188.21405pt.
+
+Overfull \hbox (12.54916pt too wide) in paragraph at lines 507--507
+[][] 
+ []
+
+<figures/dd_load_joints.jpg, id=1323, 474.77374pt x 344.28625pt>
+File: figures/dd_load_joints.jpg Graphic file (type jpg)
+<use figures/dd_load_joints.jpg>
+Package pdftex.def Info: figures/dd_load_joints.jpg  used on input line 507.
+(pdftex.def)             Requested size: 150.56874pt x 188.21278pt.
+
+Overfull \hbox (25.0929pt too wide) in paragraph at lines 507--507
+[][] 
+ []
+
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[40
+
+ <./figures/dd_kinematics.jpg> <./figures/dd_load_joints.jpg>]
+Overfull \vbox (4.60223pt too high) detected at line 510
+ []
+
+[41
+
+]
+<figures/adeptone.jpg, id=1367, 466.74374pt x 648.4225pt>
+File: figures/adeptone.jpg Graphic file (type jpg)
+<use figures/adeptone.jpg>
+Package pdftex.def Info: figures/adeptone.jpg  used on input line 529.
+(pdftex.def)             Requested size: 106.69357pt x 106.69817pt.
+
+Overfull \hbox (35.56169pt too wide) in paragraph at lines 529--529
+[][] 
+ []
+
+
+Underfull \hbox (badness 4341) in paragraph at lines 529--529
+\OT1/cmss/m/n/9 The Adept One
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--529
+\OT1/cmss/m/n/9 SCARA robot
+ []
+
+<figures/Scara.jpg, id=1368, 1565.85pt x 1290.8225pt>
+File: figures/Scara.jpg Graphic file (type jpg)
+<use figures/Scara.jpg>
+Package pdftex.def Info: figures/Scara.jpg  used on input line 529.
+(pdftex.def)             Requested size: 106.68187pt x 106.69507pt.
+
+Overfull \hbox (35.54999pt too wide) in paragraph at lines 529--529
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--529
+\OT1/cmss/m/n/9 Kuka's SCARA
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--529
+\OT1/cmss/m/n/9 arm, 2022.
+ []
+
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[42
+
+ <./figures/adeptone.jpg> <./figures/Scara.jpg>]
+<../Notes/figures/Staubli.jpg, id=1401, 1003.75pt x 1419.3025pt>
+File: ../Notes/figures/Staubli.jpg Graphic file (type jpg)
+<use ../Notes/figures/Staubli.jpg>
+Package pdftex.def Info: ../Notes/figures/Staubli.jpg  used on input line 542.
+(pdftex.def)             Requested size: 100.38087pt x 141.93855pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[43
+
+ <../Notes/figures/Staubli.jpg>]
+Overfull \vbox (5.2703pt too high) detected at line 558
+ []
+
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[44
+
+]
+Underfull \hbox (badness 1515) in paragraph at lines 579--579
+[]\OT1/cmss/m/n/10.95 First industrial-scale re-
+ []
+
+
+Underfull \hbox (badness 4660) in paragraph at lines 579--579
+\OT1/cmss/m/n/10.95 configurable robot and
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 579--579
+\OT1/cmss/m/n/10.95 po-nents. RAIL script-
+ []
+
+<figures/Automatix.jpg, id=1468, 1284.8pt x 969.6225pt>
+File: figures/Automatix.jpg Graphic file (type jpg)
+<use figures/Automatix.jpg>
+Package pdftex.def Info: figures/Automatix.jpg  used on input line 579.
+(pdftex.def)             Requested size: 144.99649pt x 109.4255pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[45
+
+ <./figures/Automatix.jpg>]
+<figures/multisec_continuum.jpg, id=1501, 499.8675pt x 507.8975pt>
+File: figures/multisec_continuum.jpg Graphic file (type jpg)
+<use figures/multisec_continuum.jpg>
+Package pdftex.def Info: figures/multisec_continuum.jpg  used on input line 605
+.
+(pdftex.def)             Requested size: 60.71373pt x 66.78848pt.
+<figures/multi_sec_manip.jpg, id=1502, 541.02126pt x 433.62pt>
+File: figures/multi_sec_manip.jpg Graphic file (type jpg)
+<use figures/multi_sec_manip.jpg>
+Package pdftex.def Info: figures/multi_sec_manip.jpg  used on input line 605.
+(pdftex.def)             Requested size: 60.71779pt x 66.78694pt.
+<figures/multi_sec_scheme.jpg, id=1503, 477.785pt x 405.515pt>
+File: figures/multi_sec_scheme.jpg Graphic file (type jpg)
+<use figures/multi_sec_scheme.jpg>
+Package pdftex.def Info: figures/multi_sec_scheme.jpg  used on input line 605.
+(pdftex.def)             Requested size: 60.71446pt x 66.78952pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[46
+
+ <./figures/multisec_continuum.jpg> <./figures/multi_sec_manip.jpg> <./figures/
+multi_sec_scheme.jpg>]
+<../Notes/figures/octopus.jpg, id=1537, 1284.8pt x 722.7pt>
+File: ../Notes/figures/octopus.jpg Graphic file (type jpg)
+<use ../Notes/figures/octopus.jpg>
+Package pdftex.def Info: ../Notes/figures/octopus.jpg  used on input line 618.
+(pdftex.def)             Requested size: 241.96124pt x 136.1014pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[47
+
+ <../Notes/figures/octopus.jpg>]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[48
+
+]
+<figures/Stewart.jpg, id=1603, 413.545pt x 416.55624pt>
+File: figures/Stewart.jpg Graphic file (type jpg)
+<use figures/Stewart.jpg>
+Package pdftex.def Info: figures/Stewart.jpg  used on input line 650.
+(pdftex.def)             Requested size: 102.54268pt x 103.28708pt.
+<../../../Papers/PhDThesis/figures/GoughPlatform.jpg, id=1604, 202.04517pt x 24
+8.67097pt>
+File: ../../../Papers/PhDThesis/figures/GoughPlatform.jpg Graphic file (type jp
+g)
+<use ../../../Papers/PhDThesis/figures/GoughPlatform.jpg>
+Package pdftex.def Info: ../../../Papers/PhDThesis/figures/GoughPlatform.jpg  u
+sed on input line 650.
+(pdftex.def)             Requested size: 82.03445pt x 100.96541pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[49
+
+ <./figures/Stewart.jpg> <../../../Papers/PhDThesis/figures/GoughPlatform.jpg>]
+<figures/truss.jpg, id=1638, 465.74pt x 443.6575pt>
+File: figures/truss.jpg Graphic file (type jpg)
+<use figures/truss.jpg>
+Package pdftex.def Info: figures/truss.jpg  used on input line 663.
+(pdftex.def)             Requested size: 131.11024pt x 124.89343pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[50
+
+ <./figures/truss.jpg>]
+<figures/stewart.jpg, id=1672, 828.09375pt x 622.325pt>
+File: figures/stewart.jpg Graphic file (type jpg)
+<use figures/stewart.jpg>
+Package pdftex.def Info: figures/stewart.jpg  used on input line 678.
+(pdftex.def)             Requested size: 175.04306pt x 131.54674pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[51
+
+ <./figures/stewart.jpg>]
+<../Notes/figures/soft_parallel.jpg, id=1706, 608.46678pt x 621.67741pt>
+File: ../Notes/figures/soft_parallel.jpg Graphic file (type jpg)
+<use ../Notes/figures/soft_parallel.jpg>
+Package pdftex.def Info: ../Notes/figures/soft_parallel.jpg  used on input line
+ 691.
+(pdftex.def)             Requested size: 153.41866pt x 156.74701pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[52
+
+ <../Notes/figures/soft_parallel.jpg>])
+\openout2 = `sections/mobility.aux'.
+
+ (./sections/mobility.tex
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[53
+
+
+
 ]
 Overfull \hbox (128.91994pt too wide) has occurred while \output is active
  [][][][] 
  []
 
-[38
+[54
+
+]
+<figures/dualgraph_stewart.jpg, id=1805, 507.8975pt x 625.33624pt>
+File: figures/dualgraph_stewart.jpg Graphic file (type jpg)
+<use figures/dualgraph_stewart.jpg>
+Package pdftex.def Info: figures/dualgraph_stewart.jpg  used on input line 46.
+(pdftex.def)             Requested size: 123.76959pt x 152.38335pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[55
+
+ <./figures/dualgraph_stewart.jpg>]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[56
+
+]
+<../Notes/figures/four-bar-linkage.png, id=1873, 736.7525pt x 227.85126pt>
+File: ../Notes/figures/four-bar-linkage.png Graphic file (type png)
+<use ../Notes/figures/four-bar-linkage.png>
+Package pdftex.def Info: ../Notes/figures/four-bar-linkage.png  used on input l
+ine 74.
+(pdftex.def)             Requested size: 278.83713pt x 86.23322pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[57
+
+ <../Notes/figures/four-bar-linkage.png>] [58
+
+]
+<figures/4bar_me.jpg, id=1917, 457.71pt x 493.845pt>
+File: figures/4bar_me.jpg Graphic file (type jpg)
+<use figures/4bar_me.jpg>
+Package pdftex.def Info: figures/4bar_me.jpg  used on input line 96.
+(pdftex.def)             Requested size: 111.39188pt x 120.18301pt.
+<figures/4bardual.jpg, id=1918, 692.5875pt x 692.5875pt>
+File: figures/4bardual.jpg Graphic file (type jpg)
+<use figures/4bardual.jpg>
+Package pdftex.def Info: figures/4bardual.jpg  used on input line 96.
+(pdftex.def)             Requested size: 111.39188pt x 111.38693pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[59
+
+ <./figures/4bar_me.jpg> <./figures/4bardual.jpg>]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[60
+
+]
+LaTeX Font Info:    Try loading font information for U+euf on input line 126.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[61
+
+]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[62
+
+]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[63
+
+]
+<figures/screw.jpg, id=2088, 401.5pt x 334.24875pt>
+File: figures/screw.jpg Graphic file (type jpg)
+<use figures/screw.jpg>
+Package pdftex.def Info: figures/screw.jpg  used on input line 177.
+(pdftex.def)             Requested size: 69.70927pt x 58.03027pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[64
+
+ <./figures/screw.jpg>]
+<figures/plucker_coords.jpg, id=2121, 249.93375pt x 228.855pt>
+File: figures/plucker_coords.jpg Graphic file (type jpg)
+<use figures/plucker_coords.jpg>
+Package pdftex.def Info: figures/plucker_coords.jpg  used on input line 198.
+(pdftex.def)             Requested size: 83.65198pt x 76.59792pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[65
+
+ <./figures/plucker_coords.jpg>]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[66
+
+]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[67
+
+]
+<figures/serret.jpg, id=2226, 418.56375pt x 263.98625pt>
+File: figures/serret.jpg Graphic file (type jpg)
+<use figures/serret.jpg>
+Package pdftex.def Info: figures/serret.jpg  used on input line 246.
+(pdftex.def)             Requested size: 139.41856pt x 87.9294pt.
+
+Overfull \vbox (0.58563pt too high) detected at line 246
+ []
+
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[68
+
+ <./figures/serret.jpg>]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[69
+
+]
+Overfull \vbox (20.81798pt too high) detected at line 274
+ []
+
+[70
+
+
+]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[71
+
+]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[72
+
+]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[73
+
+]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[74
+
+pdfTeX warning (ext4): destination with the same identifier (name{grubler}) has
+ been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.347 \end{frame}
+                 ]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[75
+
+]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[76
+
+]
+<figures/scara_schematic.jpg, id=2512, 421.8159pt x 344.7279pt>
+File: figures/scara_schematic.jpg Graphic file (type jpg)
+<use figures/scara_schematic.jpg>
+Package pdftex.def Info: figures/scara_schematic.jpg  used on input line 403.
+(pdftex.def)             Requested size: 139.41856pt x 113.93939pt.
+File: figures/Scara.jpg Graphic file (type jpg)
+<use figures/Scara.jpg>
+Package pdftex.def Info: figures/Scara.jpg  used on input line 403.
+(pdftex.def)             Requested size: 139.41856pt x 114.92813pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[77
+
+ <./figures/scara_schematic.jpg>]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[78
+
+]
+<figures/ur16.jpg, id=2578, 358.33875pt x 397.485pt>
+File: figures/ur16.jpg Graphic file (type jpg)
+<use figures/ur16.jpg>
+Package pdftex.def Info: figures/ur16.jpg  used on input line 444.
+(pdftex.def)             Requested size: 139.41856pt x 154.64854pt.
+<figures/ur_scheme.jpg, id=2579, 694.5147pt x 403.5075pt>
+File: figures/ur_scheme.jpg Graphic file (type jpg)
+<use figures/ur_scheme.jpg>
+Package pdftex.def Info: figures/ur_scheme.jpg  used on input line 444.
+(pdftex.def)             Requested size: 139.41856pt x 81.00175pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[79
+
+ <./figures/ur16.jpg> <./figures/ur_scheme.jpg>]
+<figures/stewart_spherical.jpg, id=2616, 434.62375pt x 499.8675pt>
+File: figures/stewart_spherical.jpg Graphic file (type jpg)
+<use figures/stewart_spherical.jpg>
+Package pdftex.def Info: figures/stewart_spherical.jpg  used on input line 461.
+
+(pdftex.def)             Requested size: 111.53314pt x 128.27682pt.
+<figures/spherical.jpg, id=2617, 349.305pt x 428.60126pt>
+File: figures/spherical.jpg Graphic file (type jpg)
+<use figures/spherical.jpg>
+Package pdftex.def Info: figures/spherical.jpg  used on input line 461.
+(pdftex.def)             Requested size: 69.70927pt x 85.53561pt.
+File: figures/ujoint.jpg Graphic file (type jpg)
+<use figures/ujoint.jpg>
+Package pdftex.def Info: figures/ujoint.jpg  used on input line 461.
+(pdftex.def)             Requested size: 69.70927pt x 64.95183pt.
+
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[80
+
+ <./figures/stewart_spherical.jpg> <./figures/spherical.jpg>]
+Overfull \hbox (128.91994pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[81
 
 ]) (./MSRKine.bbl (./MSRKine.brf)
 \tf@brf=\write8
@@ -2063,43 +2513,87 @@ Package natbib Warning: Empty `thebibliography' environment on input line 8.
 \tf@snm=\write11
 \openout11 = `MSRKine.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
- (./MSRKine.aux (./sections/intro.aux) (./sections/mechanisms.aux)
-(./sections/linkages.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 104.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
-Package rerunfilecheck Info: File `MSRKine.out' has not changed.
-(rerunfilecheck)             Checksum: 7B6E0BF962A1A5BC1FF76F2E59F7D340;676.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+ (./MSRKine.aux
+*************************************************
+* pdfbase warning: "rerun"
+* 
+* Rerun to get internal references right!
+*************************************************
+(./sections/intro.aux) (./sections/linkages.aux) (./sections/mobility.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
+
+
+Package rerunfilecheck Warning: File `MSRKine.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `MSRKine.out':
+(rerunfilecheck)             Before: 2F37F483BEACC7C3B41320F03792EC2E;816
+(rerunfilecheck)             After:  4FB74EBF39B2FA3D59B2A149E3930DB3;1980.
 Package rerunfilecheck Info: File `MSRKine.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 43621 strings out of 494847
- 872790 string characters out of 6179081
- 933337 words of memory out of 5000000
- 46057 multiletter control sequences out of 15000+600000
- 553119 words of font info for 92 fonts, out of 8000000 for 9000
+ 44017 strings out of 494847
+ 880536 string characters out of 6179081
+ 938444 words of memory out of 5000000
+ 46299 multiletter control sequences out of 15000+600000
+ 555718 words of font info for 117 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 56i,16n,80p,10395b,907s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy9.pfb>
-Output written on MSRKine.pdf (38 pages, 2393627 bytes).
+ 56i,17n,80p,10395b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Outline0.1.5.24} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.1.4.24} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.1.3.21} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.1.2.16} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.1.1.13} has been referenced but does not e
+xist, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on MSRKine.pdf (81 pages, 5584496 bytes).
 PDF statistics:
- 1269 PDF objects out of 1440 (max. 8388607)
- 1177 compressed objects within 12 object streams
- 82 named destinations out of 1000 (max. 500000)
- 188 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2813 PDF objects out of 2984 (max. 8388607)
+ 2604 compressed objects within 27 object streams
+ 188 named destinations out of 1000 (max. 500000)
+ 364 words of extra memory for PDF output out of 10000 (max. 10000000)
 
