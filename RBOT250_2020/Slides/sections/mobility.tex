@@ -1,24 +1,27 @@
 \section{Mobility}
 
 \begin{frame}
-	\frametitle{Outline}
+	\frametitle{Lecture II Outline}
 	\begin{tcolorbox}[coltitle=yellow!50!black,colframe=magenta!25,split=.2,title=Freedom and Structure]
 		Freedoms, Constraints, and Mobility.
 		\tcblower
-		Motion of linkages: Screws, and spatial motions.
+		Motion of linkages: Screws and spatial motions.
 		\vspace{.2cm}
 		\newline
 		Freedom and Mobility: Freedoms, unfreedoms, connectivity, mobility;
 		\vspace{.2cm}
 		\newline
-		Gr{\"u}bler-Kutzbach's mobility criterion and examples.
+		Gr{\"u}bler-Kutzbach's mobility criterion and examples;
+		\vspace{.2cm}
+		\newline
+		Type-, size-\, and number-syntheses.
 	\end{tcolorbox}
 \end{frame}
  
 
 
 \begin{frame}
-	\frametitle{Degrees of Freedom and Structure}
+	\frametitle{Degrees of Freedom and Kinematic Structure}
 	%		
 	\begin{definition}[Connection Degree]
 		For any  \textcolor{blue}{manipulator joint}, we shall mean its \textcolor{red}{connection degree} to be the \textcolor{red}{number of links attached it}.
@@ -95,9 +98,24 @@
 	\label{fig:4bar}
 \end{frame}
 
+\begin{frame}
+	\frametitle{A Four Bar Linkage}	
+	\begin{block}{A Four Bar Linkage}
+		\begin{columns}[]
+			\begin{column}{\linewidth}		
+				\centering 
+				\href{https://demonstrations.wolfram.com/FourBarLinkage/}{
+					\includegraphics[width=.6\textwidth]{figures/4bar_wolfram.jpg}
+				}
+			\end{column}	
+		\end{columns}
+		\footnotesize{Courtesy of S{\'a}ndor Kabai, Wolfram Demonstrations Project, October 2007.}
+	\end{block}
+	\label{fig:4bar_wolfram}
+\end{frame}
 
 \begin{frame}
-	\frametitle{The Four Bar Linkage}
+	\frametitle{Couplings and Freedom}
 	%
 	\begin{block}{Couplings and Freedom}
 		
@@ -142,9 +160,8 @@
 \end{frame}
 
 
-\subsection{Screws}
 \begin{frame}
-	\frametitle{Unique Location of a Rigid Body in 3D Space}
+	\frametitle{Rigid Body Displacements and Forces}
 	%
 	\begin{tcolorbox}[top=0mm, title=Inhomogeneity of Displacements and Angles]
 		Quiz: Three translations and three rotations are ill-posed for uniquely determining the freedoms of a body. Why?
@@ -155,6 +172,23 @@
 		\end{description}
 	\end{tcolorbox}
 \end{frame}
+
+
+\subsection{Screws and a History Snippet}
+
+
+\begin{frame}
+	\frametitle{Need for Unique Representations}
+	\begin{columns}[b]
+		\begin{column}{.75\linewidth}
+			\centering
+			\includegraphics[width=\textwidth]{figures/need4screws.jpg}
+		\end{column}
+	\end{columns}
+	\footnotesize{There exists infinite possible ways of movement by which the point on the rigid body in Frame I can be effected to be transferred to the location of the point on Frame II and vice versa.}
+\end{frame}
+
+
 
 \begin{frame}
 	\frametitle{Screws for Kinematic Generality}
@@ -177,101 +211,63 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Unique Location of a Rigid Body in 3D Space}
+	\frametitle{Screws in Mechanics: A History Snippet}
 	%
-	\begin{columns}[b]
-		\begin{column}{.65\columnwidth}
-			\begin{definition}[Screw Coordinates]
-				Six-vector, $\bm{s}$, related to the Pl{\"u}cker coordinates (see right inset) parameterize a screw i.e. $\bm{s}=\left(s_1, s_2, s_3, s_4, s_5, s_6\right)$.
-			\end{definition}
-		\end{column}
-		\begin{column}{.3\columnwidth}
-			\centering
-			\includegraphics[width=\textwidth]{figures/plucker_coords.jpg}
-		\end{column}
-		\label{fig:plucker}
-	\end{columns}
-	%
-	\begin{block}{Pl{\"u}cker Coordinates}
-		Let \textcolor{red}{$\bm{a}$} be a point on line $\bm{\ell}_0$. Let \textcolor{red}{$\bm{a}$}'s direction cosine vector (to be introduced shortly) be \textcolor{red}{$\bm{b}$}. Then, its binormal (moment) vector is \textcolor{red}{$\bm{c=a\times b}$}. We say the pair \textcolor{red}{$(\bm{b},\bm{c})$} is the \textcolor{blue}{Pl{\"u}cker Coordinates} of the point  \textcolor{red}{$\bm{a}$ on axis $\bm{\ell}_0$}.
-	\end{block}
-\end{frame}
-
-
-\subsection{Pl{\"u}cker coordinates}
-\begin{frame}
-	\frametitle{Screws and Pl{\"u}cker Coordinates Relationship}
-	%
-	\begin{block}{Screw axis and Pl{\"u}cker Coordinates Relationship}
-		\begin{align}
-			b_1 &= s_1, \quad b_2 = s_2, \quad b_3 = s_3 \\
-			c_1 &= s_4 - ps_1, \quad c_2 = s_5-ps_2, \quad c_3 = s_6 - ps_3.
-		\end{align}
-	$p$: pitch! How to find it?
-	\end{block}
-	%
-	\begin{block}{Screw and Pl{\"u}cker Coordinates Relationship}
-		Suppose that 
-		\begin{align}
-			h &= \sqrt{b_1^2+b_2^2+b_3^2}.
-		\end{align}
-		Then $(\bm{b}/h, \bm{c}/h)$ are respectively the direction cosines of the line, $l_0$ and its moment.
+	\begin{block}{Screws Through Time}
+		\begin{description}
+			\item Michel Chasles(1793 – 1880): Rigid Body Displacements (Kinematics).
+			\item Louis Poinsot (1777 – 1859): Geometrical Mechanics (Kinetics).
+			\item Sir Robert Stawell Ball, F.R.S, LL.D. (1840-1913): Irish Astronomer who popularized screw theory in his day.
+		\end{description}
 	\end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Pitch and Magnitude of the screw}	
-	\begin{block}{Pitch of a screw}
-		\begin{align}
-			p &= \dfrac{s_1 \, s_4 + s_2 \, s_5 + s_3 \, s_6}{\sqrt{s_1^2 + s_2^2 + s_3^2}}, \\
-			\mid s \mid &= \sqrt{s_1^2 + s_2^2 + s_3^2} \quad \text{if } p \neq \infty \\
-			\mid s \mid &= \sqrt{s_4^2 + s_5^2 + s_6^2} \quad \text{if } p = \infty
-		\end{align}
-	\end{block}
-\end{frame}
-%
-\begin{frame}
-	\frametitle{Pl{\"u}cker Coordinates Example}
-	\begin{block}{Chasles' Theorem Applied to The Serret-Frenet Frame}
-		Consider a spatial curve $\bm{C}$ on the elephant continuum trunk shown earlier. Suppose $\bm{C}$ is parameterized by its arc length $\bm{s} \in [0, 1]$. For a point $\bm{x}=\left[x, y, z\right]^T$ on $\bm{C}$, the unit tangent vector to $\bm{C}$ is $\bm{t}=\bm{dx}/\bm{ds}$. Denote by $\bm{n}$ the principal normal to $\bm{C}$ at $\bm{n}$; then we must have $\bm{b}=\bm{t}\times \bm{n}$ as the binormal. We say $(\bm{b},\bm{n})$ together form the Pl{\"u}cker coordinates of the tangent $\bm{t}$.
-	\end{block}
+	\frametitle{Screws in Mechanics: A History Snippet}
 	%
-	%
-	\begin{columns}[]
-		\begin{column}{.5\columnwidth}
-			\centering
-			\includegraphics[width=\textwidth]{figures/serret.jpg}
-		\end{column}
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Pl{\"u}cker Coordinates Example}
-	%
-	\begin{block}{Poinsot's Theorem Quiz on a  Force and its Moment}
-		Suppose that a force $\bm{F}$  acts at the point $\bm{a}$ in the image of Frame \ref{fig:plucker}. What are the Pl{\"u}cker coordinates of the \textcolor{red}{line of force}?
-	\end{block}
-	%
-	\begin{block}{ Homogeneous Coordinates!}
-		\textcolor{blue}{Pl{\"u}cker Coordinates} give six unit parameters of a point on a line. Pl{\"u}cker Coordinates are in \textcolor{red}{homogeneous coordinates}!
+	\begin{block}{Screws Through Time}
+		\begin{columns}[]
+			\begin{column}{.48\linewidth}
+				\centering 
+				\includegraphics[width=\textwidth]{figures/screwdeath.jpg}
+			\end{column}
+			%
+			\begin{column}{.48\linewidth}
+				\centering 
+				\includegraphics[width=\textwidth]{figures/screw_rediscovery.jpg}
+			\end{column}
+		\end{columns}
+	\footnotesize{Courtesy of J.M. Selig, IROS 2018 Screw Theory Tutorial.}
 	\end{block}
 \end{frame}
 
-\note{
+
+
 \begin{frame}
+	\frametitle{Screws for Kinematic Generality}
 	%
-	\begin{block}{Poinsot's Theorem Quiz on a  Force and its Moment}
-		Imagine that a force $\bm{F}$ is acting at the point $\bm{a}$ in the image of Frame \ref{fig:plucker}. Suppose that $\bm{\tau}$ is torque acting along the normal to point $\bm{a}$.  Then $(\bm{f,\tau})$ are the Pl{\"u}cker  coordinates of the \textcolor{red}{line of force}.
+	\begin{block}{Simplest (Unique) Representation of Displacements}
+		\textcolor{blue}{Chasles}(1793 – 1880) showed that \textcolor{blue}{any given displacement} of a rigid body can be \textcolor{red}{uniquely} represented as the \textcolor{magenta}{rotation of the body about an axis} \textcolor{blue}{(the screw axis)} followed by a \textcolor{magenta}{translation parallel to that axis} \textcolor{blue}{(the pitch)}.
 	\end{block}
-	%
-	\begin{block}{Arithmetics on Screws}
-		Scalar and vector arithmetic operations are valid on infinitesimal  screws e.g.
-		\begin{align}
-			c_1 \bm{s}_1 + c_2 \bm{s}_2 = 0 \text{ for } c_1, \, c_2 \neq 0 \text{ on screws } \bm{s}_1, \bm{s}_2.
-		\end{align}
+	%	
+	\begin{block}{Michel Chasles and Screws}
+		\textcolor{blue}{Chasles} called this  \textcolor{green}{unique transformation}  \textcolor{red}{screws}.  Chasles is responsible for the Euclidean description of the motion of a rigid body in space and he made lasting contributions to theories of rigid body dynamics.
 	\end{block}
 \end{frame}
-}
+
+\begin{frame}
+	\frametitle{Screws for Kinetic Generality}
+	%
+	\begin{block}{Simplest (Unique) Representation of Forces}
+		\textcolor{blue}{Poinsot}(1777 – 1859) showed that \textcolor{blue}{any system of forces} acting on a rigid body can be  represented by a \textcolor{magenta}{single force}, together with \textcolor{magenta}{a couple} acting along the normal to the force \textcolor{magenta}{in a plane}.
+	\end{block}
+	%	
+	\begin{block}{Louis Poinsot and Geometrical Mechanics}
+		``Everyone makes for himself a clear idea of the motion of a point, that is to say, of the motion of a corpuscle which one supposes to be infinitely small, and which one reduces by thought in some way to a mathematical point." $\sim$ Louis Poinsot, 1834.
+	\end{block}
+\end{frame}
+
+
 
 \subsection{Freedoms and Constraints}
 \begin{frame}
@@ -435,7 +431,7 @@
 			\begin{block}{The Revolute Arm}
 				\footnotesize{Falls under so-called $RRR$ kinematic arrangements. Also called a \textcolor{blue}{revolute}, \textcolor{blue}{elbow}, or \textcolor{blue}{anthorpomorphic manipulator}.}
 			\includegraphics[width=\textwidth]{figures/ur_scheme.jpg}
-			$n=6; \, k=6; \, f=5\times3:=18$ $\therefore \mathfrak{M}=6(n-k-1)+\sum f_i $ $\implies 6(6-1-5) + 18$ or $\mathfrak{M}=6$.
+			$n=6; \, k=5; \, f=6$ $\therefore \mathfrak{M}=6(n-k-1)+\sum f_i $ $\implies 6(6-5-1) + 6$ or $\mathfrak{M}=6$.
 			\end{block}
 		\end{column}
 	\end{columns}
@@ -465,7 +461,7 @@
 		%
 		\begin{column}{.45\linewidth}
 			\begin{block}{Unconstrained bodies, $n$}
-				There are \textcolor{blue}{six universal joints} that connect \textcolor{blue}{the base platform} to the prismatic linear actuators. There are \textcolor{blue}{six spherical joints} that connect \textcolor{blue}{the top platform} to the top of the prismatic actuators. Altogether, there are $n=6+6+2$ or $14$ unconstrained \textcolor{red}{rigid links}.
+				There are \textcolor{blue}{six universal joints} that connect \textcolor{blue}{the base platform} to the \textcolor{blue}{prismatic linear actuators}. There are \textcolor{blue}{six spherical joints} that connect \textcolor{blue}{the top platform} to the top of the prismatic actuators. Altogether, there are $n=6+6+2$ or $14$ unconstrained \textcolor{red}{rigid bodies}.
 			\end{block}
 		\end{column}
 		%
@@ -480,3 +476,78 @@
 		\end{column}
 	\end{columns}
 \end{frame}
+
+\frame{
+\frametitle{Mechanism Synthesis}
+\begin{columns}[]
+	\begin{column}{.5\linewidth}
+		\begin{definition}[Type-Synthesis]
+			What \textcolor{blue}{type} of mechanism is appropriate for a task: A \textcolor{red}{linkage} or \textcolor{red}{profile mechanism}?
+		\end{definition}
+		%
+		\begin{definition}[Size-Synthesis]
+			What \textcolor{blue}{major dimensions} of the mechanism is to be synthesized?
+		\end{definition}
+	\end{column}
+	\begin{column}{.5\linewidth}
+		\includegraphics[width=\textwidth]{figures/synthesis.jpg}
+	\end{column}
+\end{columns}
+}
+
+\frame{
+	\frametitle{Number Synthesis}
+	\begin{columns}[]
+		\begin{column}{.95\linewidth}
+			\begin{definition}[Number-Synthesis]
+				That which deals with the  \textcolor{blue}{freedoms and constraints} after the type- and size-synthesis of a mechanism, as well as a  \textcolor{red}{kinematic chain's structural analysis} is termed the \textcolor{red}{number-synthesis} of the mechanism.?
+			\end{definition}
+		\end{column}
+	\end{columns}
+}
+
+\frame{
+\frametitle{Quiz: Mobility of a Planar Parallel Mechanism}	
+	\begin{block}{Quiz}
+		Analyze the mobility of the mechanism below. 
+	\end{block}
+	\begin{columns}[]
+		\begin{column}{.5\linewidth}
+			\centering
+			\includegraphics[width=\textwidth]{../Notes/figures/parallel_translational.jpg}
+			\newline \footnotesize{A planar parallel mechanism.}
+		\end{column}
+		\begin{column}{.5\linewidth}
+			\centering
+			\includegraphics[width=\textwidth]{../Notes/figures/parallel_translational_workspace.jpg}
+			\newline \footnotesize{Workspace of the mechanism.}
+		\end{column}
+	\footnotesize{Reprinted from Garcia-Murillo et al.}
+	\end{columns}
+}
+
+
+%\frame{
+%	\frametitle{Quiz: Mechanism Hints}	
+%%	\begin{block}{Hint -- Mechanism Description}
+%%		This robot has four $RPRP-$type kinematic chains. Three of these chains have their prismatic pair closest to the base; they serve as active joints. The fourth kinematic chain is completely passive. 
+%%	\end{block}
+%	
+%	\begin{block}{Hint -- Mechanism Description} 
+%		Point $P = (P_x,P_y, P_z)$ is the interconnecting point for all the chains on the mobile platform and the top rods.
+%	\end{block}
+%	
+%}
+
+\frame{
+	\frametitle{Quiz: Mechanism Hints}
+	
+	%
+	\begin{block}{Hint -- Mechanism Description} 
+		Point $P = (P_x,P_y, P_z)$ is the interconnecting point for all the chains on the mobile platform and the top rods.
+	\end{block}
+
+	\begin{block}{Hint -- Mechanism Description}
+		The rods that connects points $B_1$ and $B_3$, and points $B_2$ and $B_4$ are perpendicular. Both rods are connected to the moving platform by prismatic joints, which are separated from each other by a vertical offset $h$. $\hat{u}_i$ signifies universal joints.
+	\end{block}
+}

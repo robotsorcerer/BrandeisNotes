@@ -58,7 +58,7 @@
 %\setbeamerfont{title}{shape=\itshape,family=\rmfamily}
 \setbeamercolor{title}{fg=magenta!70!black,bg=yellow!70!white}
 %
-\title{\small A short treatise on robots' geometry, kinematics, and dynamics.}
+\title{\small A short treatise on robots' kinematic geometry and kinetics.}
 
 \author{Author: Lekan Molu}
 \institute{
@@ -94,15 +94,19 @@
 \begin{document}
 	\maketitle
 %http://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf#subsection.21.3
-\begin{frame}
+\begin{frame}[allowframebreaks]{Outline}
 	\frametitle{Table of Contents}
 	\tableofcontents
 \end{frame}
 
-\lecture{Robot Mechanisms}{Mechanisms and Pairs}
-\include{sections/intro}
+\lecture{Bibliography}{Lecture Nut}
+\include{sections/biblio}
+\lecture{Linkages and Mechanisms}{Lecture I}
 \include{sections/linkages}
+\lecture{Mobility and Freedoms}{Lecture II}
 \include{sections/mobility}
+\lecture{Rigid Body Motions}{Lecture III}
+\include{sections/rbm}
 
 % ---- Bibliography ----
 \bibliographystyle{../../Proposal/styles/bibtex/spmpsci_unsrt}

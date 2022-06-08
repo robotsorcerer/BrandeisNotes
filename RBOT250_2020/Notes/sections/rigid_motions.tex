@@ -437,7 +437,7 @@ Going by the definitions of twist in the foregoing, it follows that a twist is t
 For the two coordinate frames shown in  \autoref{fig:2_coords}, say we choose the $o_0x_0 y_0$ frame as the reference and the $o_1x_1y_1$ as the moving coordinate frame, the way we would characterize the translation motion of the the point $q$ would be to represent its translation from the reference frame by the Cartesian displacement along $x$ and $y$ so that we have 
 \begin{figure}
 	\centering
-	\includegraphics[width=.8\columnwidth]{figures/trans_coords.png}
+	\includegraphics[width=.8\columnwidth]{figures/trans_coords.jpg}
 	\caption{A point $q$ in space with respect to two coordinate frames.}
 	\label{fig:2_coords}
 \end{figure}
@@ -492,7 +492,7 @@ We would like to establish a convention  that all coordinate frames will be righ
 %
 \begin{figure}[tb!]
 	\centering
-	\includegraphics[width=\columnwidth]{figures/rotation_illus.png}
+	\includegraphics[width=\columnwidth]{figures/rotation_illus.jpg}
 	\caption{An illustration of the relative orientation of a rigid object $q$ between an inertial frame $I$ and a body frame $J$.}
 	\label{fig:rotation_illus}
 \end{figure}
@@ -593,7 +593,7 @@ SO(n) = \{R\in \bb{R}^{n\times n}: RR^T = \bm{I}, \text{det } R = + 1\}.
 
 \subsection{Rotation Matrices as Transformations}
 %
-Suppose we are tasked with transforming a point $q$ from one coordinate frame  $J$ to a frame $I$ based on  \autoref{fig:rotation_illus}. Suppose that $q_j = (x_j, y_j, z_j)$ are the coordinates of $q$ with respect to the frame $J$. We may reason that $x_j, y_j, z_j \in \bb{R}^3$ are the projections of $q$ onto the coordinate axes of $B$, which in turn, have coordinates $\bm{x}_{ij}, \bm{y}_{ij},\bm{z}_{ij} \in \bb{R}^3$ with respect to coordinate frame $I$; then it follows that the coordinates of $q$ relative to frame $I$ is
+Suppose we are tasked with transforming a point $q$ from one coordinate frame  $J$ to a frame $I$ based on  \autoref{fig:rotation_illus}. Suppose that $q_j = (x_j, y_j, z_j)$ are the coordinates of $q$ with respect to the frame $J$. We may reason that $x_j, y_j, z_j \in \bb{R}^3$ are the projections of $q$ onto the coordinate axes of $J$, which in turn, have coordinates $\bm{x}_{ij}, \bm{y}_{ij},\bm{z}_{ij} \in \bb{R}^3$ with respect to coordinate frame $I$; then it follows that the coordinates of $q$ relative to frame $I$ is
 %
 \begin{align}
 q_i = \bm{x}_{ij} x_j + \bm{y}_{ij} y_j + \bm{z}_{ij} z_j.
@@ -627,7 +627,7 @@ We now revisit the relative orientation between two coordinate frames as shown i
 %
 \begin{figure}[tb!]
 	\centering
-	\includegraphics[width=.75\columnwidth]{figures/planar_rot.png}
+	\includegraphics[width=.75\columnwidth]{figures/planar_rot.jpg}
 	\caption{Illustration of rotation between two frames in a plane.}
 	\label{fig:planar_rot}
 \end{figure}
@@ -695,7 +695,7 @@ Note the way the negative signs have entered the matrix due to the counterclockw
 
 \begin{figure}[tb!]
 	\centering
-	\includegraphics[width=.8\columnwidth]{figures/two_frames.png}
+	\includegraphics[width=.8\columnwidth]{figures/two_frames.jpg}
 	\caption{Relative orientation between two frames.}
 	\label{fig:two_frames}
 \end{figure}
@@ -721,7 +721,7 @@ R_{ik} = R_{ij} R_{jk}.
 \label{eq:current_frame_rotation}
 \end{align}
 %
-The rotation described above would be equivalent to rotating frame $K$ relative to frame $I$ according to $R_{ij}$, then aligning frame $J$  to $K$, we rotate $K$ relative to $I$ according to $R_{jk}$. The resulting frame $K$ has orientation with respect to $I$ given by $R_{ij} R_{jk}$. This frame relative to which rotation occurs is termed the \textit{current frame}.
+The rotation described above would be equivalent to rotating frame $J$ relative to frame $I$ according to $R_{ij}$, then aligning frame $J$  to $K$, we rotate $K$ relative to $I$ according to $R_{jk}$. The resulting frame $K$ has orientation with respect to $I$ given by $R_{ij} R_{jk}$. This frame relative to which rotation occurs is termed the \textit{current frame}.
 
 \noindent 
 \begin{homework}
