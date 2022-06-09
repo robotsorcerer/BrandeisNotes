@@ -1,6 +1,6 @@
 \beamer@sectionintoc {1}{Introduction}{4}{0}{1}
 \beamer@subsectionintoc {1}{1}{Textbooks}{4}{0}{1}
-\beamer@sectionintoc {2}{Pairs, Linkages, and Configurations}{7}{0}{2}
+\beamer@sectionintoc {2}{Kinematic Geometry}{7}{0}{2}
 \beamer@subsectionintoc {2}{1}{Mechanics}{8}{0}{2}
 \beamer@subsectionintoc {2}{2}{Mechanisms}{23}{0}{2}
 \beamer@subsectionintoc {2}{3}{Pairs and Linkages}{25}{0}{2}
@@ -10,9 +10,12 @@
 \beamer@subsectionintoc {3}{1}{Screws and a History Snippet}{67}{0}{3}
 \beamer@subsectionintoc {3}{2}{Freedoms and Constraints}{73}{0}{3}
 \beamer@subsectionintoc {3}{3}{Mobility Criterion}{76}{0}{3}
-\beamer@subsectionintoc {3}{4}{Displacement \& Twist}{94}{0}{3}
-\beamer@subsectionintoc {3}{5}{Force \& Wrench}{102}{0}{3}
-\beamer@subsectionintoc {3}{6}{Screws in Pl{\"u}cker Coordinates}{109}{0}{3}
-\beamer@subsectionintoc {3}{7}{$\mathbb {R}^3$ Motions}{111}{0}{3}
-\beamer@subsectionintoc {3}{8}{Special Orthogonal Properties}{118}{0}{3}
-\beamer@subsectionintoc {3}{9}{Composition of Rotations}{122}{0}{3}
+\beamer@sectionintoc {4}{Motions}{88}{0}{4}
+\beamer@subsectionintoc {4}{1}{Movement in $\mathbb {R}^3$}{90}{0}{4}
+\beamer@subsectionintoc {4}{2}{Special Orthogonal Properties}{96}{0}{4}
+\beamer@subsectionintoc {4}{3}{Composition of Rotations}{104}{0}{4}
+\beamer@sectionintoc {5}{Screw Theory}{121}{0}{5}
+\beamer@subsectionintoc {5}{1}{Displacement \& Twist}{125}{0}{5}
+\beamer@subsectionintoc {5}{2}{Force \& Wrench}{133}{0}{5}
+\beamer@subsectionintoc {5}{3}{Screws in Pl{\"u}cker Coordinates}{140}{0}{5}
+\beamer@subsectionintoc {5}{4}{Group Theory Connections}{143}{0}{5}

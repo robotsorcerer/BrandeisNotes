@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.2.7)  7 JUN 2022 23:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.2.7)  9 JUN 2022 11:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1385,7 +1385,7 @@ LaTeX Font Warning: Font shape `PU/cmss/m/n' undefined
 
 LaTeX Warning: Label `grubler' multiply defined.
 
-) (./sections/rbm.aux))
+) (./sections/rbm.aux) (./sections/screw_rbm.aux))
 \openout1 = `MSRKine.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
@@ -1615,6 +1615,9 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <2> not available
 (Font)              size <5> substituted on input line 95.
 
 
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1624,6 +1627,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 
 ] (./MSRKine.toc)
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1631,6 +1637,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [2
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1642,6 +1651,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 \openout2 = `sections/biblio.aux'.
 
  (./sections/biblio.tex
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1650,6 +1662,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1659,6 +1674,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 ] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1669,6 +1687,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 \openout2 = `sections/linkages.aux'.
 
  (./sections/linkages.tex
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1678,6 +1699,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1685,6 +1709,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [8
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1692,6 +1719,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [9
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1699,6 +1729,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [10
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1706,6 +1739,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [11
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1713,6 +1749,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [12
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1720,6 +1759,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [13
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1727,6 +1769,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [14
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1734,6 +1779,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [15
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1741,6 +1789,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [16
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1748,6 +1799,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [17
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1755,6 +1809,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [18
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1762,6 +1819,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [19
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1769,6 +1829,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [20
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1776,6 +1839,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [21
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1783,6 +1849,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [22
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1790,27 +1859,30 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [23
 
 ]
-<figures/spring-mass-damper.jpg, id=1171, 801.99625pt x 470.75874pt>
+<figures/spring-mass-damper.jpg, id=1259, 801.99625pt x 470.75874pt>
 File: figures/spring-mass-damper.jpg Graphic file (type jpg)
 <use figures/spring-mass-damper.jpg>
 Package pdftex.def Info: figures/spring-mass-damper.jpg  used on input line 209
 .
 (pdftex.def)             Requested size: 109.48856pt x 54.75027pt.
-<figures/excavJohnDeere.jpg, id=1172, 1061.51419pt x 596.81032pt>
+<figures/excavJohnDeere.jpg, id=1260, 1061.51419pt x 596.81032pt>
 File: figures/excavJohnDeere.jpg Graphic file (type jpg)
 <use figures/excavJohnDeere.jpg>
 Package pdftex.def Info: figures/excavJohnDeere.jpg  used on input line 209.
 (pdftex.def)             Requested size: 109.4943pt x 54.74875pt.
-<figures/carsusp.jpg, id=1173, 432.1746pt x 256.5585pt>
+<figures/carsusp.jpg, id=1261, 432.1746pt x 256.5585pt>
 File: figures/carsusp.jpg Graphic file (type jpg)
 <use figures/carsusp.jpg>
 Package pdftex.def Info: figures/carsusp.jpg  used on input line 209.
 (pdftex.def)             Requested size: 109.49416pt x 54.74794pt.
-<figures/daimler_manuf.jpeg, id=1174, 1284.8pt x 642.4pt>
+<figures/daimler_manuf.jpeg, id=1262, 1284.8pt x 642.4pt>
 File: figures/daimler_manuf.jpeg Graphic file (type jpg)
 <use figures/daimler_manuf.jpeg>
 Package pdftex.def Info: figures/daimler_manuf.jpeg  used on input line 209.
 (pdftex.def)             Requested size: 109.49081pt x 54.7454pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -1820,6 +1892,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
  <./figures/spring-mass-damper.jpg> <./figures/excavJohnDeere.jpg> <./figures/c
 arsusp.jpg> <./figures/daimler_manuf.jpeg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1830,12 +1905,15 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 pdfTeX warning: /usr/bin/pdflatex (file ../Notes/figures/prismatic_joint.pdf): 
 PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../Notes/figures/prismatic_joint.pdf, id=1265, 1485.55pt x 859.21pt>
+<../Notes/figures/prismatic_joint.pdf, id=1359, 1485.55pt x 859.21pt>
 File: ../Notes/figures/prismatic_joint.pdf Graphic file (type pdf)
 <use ../Notes/figures/prismatic_joint.pdf>
 Package pdftex.def Info: ../Notes/figures/prismatic_joint.pdf  used on input li
 ne 242.
 (pdftex.def)             Requested size: 125.47585pt x 72.56645pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -1844,16 +1922,19 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [26
 
  <../Notes/figures/prismatic_joint.pdf>]
-<figures/revolute.jpg, id=1313, 1284.8pt x 963.6pt>
+<figures/revolute.jpg, id=1410, 1284.8pt x 963.6pt>
 File: figures/revolute.jpg Graphic file (type jpg)
 <use figures/revolute.jpg>
 Package pdftex.def Info: figures/revolute.jpg  used on input line 265.
 (pdftex.def)             Requested size: 139.41856pt x 104.55539pt.
-<figures/revolute_cutaway.jpg, id=1314, 561.7626pt x 456.69781pt>
+<figures/revolute_cutaway.jpg, id=1411, 561.7626pt x 456.69781pt>
 File: figures/revolute_cutaway.jpg Graphic file (type jpg)
 <use figures/revolute_cutaway.jpg>
 Package pdftex.def Info: figures/revolute_cutaway.jpg  used on input line 265.
 (pdftex.def)             Requested size: 139.41856pt x 113.3449pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -1862,12 +1943,12 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [27
 
  <./figures/revolute.jpg> <./figures/revolute_cutaway.jpg>]
-<figures/helical.jpg, id=1362, 773.89125pt x 681.54625pt>
+<figures/helical.jpg, id=1462, 773.89125pt x 681.54625pt>
 File: figures/helical.jpg Graphic file (type jpg)
 <use figures/helical.jpg>
 Package pdftex.def Info: figures/helical.jpg  used on input line 289.
 (pdftex.def)             Requested size: 139.41856pt x 122.77702pt.
-<figures/ujoint.jpg, id=1363, 720.6925pt x 671.50874pt>
+<figures/ujoint.jpg, id=1463, 720.6925pt x 671.50874pt>
 File: figures/ujoint.jpg Graphic file (type jpg)
 <use figures/ujoint.jpg>
 Package pdftex.def Info: figures/ujoint.jpg  used on input line 289.
@@ -1881,6 +1962,9 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead on input line 289.
 
 
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1888,11 +1972,14 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [28
 
  <./figures/helical.jpg> <./figures/ujoint.jpg>]
-<figures/pairs2.jpg, id=1409, 1523.6925pt x 809.0225pt>
+<figures/pairs2.jpg, id=1512, 1523.6925pt x 809.0225pt>
 File: figures/pairs2.jpg Graphic file (type jpg)
 <use figures/pairs2.jpg>
 Package pdftex.def Info: figures/pairs2.jpg  used on input line 304.
 (pdftex.def)             Requested size: 278.83713pt x 148.04967pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -1901,11 +1988,14 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [29
 
  <./figures/pairs2.jpg>]
-<figures/pairs.jpg, id=1456, 1523.6925pt x 809.0225pt>
+<figures/pairs.jpg, id=1562, 1523.6925pt x 809.0225pt>
 File: figures/pairs.jpg Graphic file (type jpg)
 <use figures/pairs.jpg>
 Package pdftex.def Info: figures/pairs.jpg  used on input line 315.
 (pdftex.def)             Requested size: 278.83713pt x 148.04967pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -1914,12 +2004,15 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [30
 
  <./figures/pairs.jpg>]
-<../Notes/figures/arms_hunt.png, id=1502, 712.6625pt x 230.8625pt>
+<../Notes/figures/arms_hunt.png, id=1611, 712.6625pt x 230.8625pt>
 File: ../Notes/figures/arms_hunt.png Graphic file (type png)
 <use ../Notes/figures/arms_hunt.png>
 Package pdftex.def Info: ../Notes/figures/arms_hunt.png  used on input line 329
 .
 (pdftex.def)             Requested size: 284.52756pt x 92.17075pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -1928,6 +2021,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [31
 
  <../Notes/figures/arms_hunt.png>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1935,6 +2031,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [32
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1944,7 +2043,7 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 ] [34
 
 ]
-<../Notes/figures/PUMA.jpg, id=1647, 1532.72626pt x 1776.6375pt>
+<../Notes/figures/PUMA.jpg, id=1766, 1532.72626pt x 1776.6375pt>
 File: ../Notes/figures/PUMA.jpg Graphic file (type jpg)
 <use ../Notes/figures/PUMA.jpg>
 Package pdftex.def Info: ../Notes/figures/PUMA.jpg  used on input line 400.
@@ -1954,7 +2053,7 @@ Overfull \hbox (35.56184pt too wide) in paragraph at lines 400--400
 [][] 
  []
 
-<../Notes/figures/StanfordArm.jpg, id=1648, 1136.245pt x 666.49pt>
+<../Notes/figures/StanfordArm.jpg, id=1767, 1136.245pt x 666.49pt>
 File: ../Notes/figures/StanfordArm.jpg Graphic file (type jpg)
 <use ../Notes/figures/StanfordArm.jpg>
 Package pdftex.def Info: ../Notes/figures/StanfordArm.jpg  used on input line 4
@@ -1966,6 +2065,9 @@ Overfull \hbox (35.5642pt too wide) in paragraph at lines 400--400
  []
 
 
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1973,6 +2075,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [35
 
  <../Notes/figures/PUMA.jpg> <../Notes/figures/StanfordArm.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1980,6 +2085,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [36
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1987,6 +2095,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [37
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -1996,7 +2107,7 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 ] [39
 
 ]
-<figures/cmu_arm.jpg, id=1840, 431.6125pt x 507.8975pt>
+<figures/cmu_arm.jpg, id=1970, 431.6125pt x 507.8975pt>
 File: figures/cmu_arm.jpg Graphic file (type jpg)
 <use figures/cmu_arm.jpg>
 Package pdftex.def Info: figures/cmu_arm.jpg  used on input line 485.
@@ -2006,7 +2117,7 @@ Overfull \hbox (25.09026pt too wide) in paragraph at lines 485--485
 [][] 
  []
 
-<figures/dd_joints.jpg, id=1841, 470.75874pt x 452.69125pt>
+<figures/dd_joints.jpg, id=1971, 470.75874pt x 452.69125pt>
 File: figures/dd_joints.jpg Graphic file (type jpg)
 <use figures/dd_joints.jpg>
 Package pdftex.def Info: figures/dd_joints.jpg  used on input line 485.
@@ -2017,6 +2128,9 @@ Overfull \hbox (25.09102pt too wide) in paragraph at lines 485--485
  []
 
 
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2024,7 +2138,7 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [40
 
  <./figures/cmu_arm.jpg> <./figures/dd_joints.jpg>]
-<figures/dd_kinematics.jpg, id=1888, 428.60126pt x 469.755pt>
+<figures/dd_kinematics.jpg, id=2021, 428.60126pt x 469.755pt>
 File: figures/dd_kinematics.jpg Graphic file (type jpg)
 <use figures/dd_kinematics.jpg>
 Package pdftex.def Info: figures/dd_kinematics.jpg  used on input line 504.
@@ -2034,7 +2148,7 @@ Overfull \hbox (12.54916pt too wide) in paragraph at lines 504--504
 [][] 
  []
 
-<figures/dd_load_joints.jpg, id=1889, 474.77374pt x 344.28625pt>
+<figures/dd_load_joints.jpg, id=2022, 474.77374pt x 344.28625pt>
 File: figures/dd_load_joints.jpg Graphic file (type jpg)
 <use figures/dd_load_joints.jpg>
 Package pdftex.def Info: figures/dd_load_joints.jpg  used on input line 504.
@@ -2043,6 +2157,9 @@ Package pdftex.def Info: figures/dd_load_joints.jpg  used on input line 504.
 Overfull \hbox (25.0929pt too wide) in paragraph at lines 504--504
 [][] 
  []
+
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
 
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
@@ -2058,7 +2175,7 @@ Overfull \vbox (2.65779pt too high) detected at line 507
 [42
 
 ]
-<figures/adeptone.jpg, id=1943, 466.74374pt x 648.4225pt>
+<figures/adeptone.jpg, id=2079, 466.74374pt x 648.4225pt>
 File: figures/adeptone.jpg Graphic file (type jpg)
 <use figures/adeptone.jpg>
 Package pdftex.def Info: figures/adeptone.jpg  used on input line 526.
@@ -2078,7 +2195,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 526--526
 \OT1/cmss/m/n/9 SCARA robot
  []
 
-<figures/Scara.jpg, id=1944, 1565.85pt x 1290.8225pt>
+<figures/Scara.jpg, id=2080, 1565.85pt x 1290.8225pt>
 File: figures/Scara.jpg Graphic file (type jpg)
 <use figures/Scara.jpg>
 Package pdftex.def Info: figures/Scara.jpg  used on input line 526.
@@ -2099,6 +2216,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 526--526
  []
 
 
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2106,7 +2226,7 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [43
 
  <./figures/adeptone.jpg> <./figures/Scara.jpg>]
-<../Notes/figures/Staubli.jpg, id=1992, 1003.75pt x 1419.3025pt>
+<../Notes/figures/Staubli.jpg, id=2131, 1003.75pt x 1419.3025pt>
 File: ../Notes/figures/Staubli.jpg Graphic file (type jpg)
 <use ../Notes/figures/Staubli.jpg>
 Package pdftex.def Info: ../Notes/figures/Staubli.jpg  used on input line 539.
@@ -2116,6 +2236,9 @@ Overfull \vbox (42.50667pt too high) detected at line 539
  []
 
 
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2123,6 +2246,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [44
 
  <../Notes/figures/Staubli.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2130,6 +2256,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [45
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2151,11 +2280,14 @@ Underfull \hbox (badness 1354) in paragraph at lines 584--584
 \OT1/cmss/m/n/10.95 po-nents. RAIL script-
  []
 
-<figures/Automatix.jpg, id=2125, 1284.8pt x 969.6225pt>
+<figures/Automatix.jpg, id=2273, 1284.8pt x 969.6225pt>
 File: figures/Automatix.jpg Graphic file (type jpg)
 <use figures/Automatix.jpg>
 Package pdftex.def Info: figures/Automatix.jpg  used on input line 584.
 (pdftex.def)             Requested size: 144.99649pt x 109.4255pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2164,22 +2296,25 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [47
 
  <./figures/Automatix.jpg>]
-<figures/multisec_continuum.jpg, id=2169, 499.8675pt x 507.8975pt>
+<figures/multisec_continuum.jpg, id=2321, 499.8675pt x 507.8975pt>
 File: figures/multisec_continuum.jpg Graphic file (type jpg)
 <use figures/multisec_continuum.jpg>
 Package pdftex.def Info: figures/multisec_continuum.jpg  used on input line 610
 .
 (pdftex.def)             Requested size: 60.71373pt x 66.78848pt.
-<figures/multi_sec_manip.jpg, id=2170, 541.02126pt x 433.62pt>
+<figures/multi_sec_manip.jpg, id=2322, 541.02126pt x 433.62pt>
 File: figures/multi_sec_manip.jpg Graphic file (type jpg)
 <use figures/multi_sec_manip.jpg>
 Package pdftex.def Info: figures/multi_sec_manip.jpg  used on input line 610.
 (pdftex.def)             Requested size: 60.71779pt x 66.78694pt.
-<figures/multi_sec_scheme.jpg, id=2171, 477.785pt x 405.515pt>
+<figures/multi_sec_scheme.jpg, id=2323, 477.785pt x 405.515pt>
 File: figures/multi_sec_scheme.jpg Graphic file (type jpg)
 <use figures/multi_sec_scheme.jpg>
 Package pdftex.def Info: figures/multi_sec_scheme.jpg  used on input line 610.
 (pdftex.def)             Requested size: 60.71446pt x 66.78952pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2189,11 +2324,14 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
  <./figures/multisec_continuum.jpg> <./figures/multi_sec_manip.jpg> <./figures/
 multi_sec_scheme.jpg>]
-<../Notes/figures/octopus.jpg, id=2217, 1284.8pt x 722.7pt>
+<../Notes/figures/octopus.jpg, id=2371, 1284.8pt x 722.7pt>
 File: ../Notes/figures/octopus.jpg Graphic file (type jpg)
 <use ../Notes/figures/octopus.jpg>
 Package pdftex.def Info: ../Notes/figures/octopus.jpg  used on input line 623.
 (pdftex.def)             Requested size: 241.96124pt x 136.1014pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2202,6 +2340,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [49
 
  <../Notes/figures/octopus.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2209,12 +2350,12 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [50
 
 ]
-<figures/Stewart.jpg, id=2308, 413.545pt x 416.55624pt>
+<figures/Stewart.jpg, id=2468, 413.545pt x 416.55624pt>
 File: figures/Stewart.jpg Graphic file (type jpg)
 <use figures/Stewart.jpg>
 Package pdftex.def Info: figures/Stewart.jpg  used on input line 655.
 (pdftex.def)             Requested size: 102.54268pt x 103.28708pt.
-<../../../Papers/PhDThesis/figures/GoughPlatform.jpg, id=2309, 202.04517pt x 24
+<../../../Papers/PhDThesis/figures/GoughPlatform.jpg, id=2469, 202.04517pt x 24
 8.67097pt>
 File: ../../../Papers/PhDThesis/figures/GoughPlatform.jpg Graphic file (type jp
 g)
@@ -2223,6 +2364,9 @@ Package pdftex.def Info: ../../../Papers/PhDThesis/figures/GoughPlatform.jpg  u
 sed on input line 655.
 (pdftex.def)             Requested size: 82.03445pt x 100.96541pt.
 
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2230,11 +2374,14 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [51
 
  <./figures/Stewart.jpg> <../../../Papers/PhDThesis/figures/GoughPlatform.jpg>]
-<figures/truss.jpg, id=2354, 465.74pt x 443.6575pt>
+<figures/truss.jpg, id=2518, 465.74pt x 443.6575pt>
 File: figures/truss.jpg Graphic file (type jpg)
 <use figures/truss.jpg>
 Package pdftex.def Info: figures/truss.jpg  used on input line 668.
 (pdftex.def)             Requested size: 131.11024pt x 124.89343pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2243,11 +2390,14 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [52
 
  <./figures/truss.jpg>]
-<figures/stewart.jpg, id=2400, 828.09375pt x 622.325pt>
+<figures/stewart.jpg, id=2566, 828.09375pt x 622.325pt>
 File: figures/stewart.jpg Graphic file (type jpg)
 <use figures/stewart.jpg>
 Package pdftex.def Info: figures/stewart.jpg  used on input line 683.
 (pdftex.def)             Requested size: 175.04306pt x 131.54674pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2256,12 +2406,15 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [53
 
  <./figures/stewart.jpg>]
-<../Notes/figures/soft_parallel.jpg, id=2445, 608.46678pt x 621.67741pt>
+<../Notes/figures/soft_parallel.jpg, id=2615, 608.46678pt x 621.67741pt>
 File: ../Notes/figures/soft_parallel.jpg Graphic file (type jpg)
 <use ../Notes/figures/soft_parallel.jpg>
 Package pdftex.def Info: ../Notes/figures/soft_parallel.jpg  used on input line
  696.
 (pdftex.def)             Requested size: 153.41866pt x 156.74701pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2273,6 +2426,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 \openout2 = `sections/mobility.aux'.
 
  (./sections/mobility.tex
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2282,6 +2438,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2289,11 +2448,14 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [56
 
 ]
-<figures/dualgraph_stewart.jpg, id=2580, 507.8975pt x 625.33624pt>
+<figures/dualgraph_stewart.jpg, id=2760, 507.8975pt x 625.33624pt>
 File: figures/dualgraph_stewart.jpg Graphic file (type jpg)
 <use figures/dualgraph_stewart.jpg>
 Package pdftex.def Info: figures/dualgraph_stewart.jpg  used on input line 49.
 (pdftex.def)             Requested size: 123.76959pt x 152.38335pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2302,6 +2464,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [57
 
  <./figures/dualgraph_stewart.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2309,12 +2474,15 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [58
 
 ]
-<../Notes/figures/four-bar-linkage.png, id=2671, 736.7525pt x 227.85126pt>
+<../Notes/figures/four-bar-linkage.png, id=2857, 736.7525pt x 227.85126pt>
 File: ../Notes/figures/four-bar-linkage.png Graphic file (type png)
 <use ../Notes/figures/four-bar-linkage.png>
 Package pdftex.def Info: ../Notes/figures/four-bar-linkage.png  used on input l
 ine 77.
 (pdftex.def)             Requested size: 278.83713pt x 86.23322pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2325,16 +2493,19 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  <../Notes/figures/four-bar-linkage.png>] [60
 
 ]
-<figures/4bar_me.jpg, id=2727, 457.71pt x 493.845pt>
+<figures/4bar_me.jpg, id=2915, 457.71pt x 493.845pt>
 File: figures/4bar_me.jpg Graphic file (type jpg)
 <use figures/4bar_me.jpg>
 Package pdftex.def Info: figures/4bar_me.jpg  used on input line 99.
 (pdftex.def)             Requested size: 111.39188pt x 120.18301pt.
-<figures/4bardual.jpg, id=2728, 692.5875pt x 692.5875pt>
+<figures/4bardual.jpg, id=2916, 692.5875pt x 692.5875pt>
 File: figures/4bardual.jpg Graphic file (type jpg)
 <use figures/4bardual.jpg>
 Package pdftex.def Info: figures/4bardual.jpg  used on input line 99.
 (pdftex.def)             Requested size: 111.39188pt x 111.38693pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2343,11 +2514,14 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [61
 
  <./figures/4bar_me.jpg> <./figures/4bardual.jpg>]
-<figures/4bar_wolfram.jpg, id=2777, 633.12592pt x 494.69324pt>
+<figures/4bar_wolfram.jpg, id=2969, 633.12592pt x 494.69324pt>
 File: figures/4bar_wolfram.jpg Graphic file (type jpg)
 <use figures/4bar_wolfram.jpg>
 Package pdftex.def Info: figures/4bar_wolfram.jpg  used on input line 115.
 (pdftex.def)             Requested size: 167.30397pt x 130.7232pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2356,6 +2530,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [62
 
  <./figures/4bar_wolfram.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2367,6 +2544,9 @@ LaTeX Font Info:    Try loading font information for U+euf on input line 144.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2374,6 +2554,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [64
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2381,6 +2564,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [65
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2388,11 +2574,14 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [66
 
 ]
-<figures/need4screws.jpg, id=3003, 410.03188pt x 199.24437pt>
+<figures/need4screws.jpg, id=3210, 410.03188pt x 199.24437pt>
 File: figures/need4screws.jpg Graphic file (type jpg)
 <use figures/need4screws.jpg>
 Package pdftex.def Info: figures/need4screws.jpg  used on input line 189.
 (pdftex.def)             Requested size: 209.12784pt x 101.62239pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2401,11 +2590,14 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [67
 
  <./figures/need4screws.jpg>]
-<figures/screw.jpg, id=3051, 411.5375pt x 323.2075pt>
+<figures/screw.jpg, id=3261, 411.5375pt x 323.2075pt>
 File: figures/screw.jpg Graphic file (type jpg)
 <use figures/screw.jpg>
 Package pdftex.def Info: figures/screw.jpg  used on input line 211.
 (pdftex.def)             Requested size: 69.70927pt x 54.74727pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2414,6 +2606,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [68
 
  <./figures/screw.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2421,17 +2616,20 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [69
 
 ]
-<figures/screwdeath.jpg, id=3141, 1042.89626pt x 772.8875pt>
+<figures/screwdeath.jpg, id=3357, 1042.89626pt x 772.8875pt>
 File: figures/screwdeath.jpg Graphic file (type jpg)
 <use figures/screwdeath.jpg>
 Package pdftex.def Info: figures/screwdeath.jpg  used on input line 242.
 (pdftex.def)             Requested size: 133.84062pt x 99.18163pt.
-<figures/screw_rediscovery.jpg, id=3142, 1029.8475pt x 698.61pt>
+<figures/screw_rediscovery.jpg, id=3358, 1029.8475pt x 698.61pt>
 File: figures/screw_rediscovery.jpg Graphic file (type jpg)
 <use figures/screw_rediscovery.jpg>
 Package pdftex.def Info: figures/screw_rediscovery.jpg  used on input line 242.
 
 (pdftex.def)             Requested size: 133.84062pt x 90.7905pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2440,6 +2638,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [70
 
  <./figures/screwdeath.jpg> <./figures/screw_rediscovery.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2447,6 +2648,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [71
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2454,6 +2658,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [72
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2461,6 +2668,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [73
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2468,6 +2678,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [74
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2475,6 +2688,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [75
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2488,6 +2704,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{grubler}) has
                                                   
 l.341 \end{frame}
                  ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2495,6 +2714,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [77
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2502,7 +2724,7 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [78
 
 ]
-<figures/scara_schematic.jpg, id=3547, 421.8159pt x 344.7279pt>
+<figures/scara_schematic.jpg, id=3790, 421.8159pt x 344.7279pt>
 File: figures/scara_schematic.jpg Graphic file (type jpg)
 <use figures/scara_schematic.jpg>
 Package pdftex.def Info: figures/scara_schematic.jpg  used on input line 397.
@@ -2512,6 +2734,9 @@ File: figures/Scara.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/Scara.jpg  used on input line 397.
 (pdftex.def)             Requested size: 139.41856pt x 114.92813pt.
 
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2519,6 +2744,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [79
 
  <./figures/scara_schematic.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2526,16 +2754,19 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [80
 
 ]
-<figures/ur16.jpg, id=3638, 358.33875pt x 397.485pt>
+<figures/ur16.jpg, id=3887, 358.33875pt x 397.485pt>
 File: figures/ur16.jpg Graphic file (type jpg)
 <use figures/ur16.jpg>
 Package pdftex.def Info: figures/ur16.jpg  used on input line 438.
 (pdftex.def)             Requested size: 139.41856pt x 154.64854pt.
-<figures/ur_scheme.jpg, id=3639, 694.5147pt x 403.5075pt>
+<figures/ur_scheme.jpg, id=3888, 694.5147pt x 403.5075pt>
 File: figures/ur_scheme.jpg Graphic file (type jpg)
 <use figures/ur_scheme.jpg>
 Package pdftex.def Info: figures/ur_scheme.jpg  used on input line 438.
 (pdftex.def)             Requested size: 139.41856pt x 81.00175pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2544,13 +2775,13 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [81
 
  <./figures/ur16.jpg> <./figures/ur_scheme.jpg>]
-<figures/stewart_spherical.jpg, id=3688, 434.62375pt x 499.8675pt>
+<figures/stewart_spherical.jpg, id=3939, 434.62375pt x 499.8675pt>
 File: figures/stewart_spherical.jpg Graphic file (type jpg)
 <use figures/stewart_spherical.jpg>
 Package pdftex.def Info: figures/stewart_spherical.jpg  used on input line 455.
 
 (pdftex.def)             Requested size: 111.53314pt x 128.27682pt.
-<figures/spherical.jpg, id=3689, 349.305pt x 428.60126pt>
+<figures/spherical.jpg, id=3940, 349.305pt x 428.60126pt>
 File: figures/spherical.jpg Graphic file (type jpg)
 <use figures/spherical.jpg>
 Package pdftex.def Info: figures/spherical.jpg  used on input line 455.
@@ -2560,6 +2791,9 @@ File: figures/ujoint.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/ujoint.jpg  used on input line 455.
 (pdftex.def)             Requested size: 69.70927pt x 64.95183pt.
 
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2567,6 +2801,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [82
 
  <./figures/stewart_spherical.jpg> <./figures/spherical.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2574,11 +2811,14 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [83
 
 ]
-<figures/synthesis.jpg, id=3779, 539.01375pt x 617.30624pt>
+<figures/synthesis.jpg, id=4036, 539.01375pt x 617.30624pt>
 File: figures/synthesis.jpg Graphic file (type jpg)
 <use figures/synthesis.jpg>
 Package pdftex.def Info: figures/synthesis.jpg  used on input line 496.
 (pdftex.def)             Requested size: 139.41856pt x 159.66693pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2587,6 +2827,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [84
 
  <./figures/synthesis.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2594,14 +2837,14 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [85
 
 ]
-<../Notes/figures/parallel_translational.jpg, id=3869, 953.5625pt x 607.26875pt
+<../Notes/figures/parallel_translational.jpg, id=4133, 953.5625pt x 607.26875pt
 >
 File: ../Notes/figures/parallel_translational.jpg Graphic file (type jpg)
 <use ../Notes/figures/parallel_translational.jpg>
 Package pdftex.def Info: ../Notes/figures/parallel_translational.jpg  used on i
 nput line 527.
 (pdftex.def)             Requested size: 139.41856pt x 88.78838pt.
-<../Notes/figures/parallel_translational_workspace.jpg, id=3870, 862.22125pt x 
+<../Notes/figures/parallel_translational_workspace.jpg, id=4134, 862.22125pt x 
 573.14125pt>
 File: ../Notes/figures/parallel_translational_workspace.jpg Graphic file (type 
 jpg)
@@ -2610,10 +2853,7 @@ Package pdftex.def Info: ../Notes/figures/parallel_translational_workspace.jpg
  used on input line 527.
 (pdftex.def)             Requested size: 139.41856pt x 92.6752pt.
 
-Overfull \hbox (109.80077pt too wide) detected at line 527
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] \OT1/cmss/m/n/9 Reprinted from Gar
-cia-Murillo et al. 
- []
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
 
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
@@ -2624,6 +2864,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
  <../Notes/figures/parallel_translational.jpg> <../Notes/figures/parallel_trans
 lational_workspace.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2634,6 +2877,14 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 \openout2 = `sections/rbm.aux'.
 
  (./sections/rbm.tex
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+\OT1/cmss/m/n/10.95 Rodrigues' for-mula; the ma-trix ex-po-nen-tial,
+ []
+
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2643,6 +2894,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2650,13 +2904,38 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [89
 
 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 36.
+
+<../Notes/figures/trans_coords.jpg, id=4323, 712.6625pt x 352.31625pt>
+File: ../Notes/figures/trans_coords.jpg Graphic file (type jpg)
+<use ../Notes/figures/trans_coords.jpg>
+Package pdftex.def Info: ../Notes/figures/trans_coords.jpg  used on input line 
+76.
+(pdftex.def)             Requested size: 139.41856pt x 68.91911pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [90
 
-]
+ <../Notes/figures/trans_coords.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2664,6 +2943,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [91
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2671,11 +2953,15 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [92
 
 ]
-<figures/plucker_coords.jpg, id=4184, 249.93375pt x 228.855pt>
-File: figures/plucker_coords.jpg Graphic file (type jpg)
-<use figures/plucker_coords.jpg>
-Package pdftex.def Info: figures/plucker_coords.jpg  used on input line 89.
-(pdftex.def)             Requested size: 83.65198pt x 76.59792pt.
+<../Notes/figures/rotation_illus.jpg, id=4468, 596.2275pt x 448.67625pt>
+File: ../Notes/figures/rotation_illus.jpg Graphic file (type jpg)
+<use ../Notes/figures/rotation_illus.jpg>
+Package pdftex.def Info: ../Notes/figures/rotation_illus.jpg  used on input lin
+e 129.
+(pdftex.def)             Requested size: 167.30397pt x 125.8955pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2683,7 +2969,10 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 [93
 
- <./figures/plucker_coords.jpg>]
+ <../Notes/figures/rotation_illus.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2691,6 +2980,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [94
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2698,6 +2990,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [95
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2705,6 +3000,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [96
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2712,13 +3010,36 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [97
 
 ]
+File: ../Notes/figures/rotation_illus.jpg Graphic file (type jpg)
+<use ../Notes/figures/rotation_illus.jpg>
+Package pdftex.def Info: ../Notes/figures/rotation_illus.jpg  used on input lin
+e 247.
+(pdftex.def)             Requested size: 139.41856pt x 104.91177pt.
+<../Notes/figures/planar_rot.jpg, id=4710, 639.38875pt x 370.38374pt>
+File: ../Notes/figures/planar_rot.jpg Graphic file (type jpg)
+<use ../Notes/figures/planar_rot.jpg>
+Package pdftex.def Info: ../Notes/figures/planar_rot.jpg  used on input line 24
+7.
+(pdftex.def)             Requested size: 139.41856pt x 80.76126pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [98
 
-]
+ <../Notes/figures/planar_rot.jpg>]
+Overfull \hbox (1.49245pt too wide) detected at line 272
+[]
+ []
+
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2726,19 +3047,7 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [99
 
 ]
-File: figures/multi_sec_manip.jpg Graphic file (type jpg)
-<use figures/multi_sec_manip.jpg>
-Package pdftex.def Info: figures/multi_sec_manip.jpg  used on input line 200.
-(pdftex.def)             Requested size: 139.41856pt x 111.73944pt.
-<figures/serret.jpg, id=4499, 418.56375pt x 263.98625pt>
-File: figures/serret.jpg Graphic file (type jpg)
-<use figures/serret.jpg>
-Package pdftex.def Info: figures/serret.jpg  used on input line 200.
-(pdftex.def)             Requested size: 189.6072pt x 119.58221pt.
-
-Overfull \hbox (21.7359pt too wide) detected at line 200
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
 
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
@@ -2747,7 +3056,10 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 [100
 
- <./figures/serret.jpg>]
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2755,6 +3067,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [101
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2762,6 +3077,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [102
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2769,6 +3087,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [103
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2776,13 +3097,25 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [104
 
 ]
+<../Notes/figures/compoz.jpg, id=5047, 871.255pt x 351.3125pt>
+File: ../Notes/figures/compoz.jpg Graphic file (type jpg)
+<use ../Notes/figures/compoz.jpg>
+Package pdftex.def Info: ../Notes/figures/compoz.jpg  used on input line 399.
+(pdftex.def)             Requested size: 278.83713pt x 112.43301pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [105
 
-]
+ <../Notes/figures/compoz.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2790,6 +3123,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [106
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2797,38 +3133,50 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [107
 
 ]
+<../Notes/figures/two_frames.jpg, id=5196, 587.19376pt x 462.72874pt>
+File: ../Notes/figures/two_frames.jpg Graphic file (type jpg)
+<use ../Notes/figures/two_frames.jpg>
+Package pdftex.def Info: ../Notes/figures/two_frames.jpg  used on input line 46
+9.
+(pdftex.def)             Requested size: 125.47585pt x 98.87752pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [108
 
-]
+ <../Notes/figures/two_frames.jpg>]
+<../Notes/figures/zyz.png, id=5245, 722.7pt x 314.17375pt>
+File: ../Notes/figures/zyz.png Graphic file (type png)
+<use ../Notes/figures/zyz.png>
+Package pdftex.def Info: ../Notes/figures/zyz.png  used on input line 484.
+(pdftex.def)             Requested size: 264.89441pt x 115.15424pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [109
 
-]
-Overfull \vbox (20.81798pt too high) detected at line 349
+ <../Notes/figures/zyz.png>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
  []
 
 [110
 
-
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 351.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 351.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 351.
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
 
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
@@ -2838,12 +3186,8 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [111
 
 ]
-<../Notes/figures/trans_coords.jpg, id=5007, 712.6625pt x 352.31625pt>
-File: ../Notes/figures/trans_coords.jpg Graphic file (type jpg)
-<use ../Notes/figures/trans_coords.jpg>
-Package pdftex.def Info: ../Notes/figures/trans_coords.jpg  used on input line 
-400.
-(pdftex.def)             Requested size: 139.41856pt x 68.91911pt.
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2851,7 +3195,10 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 [112
 
- <../Notes/figures/trans_coords.jpg>]
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2859,6 +3206,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [113
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2866,12 +3216,8 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [114
 
 ]
-<../Notes/figures/rotation_illus.jpg, id=5142, 596.2275pt x 448.67625pt>
-File: ../Notes/figures/rotation_illus.jpg Graphic file (type jpg)
-<use ../Notes/figures/rotation_illus.jpg>
-Package pdftex.def Info: ../Notes/figures/rotation_illus.jpg  used on input lin
-e 453.
-(pdftex.def)             Requested size: 167.30397pt x 125.8955pt.
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2879,14 +3225,26 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 [115
 
- <../Notes/figures/rotation_illus.jpg>]
+]
+<figures/yawpitchroll.jpg, id=5590, 927.465pt x 694.595pt>
+File: figures/yawpitchroll.jpg Graphic file (type jpg)
+<use figures/yawpitchroll.jpg>
+Package pdftex.def Info: figures/yawpitchroll.jpg  used on input line 630.
+(pdftex.def)             Requested size: 153.36127pt x 114.847pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [116
 
-]
+ <./figures/yawpitchroll.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2894,6 +3252,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [117
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2901,6 +3262,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [118
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2908,17 +3272,37 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [119
 
 ]
-File: ../Notes/figures/rotation_illus.jpg Graphic file (type jpg)
-<use ../Notes/figures/rotation_illus.jpg>
-Package pdftex.def Info: ../Notes/figures/rotation_illus.jpg  used on input lin
-e 571.
-(pdftex.def)             Requested size: 139.41856pt x 104.91177pt.
-<../Notes/figures/planar_rot.jpg, id=5368, 639.38875pt x 370.38374pt>
-File: ../Notes/figures/planar_rot.jpg Graphic file (type jpg)
-<use ../Notes/figures/planar_rot.jpg>
-Package pdftex.def Info: ../Notes/figures/planar_rot.jpg  used on input line 57
-1.
-(pdftex.def)             Requested size: 139.41856pt x 80.76126pt.
+Underfull \hbox (badness 10000) in paragraph at lines 690--690
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 690--690
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 690--690
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 690--690
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 690--690
+
+ []
+
+
+Overfull \vbox (31.06459pt too high) detected at line 690
+ []
+
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2926,10 +3310,20 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 [120
 
- <../Notes/figures/planar_rot.jpg>]
-Overfull \hbox (1.49245pt too wide) detected at line 596
-[]
+])
+\openout2 = `sections/screw_rbm.aux'.
+
+ (./sections/screw_rbm.tex
+Underfull \hbox (badness 7168) in paragraph at lines 18--18
+\OT1/cmss/m/n/10.95 Manipulator kine-mat-ics: Brock-ett's ex-po-nen-tial
  []
+
+
+Overfull \vbox (18.41171pt too high) detected at line 18
+ []
+
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
 
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
@@ -2938,7 +3332,12 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 [121
 
+
+
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2946,11 +3345,8 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [122
 
 ]
-<../Notes/figures/compoz.jpg, id=5502, 871.255pt x 351.3125pt>
-File: ../Notes/figures/compoz.jpg Graphic file (type jpg)
-<use ../Notes/figures/compoz.jpg>
-Package pdftex.def Info: ../Notes/figures/compoz.jpg  used on input line 622.
-(pdftex.def)             Requested size: 278.83713pt x 112.43301pt.
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -2958,14 +3354,26 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 [123
 
- <../Notes/figures/compoz.jpg>]
+]
+<figures/plucker_coords.jpg, id=5972, 249.93375pt x 228.855pt>
+File: figures/plucker_coords.jpg Graphic file (type jpg)
+<use figures/plucker_coords.jpg>
+Package pdftex.def Info: figures/plucker_coords.jpg  used on input line 62.
+(pdftex.def)             Requested size: 83.65198pt x 76.59792pt.
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [124
 
-]
+ <./figures/plucker_coords.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2973,6 +3381,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [125
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2980,6 +3391,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [126
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -2987,12 +3401,8 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [127
 
 ]
-<../Notes/figures/two_frames.jpg, id=5726, 587.19376pt x 462.72874pt>
-File: ../Notes/figures/two_frames.jpg Graphic file (type jpg)
-<use ../Notes/figures/two_frames.jpg>
-Package pdftex.def Info: ../Notes/figures/two_frames.jpg  used on input line 72
-1.
-(pdftex.def)             Requested size: 125.47585pt x 98.87752pt.
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -3000,12 +3410,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 [128
 
- <../Notes/figures/two_frames.jpg>]
-<../Notes/figures/zyz.png, id=5772, 722.7pt x 314.17375pt>
-File: ../Notes/figures/zyz.png Graphic file (type png)
-<use ../Notes/figures/zyz.png>
-Package pdftex.def Info: ../Notes/figures/zyz.png  used on input line 733.
-(pdftex.def)             Requested size: 264.89441pt x 115.15424pt.
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -3013,7 +3420,10 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 [129
 
- <../Notes/figures/zyz.png>]
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -3021,13 +3431,34 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [130
 
 ]
+File: figures/multi_sec_manip.jpg Graphic file (type jpg)
+<use figures/multi_sec_manip.jpg>
+Package pdftex.def Info: figures/multi_sec_manip.jpg  used on input line 173.
+(pdftex.def)             Requested size: 139.41856pt x 111.73944pt.
+<figures/serret.jpg, id=6307, 418.56375pt x 263.98625pt>
+File: figures/serret.jpg Graphic file (type jpg)
+<use figures/serret.jpg>
+Package pdftex.def Info: figures/serret.jpg  used on input line 173.
+(pdftex.def)             Requested size: 189.6072pt x 119.58221pt.
+
+Overfull \hbox (21.7359pt too wide) detected at line 173
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
 
 [131
 
-]
+ <./figures/serret.jpg>]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -3035,6 +3466,9 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [132
 
 ]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
  []
@@ -3042,11 +3476,8 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 [133
 
 ]
-<figures/yawpitchroll.jpg, id=6004, 927.465pt x 694.595pt>
-File: figures/yawpitchroll.jpg Graphic file (type jpg)
-<use figures/yawpitchroll.jpg>
-Package pdftex.def Info: figures/yawpitchroll.jpg  used on input line 828.
-(pdftex.def)             Requested size: 153.36127pt x 114.847pt.
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  [][][][] 
@@ -3054,34 +3485,8 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
 
 [134
 
- <./figures/yawpitchroll.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--843
-
- []
-
-
-Overfull \vbox (28.32709pt too high) detected at line 843
- []
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
 
 
 Overfull \hbox (111.99484pt too wide) has occurred while \output is active
@@ -3089,6 +3494,233 @@ Overfull \hbox (111.99484pt too wide) has occurred while \output is active
  []
 
 [135
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[136
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[137
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[138
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[139
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[140
+
+]
+Overfull \vbox (20.81798pt too high) detected at line 322
+ []
+
+[141
+
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[142
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[143
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[144
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[145
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[146
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[147
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[148
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[149
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[150
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[151
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[152
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[153
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[154
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[155
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[156
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[157
+
+]
+Overfull \vbox (7.94737pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (111.99484pt too wide) has occurred while \output is active
+ [][][][] 
+ []
+
+[158
 
 ]) (./MSRKine.bbl (./MSRKine.brf)
 \tf@brf=\write8
@@ -3112,14 +3744,14 @@ Package natbib Warning: Empty `thebibliography' environment on input line 8.
 \tf@snm=\write11
 \openout11 = `MSRKine.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
  (./MSRKine.aux (./sections/biblio.aux) (./sections/linkages.aux)
-(./sections/mobility.aux) (./sections/rbm.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
+(./sections/mobility.aux) (./sections/rbm.aux) (./sections/screw_rbm.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
 Package rerunfilecheck Info: File `MSRKine.out' has not changed.
-(rerunfilecheck)             Checksum: AF50D23E738B693570D99A11060E0B4A;2824.
+(rerunfilecheck)             Checksum: 6064FCF7FEF89E3F5EA34C112B00DAAE;3127.
 Package rerunfilecheck Info: File `MSRKine.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -3135,47 +3767,50 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 44522 strings out of 494847
- 887608 string characters out of 6179081
- 953671 words of memory out of 5000000
- 46662 multiletter control sequences out of 15000+600000
+ 44495 strings out of 494847
+ 887564 string characters out of 6179081
+ 957826 words of memory out of 5000000
+ 46574 multiletter control sequences out of 15000+600000
  560071 words of font info for 135 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  56i,21n,80p,10395b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on MSRKine.pdf (135 pages, 6838649 bytes).
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cme
+xtra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmex
+tra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on MSRKine.pdf (158 pages, 6976255 bytes).
 PDF statistics:
- 6262 PDF objects out of 7423 (max. 8388607)
- 5946 compressed objects within 60 object streams
- 305 named destinations out of 1000 (max. 500000)
- 530 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 7798 PDF objects out of 8907 (max. 8388607)
+ 7441 compressed objects within 75 object streams
+ 359 named destinations out of 1000 (max. 500000)
+ 554 words of extra memory for PDF output out of 10000 (max. 10000000)
 
